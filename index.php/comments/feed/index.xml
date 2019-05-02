@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments for The SIGMA	</title>
+	<atom:link href="/index.php/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				Comment on MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01) by ruwan				</title>
+				<link>/index.php/2019/02/19/mean-stack-sample-application-1/#comment-267</link>
+		<dc:creator><![CDATA[ruwan]]></dc:creator>
+		<pubDate>Tue, 09 Apr 2019 02:05:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1880#comment-267</guid>
+					<description><![CDATA[Thank you so much. Dhanushka,]]></description>
+		<content:encoded><![CDATA[<p>Thank you so much. Dhanushka,</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				Comment on Machine Learning වලට අත්පොත් තබමු. by isuru				</title>
+				<link>/index.php/2019/02/12/machinelearningbeginning/#comment-247</link>
+		<dc:creator><![CDATA[isuru]]></dc:creator>
+		<pubDate>Fri, 08 Mar 2019 04:44:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1844#comment-247</guid>
+					<description><![CDATA[නියම වැඩක් දිගටම කරගෙන යන්න]]></description>
+		<content:encoded><![CDATA[<p>නියම වැඩක් දිගටම කරගෙන යන්න</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				Comment on Access modifiers by Johan wiraj				</title>
+				<link>/index.php/2018/03/18/object-oriented-programming/#comment-241</link>
+		<dc:creator><![CDATA[Johan wiraj]]></dc:creator>
+		<pubDate>Mon, 25 Feb 2019 09:33:16 +0000</pubDate>
+		<guid isPermaLink="false">/?p=129#comment-241</guid>
+					<description><![CDATA[Thanks bro]]></description>
+		<content:encoded><![CDATA[<p>Thanks bro</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

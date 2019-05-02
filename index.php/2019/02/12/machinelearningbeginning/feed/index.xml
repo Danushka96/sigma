@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Machine Learning වලට අත්පොත් තබමු.	</title>
+	<atom:link href="/index.php/2019/02/12/machinelearningbeginning/feed/" rel="self" type="application/rss+xml" />
+	<link>/index.php/2019/02/12/machinelearningbeginning/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				By: isuru				</title>
+				<link>/index.php/2019/02/12/machinelearningbeginning/#comment-247</link>
+		<dc:creator><![CDATA[isuru]]></dc:creator>
+		<pubDate>Fri, 08 Mar 2019 04:44:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1844#comment-247</guid>
+					<description><![CDATA[නියම වැඩක් දිගටම කරගෙන යන්න]]></description>
+		<content:encoded><![CDATA[<p>නියම වැඩක් දිගටම කරගෙන යන්න</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				By: Hasee Amarathunga				</title>
+				<link>/index.php/2019/02/12/machinelearningbeginning/#comment-234</link>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+		<pubDate>Fri, 15 Feb 2019 11:15:53 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1844#comment-234</guid>
+					<description><![CDATA[This is a common problem in many computers because you need to install the numpy library to your environment using conda. So your problem will resolve using following two command in the terminal
+
+&lt;code&gt;activate tfp3.6
+&lt;code&gt;conda install numpy&lt;/code&gt;]]></description>
+		<content:encoded><![CDATA[<p>This is a common problem in many computers because you need to install the numpy library to your environment using conda. So your problem will resolve using following two command in the terminal</p>
+<p><code>activate tfp3.6<br />
+</code><code>conda install numpy</code></p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				By: Sepalika Perera				</title>
+				<link>/index.php/2019/02/12/machinelearningbeginning/#comment-233</link>
+		<dc:creator><![CDATA[Sepalika Perera]]></dc:creator>
+		<pubDate>Fri, 15 Feb 2019 11:09:09 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1844#comment-233</guid>
+					<description><![CDATA[I have some problem. import tensorflow is not working in my program.But tensorflow is already installed in my Environment. Can you please help me to fix this]]></description>
+		<content:encoded><![CDATA[<p>I have some problem. import tensorflow is not working in my program.But tensorflow is already installed in my Environment. Can you please help me to fix this</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

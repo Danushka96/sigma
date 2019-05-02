@@ -1,0 +1,593 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව." />
+<meta name="twitter:title" content="VueJs 2 - 04 Event එක්ක වැඩ කරමු - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="VueJs 2 - 04 Event එක්ක වැඩ කරමු - The SIGMA" />
+<meta property="og:description" content="මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව." />
+<meta property="og:url" content="/index.php/2018/04/14/vuejs-2-04/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="events" />
+<meta property="article:tag" content="Vue" />
+<meta property="article:tag" content="VueJs" />
+<meta property="article:section" content="VueJs" />
+<meta property="article:published_time" content="2018-04-14T15:17:34+00:00" />
+<meta property="article:modified_time" content="2018-04-27T20:05:31+00:00" />
+<meta property="og:updated_time" content="2018-04-27T20:05:31+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:image:width" content="912" />
+<meta property="og:image:height" content="364" />
+	<title>VueJs 2 - 04 Event එක්ක වැඩ කරමු - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/04/14/vuejs-2-04/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/04\/14\/vuejs-2-04\/","headline":"VueJs 2 &#8211; 04 Event එක්ක වැඩ කරමු","datePublished":"2018-04-14T15:17:34+00:00","dateModified":"2018-04-27T20:05:31+00:00","author":{"@type":"Person","name":"Prasad Kavinda"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/04\/vuejs-logo.png","width":912,"height":364},"description":"මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව."}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">VueJs 2 &#8211; 04 Event එක්ක වැඩ කරමු</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/b8ebc2d2cfe6cc65d601cd0ec7fec67e?s=24&#038;d=mm&#038;r=g" alt="Prasad Kavinda" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Prasad Kavinda</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-04-14T20:47:34+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="299" src="/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/04/vuejs-logo.png 912w, /wp-content/uploads/2018/04/vuejs-logo-300x120.png 300w, /wp-content/uploads/2018/04/vuejs-logo-768x307.png 768w" layout="intrinsic"><noscript><img width="750" height="299" src="/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම එසේම වේවා 😀 ! Vue ගැන ලියන 4 වෙනි post එක. <a href="/index.php/2018/04/12/vuejs-2-03/">කලින් post එකේ</a>දි අපි Vue directives ගැන කතා කරානෙ. ඒකෙදි කිව්ව වගේම අද කියන්න යන්නෙ Vue වලින් events handle කරන්නෙ කොහොමද කියල. මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව. v-on එකට මේ වගේ syntax එකක් තමයි තියෙන්නෙ.</p>
+<blockquote><p>v-on:<strong>event</strong>=”<strong>expression or method</strong>“</p></blockquote>
+<p>මේකෙ event කියන්නෙ අපි listen කරන event එක.(click, keyup, keydown, submit වගේ) ඒකට value එක විදියට දෙන්න ඕනෙ, ඒ event එක trigger උනාම වෙන්න ඕනෙ මොකද්ද කියල. ඒකට ඕන නම් එතනම expression එකක් ලියන්නත් පුළුවන් නැත්තම් (methods object එකේ) define කරපු method එකක් දෙන්න පුළුවන්. අපි උදාහරණයකින් බලමු කොහොමද මේක කරන්නෙ කියල.</p>
+<p>මගේ data object එකේ තියෙන age කියන අගය button එකක් click කරද්දි එකකින් වැඩි වෙන්න ඕනෙ කියල හිතමු.</p>
+<pre>data: {
+    age: 25
+}</pre>
+<pre>&lt;div id="my-app"&gt;
+    &lt;h1&gt; My age is {{ age }}&lt;/h1&gt;
+    &lt;button v-on:click="age++"&gt;+&lt;/button&gt;
+&lt;/div&gt; 
+</pre>
+<p>මෙන්න මේ විදියට ඔයාලට පුළුවන් v-on directive එක පාවිචිච කරල button එකට click event listener එකක් set කරන්න. එතකොට ඒ button එක click කරද්දි  age++ කියන code එක run වෙනව. එතකොට age කියන data එක, එකකින් increment වෙනව. h1 tag එකෙන් ඒක වෙනස් වෙනව බලාගන්න පුළුවන්.</p>
+<p>මේ විදියටම ඔයාලට පුළුවන් button එක click කරද්දි method එකක් call කරන්න. මේ වගේ,</p>
+<pre>data: {
+    age: 25
+},
+methods: {
+    inc_age: function (i) {
+        this.age += i
+    }
+}
+</pre>
+<pre>&lt;div id="my-app"&gt;
+    &lt;h1&gt; My age is {{ age }}&lt;/h1&gt;
+    &lt;button v-on:click="inc_age(2)"&gt;+&lt;/button&gt;
+&lt;/div&gt;</pre>
+<p>මේ විදියට ඔයාලට කැමති event එකකට (custom event උනත්) listen කරන්න පුළුවන්.</p>
+<h4><strong>event modifier</strong></h4>
+<p>v-on directive එකෙන් event listener set කරද්දි, ඒව එක එක විදියට modify කරන්න පුළුුවන්. හිතන්නකො මේ කලින් උදාහරණයෙ button click event එකම. ඒ event එක එක පාරක් විතරක් listen කරන්න ඕනෙ නම් (ඒ කියන්නෙ පළවෙනි click එකෙන් පස්සෙ එ් listener එක වැඩ කරන්නෙ නැතිවෙන්න නම්) once කියන modifier එක පාවිච්චි කරන්න පුළුවන්. මේ විදියට.</p>
+<pre>v-on:click.once="inc_age(2)"</pre>
+<p>form එකක් submit කරන අවස්ථාවක් ගමුකො තව උදාහරණයකට. normal විදියට form එක submit කරද්දි form එකේ data ටික, post වෙලා, page එක reload වෙන එකනෙ වෙන්නෙ. හැබැයි අපි SPA එකක් වගේ හදනවනම්, (මම පළවෙනි post එකේ කිව්ව වගේ) අපි page reload කරන්නෙ නෑ. ඒ වෙනුවට අපි කරන්නෙ, form එක submit කරද්දි, AJAX request එකකින් මේ data ටික back-end එකට post කරන එක. අපි හිතමුකො ඒ post කරන එකට අදාල code එක, onSubmit කියල method එකක අපි ලිව්ව කියල. එතකොට form එක මේ වගේ තියෙයි.</p>
+<pre>&lt;div id="my-app"&gt;
+
+    &lt;form v-on:submit="onSubmit"&gt;
+        Name: &lt;input type="text" v-model="name"&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button
+    &lt;/form&gt;
+&lt;/div&gt;
+</pre>
+<blockquote><p>app.js</p></blockquote>
+<pre>const app = new Vue({
+    el: '#my-app',
+    data: {
+        name: 'John Doe'
+    },
+    methods: {
+    	onSubmit: function () {
+    	    alert(this.name);
+    	}
+    }
+});
+</pre>
+<p>මම මතෙනදි නිකංම name එක alert කරන එක විතරයි කරන්නෙ. (ඉදිරි post එකකින් බලමු, කොහොමද AJAX request handle කරන්නෙ කියල) දැන් මේ submit button එක click කරොත් name එක alert වෙනව පෙනේවි. හැබැයි ඒක OK කරාට පස්සෙ, page එක reload වෙනව ඔයාලට බලාගන්න පුළුවන් වෙයි. ඒකට හේතුව, submit button එකේ default action එක. අපි ඒක නවත්තන්න ඕනෙ. <strong>.prevent</strong> modifier එකෙන් ඒක කරන්න පුළුවන්.</p>
+<pre>v-on:submit.prevent="onSubmit"
+</pre>
+<p>මේ විදියට වෙනස් කරාම page එක reload වෙන්නෙ නෑ කියල ඔයාලට පෙනෙයි. 😀</p>
+<p>තව දෙයක් කියන්න ඕනෙ මේ එක්කම. මේ උදාහරණයෙදි ඔයාලට පේනව ඇති text field එකේ තියෙන value මම අරගත්තු විදිය. සාමාන්‍යන් JQuery වගේ යොදාගෙන text field එකේ value එක save කරගන්න නම්, ඉස්සෙල්ලම DOM එක search කරල මේ text field එක හොයා ගන්න ඕනෙ. ඊට පස්සෙ තමයි ඒකෙ value එක අරගන්නෙ. හැබැයි Vue වලින් අපිට පහසුවෙන්ම 2 way විදියට data bind කරන්න පුලුවන් නිසා, සෑහෙන්න ලේසියෙන් value එක ගන්න පුළුවන්. කරන්න තියෙන්නෙ v-model directive එක පාවිච්චි කරන්න විතරයි. එතකොට text field එකේ type කරන දේ ඒ මොහොතෙදිම name කියන data එකේ save වෙනව.</p>
+<h4><strong>key modifier</strong></h4>
+<p>මේ උදාහරණය බලන්නකො. මට ඕනෙ මේ text field එකේ type කරන එක, Enter key එක එබුවම browser console එකේ print කරන්න. (console එක ගැන පළවෙනි post එකේ කිව්ව මතක ඇති)</p>
+<pre>&lt;div id="my-app"&gt;
+    Name: &lt;input type="text" v-model="name"&gt;
+&lt;/div&gt;
+</pre>
+<p>මේ වැඩේ කරගන්න අපිට keyDown event එකට <strong>.enter </strong>කියන key modifier එක පාවිච්චි කරන්න පුළුවන්. මේ විදියට,</p>
+<pre>&lt;div id="my-app"&gt;
+    Name: &lt;input type="text" v-model="name" v-on:keyDown.enter="logMessage"&gt;
+&lt;/div&gt;
+</pre>
+<blockquote><p>app.js</p></blockquote>
+<pre>const app = new Vue({
+    el: '#my-app',
+    data: {
+    	name: 'John Doe',
+    },
+    methods: {
+    	logMessage: function () {
+    	    alert(this.name);
+    	    this.name = '';
+    	}
+    }
+});
+</pre>
+<p>මේක run කරල බැලුවම මේ වගේ console එකේ print වෙනව බලා ගන්න පුළුවන්.</p>
+<p><amp-img class="wp-image-835 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/keymodifier-300x191.png" alt="key modifier example output" width="674" height="429" srcset="/wp-content/uploads/2018/04/keymodifier-300x191.png 300w, /wp-content/uploads/2018/04/keymodifier-768x489.png 768w, /wp-content/uploads/2018/04/keymodifier-1024x651.png 1024w, /wp-content/uploads/2018/04/keymodifier.png 1226w" layout="intrinsic"></amp-img></p>
+<p>v-model භාවිතා කිරීමේ තවත් වාසියක් මෙතනදි බලාගන්න පුළුවන්. logMessage method එකේ 2වනි පේළියෙදි name=” කියල දීල තියෙනව. මේකෙන් වෙන්නෙ, <kbd>enter</kbd> key එක ඔබන හැම වතාවකදිම, input field එක clear කරන එක. මොකද, (කලින් post එකේ කිව්ව වගේ) data වලට වෙන වෙනස්වීම් දිහා Vue වලින් බලාගෙන ඉන්න නිසා, ඒ data වෙනස් වෙද්දි, ඒ data bind වෙලා තියෙන හැම තැනමත්, ඒ විදියටම වෙනස් වෙනව.</p>
+<p>තව දෙයක් තියෙනව. අපිට ඕනෙ නම් key combination එකක් (<kbd>alt</kbd>+<kbd>enter</kbd>, <kbd>shift</kbd>+<kbd>enter</kbd> වගේ) උනත් යොදන්න පුළුවන්. <kbd>Alt</kbd>+<kbd>Enter</kbd> key combination එක පාවිච්චි කරන්නම් <strong>.alt</strong> modifier එක පාවිච්චි කරන්නයි තියෙන්නෙ.</p>
+<pre>v-on:keyDown.alt.enter="logMessage"
+</pre>
+<p>මේ විදියට <strong>.shift .ctrl </strong>වගේ key උනත් භාවිතා කරන්න පුළුවන්.</p>
+<blockquote><p>v-on directive එක පාවිච්චි කරද්දි හැමතිස්සෙම v-on, v-on කියල ලියන එක කරදරයක් නම්, ඔයාලට පුළුවන් ඒ වෙනුවට <strong>@</strong> symbol එක භාවිතා කරන්නත්. මේ වගේ,</p>
+<pre>@click="some_method"
+</pre>
+</blockquote>
+<p>මේවගේ modifier වර්ග තව තියෙනව. මේවයෙ තවත් විස්තර ඔයාලට <a href="https://vuejs.org/v2/guide/events.html">VueJs.org</a> එකෙන් බලන්න පුළුවන්. මම අදට මෙතනින් නවත්තන්නම්. ඊළඟ post එකෙන් හමුවෙමු. අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවහරි තියෙනම් comment එකක් දාන්න. 😀</p>
+<p>ඊළඟ post එකට <a href="/index.php/2018/04/20/vuejs-2-05/">මෙතනින්</a> යන්න.</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/vuejs/" rel="category tag">VueJs</a>, <a href="/index.php/category/web-development/" rel="category tag">web development</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/events/" rel="tag">events</a>, <a href="/index.php/tag/vue/" rel="tag">Vue</a>, <a href="/index.php/tag/vuejs/" rel="tag">VueJs</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/04/14/vuejs-2-04/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>MEAN &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/mean/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01)</title>
+		<link>/index.php/2019/02/19/mean-stack-sample-application-1/</link>
+				<comments>/index.php/2019/02/19/mean-stack-sample-application-1/#comments</comments>
+				<pubDate>Tue, 19 Feb 2019 13:19:30 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[angular.js]]></category>
+		<category><![CDATA[mean stack]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[angular]]></category>
+		<category><![CDATA[front-end]]></category>
+		<category><![CDATA[issueTracker]]></category>
+		<category><![CDATA[MEAN]]></category>
+
+		<guid isPermaLink="false">/?p=1880</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> අපි කලින් ලිපි කිහිපයකින්ම කතා කලා මේ MEAN Stack ගැන වෙන වෙනම Examples විදියට. මේ ලිපි කිහිපයෙන් කරන්න බලාපොරොත්තු වෙන්නේ මේ වෙන වෙනම කතා කරපු Applications ටික එකතු කරලා තනි Application එකක් හදා ගන්න. මේ Application එක Issue Tacking Application එකක්. ඒ කියන්නේ Users ලට Log වෙලා Issues post කරන්න<a class="moretag" href="/index.php/2019/02/19/mean-stack-sample-application-1/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/19/mean-stack-sample-application-1/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>අපි කලින් ලිපි කිහිපයකින්ම කතා කලා මේ MEAN Stack ගැන වෙන වෙනම Examples විදියට. මේ ලිපි කිහිපයෙන් කරන්න බලාපොරොත්තු වෙන්නේ මේ වෙන වෙනම කතා කරපු Applications ටික එකතු කරලා තනි Application එකක් හදා ගන්න. මේ Application එක Issue Tacking Application එකක්. ඒ කියන්නේ Users ලට Log වෙලා Issues post කරන්න පුළුවන් Application එකක්. </p>
+
+
+
+<p>මේ Post එකෙන් කලින් post වලදි වගේ මේ MEAN Stack එක Install කරන විදිය මුල ඉදන් කියන්න යන්නේ නෑ. ඒ ගැන කලින් ලිපි වලින් අපි කතා කලා. ඒ ලිපි බැලුවේ නැත්නම් මේ Link වලින් මුලින්ම ඒ ටික බලලා ඉන්න. </p>
+
+
+
+<ul><li><a href="/index.php/category/web-development/mean-stack/">MongoDB</a></li><li><a href="/index.php/category/web-development/node-js/">Express</a></li><li><a href="/index.php/category/web-development/angular-js/">Angular</a></li><li><a href="/index.php/category/web-development/node-js/">Node</a></li></ul>
+
+
+
+<p>මේ Project එකේ අන්තිමට මොන වගේ Application එකක් හැදෙයිද කියලා Idea එකක් ගන්න මේ Images ටික බලන්න. </p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-1024x341.png" alt="" class="wp-image-1891" srcset="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-1024x341.png 1024w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-300x100.png 300w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-768x256.png 768w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67.png 1071w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>All Issues</figcaption></figure>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67.png" alt="" class="wp-image-1892" srcset="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67.png 482w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67-269x300.png 269w" sizes="(max-width: 482px) 100vw, 482px" /><figcaption>Create an Issue<br></figcaption></figure>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67.png" alt="" class="wp-image-1893" srcset="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67.png 487w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67-240x300.png 240w" sizes="(max-width: 487px) 100vw, 487px" /><figcaption>Edit an Issue</figcaption></figure>
+
+
+
+<p>හරි එහෙනම් අපි මුල ඉඳන් වැඩේ පටන් ගමු..</p>
+
+
+
+<p></p>
+
+
+
+<h3 id="c3ab"><u>Installing Node.js &amp; Angular&nbsp;CLI</u></h3>
+
+
+
+<p></p>
+
+
+
+<p>මේ Project එකේ dependencies install කරගන්න ඉදිරියේදී පාවිච්චි කරන්නේ npm package එක. ඒක නිසා මුලින්ම Nodejs Install කරගන්න ඕන. දැනට Nodejs Install කරලා නැත්නම් මේ <a href="https://nodejs.org/ ">Link</a> එකෙන් ගිහින් Download කරගන්න.  </p>
+
+
+
+<p>දැන් අපි ළඟ npm එක තියෙන නිසා අපිට පුළුවන් ලේසියෙන්ම අලුන් Angular project එකක් Initialize කරගන්න. ඒකට මේ Command එකෙන් Packages Install කරගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">$ npm install -g @angular/cli
+
+</pre>
+
+
+
+<p>මේ command එකෙන් අපේ path variable එකක් හැදෙනවා ng commands වලට Response කරන්න පුළුවන් විදියට. </p>
+
+
+
+<p></p>
+
+
+
+<h3><u>FRONT-END Design</u></h3>
+
+
+
+<p></p>
+
+
+
+<p>මේ පළවෙනි ලිපියෙන් කරන්න යන්නේ Front-End එක Design කරගන්න එක. ඒකට මුලින්ම අලුතින් Project එකක් හදා ගන්න ඕන. ඒකට අපි මුලින් Install කරපු ng command එක දැන් භාවිතා කරන්න පුළුවන්. ඒකට මේ Command එක Use කරන්න. (Command Line එකේ)</p>
+
+
+
+<pre class="wp-block-preformatted">ng new frontend
+
+</pre>
+
+
+
+<p>Project එක හදා ගන්නකොට අපෙන් අහනවා Routing Module එක දාන්න ඕනද කියලා. වැඩේ ලේසි වෙන්න ඒකට yes දෙන්න. අපි මේකට ගන්නේ CSS stylesheets. ඒකත් එතනින් Select කරගන්න. </p>
+
+
+
+<p>අදාල Module ටික install වෙලා ඉවර වුණාම font-end කියලා අලුතින් Project එකක් හැදෙයි. ඒකෙ අපේ Font-end එකට අදාල Codes ටික තියා ගන්නේ. දැන් අලුතින් හැදුනු folder එක ඇතුලට ගිහින් ng serve කරලා අලුතින් හැදුනු project එක වැඩ කරනවද කියලා test කරලා බලන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-preformatted">cd fontend<br>ng serve -o</pre>
+
+
+
+<p></p>
+
+
+
+<h3> Adding Angular&nbsp;Material </h3>
+
+
+
+<p></p>
+
+
+
+<p>Interfaces ලස්සනට Design කරගන්න පුළුවන් වෙන්න අපි මේ Project එකට භාවිතා කරනවා Angular Material CSS Library එක. ඒක මේ විදියට Project එකට Add කරගන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-preformatted">ng add @angular/material
+
+</pre>
+
+
+
+<p>මේ Package එක Install වෙනකොට ඔයාගෙන් අහයි මොන වගේ Theme එකක්ද ඕන Animation Use කරන්නද වගේ දේවල්. ඒවට yes select කරලා enter කරන්න. </p>
+
+
+
+<p></p>
+
+
+
+<h3 id="2ad4">Creating Components</h3>
+
+
+
+<p></p>
+
+
+
+<p>දැන් අපි හදන්නේ අපිට ඕන කරන Components ටික හදා ගන්න. මේකට අපි ng command එක use කරනවා. </p>
+
+
+
+<pre class="wp-block-preformatted">ng g c components/list <br>ng g c components/create<br>ng g c components/edit<br></pre>
+
+
+
+<p>මේකෙන් components කියලා folder එකක් හැදිලා ඒක ඇතුලට මේ list, create, edit කියල components 3 create වෙනවා. අපි දැන් බලමු routings ටික හදා ගන්න. </p>
+
+
+
+<p></p>
+
+
+
+<h3 id="3513">Adding Routing</h3>
+
+
+
+<p></p>
+
+
+
+<p>දැන් අපි කලාන් හදා ගත්ත RouterModule එකේ තමයි අපිට ඕන කරන routes ටික ලියා ගන්න ඕන. </p>
+
+
+
+<p><strong>src -&gt; app -&gt; app-routing.module.ts</strong> file එක open කරගෙන මේ Code එක routes කියන variable එක වෙනුවට replace කරගන්න. </p>
+
+
+
+<pre class="wp-block-preformatted"><code>const routes: Routes = [<br>  { path: 'create', component: CreateComponent },<br>  { path: 'edit/:id', component: EditComponent },<br>  { path: 'list', component: ListComponent },<br>  { path: '', redirectTo: '/list', pathMatch: 'full'}<br>];</code> </pre>
+
+
+
+<p>මේ විදියට Code එක දාගෙන උඩින්ම අදාල Components Import කරගන්නත් ඕන වෙනවා. </p>
+
+
+
+<p>මේ ටික කර ගත්තාම ඔයාගෙ AppRoutingModule එක මේ විදියට තියෙන්න ඕන.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br><em>import</em> { NgModule } <em>from</em> '@angular/core';<br><em>import</em> { Routes, RouterModule } <em>from</em> '@angular/router';<br><em>import</em> { CreateComponent } <em>from</em> './components/create/create.component'<br><em>import</em> { EditComponent } <em>from</em> './components/edit/edit.component'<br><em>import</em> { ListComponent } <em>from</em> './components/list/list.component'<br><br>const routes: Routes = [<br>  { path: 'create', component: CreateComponent },<br>  { path: 'edit/:id', component: EditComponent },<br>  { path: 'list', component: ListComponent },<br>  { path: '', redirectTo: '/list', pathMatch: 'full'}<br>];<br><br>@NgModule({<br>  imports: [RouterModule.forRoot(routes)],<br>  exports: [RouterModule]<br>})<br><em>export</em> class AppRoutingModule { }<br></pre>
+
+
+
+<p>දැන් අපි කරන්න යන්නේ හැම page එකේම Display වෙන විදියට පොඩි Menu tool එකක් දාගන්න. ඒකට මේ Code එක app.component.html file එකේ Paste කරගන්න. </p>
+
+
+
+<pre class="wp-block-preformatted"><br><code>&lt;mat-toolbar&gt;<br>  &lt;span&gt;Angular 6 - MEAN Stack Sample Application&lt;/span&gt;<br>&lt;/mat-toolbar&gt;<br>&lt;div&gt;<br>  &lt;router-outlet&gt;&lt;/router-outlet&gt;<br>&lt;/div&gt;</code> </pre>
+
+
+
+<p>අපි මේ Layout එකට &lt;mat-toolbar&gt; කියන tag එක යොදා ගන්න හින්දා මුලින්ම ඒක import කරගන්න ඕන. ඒකට මේ Import command එක app.module.ts එකේ දාන්න</p>
+
+
+
+<pre class="wp-block-preformatted"> <br><code>import { MatToolbarModule } from '@angular/material';</code> </pre>
+
+
+
+<p>ඒ වගේම ඒකෙ Import Array එකටත් මේක දාගන්න ඕන.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br><code>imports: [<br>    ...<br>    MatToolbarModule<br> ],</code> </pre>
+
+
+
+<p>අන්තිමට File එකේ Content එක මේ වගේ තියෙන්න ඕන</p>
+
+
+
+<p style="text-align:center"><strong><em>app.module.ts</em></strong></p>
+
+
+
+<pre class="wp-block-preformatted"><em>import</em> { BrowserModule } <em>from</em> '@angular/platform-browser';<br><em>import</em> { NgModule } <em>from</em> '@angular/core';<br><br><em>import</em> { AppRoutingModule } <em>from</em> './app-routing.module';<br><em>import</em> { AppComponent } <em>from</em> './app.component';<br><em>import</em> { BrowserAnimationsModule } <em>from</em> '@angular/platform-browser/animations';<br><em>import</em> { ListComponent } <em>from</em> './components/list/list.component';<br><em>import</em> { CreateComponent } <em>from</em> './components/create/create.component';<br><em>import</em> { EditComponent } <em>from</em> './components/edit/edit.component';<br><em>import</em> { MatToolbarModule } <em>from</em> '@angular/material'; <br><br>@NgModule({<br>  declarations: [<br>    AppComponent,<br>    ListComponent,<br>    CreateComponent,<br>    EditComponent<br>  ],<br>  imports: [<br>    BrowserModule,<br>    AppRoutingModule,<br>    BrowserAnimationsModule,<br>    MatToolbarModule<br>  ],<br>  providers: [],<br>  bootstrap: [AppComponent]<br>})<br><em>export</em> class AppModule { }<br><br> </pre>
+
+
+
+<p style="text-align:center"><strong><em>app.component.html</em></strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;mat-toolbar&gt;<br>  &lt;span&gt;Angular 6 - MEAN Stack Sample Application&lt;/span&gt;<br>&lt;/mat-toolbar&gt;<br>&lt;div&gt;<br>  &lt;router-outlet&gt;&lt;/router-outlet&gt;<br>&lt;/div&gt;<br><br>&lt;router-outlet&gt;&lt;/router-outlet&gt;<br><br> </pre>
+
+
+
+<p>මේක කලාම අපේ Basic Frontend part එක ඉවරයි. ඊළඟ Part එක තමයි අපේ Application එකේ BackEnd එක Design කරගන්න විදිය. ඊළඟ ලිපියෙන් ඒ ගැන කතා කරමු. මේකෙ Installation වල හරි Code වල හරි මොකක් හරි ප්‍රශ්ණයක් ආවොත් Comment එකක් දාන්න. </p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/19/mean-stack-sample-application-1/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/19/mean-stack-sample-application-1/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+		<item>
+		<title>Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</title>
+		<link>/index.php/2019/01/16/angular7/</link>
+				<comments>/index.php/2019/01/16/angular7/#comments</comments>
+				<pubDate>Wed, 16 Jan 2019 03:41:40 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[angular.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[angular]]></category>
+		<category><![CDATA[MEAN]]></category>
+		<category><![CDATA[mongo DB]]></category>
+		<category><![CDATA[nodejs]]></category>
+		<category><![CDATA[npm]]></category>
+
+		<guid isPermaLink="false">/?p=1551</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා MEAN stack වල Database system එක වන mongoDB ගැන..ඒ පාඩම් ටික කලින් මඟ හැරුන කෙනෙක් ඉන්නවනම් මෙතනින් ගිහින් බලන්න පුලුවන්..අද<a class="moretag" href="/index.php/2019/01/16/angular7/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/16/angular7/">Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා  MEAN stack  වල Database system එක  වන mongoDB  ගැන..ඒ පාඩම් ටික කලින් මඟ හැරුන කෙනෙක් ඉන්නවනම් <a href="/index.php/category/web-development/mean-stack/">මෙතනින්</a> ගිහින් බලන්න පුලුවන්..අද මම පටන් ගන්න යන්නේ ඒ පාඩම් මාලාවේ දෙවන දිගහැරුමයි..ඒ තමයි  <strong>Angular</strong>  .</p>
+
+
+
+<p>ඇත්තටම කියනවනම් Angular කියන්නේ ඉතාම කෙටි කාලෙකින් මෑත කාලීනව ගොඩක් ජනප්‍රිය වුන javascript front end framework(client side frame work) එකක්.2016  September 14  තමයි මුලින්ම Angular හදුන්වා දෙන්නේ..ඊටපස්සේ 2017 march 23 දී Angular version 4 ද, 2017 november 1 දී Angular version 5 ද, 2018  May 4 දී Angular version 6 ද හදුන්වා දෙනවා ..මං මේ post එක ලියන මේ මොහොතේ තියන latest ම version එක තමයි 2018  October  මාසයේ හදුන්වා දුන් Angular version 7..පේනවනේ නේද  මේ  frame work එක දියණු වෙලා තියන ඉක්මන😃😃😃..ඇත්තටම Angular හදුන්වා දුන්නේ google වුනාට microsoft ලාගේ typescript language එකත් මේකේ තියනවා..ඒ ගැන අපි පස්සේ හෙමීට බලමුකෝ..😀😀</p>
+
+
+
+<p>ඇත්තටම  මොකද්ද    මේ  Angular වල තියෙන විශේෂත්වය ..ඒ තමයි එක page එකක ඉදලා තවත් page එකකට යද්දි url එකට අදාලව component වෙනස් වීමක් පමණයි වෙන්නේ..මුලු page එකම refresh වීමක් වෙන්නෑ…ඔන්න ඔය නිසා අපිට පුලුවන් අපේ app එකේ efficiency එක වැඩි කර ගන්න..ඔන්න ඕක තමයි Angular frame work එකේ තියන ප්‍රධානම විශේෂත්වය..හරි එහෙනන්  Angular ගැන පොඩි හෝ idea එකක් ගන්න ඇති කියලා හිතනවා..අපි දැන් බලමු Angular කොහොමද install කරගන්නේ කියලා..</p>
+
+
+
+<p>මේ සදහා අපිට මුලින්ම nodejs සහ npm ( Node Package Manager  ) install කර ගන්න වෙනවා..සාමානයයෙන් nodejs intall කරනකොට npm auto ම install වෙනවා..පහල තියන url එකෙන් ගිහින් ඔයාගේ machine එකට අදාල nodejs version එක <a href="https://nodejs.org/en/">download</a> කරලා install කර ගන්න පුලුවන්..</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/cap4-1024x502.jpg" alt="" class="wp-image-1554" srcset="/wp-content/uploads/2019/01/cap4-1024x502.jpg 1024w, /wp-content/uploads/2019/01/cap4-300x147.jpg 300w, /wp-content/uploads/2019/01/cap4-768x377.jpg 768w, /wp-content/uploads/2019/01/cap4.jpg 1350w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ඔන්න ඔය විදියට install කර ගත්ත nodejs version එක අපිට බලන්න පුලුවන් command prompt එකේ ng -v ලෙස type කරලා..npm -v ලෙස type කරලා npm version එක බලන්න පුලුවන්.ඔන්න ඔය ටික තමයි prerequisites වෙන්නේ Angular සමග වැඩ කරද්දි.</p>
+
+
+
+<p>ඔන්න ඔය prerequisites satisfy කලාම අපිට පුලුවන් අලුත් Angular project එකක් start කරන්න.මේ සදහා ng new &lt;project_name&gt; කියන command එක පාවිච්චි කරන්න පුලුවන්..හරි මම Desktop එකේ අලුත් project එකක් හදනවා angular කියලා..ඊට අදාල command ටික මෙන්න මේ විදියට run කරන්න පුලුවන්..</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg" alt="" data-id="1566" data-link="/?attachment_id=1566" class="wp-image-1566" srcset="/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg 1024w, /wp-content/uploads/2019/01/Capture1-1-300x30.jpg 300w, /wp-content/uploads/2019/01/Capture1-1-768x76.jpg 768w, /wp-content/uploads/2019/01/Capture1-1.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+
+
+
+<p>ඊටපස්සේ මෙන්න මේ වගේ files ගොඩක් Download වෙනවා..</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/cap2-2-1024x492.jpg" alt="" data-id="1568" data-link="/?attachment_id=1568" class="wp-image-1568" srcset="/wp-content/uploads/2019/01/cap2-2-1024x492.jpg 1024w, /wp-content/uploads/2019/01/cap2-2-300x144.jpg 300w, /wp-content/uploads/2019/01/cap2-2-768x369.jpg 768w, /wp-content/uploads/2019/01/cap2-2.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/cap3-1-1024x255.jpg" alt="" class="wp-image-1569" srcset="/wp-content/uploads/2019/01/cap3-1-1024x255.jpg 1024w, /wp-content/uploads/2019/01/cap3-1-300x75.jpg 300w, /wp-content/uploads/2019/01/cap3-1-768x191.jpg 768w, /wp-content/uploads/2019/01/cap3-1.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>හරි එහෙනම් අපි දැන් අලුත් project එකක් start කලා angular කියලා..අපි දැන් බලමු හදා ගත්ත project එක run කරන්නේ කොහොමද කියලා..ගොඩක් frame work වල වගේම Angular වලත් තියනවා එයාටම කියලා server එකක්..project එක run කරනවානම් මුලින්ම අපි ng serve හරි npm start හරි ගහලා server එක start කරගෙන ඉන්න ඕනි.ඊට පස්සේ ng -open හරි ng -o හරි ගැහුවහම automatically ඔයාලගේ browser එකේ localhost:4200 කියන port එකේ app එක run වෙනවා..ඔන්න ඔය විදියට app එක run කලාම මෙන්න මේ වගේ view එකක් අපිට බලා ගන්න පුලුවන්.</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/a-1024x462.jpg" alt="" data-id="1573" data-link="/?attachment_id=1573" class="wp-image-1573" srcset="/wp-content/uploads/2019/01/a-1024x462.jpg 1024w, /wp-content/uploads/2019/01/a-300x135.jpg 300w, /wp-content/uploads/2019/01/a-768x347.jpg 768w, /wp-content/uploads/2019/01/a.jpg 1351w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+
+
+
+<p>හරි අදට ඇති නේද😃..පාඩම නම් ටිකක් දිග වුනා තමයි , නමුත් අපි දැන ගත්තා මොකද්ද Angular කියන්නේ, ඇයි Angular විශේෂ වෙනේ ,කොහාමද Angular project එකක් හදා ගන්නේ හා කොහොමද හදා ගත්ත Angular project එක run කරන්නේ කියන එක ගැන..මීලඟ පාඩමේදී අපි බලමු Angular වල folder structure එක සහ index page එක කොහොමද render වුනේ කියන එක ගැන…අදට පාඩම හමාර කරන්නයි යන්නේ..post එක ගැන ඔයාලගේ අදහස comment එකක් දාන්නත් අමතක කරන්න එපා..මීලඟ පාඩමෙන් හමුවනතුරු ඔබට සුභ දවසක්!😊</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/16/angular7/">Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/16/angular7/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+	</channel>
+</rss>

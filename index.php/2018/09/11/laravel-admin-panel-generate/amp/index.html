@@ -1,0 +1,538 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="laravel Admin Panel Generation without a single line of code. Quick Admin Panel Admin panel Generation Sinhala Tutorial. Easy Install without coding." />
+<meta name="twitter:title" content="laravel වලින් Admin Panel එකක් Generate කරගමු. - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/09/laravel-backpack.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Laravel Admin Panel (No Coding)" />
+<meta property="og:description" content="laravel Admin Panel Generation without a single line of code. Quick Admin Panel Admin panel Generation Sinhala Tutorial. Easy Install without coding." />
+<meta property="og:url" content="/index.php/2018/09/11/laravel-admin-panel-generate/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="crud" />
+<meta property="article:tag" content="laravel" />
+<meta property="article:tag" content="sinhala" />
+<meta property="article:section" content="web development" />
+<meta property="article:published_time" content="2018-09-10T19:45:38+00:00" />
+<meta property="article:modified_time" content="2018-09-10T19:46:32+00:00" />
+<meta property="og:updated_time" content="2018-09-10T19:46:32+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/09/laravel-backpack-1024x524.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/09/laravel-backpack-1024x524.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="524" />
+	<title>laravel වලින් Admin Panel එකක් Generate කරගමු. - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/09/11/laravel-admin-panel-generate/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/09\/11\/laravel-admin-panel-generate\/","headline":"laravel වලින් Admin Panel එකක් Generate කරගමු.","datePublished":"2018-09-10T19:45:38+00:00","dateModified":"2018-09-10T19:46:32+00:00","author":{"@type":"Person","name":"Danushka Herath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/09\/laravel-backpack.png","width":2200,"height":1125},"description":"laravel Admin Panel Generation without a single line of code. Quick Admin Panel Admin panel Generation Sinhala Tutorial. Easy Install without coding."}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-f6bf23d{text-decoration:underline}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-bfe3a2d{color:#f60;text-decoration:underline}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-abd0e16{padding-left:30px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-30b1365{color:#f90}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">laravel වලින් Admin Panel එකක් Generate කරගමු.</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/81f32af4149adb5de35857259b875c31?s=24&#038;d=mm&#038;r=g" alt="Danushka Herath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Danushka Herath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-09-11T01:15:38+00:00">
+		8 months ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="495" height="317" src="/wp-content/uploads/2018/09/0_jZ_fQqGnDIbIF6t9.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/09/0_jZ_fQqGnDIbIF6t9.png 495w, /wp-content/uploads/2018/09/0_jZ_fQqGnDIbIF6t9-300x192.png 300w" layout="intrinsic"><noscript><img width="495" height="317" src="/wp-content/uploads/2018/09/0_jZ_fQqGnDIbIF6t9.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 495px) 100vw, 495px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>මේ Tutorial එකේදි කරන්න හදන්නේ කිසිම Code එකක් ලියන්නේ නැතුව Laravel Admin Panel එකක් Generate කරගන්න විදිය. මේ ක්‍රමයේදි කරන්නේ අපිට අවශ්‍ය කරන CRUD Operation Generate කරගන්න පුළුවන් විදියේ System එකක් හරහා GUI විදියට Database Files, Models, Views, Controllers හදා ගන්නවා.</p>
+<p>හැබැයි මේකෙන් Admin Panel එක Generate වුණත් ඒක Edit කරගන්න අපිට Basic Knowledge එකක් අවශ්‍ය වෙනවා. ඒක නිසා මුල් Tutorials බැලුවේ නැත්නම් බලන්න. විශේෂයෙන්ම මේ Tutorial එකේ තියෙනවා Basic CRUD Operations කරන විදිය. <a href="/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> මේ Tutorial එක බැලුවේ නැත්නම් බලන්න.</p>
+<p><amp-img src="/wp-content/uploads/2018/09/laravel-backpack-300x153.png" alt="" width="671" height="342" class="wp-image-1232 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/09/laravel-backpack-300x153.png 300w, /wp-content/uploads/2018/09/laravel-backpack-768x393.png 768w, /wp-content/uploads/2018/09/laravel-backpack-1024x524.png 1024w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/09/laravel-backpack-300x153.png" alt="" width="671" height="342" class="wp-image-1232 aligncenter" sizes="(max-width: 671px) 100vw, 671px"></noscript></amp-img></p>
+<h2><span class="amp-wp-f6bf23d"><strong><span class="amp-wp-bfe3a2d">පළමු පියවර</span></strong></span></h2>
+<p>Laravel Admin Panel Generate කරගන්න පුළුවන් ගොඩක් Online Applications තියෙනවා. ඒවායින් ජනප්‍රියම කිහිපයක් පහළින් දාන්නම්. ඒ ටික Try කරලා බලන්න. මේ Tutorial එක කරන්න බලාපොරොත්තු වෙන්නේ මේවායින් එකක් ගැන විතරයි. ඒක හරියට කර ගත්තහම අනිත් ටිකත් Try කරලා බලන්න පුළුවන් අවුලක් නැතුව.</p>
+<ol><li><a href="https://quickadminpanel.com/" target="_blank">QuickAdminPanel</a></li>
+<li><a href="https://the-control-group.github.io/voyager/" target="_blank">Voyager</a></li>
+<li><a href="http://laraadmin.com/" target="_blank">laraAdmin</a></li>
+</ol><p>මේ 3 තමයි දැනට ගොඩක් ජනප්‍රිය Visual Generators විදියට තියෙන්නේ. මේ Tutorial එක ඉස්සරහට කරන්න බලාපොරොත්තු වෙන්නේ මුලින්ම තියෙන QuickAdminPanel එකත් එක්ක.</p>
+<p>මුලින්ම  <a href="http://quickadminpanel.com/">http://quickadminpanel.com</a> එකට ගිහින් අලුත් Account එකක් හදා ගන්න. මේ Site එකේ Free Version එකක් වගේම Paid Version එකකුත් තියෙනවා. Free Version එකේ හදන්න පුළුවන් එක Admin Panel එකයි CRUD Model 5ක් විතරයි. ඊට වඩා ඕන නම් Purchase කරන්න වෙනවා.</p>
+<h2><span class="amp-wp-f6bf23d"><strong><span class="amp-wp-bfe3a2d">දෙවන පියවර</span></strong></span></h2>
+<p>මුලින් කිව්ව විදියට අලුතින් Account එකක් හදාගෙන Log වුණාම මේ විදියේ Interface එකක් බලා ගන්න පුළුවන්. මේකෙන් <strong>new adminpanel </strong>කියන Button එක උඩ Click කරන්න. එතනින් අපිට පුළුවන් අපේ අලුත් Adminpanel එකට අදාල Project එක Create කරගන්න. ඒ වගේම මේකෙ තියෙන වාසිය තමයි අපිට ආපහු Edit කරන්න ඕන වුණොත් හදපු Source Code එක මේ Site එකේ Save වෙලා තියෙනවා. ඉතින් පස්සේ දවසක වෙනස් කරන්න ඕන වුණොත් Changes ලේසියෙන්ම කරගන්න පුළුවන්.</p>
+<p><amp-img src="/wp-content/uploads/2018/09/Capture-4-300x131.png" alt="" width="574" height="251" class="wp-image-1237 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/09/Capture-4-300x131.png 300w, /wp-content/uploads/2018/09/Capture-4-768x336.png 768w, /wp-content/uploads/2018/09/Capture-4-1024x448.png 1024w, /wp-content/uploads/2018/09/Capture-4.png 1308w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/09/Capture-4-300x131.png" alt="" width="574" height="251" class="wp-image-1237 aligncenter" sizes="(max-width: 574px) 100vw, 574px"></noscript></amp-img></p>
+<p>මේ Step එකේන පස්සේ අපිට Fill කරන්න පොඩි Form එකක් එනවා. ඒකෙ තියෙන්නේ අපි හදන්න බලාපොරොත්තු වෙන Application එක ගැන Basic විස්තරයක්. ඒක Fill කරනකොට බලන්න ඕන විශේෂම දේ තමයි <strong>Laravel Version </strong>එක. මොකද ඔයාගෙ ළඟ තියෙන Version එකත් එක්ක ගැලපෙන version එකක් මෙතනින් තෝර ගන්න ඕන. ඉතිරි Fields ටික කැමති විදියට Fill කරගන්න.</p>
+<h2><span class="amp-wp-f6bf23d"><strong><span class="amp-wp-bfe3a2d">තෙවන පියවර</span></strong></span></h2>
+<p><amp-img src="/wp-content/uploads/2018/09/Capture-5-300x136.png" alt="" width="616" height="279" class="wp-image-1238 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/09/Capture-5-300x136.png 300w, /wp-content/uploads/2018/09/Capture-5-768x348.png 768w, /wp-content/uploads/2018/09/Capture-5-1024x464.png 1024w, /wp-content/uploads/2018/09/Capture-5.png 1366w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/09/Capture-5-300x136.png" alt="" width="616" height="279" class="wp-image-1238 aligncenter" sizes="(max-width: 616px) 100vw, 616px"></noscript></amp-img></p>
+<p>මුලින්ම මේ වගේ Interface එකක් එනවා. දැන් අපිට තියෙන්නේ අපිට ඕන කරන Models ටිකයි ඒවාට අවශ්‍ය කරන Files ටික Generate කරගන්න. ඒක කරන්නේ මෙහෙමයි.</p>
+<p>මුලින්ම Left Navigation Menu එකේ තියෙන <strong>Menu Button </strong>එක Click කරන්න. එතනින් ඔයාලට දැනට තියෙන Menu Items පෙන්වනවා. දැන් කරන්න තියෙන්නේ අලුතින් CRUD Menu Item එකක් හදා ගන්න. ඒකට <strong>Create CRUD Menu item </strong>කියන එක උඩ Click කරන්න. දැන් ඔයාලට මේ වගේ Interface එකක් බලා ගන්න පුළුවන්.</p>
+<p><amp-img src="/wp-content/uploads/2018/09/Capture-6-300x132.png" alt="" width="652" height="287" class="wp-image-1239 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/09/Capture-6-300x132.png 300w, /wp-content/uploads/2018/09/Capture-6-768x339.png 768w, /wp-content/uploads/2018/09/Capture-6-1024x452.png 1024w, /wp-content/uploads/2018/09/Capture-6.png 1351w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/09/Capture-6-300x132.png" alt="" width="652" height="287" class="wp-image-1239 aligncenter" sizes="(max-width: 652px) 100vw, 652px"></noscript></amp-img></p>
+<p>මෙතනින් ඔයාලගෙ CRUD එකට අදාල Details ටික දෙන්න ඕන. උදාහරණයක් විදියට හිතමු අපි Class room Management System එකක් හදනවා කියලා. එහෙනම් මේ විදියට මුලින්ම Student Model එකක් හදා ගමු.</p>
+<p>මුලින්ම Title, Visual Title වලට student කියලා දාගන්න. ඊට පස්සේ Icon එකට ගැලපෙන එකක් තෝර ගන්න. දැන් තියෙන්නේ අපිට Database Table එකේ තියෙන්න ඕන කරන Fields ටික Generate කර ගන්න. ඒකට පහළ රතු පාටින් තියෙන Add field click කරන්න.</p>
+<p>එතන සාමාන්‍යයෙන් table එකක් හදා ගන්න අවශ්‍ය කරන ප්‍රශ්ණ ටිකක් අහනවා. ඒ ටික Fill කරලා දාලා Ok කරන්න. මේ පහළින් තියෙන්නේ student_id එක Save කරගන්න හදපු Data ටික.</p>
+<p><amp-img src="/wp-content/uploads/2018/09/Capture-7-300x163.png" alt="" width="576" height="313" class="wp-image-1240 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/09/Capture-7-300x163.png 300w, /wp-content/uploads/2018/09/Capture-7-768x418.png 768w, /wp-content/uploads/2018/09/Capture-7.png 898w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/09/Capture-7-300x163.png" alt="" width="576" height="313" class="wp-image-1240 aligncenter" sizes="(max-width: 576px) 100vw, 576px"></noscript></amp-img></p>
+<p>මේ විදියට අපිට අවශ්‍ය Table එකේ එහෙම නැත්නම් Model එකේ තියෙන්න ඕන Fields ටික Specify කරලා කියන්න පුළුවන්. එකින් එක Fields මේ විදියට Add කරගන්න</p>
+<p><amp-img src="/wp-content/uploads/2018/09/Capture-8-300x155.png" alt="" width="615" height="318" class="wp-image-1241 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/09/Capture-8-300x155.png 300w, /wp-content/uploads/2018/09/Capture-8-768x397.png 768w, /wp-content/uploads/2018/09/Capture-8-1024x529.png 1024w, /wp-content/uploads/2018/09/Capture-8.png 1104w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/09/Capture-8-300x155.png" alt="" width="615" height="318" class="wp-image-1241 aligncenter" sizes="(max-width: 615px) 100vw, 615px"></noscript></amp-img></p>
+<p>අන්තිමට අපිට අවශ්‍ය Data දාගෙන මේ වගේ Table එකක් හදා ගන්න පුළුවන්. ඒ වගේම ඔයාලට මේ Fields තියෙන Table එක යටින් Permissions කියලා කොටසක් පේනවා ඇති. ඒකෙන් කියන්නේ මේ Table එකේ Data වලට Access කරන්න, Modification කරන්න Permission තියෙන්නේ කාටද කියලා Select කරන්න. ඒ කියන්නේ අපේ System එකේ ඉන්න User Roles වලට අපිට වෙන වෙනම Permission Assign කරන්න පුළුවන් මෙතනදි. දැනට Default role 2ක් තියෙනවා පේනවා ඇති.</p>
+<p><amp-img src="/wp-content/uploads/2018/09/Capture-9-300x90.png" alt="" width="674" height="202" class="wp-image-1242 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/09/Capture-9-300x90.png 300w, /wp-content/uploads/2018/09/Capture-9-1024x309.png 1024w, /wp-content/uploads/2018/09/Capture-9.png 1108w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/09/Capture-9-300x90.png" alt="" width="674" height="202" class="wp-image-1242 aligncenter" sizes="(max-width: 674px) 100vw, 674px"></noscript></amp-img></p>
+<p>අලුතින් Roles ඕන නම් ඒවා Change කරගන්න පුළුවන් Left Navigation Bar එකේ තියෙන User Management කියන Menu Item එකේ තියෙන Roles කියන Sub Menu එකට ගිහින්.</p>
+<p>හරි මේ වැඩේ මේ විදියට හදා ගන්න තමන්ට ඕන විදියට Customize කරලා. අන්තිමට දැන් අපි මේ හදා ගත්තු Files ටික අපේ Project එකට දාගන්නේ කොහොමද බලමු.</p>
+<h2><span class="amp-wp-f6bf23d"><strong><span class="amp-wp-bfe3a2d">සිව්වන පියවර</span></strong></span></h2>
+<p>Customize කරගෙන ඉවර වුණාම දකුණු පැත්තේ උඩ තියෙන තියෙන Download Admin Panel කියන Button එක Click කරන්න.</p>
+<p><amp-img src="/wp-content/uploads/2018/09/Capture-10-300x65.png" alt="" width="581" height="126" class="wp-image-1243 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/09/Capture-10-300x65.png 300w, /wp-content/uploads/2018/09/Capture-10-768x166.png 768w, /wp-content/uploads/2018/09/Capture-10-1024x222.png 1024w, /wp-content/uploads/2018/09/Capture-10.png 1368w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/09/Capture-10-300x65.png" alt="" width="581" height="126" class="wp-image-1243 aligncenter" sizes="(max-width: 581px) 100vw, 581px"></noscript></amp-img></p>
+<p>දැන් Download වුණ Files ටික අලුත් laravel project එකකට Paste කරගන්න. ඊට පස්සේ කරන්න ඕන මූලික වැඩ කිහිපයක් තියෙනවා.</p>
+<p class="amp-wp-abd0e16"><span class="amp-wp-30b1365">.env file එකේ තියෙන Database Connection Settings හදා ගන්න.</span></p>
+<p class="amp-wp-abd0e16"><span class="amp-wp-30b1365">command prompt එකෙන් අලුතින් හැදුව project එක ඇතුලට ගිහින් Composer Install එකක් run කරන්න</span></p>
+<p class="amp-wp-abd0e16"><span class="amp-wp-30b1365">php artisan migrate –seed මේ Command එකත් run කරවන්න.</span></p>
+<p class="amp-wp-abd0e16"><span class="amp-wp-30b1365">ඊට පස්සේ <i>php artisan key:generate </i></span><span class="amp-wp-30b1365">මේ command එක run කරවන්න.</span></p>
+<p>හරි දැන් අපි අලුත් System එක Install කරගෙන ඉවරයි. දැන් Artisan Server එක on කරලා Site එකට ගියාම Login panel එකක් එනවා. ඒකෙ username: <strong>admin</strong>, password:<strong>password </strong>ගහලා Log වෙන්න පුළුවන්. දැන් බලන්න ඔයා Generate කරපු Model File එකට අදාල හැම CRUD operation එකක්ම කරන්න පුළුවන් විදියේ Interface එකක් හැදිලා තියෙයි.</p>
+<p>මේ වගේ System එකක් Customize කරන විදිය ගැන ඉස්සරහදි කතා කරමු. දැනට Installation වලදි එහෙම Errors තිබුණොත් Comment එකක් දාන්න.</p>
+<p> </p>
+<p> </p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/web-development/laravel/" rel="category tag">Laravel</a>, <a href="/index.php/category/programming/" rel="category tag">Programming</a>, <a href="/index.php/category/web-development/" rel="category tag">web development</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/crud/" rel="tag">crud</a>, <a href="/index.php/tag/laravel/" rel="tag">laravel</a>, <a href="/index.php/tag/sinhala/" rel="tag">sinhala</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/09/11/laravel-admin-panel-generate/#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>network &#8211; The SIGMA</title>
+	<atom:link href="/index.php/category/network/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Network &#8211; 4 (Subnetting and calculations)</title>
+		<link>/index.php/2018/04/19/network-4-subnetting-and-calculations/</link>
+				<comments>/index.php/2018/04/19/network-4-subnetting-and-calculations/#respond</comments>
+				<pubDate>Thu, 19 Apr 2018 14:10:42 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[network]]></category>
+		<category><![CDATA[sinhala]]></category>
+		<category><![CDATA[subnet]]></category>
+		<category><![CDATA[subnetting]]></category>
+
+		<guid isPermaLink="false">/?p=921</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> Subnetting අපි කලින් ලිපියකින් කතා කරා Subnet එකක් කියන්නේ මොකද්ද කියලා. ඒක කියෙව්වේ නැත්නම් මෙතනින් කියවන්න. මොකද නැත්නම් මේ ලිපියේ තියෙන දේවල් තේරෙන එකක් නෑ. අද ලිපියෙන් මූලිකව අවධානය යොමු කරන්න බලාපොරොත්තු වෙන්නේ Network එකක් හදන විදිය ප්‍රායෝගික උදාහරණ එක්ක ගණනය කිරීම් කරගන්නේ කොහොමද කියලා. මේ වැඩේ කරන්න නම් ඔයාට<a class="moretag" href="/index.php/2018/04/19/network-4-subnetting-and-calculations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/19/network-4-subnetting-and-calculations/">Network &#8211; 4 (Subnetting and calculations)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><h2 style="text-align: center;"><strong>Subnetting</strong></h2>
+<p>අපි කලින් ලිපියකින් කතා කරා Subnet එකක් කියන්නේ මොකද්ද කියලා. ඒක කියෙව්වේ නැත්නම් <a href="/index.php/2018/04/07/ip-addressing/">මෙතනින්</a> කියවන්න. මොකද නැත්නම් මේ ලිපියේ තියෙන දේවල් තේරෙන එකක් නෑ.</p>
+<p>අද ලිපියෙන් මූලිකව අවධානය යොමු කරන්න බලාපොරොත්තු වෙන්නේ Network එකක් හදන විදිය ප්‍රායෝගික උදාහරණ එක්ක ගණනය කිරීම් කරගන්නේ කොහොමද කියලා. මේ වැඩේ කරන්න නම් ඔයාට දැනටමත් මේ මාතෘකා ගැන අදහසක් තියෙන්න ඕන.</p>
+<blockquote><p><strong>IP Address, IP Classes, Subnet, Host, Network id</strong></p></blockquote>
+<p>කලින් ලිපියේ ඒ ගැන සම්පූර්ණ විස්තරයක් තියෙනවා. Sure නෑ වගේ නම් ආපහු කියවන්න.</p>
+<p>කලින් කතා කරා වගේම Subnet එකකින් කරන්නේ Network එකක් ඇතුලෙ තවත් උපජාලයක් හදන එක. ඒ විදියට උපජාලයක් හදද්දී අපි මූලිකවම බලන කරුණු කිහිපයක් තියෙනවා.</p>
+<p style="padding-left: 30px;">මුලින්ම අපි බලන්න ඕන අපිට හම්බෙලා තියෙන IP එකට Host කීයක් දාන්න පුළුවන්ද කියලා. ඒක බලන්නේ IP Class එක මොකද්ද කියලා හොයාගෙන. ඒක බලන විදිය අපි කලින් කතා කරා.</p>
+<p style="padding-left: 30px;">ඊළඟට අපි බලන්නේ අපිට Connect කරගන්න Machine කීයක් තියෙනවද කියලා. ඒ Machine ටික represent කරන්න Bit කීයක් ඕන වෙයිද කියලා බලන්න ඕන. ඒ Bit ගාන අපි වෙන්කරලා ඉතිරි ටික Network ID වලට භාවිතා කරන එක තමයි සාමාන්‍යයෙන් වෙන්නේ.</p>
+<p><img class=" wp-image-925 aligncenter" src="/wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-300x113.png" alt="" width="518" height="195" srcset="/wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-300x113.png 300w, /wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-768x289.png 768w, /wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-1024x386.png 1024w, /wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL.png 1232w" sizes="(max-width: 518px) 100vw, 518px" /></p>
+<p>මේ කියපු දේ තේරුම් ගන්න ටිකක් අමාරුයිනෙ. ඒක හින්දා අපි පොඩි උදාහරණයක් එක්ක ඒ දේවල් පැහැදිලි කරගනිමු.</p>
+<p style="padding-left: 30px;">අපිට හිතමු පාසලක් අලුතින්ම Network කරගන්න ඕන වෙනවා කියලා. අපිට හම්බෙනවා ISP කෙනෙකුගෙන් 172.68.0.0 කියන IP එක. මේ IP Address එක භාවිතා කරලා අපිට සිද්ධ වෙනවා පාසල උපජාල 3කට වෙන් කරන්න. මේ උපජාල 3 තමයි <strong>පරිගණක විද්‍යාගාරය(120), විද්‍යා අංශය(58) සහ ප්‍රාථමික(38) අංශය</strong> කියන උපජාල තුන. වරහන් ඇතුලේ සඳහන් වෙන්නේ මේ එක් එක් ජාලයට තියෙන පරිගණක ප්‍රමාණය.</p>
+<p style="padding-left: 60px;">මුලින්ම බලමු අපිට ලැබිලා තියෙන IP එක. ඒක බැලුවාම පේන දෙයක් තමයි ඒක අයිති වෙන්නේ Class B එකට. දැන් අදහසක් එන්න ඕන මේ IP Address එකේ Bit 16ක් යනවා Network Address එකට. ඉතිරි Bit 16න් තමයි අපිට Subnet වලටයි Hosts වලටයි යොදා ගන්න තියෙන්නේ.</p>
+<p style="padding-left: 60px;">අපිට වැඩිම Hosts ගානක් අවශ්‍ය  වෙන්නේ පරිගණක විද්‍යාගාරයට. ඒකට අපි මුලින්ම හදන්න බලමු. ඊට වඩා පොඩි Network වලට කොහොමත් යොදා ගන්න පුළුවන් එතකොට. අපිට අවශ්‍ය වෙන්නේ පරිගණක 120ක් එකට network කරගන්නනේ Broadcast Address එකයි Network Address එකයි එකතු වුණාම 122ක් වෙනවා. එතකොට අපිට අවශ්‍ය වෙන්නේ Bit 7ක් විතරයි. Bit 7කින් අපිට පුළුවන් 128ක් නිරූපණය කරගන්න.</p>
+<p style="padding-left: 60px;">දැන් අපිට භාවිතා වෙලා තියෙන්නේ Bit 16+7 = 23 ක් විතරයි. තව Bit 9ක් තියෙනවා. මේ Bit 9 අපිට පුළුවන් Subnet වෙන් කරගන්න යොදා ගන්න. මේ උදාහරණ ටික බලන්න.</p>
+<p style="padding-left: 90px;"><strong>Network 1 : 172.68.0.1 &#8211; 172.68.0.122</strong></p>
+<p style="padding-left: 90px;"><strong>Network 2 : 172.68.1.1 &#8211; 172.68.1.122</strong></p>
+<p style="padding-left: 90px;"><strong>Network 3 : 172.68.2.1 &#8211; 172.68.2.122</strong></p>
+<p>&nbsp;</p>
+<p><strong>මේ විදියට අපිට පුළුවන් ප්‍රායෝගිකයව Network එකක් හදා ගන්න විදිය ගැන අදහසක් ගන්න. Calculations තේරුණේ නැත්නම් මේ Post එකට Comment එකක් දාන්න.</strong></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/19/network-4-subnetting-and-calculations/">Network &#8211; 4 (Subnetting and calculations)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/19/network-4-subnetting-and-calculations/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>share mouse keyboard with multiple computers</title>
+		<link>/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/</link>
+				<comments>/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/#respond</comments>
+				<pubDate>Sun, 08 Apr 2018 21:16:40 +0000</pubDate>
+		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
+				<category><![CDATA[Entertainment]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[mouse keyboard]]></category>
+		<category><![CDATA[mousewithoutboarders]]></category>
+		<category><![CDATA[share]]></category>
+		<category><![CDATA[synergy]]></category>
+
+		<guid isPermaLink="false">/?p=712</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> ‍මේ කියන්න යන්නෙ lap එකේ වැඩ කරද්දි (විශේෂයෙන් ගෙදරදි) මට නිතරම උදව්වෙන පොඩි software කෑල්ලක් ගැන.(කෑල්ලක් කිව්වට, කෑලි 2 ක් තියෙනව ඇත්තටම 😀 ) Desktop එකයි lap එකයි දෙකම On කරගෙන වැඩ කරද්දි මට තිබ්බ ප්‍රශ්නයක් තමයි හැමතිස්සෙම mouse එකෙන් mouse එකට මාරු වෙන්න වෙන එක.(desktop එකෙන් lap එකට, lap<a class="moretag" href="/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/">share mouse keyboard with multiple computers</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><p>‍මේ කියන්න යන්නෙ lap එකේ වැඩ කරද්දි (විශේෂයෙන් ගෙදරදි) මට නිතරම උදව්වෙන පොඩි software කෑල්ලක් ගැන.(කෑල්ලක් කිව්වට, කෑලි 2 ක් තියෙනව ඇත්තටම 😀 ) Desktop එකයි lap එකයි දෙකම On කරගෙන වැඩ කරද්දි මට තිබ්බ ප්‍රශ්නයක් තමයි හැමතිස්සෙම mouse එකෙන් mouse එකට මාරු වෙන්න වෙන එක.(desktop එකෙන් lap එකට, lap එකෙන් desktop එකට) මේකට විසදුමක් නැද්ද කියල හොයද්දි මට හම්බ උනා <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35460">මේක</a>.</p>
+<p>Mouse without Boarders කියල පොඩි software එකක්. මේක Microsoft ලගෙ එකක්. ඒ උනාට සම්පූර්ණයෙන්ම Free. මේක අපිට  mouse/keyboard share කරන්න ඕනෙ computers දෙකේම (දෙකක් විතරක් නෙවෙයි 4ක් වෙනකන් පුළුවන්) install කරන්න ඕනෙ. ඊළඟට පළවෙනි computer එකෙන් දෙන key එක දෙවනි computer එකේ enter කරාම හරි. දැන් මේ computer 2, එකම network එකකට connect  උන ගමන් (router එකකට වගේ), එක computer එකක තියෙන mouse/keyboard වලිින් අනිත් computer එකත් control කරන්න පුළුවන්. ඒ විතරක් නෙවෙයි file උනත් drag &amp; drop කරන්න පුළුවන්. clipboard එක උනත් share වෙනව. ඒත් ඉතින් මේක වැඩ කරන්නෙ windows වල විතරයි.</p>
+<p>Linux/Windows අතරෙ mouse එක share කරන්න ඉතින් ඒකෙන් බෑ. මම සමහර වෙලාවට linux වලිනුත් වැඩ කරන නිසා, දෙකටම හරියන එකක් හොයද්දි  හම්බ උනා synergy කියල software එකක්.</p>
+<p><img class="size-medium wp-image-720 aligncenter" src="/wp-content/uploads/2018/04/Synergy-Logo-Large-300x94.png" alt="synergy logo" width="300" height="94" srcset="/wp-content/uploads/2018/04/Synergy-Logo-Large-300x94.png 300w, /wp-content/uploads/2018/04/Synergy-Logo-Large-768x240.png 768w, /wp-content/uploads/2018/04/Synergy-Logo-Large.png 1000w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>මේකෙන් පුළුවන් Linux/windows/mac ඕක එකක් එක්ක connect කරන්න. හැබැයි ඉතිං මේක free එකක් නෙවෙයි.(Linux වලට නම් free) එ්ත් ඉතිං free එකක් torrent එකකින් හොයාගන්න බැරිවෙන්නෙ නෑ 😐 . මේකත් ඉතිං අර කලින් එක වගේ computer 2කේම install කරන්න ඕනෙ. හැබැයි මේකෙ version කීපයක්ම තියෙන නිසා computer 2කේම එකම version එකක් තියෙන්න ඕන නැත්තම් connect වෙන්නෙ නෑ.</p>
+<p>mouse with boarders වගේ නෙවෙයි මේකෙදි එක computer එකක් server එකක් විදියට set කරල, ඉතිරි එ්ව client විදියට හදන්න ඕනෙ. එතකොට අර server computer එකේ mouse/keyboard වලින් client ලව control කරන්න පුළුවන්. mouse with boarders එක එහෙම නෑ. ඕන එකකින් ඕන එකක් control කරන්න පුළුවන්. ඒ වගේම synergy වලින් file share කරන්නත් බෑ.</p>
+<p>අන්තිමට කියන්න තියෙන්නෙ මෙච්චරයි. මේ වගේ software තියෙනකම් අපිට දියවැඩියාව හැදෙන එක නවත්තන්න බෑ. ඇයි ඉතිං ඒකටවත් මහන්සි වෙන්න කැමති නෑ නෙ. 😀 😀</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/">share mouse keyboard with multiple computers</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>OSI(Open System Interconnect)Layers</title>
+		<link>/index.php/2018/04/08/osiopen-system-interconnectlayers/</link>
+				<comments>/index.php/2018/04/08/osiopen-system-interconnectlayers/#respond</comments>
+				<pubDate>Sat, 07 Apr 2018 20:53:35 +0000</pubDate>
+		<dc:creator><![CDATA[Sandun Prasanganath]]></dc:creator>
+				<category><![CDATA[network]]></category>
+
+		<guid isPermaLink="false">/?p=610</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ!,Networking යටතේ ලියවෙන මේ මගේ 3 වන ලිපිය​​,ඉතින් මගේ කලින් ලිපි කියවලා Computer Networking ගැන පොඩි හරි දැනුමක් ගන්න ඇති කියලා මම හිතනවා. ඉතින් මේ ලිපියෙන් මම ප්‍රධාන වශයෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Network Layers එහෙම නැත්තම් OSI(Open System Interconnect)Layers ගැන​. &#160; මම මුලින්ම අහන්නම්කො මොකක්ද මේ OSI<a class="moretag" href="/index.php/2018/04/08/osiopen-system-interconnectlayers/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/08/osiopen-system-interconnectlayers/">OSI(Open System Interconnect)Layers</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන් යාලුවනේ!,<strong>Networking</strong> යටතේ ලියවෙන මේ මගේ 3 වන ලිපිය​​,ඉතින් මගේ කලින් ලිපි <a href="/index.php/2018/04/07/ip-addressing/">කියවලා</a> Computer Networking ගැන පොඩි හරි දැනුමක් ගන්න ඇති කියලා මම හිතනවා. ඉතින් මේ ලිපියෙන් මම ප්‍රධාන වශයෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ <strong>Network Layers</strong> එහෙම නැත්තම් <strong>OSI(Open System Interconnect)Layers</strong> ගැන​.</p>
+<p>&nbsp;</p>
+<p>මම මුලින්ම අහන්නම්කො මොකක්ද මේ <strong>OSI Layers</strong> කියලා කියන්නේ කියලා,<strong>තොරතුරු හුවමාරු පද්ධතියක එම තොරතුරු ගලා යන ආකාරය එක් එක් කොටස් වලට බෙදා දැක්වීම තමයි මේ OSI Layers වලින් සිදුවෙන්නේ</strong>.</p>
+<p>&nbsp;</p>
+<p><img class="size-full wp-image-616 aligncenter" src="/wp-content/uploads/2018/04/images-5.png" alt="" width="283" height="178" /></p>
+<p>&nbsp;</p>
+<p>මම තවත් පැහැදිලි කරන්නම්කෝ,හිතන්න Network එකක තියෙන Computer එකකින් තවත් Computer එකකට Data යවනවා කියලා.එතකොට ඒ Data යවන Computer එකේ සිට Data ලබාගෙන එම Data User ට Moniter කරන තෙක් සිදුවන ක්‍රියාවලිය විවිධ කොටස් වලට බෙදා දැක්වීම තමයි මේ <strong>OSI Layers</strong> කියලා කියන්නේ.</p>
+<p>ඉතින් මම හිතනවා මේ <strong>OSI Layers</strong> ගැන ඔයලට යම් අවබෝධයක් ලැබෙන්න ඇති කියලා.</p>
+<p>&nbsp;</p>
+<p><strong>ඉතින් මොනවද මේ OSI Layers වල තියෙන වාසි;</strong></p>
+<p>&nbsp;</p>
+<ol>
+<li>එක System එකකින් තවත් System එකකට data හුවමාරු කරන ආකාරය දැන ගැනීමට හැකිවීම.</li>
+<li>වෙනස් Vendors ලගෙ Hardware හා Software සමග Data Communication කරන්න පුලුවන් වීම.​​</li>
+</ol>
+<p>&nbsp;</p>
+<p>මොනවද මේ Vendors කියලා කියන්නේ,විවිධ Communication උපකරණ හදන අය ඒවගේම Software Developers වගේ අයට තමයි මේ Vendors කියලා කියන්නේ.</p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-625" src="/wp-content/uploads/2018/04/download-17.jpg" alt="" width="292" height="173" /></p>
+<p>&nbsp;</p>
+<p>මේ OSI Layers අපිට ප්‍රධාන වශයෙන් 7ක් දැකගන්නට පුලුවන්.ඒවා තමයි;</p>
+<p>&nbsp;</p>
+<ol>
+<li>Application Layer</li>
+<li>Presentation Layer</li>
+<li>Session Layer</li>
+<li>Transport Layer</li>
+<li>Network Layer</li>
+<li>Data Link Layer</li>
+<li>Physical Layer</li>
+</ol>
+<p>&nbsp;</p>
+<p>ඉතින් මේ තියෙන Layers අපිට විවිධ ආකරයට කොටස් වලට කඩන්න පුලුවන්.</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong>Upper Layer/Lower Layer</strong></li>
+</ol>
+<p>මෙයින් කියවෙන්නේ Application,Presentation,Session,Transport Layers, Upper Layers යන​ කොටසටත්,Network,Data Link,Physical layers, Lower Layers යන​ කොටසටත් අයිති වන බවය.</p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-635 alignright" src="/wp-content/uploads/2018/04/download-7.png" alt="" width="228" height="221" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>2.TCP/IP Layers</strong></p>
+<p>TCP/IP Layers වෙන්නේ;</p>
+<ol>
+<li>Application Layer</li>
+<li>Transport Layer</li>
+<li>Internet Layers</li>
+<li>Network Access Layers</li>
+</ol>
+<p>යනුවෙනි.</p>
+<p>&nbsp;</p>
+<p><img class="size-full wp-image-638 aligncenter" src="/wp-content/uploads/2018/04/download-8.png" alt="" width="291" height="173" /></p>
+<p>&nbsp;</p>
+<p>දැන් අපි මේ Layers එකින් එක පැහැදිලි කරගමු.</p>
+<p>&nbsp;</p>
+<p><strong>1. Application Layer</strong></p>
+<p>මේ Layer එකෙන් තමයි අපිට User Interface ලබාදෙන්නේ.ඒ කියන්නේ Desktop එක​,ඒ වගේම මේ කොටසින් තමයි Network Service එකට අවශය Programmes පාවිච්චි කරන්නත් ඉඩ දෙන්නේ.ඒ වගේම මේ Layer එකෙන් කරන වැඩ තමයි File Transfer,E-mail වගේ ඒවා,</p>
+<p>මේකෙ වැදගත්ම දේ තමයි මේකෙ භාවිතා කරන Protocol මොනවද කියන එක​,Telnet,HTTP,FTP මෙහිදී භාවිතා කරනවා.</p>
+<p><img class="alignnone size-full wp-image-640 aligncenter" src="/wp-content/uploads/2018/04/images-23.jpg" alt="" width="298" height="169" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>2.Presentation Layer</strong></p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-642" src="/wp-content/uploads/2018/04/download-18.jpg" alt="" width="287" height="176" /></p>
+<p>&nbsp;</p>
+<p>මේ Layer දී Data එක් එක් Data Format වලට පරිවර්ථනය කිරීම තමයි සිදුකරන්නේ.මම ඒක උදාහරණයකින්ම පැහැදිලි කරන්නම්කෝ,</p>
+<p>හිතන්නකෝ මෙහෙම​,අපිට Network එක​ හරහා Mp3 File එකක් ආව කියලා එතකොට ඒ Mp3 File ඒක අයිති Format එකට දාන එක තමයි මේ Presentation Layer එකේ ප්‍රධාන වැඩේ.මේ Layer එකෙන් කරන තවත් වැඩක් තමයි එක එක Format වලට දාන data User ට​ Access කරන්න පුලුවන්ද කියලා sure කරගන්න එක.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>3.Session Layer</strong></p>
+<p>&nbsp;</p>
+<p>Network එකේ Data Communicate කරන Device වල Application අතරේ Connection එක​ තියාගැනීම හා ඒවා කලමනාකරනය කිරීම තමයි මේ Session Layer එකෙන් සිදුවන්නේ.</p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-645" src="/wp-content/uploads/2018/04/download-19.jpg" alt="" width="246" height="205" /></p>
+<p>&nbsp;</p>
+<p>ඒ වගේම Data Communicate එක <strong>Simplex</strong> ද​ <strong>Half-Duplex</strong> ද <strong>Full-Duplex</strong> ද​ කියලා තීරණය කරන්නෙත් මේ Session Layer එකෙන්ම තමයි.</p>
+<p>ඉතින් මොනවද මේ Simplex,Half,Full <strong>Duplex</strong> කියන්නේ,මම කෙටියෙන් පැහැදිලි කරන්නම්,</p>
+<p>&nbsp;</p>
+<p>එක් දිශාවකට පමණක් Signal ගමන් කිරීම තමයි මේ Simplex කියලා කියන්නේ.උදාහරණ ලෙස Television,Radio හැදින්විය හැක​.</p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-medium wp-image-647 aligncenter" src="/wp-content/uploads/2018/04/download-20-300x134.jpg" alt="" width="300" height="134" srcset="/wp-content/uploads/2018/04/download-20-300x134.jpg 300w, /wp-content/uploads/2018/04/download-20.jpg 337w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<p>දිශාවන් දෙකටම Signal යැවිය හැකිනම් එය Half-Duplex ලෙස හැදින්වේ.නමුත් මෙහි විශේශත්වය වන්නේ වන්නේ වරකට Signal යැවිය හැක්කේ එක් දිශාවකට පමනි.උදාහරණ ලෙස vocy tocy හැදින්විය හැක​</p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-648" src="/wp-content/uploads/2018/04/download-21.jpg" alt="" width="220" height="150" /></p>
+<p>&nbsp;</p>
+<p>දිශාවන් දෙකටම Signal යැවිය හැකිනම් එය Full-Duplex ලෙස හැදින්වේ.මෙය Half-Duplex වඩා වෙනස් වන්නේ මෙහි එකවර දිශා දෙකටම Signal යැවිය හැක​.උදහරණ ලෙස​ Telephone හැදින්විය හැක​.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>4.Transport Layer</strong></p>
+<p>&nbsp;</p>
+<p>මේ Layer එකේදි තමයි Data packet එක Segment එකක් බවට පත්වන්නේ.Data Encapsulation යටතේ මේ ගැන මම වැඩිපුර  කතා කරන්නම්.</p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-medium wp-image-653 alignright" src="/wp-content/uploads/2018/04/images-6-300x136.png" alt="" width="300" height="136" srcset="/wp-content/uploads/2018/04/images-6-300x136.png 300w, /wp-content/uploads/2018/04/images-6.png 333w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>5.Network Layer</strong></p>
+<p>&nbsp;</p>
+<p>මේ Layer එකෙන් තමයි ඇත්තටම Data යවන වැඩේ බාරගන්නේ.මම මෙහෙම කියන්නම්කෝ,Router එක අයිති වෙන්නෙත් මේකටම තමයි.ඒ කියන්නේ Source Computer සිට User දක්වා Data යැවීමට Best Path එක තෝරා ගන්නේ මේ Network Layer එක හරහා.</p>
+<p>ඉතින් IP Address භාවිතා කරන්නෙත් මේ Layer එකේදිම තමයි.</p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-655" src="/wp-content/uploads/2018/04/images-24.jpg" alt="" width="297" height="170" /></p>
+<p>&nbsp;</p>
+<p><strong>6.Data Link Layer</strong></p>
+<p>&nbsp;</p>
+<p>Data Transmission එකේ මොකක් හරි වැරැද්දක් තියෙනවනම් ඒක දැනුම් දෙන්නේ මේ Layer එකේදි,Switch,Bridge,NIC</p>
+<p>භාවිතා කරන්නේ මේ Data Link Layer එකේදී,මෙහිදී භාවිතා කරන Protocol වන්නේ STP , VTP , CDP  වේ.</p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-656 aligncenter" src="/wp-content/uploads/2018/04/images-25.jpg" alt="" width="259" height="194" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>7.Physical Layer</strong></p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-658" src="/wp-content/uploads/2018/04/download-9.png" alt="" width="259" height="194" /></p>
+<p>&nbsp;</p>
+<p>මොන Layer එකෙන් ආවත් අන්තිමට එන්න ඕනි මේ Physical Layer එකෙන්,ඒ කියන්නේ Wire හෝ Wireless මොන විදියට Data ආවත් අන්තිමට එන්නේ මේ Layer එක හරහා.</p>
+<p>Hub,Connectors,Cable අයිති වෙන්නෙත් මේ Network layer එකටම තමයි.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Data Encapsulation**</strong></p>
+<p>&nbsp;</p>
+<p>ඉතින් මොකක්ද මේ Data Encapsulation කියලා කියන්නේ.මම මෙතනදී ඒ පිළිබදව සරලව පැහැදිලි කරන්නම්.Data Encapsulation කියලා කියන්නේ උඩම Layer එකේ  ඉදලා අන්තිම Layer එක දක්වා data ගලා යැමේ ක්‍රියාවලියයි.</p>
+<p>තවත් සරලව කිව්වොත් එක් Computer එකක සිට තවත් Computer එකකට Data යැවීමේදී ඒ ඒ Network වලදී සිද්ධවෙන දේවල් වලට තමයි මේ Data Encapsulation කියලා කියන්නේ.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>ඉතින් මම හිතනවා මේ ලිපියෙන් <strong>OSI Layers</strong> සම්බන්ධ මූලික කරුණු ටිකක් ලැබෙන්න ඇති කියලා.මම ඊලග ලිපියෙන් Data Encapsulation හා Data Decapsulation පිළිබද වැඩිපුර​ පැහැදිලි කිරීමට බලාපොරොත්තු වෙනවා.</p>
+<p>&nbsp;</p>
+<p>ස්තූතියි:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/08/osiopen-system-interconnectlayers/">OSI(Open System Interconnect)Layers</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/08/osiopen-system-interconnectlayers/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

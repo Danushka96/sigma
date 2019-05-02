@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Iot &#8211; The SIGMA</title>
+	<atom:link href="/index.php/category/iot/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>IoT</title>
+		<link>/index.php/2019/01/30/1735/</link>
+				<comments>/index.php/2019/01/30/1735/#comments</comments>
+				<pubDate>Wed, 30 Jan 2019 14:20:17 +0000</pubDate>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+				<category><![CDATA[Iot]]></category>
+		<category><![CDATA[arduino]]></category>
+		<category><![CDATA[Future Computing]]></category>
+		<category><![CDATA[hasee]]></category>
+		<category><![CDATA[hasee amarathunga]]></category>
+		<category><![CDATA[Internet of Things]]></category>
+		<category><![CDATA[IoT]]></category>
+
+		<guid isPermaLink="false">/?p=1735</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> හොදයි අපි මුලින්ම IoT ගැන කතා කරන්න කලින් බලමු අද ලෝකෙ ගොඩක් දෙනා අතර ප්‍රචලිත දෙයක්.ඒ තමා Arduino. Arduino කිව්වහම අද ලෝකේ නොදන්න කෙනෙක් නෑ. පාසල් යන ලමුන් අතර පවා වර්තමානයේ Arduino කියන දේ ප්‍රචලිත වෙලා තියෙනවා. කෙටියෙන්ම කීවොත් අද ලංකාවෙ උනත් ගොඩක් දෙනා ලග අඩුම තරමින් UNO Board එකක්වත්<a class="moretag" href="/index.php/2019/01/30/1735/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/30/1735/">IoT</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p style="text-align:left">හොදයි අපි මුලින්ම <strong>IoT </strong>ගැන කතා කරන්න කලින් බලමු අද ලෝකෙ ගොඩක් දෙනා අතර ප්‍රචලිත දෙයක්.ඒ තමා <strong>Arduino</strong>. </p>
+
+
+
+<p><strong>Arduino </strong>කිව්වහම අද ලෝකේ නොදන්න කෙනෙක් නෑ. පාසල් යන ලමුන් අතර පවා වර්තමානයේ <strong>Arduino </strong>කියන දේ ප්‍රචලිත වෙලා තියෙනවා. කෙටියෙන්ම කීවොත් අද ලංකාවෙ උනත් ගොඩක් දෙනා ලග අඩුම තරමින් <strong>UNO Board</strong> එකක්වත් තියෙනවා. තාක්ෂණය පැත්තට බර හැම කෙනාම වගේ අනිවාරෙන්ම <strong>Uno Board</strong> එකෙන් <strong>LED Pattern</strong> එකක් හදලා හරි දැකලා හරි ඇති.කෙලින්ම කීවොත් Night Rider Light Pattern එක හදලා හරි හදන විදිය බලලා හරි ඇති. සමහරු බලනවා ඇති ඇයි මම මේ <strong>Arduino </strong>ගැන කියවන්නෙ කියලා <strong>IoT </strong>ගැන කියන්න ගිහින්. කෙලින්ම කීවොත් හොද <strong>IoT project </strong>එකකට පදනම තමා <strong>Arduino</strong>. ඒ කියන්නෙ <strong>Internet of Things</strong> කියන තාක්ෂණයේ Hardware කොටස පදනම් වෙන්නෙ බොහොවිට මේ<strong> Arduino</strong> මත. </p>
+
+
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp; එහෙනම් දැන් මම කියන්නම් මොකක්ද <strong>IoT </strong>කියන්නෙ කියලා. මම තේරුම් ගත්ත විදියට <strong>IoT </strong>කියන්නෙ <strong>Hardware devices , database , techniques , Web App</strong> හෝ <strong>Mobile App</strong> වගේ යම් කිසි දේවල් කිහිපයක අන්තර් සම්බන්දතාවයක් වගේම දත්ත සන්නිවේදනයක්. හැබැයි ඒ දත්ත සන්නිවේදනයට හරි අන්තර් සම්බන්දතාවයට හරි කිසිම පුද්ගලයෙක් සෘජුවම සම්බන්ද වෙන්නෙ නෑ. Hardware උපාංග තාක්ෂණයන් මෙන්ම Database වැනි බොහෝ දේ මේ IoT තුළ අන්තර්ගතයි. </p>
+
+
+
+<p>උදාහරණයක් විදියට මට <strong>Vehicle Tracking System</strong> එකක් හදන්න ඕනෙ නම් මට ඒකට අවශ්‍ය උපාංග කිහිපයක් තියෙනවා <strong>Uno Board , Node MCU</strong> වගේම <strong>Neo GPS 6m</strong> වගේ. මුලින්ම මම මේවා එකිනෙකට අන්තර්සම්බන්දතාවයක් තියෙන විදියට හදා ගන්න ඕනේ. ඒ වගේම එ්වා කොහොමද වැඩ කරන්න ඕනෙ කියලා ඒවාට ක්‍රමලේකකරණය (<strong>embedded programming</strong>) කරන්න ඕන programming language එකකින් C++ වගේ. දැන් මේ system එකේ විදියට නම් detect වෙන අක්ෂාංශ දේශාංශ database එකක store කරන්න වෙනවා. මොකද අපි ඒවා detect කරගත්තට මදි මොකද ඒවා අර්ථයක් තියෙන විදියට පෙන්නන්න ඕනේ. එතකොට තමයි ඒක <strong>IoT </strong>වෙන්නෙ. ඉතින් අපිට පුලුවන් ඒ දත්ත <strong>Firebase </strong>වගේ <strong>real time database</strong> එකක store කරන්න. එතකොට අපිට පුලුවන් අඩුම ප්‍රමාද කාලෙකින් (low delay) ඒ දත්ත සුදුසු විදියකට පෙන්නගන්න. ඊට පස්සෙ මේ සිස්ටම් එකේ විදියට නම් අපිට පුලුවන් google Map වගේ එකක ඒ අදාල අක්ෂාංශ දේශාංශ එක්ක අදාල ස්ථානය පෙන්නන්න. ඕනෙනම් අපි ඉන්න තැන ඉදලා එතනට <strong>direction </strong>දාලා උනත් පෙන්නන්න පුලුවන්<strong> google map service</strong> පාව්ච්චි කරලා. </p>
+
+
+
+<p>තවත් <strong>උදාහරණ </strong>කිහිපයක් කීවොත්</p>
+
+
+
+<ul><li> IoT Based <strong>Smart Camera</strong> </li><li> <strong>Air&nbsp;Pollution</strong>&nbsp;Meter </li><li> <strong>Home Automation </strong></li><li><strong>Temperature Humidity </strong>Detecting System</li><li>Smart garage <strong>door</strong></li><li>Automated <strong>blinds</strong></li></ul>
+
+
+
+<p>ඉතින් මේ විදියට  <strong>IoT </strong> තාක්ෂණය පාවිච්චි කරලා අපිට පුලුවන් හොද <strong>IoT </strong>Project එකක් කරන්න. මං මේ කීවේ පොඩි උදාහරණයක් විතරයි මොකද <strong>IoT </strong>කියන්නෙ මොන වගේ දෙයක්ද කියලා පැහැදිලි කරලා දෙන්න. තව උදාහරණ එක්ක <strong>IoT </strong>ගැන සම්බන්ද <strong>Arduino </strong>devices , ගැන මං කතා කරන්නම් ඊළග දවසෙ.</p>
+
+
+
+<figure class="wp-block-image"><img alt="" /></figure>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/30/1735/">IoT</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/30/1735/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+							</item>
+	</channel>
+</rss>

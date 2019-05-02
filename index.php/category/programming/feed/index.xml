@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Programming &#8211; The SIGMA</title>
+	<atom:link href="/index.php/category/programming/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Java</title>
+		<link>/index.php/2019/01/20/java/</link>
+				<comments>/index.php/2019/01/20/java/#respond</comments>
+				<pubDate>Sun, 20 Jan 2019 04:36:01 +0000</pubDate>
+		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
+				<category><![CDATA[java]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[install]]></category>
+
+		<guid isPermaLink="false">/?p=1018</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ මම අද ඔයාලට කියල දෙන්න යන්නේ java කියන programming language එක ගැන.java කියන්නේ object oriented language එකක්. අද අපි බලමු java install කරගන්නේ කොහොමද කියල. මුලින්ම ඔය java development kit(jdk) එක download කරගන්න ඕනි.ඒ සදහා link එක මෙතනින් ලින්ක් එකටගියාම ඔයාලට පහල තියෙන විදියෙ page එකක් බලාගන්න<a class="moretag" href="/index.php/2019/01/20/java/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/20/java/">Java</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන් යාලුවනේ මම අද ඔයාලට කියල දෙන්න යන්නේ java කියන programming language එක ගැන.java කියන්නේ object oriented language එකක්.</p>
+<p>අද අපි බලමු java install කරගන්නේ කොහොමද කියල.<br />
+මුලින්ම ඔය java development kit(jdk) එක download කරගන්න ඕනි.ඒ සදහා link එක <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">මෙතනින් </a> ලින්ක් එකටගියාම ඔයාලට පහල තියෙන විදියෙ page එකක් බලාගන්න පුළුවන්.<img class=" wp-image-1021 aligncenter" src="/wp-content/uploads/2018/04/Capture1-2-300x271.jpg" alt="" width="410" height="370" srcset="/wp-content/uploads/2018/04/Capture1-2-300x271.jpg 300w, /wp-content/uploads/2018/04/Capture1-2.jpg 586w" sizes="(max-width: 410px) 100vw, 410px" /><br />
+ඔයාට පුළුවන් මෙතනින් කැමති java platform එකක් තෝරාගන්න. example එකක් විදියට මම මෙතනින් java platform (jdk)10 තෝරගත්ත කියමුකෝ.එතකොට ඔයාට පහත පරිදි window එකක් දකින්න පුළුවන්.<br />
+<img class=" wp-image-1024 aligncenter" src="/wp-content/uploads/2018/04/Capture2-1-300x100.jpg" alt="" width="408" height="136" srcset="/wp-content/uploads/2018/04/Capture2-1-300x100.jpg 300w, /wp-content/uploads/2018/04/Capture2-1.jpg 547w" sizes="(max-width: 408px) 100vw, 408px" /><br />
+මෙතනින් ඔයාගේ operating system එකට ගැලපෙන install file එක තෝරගෙන download කරගන්න.ඊට පස්සෙ install කරගන්න.</p>
+<p>Install කරල ඉවර උනාම තව දෙයක් තියෙනව කරන්න. ඒ තමයි java path එක හදන එක.<br />
+දැන් ඔයා command prompt එකට ගිහින් javac ලෙස type කර enter කරල බලන්න.එතකොට පහත පරිදි window එකක් එන්නෙ නැතුව error එකක් ආවොත්, ඔයාට path එක හදන්න සිදුවෙනවා.<br />
+<img class="wp-image-1028 aligncenter" src="/wp-content/uploads/2018/04/Capture3-300x161.jpg" alt="" width="518" height="278" srcset="/wp-content/uploads/2018/04/Capture3-300x161.jpg 300w, /wp-content/uploads/2018/04/Capture3-768x412.jpg 768w, /wp-content/uploads/2018/04/Capture3.jpg 962w" sizes="(max-width: 518px) 100vw, 518px" /><br />
+path එක හදාගන්න මේවිදියට යන්න.</p>
+<blockquote><p><strong>my computer &gt;properties &gt;Advanced system setting &gt;Enviroment variables</strong></p></blockquote>
+<p>එවිට ලැබෙන window එකේ පහත highlight කර ඇති new button එක click කරන්න,<br />
+<img class=" wp-image-1029 aligncenter" src="/wp-content/uploads/2018/04/Capture4-274x300.jpg" alt="" width="332" height="364" srcset="/wp-content/uploads/2018/04/Capture4-274x300.jpg 274w, /wp-content/uploads/2018/04/Capture4.jpg 511w" sizes="(max-width: 332px) 100vw, 332px" /><br />
+ඉන්පසු ලැබෙන window එකේ variable name එකට Path ලෙසද variable value එකට ඔයා java install කරපු Drive එකේ සිට java jdk bin folder එක දක්වාම තිබෙන address එක ලබාදී ok click කරන්න. ඔයා install කරද්දි default settings වෙනස් කරේ නැත්ත්ම්, මේ වගේ path එකක් තමයි තියෙන්න ඕනෙ.</p>
+<p>&gt;c:/programe files/java/</p>
+<p>නිදසුනක් පහත රුපසටහනේ දක්වා ඇත.<br />
+<img class=" wp-image-1031 aligncenter" src="/wp-content/uploads/2018/04/Capture5-300x127.jpg" alt="" width="454" height="192" srcset="/wp-content/uploads/2018/04/Capture5-300x127.jpg 300w, /wp-content/uploads/2018/04/Capture5-768x324.jpg 768w, /wp-content/uploads/2018/04/Capture5.jpg 803w" sizes="(max-width: 454px) 100vw, 454px" /></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/20/java/">Java</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/20/java/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Laravel වලින් Database Migrations කරමු.</title>
+		<link>/index.php/2018/09/17/laravel-database-migrations/</link>
+				<comments>/index.php/2018/09/17/laravel-database-migrations/#respond</comments>
+				<pubDate>Mon, 17 Sep 2018 18:24:22 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Laravel]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[laravel]]></category>
+		<category><![CDATA[migrations]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[sinhala]]></category>
+
+		<guid isPermaLink="false">/?p=1271</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230; වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel<a class="moretag" href="/index.php/2018/09/17/laravel-database-migrations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230;</p>
+<p>වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel post එක නම් අපේ අනිත් ලිපි Set එකත් <a href="/index.php/2018/04/10/web-application-with-laravel/">මෙතනින්</a> බලන්න.</p>
+<p><img src="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg" alt="" width="523" height="298" class=" wp-image-1273 aligncenter" srcset="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg 300w, /wp-content/uploads/2018/09/Why_Laravel.jpg 700w" sizes="(max-width: 523px) 100vw, 523px" /></p>
+<h2><span style="text-decoration: underline; color: #0000ff;"><strong>මූලික හැඳින්වීම</strong></span></h2>
+<p>උඩ තියෙන Image එක කියන්නේ Why Laravel කියන ප්‍රශ්නෙට තියෙන උත්තර. ඒ කියන්නේ අනිත් PHP Frameworks එක්ක compare කරලා බලද්දි Laravel වල තියෙන විශේෂත්වය. ඒකෙ උඩින්ම තියෙන දෙයක් තමයි මේ Migrations කියන එක. ඒකට ගොඩක් specialty එකක් දීලා තියෙන්නේ ඒකෙන් ලොකු වැඩ ගොඩක් Simple විදියට කරගන්න අවස්ථාවක් තියෙන හින්දා.</p>
+<p>සාමාන්‍යයෙන් අපි මොකක්ම හරි Web Application එකක් Laravel නැතිව වෙනත් විදියකින් හදනවා නම් අපි කරන්නේ අපේ Source Code එක වෙනම හදලා Database එක වෙනම හදලා මේ දෙක php වලින් Connect කරගන්න එකනේ. දැන් හිතන්න ඔය System එක තවත් කාට හරි දෙන්න ඕන වුණා කියලා. එතකොට අපිට සිද්ධ වෙනවා අපේ source code එකත් එක්ක SQL Server එකෙන් export කරගත්තු database file එකත් දෙන්න. ඊට පස්සේ මේ system එක ගන්න කෙනා ආපහු ඒ database එක import කරගන්න. මොකක්ම හරි Error එකක් ඇවිත් අර database file එක import වෙන්නේ නැති වුණොත් අපිට ආපහු ඒ file එක edit කරන එක ඇත්තටම අමාරු වැඩක්. මොකද ඒකෙ තියෙන්නේ generate වෙලා තියෙන code set එකක් නිසා.</p>
+<p>තවත් ප්‍රශ්ණයක් තමයි අපි හදන Database එක වැඩ කරන්නේ Mysql නම් Mysql server එකක විතරයි. අපිට වෙනත් platform එකකට මාරු වෙන්න ඕන වුණොත් අපිට Database එක redesign කරන්නත් සිද්ධ වෙනවා.</p>
+<h5><span style="color: #ff6600;"><strong>Laravel වල තියෙන විසඳුම මොකද්ද?</strong></span></h5>
+<p>සරලවම මේ ප්‍රශ්ණෙට laravel වල තියෙන විසඳුම තමයි Database Migration කියන්නේ. ඒ කියන්නේ අපි Database එක හදන්නෙත් අපේ System එකට අදාල files වලමයි. එතකොට අපිට තවත් කෙනෙකුට System එක දෙනකොට දෙන්න තියෙන්නේ අපි හදලා තියෙන system file set එක විතරයි. ඊට පස්සේ artisan වල තියෙන migrate command එක භාවිතා කරලා ඕනම කෙනෙකුට තමන්ගේ db එක හදා ගන්න පුළුවන්.</p>
+<p>දැන් අපි මුල ඉඳන් මේ වැඩේ කරන්න ඕන කොහොමද කියලා බලමු.</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="color: #ff9900;">Migration File එකක් හදාගමු.</span></h3>
+<p style="padding-left: 30px;">මෙහෙම migrate files generate කරගන්න අපි භාවිතා කරන්නේ command prompt/terminal එක. ඒක නිසා මුලින්ම ඔයාලගෙ project එක (අලුත් project එකක් වුණොත් හොඳයි) තියෙන directory එක ඇතුලෙ command prompt එක හරි terminal එක හරි open කරගන්න ඕන.</p>
+<p style="padding-left: 30px;">ඊට පස්සේ එකෙ මේ command එක ගහන්න.</p>
+<pre style="padding-left: 30px;">php artisan make:migration create_users_table</pre>
+<p style="padding-left: 30px;">මෙකෙ create_users_table කියන්නේ අපේ migration file එකේ නම. මේකට ඔයාලට කැමති නමක් දෙන්න පුළුවන්. මම user table එකක් හදන්න යන නිසා මේක දානවා. මේ Command එක run වුණාට පස්සේ database/migrations folder එක ඇතුලෙ අලුතින් file එකක් හැදෙනවා. මේ file එක හැදෙන්නේ ඕනම database operation එකක් කරගන්න ගැලපෙන විදියට.</p>
+<p style="padding-left: 30px;">හැබැයි අපි දැන් කරන්න හදන්නේ අලුතින් table එකක් හදා ගන්න එක. ඒ වැඩේට විතරක් ගැලපෙන විදියට අපේ migration file එක හදා ගන්න ඕන නම් මේ විදියට command එක වෙනස් කරලා දෙන්න පුළුවන්.</p>
+<pre style="padding-left: 30px;">php artisan make:migration create_users_table --create=users
+</pre>
+<h3 style="text-align: center;"><span style="color: #ff9900;">Migration File Structure</span></h3>
+<p style="padding-left: 30px;">දැන් අපි බලන්න හදන්නේ කලින් පියවරේදි අපි generate කරගත්ත migration file එකේ structure එක තියෙන්නේ කොහොමද කියලා. ඒකට මේ මම පොඩි Table එකක් හදා ගන්න පුළුවන් Migration file එකක් මේ විදියට ලියා ගන්නවා. මෙකෙ table name එක flights.</p>
+<pre>&lt;?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateFlightsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('flights', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;string('name');
+            $table-&gt;string('airline');
+            $table-&gt;timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('flights');
+    }
+}
+
+</pre>
+<p style="padding-left: 30px;">මේකෙ දැන් ඔයාලට පේනවා ඇති up, down කියලා methods දෙකක් තියෙනවා. අපි up කියන method එක ඇතුලේ ලියන්නේ අලුතින් Table එකක්, column එකක්, නැත්නම් indexes Create කරන Queries. Down method එක ඇතුලේ ලියවෙන්නේ up method එක reverse කරන query set එක. දැන් අපි බලන්න හදන්නේ Migration commands කිහිපයක් කරගන්න විදිය.</p>
+<h3 style="text-align: center;"><span style="color: #ff6600;">Migration Commands</span></h3>
+<h4 style="padding-left: 30px;"><span style="color: #ff9900;">Migration File එකක් run කරගන්න විදිය</span></h4>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate</code></pre>
+<p style="padding-left: 30px;">මේ command එක හරහා අපි හදලා තියෙන Migration files ඔක්කොම ටික අපිට Database server එක ඇතුලෙ run කරගන්න පුළුවන්.</p>
+<h4 style="padding-left: 30px;"><span style="color: #ff9900;">Run වුන migration එකක් rollback (ආපහු මුල් තත්වෙට) කරගන්න විදිය</span></h4>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:rollback</code></pre>
+<p style="padding-left: 30px;">මේ command එකෙන් අපි අන්තිමට run කරපු migration files ටික හරහා සිද්ධ වුණ changes ටික reverse කරගන්න එහෙම නැත්නම් rollback කරගන්න පුළුවන්.</p>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:rollback --step=5</code></pre>
+<p style="padding-left: 30px;">මේ විදියෙන් අපිට rollback කරන්න ඕන steps ගාන දෙන්න පුළුවන්&#8230;</p>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:reset</code></pre>
+<p style="padding-left: 30px;">මේ Command එකෙන් අපේ Database එකට migration files වලින් වුණු හැම change එකක්ම අයින් වෙනවා..</p>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:refresh</code></pre>
+<p style="padding-left: 30px;">මේකෙන් අපිට උඩින් කතා කරපු step දෙකක් එක command එකෙන් කරගන්න පුළුවන්. ඒ කියන්නේ Database එක reset කරගෙන migrations files ටික run කරගන්න එක.</p>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:fresh</code></pre>
+<p style="padding-left: 30px;">මෙකෙන් කලින් කරපු වැඩේට ටිකක් සමාන වැඩක් කරගන්න පුළුවන්. හැබැයි මේකෙදි database එක reset වෙන්නේ නැතිව වෙන්නේ ඔක්කොම Tables ටික ඉස්සරලාම drop කරගන්න එක. ඊට පස්සේ Migration files ටික run කරගන්නවා.</p>
+<p>ලිපිය තවත් දික් වෙලා Boring වෙන නිසා මම Database Queries ලියා ගන්න විදිය ගැන තවත් ලිපියකින් කතා කරන්නම්. මේ ලිපිය ගැන මොකක් හරි ප්‍රශ්ණයක් තියෙනවා නම් Comment එකක් දාන්න. අලුත් ලිපියකින් හමු වෙමු&#8230;..</p>
+<p>&nbsp;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/17/laravel-database-migrations/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>laravel වලින් Admin Panel එකක් Generate කරගමු.</title>
+		<link>/index.php/2018/09/11/laravel-admin-panel-generate/</link>
+				<comments>/index.php/2018/09/11/laravel-admin-panel-generate/#respond</comments>
+				<pubDate>Mon, 10 Sep 2018 19:45:38 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Laravel]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[crud]]></category>
+		<category><![CDATA[laravel]]></category>
+		<category><![CDATA[sinhala]]></category>
+
+		<guid isPermaLink="false">/?p=1230</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> මේ Tutorial එකේදි කරන්න හදන්නේ කිසිම Code එකක් ලියන්නේ නැතුව Laravel Admin Panel එකක් Generate කරගන්න විදිය. මේ ක්‍රමයේදි කරන්නේ අපිට අවශ්‍ය කරන CRUD Operation Generate කරගන්න පුළුවන් විදියේ System එකක් හරහා GUI විදියට Database Files, Models, Views, Controllers හදා ගන්නවා. හැබැයි මේකෙන් Admin Panel එක Generate වුණත් ඒක Edit<a class="moretag" href="/index.php/2018/09/11/laravel-admin-panel-generate/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/11/laravel-admin-panel-generate/">laravel වලින් Admin Panel එකක් Generate කරගමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>මේ Tutorial එකේදි කරන්න හදන්නේ කිසිම Code එකක් ලියන්නේ නැතුව Laravel Admin Panel එකක් Generate කරගන්න විදිය. මේ ක්‍රමයේදි කරන්නේ අපිට අවශ්‍ය කරන CRUD Operation Generate කරගන්න පුළුවන් විදියේ System එකක් හරහා GUI විදියට Database Files, Models, Views, Controllers හදා ගන්නවා.</p>
+<p>හැබැයි මේකෙන් Admin Panel එක Generate වුණත් ඒක Edit කරගන්න අපිට Basic Knowledge එකක් අවශ්‍ය වෙනවා. ඒක නිසා මුල් Tutorials බැලුවේ නැත්නම් බලන්න. විශේෂයෙන්ම මේ Tutorial එකේ තියෙනවා Basic CRUD Operations කරන විදිය. <a href="/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> මේ Tutorial එක බැලුවේ නැත්නම් බලන්න.</p>
+<p><img src="/wp-content/uploads/2018/09/laravel-backpack-300x153.png" alt="" width="671" height="342" class=" wp-image-1232 aligncenter" srcset="/wp-content/uploads/2018/09/laravel-backpack-300x153.png 300w, /wp-content/uploads/2018/09/laravel-backpack-768x393.png 768w, /wp-content/uploads/2018/09/laravel-backpack-1024x524.png 1024w" sizes="(max-width: 671px) 100vw, 671px" /></p>
+<h2><span style="text-decoration: underline;"><strong><span style="color: #ff6600; text-decoration: underline;">පළමු පියවර</span></strong></span></h2>
+<p>Laravel Admin Panel Generate කරගන්න පුළුවන් ගොඩක් Online Applications තියෙනවා. ඒවායින් ජනප්‍රියම කිහිපයක් පහළින් දාන්නම්. ඒ ටික Try කරලා බලන්න. මේ Tutorial එක කරන්න බලාපොරොත්තු වෙන්නේ මේවායින් එකක් ගැන විතරයි. ඒක හරියට කර ගත්තහම අනිත් ටිකත් Try කරලා බලන්න පුළුවන් අවුලක් නැතුව.</p>
+<ol>
+<li><a href="https://quickadminpanel.com/" target="_blank" rel="noopener">QuickAdminPanel</a></li>
+<li><a href="https://the-control-group.github.io/voyager/" target="_blank" rel="noopener">Voyager</a></li>
+<li><a href="http://laraadmin.com/" target="_blank" rel="noopener">laraAdmin</a></li>
+</ol>
+<p>මේ 3 තමයි දැනට ගොඩක් ජනප්‍රිය Visual Generators විදියට තියෙන්නේ. මේ Tutorial එක ඉස්සරහට කරන්න බලාපොරොත්තු වෙන්නේ මුලින්ම තියෙන QuickAdminPanel එකත් එක්ක.</p>
+<p>මුලින්ම  <a href="http://quickadminpanel.com/">http://quickadminpanel.com/</a> එකට ගිහින් අලුත් Account එකක් හදා ගන්න. මේ Site එකේ Free Version එකක් වගේම Paid Version එකකුත් තියෙනවා. Free Version එකේ හදන්න පුළුවන් එක Admin Panel එකයි CRUD Model 5ක් විතරයි. ඊට වඩා ඕන නම් Purchase කරන්න වෙනවා.</p>
+<h2><span style="text-decoration: underline;"><strong><span style="color: #ff6600; text-decoration: underline;">දෙවන පියවර</span></strong></span></h2>
+<p>මුලින් කිව්ව විදියට අලුතින් Account එකක් හදාගෙන Log වුණාම මේ විදියේ Interface එකක් බලා ගන්න පුළුවන්. මේකෙන් <strong>new adminpanel </strong>කියන Button එක උඩ Click කරන්න. එතනින් අපිට පුළුවන් අපේ අලුත් Adminpanel එකට අදාල Project එක Create කරගන්න. ඒ වගේම මේකෙ තියෙන වාසිය තමයි අපිට ආපහු Edit කරන්න ඕන වුණොත් හදපු Source Code එක මේ Site එකේ Save වෙලා තියෙනවා. ඉතින් පස්සේ දවසක වෙනස් කරන්න ඕන වුණොත් Changes ලේසියෙන්ම කරගන්න පුළුවන්.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-4-300x131.png" alt="" width="574" height="251" class=" wp-image-1237 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-4-300x131.png 300w, /wp-content/uploads/2018/09/Capture-4-768x336.png 768w, /wp-content/uploads/2018/09/Capture-4-1024x448.png 1024w, /wp-content/uploads/2018/09/Capture-4.png 1308w" sizes="(max-width: 574px) 100vw, 574px" /></p>
+<p>මේ Step එකේන පස්සේ අපිට Fill කරන්න පොඩි Form එකක් එනවා. ඒකෙ තියෙන්නේ අපි හදන්න බලාපොරොත්තු වෙන Application එක ගැන Basic විස්තරයක්. ඒක Fill කරනකොට බලන්න ඕන විශේෂම දේ තමයි <strong>Laravel Version </strong>එක. මොකද ඔයාගෙ ළඟ තියෙන Version එකත් එක්ක ගැලපෙන version එකක් මෙතනින් තෝර ගන්න ඕන. ඉතිරි Fields ටික කැමති විදියට Fill කරගන්න.</p>
+<h2><span style="text-decoration: underline;"><strong><span style="color: #ff6600; text-decoration: underline;">තෙවන පියවර</span></strong></span></h2>
+<p><img src="/wp-content/uploads/2018/09/Capture-5-300x136.png" alt="" width="616" height="279" class=" wp-image-1238 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-5-300x136.png 300w, /wp-content/uploads/2018/09/Capture-5-768x348.png 768w, /wp-content/uploads/2018/09/Capture-5-1024x464.png 1024w, /wp-content/uploads/2018/09/Capture-5.png 1366w" sizes="(max-width: 616px) 100vw, 616px" /></p>
+<p>මුලින්ම මේ වගේ Interface එකක් එනවා. දැන් අපිට තියෙන්නේ අපිට ඕන කරන Models ටිකයි ඒවාට අවශ්‍ය කරන Files ටික Generate කරගන්න. ඒක කරන්නේ මෙහෙමයි.</p>
+<p>මුලින්ම Left Navigation Menu එකේ තියෙන <strong>Menu Button </strong>එක Click කරන්න. එතනින් ඔයාලට දැනට තියෙන Menu Items පෙන්වනවා. දැන් කරන්න තියෙන්නේ අලුතින් CRUD Menu Item එකක් හදා ගන්න. ඒකට <strong>Create CRUD Menu item </strong>කියන එක උඩ Click කරන්න. දැන් ඔයාලට මේ වගේ Interface එකක් බලා ගන්න පුළුවන්.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-6-300x132.png" alt="" width="652" height="287" class=" wp-image-1239 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-6-300x132.png 300w, /wp-content/uploads/2018/09/Capture-6-768x339.png 768w, /wp-content/uploads/2018/09/Capture-6-1024x452.png 1024w, /wp-content/uploads/2018/09/Capture-6.png 1351w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>මෙතනින් ඔයාලගෙ CRUD එකට අදාල Details ටික දෙන්න ඕන. උදාහරණයක් විදියට හිතමු අපි Class room Management System එකක් හදනවා කියලා. එහෙනම් මේ විදියට මුලින්ම Student Model එකක් හදා ගමු.</p>
+<p>මුලින්ම Title, Visual Title වලට student කියලා දාගන්න. ඊට පස්සේ Icon එකට ගැලපෙන එකක් තෝර ගන්න. දැන් තියෙන්නේ අපිට Database Table එකේ තියෙන්න ඕන කරන Fields ටික Generate කර ගන්න. ඒකට පහළ රතු පාටින් තියෙන Add field click කරන්න.</p>
+<p>එතන සාමාන්‍යයෙන් table එකක් හදා ගන්න අවශ්‍ය කරන ප්‍රශ්ණ ටිකක් අහනවා. ඒ ටික Fill කරලා දාලා Ok කරන්න. මේ පහළින් තියෙන්නේ student_id එක Save කරගන්න හදපු Data ටික.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-7-300x163.png" alt="" width="576" height="313" class=" wp-image-1240 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-7-300x163.png 300w, /wp-content/uploads/2018/09/Capture-7-768x418.png 768w, /wp-content/uploads/2018/09/Capture-7.png 898w" sizes="(max-width: 576px) 100vw, 576px" /></p>
+<p>මේ විදියට අපිට අවශ්‍ය Table එකේ එහෙම නැත්නම් Model එකේ තියෙන්න ඕන Fields ටික Specify කරලා කියන්න පුළුවන්. එකින් එක Fields මේ විදියට Add කරගන්න</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-8-300x155.png" alt="" width="615" height="318" class=" wp-image-1241 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-8-300x155.png 300w, /wp-content/uploads/2018/09/Capture-8-768x397.png 768w, /wp-content/uploads/2018/09/Capture-8-1024x529.png 1024w, /wp-content/uploads/2018/09/Capture-8.png 1104w" sizes="(max-width: 615px) 100vw, 615px" /></p>
+<p>අන්තිමට අපිට අවශ්‍ය Data දාගෙන මේ වගේ Table එකක් හදා ගන්න පුළුවන්. ඒ වගේම ඔයාලට මේ Fields තියෙන Table එක යටින් Permissions කියලා කොටසක් පේනවා ඇති. ඒකෙන් කියන්නේ මේ Table එකේ Data වලට Access කරන්න, Modification කරන්න Permission තියෙන්නේ කාටද කියලා Select කරන්න. ඒ කියන්නේ අපේ System එකේ ඉන්න User Roles වලට අපිට වෙන වෙනම Permission Assign කරන්න පුළුවන් මෙතනදි. දැනට Default role 2ක් තියෙනවා පේනවා ඇති.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-9-300x90.png" alt="" width="674" height="202" class=" wp-image-1242 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-9-300x90.png 300w, /wp-content/uploads/2018/09/Capture-9-1024x309.png 1024w, /wp-content/uploads/2018/09/Capture-9.png 1108w" sizes="(max-width: 674px) 100vw, 674px" /></p>
+<p>අලුතින් Roles ඕන නම් ඒවා Change කරගන්න පුළුවන් Left Navigation Bar එකේ තියෙන User Management කියන Menu Item එකේ තියෙන Roles කියන Sub Menu එකට ගිහින්.</p>
+<p>හරි මේ වැඩේ මේ විදියට හදා ගන්න තමන්ට ඕන විදියට Customize කරලා. අන්තිමට දැන් අපි මේ හදා ගත්තු Files ටික අපේ Project එකට දාගන්නේ කොහොමද බලමු.</p>
+<h2><span style="text-decoration: underline;"><strong><span style="color: #ff6600; text-decoration: underline;">සිව්වන පියවර</span></strong></span></h2>
+<p>Customize කරගෙන ඉවර වුණාම දකුණු පැත්තේ උඩ තියෙන තියෙන Download Admin Panel කියන Button එක Click කරන්න.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-10-300x65.png" alt="" width="581" height="126" class=" wp-image-1243 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-10-300x65.png 300w, /wp-content/uploads/2018/09/Capture-10-768x166.png 768w, /wp-content/uploads/2018/09/Capture-10-1024x222.png 1024w, /wp-content/uploads/2018/09/Capture-10.png 1368w" sizes="(max-width: 581px) 100vw, 581px" /></p>
+<p>දැන් Download වුණ Files ටික අලුත් laravel project එකකට Paste කරගන්න. ඊට පස්සේ කරන්න ඕන මූලික වැඩ කිහිපයක් තියෙනවා.</p>
+<p style="padding-left: 30px;"><span style="color: #ff9900;">.env file එකේ තියෙන Database Connection Settings හදා ගන්න.</span></p>
+<p style="padding-left: 30px;"><span style="color: #ff9900;">command prompt එකෙන් අලුතින් හැදුව project එක ඇතුලට ගිහින් Composer Install එකක් run කරන්න</span></p>
+<p style="padding-left: 30px;"><span style="color: #ff9900;">php artisan migrate &#8211;seed මේ Command එකත් run කරවන්න.</span></p>
+<p style="padding-left: 30px;"><span style="color: #ff9900;">ඊට පස්සේ <i>php artisan key:generate </i></span><span style="color: #ff9900;">මේ command එක run කරවන්න.</span></p>
+<p>හරි දැන් අපි අලුත් System එක Install කරගෙන ඉවරයි. දැන් Artisan Server එක on කරලා Site එකට ගියාම Login panel එකක් එනවා. ඒකෙ username: <strong>admin</strong>, password:<strong>password </strong>ගහලා Log වෙන්න පුළුවන්. දැන් බලන්න ඔයා Generate කරපු Model File එකට අදාල හැම CRUD operation එකක්ම කරන්න පුළුවන් විදියේ Interface එකක් හැදිලා තියෙයි.</p>
+<p>මේ වගේ System එකක් Customize කරන විදිය ගැන ඉස්සරහදි කතා කරමු. දැනට Installation වලදි එහෙම Errors තිබුණොත් Comment එකක් දාන්න.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/11/laravel-admin-panel-generate/">laravel වලින් Admin Panel එකක් Generate කරගමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/11/laravel-admin-panel-generate/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

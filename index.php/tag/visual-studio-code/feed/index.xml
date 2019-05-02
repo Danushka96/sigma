@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>visual studio code &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/visual-studio-code/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>මොකක්ද මේ Flutter ?</title>
+		<link>/index.php/2019/02/21/flutter1/</link>
+				<comments>/index.php/2019/02/21/flutter1/#comments</comments>
+				<pubDate>Thu, 21 Feb 2019 09:32:19 +0000</pubDate>
+		<dc:creator><![CDATA[Ruchira Swarnapriya]]></dc:creator>
+				<category><![CDATA[android]]></category>
+		<category><![CDATA[flutter]]></category>
+		<category><![CDATA[android studio]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[visual studio code]]></category>
+
+		<guid isPermaLink="false">/?p=1918</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> කෙටියෙන් කිව්වොත් flutter කියන්නේ 2017 මැයි මාසේ Google ලා හදුන්වා දුන්නු නවතම open &#8211; source mobile application development SDK එක. Mobile application development ලේසියෙන් වගේම ලස්සනට development කරන්න flutter වලින් පුලුවන්. Android App වගේම IOS App develop කරන්න flutter වලින් ඉඩ සලසා දීලා තියෙනවා. අපි මුලින්ම බලමු flutter අපේ laptop<a class="moretag" href="/index.php/2019/02/21/flutter1/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/21/flutter1/">මොකක්ද මේ Flutter ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p style="text-align:left">කෙටියෙන් කිව්වොත් flutter කියන්නේ 2017 මැයි මාසේ Google ලා හදුන්වා දුන්නු නවතම open &#8211; source mobile application development SDK එක. Mobile application development ලේසියෙන් වගේම ලස්සනට development කරන්න flutter වලින් පුලුවන්. Android App වගේම IOS App develop කරන්න flutter වලින්  ඉඩ සලසා දීලා තියෙනවා.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="https://cdn.arstechnica.net/wp-content/uploads/2018/06/7-2-1-800x311.jpg" alt="" width="363" height="141"/></figure></div>
+
+
+
+<p style="text-align:center">අපි මුලින්ම බලමු flutter අපේ laptop වලට install කරගන්න විදිය.පහත link එකෙන් flutter download කරගන්න පුලුවන්. </p>
+
+
+
+<p><a href="https://flutter.io/docs/get-started/install">https://flutter.io/docs/get-started/install</a></p>
+
+
+
+<p style="text-align:left">‌Flutter zip file එක උඩ link එකෙන් download කරගෙන zip file එක extract කරනකොට C:/src/flutter වගේ destination එකකට extract කරන එක තමයි හොදම C:/Programs Files/src/flutter වගේ destination එකකට extract කරනවානම් privileges හදන්න වෙනවා එ නිසා C:/src/flutter වගේ destination එකකට extract කරන එක තමයි හොදම.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="/wp-content/uploads/2019/02/fl2-1024x625.jpg" alt="" class="wp-image-1928" width="565" height="345" srcset="/wp-content/uploads/2019/02/fl2-1024x625.jpg 1024w, /wp-content/uploads/2019/02/fl2-300x183.jpg 300w, /wp-content/uploads/2019/02/fl2-768x469.jpg 768w, /wp-content/uploads/2019/02/fl2.jpg 1206w" sizes="(max-width: 565px) 100vw, 565px" /></figure></div>
+
+
+
+<p style="text-align:left">Flutter install කලාට පස්සේ  path එක set කරන්න ඔනී. Edit the system environment variable වල Environment Variable tab එකෙන් කරන්න පුලුවන්.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="/wp-content/uploads/2019/02/fl3-1.jpg" alt="" class="wp-image-1937" width="317" height="334"/></figure></div>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="/wp-content/uploads/2019/02/fl4.jpg" alt="" class="wp-image-1938" width="318" height="349" srcset="/wp-content/uploads/2019/02/fl4.jpg 707w, /wp-content/uploads/2019/02/fl4-272x300.jpg 272w" sizes="(max-width: 318px) 100vw, 318px" /></figure></div>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="/wp-content/uploads/2019/02/fl5.jpg" alt="" class="wp-image-1939" width="327" height="361" srcset="/wp-content/uploads/2019/02/fl5.jpg 597w, /wp-content/uploads/2019/02/fl5-271x300.jpg 271w" sizes="(max-width: 327px) 100vw, 327px" /></figure></div>
+
+
+
+<p style="text-align:left">Flutter install කරගෙන editor එකක් setup කරගන්න ඔනේ. Flutter support කරන editors වෙන්නේ Android Studio, Visual Studio Code, <a href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA Ultimat</a>. මොන editor එකක් use කලත් laptop එකේ Android Studio install කරලම තියෙන්න ඔනේ.</p>
+
+
+
+<p>Visual Studio Code editor එක විදියට configure කරන ආකාරය පහත link එකෙන් බලාගන්න පුලුවන්.</p>
+
+
+
+<p><a href="https://flutter.io/docs/get-started/editor?tab=vscode">https://flutter.io/docs/get-started/editor?tab=vscode</a></p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/fl6.jpg" alt="" class="wp-image-1943" srcset="/wp-content/uploads/2019/02/fl6.jpg 763w, /wp-content/uploads/2019/02/fl6-300x79.jpg 300w" sizes="(max-width: 763px) 100vw, 763px" /><figcaption><br><br></figcaption></figure>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2019/02/fl7.jpg" alt="" class="wp-image-1944" srcset="/wp-content/uploads/2019/02/fl7.jpg 551w, /wp-content/uploads/2019/02/fl7-300x114.jpg 300w" sizes="(max-width: 551px) 100vw, 551px" /></figure></div>
+
+
+
+<p>‌Android Studio editor එක විදියට configure කරන ආකාරය පහත link එකෙන් බලාගන්න පුලුවන්.</p>
+
+
+
+<p><a href="https://flutter.io/docs/get-started/editor?tab=androidstudio">https://flutter.io/docs/get-started/editor?tab=androidstudio</a></p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/2-1.png" alt="" class="wp-image-1948" srcset="/wp-content/uploads/2019/02/2-1.png 1015w, /wp-content/uploads/2019/02/2-1-300x237.png 300w, /wp-content/uploads/2019/02/2-1-768x608.png 768w" sizes="(max-width: 1015px) 100vw, 1015px" /></figure>
+
+
+
+<p>ඊලග blog එකෙන් login page එකක් create කරන හැටි ඉගෙන ගමු..</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/21/flutter1/">මොකක්ද මේ Flutter ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/21/flutter1/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

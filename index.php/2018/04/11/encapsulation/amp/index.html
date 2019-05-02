@@ -1,0 +1,589 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 4 minutes ආයුබෝවන් යාලුවන් හැමෝටම..object oriented consept එකේ මීලග පාඩමත් සමග එකතු වෙන යලුවන් හැමෝම සාදරයෙන් පිලිගන්නවා.අද පාඩමේදී මම කතා කරන්න බලාපොරොත්තු වෙනවා oop වල තියන අලුත්ම කොටසක් ගැන.ඒ තමයි encasulation.encapsulation ගැන කතා කරන්න ඉස්සරින් සපුරුදු විදියටම Read more&hellip;" />
+<meta name="twitter:title" content="Encapsulation - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/04/encapsulation.png" />
+<meta name="twitter:creator" content="@gayan_hasi" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Encapsulation - The SIGMA" />
+<meta property="og:description" content="Reading Time:  4 minutes ආයුබෝවන් යාලුවන් හැමෝටම..object oriented consept එකේ මීලග පාඩමත් සමග එකතු වෙන යලුවන් හැමෝම සාදරයෙන් පිලිගන්නවා.අද පාඩමේදී මම කතා කරන්න බලාපොරොත්තු වෙනවා oop වල තියන අලුත්ම කොටසක් ගැන.ඒ තමයි encasulation.encapsulation ගැන කතා කරන්න ඉස්සරින් සපුරුදු විදියටම Read more&hellip;" />
+<meta property="og:url" content="/index.php/2018/04/11/encapsulation/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:author" content="https://www.facebook.com/gayansampath.manamendra" />
+<meta property="article:tag" content="access modifies" />
+<meta property="article:tag" content="encapsulation" />
+<meta property="article:tag" content="this keyword" />
+<meta property="article:section" content="OOP" />
+<meta property="article:published_time" content="2018-04-11T08:12:16+00:00" />
+<meta property="article:modified_time" content="2018-04-11T08:21:55+00:00" />
+<meta property="og:updated_time" content="2018-04-11T08:21:55+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/04/encapsulation.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/04/encapsulation.png" />
+<meta property="og:image:width" content="504" />
+<meta property="og:image:height" content="373" />
+	<title>Encapsulation - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/04/11/encapsulation/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/04\/11\/encapsulation\/","headline":"Encapsulation","datePublished":"2018-04-11T08:12:16+00:00","dateModified":"2018-04-11T08:21:55+00:00","author":{"@type":"Person","name":"Gayan Sampath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/04\/encapsulation.png","width":504,"height":373}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Encapsulation</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/8bd94eb26945a11011aaca56459c02fd?s=24&#038;d=mm&#038;r=g" alt="Gayan Sampath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Gayan Sampath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-04-11T13:42:16+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="504" height="373" src="/wp-content/uploads/2018/04/encapsulation.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/04/encapsulation.png 504w, /wp-content/uploads/2018/04/encapsulation-300x222.png 300w" layout="intrinsic"><noscript><img width="504" height="373" src="/wp-content/uploads/2018/04/encapsulation.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 504px) 100vw, 504px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p><amp-img class="alignnone size-medium wp-image-112 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/oop-300x172.png" alt="" width="300" height="172" srcset="/wp-content/uploads/2018/03/oop-300x172.png 300w, /wp-content/uploads/2018/03/oop.png 500w" layout="intrinsic"></amp-img></p>
+<p>ආයුබෝවන් යාලුවන් හැමෝටම..object oriented consept එකේ මීලග පාඩමත් සමග එකතු වෙන යලුවන් හැමෝම සාදරයෙන් පිලිගන්නවා.අද පාඩමේදී මම කතා කරන්න බලාපොරොත්තු වෙනවා oop වල තියන අලුත්ම කොටසක් ගැන.ඒ තමයි encasulation.encapsulation ගැන කතා කරන්න ඉස්සරින් සපුරුදු විදියටම කලින් පාඩම පොඩ්ඩක් මතක් කරලා ඉන්නම්.</p>
+<p>කලින් පාඩමේදී අපි කතා කලේ polymorphsm ගැන …මොකද්ද අපි poymorphsm කියලා කිව්වේ…poymorephsm කියලා අපි කිව්වේ, එක action එකක් කුම කිහිපයකින් කරන එකට නේද…polymorphsm ප්‍රධාන වශයෙන් compile time polymorephsm(static polymorphsm) හා run time polymorphm(dinamic method dispatch) කියලා කොටස් දෙකකට බෙදෙනවා කියලත් කිව්වා ..එක action එකක් method overloading පාවිච්චි කරලා ක්‍රම කිහිපයකින් කරන එකට අපි කිව්වා compile time poymorephsm (static poymorephsm) කියලා. run time polymorephsm එහෙමත් නැත්නම් dinamic method dispactch කියලා අපි කිව්වේ මොකද්ද…..run time poymorephsm එහෙමත් නැත්නම් dinamic method dispactch කියලා අපි කිව්වේ sub classes වල objects store කර ගන්න super class reference variable එකක් හදාගෙන ඒ හදාගත්තු reference variable එක පාවච්චි කරලා sub class වල තියන attributes හා methods වලට call කරන එකට.ඒ super class reference variable එක sub class objects store කරන්න තියන පොදු variable එකක් කියලත් අපි කිව්වා …හරි දැන් මතක් වුනා නේද polymorphsm ගැන….තව දුරටත් විස්තර ඇතුව polymorphsm ගැන බලන්න ඕනි නම් <a href="/index.php/2018/04/06/polymorphism/" target="_blank">මෙතනින්</a> අපේ කලින් පාඩමට ගිහින් බලලා එන්න…</p>
+<p>හරි එහෙනන් අපි අද පාඩමට බහිමු.කලින් කිව්ව විදියට අද පාඩම encapsulation වුනාට java වල තියෙන පොඩි කොටසක් මං කලින්ම මතක් කරලා ඉන්නම්..එතකොට අද පාඩම තේරුම් ගන්න එක ටිකක් ලේසි වෙයි.. ඒ තමා access modifies . මේ ගැන නම් කතා කරන්න දේකුත් නෑ..මොකද අපි කලින් පාඩමකින් හොදටම කතා කලා මේක ගැන..ඒ වුනාට පොඩි සාරාංශයක් කරලා දාන්නම් …</p>
+<p><amp-img class="alignnone wp-image-803 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/Access-Modifiers-in-Java-300x102.png" alt="" width="576" height="196" srcset="/wp-content/uploads/2018/04/Access-Modifiers-in-Java-300x102.png 300w, /wp-content/uploads/2018/04/Access-Modifiers-in-Java-768x262.png 768w, /wp-content/uploads/2018/04/Access-Modifiers-in-Java.png 1016w" layout="intrinsic"></amp-img></p>
+<p>ඔන්න ඕක තමයි access modifies ගැන කියන්න තියන සාරාංශ කතාව.තව දුරටත් අමතක වීමක් තියනවනම් <a href="/index.php/2018/03/18/object-oriented-programming/" target="_blank">මෙතනින්</a> ගිහින් අපේ ඒ පාඩමත් බලන් එන්නකෝ…</p>
+<p>හරි එහෙනම් අපි  බලමු   encapsulation කියන්නේ මොකක්ද කියලා. ඇත්තටම encapsulation වලින් කරන්නේ  class එකක තියෙන data protect  කරන එක. ඒ කියන්නේ class එක ඇතුලේ තියන attributes සහ methods ආරක්ෂා කරන එක. ගොඩක්  වෙලාවට අපි protect කරන්න ගන්නේ attributes තමයි.  .හරි එහෙනම් පුරුදු විදිහට මම උදාහරණයකින් පැහැදිලි කරන්නම්කො. මම ගන්නවා parson කියලා class එක. ඒකෙ attributes  තුනක් ගන්නවා මම ගන්නවා name , age සහ city  කියලා. හරි එහෙනම් අපි class  එක හදාගෙන ඉමුකො.</p>
+<pre>class Person{
+      String name;
+      int age;
+      String city;
+
+}
+
+</pre>
+<p>හරි ඔන්න ඔය විදිහට නේද Person class එක එන්නේ. එහෙනම් අපි දැන් අපි parson ගෙ object එකකුත් හදාගෙන attributes වලට values assign කරමු.</p>
+<pre>class Person{
+      String name;
+      int age;
+      String city;
+
+}
+
+class Demo{
+      public static void main(String a[]){
+
+             Person person1=new Person();
+             person1.name="john";
+             person1.age=25;
+             person1.city="Kandy";
+
+             System.out.println("My name is :"+person1.name);
+             System.out.println("My age is :"+person1.age);
+             System.out.println("My city is :"+person1.city);
+             
+      }
+
+}
+
+</pre>
+<p>හරි output එකක් බලන්නකෝ. කිසි අවුලක් නෑ නේද.</p>
+<p><amp-img class="alignnone wp-image-804 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/Capture-3-300x142.jpg" alt="" width="530" height="251" srcset="/wp-content/uploads/2018/04/Capture-3-300x142.jpg 300w, /wp-content/uploads/2018/04/Capture-3.jpg 536w" layout="intrinsic"></amp-img></p>
+<p>පොඩ්ඩක් එහෙනම් බලන්නකෝ ඔයාලා හදපු person class එක දිහා. ඒකෙ තියන attributes ඔක්කොටොම කිසිම access modifier එක දාලා නෑ. ඒ කියන්නෙ ඒ හැම attribute එකක්ම default attribute එකක්. default නම් තමන්ගේ package එකේ ඔක්කොටම access කරන්න පුළුවන් නේ. ඒ නිසා තමයි අපි එළියේ(Demo)  class එකෙ  ඉදලා  person class ඒකෙ attributes වලට values assign  කරේ.  හරි දැන් එහෙනම් හිතලා බලන්නකෝ ඔය attributes ඔක්කොම private කළොත් මොකද වෙන්නේ කියලා.  private attributes වලට access කරන්න පුළුවන් තමන්ගේ class එකේ අයට විතරයි නේද… එහෙනම් කොහොමද අපි Demo class එකෙ ඉදලා මේ attributes වලට values assign කරන්නේ සහ ඒවා read කරන්නේ ?? අන්න එතකොට අපි  මේ attributes  වලට values assign කරන්න සහ ඒවා  read කරන්න පුළුවන් වෙන විදියට method හදාගන්නවා. හරි දැන් කියන්න බලන්න මේ methods  වල access  modifier එක මොන වගේ  එකක් වෙන්න ඕනෙද…method  වල access modifier එක private වුනොත් වැඩක් නැහැ නේද.. මොකද අපි මේ methods හදා ගත්තේ අර privet attributes ටිකට access කරන්නනේ…  එතකොට ඒ හදාගත්තු methods  ටිකත් private වුනොත්  ඒ methods   ටිකටත්  call කරන්න  බැරි වෙනවා නේද.. අන්න ඒ නිසා අපි හදාගන්න methods ටික public  උනානම් හරි. මොකද අපිට පුලුවන් එතකොට Demo class එකේ  ඉඳදලා public methods වලට call කරලා අර privet attributes ටිකට values assign  කරන්නයි  ඒවා  read කරන්නයි. මෙන්න මේ විදිහට private attributes වලට values assign හදන මේ .methodවලට අපි සාමාන්‍යයෙන් කියනවා getters සහ setters කියලා එහෙනම් අපි මේ getters සහ setters පාවිච්චි කරලා attributes වලට values assign කරන්නෙ කොහොමද කියලා බලමු.</p>
+<pre>class Person{
+     privet String name;
+     privet int age;
+     privet String city;
+  
+     public void setName(String name){
+            this.name=name;            //  assign a name
+     }
+     
+     public void setAge(int age){
+            this.age=age;             // assign a age
+     }
+
+     public void setCity(String city){
+            this.city=city;           // assign a sity
+     }
+
+     public void getName(){
+            System.out.println("My name is :"+this.name);  //  getting the assigned name
+     }
+
+     public void getAge(){
+            System.out.println("My age is :"+this.age);    // getting the assigned age
+     }
+
+     public void getCity(){
+            System.out.println("My city is :"+this.city);  // getting the assigned city
+     }
+}
+
+class Demo{
+      public static void main(String a[]){
+
+             Person person1=new Person();
+             person1.setName("Smith");
+             person1.setAge(20);
+             person1.setCity("colombo");
+             person1.getName();
+             person1.getAge();
+             person1.getCity();
+             
+      }
+
+}
+
+</pre>
+<p>ඔන්න ඔය විදිහට තමයි getters සහ setters පාවිච්චි කරලා private attributes values sign කරන්නෙත් ඒව read කරන්නෙත්. this keyword එක පාවිච්චි කලේ ඇයි කියලා යාළුවෝ දන්නවනේ… මොකද අපි කලින් පාඩමක කතා කරලා තියනවා <a href="/index.php/2018/03/21/object-oriented-programming-4/" target="_blank">this keyword</a> එක ඇයි පාවිච්චි කරන්නේ කියලා.අපි මේ කරපු දේ ගැන කෙටියෙන් කියනවා නම් , මෙයින් කරලා තියෙන්නේ class එකක තියන data වලට access කරන එක සීමා කිරීම්යි. තවත් විදියකින් කියනවා නම් class data වලට access කරන එක සීමා කරලා data protect කිරීමයි . ඔන්න ඔය සරල ක්‍රියාවලියට තමයි encapsulation කියලා කියන්නේ. හරි අද පාඩම තේරුනා කියලා හිතනවා. මොකක් හරි අවුලක් ආවොත් comment එකක් දාන්න මීළඟ පාඩමෙන් හමුවෙමු. සුබ දවසක්!</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/oop/" rel="category tag">OOP</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/access-modifies/" rel="tag">access modifies</a>, <a href="/index.php/tag/encapsulation/" rel="tag">encapsulation</a>, <a href="/index.php/tag/this-keyword/" rel="tag">this keyword</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/04/11/encapsulation/#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

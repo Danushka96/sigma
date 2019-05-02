@@ -1,0 +1,536 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 3 minutes මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා MEAN stack වල Database system Read more&hellip;" />
+<meta name="twitter:title" content="Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2019/01/angular-7-cover.png" />
+<meta name="twitter:creator" content="@gayan_hasi" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස - The SIGMA" />
+<meta property="og:description" content="Reading Time:  3 minutes මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා MEAN stack වල Database system Read more&hellip;" />
+<meta property="og:url" content="/index.php/2019/01/16/angular7/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:author" content="https://www.facebook.com/gayansampath.manamendra" />
+<meta property="article:tag" content="angular" />
+<meta property="article:tag" content="MEAN" />
+<meta property="article:tag" content="mongo DB" />
+<meta property="article:tag" content="nodejs" />
+<meta property="article:tag" content="npm" />
+<meta property="article:section" content="web development" />
+<meta property="article:published_time" content="2019-01-16T03:41:40+00:00" />
+<meta property="article:modified_time" content="2019-01-22T15:44:12+00:00" />
+<meta property="og:updated_time" content="2019-01-22T15:44:12+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2019/01/angular-7-cover.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2019/01/angular-7-cover.png" />
+<meta property="og:image:width" content="700" />
+<meta property="og:image:height" content="400" />
+	<title>Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2019/01/16/angular7/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-carousel-0.1.js' async custom-element="amp-carousel"></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2019\/01\/16\/angular7\/","headline":"Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස","datePublished":"2019-01-16T03:41:40+00:00","dateModified":"2019-01-22T15:44:12+00:00","author":{"@type":"Person","name":"Gayan Sampath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2019\/01\/angular-7-cover.png","width":700,"height":400}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/8bd94eb26945a11011aaca56459c02fd?s=24&#038;d=mm&#038;r=g" alt="Gayan Sampath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Gayan Sampath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2019-01-16T09:11:40+00:00">
+		4 months ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="700" height="400" src="/wp-content/uploads/2019/01/angular-7-cover.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2019/01/angular-7-cover.png 700w, /wp-content/uploads/2019/01/angular-7-cover-300x171.png 300w" layout="intrinsic"><noscript><img width="700" height="400" src="/wp-content/uploads/2019/01/angular-7-cover.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 700px) 100vw, 700px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා  MEAN stack  වල Database system එක  වන mongoDB  ගැන..ඒ පාඩම් ටික කලින් මඟ හැරුන කෙනෙක් ඉන්නවනම් <a href="/index.php/category/web-development/mean-stack/">මෙතනින්</a> ගිහින් බලන්න පුලුවන්..අද මම පටන් ගන්න යන්නේ ඒ පාඩම් මාලාවේ දෙවන දිගහැරුමයි..ඒ තමයි  <strong>Angular</strong>  .</p>
+
+
+
+<p>ඇත්තටම කියනවනම් Angular කියන්නේ ඉතාම කෙටි කාලෙකින් මෑත කාලීනව ගොඩක් ජනප්‍රිය වුන javascript front end framework(client side frame work) එකක්.2016  September 14  තමයි මුලින්ම Angular හදුන්වා දෙන්නේ..ඊටපස්සේ 2017 march 23 දී Angular version 4 ද, 2017 november 1 දී Angular version 5 ද, 2018  May 4 දී Angular version 6 ද හදුන්වා දෙනවා ..මං මේ post එක ලියන මේ මොහොතේ තියන latest ම version එක තමයි 2018  October  මාසයේ හදුන්වා දුන් Angular version 7..පේනවනේ නේද  මේ  frame work එක දියණු වෙලා තියන ඉක්මන😃😃😃..ඇත්තටම Angular හදුන්වා දුන්නේ google වුනාට microsoft ලාගේ typescript language එකත් මේකේ තියනවා..ඒ ගැන අපි පස්සේ හෙමීට බලමුකෝ..😀😀</p>
+
+
+
+<p>ඇත්තටම  මොකද්ද    මේ  Angular වල තියෙන විශේෂත්වය ..ඒ තමයි එක page එකක ඉදලා තවත් page එකකට යද්දි url එකට අදාලව component වෙනස් වීමක් පමණයි වෙන්නේ..මුලු page එකම refresh වීමක් වෙන්නෑ…ඔන්න ඔය නිසා අපිට පුලුවන් අපේ app එකේ efficiency එක වැඩි කර ගන්න..ඔන්න ඕක තමයි Angular frame work එකේ තියන ප්‍රධානම විශේෂත්වය..හරි එහෙනන්  Angular ගැන පොඩි හෝ idea එකක් ගන්න ඇති කියලා හිතනවා..අපි දැන් බලමු Angular කොහොමද install කරගන්නේ කියලා..</p>
+
+
+
+<p>මේ සදහා අපිට මුලින්ම nodejs සහ npm ( Node Package Manager  ) install කර ගන්න වෙනවා..සාමානයයෙන් nodejs intall කරනකොට npm auto ම install වෙනවා..පහල තියන url එකෙන් ගිහින් ඔයාගේ machine එකට අදාල nodejs version එක <a href="https://nodejs.org/en/">download</a> කරලා install කර ගන්න පුලුවන්..</p>
+
+
+
+<figure class="wp-block-image"><amp-img src="/wp-content/uploads/2019/01/cap4-1024x502.jpg" alt="" class="wp-image-1554 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2019/01/cap4-1024x502.jpg 1024w, /wp-content/uploads/2019/01/cap4-300x147.jpg 300w, /wp-content/uploads/2019/01/cap4-768x377.jpg 768w, /wp-content/uploads/2019/01/cap4.jpg 1350w" width="1024" height="502" layout="intrinsic"><noscript><img src="/wp-content/uploads/2019/01/cap4-1024x502.jpg" alt="" class="wp-image-1554" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="502"></noscript></amp-img></figure><p>ඔන්න ඔය විදියට install කර ගත්ත nodejs version එක අපිට බලන්න පුලුවන් command prompt එකේ ng -v ලෙස type කරලා..npm -v ලෙස type කරලා npm version එක බලන්න පුලුවන්.ඔන්න ඔය ටික තමයි prerequisites වෙන්නේ Angular සමග වැඩ කරද්දි.</p>
+
+
+
+<p>ඔන්න ඔය prerequisites satisfy කලාම අපිට පුලුවන් අලුත් Angular project එකක් start කරන්න.මේ සදහා ng new &lt;project_name&gt; කියන command එක පාවිච්චි කරන්න පුලුවන්..හරි මම Desktop එකේ අලුත් project එකක් හදනවා angular කියලා..ඊට අදාල command ටික මෙන්න මේ විදියට run කරන්න පුලුවන්..</p>
+
+
+
+<amp-carousel height="102" type="slides" layout="fixed-height"><amp-img src="/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg" alt="" data-id="1566" data-link="/?attachment_id=1566" class="wp-image-1566 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg 1024w, /wp-content/uploads/2019/01/Capture1-1-300x30.jpg 300w, /wp-content/uploads/2019/01/Capture1-1-768x76.jpg 768w, /wp-content/uploads/2019/01/Capture1-1.jpg 1366w" width="1024" height="102" layout="intrinsic"><noscript><img src="/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg" alt="" class="wp-image-1566" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="102"></noscript></amp-img></amp-carousel><p>ඊටපස්සේ මෙන්න මේ වගේ files ගොඩක් Download වෙනවා..</p>
+
+
+
+<amp-carousel height="492" type="slides" layout="fixed-height"><amp-img src="/wp-content/uploads/2019/01/cap2-2-1024x492.jpg" alt="" data-id="1568" data-link="/?attachment_id=1568" class="wp-image-1568 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2019/01/cap2-2-1024x492.jpg 1024w, /wp-content/uploads/2019/01/cap2-2-300x144.jpg 300w, /wp-content/uploads/2019/01/cap2-2-768x369.jpg 768w, /wp-content/uploads/2019/01/cap2-2.jpg 1366w" width="1024" height="492" layout="intrinsic"><noscript><img src="/wp-content/uploads/2019/01/cap2-2-1024x492.jpg" alt="" class="wp-image-1568" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="492"></noscript></amp-img></amp-carousel><figure class="wp-block-image"><amp-img src="/wp-content/uploads/2019/01/cap3-1-1024x255.jpg" alt="" class="wp-image-1569 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2019/01/cap3-1-1024x255.jpg 1024w, /wp-content/uploads/2019/01/cap3-1-300x75.jpg 300w, /wp-content/uploads/2019/01/cap3-1-768x191.jpg 768w, /wp-content/uploads/2019/01/cap3-1.jpg 1366w" width="1024" height="255" layout="intrinsic"><noscript><img src="/wp-content/uploads/2019/01/cap3-1-1024x255.jpg" alt="" class="wp-image-1569" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="255"></noscript></amp-img></figure><p>හරි එහෙනම් අපි දැන් අලුත් project එකක් start කලා angular කියලා..අපි දැන් බලමු හදා ගත්ත project එක run කරන්නේ කොහොමද කියලා..ගොඩක් frame work වල වගේම Angular වලත් තියනවා එයාටම කියලා server එකක්..project එක run කරනවානම් මුලින්ම අපි ng serve හරි npm start හරි ගහලා server එක start කරගෙන ඉන්න ඕනි.ඊට පස්සේ ng -open හරි ng -o හරි ගැහුවහම automatically ඔයාලගේ browser එකේ localhost:4200 කියන port එකේ app එක run වෙනවා..ඔන්න ඔය විදියට app එක run කලාම මෙන්න මේ වගේ view එකක් අපිට බලා ගන්න පුලුවන්.</p>
+
+
+
+<amp-carousel height="462" type="slides" layout="fixed-height"><amp-img src="/wp-content/uploads/2019/01/a-1024x462.jpg" alt="" data-id="1573" data-link="/?attachment_id=1573" class="wp-image-1573 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2019/01/a-1024x462.jpg 1024w, /wp-content/uploads/2019/01/a-300x135.jpg 300w, /wp-content/uploads/2019/01/a-768x347.jpg 768w, /wp-content/uploads/2019/01/a.jpg 1351w" width="1024" height="462" layout="intrinsic"><noscript><img src="/wp-content/uploads/2019/01/a-1024x462.jpg" alt="" class="wp-image-1573" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="462"></noscript></amp-img></amp-carousel><p>හරි අදට ඇති නේද😃..පාඩම නම් ටිකක් දිග වුනා තමයි , නමුත් අපි දැන ගත්තා මොකද්ද Angular කියන්නේ, ඇයි Angular විශේෂ වෙනේ ,කොහාමද Angular project එකක් හදා ගන්නේ හා කොහොමද හදා ගත්ත Angular project එක run කරන්නේ කියන එක ගැන..මීලඟ පාඩමේදී අපි බලමු Angular වල folder structure එක සහ index page එක කොහොමද render වුනේ කියන එක ගැන…අදට පාඩම හමාර කරන්නයි යන්නේ..post එක ගැන ඔයාලගේ අදහස comment එකක් දාන්නත් අමතක කරන්න එපා..මීලඟ පාඩමෙන් හමුවනතුරු ඔබට සුභ දවසක්!😊</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/web-development/angular-js/" rel="category tag">angular.js</a>, <a href="/index.php/category/web-development/" rel="category tag">web development</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/angular/" rel="tag">angular</a>, <a href="/index.php/tag/mean/" rel="tag">MEAN</a>, <a href="/index.php/tag/mongo-db/" rel="tag">mongo DB</a>, <a href="/index.php/tag/nodejs/" rel="tag">nodejs</a>, <a href="/index.php/tag/npm/" rel="tag">npm</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2019/01/16/angular7/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

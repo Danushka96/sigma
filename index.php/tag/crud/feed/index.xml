@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>crud &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/crud/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>laravel වලින් Admin Panel එකක් Generate කරගමු.</title>
+		<link>/index.php/2018/09/11/laravel-admin-panel-generate/</link>
+				<comments>/index.php/2018/09/11/laravel-admin-panel-generate/#respond</comments>
+				<pubDate>Mon, 10 Sep 2018 19:45:38 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Laravel]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[crud]]></category>
+		<category><![CDATA[laravel]]></category>
+		<category><![CDATA[sinhala]]></category>
+
+		<guid isPermaLink="false">/?p=1230</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> මේ Tutorial එකේදි කරන්න හදන්නේ කිසිම Code එකක් ලියන්නේ නැතුව Laravel Admin Panel එකක් Generate කරගන්න විදිය. මේ ක්‍රමයේදි කරන්නේ අපිට අවශ්‍ය කරන CRUD Operation Generate කරගන්න පුළුවන් විදියේ System එකක් හරහා GUI විදියට Database Files, Models, Views, Controllers හදා ගන්නවා. හැබැයි මේකෙන් Admin Panel එක Generate වුණත් ඒක Edit<a class="moretag" href="/index.php/2018/09/11/laravel-admin-panel-generate/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/11/laravel-admin-panel-generate/">laravel වලින් Admin Panel එකක් Generate කරගමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>මේ Tutorial එකේදි කරන්න හදන්නේ කිසිම Code එකක් ලියන්නේ නැතුව Laravel Admin Panel එකක් Generate කරගන්න විදිය. මේ ක්‍රමයේදි කරන්නේ අපිට අවශ්‍ය කරන CRUD Operation Generate කරගන්න පුළුවන් විදියේ System එකක් හරහා GUI විදියට Database Files, Models, Views, Controllers හදා ගන්නවා.</p>
+<p>හැබැයි මේකෙන් Admin Panel එක Generate වුණත් ඒක Edit කරගන්න අපිට Basic Knowledge එකක් අවශ්‍ය වෙනවා. ඒක නිසා මුල් Tutorials බැලුවේ නැත්නම් බලන්න. විශේෂයෙන්ම මේ Tutorial එකේ තියෙනවා Basic CRUD Operations කරන විදිය. <a href="/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> මේ Tutorial එක බැලුවේ නැත්නම් බලන්න.</p>
+<p><img src="/wp-content/uploads/2018/09/laravel-backpack-300x153.png" alt="" width="671" height="342" class=" wp-image-1232 aligncenter" srcset="/wp-content/uploads/2018/09/laravel-backpack-300x153.png 300w, /wp-content/uploads/2018/09/laravel-backpack-768x393.png 768w, /wp-content/uploads/2018/09/laravel-backpack-1024x524.png 1024w" sizes="(max-width: 671px) 100vw, 671px" /></p>
+<h2><span style="text-decoration: underline;"><strong><span style="color: #ff6600; text-decoration: underline;">පළමු පියවර</span></strong></span></h2>
+<p>Laravel Admin Panel Generate කරගන්න පුළුවන් ගොඩක් Online Applications තියෙනවා. ඒවායින් ජනප්‍රියම කිහිපයක් පහළින් දාන්නම්. ඒ ටික Try කරලා බලන්න. මේ Tutorial එක කරන්න බලාපොරොත්තු වෙන්නේ මේවායින් එකක් ගැන විතරයි. ඒක හරියට කර ගත්තහම අනිත් ටිකත් Try කරලා බලන්න පුළුවන් අවුලක් නැතුව.</p>
+<ol>
+<li><a href="https://quickadminpanel.com/" target="_blank" rel="noopener">QuickAdminPanel</a></li>
+<li><a href="https://the-control-group.github.io/voyager/" target="_blank" rel="noopener">Voyager</a></li>
+<li><a href="http://laraadmin.com/" target="_blank" rel="noopener">laraAdmin</a></li>
+</ol>
+<p>මේ 3 තමයි දැනට ගොඩක් ජනප්‍රිය Visual Generators විදියට තියෙන්නේ. මේ Tutorial එක ඉස්සරහට කරන්න බලාපොරොත්තු වෙන්නේ මුලින්ම තියෙන QuickAdminPanel එකත් එක්ක.</p>
+<p>මුලින්ම  <a href="http://quickadminpanel.com/">http://quickadminpanel.com/</a> එකට ගිහින් අලුත් Account එකක් හදා ගන්න. මේ Site එකේ Free Version එකක් වගේම Paid Version එකකුත් තියෙනවා. Free Version එකේ හදන්න පුළුවන් එක Admin Panel එකයි CRUD Model 5ක් විතරයි. ඊට වඩා ඕන නම් Purchase කරන්න වෙනවා.</p>
+<h2><span style="text-decoration: underline;"><strong><span style="color: #ff6600; text-decoration: underline;">දෙවන පියවර</span></strong></span></h2>
+<p>මුලින් කිව්ව විදියට අලුතින් Account එකක් හදාගෙන Log වුණාම මේ විදියේ Interface එකක් බලා ගන්න පුළුවන්. මේකෙන් <strong>new adminpanel </strong>කියන Button එක උඩ Click කරන්න. එතනින් අපිට පුළුවන් අපේ අලුත් Adminpanel එකට අදාල Project එක Create කරගන්න. ඒ වගේම මේකෙ තියෙන වාසිය තමයි අපිට ආපහු Edit කරන්න ඕන වුණොත් හදපු Source Code එක මේ Site එකේ Save වෙලා තියෙනවා. ඉතින් පස්සේ දවසක වෙනස් කරන්න ඕන වුණොත් Changes ලේසියෙන්ම කරගන්න පුළුවන්.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-4-300x131.png" alt="" width="574" height="251" class=" wp-image-1237 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-4-300x131.png 300w, /wp-content/uploads/2018/09/Capture-4-768x336.png 768w, /wp-content/uploads/2018/09/Capture-4-1024x448.png 1024w, /wp-content/uploads/2018/09/Capture-4.png 1308w" sizes="(max-width: 574px) 100vw, 574px" /></p>
+<p>මේ Step එකේන පස්සේ අපිට Fill කරන්න පොඩි Form එකක් එනවා. ඒකෙ තියෙන්නේ අපි හදන්න බලාපොරොත්තු වෙන Application එක ගැන Basic විස්තරයක්. ඒක Fill කරනකොට බලන්න ඕන විශේෂම දේ තමයි <strong>Laravel Version </strong>එක. මොකද ඔයාගෙ ළඟ තියෙන Version එකත් එක්ක ගැලපෙන version එකක් මෙතනින් තෝර ගන්න ඕන. ඉතිරි Fields ටික කැමති විදියට Fill කරගන්න.</p>
+<h2><span style="text-decoration: underline;"><strong><span style="color: #ff6600; text-decoration: underline;">තෙවන පියවර</span></strong></span></h2>
+<p><img src="/wp-content/uploads/2018/09/Capture-5-300x136.png" alt="" width="616" height="279" class=" wp-image-1238 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-5-300x136.png 300w, /wp-content/uploads/2018/09/Capture-5-768x348.png 768w, /wp-content/uploads/2018/09/Capture-5-1024x464.png 1024w, /wp-content/uploads/2018/09/Capture-5.png 1366w" sizes="(max-width: 616px) 100vw, 616px" /></p>
+<p>මුලින්ම මේ වගේ Interface එකක් එනවා. දැන් අපිට තියෙන්නේ අපිට ඕන කරන Models ටිකයි ඒවාට අවශ්‍ය කරන Files ටික Generate කරගන්න. ඒක කරන්නේ මෙහෙමයි.</p>
+<p>මුලින්ම Left Navigation Menu එකේ තියෙන <strong>Menu Button </strong>එක Click කරන්න. එතනින් ඔයාලට දැනට තියෙන Menu Items පෙන්වනවා. දැන් කරන්න තියෙන්නේ අලුතින් CRUD Menu Item එකක් හදා ගන්න. ඒකට <strong>Create CRUD Menu item </strong>කියන එක උඩ Click කරන්න. දැන් ඔයාලට මේ වගේ Interface එකක් බලා ගන්න පුළුවන්.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-6-300x132.png" alt="" width="652" height="287" class=" wp-image-1239 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-6-300x132.png 300w, /wp-content/uploads/2018/09/Capture-6-768x339.png 768w, /wp-content/uploads/2018/09/Capture-6-1024x452.png 1024w, /wp-content/uploads/2018/09/Capture-6.png 1351w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>මෙතනින් ඔයාලගෙ CRUD එකට අදාල Details ටික දෙන්න ඕන. උදාහරණයක් විදියට හිතමු අපි Class room Management System එකක් හදනවා කියලා. එහෙනම් මේ විදියට මුලින්ම Student Model එකක් හදා ගමු.</p>
+<p>මුලින්ම Title, Visual Title වලට student කියලා දාගන්න. ඊට පස්සේ Icon එකට ගැලපෙන එකක් තෝර ගන්න. දැන් තියෙන්නේ අපිට Database Table එකේ තියෙන්න ඕන කරන Fields ටික Generate කර ගන්න. ඒකට පහළ රතු පාටින් තියෙන Add field click කරන්න.</p>
+<p>එතන සාමාන්‍යයෙන් table එකක් හදා ගන්න අවශ්‍ය කරන ප්‍රශ්ණ ටිකක් අහනවා. ඒ ටික Fill කරලා දාලා Ok කරන්න. මේ පහළින් තියෙන්නේ student_id එක Save කරගන්න හදපු Data ටික.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-7-300x163.png" alt="" width="576" height="313" class=" wp-image-1240 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-7-300x163.png 300w, /wp-content/uploads/2018/09/Capture-7-768x418.png 768w, /wp-content/uploads/2018/09/Capture-7.png 898w" sizes="(max-width: 576px) 100vw, 576px" /></p>
+<p>මේ විදියට අපිට අවශ්‍ය Table එකේ එහෙම නැත්නම් Model එකේ තියෙන්න ඕන Fields ටික Specify කරලා කියන්න පුළුවන්. එකින් එක Fields මේ විදියට Add කරගන්න</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-8-300x155.png" alt="" width="615" height="318" class=" wp-image-1241 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-8-300x155.png 300w, /wp-content/uploads/2018/09/Capture-8-768x397.png 768w, /wp-content/uploads/2018/09/Capture-8-1024x529.png 1024w, /wp-content/uploads/2018/09/Capture-8.png 1104w" sizes="(max-width: 615px) 100vw, 615px" /></p>
+<p>අන්තිමට අපිට අවශ්‍ය Data දාගෙන මේ වගේ Table එකක් හදා ගන්න පුළුවන්. ඒ වගේම ඔයාලට මේ Fields තියෙන Table එක යටින් Permissions කියලා කොටසක් පේනවා ඇති. ඒකෙන් කියන්නේ මේ Table එකේ Data වලට Access කරන්න, Modification කරන්න Permission තියෙන්නේ කාටද කියලා Select කරන්න. ඒ කියන්නේ අපේ System එකේ ඉන්න User Roles වලට අපිට වෙන වෙනම Permission Assign කරන්න පුළුවන් මෙතනදි. දැනට Default role 2ක් තියෙනවා පේනවා ඇති.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-9-300x90.png" alt="" width="674" height="202" class=" wp-image-1242 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-9-300x90.png 300w, /wp-content/uploads/2018/09/Capture-9-1024x309.png 1024w, /wp-content/uploads/2018/09/Capture-9.png 1108w" sizes="(max-width: 674px) 100vw, 674px" /></p>
+<p>අලුතින් Roles ඕන නම් ඒවා Change කරගන්න පුළුවන් Left Navigation Bar එකේ තියෙන User Management කියන Menu Item එකේ තියෙන Roles කියන Sub Menu එකට ගිහින්.</p>
+<p>හරි මේ වැඩේ මේ විදියට හදා ගන්න තමන්ට ඕන විදියට Customize කරලා. අන්තිමට දැන් අපි මේ හදා ගත්තු Files ටික අපේ Project එකට දාගන්නේ කොහොමද බලමු.</p>
+<h2><span style="text-decoration: underline;"><strong><span style="color: #ff6600; text-decoration: underline;">සිව්වන පියවර</span></strong></span></h2>
+<p>Customize කරගෙන ඉවර වුණාම දකුණු පැත්තේ උඩ තියෙන තියෙන Download Admin Panel කියන Button එක Click කරන්න.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-10-300x65.png" alt="" width="581" height="126" class=" wp-image-1243 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-10-300x65.png 300w, /wp-content/uploads/2018/09/Capture-10-768x166.png 768w, /wp-content/uploads/2018/09/Capture-10-1024x222.png 1024w, /wp-content/uploads/2018/09/Capture-10.png 1368w" sizes="(max-width: 581px) 100vw, 581px" /></p>
+<p>දැන් Download වුණ Files ටික අලුත් laravel project එකකට Paste කරගන්න. ඊට පස්සේ කරන්න ඕන මූලික වැඩ කිහිපයක් තියෙනවා.</p>
+<p style="padding-left: 30px;"><span style="color: #ff9900;">.env file එකේ තියෙන Database Connection Settings හදා ගන්න.</span></p>
+<p style="padding-left: 30px;"><span style="color: #ff9900;">command prompt එකෙන් අලුතින් හැදුව project එක ඇතුලට ගිහින් Composer Install එකක් run කරන්න</span></p>
+<p style="padding-left: 30px;"><span style="color: #ff9900;">php artisan migrate &#8211;seed මේ Command එකත් run කරවන්න.</span></p>
+<p style="padding-left: 30px;"><span style="color: #ff9900;">ඊට පස්සේ <i>php artisan key:generate </i></span><span style="color: #ff9900;">මේ command එක run කරවන්න.</span></p>
+<p>හරි දැන් අපි අලුත් System එක Install කරගෙන ඉවරයි. දැන් Artisan Server එක on කරලා Site එකට ගියාම Login panel එකක් එනවා. ඒකෙ username: <strong>admin</strong>, password:<strong>password </strong>ගහලා Log වෙන්න පුළුවන්. දැන් බලන්න ඔයා Generate කරපු Model File එකට අදාල හැම CRUD operation එකක්ම කරන්න පුළුවන් විදියේ Interface එකක් හැදිලා තියෙයි.</p>
+<p>මේ වගේ System එකක් Customize කරන විදිය ගැන ඉස්සරහදි කතා කරමු. දැනට Installation වලදි එහෙම Errors තිබුණොත් Comment එකක් දාන්න.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/11/laravel-admin-panel-generate/">laravel වලින් Admin Panel එකක් Generate කරගමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/11/laravel-admin-panel-generate/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Laravel වලින් CRUD Operations කරමු.</title>
+		<link>/index.php/2018/09/04/laravel-crud-operations/</link>
+				<comments>/index.php/2018/09/04/laravel-crud-operations/#comments</comments>
+				<pubDate>Mon, 03 Sep 2018 18:33:21 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Laravel]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[crud]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[laravel]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[sinhala]]></category>
+
+		<guid isPermaLink="false">/?p=1205</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span> මේ ලිපියෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Laravel එක්ක පොඩි CRUD Application එකක් හදන විදිය ගැන. ඒ කියන්නේ Create, Read, Update, Delete කියන Basic Database Function 4 කරන විදිය ගැන. (https://github.com/Danushka96/laravelcrud) Laravel Install කරන විදිය Basic Application එකක් හදන විදිය ගැන බැලුවේ නැත්නම් මේ ලිපිය බලන්න Installing Laravel Basic Application in<a class="moretag" href="/index.php/2018/09/04/laravel-crud-operations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span><p>මේ ලිපියෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Laravel එක්ක පොඩි CRUD Application එකක් හදන විදිය ගැන. ඒ කියන්නේ Create, Read, Update, Delete කියන Basic Database Function 4 කරන විදිය ගැන. <a href="https://github.com/Danushka96/laravelcrud">(https://github.com/Danushka96/laravelcrud)</a></p>
+<p>Laravel Install කරන විදිය Basic Application එකක් හදන විදිය ගැන බැලුවේ නැත්නම් මේ ලිපිය බලන්න</p>
+<ol>
+<li><a href="/index.php/2018/04/11/install-laravel-homestead-custom/">Installing Laravel</a></li>
+<li><a href="/index.php/2018/04/25/laravel-basic-application/">Basic Application in Laravel</a></li>
+</ol>
+<h2><span style="text-decoration: underline; color: #ff9900;"><strong>මූලික පියවර</strong></span></h2>
+<p>මුලින්ම කරන්න ඕන අලුත් Laravel Project එකක් පටන් ගන්න එක. ඒකට මේ command prompt එකෙන් Application එක හදන්න අවශ්‍ය තැනට ගිහින් මේ Command එක Paste කරලා Enter කරන්න.</p>
+<blockquote><p><span>composer </span><span class="hljs-keyword">create</span><span>&#8211;</span><span class="hljs-keyword">project</span><span> </span><span class="hljs-comment">&#8211;prefer-dist laravel/laravel crudApps</span></p></blockquote>
+<p>පොඩි වෙලාවකින් අලුත් Project එකක් හැදිලා තියෙයි crudApps නමෙන්. දැන් කරන්න තියෙන් අලුතින් Database එකක් හදා ගන්න එක. ඒකට mysql Server එක on කරලා අලුතින් Database එකක් හදලා ඒකට අදාල Login Details ටික .env file එකේ දාලා Save කරගන්න.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-300x130.png" alt="" width="360" height="156" class="alignnone wp-image-1210" srcset="/wp-content/uploads/2018/09/Capture-300x130.png 300w, /wp-content/uploads/2018/09/Capture.png 322w" sizes="(max-width: 360px) 100vw, 360px" /></p>
+<p>හරි මූලිකම පියවර ඔය ටික හරියට කර ගත්තහම ඉවරයි.</p>
+<h2><span style="text-decoration: underline; color: #ff9900;"><strong>දෙවන පියවර</strong></span></h2>
+<p>මේ පියවරේදි අපි කරන්නේ Database එකත් එක්ක සම්බන්ධ වැඩ ටිකක්. ඒ කියන්නේ Model File එකකුයි Migration File එකකුයි හදා ගන්න එක. ඒකට මේ විදියට කරගෙන යන්න.</p>
+<p>මුලින්ම Empty Migration File එකකයි Model File එකකයි හදාගෙන ඒක Edit කරගමු. ඒකට Command Prompt එකෙන් අපි හදා ගත්ත අලුත් Project Folder එක ඇතුලට ගිහින් මේ Command එක Type කරන්න.</p>
+<blockquote><p>php artisan make:model student -m</p></blockquote>
+<p>මේක run වුණාට පස්සේ බලා ගන්න පුළුවන් අලුතින් create_students_table.php file එකක් migration folder එක ඇතුලෙ හැදිලා තියෙනවා. App folder එක ඇතුලෙත් අලුතින් student.php file එකක් හැදිලා තියෙනවා. හරි දැන් මේ file 2 edit කරගමු.</p>
+<p>මුලින්ම Migration File එක edit කරගන්න විදිය බලමු.</p>
+<p>මම මේ Tutorial එකට පාවිච්චි කරන්නේ Student ලාගේ පොඩි Details ටිකක් තියා ගන්න පුළුවන් Table එකක්. Fields ටික <strong>FirstName, LastName, Address, Telephone </strong>කියන ඒවා. ඒවාට හරියන්න තමයි මම මේ Migration File එක හදා ගන්නේ.</p>
+<p><strong>create_students_table.php</strong></p>
+<pre>&lt;?php 
+use Illuminate\Support\Facades\Schema; 
+use Illuminate\Database\Schema\Blueprint; 
+use Illuminate\Database\Migrations\Migration; 
+
+class CreateStudentsTable extends Migration { 
+/** 
+* Run the migrations. 
+* 
+* @return void 
+*/ 
+public function up() 
+{ 
+Schema::create('students', function (Blueprint $table) { $table-&gt;increments('id');
+            $table-&gt;string('firstname');
+            $table-&gt;string('lastname');
+            $table-&gt;string('address');
+            $table-&gt;string('tp');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('students');
+    }
+}
+
+</pre>
+<p>මේ එකින් එක $table-&gt;string(&#8216;firstname&#8217;); වගේ දීලා තියෙන්නේ අපිට Table එකේ හදා ගන්න ඕන කරන Fields ටික.</p>
+<p>මේ විදියට Code එක ලියාගත්තට පස්සේ මේ Script එක Database Server එකේ run කරවන්න ඕන. ඒකට මේ migrate command එක use කරන්න පුළුවන් මේ විදියට.</p>
+<blockquote><p>php artisan migrate</p></blockquote>
+<p>දැන් ඔයාලට phpmyadmin වලින් අලුතින් හදපු Database එක බැලුවොත් පෙනෙයි අලුත් Table 2ක් හැදිලා තියෙනවා. (migration table එකෙන් වෙන දේ ගැන කලින් ලිපි වලින් කතා කලා)</p>
+<p>හරි දැන් බලමු Model File එක හදා ගන්නේ කොහොමද කියලා. ඒක මේ විදියට Code කරගන්න.</p>
+<pre>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class student extends Model
+{
+    protected $fillable = ['firstname', 'lastname','address','tp'];
+}
+
+</pre>
+<p>මේ පියවරේ වැඩ ටික මෙතනින් ඉවරයි. දැන් අපිට ඉතිරි වෙලා තියෙන්නේ Views ටිකයි Controller එකකුයි හදා ගන්න.</p>
+<h2><span style="text-decoration: underline; color: #ff9900;"><strong>තුන්වෙනි පියවර</strong></span></h2>
+<p>මේකෙදි අපි කරන්නේ අපිට අවශ්‍ය Views ටික හදා ගන්න එක. නිකන් Html Code ලියන හින්දා පැහැදිලි කරන්න ඕන නැති වෙයි කියලා හිතනවා. ඒක හින්දා View ටිකේ Code ටික දාගෙන යන්නම්. මේ ටික resourses/views folder එකේ Save කරගන්න.</p>
+<p><strong>index.blade.php</strong></p>
+<pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;CRUD Application&lt;/title&gt;
+
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"&gt;
+&lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container"&gt;
+&lt;div class = "card-panel teal lighten-2"&gt;&lt;h3 style="text-align: center"&gt;CRUD Application&lt;/h3&gt;&lt;/div&gt;
+
+
+&lt;div class = "card-panel center"&gt;
+&lt;div style="float: left"&gt;
+&lt;a class="btn-floating btn-large waves-effect waves-light red" href="{{url('student/create')}}"&gt;&lt;i class="material-icons float-left green"&gt;add&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;table class="striped" style="margin-top: 50px"&gt;
+&lt;tr&gt;
+&lt;th&gt;First Name&lt;/th&gt;
+&lt;th&gt;Last Name&lt;/th&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Telephone&lt;/th&gt;
+&lt;th&gt;Action&lt;/th&gt;
+&lt;/tr&gt;
+@foreach($students as $student)
+&lt;tr&gt;
+&lt;td&gt;{{ $student-&gt;firstname }}&lt;/td&gt;
+&lt;td&gt;{{ $student-&gt;lastname }}&lt;/td&gt;
+&lt;td&gt;{{ $student-&gt;address }}&lt;/td&gt;
+&lt;td&gt;{{ $student-&gt;tp }}&lt;/td&gt;
+&lt;td&gt;
+&lt;div class="row"&gt;&lt;div class="col"&gt;
+&lt;a href="{{url('student/'.$student-&gt;id.'/edit')}}"&gt;&lt;button class="btn btn-small blue"&gt;Edit&lt;/button&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col"&gt;
+&lt;form method="POST" action="{{route('student.destroy',$student-&gt;id)}}"&gt;
+@csrf
+@method('DELETE')
+&lt;button type="submit" class="btn btn-small red"&gt;Delete&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+@endforeach
+&lt;/tabel&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p><img src="/wp-content/uploads/2018/09/Capture-1-300x140.png" alt="" width="519" height="242" class=" wp-image-1222 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-1-300x140.png 300w, /wp-content/uploads/2018/09/Capture-1-768x359.png 768w, /wp-content/uploads/2018/09/Capture-1.png 998w" sizes="(max-width: 519px) 100vw, 519px" /></p>
+<p><strong>add.blade.php</strong></p>
+<pre>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;CRUD Application&lt;/title&gt;
+
+        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"&gt;
+        &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="container"&gt;
+        &lt;div class = "card-panel teal lighten-2"&gt;&lt;h3 style="text-align: center"&gt;CRUD Application&lt;/h3&gt;&lt;/div&gt;
+
+
+        &lt;div class = "card-panel center"&gt;
+              &lt;div class="row"&gt;
+                &lt;form class="col s12" method="POST" action="{{url('/student')}}"&gt;
+                    @csrf
+                  &lt;div class="row"&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;account_circle&lt;/i&gt;
+                      &lt;input id="firstname" type="text" class="validate" name="firstname"&gt;
+                      &lt;label for="firstname"&gt;First Name&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;account_circle&lt;/i&gt;
+                      &lt;input id="lastname" type="tel" class="validate" name="lastname"&gt;
+                      &lt;label for="lastname"&gt;Last Name&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;home&lt;/i&gt;
+                      &lt;input id="address" type="text" class="validate" name="address"&gt;
+                      &lt;label for="address"&gt;Address&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;phone&lt;/i&gt;
+                      &lt;input id="telephone" type="tel" class="validate" name="tp"&gt;
+                      &lt;label for="telephone"&gt;Telephone&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;input type="submit" name="submit" class="btn blue right" value="Save"&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+<p><img src="/wp-content/uploads/2018/09/Capture-2-300x151.png" alt="" width="485" height="244" class=" wp-image-1224 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-2-300x151.png 300w, /wp-content/uploads/2018/09/Capture-2-768x386.png 768w, /wp-content/uploads/2018/09/Capture-2-1024x514.png 1024w, /wp-content/uploads/2018/09/Capture-2.png 1049w" sizes="(max-width: 485px) 100vw, 485px" /></p>
+<p><strong>edit.blade.php</strong></p>
+<pre>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;CRUD Application&lt;/title&gt;
+
+        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"&gt;
+        &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="container"&gt;
+        &lt;div class = "card-panel teal lighten-2"&gt;&lt;h3 style="text-align: center"&gt;CRUD Application&lt;/h3&gt;&lt;/div&gt;
+
+
+        &lt;div class = "card-panel center"&gt;
+              &lt;div class="row"&gt;
+                &lt;form class="col s12" method="POST" action="{{ route('student.update',$student-&gt;id) }}"&gt;
+                    @csrf
+                    @method('PUT')
+                  &lt;div class="row"&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;account_circle&lt;/i&gt;
+                      &lt;input id="firstname" type="text" class="validate" name="firstname" value="{{ $student-&gt;firstname }}"&gt;
+                      &lt;label for="firstname"&gt;First Name&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;account_circle&lt;/i&gt;
+                      &lt;input id="lastname" type="tel" class="validate" name="lastname" value="{{ $student-&gt;lastname }}"&gt;
+                      &lt;label for="lastname"&gt;Last Name&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;home&lt;/i&gt;
+                      &lt;input id="address" type="text" class="validate" name="address" value="{{ $student-&gt;address }}"&gt;
+                      &lt;label for="address"&gt;Address&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;phone&lt;/i&gt;
+                      &lt;input id="telephone" type="tel" class="validate" name="tp" value="{{ $student-&gt;tp }}"&gt;
+                      &lt;label for="telephone"&gt;Telephone&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;input type="submit" name="submit" class="btn blue right" value="Update"&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+<p><img src="/wp-content/uploads/2018/09/Capture-3-300x157.png" alt="" width="449" height="235" class=" wp-image-1225 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-3-300x157.png 300w, /wp-content/uploads/2018/09/Capture-3-768x401.png 768w, /wp-content/uploads/2018/09/Capture-3-1024x534.png 1024w, /wp-content/uploads/2018/09/Capture-3.png 1054w" sizes="(max-width: 449px) 100vw, 449px" /></p>
+<p>මේ Views ටික හරියට හදා ගත්ත නම් ඊළඟ පියවරට යන්න පුළුවන්&#8230;..</p>
+<h3><span style="text-decoration: underline; color: #ff9900;"><strong>සිව්වන පියවර</strong></span></h3>
+<p>මේ පියවරේදි අපි කරන්නේ Controller එකක් හදා ගන්න එක. ඒකට මේ Command එක command prompt එකේ run කර ගන්න.</p>
+<blockquote><p>php artisan make:controller studentController &#8211;resource</p></blockquote>
+<p>මේ Command එකෙන් වෙන්නේ අපිට Model එකක් Control කරන්න අවශ්‍ය වෙන Function එක්ක Controller එකක් හැදෙන එක. දැන් ඒ File එක open කරලා මේ විදියට code කරගන්න.</p>
+<pre>&lt;?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\student;
+
+class studentController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $students = student::all();
+        // dd($students);
+        return view('index',['students'=&gt;$students]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('add');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $studentnew = new student;
+        $studentnew -&gt; firstname = $request -&gt; firstname;
+        $studentnew -&gt; lastname = $request -&gt; lastname;
+        $studentnew -&gt; address = $request -&gt; address;
+        $studentnew -&gt; tp = $request -&gt; tp;
+        $studentnew -&gt; save();
+        return redirect('student/create')-&gt;with('status','saved');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $studentfind = student::findOrFail($id);
+        return view('edit',['student'=&gt;$studentfind]);
+
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $studentfind = student::findOrFail($id);
+        $studentfind -&gt; firstname = $request -&gt; firstname;
+        $studentfind -&gt; lastname = $request -&gt; lastname;
+        $studentfind -&gt; address = $request -&gt; address;
+        $studentfind -&gt; tp = $request -&gt; tp;
+        $studentfind -&gt; save();
+        return redirect('student/'.$studentfind-&gt;id.'/edit')-&gt;with('status','updated!');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        $studentfind = student::findOrFail($id);
+        $studentfind -&gt; delete();
+        return redirect('/student');
+    }
+}
+
+</pre>
+<p>මේ File එකේ තියෙන $studentfind, $studentnew වගේ ඒවා තමන්ට කැමති Variables දාගන්න පුළුවන්&#8230;</p>
+<h3><span style="text-decoration: underline; color: #ff9900;"><strong>පස්වෙනි පියවර</strong></span></h3>
+<p>දැන් අපිට කරන්න ඉතිරි වෙලා තියෙන්නේ අන්තිම පියවර. ඒ කියන්නේ දැන් කරන්න ඕන Route ටික හරියට Config කරගන්න එක. ඒක අපිට කරන්න පුළුවන් Routes/web.php කියන File එක මේ විදියට Edit කරගෙන.</p>
+<pre>&lt;?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::resource('student','studentController');</pre>
+<p>මේ ටික ඉවරයි කියන්නේ අපේ Application එක run කරලා බලන්න පුළුවන් තත්වෙක දැන් තියෙනවා. Command Prompt එකේ මේ Command එක ගහලා Artisan Server එක on කරගෙන http://localhost:8000/student කියන link එක Browser එකේ Load කරගන්න.</p>
+<blockquote><p>php artisan serve</p></blockquote>
+<p>Add/ Edit/ Delete කරලා බලන්න. අවුලක් තිබුණොත් Comment එකක් දාන්න&#8230;&#8230;</p>
+<p>Complete Project Download From here: <a href="https://github.com/Danushka96/laravelcrud">https://github.com/Danushka96/laravelcrud</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/04/laravel-crud-operations/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+	</channel>
+</rss>

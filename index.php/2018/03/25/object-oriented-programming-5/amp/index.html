@@ -1,0 +1,717 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 6 minutes &nbsp; ආයුබෝවන්! කොහොමද යාලුවනේ ! object oriented  මීලග පාඩමත් සමගින් ඔන්න මං අදත් ආවා ඔයාල හමුවෙන්න.object oriented මීලග කොටසට ඔයාලා හැමෝම සාදරයෙන් පිලිගන්නවා.කලින් පාඩමේදි අපි කථා කලා constructor overloading ගැන හා this කියන keyword එක Read more&hellip;" />
+<meta name="twitter:title" content="Inheritance - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/03/20171221.png" />
+<meta name="twitter:creator" content="@gayan_hasi" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Inheritance - The SIGMA" />
+<meta property="og:description" content="Reading Time:  6 minutes &nbsp; ආයුබෝවන්! කොහොමද යාලුවනේ ! object oriented  මීලග පාඩමත් සමගින් ඔන්න මං අදත් ආවා ඔයාල හමුවෙන්න.object oriented මීලග කොටසට ඔයාලා හැමෝම සාදරයෙන් පිලිගන්නවා.කලින් පාඩමේදි අපි කථා කලා constructor overloading ගැන හා this කියන keyword එක Read more&hellip;" />
+<meta property="og:url" content="/index.php/2018/03/25/object-oriented-programming-5/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:author" content="https://www.facebook.com/gayansampath.manamendra" />
+<meta property="article:section" content="OOP" />
+<meta property="article:published_time" content="2018-03-25T11:56:57+00:00" />
+<meta property="article:modified_time" content="2018-04-01T16:53:34+00:00" />
+<meta property="og:updated_time" content="2018-04-01T16:53:34+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/03/20171221.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/03/20171221.png" />
+<meta property="og:image:width" content="1920" />
+<meta property="og:image:height" content="1080" />
+	<title>Inheritance - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/03/25/object-oriented-programming-5/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/03\/25\/object-oriented-programming-5\/","headline":"Inheritance","datePublished":"2018-03-25T11:56:57+00:00","dateModified":"2018-04-01T16:53:34+00:00","author":{"@type":"Person","name":"Gayan Sampath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/20171221.png","width":1920,"height":1080}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Inheritance</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/8bd94eb26945a11011aaca56459c02fd?s=24&#038;d=mm&#038;r=g" alt="Gayan Sampath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Gayan Sampath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-03-25T11:56:57+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="422" src="/wp-content/uploads/2018/03/20171221-1024x576.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/03/20171221-1024x576.png 1024w, /wp-content/uploads/2018/03/20171221-300x169.png 300w, /wp-content/uploads/2018/03/20171221-768x432.png 768w" layout="intrinsic"><noscript><img width="750" height="422" src="/wp-content/uploads/2018/03/20171221-1024x576.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span><p> </p>
+<p><amp-img class="alignnone size-medium wp-image-112 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/oop-300x172.png" alt="" width="300" height="172" srcset="/wp-content/uploads/2018/03/oop-300x172.png 300w, /wp-content/uploads/2018/03/oop.png 500w" layout="intrinsic"></amp-img></p>
+<p>ආයුබෝවන්! කොහොමද යාලුවනේ ! object oriented  මීලග පාඩමත් සමගින් ඔන්න මං අදත් ආවා ඔයාල හමුවෙන්න.object oriented මීලග කොටසට ඔයාලා හැමෝම සාදරයෙන් පිලිගන්නවා.කලින් පාඩමේදි අපි කථා කලා constructor overloading ගැන හා this කියන keyword එක ගැන.හැමෝටම මතකයි නේද? පොඩි හරි අමතක වීමක් තියනවනම් කලින් පාඩම ඉක්මනින් බලන් එන්නකෝ.අද නම් මම කලින් පාඩම මතක් කරන්න යන්නෙ නැහැ.ඇයියේ දන්නවද? ඒ තමයි අපි අද බලන්න යන්නෙ object oriented concept එකේ තියෙන අලුත්ම කොටසක් ගැන.ඒ කොටස පටන් ගන්න ඉස්සරින් ඒ ගැන පොඩි හැදින්වීමක් කරන්නම්.ඇත්තටම කියනවනම් අපි මේ ඉදිරියට කථා කරන්න යන කොටස් කිහිපය තමයි object oriented concept එකේ තියෙන වැදගත්ම ටික.ඒ නිසා මේ පාඩම් කිහිපයේ මොකක් හෝ පොඩි අපැහැදිලි තැනක් තිබුනොත් කොමෙන්ටුවක් දාන්න ඕනි හොදේ☺☺</p>
+<p>හරි එහෙනං අපි බලමු මොකක්ද අද පාඩම කියලා.මෙතැන් සිට ඉදිරියට අපි කථා කරන්න බලාපොරොත්තු වන්නේ object oriented  concept එකේ තියෙන features කිහිපයක් ගැන.මේවා අපිට  ප්‍රධාන වශයෙන් කොටස් හතරකට වෙන් කරන්න පුලුවන් මෙන්න මේ විදියට.</p>
+<p>1. Inheritance</p>
+<p>2.Encapsulation</p>
+<p>3.polymorphism</p>
+<p>4.Interface</p>
+<p>කියලා.අද අපි කථා කරන්න යන්නෙ මෙහි පලමු වැන්න ගැන.ඒ කියන්නෙ inheritance ගැන.ඇත්තටම යාලුවනේ මොකක්ද මේ inheritance කියන්නේ.inherit කරනවා කියන එකේ සරලම අදහස තමයි එක පරම්පරාවකින් තවත් පරම්පරාවකට යම් කිසි දෙයක් දායාද කරනවා කරනවා කියන එකයි. හරියට නිකන් මෙන්න මේ වගේ .</p>
+<p><amp-img class="alignnone size-medium wp-image-330 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/Inheritance-in-object-oriented-PHP-257x300.png" alt="" width="257" height="300" srcset="/wp-content/uploads/2018/03/Inheritance-in-object-oriented-PHP-257x300.png 257w, /wp-content/uploads/2018/03/Inheritance-in-object-oriented-PHP.png 409w" layout="intrinsic"></amp-img></p>
+<p>එහෙම කිව්වම ඔයාලා බලනවා ඇති කොහොමද මේක programming වලට සම්බන්ධ වෙන්නෙ කියලා. මෙන්න මෙහෙමයි inheritance කියන feature එක programming වලට අපි සම්බන්ධ කර ගන්නෙ.හරි මං උදාහරණයකින්ම පැහැදිලි කරන්නම්කෝ.</p>
+<p>දැන් ඔයා හිතන්න ඔයාට කෙනෙක් කියනවා teacher,student හා doctor කියලා object තුනක් හදන්න කියලා.එතකොට ඔයා මොකද කරන්නෙ?ඉස්සරෝම class තුනක් හදනවා teacher , student හා doctor කියලා.ඊට පස්සෙ object තුන හදනවා.code එක ලිව්වොත් මෙන්න මේ වගේ නේද.</p>
+<pre>
+class Teacher{
+      String name;
+      int age;
+      String Gender;
+      String Designation;
+      int salary;
+
+      void eat(){
+         // statements
+      }
+  
+      void walk(){
+         // statements
+      }
+  
+      void teach(){
+         // statements
+      }
+
+      void takeExams(){
+         // statements
+      }
+}
+
+class Doctor{
+      String name;
+      int age ;
+      String Gender;
+      String Designation;
+      String salary;
+
+      void eat(){
+           // statements
+      }
+
+      void walk(){
+           // statements
+      }
+   
+      void ChackUp(){
+           //  statements
+      }
+
+      void presribe(){
+          // statements
+      }
+
+
+}
+
+class Student{
+      String name;
+      int age;
+      String Gender;
+      String programe;
+      int studyYear;
+
+      void eat(){
+           // statements
+      }
+
+      void walk(){
+          // statements
+      }
+
+      void study(){
+          // statements
+      }
+
+      void heldYear(){
+         // statements
+      }
+}
+
+ // then you can create objects 
+
+class CraateObject{
+        public static void main(String s[]){
+    
+                      // creating teacher object
+        
+             Teacher teacher1=new Teacher();
+
+                     // creating doctor object
+   
+             Doctor doctor1=new Doctor();
+
+                    // creating student object
+            
+             Student student1=new Student();
+
+       }
+
+}
+</pre>
+<p>ඔයාලා කරපු ඒ ක්‍රමය හරියටම හරි.කිසිම වැරැද්දක් නෑ.හැබැයි මම කියන දේත් පොඩ්ඩක් අහන්නකෝ.පොඩ්ඩක් හොදට කල්පනාවෙන් ඇස් ඇරලා බලන්නකෝ ඔයා හදපු class තුනම දිහා.class තුනේම එක වගේ attributes සහ methods කීපයක්ම තියනවා නේද?තවත් විදියකින් කිව්වොත් class තුනටම පොදු attributes හා methods කිහිපයක්ම තියනවා .ඒ පොදු attributes හා methods ටික එකම class එකකට ගත්තොත් හොදයි කියලා හිතෙනවා නේද. හරි එහෙනන් අපි class තුනටම පොදු attributes හා methods ටික එකම class එකකට ඇරගෙන ඒ class එකට අපි මොකක් හරි නමක් දෙමු. හරි යාලුවනේ, මම ඒ class එකට නමක් දෙනවා person කියලා.හරි අපි එහෙනන් person class එක හදමුකෝ මෙන්න මේ විදියට .</p>
+<pre>
+class Person{
+      String name;
+      int age;
+      String Gender;
+
+      void eat(){
+           // statements
+      }
+   
+      void walk(){
+           // statements
+      }
+}
+</pre>
+<p>හරි ඔයාලට පේනවා දැන් අපි හදා ගත්තු person class එකේ තියෙන්නෙ class තුනටම පොදු attributes හා methods ටික. හරි ඔය හදාගත්තු person class එකට ඔහොමම තියෙන්න දීලා බලන්නකෝ එක එක class එකේ ඉතිරි වුන attributes හා method දිහා.හොදට බැලුවොත් ඔයාලට පේනවා ඇති යාලුවනේ teacher, doctor හා student කියන class තුනේ ඉතිරි වෙලා තියෙන්නෙ එකිනෙකට අනනයය වු attributes හා methods කියලා. තවත් විදියකින් කියනවනම් ඒ ඒ class වලට අදාල special attributes හා methods ඉතිරි වෙලා තියෙන්නෙ.</p>
+<p><amp-img class="alignnone size-medium wp-image-331 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/inheritance_2-300x177.jpg" alt="" width="300" height="177" srcset="/wp-content/uploads/2018/03/inheritance_2-300x177.jpg 300w, /wp-content/uploads/2018/03/inheritance_2.jpg 462w" layout="intrinsic"></amp-img></p>
+<p>හරි අපි දැන් ඒ ඉතිරි වුන attributes හා methods ඒ ඒ අදාල class එකට දාලා අලුත් teacher, student හා doctor කියන class තුන හදා ගමු.</p>
+<pre>class Teacher{
+      String Designation;
+      int salary;
+
+      void teach(){
+         // statements
+      }
+
+      void takeExams(){
+         // statements
+      }
+}
+
+class Doctor{
+      String Designation;
+      String salary;
+
+       void ChackUp(){
+           //  statements
+      }
+
+      void presribe(){
+          // statements
+      }
+}
+
+class Student{
+
+      String programe;
+      int studyYear;
+
+      void study(){
+          // statements
+      }
+
+      void heldYear(){
+         // statements
+      }
+
+
+}
+
+</pre>
+<p>හරි යාලුවනේ දැන් අපි කරන්න ඕනි අමාරුම වැඩ ටික කරලා ඉවරයි.ඒ කියන්නෙ , class තුනේ තිබුන පොදු attributes හා methods හදුනා ගෙන ඒ ටික එක් class එකකට දා ගත්තා . ඊට පස්සෙ teacher, student හා doctor කියන class තුනට අදාල special attributes හා methods ටික ඒ ඒ class වල වෙන වෙනම තියා ගත්තා. තව පොඩි දෙයයි ඉතිරි වෙලා තියෙන්නේ.ඒ තමයි අපි අර person කියලා class එකක් හදලා, class තුනටම අදාලව තියෙන පොදු attributes හා methods හැම එකක්ම teacher,doctor හා student කියන class තුනටම වෙන වෙනම ගන්න ඕනි නේද? අන්න ඒකට අපි පාවිච්චි කරනවා extends කියන keyword එක.</p>
+<pre>class Teacher  extends Person{
+      String Designation;
+      int salary;
+
+      void teach(){
+         // statements
+      }
+
+      void takeExams(){
+         // statements
+      }
+}
+
+class Doctor extends Person{
+      String Designation;
+      String salary;
+
+       void ChackUp(){
+           //  statements
+      }
+
+      void presribe(){
+          // statements
+      }
+}
+
+class Student extends Person{
+
+      String programe;
+      int studyYear;
+
+      void study(){
+          // statements
+      }
+
+      void heldYear(){
+         // statements
+      }
+
+
+}
+
+
+</pre>
+<p>ඔන්න ඔහොම තමයි extends keyword එක පාවිච්චි කරලා එක් class එකක තියෙන attributes සහ methods තවත් class එකකට ගන්නේ.පොදු attributes හා methods තියාගත්ත class එකට අපි කියනවා super class එක කියලා.අපෙ උදාහරණයේ හැටියටනම් super class එක වෙන්නෙ person class එකයි.inherit කරපු class එක එහෙමත් නැත්නම් special attributes හා methods තියාගත්තු class එකට අපි කියනවා sub class එක කියලා.අපෙ උදාහරණයේ නම් sub classes වෙන්නෙ teacher,doctor හා student කියන class තුනයි.<br>
+inheritance වරදී inherit වෙලා තියනවා කියලා අපි පෙන්නන්නෙ sub class එකේ ඉඳලා super class එකට ඊතලයක් ඇඳලා.හරියට මෙන්න මේ වගේ.</p>
+<p><amp-img class="alignnone size-medium wp-image-332 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/inheritance_1-300x173.jpg" alt="" width="300" height="173" srcset="/wp-content/uploads/2018/03/inheritance_1-300x173.jpg 300w, /wp-content/uploads/2018/03/inheritance_1.jpg 475w" layout="intrinsic"></amp-img></p>
+<p>ඔයාලා මතක තියා ගන්න ඕනි වැදගත්ම කාරණය තමයි sub class එකක් super class එකකින් inherit වෙද්දි super class එකේ තියෙන privet නොවන සියලුම attributes හා methods sub class එකට එනවා කියන එක.ඊට පස්සෙ ඒ ආව attributes හා methods ඔක්කොම sub class එකේ තබුන ඒවා විදියටම තමයි වැඩ කරන්නෙ.කිසිම වෙනසක් නැහැ.ඔන්න ඕකට තමයි යාලුවනේ inheritance කියලා කියන්නේ.හරි යාලුවනේ, ඔයාලට දැනටමත් තේරෙනවා ඇතිනෙ මේ ක්‍රමයේ තියෙන වාසිය.කලින් කුමයේදී නම් ඔයාලා class තුනටම පොදු attributes හා methods ටික තුන් පාරක්ම define කලා නමුත් මේ කුමයේදී නම් define කලේ එක පාරයි.ඔන්න ඕක තමයි inheritance කියන feature එකේ තියන වාසිය.ඔයාගෙ programe එකේ ස්භාවය අනුව ඔයාලට මේ feature එකේ වාසිය ගන්න පුලුවන්.ඔයාගෙ programe එකේ එක එක class වල පොදු attributes හා methods ගොඩක් තියනවනම් inheritance පාවිච්චි කරන එක ඔයාට පට්ට වාසියි නේද.</p>
+<p>භරි අපි තවත් විදියකින් inheritance ගැන හිතමුකො.ඒකට මං මෙන්න මේ වගේ උදාහරනයක් ගන්නම්කෝ.හොදට මේ යටින් දීලා තියෙන රූපය බලන්නකෝ.</p>
+<p><amp-img class="alignnone wp-image-327 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/Nokia-3310-300x198.jpg" alt="" width="211" height="139" srcset="/wp-content/uploads/2018/03/Nokia-3310-300x198.jpg 300w, /wp-content/uploads/2018/03/Nokia-3310-768x508.jpg 768w, /wp-content/uploads/2018/03/Nokia-3310.jpg 770w" layout="intrinsic"></amp-img>             <amp-img class="alignnone wp-image-328 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/right-arrow-continue-icon-png-6-300x300.png" alt="" width="101" height="101" srcset="/wp-content/uploads/2018/03/right-arrow-continue-icon-png-6-300x300.png 300w, /wp-content/uploads/2018/03/right-arrow-continue-icon-png-6-150x150.png 150w, /wp-content/uploads/2018/03/right-arrow-continue-icon-png-6.png 512w" layout="intrinsic"></amp-img>          <amp-img class="alignnone wp-image-329 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/Nokia-X1-300x200.jpg" alt="" width="236" height="157" srcset="/wp-content/uploads/2018/03/Nokia-X1-300x200.jpg 300w, /wp-content/uploads/2018/03/Nokia-X1-768x512.jpg 768w, /wp-content/uploads/2018/03/Nokia-X1-360x240.jpg 360w, /wp-content/uploads/2018/03/Nokia-X1.jpg 900w" layout="intrinsic"></amp-img></p>
+<p>ඇත්තටම මේකේ තියෙන්නෙ පරම්පරාවල් දෙකක එහෙමත් නැත්නම් generation දෙකක තාක්ෂණයන් එකතු කරලා හදපු ජංගම දුරකථන කීපයක්නෙ.හොදට හිතලා බලන්න කලින් generation එකේ තිබුන දුරකථනයේ features කීපයක් ගැන.ඒ features වලින් දෙකක් අපි ගනිමු call හා message කියලා. අලුත් generation එකේ දුරකථන ගැන බැලුවොත් මේ features දෙක එහෙමම තියනවා කියලා ඔයාලට තේරෙනවා.හැබැයි ඊට අමතරව camera, video ,audio කියලා අලුත් features කීපයකුත් ඇවිත් තියනවා.ඒ කියන්නෙ කලින් generation එකේ තිබුන features ඇරගෙන මීලග generation එක දියුණු කරලා හදලා තියනවා.ඔන්න ඔය දේ programming පැත්තෙන් හිතුවොත් මෙන්න මේ වගේ.එක class එකකින්( super class) inherit කරලා තව class එකක් (sub class) හදනවා ඊට වඩා දියුණු තත්වයේ පවතින.inheritance කියන feature එකින් ඔන්න ඔය අදහසත් කියවෙනවා.</p>
+<p>ඔන්න ඔය අදහස් දෙක තමයි inheritance එකෙන් කියවෙන්නෙ.ඇත්තටම කියනවනං inheritance කියන්නේ කලින් class එකේ(super class) තිබුන දේවලුත් දෙවලුත් ඇරගෙන ඊට වඩා හොද class එකක්(sub class) එකක් හදන එකටයි . හැමෝටම තේරෙන්න ඇති කියලා හිතනවා අද පාඩම .inheritance වල තියෙන විශේෂ අවස්තා කීපයක් සමගින් මීලග පාඩමේදී හමුවෙමු.ස්තූතියි!</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/oop/" rel="category tag">OOP</a>	</div>
+
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/03/25/object-oriented-programming-5/#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

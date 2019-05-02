@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>intro &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/intro/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>express-01 මොකක්ද මේ express කියන්නේ?</title>
+		<link>/index.php/2019/01/22/express-01/</link>
+				<comments>/index.php/2019/01/22/express-01/#respond</comments>
+				<pubDate>Tue, 22 Jan 2019 12:48:09 +0000</pubDate>
+		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[express]]></category>
+		<category><![CDATA[intro]]></category>
+
+		<guid isPermaLink="false">/?p=1606</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> express කියන්නේ මොකක්ද ? express කියන්නේ back-end node.js framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ back-end එක හදන්න. ඒ කියන්නෙ මේක Run වෙන්නෙ අපේ web server එකේ. web site එකක user ට පෙනෙන් නැති logic, database එකත් එක්ක ගනුදෙනු කරනව වගේ (back-end) වැඩ තමා express කරලා දෙන්නේ. මේ<a class="moretag" href="/index.php/2019/01/22/express-01/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p><strong>express  කියන්නේ  මොකක්ද ?</strong></p>
+
+
+
+<p>express  කියන්නේ back-end node.js framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ back-end එක හදන්න. ඒ කියන්නෙ මේක Run වෙන්නෙ අපේ web server  එකේ.  <br>web site එකක user ට පෙනෙන් නැති logic, database එකත් එක්ක ගනුදෙනු කරනව වගේ (back-end) වැඩ තමා express කරලා දෙන්නේ.</p>
+
+
+
+<p>මේ ලිපි මාලාවෙන් අපි බලාපොරොත්තු වෙනවා express පාවිච්චි කරලා web application එකක්   හදන්න .මේකට ඔයාලට HTML, CSS, JS, Bootstrap  ගැනත් පොඩි දැනුමක් තියෙන්න ඕන. ඒ දේවල් වල ගැන ඔයා දන්නේ නැත්නම් ,මම මේ කියන්න හදන්නේ ඔයාලට උඩදි කියපු Skills ටික හදා ගන්න පුළුවන් ක්‍රමයක්. ඒ තමයි W3School එක. මම එක එක Topic එකට අදාල Link එක මෙතනට දාන්නම්. අවශ්‍ය නම් ඒ ටික බලලා දැනුමක් එකතු කර ගන්න.&nbsp; </p>
+
+
+
+<p><strong>HTML</strong>&nbsp;:&nbsp;<a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a></p>
+
+
+
+<p><strong>CSS</strong>&nbsp;:&nbsp;<a href="https://www.w3schools.com/css">https://www.w3schools.com/css</a></p>
+
+
+
+<p><strong>JS :&nbsp;</strong><a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a></p>
+
+
+
+<p><strong>Bootstrap</strong> : <a href="https://www.w3schools.com/bootstrap/default.asp">https://www.w3schools.com/bootstrap/default.asp</a></p>
+
+
+
+<p>ඔයාට framework කියන එක ගැන අවබෝදයක් නැත්නම් <a href="/index.php/2018/04/10/web-application-with-laravel/">මෙන්න</a> මේ link එකට ගිහින් බලන්න<strong> Framework එකක් කියන්නේ මොකද්ද?</strong>. කියල <strong>topic</strong> එකක් තියෙනවා.</p>
+
+
+
+<p><strong>දැන්  අපි බලමු Node.js  කියන්නේ මොකක්ද කියල?</strong></p>
+
+
+
+<p>Node.js  කියන්නේ server-side platform එකක්,Node හදපු පුද්ගලයාගේ නම  <br>Ryan Dahl.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg" alt="" class="wp-image-1661" srcset="/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg 220w, /wp-content/uploads/2019/01/220px-Ryan_Dahl-200x300.jpg 200w" sizes="(max-width: 220px) 100vw, 220px" /><figcaption> <br>Ryan Dahl. </figcaption></figure></div>
+
+
+
+<p><strong>අපි බලමු කොහොමද file request එකක් php වලින් handle කරන්නේ කියල ?</strong></p>
+
+
+
+<p>1.මුලින්ම task එක යොමු කරනවා computer file system එකට.</p>
+
+
+
+<p>2.file  system එක අර request කරපු  file එක open කරලා read කරනකම් wait වෙවී ඉන්නවා.</p>
+
+
+
+<p>3.return කරනවා content එක client ට .</p>
+
+
+
+<p>4.ready  වෙනවා ඊලග request handle කරන්න.</p>
+
+
+
+<p><strong>දැන් අපි බලමු කොහොමද file request එකක් Node වලින්  handle කරන්නේ කියල?</strong></p>
+
+
+
+<p> 1.මුලින්ම task එක යොමු කරනවා computer file system එකට. </p>
+
+
+
+<p> 2.ready  වෙනවා ඊලග request handle කරන්න. </p>
+
+
+
+<p>3.file system එක, අර request කරපු file එක open කරලා read කරාම,server එක return කරනවා content එක client ට. </p>
+
+
+
+<p><strong>ඇයි මම express තෝරාගත්තේ,වෙන</strong> <strong>Node.js</strong> <strong> framework නැද්ද ?</strong></p>
+
+
+
+<p>නෑ තව framework තියෙනවා.නමින් කිවොත් koa2,&nbsp;Sails, NestJS,&nbsp;LoopBack වගේ තව ගොඩක් ඒවා තියෙනවා.හැබැයි මේ වනවිට ගොඩක්ම express තමා use වෙන්නේ.ඔයාලා google search කරොත් බලාන්න පුලුවන්.</p>
+
+
+
+<p> <br>අදට හැඳින්වීමේ කොටස ඉවරයි. ඊළඟ ලිපියෙන් බලමු කොහොමද express  Framework එක ඔයාගෙ Machine එකේ Install කරගන්නේ කියලා. </p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/22/express-01/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Data Structures හඳුනා ගනිමු.</title>
+		<link>/index.php/2018/04/01/data-structures-i/</link>
+				<comments>/index.php/2018/04/01/data-structures-i/#respond</comments>
+				<pubDate>Sun, 01 Apr 2018 15:29:21 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Data Structures]]></category>
+		<category><![CDATA[DSA]]></category>
+		<category><![CDATA[intro]]></category>
+
+		<guid isPermaLink="false">/?p=498</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> මේ ලිපි මාලාවෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ විවිධ අවශ්‍යතා අනුව අපි භාවිතා කරන Data Structures සම්බන්ධව. මුලින්ම අපි බලමු මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට Data Structures අවශ්‍ය වෙන්නේ කියලා. මොනවද මේ Data Structures? Data Structures එකක් කියන්නේ සරලවම Computer Program එකක් ලියද්දී අපිට අවශ්‍ය වෙන Data නැත්නම් Program එකෙන් Process<a class="moretag" href="/index.php/2018/04/01/data-structures-i/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/01/data-structures-i/">Data Structures හඳුනා ගනිමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>මේ ලිපි මාලාවෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ විවිධ අවශ්‍යතා අනුව අපි භාවිතා කරන Data Structures සම්බන්ධව. මුලින්ම අපි බලමු මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට Data Structures අවශ්‍ය වෙන්නේ කියලා.</p>
+<h3>මොනවද මේ Data Structures?</h3>
+<p><img class=" wp-image-500 aligncenter" src="/wp-content/uploads/2018/04/149042-636270893746801661-16x9-300x169.jpg" alt="Default" width="359" height="202" srcset="/wp-content/uploads/2018/04/149042-636270893746801661-16x9-300x169.jpg 300w, /wp-content/uploads/2018/04/149042-636270893746801661-16x9-768x432.jpg 768w, /wp-content/uploads/2018/04/149042-636270893746801661-16x9-1024x576.jpg 1024w" sizes="(max-width: 359px) 100vw, 359px" /></p>
+<p>Data Structures එකක් කියන්නේ සරලවම Computer Program එකක් ලියද්දී අපිට අවශ්‍ය වෙන Data නැත්නම් Program එකෙන් Process කරන Data තාවකාලිකව හරි ස්ථිරව හරි තියාගන්න භාවිතා කරන ක්‍රමවේදයක්. ඒ වගේම මේ වගේ ක්‍රමයකදි අපිට ඒ Store කරගන්න Data වලට වේගයෙන් Access වෙන්න අවශ්‍ය කරන විවිධ ක්‍රම සලසා දීලා තියෙනවා.</p>
+<p>උදාහරණයක් විදියට ඔයා දැනටමත් මොනවා හරි Programming Language එකක් කරලා තියෙනවා නම් දන්නවා ඇති Arrays, Lists, Tuples, Dictionaries වගේ දේවල්. (මේ ගැන දන්නේ නැත්නම් අපේ <a href="/index.php/category/oop/">Programming</a> පාඩම් ටිකත් එක්ක එකතු වෙලා ඉන්න. ඉස්සරහදි ඒ දේවල් කියලා දෙන්නම්). මේ වගේ Programming Language එකක් එක්ක හදලා අපිට දෙන Default Data Structures වලට අමතරව අපිට අවශ්‍ය විදියට Data Structures අලුතින් හදා ගන්න පුළුවන්. උදාහරණයක් විදියට ඔයාට ඕන නම් Array එකක තියෙන Index ඔයාට ඕන විදියට වෙනස් කරගෙන භාවිතා කරන්න ඔයාට පුළුවන් ඔයාගෙම Array System එකක් Define කරගන්න.</p>
+<p>තවත් දෙයක් තමයි මේ විදියට හදා ගන්න Data Structures වලින් අපිට ගන්න පුළුවන් වැඩ ගොඩක් තියෙනවා. ඒවා ගැන අපි තව විස්තර ඇතිව ඉස්සරහට කතා කරගෙන යමු. මූලිකවම මේ ලිපි පෙලින් කතා කරන්න බලාපොරොත්තු වෙන <strong>Data Structures </strong>කිහිපයක් තියෙනවා. ඒවාට අමතරව අවශ්‍ය වුනොත් තවත් Data Structures ගැන කතා කරමු.</p>
+<ol>
+<li><strong>Stack</strong></li>
+<li><strong>Queue</strong></li>
+<li><strong>Tree</strong></li>
+<li><strong>Graph</strong></li>
+</ol>
+<p>මේ Data Structures 4න් මල්ම දෙක ගොඩක් සරලයි. ලොකු දෙයක් කතා කරන්න නෑ ඇත්තටම. මොකද මේ Structures ගොඩක් වෙලාවට අපේ ජීවත් වෙන ලෝකයේ සිද්ධිත් එක්ක සම්බන්ධ නිසා ලේසියෙන්ම තේරුම් ගන්න පුළුවන්. අන්තිම Structures 2 ගැන නම් ගොඩක් දේවල් කතා කරන්න තියෙනවා.</p>
+<p>අනිත් දේ තමයි Data Structures කිවුවාම ගොඩක් කට්ටියට තියෙන ප්‍රශ්ණයක් තමයි මේ දේවල් ඉගෙන ගන්න ඕන Programming Language එක මොකද්ද කියන එක. ඒ වගේම දැනට ඔයා දන්න මොකක් හරි Programming Language එකක් තියෙනවා නම් ඒකෙන් මේ දේවල් කරන්න බැරිද කියන එක. සරලම කරුණ තමයි දැනටම ඔයා මොකක්ම හරි Language එකක් දන්නවා නම් ඒකෙන් මේ දේවල් කරන්න උත්සාහ කරන්න. මේකෙදි මම ගොඩක්ම Recommend කරන්නේ නම් Python වගේ සරල Language එකක්. මොකද එතකොට ඔයාට ලොකුවට Programming Concepts ගැන හිතන්නේ නැතුව Data Structure එක ගැන අවධානය යොමු කරන්න පුළුවන්. Sample Codes දාද්දී Languages කිහිපයකින් දාන්න උත්සාහ කරන්නම්.</p>
+<p>හරි එහෙනෙම් පොඩි හරි Idea එකක් ගත්තා කියලා හිතනවා මේ කරන්න යන දේ ගැන. එහෙනම් මුල්ම පාඩම <strong>STACKS </strong>එක්ක ඊළඟ පාඩමෙන් හමුවෙමු.</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/01/data-structures-i/">Data Structures හඳුනා ගනිමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/01/data-structures-i/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

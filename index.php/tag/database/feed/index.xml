@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>database &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/database/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Laravel වලින් Table Relationship එක්ක වැඩ කරමු</title>
+		<link>/index.php/2019/01/10/laravel-table-relationship/</link>
+				<comments>/index.php/2019/01/10/laravel-table-relationship/#respond</comments>
+				<pubDate>Thu, 10 Jan 2019 10:46:16 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Laravel]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[elequent]]></category>
+		<category><![CDATA[laravel]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[relational]]></category>
+
+		<guid isPermaLink="false">/?p=1516</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක්<a class="moretag" href="/index.php/2019/01/10/laravel-table-relationship/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක් කර ගන්න සාමාන්‍යයෙන් අපි Query එකක් ලිවුවොත් For loop දාගෙන සෑහෙන්න දඟලන්න වෙනවා. </p>
+
+
+
+<p>උදාහරණයක් විදියට අපි හිතමු Students, Schools කියලා Table 2ක් තියෙනවා කියලා. එක Student කෙනෙකුට එක School එකක් තියෙනවා‍‍. එක School එකකට Students ලා ගොඩක් ඉන්නවා. මේ වගේ වෙලාවක මට ඕන වෙනවා School Type එක &#8220;mixed&#8221; කියලා තියෙන School වල Student List එකක් හදා ගන්න. දැන් මුලින්ම කරන්න ඕන Student Table එකේ Query එකක් ගහන්න ඕන Mixed type school ටික හොයා ගන්න. ඊට පස්සේ ඒ එක එක School එකට අදාල Student ලා ගන්න ආපහු Query එකක් ලියන්න ඕන. නැත්නම් Table 2ම Join කරගන්න ඕන. ටිකක් වෙලා යන වැඩක්නේ</p>
+
+
+
+<p>මේ වැඩේ ලේසියෙන්ම කරගන්න පුළුවන් Laravel Eloquent  එක්ක. මේ වගේ දෙයක් හදා ගන්න විදිය තමයි අද ලිපියෙන් කියලා දෙන්න යන්නේ.</p>
+
+
+
+<h3><strong><u>පළමු පියවර</u></strong></h3>
+
+
+
+<p>මම මුලින්ම අලුත් Project එකක් හදා ගන්නවා මේ විදියට.. (Laravel install කරලා නැත්නම් මේ <a href="/index.php/2018/04/11/install-laravel-homestead-custom/">ලිපිය</a> බලන්න)</p>
+
+
+
+<pre class="wp-block-preformatted">composer create-project --prefer-dist laravel/laravel myEloquent</pre>
+
+
+
+<p>Project Files ටික හැදිලා ඉවර උනාම කැමති IDE එකකින් Project එක Open කරගන්න. ඊළඟට අපි කරන්න හදන්නේ අපිට ඕන කරන Tables හදා ගන්න එක. මම මේකට පාවිච්චි කරන්නේ උඩදි කිවුව උදාහරණයමයි. ඒ කියන්නේ School, Student and User කියන Scenario එක. </p>
+
+
+
+<p><strong>ඒ කියන්නේ School එකකට Students ලා ගොඩයි. Student කෙනෙකුට එක School එකයි. User කෙනෙකුට එක Student කෙනෙක් ඉන්නවා. Student කෙනෙක් කියන්නේ User කෙනෙක්.</strong></p>
+
+
+
+<h2><strong><u>දෙවන පියවර</u></strong></h2>
+
+
+
+<p>දැන් අපිට ඕන කරන Models ටික හදා ගන්න ඕන. මේ Model හරහා තමයි අපිට Database Queries කරගන්න පුළුවන් වෙන්නේ. දැන් කරන්නේ මේ Model ටිකයි ඒවගේ Migration Files ටිකයි Artisan Commands හරහා Generate කරගන්න එක.</p>
+
+
+
+<pre class="wp-block-preformatted">php artisan make:model Student -m</pre>
+
+
+
+<pre class="wp-block-preformatted">php artisan make:model School -m</pre>
+
+
+
+<p>මේ Command දෙක Run කරාට පස්සේ අපිට අවශ්‍ය කරන Files ටික generate වෙනවා. දැන් ඒ ටික අපිට අවශ්‍ය විදියට Edit කරගන්න තියෙන්නේ. මේකෙදි අපේ තව Table එකක් තියෙනවානේ Users කියලා. මම ඒක මෙතන Generate කරගත්තේ නැත්තේ ඒක Laravel එක්ක Default එන එකක් නිසා.</p>
+
+
+
+<p>මුලින්ම අපි බලමු Users Model එකට අපිට අවශ්‍ය Data දාගෙන Table හදා ගන්නේ කොහොමද කියලා.</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>namespace App;<br><br>use Illuminate\Notifications\Notifiable;<br>use Illuminate\Contracts\Auth\MustVerifyEmail;<br>use Illuminate\Foundation\Auth\User as Authenticatable;<br><br>class User extends Authenticatable<br>{<br>    use Notifiable;<br><br>    <em>/**</em><br><em>     * The attributes that are mass assignable.</em><br><em>     *</em><br><em>     * @var array</em><br><em>     */</em><br>    protected $fillable = [<br>        'firstName', 'lastName','email', 'password',<br>    ];<br><br>    <em>/**</em><br><em>     * The attributes that should be hidden for arrays.</em><br><em>     *</em><br><em>     * @var array</em><br><em>     */</em><br>    protected $hidden = [<br>        'password', 'remember_token',<br>    ];<br>}<br><br></pre>
+
+
+
+<p>මෙතනදි වෙනස් කරලා තියෙන්නේ Default එන name වෙනුවට firstName, lastName 2කට කඩලා තියෙනවා. මේ Model එකට අදාලව Migration File එක මේ විදියට හදා ගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>use Illuminate\Support\Facades\Schema;<br>use Illuminate\Database\Schema\Blueprint;<br>use Illuminate\Database\Migrations\Migration;<br><br>class CreateUsersTable extends Migration<br>{<br>    <em>/**</em><br><em>     * Run the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function up()<br>    {<br>        Schema::create('users', function (Blueprint $table) {<br>            $table->increments('id');<br>            $table->string('firstName');<br>            $table->string('lastName');<br>            $table->string('email')->unique();<br>            $table->timestamp('email_verified_at')->nullable();<br>            $table->string('password');<br>            $table->rememberToken();<br>            $table->timestamps();<br>        });<br>    }<br><br>    <em>/**</em><br><em>     * Reverse the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function down()<br>    {<br>        Schema::dropIfExists('users');<br>    }<br>}<br><br></pre>
+
+
+
+<p><strong>Student Model </strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>namespace App;<br><br>use Illuminate\Database\Eloquent\Model;<br><br>class Student extends Model<br>{<br>    protected $fillable = ['regNumber','contact','school_id','user_id'];<br>}<br><br></pre>
+
+
+
+<p><strong>Student Migration</strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>use Illuminate\Support\Facades\Schema;<br>use Illuminate\Database\Schema\Blueprint;<br>use Illuminate\Database\Migrations\Migration;<br><br>class CreateStudentsTable extends Migration<br>{<br>    <em>/**</em><br><em>     * Run the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function up()<br>    {<br>        Schema::create('students', function (Blueprint $table) {<br>            $table->increments('id');<br>            $table->string('contact');<br>            $table->integer('school_id');<br>            $table->integer('user_id');<br>            $table->timestamps();<br>        });<br>    }<br><br>    <em>/**</em><br><em>     * Reverse the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function down()<br>    {<br>        Schema::dropIfExists('students');<br>    }<br>}<br><br></pre>
+
+
+
+<p>මේකෙදි මම student table එක ඇතුලට School, User  tables වලට අදාල records හඳුන ගන්න school_id, user_id තියා ගන්නවා. සාමාන්‍යයෙන් මේ වගේ foreign keys set කරගන්නකොට &#8220;tablename_id&#8221; විදියට තමයි යොදා ගන්න ඕන.</p>
+
+
+
+<p><strong>School Model</strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>namespace App;<br><br>use Illuminate\Database\Eloquent\Model;<br><br>class School extends Model<br>{<br>    protected $fillable=['name','contact'];<br>}<br><br></pre>
+
+
+
+<p><strong>School Migration</strong></p>
+
+
+
+<pre class="wp-block-preformatted"> &lt;?php<br><br>use Illuminate\Support\Facades\Schema;<br>use Illuminate\Database\Schema\Blueprint;<br>use Illuminate\Database\Migrations\Migration;<br><br>class CreateSchoolsTable extends Migration<br>{<br>    <em>/**</em><br><em>     * Run the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function up()<br>    {<br>        Schema::create('schools', function (Blueprint $table) {<br>            $table->increments('id');<br>            $table->string('name');<br>            $table->string('contact');<br>            $table->timestamps();<br>        });<br>    }<br><br>    <em>/**</em><br><em>     * Reverse the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function down()<br>    {<br>        Schema::dropIfExists('schools');<br>    }<br>}<br><br></pre>
+
+
+
+<p>මේ විදියට අපි Migration Files ටික හදා ගත්තට පස්සේ කරන්න තියෙන්නේ migrate කරගන්න එක. ඒකට මේ Command එක run කරන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">php artisan migrate<br></pre>
+
+
+
+<p>හරි දැන් අපිට කරන්න තියෙන්නේ relations ටික table වලින් query වෙන විදියට set කරගන්න එක. </p>
+
+
+
+<h2><strong>Relationship Types</strong></h2>
+
+
+
+<p>Relationship Types ප්‍රධාන වශයෙන් 3ක් තියෙනවා.</p>
+
+
+
+<ol><li><strong>One to One</strong></li><li><strong>One to Many</strong></li><li><strong>Many to Many</strong></li></ol>
+
+
+
+<p>දැන් අපි set කරන්න යන්නේ student සහ user අතර one to one relationship එකක්. ඒ වගේම student සහ school අතර one to many relationship එකක්. Many to Many Relationship එක set කරගන්න විදිය ගැන මම වෙනම ලිපියකින් කියලා දෙන්නම්. නැත්නම් මෙ Article එක අද ඉවර කරන්න වෙන්නේ නෑ. 😀 </p>
+
+
+
+<p>මේ ගැන වැඩිදුර තොරතුරු ඕන නම් මේ <a href="https://laravel.com/docs/5.7/eloquent-relationships">Official Laravel Documentation</a> එක බලන්න</p>
+
+
+
+<h3><u><strong>One to One Relationship (Student -> User )</strong></u></h3>
+
+
+
+<p>අපි හදා ගත්ත Student Model එකයි User Model එකයි change කරන්න දැන් තියෙන්නේ. මුලින්ම අපි Student Model එක ගැන බලමු.</p>
+
+
+
+<p>මේ code එක Student Model එකේ $fillable කියන Array එකට යටින් paste කරගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">public function user(){<br>        <em>return</em> <em>$this</em>->belongsTo('App\User');<br>}</pre>
+
+
+
+<p>මේකෙන් අපි කියන්නේ Student Belongs to User කියන එක.</p>
+
+
+
+<p>දැන් User Model එක Open කරගෙන මේ Code එක කලින් වගේම $fillable Array එකට යටින් Paste කරගන්න. </p>
+
+
+
+<pre class="wp-block-preformatted">public function student(){<br>    <em>return</em> <em>$this</em>->hasOne('App\Student');<br>}</pre>
+
+
+
+<p>මෙතනින් කරන්නේ User has one student කියන එක. හැබැයි ඔයාලා දන්නවා ඇති අපිට One to One Relationship එකකදි පුළුවන් කැමති Table එකකට foreign key එක දාලා Relation එක set කරන්න පුළුවන්. දැන් ප්‍රශ්ණයක් තියෙනවානේ මොකටද Belongs to දාන්න ඕන මොකටද HasOne දාන්න ඕන කියලා. ඒක බලන්න ඕන Foreign key එක දාන Table එක අනුව. මේ උදාහරණය අනුව මම User_id field එකක් දැම්මා Students Table එකට.  ඒක නිසා belongsTo දාන්න ඕන Student Model එකට.</p>
+
+
+
+<h2><strong><u>One to Many Relationship ( Student->School)</u></strong></h2>
+
+
+
+<p>දැන් වෙන්න ඕන වැඩේ තේරෙනවානේ. අපිට කරන්න තියෙන්නේ Model අතර සම්බන්ධතාවක් හදා ගන්න. ඒකෙන් Relationship Set වෙනවා. </p>
+
+
+
+<p>අපි ආපහු student model එකෙන් වැඩේ පටන් ගමු. මේ Code එක User() කියලා උඩදි දාපු function එකට පහලින් දාගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">public function school(){<br>     <em>return</em> <em>$this</em>->belongsTo('App\School');<br>}</pre>
+
+
+
+<p>මේක School Model එකට දාගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">public function students(){<br>    <em>return</em> <em>$this</em>->hasMany('App\Student');<br>}</pre>
+
+
+
+<p>කලින් වගේම මෙක one-to-many relationship එකක් නිසා අපි කරන්නේ Student Belongs to School relation එකයි school has many students එකයි මේ විදියට set කරගන්න එක. </p>
+
+
+
+<p>දැන් අපි බලමු හරියට මේ relation set වුණාද කියලා. ඒක කරන්න අපිට පොඩි tool එකක් තියෙනවා artisan commands වල. ඒක තමයි <strong>Tinker .  </strong>මේක යොදාගෙන අපිට ගොඩක් ප්‍රයෝජන ගන්න පුළුවන්. හැබැයි මේකෙදි අපි කතා කරන්නේ relations set කරගන්නේ කොහොමද කියලා. </p>
+
+
+
+<p>මුලින්ම Project එක open කරලා තියෙන IDE එකේ terminal එක open කරගෙන මේ Command එක run කරවන්න. </p>
+
+
+
+<pre class="wp-block-preformatted">php artisan tinker</pre>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png" alt="" class="wp-image-1526" srcset="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png 642w, /wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14-300x45.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><figcaption>tinker Screen shot</figcaption></figure>
+
+
+
+<p>දැන් සාමාන්‍යයෙන් php වලින් variable assign කරන විදියට මේ වගේ type කරලා run කරගන්න. ඊට කලින් Database එකට Data ටිකක් දාගෙන ඉන්න. නැත්නම් බලන්න වෙන්නේ නෑ.</p>
+
+
+
+<pre class="wp-block-preformatted">$user  = \App\Student::first()<br></pre>
+
+
+
+<p>මේක මුලින්ම tinker එකේ type කරලා බලන්න result එකක් එනවද කියලා. error එකක් එනවා නම් Comment එකක් දාන්න නැත්නම් Google කරලා බලන්න අනිවාර්‍යයෙන් ඇති. මෙකෙදි ඔයා දාපු පළවෙනි data එක ආවොත් මේ ඊළඟ එක දාලා බලන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">$user->user</pre>
+
+
+
+<p>මෙකෙදි පෙන්නන්නේ student ට අදාල user කවුද කියන එක. මේක අපි මුලින්ම set කරා Model එකේ one to one relationship එකක්. දැන් අපිට කිසිම Query එකක් ලියන්නේ නැතුව මේ Eloquent එක හරහා අදාල Data ගන්න පුළුවන්. මේ වගේම දැන් try කරලා බලමු school එක ගන්න පුළුවන්ද කියලා. </p>
+
+
+
+<pre class="wp-block-preformatted">$user->school</pre>
+
+
+
+<p>මේකෙදි හරියට Result එකක් ආවා කියන්නේ අපේ relation ටික වැඩ කියන එක. ඕන නම් School Object එකක් හදලා බලමු Students ලා ගන්න පුළුවන්ද කියලා.</p>
+
+
+
+<pre class="wp-block-preformatted">$school = \App\School::first()<br><br>$school->students</pre>
+
+
+
+<p>දැන් හරියට Data ටික එනවා කියන්නේ Result එක හරි. මේ විදියට අලුතින් Model හදලා Query කරලා බලන්න. අනිත් එක තමයි අපි model එක ඇතුලෙ relations methods විදියට ලිවුවට මෙතනදි ඒ method එක call කරන්නේ Function එකක් විදියට නෙවෙයි. නිකන්ම attribute එකක් විදියට. ඒ ගැන සැලකිලිමත් වෙන්න. මේ විදියටම tinker එකේ call කරා වගේ අපිට Controller එකක් හරි View එකක් හරි ඇතුලෙදිත් මේ වගේ Data retrieve කර ගන්න පුළුවන්.</p>
+
+
+
+<p>හරි එහෙනම් මොකක් හරි ප්‍රශ්ණයක් තිබුණොත් අහන්න. ඊළඟ tutorial එකෙන් Many to Many එකක් set කරගෙන් වැඩ කරන විදිය බලමු. </p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/10/laravel-table-relationship/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Laravel වලින් Database Migrations කරමු.</title>
+		<link>/index.php/2018/09/17/laravel-database-migrations/</link>
+				<comments>/index.php/2018/09/17/laravel-database-migrations/#respond</comments>
+				<pubDate>Mon, 17 Sep 2018 18:24:22 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Laravel]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[laravel]]></category>
+		<category><![CDATA[migrations]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[sinhala]]></category>
+
+		<guid isPermaLink="false">/?p=1271</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230; වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel<a class="moretag" href="/index.php/2018/09/17/laravel-database-migrations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230;</p>
+<p>වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel post එක නම් අපේ අනිත් ලිපි Set එකත් <a href="/index.php/2018/04/10/web-application-with-laravel/">මෙතනින්</a> බලන්න.</p>
+<p><img src="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg" alt="" width="523" height="298" class=" wp-image-1273 aligncenter" srcset="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg 300w, /wp-content/uploads/2018/09/Why_Laravel.jpg 700w" sizes="(max-width: 523px) 100vw, 523px" /></p>
+<h2><span style="text-decoration: underline; color: #0000ff;"><strong>මූලික හැඳින්වීම</strong></span></h2>
+<p>උඩ තියෙන Image එක කියන්නේ Why Laravel කියන ප්‍රශ්නෙට තියෙන උත්තර. ඒ කියන්නේ අනිත් PHP Frameworks එක්ක compare කරලා බලද්දි Laravel වල තියෙන විශේෂත්වය. ඒකෙ උඩින්ම තියෙන දෙයක් තමයි මේ Migrations කියන එක. ඒකට ගොඩක් specialty එකක් දීලා තියෙන්නේ ඒකෙන් ලොකු වැඩ ගොඩක් Simple විදියට කරගන්න අවස්ථාවක් තියෙන හින්දා.</p>
+<p>සාමාන්‍යයෙන් අපි මොකක්ම හරි Web Application එකක් Laravel නැතිව වෙනත් විදියකින් හදනවා නම් අපි කරන්නේ අපේ Source Code එක වෙනම හදලා Database එක වෙනම හදලා මේ දෙක php වලින් Connect කරගන්න එකනේ. දැන් හිතන්න ඔය System එක තවත් කාට හරි දෙන්න ඕන වුණා කියලා. එතකොට අපිට සිද්ධ වෙනවා අපේ source code එකත් එක්ක SQL Server එකෙන් export කරගත්තු database file එකත් දෙන්න. ඊට පස්සේ මේ system එක ගන්න කෙනා ආපහු ඒ database එක import කරගන්න. මොකක්ම හරි Error එකක් ඇවිත් අර database file එක import වෙන්නේ නැති වුණොත් අපිට ආපහු ඒ file එක edit කරන එක ඇත්තටම අමාරු වැඩක්. මොකද ඒකෙ තියෙන්නේ generate වෙලා තියෙන code set එකක් නිසා.</p>
+<p>තවත් ප්‍රශ්ණයක් තමයි අපි හදන Database එක වැඩ කරන්නේ Mysql නම් Mysql server එකක විතරයි. අපිට වෙනත් platform එකකට මාරු වෙන්න ඕන වුණොත් අපිට Database එක redesign කරන්නත් සිද්ධ වෙනවා.</p>
+<h5><span style="color: #ff6600;"><strong>Laravel වල තියෙන විසඳුම මොකද්ද?</strong></span></h5>
+<p>සරලවම මේ ප්‍රශ්ණෙට laravel වල තියෙන විසඳුම තමයි Database Migration කියන්නේ. ඒ කියන්නේ අපි Database එක හදන්නෙත් අපේ System එකට අදාල files වලමයි. එතකොට අපිට තවත් කෙනෙකුට System එක දෙනකොට දෙන්න තියෙන්නේ අපි හදලා තියෙන system file set එක විතරයි. ඊට පස්සේ artisan වල තියෙන migrate command එක භාවිතා කරලා ඕනම කෙනෙකුට තමන්ගේ db එක හදා ගන්න පුළුවන්.</p>
+<p>දැන් අපි මුල ඉඳන් මේ වැඩේ කරන්න ඕන කොහොමද කියලා බලමු.</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="color: #ff9900;">Migration File එකක් හදාගමු.</span></h3>
+<p style="padding-left: 30px;">මෙහෙම migrate files generate කරගන්න අපි භාවිතා කරන්නේ command prompt/terminal එක. ඒක නිසා මුලින්ම ඔයාලගෙ project එක (අලුත් project එකක් වුණොත් හොඳයි) තියෙන directory එක ඇතුලෙ command prompt එක හරි terminal එක හරි open කරගන්න ඕන.</p>
+<p style="padding-left: 30px;">ඊට පස්සේ එකෙ මේ command එක ගහන්න.</p>
+<pre style="padding-left: 30px;">php artisan make:migration create_users_table</pre>
+<p style="padding-left: 30px;">මෙකෙ create_users_table කියන්නේ අපේ migration file එකේ නම. මේකට ඔයාලට කැමති නමක් දෙන්න පුළුවන්. මම user table එකක් හදන්න යන නිසා මේක දානවා. මේ Command එක run වුණාට පස්සේ database/migrations folder එක ඇතුලෙ අලුතින් file එකක් හැදෙනවා. මේ file එක හැදෙන්නේ ඕනම database operation එකක් කරගන්න ගැලපෙන විදියට.</p>
+<p style="padding-left: 30px;">හැබැයි අපි දැන් කරන්න හදන්නේ අලුතින් table එකක් හදා ගන්න එක. ඒ වැඩේට විතරක් ගැලපෙන විදියට අපේ migration file එක හදා ගන්න ඕන නම් මේ විදියට command එක වෙනස් කරලා දෙන්න පුළුවන්.</p>
+<pre style="padding-left: 30px;">php artisan make:migration create_users_table --create=users
+</pre>
+<h3 style="text-align: center;"><span style="color: #ff9900;">Migration File Structure</span></h3>
+<p style="padding-left: 30px;">දැන් අපි බලන්න හදන්නේ කලින් පියවරේදි අපි generate කරගත්ත migration file එකේ structure එක තියෙන්නේ කොහොමද කියලා. ඒකට මේ මම පොඩි Table එකක් හදා ගන්න පුළුවන් Migration file එකක් මේ විදියට ලියා ගන්නවා. මෙකෙ table name එක flights.</p>
+<pre>&lt;?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateFlightsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('flights', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;string('name');
+            $table-&gt;string('airline');
+            $table-&gt;timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('flights');
+    }
+}
+
+</pre>
+<p style="padding-left: 30px;">මේකෙ දැන් ඔයාලට පේනවා ඇති up, down කියලා methods දෙකක් තියෙනවා. අපි up කියන method එක ඇතුලේ ලියන්නේ අලුතින් Table එකක්, column එකක්, නැත්නම් indexes Create කරන Queries. Down method එක ඇතුලේ ලියවෙන්නේ up method එක reverse කරන query set එක. දැන් අපි බලන්න හදන්නේ Migration commands කිහිපයක් කරගන්න විදිය.</p>
+<h3 style="text-align: center;"><span style="color: #ff6600;">Migration Commands</span></h3>
+<h4 style="padding-left: 30px;"><span style="color: #ff9900;">Migration File එකක් run කරගන්න විදිය</span></h4>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate</code></pre>
+<p style="padding-left: 30px;">මේ command එක හරහා අපි හදලා තියෙන Migration files ඔක්කොම ටික අපිට Database server එක ඇතුලෙ run කරගන්න පුළුවන්.</p>
+<h4 style="padding-left: 30px;"><span style="color: #ff9900;">Run වුන migration එකක් rollback (ආපහු මුල් තත්වෙට) කරගන්න විදිය</span></h4>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:rollback</code></pre>
+<p style="padding-left: 30px;">මේ command එකෙන් අපි අන්තිමට run කරපු migration files ටික හරහා සිද්ධ වුණ changes ටික reverse කරගන්න එහෙම නැත්නම් rollback කරගන්න පුළුවන්.</p>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:rollback --step=5</code></pre>
+<p style="padding-left: 30px;">මේ විදියෙන් අපිට rollback කරන්න ඕන steps ගාන දෙන්න පුළුවන්&#8230;</p>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:reset</code></pre>
+<p style="padding-left: 30px;">මේ Command එකෙන් අපේ Database එකට migration files වලින් වුණු හැම change එකක්ම අයින් වෙනවා..</p>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:refresh</code></pre>
+<p style="padding-left: 30px;">මේකෙන් අපිට උඩින් කතා කරපු step දෙකක් එක command එකෙන් කරගන්න පුළුවන්. ඒ කියන්නේ Database එක reset කරගෙන migrations files ටික run කරගන්න එක.</p>
+<pre class=" language-php" style="padding-left: 30px;"><code class=" language-php">php artisan migrate:fresh</code></pre>
+<p style="padding-left: 30px;">මෙකෙන් කලින් කරපු වැඩේට ටිකක් සමාන වැඩක් කරගන්න පුළුවන්. හැබැයි මේකෙදි database එක reset වෙන්නේ නැතිව වෙන්නේ ඔක්කොම Tables ටික ඉස්සරලාම drop කරගන්න එක. ඊට පස්සේ Migration files ටික run කරගන්නවා.</p>
+<p>ලිපිය තවත් දික් වෙලා Boring වෙන නිසා මම Database Queries ලියා ගන්න විදිය ගැන තවත් ලිපියකින් කතා කරන්නම්. මේ ලිපිය ගැන මොකක් හරි ප්‍රශ්ණයක් තියෙනවා නම් Comment එකක් දාන්න. අලුත් ලිපියකින් හමු වෙමු&#8230;..</p>
+<p>&nbsp;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/17/laravel-database-migrations/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Laravel වලින් CRUD Operations කරමු.</title>
+		<link>/index.php/2018/09/04/laravel-crud-operations/</link>
+				<comments>/index.php/2018/09/04/laravel-crud-operations/#comments</comments>
+				<pubDate>Mon, 03 Sep 2018 18:33:21 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Laravel]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[crud]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[laravel]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[sinhala]]></category>
+
+		<guid isPermaLink="false">/?p=1205</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span> මේ ලිපියෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Laravel එක්ක පොඩි CRUD Application එකක් හදන විදිය ගැන. ඒ කියන්නේ Create, Read, Update, Delete කියන Basic Database Function 4 කරන විදිය ගැන. (https://github.com/Danushka96/laravelcrud) Laravel Install කරන විදිය Basic Application එකක් හදන විදිය ගැන බැලුවේ නැත්නම් මේ ලිපිය බලන්න Installing Laravel Basic Application in<a class="moretag" href="/index.php/2018/09/04/laravel-crud-operations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span>මේ ලිපියෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Laravel එක්ක පොඩි CRUD Application එකක් හදන විදිය ගැන. ඒ කියන්නේ Create, Read, Update, Delete කියන Basic Database Function 4 කරන විදිය ගැන. <a href="https://github.com/Danushka96/laravelcrud">(https://github.com/Danushka96/laravelcrud)</a></p>
+<p>Laravel Install කරන විදිය Basic Application එකක් හදන විදිය ගැන බැලුවේ නැත්නම් මේ ලිපිය බලන්න</p>
+<ol>
+<li><a href="/index.php/2018/04/11/install-laravel-homestead-custom/">Installing Laravel</a></li>
+<li><a href="/index.php/2018/04/25/laravel-basic-application/">Basic Application in Laravel</a></li>
+</ol>
+<h2><span style="text-decoration: underline; color: #ff9900;"><strong>මූලික පියවර</strong></span></h2>
+<p>මුලින්ම කරන්න ඕන අලුත් Laravel Project එකක් පටන් ගන්න එක. ඒකට මේ command prompt එකෙන් Application එක හදන්න අවශ්‍ය තැනට ගිහින් මේ Command එක Paste කරලා Enter කරන්න.</p>
+<blockquote><p><span>composer </span><span class="hljs-keyword">create</span><span>&#8211;</span><span class="hljs-keyword">project</span><span> </span><span class="hljs-comment">&#8211;prefer-dist laravel/laravel crudApps</span></p></blockquote>
+<p>පොඩි වෙලාවකින් අලුත් Project එකක් හැදිලා තියෙයි crudApps නමෙන්. දැන් කරන්න තියෙන් අලුතින් Database එකක් හදා ගන්න එක. ඒකට mysql Server එක on කරලා අලුතින් Database එකක් හදලා ඒකට අදාල Login Details ටික .env file එකේ දාලා Save කරගන්න.</p>
+<p><img src="/wp-content/uploads/2018/09/Capture-300x130.png" alt="" width="360" height="156" class="alignnone wp-image-1210" srcset="/wp-content/uploads/2018/09/Capture-300x130.png 300w, /wp-content/uploads/2018/09/Capture.png 322w" sizes="(max-width: 360px) 100vw, 360px" /></p>
+<p>හරි මූලිකම පියවර ඔය ටික හරියට කර ගත්තහම ඉවරයි.</p>
+<h2><span style="text-decoration: underline; color: #ff9900;"><strong>දෙවන පියවර</strong></span></h2>
+<p>මේ පියවරේදි අපි කරන්නේ Database එකත් එක්ක සම්බන්ධ වැඩ ටිකක්. ඒ කියන්නේ Model File එකකුයි Migration File එකකුයි හදා ගන්න එක. ඒකට මේ විදියට කරගෙන යන්න.</p>
+<p>මුලින්ම Empty Migration File එකකයි Model File එකකයි හදාගෙන ඒක Edit කරගමු. ඒකට Command Prompt එකෙන් අපි හදා ගත්ත අලුත් Project Folder එක ඇතුලට ගිහින් මේ Command එක Type කරන්න.</p>
+<blockquote><p>php artisan make:model student -m</p></blockquote>
+<p>මේක run වුණාට පස්සේ බලා ගන්න පුළුවන් අලුතින් create_students_table.php file එකක් migration folder එක ඇතුලෙ හැදිලා තියෙනවා. App folder එක ඇතුලෙත් අලුතින් student.php file එකක් හැදිලා තියෙනවා. හරි දැන් මේ file 2 edit කරගමු.</p>
+<p>මුලින්ම Migration File එක edit කරගන්න විදිය බලමු.</p>
+<p>මම මේ Tutorial එකට පාවිච්චි කරන්නේ Student ලාගේ පොඩි Details ටිකක් තියා ගන්න පුළුවන් Table එකක්. Fields ටික <strong>FirstName, LastName, Address, Telephone </strong>කියන ඒවා. ඒවාට හරියන්න තමයි මම මේ Migration File එක හදා ගන්නේ.</p>
+<p><strong>create_students_table.php</strong></p>
+<pre>&lt;?php 
+use Illuminate\Support\Facades\Schema; 
+use Illuminate\Database\Schema\Blueprint; 
+use Illuminate\Database\Migrations\Migration; 
+
+class CreateStudentsTable extends Migration { 
+/** 
+* Run the migrations. 
+* 
+* @return void 
+*/ 
+public function up() 
+{ 
+Schema::create('students', function (Blueprint $table) { $table-&gt;increments('id');
+            $table-&gt;string('firstname');
+            $table-&gt;string('lastname');
+            $table-&gt;string('address');
+            $table-&gt;string('tp');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('students');
+    }
+}
+
+</pre>
+<p>මේ එකින් එක $table-&gt;string(&#8216;firstname&#8217;); වගේ දීලා තියෙන්නේ අපිට Table එකේ හදා ගන්න ඕන කරන Fields ටික.</p>
+<p>මේ විදියට Code එක ලියාගත්තට පස්සේ මේ Script එක Database Server එකේ run කරවන්න ඕන. ඒකට මේ migrate command එක use කරන්න පුළුවන් මේ විදියට.</p>
+<blockquote><p>php artisan migrate</p></blockquote>
+<p>දැන් ඔයාලට phpmyadmin වලින් අලුතින් හදපු Database එක බැලුවොත් පෙනෙයි අලුත් Table 2ක් හැදිලා තියෙනවා. (migration table එකෙන් වෙන දේ ගැන කලින් ලිපි වලින් කතා කලා)</p>
+<p>හරි දැන් බලමු Model File එක හදා ගන්නේ කොහොමද කියලා. ඒක මේ විදියට Code කරගන්න.</p>
+<pre>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class student extends Model
+{
+    protected $fillable = ['firstname', 'lastname','address','tp'];
+}
+
+</pre>
+<p>මේ පියවරේ වැඩ ටික මෙතනින් ඉවරයි. දැන් අපිට ඉතිරි වෙලා තියෙන්නේ Views ටිකයි Controller එකකුයි හදා ගන්න.</p>
+<h2><span style="text-decoration: underline; color: #ff9900;"><strong>තුන්වෙනි පියවර</strong></span></h2>
+<p>මේකෙදි අපි කරන්නේ අපිට අවශ්‍ය Views ටික හදා ගන්න එක. නිකන් Html Code ලියන හින්දා පැහැදිලි කරන්න ඕන නැති වෙයි කියලා හිතනවා. ඒක හින්දා View ටිකේ Code ටික දාගෙන යන්නම්. මේ ටික resourses/views folder එකේ Save කරගන්න.</p>
+<p><strong>index.blade.php</strong></p>
+<pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;CRUD Application&lt;/title&gt;
+
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"&gt;
+&lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container"&gt;
+&lt;div class = "card-panel teal lighten-2"&gt;&lt;h3 style="text-align: center"&gt;CRUD Application&lt;/h3&gt;&lt;/div&gt;
+
+
+&lt;div class = "card-panel center"&gt;
+&lt;div style="float: left"&gt;
+&lt;a class="btn-floating btn-large waves-effect waves-light red" href="{{url('student/create')}}"&gt;&lt;i class="material-icons float-left green"&gt;add&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;table class="striped" style="margin-top: 50px"&gt;
+&lt;tr&gt;
+&lt;th&gt;First Name&lt;/th&gt;
+&lt;th&gt;Last Name&lt;/th&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Telephone&lt;/th&gt;
+&lt;th&gt;Action&lt;/th&gt;
+&lt;/tr&gt;
+@foreach($students as $student)
+&lt;tr&gt;
+&lt;td&gt;{{ $student-&gt;firstname }}&lt;/td&gt;
+&lt;td&gt;{{ $student-&gt;lastname }}&lt;/td&gt;
+&lt;td&gt;{{ $student-&gt;address }}&lt;/td&gt;
+&lt;td&gt;{{ $student-&gt;tp }}&lt;/td&gt;
+&lt;td&gt;
+&lt;div class="row"&gt;&lt;div class="col"&gt;
+&lt;a href="{{url('student/'.$student-&gt;id.'/edit')}}"&gt;&lt;button class="btn btn-small blue"&gt;Edit&lt;/button&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col"&gt;
+&lt;form method="POST" action="{{route('student.destroy',$student-&gt;id)}}"&gt;
+@csrf
+@method('DELETE')
+&lt;button type="submit" class="btn btn-small red"&gt;Delete&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+@endforeach
+&lt;/tabel&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p><img src="/wp-content/uploads/2018/09/Capture-1-300x140.png" alt="" width="519" height="242" class=" wp-image-1222 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-1-300x140.png 300w, /wp-content/uploads/2018/09/Capture-1-768x359.png 768w, /wp-content/uploads/2018/09/Capture-1.png 998w" sizes="(max-width: 519px) 100vw, 519px" /></p>
+<p><strong>add.blade.php</strong></p>
+<pre>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;CRUD Application&lt;/title&gt;
+
+        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"&gt;
+        &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="container"&gt;
+        &lt;div class = "card-panel teal lighten-2"&gt;&lt;h3 style="text-align: center"&gt;CRUD Application&lt;/h3&gt;&lt;/div&gt;
+
+
+        &lt;div class = "card-panel center"&gt;
+              &lt;div class="row"&gt;
+                &lt;form class="col s12" method="POST" action="{{url('/student')}}"&gt;
+                    @csrf
+                  &lt;div class="row"&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;account_circle&lt;/i&gt;
+                      &lt;input id="firstname" type="text" class="validate" name="firstname"&gt;
+                      &lt;label for="firstname"&gt;First Name&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;account_circle&lt;/i&gt;
+                      &lt;input id="lastname" type="tel" class="validate" name="lastname"&gt;
+                      &lt;label for="lastname"&gt;Last Name&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;home&lt;/i&gt;
+                      &lt;input id="address" type="text" class="validate" name="address"&gt;
+                      &lt;label for="address"&gt;Address&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;phone&lt;/i&gt;
+                      &lt;input id="telephone" type="tel" class="validate" name="tp"&gt;
+                      &lt;label for="telephone"&gt;Telephone&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;input type="submit" name="submit" class="btn blue right" value="Save"&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+<p><img src="/wp-content/uploads/2018/09/Capture-2-300x151.png" alt="" width="485" height="244" class=" wp-image-1224 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-2-300x151.png 300w, /wp-content/uploads/2018/09/Capture-2-768x386.png 768w, /wp-content/uploads/2018/09/Capture-2-1024x514.png 1024w, /wp-content/uploads/2018/09/Capture-2.png 1049w" sizes="(max-width: 485px) 100vw, 485px" /></p>
+<p><strong>edit.blade.php</strong></p>
+<pre>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;CRUD Application&lt;/title&gt;
+
+        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"&gt;
+        &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="container"&gt;
+        &lt;div class = "card-panel teal lighten-2"&gt;&lt;h3 style="text-align: center"&gt;CRUD Application&lt;/h3&gt;&lt;/div&gt;
+
+
+        &lt;div class = "card-panel center"&gt;
+              &lt;div class="row"&gt;
+                &lt;form class="col s12" method="POST" action="{{ route('student.update',$student-&gt;id) }}"&gt;
+                    @csrf
+                    @method('PUT')
+                  &lt;div class="row"&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;account_circle&lt;/i&gt;
+                      &lt;input id="firstname" type="text" class="validate" name="firstname" value="{{ $student-&gt;firstname }}"&gt;
+                      &lt;label for="firstname"&gt;First Name&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;account_circle&lt;/i&gt;
+                      &lt;input id="lastname" type="tel" class="validate" name="lastname" value="{{ $student-&gt;lastname }}"&gt;
+                      &lt;label for="lastname"&gt;Last Name&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;home&lt;/i&gt;
+                      &lt;input id="address" type="text" class="validate" name="address" value="{{ $student-&gt;address }}"&gt;
+                      &lt;label for="address"&gt;Address&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-field col s6"&gt;
+                      &lt;i class="material-icons prefix"&gt;phone&lt;/i&gt;
+                      &lt;input id="telephone" type="tel" class="validate" name="tp" value="{{ $student-&gt;tp }}"&gt;
+                      &lt;label for="telephone"&gt;Telephone&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;input type="submit" name="submit" class="btn blue right" value="Update"&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+<p><img src="/wp-content/uploads/2018/09/Capture-3-300x157.png" alt="" width="449" height="235" class=" wp-image-1225 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-3-300x157.png 300w, /wp-content/uploads/2018/09/Capture-3-768x401.png 768w, /wp-content/uploads/2018/09/Capture-3-1024x534.png 1024w, /wp-content/uploads/2018/09/Capture-3.png 1054w" sizes="(max-width: 449px) 100vw, 449px" /></p>
+<p>මේ Views ටික හරියට හදා ගත්ත නම් ඊළඟ පියවරට යන්න පුළුවන්&#8230;..</p>
+<h3><span style="text-decoration: underline; color: #ff9900;"><strong>සිව්වන පියවර</strong></span></h3>
+<p>මේ පියවරේදි අපි කරන්නේ Controller එකක් හදා ගන්න එක. ඒකට මේ Command එක command prompt එකේ run කර ගන්න.</p>
+<blockquote><p>php artisan make:controller studentController &#8211;resource</p></blockquote>
+<p>මේ Command එකෙන් වෙන්නේ අපිට Model එකක් Control කරන්න අවශ්‍ය වෙන Function එක්ක Controller එකක් හැදෙන එක. දැන් ඒ File එක open කරලා මේ විදියට code කරගන්න.</p>
+<pre>&lt;?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\student;
+
+class studentController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $students = student::all();
+        // dd($students);
+        return view('index',['students'=&gt;$students]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('add');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $studentnew = new student;
+        $studentnew -&gt; firstname = $request -&gt; firstname;
+        $studentnew -&gt; lastname = $request -&gt; lastname;
+        $studentnew -&gt; address = $request -&gt; address;
+        $studentnew -&gt; tp = $request -&gt; tp;
+        $studentnew -&gt; save();
+        return redirect('student/create')-&gt;with('status','saved');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $studentfind = student::findOrFail($id);
+        return view('edit',['student'=&gt;$studentfind]);
+
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $studentfind = student::findOrFail($id);
+        $studentfind -&gt; firstname = $request -&gt; firstname;
+        $studentfind -&gt; lastname = $request -&gt; lastname;
+        $studentfind -&gt; address = $request -&gt; address;
+        $studentfind -&gt; tp = $request -&gt; tp;
+        $studentfind -&gt; save();
+        return redirect('student/'.$studentfind-&gt;id.'/edit')-&gt;with('status','updated!');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        $studentfind = student::findOrFail($id);
+        $studentfind -&gt; delete();
+        return redirect('/student');
+    }
+}
+
+</pre>
+<p>මේ File එකේ තියෙන $studentfind, $studentnew වගේ ඒවා තමන්ට කැමති Variables දාගන්න පුළුවන්&#8230;</p>
+<h3><span style="text-decoration: underline; color: #ff9900;"><strong>පස්වෙනි පියවර</strong></span></h3>
+<p>දැන් අපිට කරන්න ඉතිරි වෙලා තියෙන්නේ අන්තිම පියවර. ඒ කියන්නේ දැන් කරන්න ඕන Route ටික හරියට Config කරගන්න එක. ඒක අපිට කරන්න පුළුවන් Routes/web.php කියන File එක මේ විදියට Edit කරගෙන.</p>
+<pre>&lt;?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::resource('student','studentController');</pre>
+<p>මේ ටික ඉවරයි කියන්නේ අපේ Application එක run කරලා බලන්න පුළුවන් තත්වෙක දැන් තියෙනවා. Command Prompt එකේ මේ Command එක ගහලා Artisan Server එක on කරගෙන http://localhost:8000/student කියන link එක Browser එකේ Load කරගන්න.</p>
+<blockquote><p>php artisan serve</p></blockquote>
+<p>Add/ Edit/ Delete කරලා බලන්න. අවුලක් තිබුණොත් Comment එකක් දාන්න&#8230;&#8230;</p>
+<p>Complete Project Download From here: <a href="https://github.com/Danushka96/laravelcrud">https://github.com/Danushka96/laravelcrud</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/04/laravel-crud-operations/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+	</channel>
+</rss>

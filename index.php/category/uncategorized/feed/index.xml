@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorized &#8211; The SIGMA</title>
+	<atom:link href="/index.php/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01)</title>
+		<link>/index.php/2019/02/19/mean-stack-sample-application-1/</link>
+				<comments>/index.php/2019/02/19/mean-stack-sample-application-1/#comments</comments>
+				<pubDate>Tue, 19 Feb 2019 13:19:30 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[angular.js]]></category>
+		<category><![CDATA[mean stack]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[angular]]></category>
+		<category><![CDATA[front-end]]></category>
+		<category><![CDATA[issueTracker]]></category>
+		<category><![CDATA[MEAN]]></category>
+
+		<guid isPermaLink="false">/?p=1880</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> අපි කලින් ලිපි කිහිපයකින්ම කතා කලා මේ MEAN Stack ගැන වෙන වෙනම Examples විදියට. මේ ලිපි කිහිපයෙන් කරන්න බලාපොරොත්තු වෙන්නේ මේ වෙන වෙනම කතා කරපු Applications ටික එකතු කරලා තනි Application එකක් හදා ගන්න. මේ Application එක Issue Tacking Application එකක්. ඒ කියන්නේ Users ලට Log වෙලා Issues post කරන්න<a class="moretag" href="/index.php/2019/02/19/mean-stack-sample-application-1/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/19/mean-stack-sample-application-1/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>අපි කලින් ලිපි කිහිපයකින්ම කතා කලා මේ MEAN Stack ගැන වෙන වෙනම Examples විදියට. මේ ලිපි කිහිපයෙන් කරන්න බලාපොරොත්තු වෙන්නේ මේ වෙන වෙනම කතා කරපු Applications ටික එකතු කරලා තනි Application එකක් හදා ගන්න. මේ Application එක Issue Tacking Application එකක්. ඒ කියන්නේ Users ලට Log වෙලා Issues post කරන්න පුළුවන් Application එකක්. </p>
+
+
+
+<p>මේ Post එකෙන් කලින් post වලදි වගේ මේ MEAN Stack එක Install කරන විදිය මුල ඉදන් කියන්න යන්නේ නෑ. ඒ ගැන කලින් ලිපි වලින් අපි කතා කලා. ඒ ලිපි බැලුවේ නැත්නම් මේ Link වලින් මුලින්ම ඒ ටික බලලා ඉන්න. </p>
+
+
+
+<ul><li><a href="/index.php/category/web-development/mean-stack/">MongoDB</a></li><li><a href="/index.php/category/web-development/node-js/">Express</a></li><li><a href="/index.php/category/web-development/angular-js/">Angular</a></li><li><a href="/index.php/category/web-development/node-js/">Node</a></li></ul>
+
+
+
+<p>මේ Project එකේ අන්තිමට මොන වගේ Application එකක් හැදෙයිද කියලා Idea එකක් ගන්න මේ Images ටික බලන්න. </p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-1024x341.png" alt="" class="wp-image-1891" srcset="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-1024x341.png 1024w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-300x100.png 300w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-768x256.png 768w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67.png 1071w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>All Issues</figcaption></figure>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67.png" alt="" class="wp-image-1892" srcset="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67.png 482w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67-269x300.png 269w" sizes="(max-width: 482px) 100vw, 482px" /><figcaption>Create an Issue<br></figcaption></figure>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67.png" alt="" class="wp-image-1893" srcset="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67.png 487w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67-240x300.png 240w" sizes="(max-width: 487px) 100vw, 487px" /><figcaption>Edit an Issue</figcaption></figure>
+
+
+
+<p>හරි එහෙනම් අපි මුල ඉඳන් වැඩේ පටන් ගමු..</p>
+
+
+
+<p></p>
+
+
+
+<h3 id="c3ab"><u>Installing Node.js &amp; Angular&nbsp;CLI</u></h3>
+
+
+
+<p></p>
+
+
+
+<p>මේ Project එකේ dependencies install කරගන්න ඉදිරියේදී පාවිච්චි කරන්නේ npm package එක. ඒක නිසා මුලින්ම Nodejs Install කරගන්න ඕන. දැනට Nodejs Install කරලා නැත්නම් මේ <a href="https://nodejs.org/ ">Link</a> එකෙන් ගිහින් Download කරගන්න.  </p>
+
+
+
+<p>දැන් අපි ළඟ npm එක තියෙන නිසා අපිට පුළුවන් ලේසියෙන්ම අලුන් Angular project එකක් Initialize කරගන්න. ඒකට මේ Command එකෙන් Packages Install කරගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">$ npm install -g @angular/cli
+
+</pre>
+
+
+
+<p>මේ command එකෙන් අපේ path variable එකක් හැදෙනවා ng commands වලට Response කරන්න පුළුවන් විදියට. </p>
+
+
+
+<p></p>
+
+
+
+<h3><u>FRONT-END Design</u></h3>
+
+
+
+<p></p>
+
+
+
+<p>මේ පළවෙනි ලිපියෙන් කරන්න යන්නේ Front-End එක Design කරගන්න එක. ඒකට මුලින්ම අලුතින් Project එකක් හදා ගන්න ඕන. ඒකට අපි මුලින් Install කරපු ng command එක දැන් භාවිතා කරන්න පුළුවන්. ඒකට මේ Command එක Use කරන්න. (Command Line එකේ)</p>
+
+
+
+<pre class="wp-block-preformatted">ng new frontend
+
+</pre>
+
+
+
+<p>Project එක හදා ගන්නකොට අපෙන් අහනවා Routing Module එක දාන්න ඕනද කියලා. වැඩේ ලේසි වෙන්න ඒකට yes දෙන්න. අපි මේකට ගන්නේ CSS stylesheets. ඒකත් එතනින් Select කරගන්න. </p>
+
+
+
+<p>අදාල Module ටික install වෙලා ඉවර වුණාම font-end කියලා අලුතින් Project එකක් හැදෙයි. ඒකෙ අපේ Font-end එකට අදාල Codes ටික තියා ගන්නේ. දැන් අලුතින් හැදුනු folder එක ඇතුලට ගිහින් ng serve කරලා අලුතින් හැදුනු project එක වැඩ කරනවද කියලා test කරලා බලන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-preformatted">cd fontend<br>ng serve -o</pre>
+
+
+
+<p></p>
+
+
+
+<h3> Adding Angular&nbsp;Material </h3>
+
+
+
+<p></p>
+
+
+
+<p>Interfaces ලස්සනට Design කරගන්න පුළුවන් වෙන්න අපි මේ Project එකට භාවිතා කරනවා Angular Material CSS Library එක. ඒක මේ විදියට Project එකට Add කරගන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-preformatted">ng add @angular/material
+
+</pre>
+
+
+
+<p>මේ Package එක Install වෙනකොට ඔයාගෙන් අහයි මොන වගේ Theme එකක්ද ඕන Animation Use කරන්නද වගේ දේවල්. ඒවට yes select කරලා enter කරන්න. </p>
+
+
+
+<p></p>
+
+
+
+<h3 id="2ad4">Creating Components</h3>
+
+
+
+<p></p>
+
+
+
+<p>දැන් අපි හදන්නේ අපිට ඕන කරන Components ටික හදා ගන්න. මේකට අපි ng command එක use කරනවා. </p>
+
+
+
+<pre class="wp-block-preformatted">ng g c components/list <br>ng g c components/create<br>ng g c components/edit<br></pre>
+
+
+
+<p>මේකෙන් components කියලා folder එකක් හැදිලා ඒක ඇතුලට මේ list, create, edit කියල components 3 create වෙනවා. අපි දැන් බලමු routings ටික හදා ගන්න. </p>
+
+
+
+<p></p>
+
+
+
+<h3 id="3513">Adding Routing</h3>
+
+
+
+<p></p>
+
+
+
+<p>දැන් අපි කලාන් හදා ගත්ත RouterModule එකේ තමයි අපිට ඕන කරන routes ටික ලියා ගන්න ඕන. </p>
+
+
+
+<p><strong>src -&gt; app -&gt; app-routing.module.ts</strong> file එක open කරගෙන මේ Code එක routes කියන variable එක වෙනුවට replace කරගන්න. </p>
+
+
+
+<pre class="wp-block-preformatted"><code>const routes: Routes = [<br>  { path: 'create', component: CreateComponent },<br>  { path: 'edit/:id', component: EditComponent },<br>  { path: 'list', component: ListComponent },<br>  { path: '', redirectTo: '/list', pathMatch: 'full'}<br>];</code> </pre>
+
+
+
+<p>මේ විදියට Code එක දාගෙන උඩින්ම අදාල Components Import කරගන්නත් ඕන වෙනවා. </p>
+
+
+
+<p>මේ ටික කර ගත්තාම ඔයාගෙ AppRoutingModule එක මේ විදියට තියෙන්න ඕන.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br><em>import</em> { NgModule } <em>from</em> '@angular/core';<br><em>import</em> { Routes, RouterModule } <em>from</em> '@angular/router';<br><em>import</em> { CreateComponent } <em>from</em> './components/create/create.component'<br><em>import</em> { EditComponent } <em>from</em> './components/edit/edit.component'<br><em>import</em> { ListComponent } <em>from</em> './components/list/list.component'<br><br>const routes: Routes = [<br>  { path: 'create', component: CreateComponent },<br>  { path: 'edit/:id', component: EditComponent },<br>  { path: 'list', component: ListComponent },<br>  { path: '', redirectTo: '/list', pathMatch: 'full'}<br>];<br><br>@NgModule({<br>  imports: [RouterModule.forRoot(routes)],<br>  exports: [RouterModule]<br>})<br><em>export</em> class AppRoutingModule { }<br></pre>
+
+
+
+<p>දැන් අපි කරන්න යන්නේ හැම page එකේම Display වෙන විදියට පොඩි Menu tool එකක් දාගන්න. ඒකට මේ Code එක app.component.html file එකේ Paste කරගන්න. </p>
+
+
+
+<pre class="wp-block-preformatted"><br><code>&lt;mat-toolbar&gt;<br>  &lt;span&gt;Angular 6 - MEAN Stack Sample Application&lt;/span&gt;<br>&lt;/mat-toolbar&gt;<br>&lt;div&gt;<br>  &lt;router-outlet&gt;&lt;/router-outlet&gt;<br>&lt;/div&gt;</code> </pre>
+
+
+
+<p>අපි මේ Layout එකට &lt;mat-toolbar&gt; කියන tag එක යොදා ගන්න හින්දා මුලින්ම ඒක import කරගන්න ඕන. ඒකට මේ Import command එක app.module.ts එකේ දාන්න</p>
+
+
+
+<pre class="wp-block-preformatted"> <br><code>import { MatToolbarModule } from '@angular/material';</code> </pre>
+
+
+
+<p>ඒ වගේම ඒකෙ Import Array එකටත් මේක දාගන්න ඕන.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br><code>imports: [<br>    ...<br>    MatToolbarModule<br> ],</code> </pre>
+
+
+
+<p>අන්තිමට File එකේ Content එක මේ වගේ තියෙන්න ඕන</p>
+
+
+
+<p style="text-align:center"><strong><em>app.module.ts</em></strong></p>
+
+
+
+<pre class="wp-block-preformatted"><em>import</em> { BrowserModule } <em>from</em> '@angular/platform-browser';<br><em>import</em> { NgModule } <em>from</em> '@angular/core';<br><br><em>import</em> { AppRoutingModule } <em>from</em> './app-routing.module';<br><em>import</em> { AppComponent } <em>from</em> './app.component';<br><em>import</em> { BrowserAnimationsModule } <em>from</em> '@angular/platform-browser/animations';<br><em>import</em> { ListComponent } <em>from</em> './components/list/list.component';<br><em>import</em> { CreateComponent } <em>from</em> './components/create/create.component';<br><em>import</em> { EditComponent } <em>from</em> './components/edit/edit.component';<br><em>import</em> { MatToolbarModule } <em>from</em> '@angular/material'; <br><br>@NgModule({<br>  declarations: [<br>    AppComponent,<br>    ListComponent,<br>    CreateComponent,<br>    EditComponent<br>  ],<br>  imports: [<br>    BrowserModule,<br>    AppRoutingModule,<br>    BrowserAnimationsModule,<br>    MatToolbarModule<br>  ],<br>  providers: [],<br>  bootstrap: [AppComponent]<br>})<br><em>export</em> class AppModule { }<br><br> </pre>
+
+
+
+<p style="text-align:center"><strong><em>app.component.html</em></strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;mat-toolbar&gt;<br>  &lt;span&gt;Angular 6 - MEAN Stack Sample Application&lt;/span&gt;<br>&lt;/mat-toolbar&gt;<br>&lt;div&gt;<br>  &lt;router-outlet&gt;&lt;/router-outlet&gt;<br>&lt;/div&gt;<br><br>&lt;router-outlet&gt;&lt;/router-outlet&gt;<br><br> </pre>
+
+
+
+<p>මේක කලාම අපේ Basic Frontend part එක ඉවරයි. ඊළඟ Part එක තමයි අපේ Application එකේ BackEnd එක Design කරගන්න විදිය. ඊළඟ ලිපියෙන් ඒ ගැන කතා කරමු. මේකෙ Installation වල හරි Code වල හරි මොකක් හරි ප්‍රශ්ණයක් ආවොත් Comment එකක් දාන්න. </p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/19/mean-stack-sample-application-1/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/19/mean-stack-sample-application-1/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+		<item>
+		<title>express-03 basic Routing කරමු</title>
+		<link>/index.php/2019/02/08/express-03-basic-routing/</link>
+				<comments>/index.php/2019/02/08/express-03-basic-routing/#respond</comments>
+				<pubDate>Thu, 07 Feb 2019 19:02:28 +0000</pubDate>
+		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[web development]]></category>
+
+		<guid isPermaLink="false">/?p=1789</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ Routing කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ link එකට ගිහින් කලින් post එක බලන්න. අද මම get request handle කරන විදිය තමා කියල දෙන්න බලාපොරොත්තු වෙන්නේ. මම මේ routes ටික ලියන්නේ app.js එකේ මෙතන 1st line එකෙන් කරන්නේ express කියන framework එක<a class="moretag" href="/index.php/2019/02/08/express-03-basic-routing/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ <strong>Routing</strong> කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ <a href="/index.php/2019/01/23/express-02/">link</a> එකට ගිහින්  කලින් post එක බලන්න.</p>
+
+
+
+<p>අද මම <strong>get request handle</strong> කරන විදිය තමා කියල දෙන්න බලාපොරොත්තු වෙන්නේ. මම මේ routes ටික ලියන්නේ <strong>app.js</strong> එකේ </p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-2.jpg" alt="" class="wp-image-1792" width="321" height="67" /></figure>
+
+
+
+<p> මෙතන 1st line එකෙන් කරන්නේ express කියන framework එක load කරගන්නවා  <strong>var express</strong> කියල තියෙන variable එකට. </p>
+
+
+
+<p>එතකොට 2nd line එකෙන් කරන්නේ app කියල variable එකක් හදාගන්නවා express එකේ තියෙන method call කරන්න </p>
+
+
+
+<p>එතකොට දැන් අපි බලමු server එක හදාගන්න හැටි</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-3.jpg" alt="" class="wp-image-1793" width="382" height="78" /></figure>
+
+
+
+<p>මෙතන මම කරලා තියෙන්නේ අපේ express project එක 8080 කියන port එකෙන් open කරන එක.එතකොට මේ නමක් නැති function වලට කියන්නේ anonymous function කියල.</p>
+
+
+
+<p><strong>කොහොමද දැන් මේ express project එක run කරන්නේ?</strong></p>
+
+
+
+<p>ඔයාගේ terminal එකේ node app.js කියලා type කරලා enter කරන්න.</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-4.jpg" alt="" class="wp-image-1794" width="399" height="53" srcset="/wp-content/uploads/2019/02/Capture-4.jpg 331w, /wp-content/uploads/2019/02/Capture-4-300x40.jpg 300w" sizes="(max-width: 399px) 100vw, 399px" /></figure>
+
+
+
+<p> .ඔන්න ඔය විදියට display උනොත් අවුලක් නෑ </p>
+
+
+
+<h4><strong>දැන් බලමු get request handle කරන විදිය</strong> </h4>
+
+
+
+<pre class="wp-block-preformatted">app.get("/home",function(req,res){<br>    res.send("This is home page");<br>}); </pre>
+
+
+
+<p>මෙතන වෙලා තියෙන්නේ get request එකක් ආවොත්   /home කියල එතකොට server එක response කරනවා.This is home page කියල.මට  අමතක උනා කියන්න req වලින් කියන්නේ request කියන එක res වලින් කියන්නේ response කියන එක. send  වලින් වෙන්නේ html page එකක අපේ  message එක render  කරන එක.</p>
+
+
+
+<p><strong>http://localhost:8080/home</strong> කියල ඔයාගේ web browser එකේ address එක විදියට දුන්නොත් <strong>This is home page</strong> කියල display වේවි.<strong>මතක තියාගන්න</strong> ඔය <strong>app.js </strong> වල <strong>මොනවහරි වෙනස් කරොත්,</strong> save කරලා <strong>ආයේ server එක start</strong> කරන්න වෙනවා. </p>
+
+
+
+<p> <strong>ඔයාට මේ send වලදී html tag use  කරන්නත් පුළුවන්</strong>.හැබැයි මේක අපි use කරන් නෑ මොකද ඒක සංකීර්ණ වැඩි සරලවම කිවොත් කැතයි.එත් use කරන්නේ කොහොමද කියල බලන්න මම එක example එකක් දාන්නම්.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br>app.get("/login",function(req,res){<br>    res.send("&lt;h1&gt;This is login page&lt;/h1&gt;");<br>}); </pre>
+
+
+
+<p><strong>මෙන්න මේ get request එක වැදගත්  </strong></p>
+
+
+
+<pre class="wp-block-preformatted">  <br>app.get("/home/:id/sigma",function(req,res){<br>    res.send("sigma page");<br>}); <br></pre>
+
+
+
+<p>මෙතනදී වෙන්නේ pattern එකක් search කරනවා වගේ seen එකක්. <strong>:id</strong> කියන එකට url request එකේදී ඕනි දෙයක් එන්න පුළුවන්.නමුත්  /home / සහ /sigma දෙපැත්තෙන් තිබුනොත් විතරයි sigma page කියල render කරන්නේ  http://localhost:8080/home/dfbsdjfw/sigma මෙන්න මේ වගේ url request එකක්.</p>
+
+
+
+<h4><strong>දැන් අපි හිතමු අපේ website එකේ නැති page එකක් request කරනවා කියලා </strong></h4>
+
+
+
+<pre class="wp-block-preformatted">  <br>app.get("*",function(req,res){<br>    res.send("Page Not found");<br>}); </pre>
+
+
+
+<p><strong>&#8220;*&#8221;</strong> කියන්නේ ඕනිම url get request එකකට render කරනවා Page Not found  කියල.</p>
+
+
+
+<p>මේ get request එක අපේ app.js එකේ මුලින් කියපු ඒවායින් පස්සේ තමයි මේක use කරන්නේ නැත්නම් හැම url requset එකටම  Page Not found කියල තමා එන්නේ.http://localhost:8080/jhwwbdjwdbwkdjnwk වගේ request එකකට අපි code කරලා නැති නිසා අපිට  Page Not found කියන page එක තමා ලැබෙන්නේ</p>
+
+
+
+<p>පහල තියෙනවා මුළු code එකම අද කතා කරපු.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br>var express=require("express");<br>var app=express();<br><br>app.get("/home",function(req,res){<br>    res.send("This is home page");<br>});<br>app.get("/login",function(req,res){<br>    res.send("&lt;h1&gt;This is login page&lt;/h1&gt;");<br>});<br>app.get("/home/:id/sigma",function(req,res){<br>    res.send("sigma page");<br>});<br><br>app.get("*",function(req,res){<br>    res.send("Page Not found");<br>});<br><br>app.listen(8080,function(){<br>    console.log("server has been started");<br>}); </pre>
+
+
+
+<p> අදට මේ ටික ඇති වගේ post එකක් ටිකක් වෙනදට වඩා දිගයි.ඊලග post එකෙන්  හමුවෙමු.</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/08/express-03-basic-routing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Codeigniter වල folder structure  එක හඳුනාගනිමු</title>
+		<link>/index.php/2018/09/27/folder-structure-of-codeigniter/</link>
+				<comments>/index.php/2018/09/27/folder-structure-of-codeigniter/#comments</comments>
+				<pubDate>Thu, 27 Sep 2018 18:16:11 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[codeigniter]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[mvc architecture]]></category>
+
+		<guid isPermaLink="false">/?p=1413</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන් යාලුවනේ ! ඔන්න මම අද ආවේ codeigniter පාඩම් මාලාවේ දෙවන පාඩමත් සමගින්..මේ පාඩමේදී අපි කතා කරන්න බලාපොරොත්තු වෙන්නේ codeigniter වල folder structure එක ගැන&#8230;කලින් පාඩමේදී අපි කතා කලා MVC architecture එක ගැන සහ කොහොමද codeigniter install කර ගන්නේ කියන එක ගැන..කව්රුහරි කෙනෙක්ට කලින් පාඩම මගහැරුනනම් මෙන්න මෙතනින් ගිහින් බලන්න<a class="moretag" href="/index.php/2018/09/27/folder-structure-of-codeigniter/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/27/folder-structure-of-codeigniter/">Codeigniter වල folder structure  එක හඳුනාගනිමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span>ආයුබෝවන් යාලුවනේ ! ඔන්න මම අද ආවේ codeigniter පාඩම් මාලාවේ දෙවන පාඩමත් සමගින්..මේ පාඩමේදී අපි කතා කරන්න බලාපොරොත්තු වෙන්නේ codeigniter වල folder structure එක ගැන&#8230;කලින් පාඩමේදී අපි කතා කලා MVC architecture එක ගැන සහ කොහොමද codeigniter install කර ගන්නේ කියන එක ගැන..කව්රුහරි කෙනෙක්ට කලින් පාඩම මගහැරුනනම් මෙන්න <a href="/index.php/2018/09/20/introduction-of-codeigniter/" rel="noopener" target="_blank">මෙතනින් </a> ගිහින් බලන්න පුලුවන්&#8230;හරි එහෙනන් අද පාඩමට බහිමු..</p>
+<p>codeigniter වල laravel වල වගේ ලොකූ folder structure එකක් නෑ&#8230; codeigniter වල folder structure එක බැලුවොත් application, system සහ user_guide කියලා ප්‍රධාන folder තුනක් දැකගන්න පුලුවන්..මුලින්ම අපි application folder එක ගැන බලමු..</p>
+<p><em><strong>1.0 &#8211; Application Folder</strong></em></p>
+<p>application folder  එකේ තමයි අපිට project එක කරන්න අවශ්‍යි වන වැඩදගත්ම files ටික තියෙන්නෙ. උදාහරණයක් විදිහට ගත්තොත් models, views, controllers, config වගේ වැදගත්ම files මේ ටික තියෙන්නේ මෙන්න මේ applications folder එක ඇතුලෙ.. ඒ නිසා අපි හරියටම  application folder එක ගැන මුලින්ම දැනගනිමු.application කියන ලොකු folder  එක ගත්තොත් මෙන්න මේ වගේ පොඩි පොඩි  folders ගොඩක් ඔයාලට දැකගන්න පුළුවන්.</p>
+<p><img src="/wp-content/uploads/2018/09/application-275x300.jpg" alt="" width="275" height="300" class="size-medium wp-image-1414 aligncenter" srcset="/wp-content/uploads/2018/09/application-275x300.jpg 275w, /wp-content/uploads/2018/09/application.jpg 309w" sizes="(max-width: 275px) 100vw, 275px" /></p>
+<p>හරි අපි දැන් එකින් එක මේ folders ගැන කතා කරලා බලමු.</p>
+<p><em><strong>1.1 &#8211; Cache</strong></em>  &#8211;</p>
+<p>මෙයින් කරන්නේ web page එක access කරන්න speed එක වැඩි කරන එකයි. තවත් විදියකින් කියනවා නම් web page එකේ <span>performance</span> එක වැඩි කරන එකයි.</p>
+<p><em><strong>1.2 &#8211; Config</strong></em> &#8211;</p>
+<p>මේ folder එක ඇතුලෙ නම් ටිකක් වැදගත් php files ගොඩක් තියෙනවා.. හරි folder එක open කරලා බැලුවම මෙන්න මේ වගේ files  ගොඩක් දැකගන්න පුළුවන් .</p>
+<p><img src="/wp-content/uploads/2018/09/config-252x300.jpg" alt="" width="252" height="300" class="size-medium wp-image-1416 aligncenter" srcset="/wp-content/uploads/2018/09/config-252x300.jpg 252w, /wp-content/uploads/2018/09/config.jpg 302w" sizes="(max-width: 252px) 100vw, 252px" /></p>
+<p>&nbsp;</p>
+<p>ඔන්න ඔය උඩින්ම තියෙන autoload.php file එකෙන් තමයි ඔයාලට  ඔයාගේ project එකට අවශ්‍ය  සියලුම libraries ටික load කරගන්නේ.අපේ project එකේ තියෙන base url  ටික set කරන්නේ මේ config.php කියන file එක ඇතුලට..   අපේ project එක database එකත් එක්ක සම්බන්ධ කරන්නේ මෙන්න මේ database.php   මෙන්න මේ file එකෙන්. config folder එක ඇතුලේ තියෙන  මීළඟ වැදගත් වැදගත්ම file එක තමයි routes.php කියන්නේ. browser එක හරහා එන  url  එකට අනුව  අදාළ controller  එකෙ function  එක  call  කරන්නේ මෙන්න මේ routes.php කියන file එකෙන්.</p>
+<p><em><strong>1.3 &#8211; controllers</strong></em></p>
+<p>codeigniter folder structure එකෙ  තියෙන  තවත්  වැදගත්ම folder එකක් තමයි මේ controllers කියන්නේ. ඇත්තටම කිව්වොත් අපේ project එක පාලනය වෙන්නේ මෙන්න මේ කියන controllers folder එකෙන්. සියලුම  <span>server-side functionalities</span>  ඔක්කෝම පාලනය කරන්නෙත් මෙන්න මේ controllers folder එකෙන්..මේ  වැඩේ කොහොමද වෙන්නේ කියලා හරිහැටි දන්නෙ නැතිනම්  බය වෙන්න එපා..ඉදිරි පාඩම් වලදී අපි ගොඩක් කතා කරනවා මේ controllers  ගැන</p>
+<p><em><strong>1.4 </strong></em>&#8211; <em><strong>core</strong></em></p>
+<p>codeigniter කියන framework එක හැදිලා තියෙන ප්‍රධාන files ටික ආරක්ෂා කරන එක තමයි මෙන්න මේ core folder එකෙන් කරන්නෙ.. සාමාන්‍යයෙන් මේ folder එකේ තියෙන files වෙනස් කරන්න  යන්නේ නැහැ. එහෙම වෙනස්  කරනවානම් &#8216;application\core&#8217;  ඇති file එකේ නමින්ම තවත් file එකක් &#8216;system \core&#8217; folder එක  ඇතුලේ  හදන්න ඕනේ.</p>
+<p><em><strong>1.5 &#8211; </strong></em><em><strong>helpers</strong></em></p>
+<p>නමේ තේරුම වගේම තමයි&#8230; මෙයින් කරන්නේ project එක කරගෙන යද්දි  ඔයාට  help  කරන එක.. Helpers  ඇතුලේ define කරලා තියෙනවා functions සෙට් එකක්  අදාල වැඩේ ලේසි කරගන්න..උදාහරණයක් විදිහට ගත්තොත් links හදන්න ලේසි ලේසි වෙන්න URL Helpers තියෙනවා..forms  හදන්න ලේසි වෙන්න Form Helpers තියෙනවා..තව ගත්තොත් Text Helpers, cookie Helpers වගේ ඒවත් තියනවා.. සාමාන්‍යයෙන් helper files තියෙන්නෙ <strong>system/helpers හෝ</strong><span> </span><strong>application/helpers directory</strong>  එක අතුලේ.. අපිට Helper  එකක්  මේ විදියට load  කරගන්න පුලුවන්..</p>
+<p><code>$this-&gt;load-&gt;helper('name');  // name means that , helper name without  .php file extension and the “helper” part</code></p>
+<p><em><strong>1.6</strong></em> &#8211; <em><strong>Libraries<span> </span></strong></em></p>
+<p><em><strong></strong></em>             ඔයාලගේ project   එකට අවශ්‍ය ඔයාල විසින් develop  කරපු files මෙන්න මේ folder  එක අතුලේ store කරන්න පුළුවන් .</p>
+<p><em><strong>1.7 </strong></em>&#8211; <em><strong>Logs</strong></em></p>
+<p>project එකෙ තියන errors , exception handling වගේ ඒවායේ විස්තර තියාගන්නේ  මෙන්න මේ Logs කියන folder එකෙ.</p>
+<p><em><strong>1.8</strong></em> &#8211;<em><strong> models</strong></em></p>
+<p>controller එකක් database   එකත් එක්ක ගනුදෙනු කිරීමේදී තමයි මේ models අවශ්‍යය වෙන්නේ.. controller එකක තියන data, database  එකට  යවද්දීත් database එකේ තියන data, controller එකට  ගනිද්දිත් මෙන්න මේ models අවශ්‍යය වෙනවා..  කෙටියෙන්ම කිව්වොත් controller එකක් database  එකත් සමග සම්බන්ධ වෙන්නේ මෙන්න මේ models හරහායි..models කොහොමද වැඩ කරන්නෙ කියල ඔයාලට ඉදිරි පාඩම් වලදී හොඳටම තේරේවි.</p>
+<p><em><strong>1.9 &#8211; third_party</strong></em></p>
+<p><span>plugins store</span>  කරන්නේ මෙන්න මේ third party කියන folder එක ඇතුලෙ ..</p>
+<p><em><strong>1.10 &#8211;  view</strong></em></p>
+<p>අපිට පෙනෙන output එක එහෙමත් නැත්නම්  සියලුම html files store කරන්නේ  මෙන්න මේ view folder එක ඇතුලේ.</p>
+<p>&nbsp;</p>
+<p><em><strong>2.0  System folder </strong></em></p>
+<p>system කියන ලොකු folder  එක ගත්තොත් මෙන්න මේ වගේ පොඩි පොඩි  folders ගොඩක් ඔයාලට දැකගන්න පුළුවන්</p>
+<p><img src="/wp-content/uploads/2018/09/s.jpg" alt="" width="241" height="206" class="size-full wp-image-1425 aligncenter" /></p>
+<p>ඔයාලට හොඳට බැලුවොත් පෙනෙයි මෙතන තියන folders  ඔක්කොම වගේ කලින් කතා කියලා තියනවා..  අලුත් එකකට කියලා තියෙන්නෙ fonts කියන folder  එක.. fonts  වලට අදාළ සියලුම විස්තර   මේ fonts folder එක ඇතුලෙ තමයි තියාගන්නේ.</p>
+<p><em><strong>3.0</strong> &#8211;<strong> user_guide</strong></em></p>
+<p>user_guide කියන ලොකු folder  එක ගත්තොත් මෙන්න මේ වගේ පොඩි පොඩි  folders ගොඩක් ඔයාලට දැකගන්න පුළුවන්</p>
+<p><img src="/wp-content/uploads/2018/09/guide-148x300.jpg" alt="" width="227" height="460" class=" wp-image-1426 aligncenter" srcset="/wp-content/uploads/2018/09/guide-148x300.jpg 148w, /wp-content/uploads/2018/09/guide.jpg 242w" sizes="(max-width: 227px) 100vw, 227px" /></p>
+<p>folders ගොඩක් වගේ පෙනුනට මේ තියෙන්නෙ codeigniter වල user manual guide එකෙ  offline <span>version</span> එකයි. අපි download  කරන්න සෑම codeigniter version එකක් එක්කම user guide  එක auto download වෙනවා ..මේක  බැලුවොත් ඔයාලට තේරුම තේරුම් ගන්න පුළුවන් codeigniter වල define  කරල තියන functions,Helpers සහ libraries    වගේ දේවල්..</p>
+<p>ඔන්න ඔය ටික තමයි codeigniter වල folder structure එක  ගැන කියන්න තියෙන්නේ.. අදට පාඩම නිමයි.. codeigniter  වලින් basic application  එකක් හදන විදිය අපි  මීළඟ පාඩමින්  බලමු..  හැමෝටම සුභ දවසක් !</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/27/folder-structure-of-codeigniter/">Codeigniter වල folder structure  එක හඳුනාගනිමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/27/folder-structure-of-codeigniter/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+							</item>
+	</channel>
+</rss>

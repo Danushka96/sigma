@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>VPN &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/vpn/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>What is a VPN?</title>
+		<link>/index.php/2018/03/19/what-is-a-vpn/</link>
+				<comments>/index.php/2018/03/19/what-is-a-vpn/#respond</comments>
+				<pubDate>Mon, 19 Mar 2018 08:44:52 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[VPN]]></category>
+
+		<guid isPermaLink="false">/?p=164</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> What is a VPN? VPN is stands for Virtual Private Network. A VPN is a lot like what it sounds like: a private Network. Let me explain a little. Just imagine a Highway with many vehicles travels two ways. If you&#8217;re on the highway you can see each traffic in the network.<a class="moretag" href="/index.php/2018/03/19/what-is-a-vpn/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/19/what-is-a-vpn/">What is a VPN?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><h3><img class="wp-image-170 aligncenter" src="/wp-content/uploads/2018/03/What-is-a-VPN-1-300x134.jpg" alt="" width="562" height="251" srcset="/wp-content/uploads/2018/03/What-is-a-VPN-1-300x134.jpg 300w, /wp-content/uploads/2018/03/What-is-a-VPN-1-768x342.jpg 768w, /wp-content/uploads/2018/03/What-is-a-VPN-1.jpg 1024w" sizes="(max-width: 562px) 100vw, 562px" /></h3>
+<h3 style="text-align: left;"><strong>What is a VPN?</strong></h3>
+<p>VPN is stands for <strong>Virtual Private Network</strong>. A VPN is a lot like what it sounds like: a private Network. Let me explain a little. Just imagine a Highway with many vehicles travels two ways. If you&#8217;re on the highway you can see each traffic in the network. Just like the highway when you connect to the internet your data transfers in a line like the highway. If you are with a good technical knowledge you can take that internet traffic and find valuable information like Bank account details. When it comes to a <strong>VPN </strong>this kind of thing can&#8217;t be done. Because all of your data is encrypted by a key known by you and a server. Whether someone take your data he/she can&#8217;t find what are they without the correct key. If you are user that worry about your data security here is the method to secure them with your own vpn.</p>
+<h3><strong>Advantages of VPN</strong></h3>
+<p>Here I list some advantages of VPN.</p>
+<ol>
+<li>Encrypt you data so no one will track you or your data</li>
+<li>You can change your ip in to a country as you decide</li>
+<li>Unblock all websites blocked by your country</li>
+<li>If you&#8217;re a dark web user here you can swim in to the deep web without any fear</li>
+<li>No one can track Who you are.</li>
+</ol>
+<p>Here I&#8217;m going to make this post on Install a VPN on your own Ubuntu Server. If you&#8217;re a student and you don&#8217;t have a server Just read this guide : <a href="/index.php/2018/03/14/how-to-get-a-free-vps-as-a-university-student/">free server</a></p>
+<p>Ok Get ready with a <strong>fresh</strong> installed <strong>Ubuntu 16.04</strong> server with <strong>Open port</strong> <strong>1194</strong> and <strong>443.</strong></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/19/what-is-a-vpn/">What is a VPN?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/03/19/what-is-a-vpn/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

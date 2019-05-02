@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Classes &#038; Objects	</title>
+	<atom:link href="/index.php/2018/03/17/classes-objects/feed/" rel="self" type="application/rss+xml" />
+	<link>/index.php/2018/03/17/classes-objects/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				By: Johan wiraj				</title>
+				<link>/index.php/2018/03/17/classes-objects/#comment-240</link>
+		<dc:creator><![CDATA[Johan wiraj]]></dc:creator>
+		<pubDate>Mon, 25 Feb 2019 09:27:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=114#comment-240</guid>
+					<description><![CDATA[Thanks bro nice explain]]></description>
+		<content:encoded><![CDATA[<p>Thanks bro nice explain</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				By: Gayan Sampath				</title>
+				<link>/index.php/2018/03/17/classes-objects/#comment-13</link>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+		<pubDate>Thu, 22 Mar 2018 03:59:03 +0000</pubDate>
+		<guid isPermaLink="false">/?p=114#comment-13</guid>
+					<description><![CDATA[well came.join with our upcoming posts.]]></description>
+		<content:encoded><![CDATA[<p>well came.join with our upcoming posts.</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				By: iresahn				</title>
+				<link>/index.php/2018/03/17/classes-objects/#comment-10</link>
+		<dc:creator><![CDATA[iresahn]]></dc:creator>
+		<pubDate>Wed, 21 Mar 2018 16:03:02 +0000</pubDate>
+		<guid isPermaLink="false">/?p=114#comment-10</guid>
+					<description><![CDATA[Sucha a good lesson. Thank you]]></description>
+		<content:encoded><![CDATA[<p>Sucha a good lesson. Thank you</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

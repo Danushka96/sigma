@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>object oriented programming &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/object-oriented-programming/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Classes &#038; Objects</title>
+		<link>/index.php/2018/03/17/classes-objects/</link>
+				<comments>/index.php/2018/03/17/classes-objects/#comments</comments>
+				<pubDate>Sat, 17 Mar 2018 07:36:10 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[OOP]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[object oriented programming]]></category>
+		<category><![CDATA[oop]]></category>
+
+		<guid isPermaLink="false">/?p=114</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>                   කොහොමද යාලුවනේ. අපේ thesigma blog අඩවියට පැමිණි ඔබ සෑම සාදරයෙන් පිළිගන්නවා. මෙහිදී අපි කතාකරන්නට බලාපොරොත්තු වෙනවා මොකද්ද මේ object oriented programming කියන්නේ කියලා. ගොඩක් ළමයින්ට තියෙන ප්‍රශ්නයක් තමයි object oriented programming පිළිබඳව හරි හැටි දැනුමක් නොමැතිකම. මේ හේතුව නිසා මම මගේ<a class="moretag" href="/index.php/2018/03/17/classes-objects/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/17/classes-objects/">Classes &amp; Objects</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p><img class="size-medium wp-image-112 aligncenter" src="/wp-content/uploads/2018/03/oop-300x172.png" alt="" width="300" height="172" srcset="/wp-content/uploads/2018/03/oop-300x172.png 300w, /wp-content/uploads/2018/03/oop.png 500w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p style="text-align: left;">                <em>  කොහොමද යාලුවනේ. අපේ thesigma blog අඩවියට පැමිණි ඔබ සෑම සාදරයෙන් පිළිගන්නවා. මෙහිදී අපි කතාකරන්නට බලාපොරොත්තු වෙනවා මොකද්ද මේ object oriented programming කියන්නේ කියලා. ගොඩක් ළමයින්ට තියෙන ප්‍රශ්නයක් තමයි object oriented programming පිළිබඳව හරි හැටි දැනුමක් නොමැතිකම. මේ හේතුව නිසා මම මගේ පළමු blog පෝස්ට් එක object oriented programming ගැන සිංහලෙන්ම ලියන්නට හිතුවා.මේ සඳහා අපි යොදාගැනීමට බලාපොරොත්තු වෙනවා java පරිගණක භාෂාව.මම හිතනවා ඔයාලට මෙයින් object oriented programming ගැන හොඳ අදහසක් ගන්නට පුළුවන් වෙයි කියලා. ඇත්තටම මේ object oriented කියන්නේ  සං</em><em>කල්පය</em><em>ක් ඉංග්‍රීසියෙන් කියනවනං concept එකක්. මෙයින් අපිට පුළුවන් අපේ programming සම්බන්ධ වැඩ පහසු කර ගන්නට. programming පැත්තෙන් හිතන්වනම් මේ සංකල්පයෙහි සරල තේරුම තමයි සම්පූර්ණ ප්‍රශ්නයම කොටස් කර coding කරලා එකට සම්බන්ධ කිරීමයි. ඉස්සර සම්පූර්ණ program එකම තනි පිටුවකට තමයි code කෙරේ. මෙහිදී විශාල program වල දෝෂ ආවම ඒවා නිවරදි කරන්නට බොහෝ කාලයක් මෙන්ම විශාල වෙහෙසක් දරන්නටත් සිදුවුණා. මෙන්න මේ හේතුව නිසා programmers ලා නව සංකල්පයකට යොමුවන්නට පෙළඹුණා . පසුව ඔවුන් තීරණය කළා මුළු program එකම අනු කොටස් වලට වෙන්කර code කර එකිනෙක්ට සම්බන්ධ කරන්නට. මෙන්න මේ සංකල්පයට තමයි object oriented programming කියලා කියන්නේ.</em></p>
+<p><img class="size-medium wp-image-111 aligncenter" src="/wp-content/uploads/2018/03/oop-300x155.jpg" alt="" width="300" height="155" srcset="/wp-content/uploads/2018/03/oop-300x155.jpg 300w, /wp-content/uploads/2018/03/oop.jpg 653w" sizes="(max-width: 300px) 100vw, 300px" /><br />
+හරි එහෙනම් අපි බලමු මොකක්ද මේ object oriented programming කියන්නේ, මොකක්ද මෙහි විශේෂත්වය සහ කොහොමද මෙම සංකල්පය අපි code කරන විට යොදාගන්නෙ කියල .<br />
+ඇත්තටම මේ <em> සං</em><em>කල්පය</em> classes සහ object මත පදනම් වූවක්. අපි පළමුව බලමු මොකද්ද මේ class එකක් සහ object එකක් කියන්නෙ කියලා. ඇත්තටම class එකක් කියලා කියන්නේ මොකක් හරි දෙයක් හදන්නට ගන්න template එකක් වගේ එකක් .උදාහරණයක් විදිහට ගන්නවනම් ගෙයක් හදන්නට ගන්න ප්ලෑන් එක වගේ එකක්. එකමත් ප්ලෑන් එක පාවිච්චි කරලා අපිට පුළුවන් ගෙවල් කිහිපයක් හදාරන්නට. මෙන්න මේ ප්ලෑන් එකට නැත්නම් template එකට අපි පරිගණක භාෂාවේ කියනවා class එකක් කියලා. මෙන්න මේ ක්ලාස් එකෙන් හැදෙන වස්තුවට එහෙම නැත්නම් හැදෙන දේට අපි කියනවා object එකක් කියලා.</p>
+<p><img class="size-medium wp-image-108 aligncenter" src="/wp-content/uploads/2018/03/class-300x300.gif" alt="" width="300" height="300" srcset="/wp-content/uploads/2018/03/class-300x300.gif 300w, /wp-content/uploads/2018/03/class-150x150.gif 150w" sizes="(max-width: 300px) 100vw, 300px" /><br />
+අපි කලින් උදාහරණයේ විදිහට නම් ප්ලෑන් එක පාවිච්චි කරනවා හදපු ගෙදරක් වගේ. මේ එක ප්ලෑන් එක පාවිච්චි කරලා විශාලත්වයෙන් අඩු හෝ වැඩි,වර්ණ වෙනස් වන ආකාරයට ගෙවල් කීපයක් සාදා ගන්න. එකම ප්ලෑන් එකට අනුව සාදන නිසා මේ සෑම ගෙදරකම වියුහය එකම බව ඔබට තේරෙනවා ඇති .</p>
+<p><img class="alignnone size-medium wp-image-110" src="/wp-content/uploads/2018/03/object_2-300x225.jpg" alt="" width="300" height="225" srcset="/wp-content/uploads/2018/03/object_2-300x225.jpg 300w, /wp-content/uploads/2018/03/object_2.jpg 638w" sizes="(max-width: 300px) 100vw, 300px" />            <img class="alignnone size-medium wp-image-109" src="/wp-content/uploads/2018/03/object-300x169.png" alt="" width="300" height="169" srcset="/wp-content/uploads/2018/03/object-300x169.png 300w, /wp-content/uploads/2018/03/object-768x434.png 768w, /wp-content/uploads/2018/03/object.png 880w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>පරිගණක භාෂාවට අනුව කියනවනම් එක class එකක් පාවිච්චි කරලා අපිට පුළුවන් object ගොඩාක් හදාගන්ට . මේ විදිහට එකම ක්ලාස් එක පාවිච්චි කරල හදන හැම object එක වියූහය එකමයි කියලා ඔයාලට තේරෙනවා ඇති . ඔන්න ඔය සරල සංසිද්ධිය object oriented කියන සංකල්පයේ තියන ප්‍රධානම දෙයක්. class එකක් ගත්තොත් properties දෙකක් තියෙනවා attributes සහ methods කියලා. attributes එකක් කියන්නේ class එකක් සතු දෙයක් .එහෙමත් නැත්ත්ම් class එකක් පාවිච්චි කරලා අපි හදන object එකේ තියෙන දෙයක්.මෙන්න මේ attributes වලට අපි instance variables කියලත් කියනවා. උදාහරණයක් විදිහට අපි ගත්තොත් බල්ලා කියන class එක ගත්තොත් එකේ attributes වෙන්නේ පොදුවේ class එක සතු දේවල්ය.එනම් බල්ලා කියන class එකෙ attributes විදිහට අපිට ගන්න පුළුවන් පාට, කකුල් ගණන වැනි දේවල්. methods එකක් කියන්නේ අපි හදන class එකේ හැසිරීම් ප්‍රකාශ කරන එකක්. අපේ බල්ලා කියන class එකේ නම් methods විදිහට අපිට ගන්න පුලුවන් දීවීම, බීරිම වැනි දේවල්.</p>
+<p><img class="alignnone size-medium wp-image-115" src="/wp-content/uploads/2018/03/java-object-300x169.png" alt="" width="300" height="169" srcset="/wp-content/uploads/2018/03/java-object-300x169.png 300w, /wp-content/uploads/2018/03/java-object-768x433.png 768w, /wp-content/uploads/2018/03/java-object.png 772w" sizes="(max-width: 300px) 100vw, 300px" />    <img class="alignnone size-medium wp-image-116" src="/wp-content/uploads/2018/03/052016_0704_ObjectsandC6-300x170.jpg" alt="" width="300" height="170" srcset="/wp-content/uploads/2018/03/052016_0704_ObjectsandC6-300x170.jpg 300w, /wp-content/uploads/2018/03/052016_0704_ObjectsandC6-768x436.jpg 768w, /wp-content/uploads/2018/03/052016_0704_ObjectsandC6.jpg 793w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>මම හිතනවා classes සහ objects පිළිබඳ හොඳ අදහසක් ලැබෙන්න ඇති කියලා. රැඳී සිටින්න <em>thesigma blog </em>අඩවිය සමගින් මීළඟ object oriented පාඩම සමගින් හමුවෙමු. ස්තුතියි!</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/17/classes-objects/">Classes &amp; Objects</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/03/17/classes-objects/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+							</item>
+	</channel>
+</rss>

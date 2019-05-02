@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>express &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/express/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>express-02 කොහොමද express install කරගන්නේ?</title>
+		<link>/index.php/2019/01/23/express-02/</link>
+				<comments>/index.php/2019/01/23/express-02/#respond</comments>
+				<pubDate>Wed, 23 Jan 2019 07:18:09 +0000</pubDate>
+		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[express]]></category>
+
+		<guid isPermaLink="false">/?p=1680</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> 1.ඔයාට මුලින්ම Node.js install කරගන්න වෙනවා. ඔයා තාම node install කරලා නැත්නම්.මෙන්න මේ link එකට ගිහින් node download කරගෙන install කරගන්න වෙනවා. මේක install කරගත්තම ඔයාට node සහ npm (node package manager) එකත් auto install වෙනවා. ඔයාට ඕනිනම් පුලුවන් මෙන්න මේ විදියට Node &#38; NPM install වෙලාද කියල බලන්න.command prompt(cmd<a class="moretag" href="/index.php/2019/01/23/express-02/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/23/express-02/">express-02 කොහොමද express install කරගන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<h4><strong>1.ඔයාට මුලින්ම Node.js  install කරගන්න වෙනවා.</strong></h4>
+
+
+
+<p>ඔයා  තාම  node install කරලා නැත්නම්.මෙන්න මේ <a href="https://nodejs.org/en/download/">link</a> එකට ගිහින් node download  කරගෙන install  කරගන්න වෙනවා.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Capture-1024x585.jpg" alt="" class="wp-image-1681" srcset="/wp-content/uploads/2019/01/Capture-1024x585.jpg 1024w, /wp-content/uploads/2019/01/Capture-300x171.jpg 300w, /wp-content/uploads/2019/01/Capture-768x439.jpg 768w, /wp-content/uploads/2019/01/Capture.jpg 1055w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>මේක install කරගත්තම ඔයාට node සහ  npm (node package manager) එකත් auto install වෙනවා. ඔයාට ඕනිනම් පුලුවන් මෙන්න මේ විදියට Node &amp; NPM install වෙලාද කියල බලන්න.command prompt(cmd ) එකට ගිහින් පහත දැක්වෙන ආකාරයට type කරලා බලන්න.</p>
+
+
+
+<p><strong>Node install වෙලාද ? node  -v </strong></p>
+
+
+
+<p><strong>npm install වෙලාද? npm -v </strong></p>
+
+
+
+<p><strong>example :- </strong>මෙන්න මේ විදියට ඔයා install කරපු version එක අනුව ලැබෙයි<strong> </strong></p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/01/Capture-1.jpg" alt="" class="wp-image-1682" width="513" height="122" srcset="/wp-content/uploads/2019/01/Capture-1.jpg 374w, /wp-content/uploads/2019/01/Capture-1-300x71.jpg 300w" sizes="(max-width: 513px) 100vw, 513px" /></figure>
+
+
+
+<h4><strong>2.ඔයාට දෙවනුව කරන්න තියෙන්නේ package.json එක&nbsp;හදාගන්න </strong></h4>
+
+
+
+<p>මට මුලින් කියන්න අමතක උනා මම code edit කරන්න use කරන්නේ vscode text editor එක.ඔයා කැමති නම් install කරගන්න මේ <a href="https://code.visualstudio.com/download">link</a> එකෙන් </p>
+
+
+
+<ul><li>දැන් ඔයා folder එකක් හදාගන්න කැමති නමකින්, මම නම් හදාගෙන තියෙන්නේ v1 කියල.</li><li>ඔයාට පුලුවන් මේ folder එක ඔයාගේ vscode එකෙන් open කරගන්න. ඔයාට terminal එක use කරන්න වෙනවා. terminal එක code editor එකේ පේන්න නැතිනම් ඔයාට තියෙන්නේ view&#8211;&gt;terminal දෙන්න</li><li>ඊට පස්සේ ඔයා <strong>app.js </strong>කියල file එකක් හදාගන්න.</li><li>දැන් ඔයාට තියෙන්නේ package.json කියන json file එක හදාගන්න.මේකට ඔයාට කරන්න තියෙන්නේ terminal එකේ <strong>npm init </strong>කියල type කරල enter කරන්න විතරයි. මෙතනදී ඔයාට  පොඩි form එකක් වගේ දෙයක් set වෙයි .ඔයාට තියෙන්නේ මම පහත කරලා තියෙන විදියට කරන්න.</li></ul>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="/wp-content/uploads/2019/01/Capture-2.jpg" alt="" class="wp-image-1683" width="501" height="578" srcset="/wp-content/uploads/2019/01/Capture-2.jpg 471w, /wp-content/uploads/2019/01/Capture-2-260x300.jpg 260w" sizes="(max-width: 501px) 100vw, 501px" /></figure></div>
+
+
+
+<p>ඔයා enter කරගෙන යනකොට entry point(index .js ) විදියට තිබ්බොත් කරන්න තියෙන්නේ app .js කියල type කරල enter කරන්න. මතක තියාගන්න ගොඩක් වෙලාවට එහෙම වෙන්නේ ඔයා app.js එක, npm init කරන්න කලින් create කරලා තිබ්බේ නැති උනාම.</p>
+
+
+
+<h4><strong>3.දැන් කරන්න තියෙන්නේ express install කරගන්න</strong></h4>
+
+
+
+<p>එකට ඔයාට තියෙන්නේ <strong>npm</strong><strong> install express &#8211;save</strong> command එක දෙන්න.මේකට පොඩි වෙලාවක් යයි.</p>
+
+
+
+<p><strong>&#8211;save</strong> එක දෙන්න මතක් කරලා මොකද නැත්නම් ඔයාට <strong>dependencies manual set</strong> කරන්න වෙනවා.</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/01/Capture-3.jpg" alt="" class="wp-image-1685" width="906" height="116" srcset="/wp-content/uploads/2019/01/Capture-3.jpg 976w, /wp-content/uploads/2019/01/Capture-3-300x38.jpg 300w, /wp-content/uploads/2019/01/Capture-3-768x98.jpg 768w" sizes="(max-width: 906px) 100vw, 906px" /></figure>
+
+
+
+<p>මට කියන්න බැරි උණා <strong>ඇයි package.json එක ඕනි කියල.</strong></p>
+
+
+
+<p>package.json එකේ තමා අපේ project එකට අවශ්‍ය meta data තියාගන්නේ. dependencies,author ,project name ,entry point වගේ meta data .ඔයාට package.json file එක open කරොත් බලාගන්න පුළුවන් වෙයි.</p>
+
+
+
+<p>අදට express install කරන කොටස ඉවරයි. ඊළඟ ලිපියෙන් බලමු කොහොමද express Framework එකෙන් server එකක් start කරලා url-request handle කරන විදිය.</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/23/express-02/">express-02 කොහොමද express install කරගන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/23/express-02/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>express-01 මොකක්ද මේ express කියන්නේ?</title>
+		<link>/index.php/2019/01/22/express-01/</link>
+				<comments>/index.php/2019/01/22/express-01/#respond</comments>
+				<pubDate>Tue, 22 Jan 2019 12:48:09 +0000</pubDate>
+		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[express]]></category>
+		<category><![CDATA[intro]]></category>
+
+		<guid isPermaLink="false">/?p=1606</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> express කියන්නේ මොකක්ද ? express කියන්නේ back-end node.js framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ back-end එක හදන්න. ඒ කියන්නෙ මේක Run වෙන්නෙ අපේ web server එකේ. web site එකක user ට පෙනෙන් නැති logic, database එකත් එක්ක ගනුදෙනු කරනව වගේ (back-end) වැඩ තමා express කරලා දෙන්නේ. මේ<a class="moretag" href="/index.php/2019/01/22/express-01/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p><strong>express  කියන්නේ  මොකක්ද ?</strong></p>
+
+
+
+<p>express  කියන්නේ back-end node.js framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ back-end එක හදන්න. ඒ කියන්නෙ මේක Run වෙන්නෙ අපේ web server  එකේ.  <br>web site එකක user ට පෙනෙන් නැති logic, database එකත් එක්ක ගනුදෙනු කරනව වගේ (back-end) වැඩ තමා express කරලා දෙන්නේ.</p>
+
+
+
+<p>මේ ලිපි මාලාවෙන් අපි බලාපොරොත්තු වෙනවා express පාවිච්චි කරලා web application එකක්   හදන්න .මේකට ඔයාලට HTML, CSS, JS, Bootstrap  ගැනත් පොඩි දැනුමක් තියෙන්න ඕන. ඒ දේවල් වල ගැන ඔයා දන්නේ නැත්නම් ,මම මේ කියන්න හදන්නේ ඔයාලට උඩදි කියපු Skills ටික හදා ගන්න පුළුවන් ක්‍රමයක්. ඒ තමයි W3School එක. මම එක එක Topic එකට අදාල Link එක මෙතනට දාන්නම්. අවශ්‍ය නම් ඒ ටික බලලා දැනුමක් එකතු කර ගන්න.&nbsp; </p>
+
+
+
+<p><strong>HTML</strong>&nbsp;:&nbsp;<a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a></p>
+
+
+
+<p><strong>CSS</strong>&nbsp;:&nbsp;<a href="https://www.w3schools.com/css">https://www.w3schools.com/css</a></p>
+
+
+
+<p><strong>JS :&nbsp;</strong><a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a></p>
+
+
+
+<p><strong>Bootstrap</strong> : <a href="https://www.w3schools.com/bootstrap/default.asp">https://www.w3schools.com/bootstrap/default.asp</a></p>
+
+
+
+<p>ඔයාට framework කියන එක ගැන අවබෝදයක් නැත්නම් <a href="/index.php/2018/04/10/web-application-with-laravel/">මෙන්න</a> මේ link එකට ගිහින් බලන්න<strong> Framework එකක් කියන්නේ මොකද්ද?</strong>. කියල <strong>topic</strong> එකක් තියෙනවා.</p>
+
+
+
+<p><strong>දැන්  අපි බලමු Node.js  කියන්නේ මොකක්ද කියල?</strong></p>
+
+
+
+<p>Node.js  කියන්නේ server-side platform එකක්,Node හදපු පුද්ගලයාගේ නම  <br>Ryan Dahl.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg" alt="" class="wp-image-1661" srcset="/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg 220w, /wp-content/uploads/2019/01/220px-Ryan_Dahl-200x300.jpg 200w" sizes="(max-width: 220px) 100vw, 220px" /><figcaption> <br>Ryan Dahl. </figcaption></figure></div>
+
+
+
+<p><strong>අපි බලමු කොහොමද file request එකක් php වලින් handle කරන්නේ කියල ?</strong></p>
+
+
+
+<p>1.මුලින්ම task එක යොමු කරනවා computer file system එකට.</p>
+
+
+
+<p>2.file  system එක අර request කරපු  file එක open කරලා read කරනකම් wait වෙවී ඉන්නවා.</p>
+
+
+
+<p>3.return කරනවා content එක client ට .</p>
+
+
+
+<p>4.ready  වෙනවා ඊලග request handle කරන්න.</p>
+
+
+
+<p><strong>දැන් අපි බලමු කොහොමද file request එකක් Node වලින්  handle කරන්නේ කියල?</strong></p>
+
+
+
+<p> 1.මුලින්ම task එක යොමු කරනවා computer file system එකට. </p>
+
+
+
+<p> 2.ready  වෙනවා ඊලග request handle කරන්න. </p>
+
+
+
+<p>3.file system එක, අර request කරපු file එක open කරලා read කරාම,server එක return කරනවා content එක client ට. </p>
+
+
+
+<p><strong>ඇයි මම express තෝරාගත්තේ,වෙන</strong> <strong>Node.js</strong> <strong> framework නැද්ද ?</strong></p>
+
+
+
+<p>නෑ තව framework තියෙනවා.නමින් කිවොත් koa2,&nbsp;Sails, NestJS,&nbsp;LoopBack වගේ තව ගොඩක් ඒවා තියෙනවා.හැබැයි මේ වනවිට ගොඩක්ම express තමා use වෙන්නේ.ඔයාලා google search කරොත් බලාන්න පුලුවන්.</p>
+
+
+
+<p> <br>අදට හැඳින්වීමේ කොටස ඉවරයි. ඊළඟ ලිපියෙන් බලමු කොහොමද express  Framework එක ඔයාගෙ Machine එකේ Install කරගන්නේ කියලා. </p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/22/express-01/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>MEAN Part 2 (Mongo DB)</title>
+		<link>/index.php/2018/09/24/mean-part-2-mongo-db/</link>
+				<comments>/index.php/2018/09/24/mean-part-2-mongo-db/#comments</comments>
+				<pubDate>Mon, 24 Sep 2018 17:42:48 +0000</pubDate>
+		<dc:creator><![CDATA[Sandun Prasanganath]]></dc:creator>
+				<category><![CDATA[mean stack]]></category>
+		<category><![CDATA[angular.js]]></category>
+		<category><![CDATA[express]]></category>
+		<category><![CDATA[mongo DB]]></category>
+		<category><![CDATA[node.js]]></category>
+
+		<guid isPermaLink="false">/?p=1369</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්!!පසුගිය ලිපියෙන් මම mongo DB  install කරගෙන ඒකෙ mongo server එක​ on කරගන්න විදිය කියල දුන්නා.ඉතින් මේ ලිපියේදී මම ඒ on කරගත්ත server එකේ වැඩ කරන්නේ කොහොමද කියල කියල දෙන්නම්.කව්‍ රුහරි අද අපිත් එක්ක මුලින්ම​ එකතු වෙනවනම් මෙතනින් ගිහින් ඒ ලිපිය බලන්න පුලුවන්. Database Commands ඉතින් මෙහෙම mongo DB server<a class="moretag" href="/index.php/2018/09/24/mean-part-2-mongo-db/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/24/mean-part-2-mongo-db/">MEAN Part 2 (Mongo DB)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span>හැමෝටම ආයුබෝවන්!!පසුගිය ලිපියෙන් මම mongo DB  install කරගෙන ඒකෙ mongo server එක​ on කරගන්න විදිය කියල දුන්නා.ඉතින් මේ ලිපියේදී මම ඒ on කරගත්ත server එකේ වැඩ කරන්නේ කොහොමද කියල කියල දෙන්නම්.කව්‍ රුහරි අද අපිත් එක්ක මුලින්ම​ එකතු වෙනවනම් <a href="/index.php/2018/09/22/mean-part-1/">මෙතනින්</a> ගිහින් ඒ ලිපිය බලන්න පුලුවන්.</p>
+<h3><strong>Database Commands</strong></h3>
+<p>ඉතින් මෙහෙම mongo DB server එක on කරගත්තට පස්සේ අලුත් console එකක් open කරගෙන <strong>mongo</strong> කියල type කරන්න එතකොට ඔයාට ඔයගේ තියෙන mongo DB version එක මොකක්ද කියල  බලාගන්න පුලුවන්,ඒ console එකේ තමයි අපි command කරන්නේ.</p>
+<p><img src="/wp-content/uploads/2018/09/p1.png" alt="" width="699" height="183" class=" wp-image-1373 aligncenter" srcset="/wp-content/uploads/2018/09/p1.png 977w, /wp-content/uploads/2018/09/p1-300x79.png 300w, /wp-content/uploads/2018/09/p1-768x201.png 768w" sizes="(max-width: 699px) 100vw, 699px" /></p>
+<p>දැනට තියෙන database මොනවද කියලා බලාගන්නා ඕනිනම් <strong>show dbs</strong> කියලා type කරන්න​.එතකොට දැනට තියෙන database ටික මෙන්න මේ විදියට පෙන්නනවා.</p>
+<p><img src="/wp-content/uploads/2018/09/p2.png" alt="" width="704" height="164" class="wp-image-1375 aligncenter" srcset="/wp-content/uploads/2018/09/p2.png 959w, /wp-content/uploads/2018/09/p2-300x70.png 300w, /wp-content/uploads/2018/09/p2-768x179.png 768w" sizes="(max-width: 704px) 100vw, 704px" /></p>
+<p>config කියල තියෙන්නෙ මම හදපු database එකක්.අපි බලමු mongo DB වල අලුතින් database එකක් හදාගන්නේ කොහොමද කියලා.mysql වල නම් create database ගැහුවම database එක හැදෙනවා,හැබැයි ඒ database එක ඇතුලට යන්න අපිට ආයිමත් use databse කියල type කරන්න වෙනවා,mongo වල එහෙම ඕනි වෙන්නේ නැ,use කියල ගහලා database එකේ නම ගැහුවහම database එක create වෙලා auto ම switch වෙනවා.</p>
+<p>දැන් මම customer කියලා database එකක් හදන හැටි පෙන්වන්නම්.</p>
+<p><img src="/wp-content/uploads/2018/09/p4.png" alt="" width="553" height="284" class="size-full wp-image-1378 aligncenter" srcset="/wp-content/uploads/2018/09/p4.png 553w, /wp-content/uploads/2018/09/p4-300x154.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></p>
+<p>මම හිතනවා දැන් ඔයලට පැහැදිලි වෙන්න ඇති කියලා.දැන් මම කියලා දෙන්නම් mongo වල data save වෙන්නේ කොහොමද කියලා,මම කලින් ලිපියේ කිව්වා document එහෙම නැත්තම් json syntax (java script object) විදියට තමයි මේ data save වෙන්නේ කියලා.මම පෙන්වන්නම් කොහොමද ඒක කරන්නේ කියලා.</p>
+<p><strong>1.අපිට පුලුවන් key එකයි value එකයි විදියට data insert කරන්න​.</strong></p>
+<p><img src="/wp-content/uploads/2018/09/p9.png" alt="" width="550" height="144" class="size-full wp-image-1381 aligncenter" srcset="/wp-content/uploads/2018/09/p9.png 550w, /wp-content/uploads/2018/09/p9-300x79.png 300w" sizes="(max-width: 550px) 100vw, 550px" /></p>
+<p>&nbsp;</p>
+<p><strong>2.Array එකක් විදියට insert කරන්න </strong></p>
+<p><img src="/wp-content/uploads/2018/09/p10.png" alt="" width="563" height="142" class="size-full wp-image-1380 aligncenter" srcset="/wp-content/uploads/2018/09/p10.png 563w, /wp-content/uploads/2018/09/p10-300x76.png 300w" sizes="(max-width: 563px) 100vw, 563px" /></p>
+<p>&nbsp;</p>
+<p><strong>3.object එකක් විදියට insert කරන්න</strong></p>
+<p><img src="/wp-content/uploads/2018/09/p12.png" alt="" width="571" height="140" class="size-full wp-image-1382 aligncenter" srcset="/wp-content/uploads/2018/09/p12.png 571w, /wp-content/uploads/2018/09/p12-300x74.png 300w" sizes="(max-width: 571px) 100vw, 571px" /></p>
+<p>&nbsp;</p>
+<p><strong>4.Array object එකක් විදියට insert කරන්න</strong></p>
+<p><img src="/wp-content/uploads/2018/09/p13.png" alt="" width="573" height="148" class="size-full wp-image-1383 aligncenter" srcset="/wp-content/uploads/2018/09/p13.png 573w, /wp-content/uploads/2018/09/p13-300x77.png 300w" sizes="(max-width: 573px) 100vw, 573px" /></p>
+<p>ඉතින් මම මේ ඔයාලට පැහැදිලි කලේ mongo  වල​ data insert කරන්න පුලුවන් විදි නැත්තම් ආකාර​ ගැනයි.</p>
+<p>දැන් අපි බලමු අපි හදාගත්ත customer database එක ඇතුලේ table එකක්  හදාගෙන ඒකට data <strong>insert</strong> කරන්නේ කොහොමද කියලා,table එක හදගන්න කලින් බලන්න database එක හරියට switch වෙලා තියෙනවද කියලා.එකේ error එකක් නැතිනම් මෙන්න මේ <strong>db.createCollection(&#8216;table name&#8217;)</strong>  command  එක type  කරලා අලුතින් table එකක් ඒ කියන්නේ collection එකක් හදාගන්න.</p>
+<p><em>(මේ හැම දේකදිම mongo  server එක on වෙලා mongo shell  එකක් open වෙලා තියෙන්න ඕනි)​</em></p>
+<p><img src="/wp-content/uploads/2018/09/a5-1.png" alt="" width="420" height="315" class=" wp-image-1389 aligncenter" srcset="/wp-content/uploads/2018/09/a5-1.png 572w, /wp-content/uploads/2018/09/a5-1-300x225.png 300w" sizes="(max-width: 420px) 100vw, 420px" /></p>
+<p>ඉතින් මේ collection එක හරියට generate වුනාද කියලා <strong>show collections</strong> command එක type කරලා ඔයාලට බලන්න පුලුවන්.<img src="/wp-content/uploads/2018/09/a6.png" alt="" width="446" height="316" class="wp-image-1390 aligncenter" srcset="/wp-content/uploads/2018/09/a6.png 597w, /wp-content/uploads/2018/09/a6-300x213.png 300w" sizes="(max-width: 446px) 100vw, 446px" /></p>
+<p>දැන් ඔයාලට පේනවා ඇති table එක හැදිලා තියෙනවා.දැන් table එකට data insert කරමු.</p>
+<p>මුලින්ම <strong>db.user.insert({first:&#8221;kamal&#8221;,last:&#8221;silva&#8221;})</strong> type කරන්න​.ඊට පස්සේ ඔයාට හරියට insert වුනාද කියලා බලාගන්න ඕනිනම් <strong>db.user.find()</strong> command එක type කරන්න​.</p>
+<p><img src="/wp-content/uploads/2018/09/ar.png" alt="" width="541" height="237" class="wp-image-1391 aligncenter" srcset="/wp-content/uploads/2018/09/ar.png 774w, /wp-content/uploads/2018/09/ar-300x131.png 300w, /wp-content/uploads/2018/09/ar-768x336.png 768w" sizes="(max-width: 541px) 100vw, 541px" /></p>
+<p>මොකක්ද මේ <em><strong>ObjectId</strong></em> එක කියන්නේ,my sql වල නම්  table එකක් හදනකොට අපි id කියලා field එකක් හදලා ඒක Auto Increment දෙනවා අපේ primary key එක විදියට​,mongo වල එහෙම ඕනි වෙන්නෙ නැ,එයාම Auto Id එකක් හදගන්නවා,මම ඒක කරලම පෙන්වන්නම්.ඒකට මම තව data set එකක් enter කරන්නම්.</p>
+<p><img src="/wp-content/uploads/2018/09/aq.png" alt="" width="644" height="266" class=" wp-image-1392 aligncenter" srcset="/wp-content/uploads/2018/09/aq.png 870w, /wp-content/uploads/2018/09/aq-300x124.png 300w, /wp-content/uploads/2018/09/aq-768x317.png 768w" sizes="(max-width: 644px) 100vw, 644px" /></p>
+<p>දැන් ඔයලට පේනවා ඇති ObjectId එක auto  හදාගන්නවා කියල.මේකෙදි මම තව දෙයක් කලා.ඒ තමයි table එකට තව feild එකක් add කරපු එක,මේකට තමයි scaling කියලා කියන්නේ,ඒ කියන්නේ අතරමැදදී අපේ table එකට අලුතින් feilds add කරගන්න පුලුවන් කියන එකයි.ඒකත් මේ mongo DB වල විශේශ දෙයක්.</p>
+<p><strong>db.user.find().pretty()</strong> command එක type කරල බලන්නකෝ,එතකොට insert කරපු data ටික වඩා පැහැදිලිව බලාගන්න පුලුවන්.</p>
+<p>insert කරන එක දැනට නවත්තලා table එකක් <strong>update</strong> කරන්නෙ කොහොමද කියලා දැන් බලමු.</p>
+<p>මේකට මම කලින් insert කරපු data set එකම යොදා ගන්නම්.<strong>db.user.update({match},{update data set}) </strong>මේක තමයි command එක,​</p>
+<p>මෙහෙම කිව්වට සමහරවිට ඔයාලට තේරුනේ නැතිව ඇති,මම ඒක පැහැදිලි කරන්නම්.මම පලවෙනිපාර insert කරපු data set එකේ town කියලා feild එකක් තිබ්බේ නැ,මම ඒක අලුතින් update කරලා පෙන්වන්නම්.</p>
+<p><strong>db.user.update({first:&#8221;kamal&#8221;},{first:&#8221;kamal&#8221;,last:&#8221;silva&#8221;,town:&#8221;gampaha&#8221;})  </strong>command එක​ type කරලා enter<strong> කරන්න​.ඊට පස්සෙ db.user.find().pretty()</strong> type කරන්න​.දැන් ඔයාලට පේනවා පලවෙනියට insert කරපු  data set එක update වෙලා කියලා.</p>
+<p><img src="/wp-content/uploads/2018/09/aqw.png" alt="" width="622" height="355" class="wp-image-1396 aligncenter" srcset="/wp-content/uploads/2018/09/aqw.png 843w, /wp-content/uploads/2018/09/aqw-300x171.png 300w, /wp-content/uploads/2018/09/aqw-768x438.png 768w" sizes="(max-width: 622px) 100vw, 622px" /></p>
+<p>දැන් අපි බලමු<strong> delete</strong> function එක වැඩ​ කරන්නේ කොහොමද කියලා.<strong>db.user.remove({first:&#8221;kamal&#8221;}) </strong>මෙන්න මේ command එකෙන් first name එක &#8220;kamal&#8221; වෙන සියලුම data remove වෙලා යනවා.</p>
+<p><img src="/wp-content/uploads/2018/09/we-1.png" alt="" width="672" height="232" class=" wp-image-1397 aligncenter" srcset="/wp-content/uploads/2018/09/we-1.png 825w, /wp-content/uploads/2018/09/we-1-300x104.png 300w, /wp-content/uploads/2018/09/we-1-768x265.png 768w" sizes="(max-width: 672px) 100vw, 672px" /></p>
+<p>&nbsp;</p>
+<p><em>ඉතින් අද අපි කතා කලේ මේ insert,delete,update function වලට අදාලවන මූලිකම කරුණු ටිකක්, මගේ ඊලග ලිපියෙන් මේ function කෙටියෙන් කරන්නේ කොහොමද​, ඒ වගේම එක සමාන data set එකක් තිබුනහම මේ function වැඩ කරන්නේ කොහොමද කියලා පැහැදිලි කරන්නම්.</em></p>
+<p>&nbsp;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/24/mean-part-2-mongo-db/">MEAN Part 2 (Mongo DB)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/24/mean-part-2-mongo-db/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

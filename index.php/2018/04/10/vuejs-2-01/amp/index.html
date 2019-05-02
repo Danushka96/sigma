@@ -1,0 +1,540 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="මොකද්ද මේ Vue කියන්නෙ? Vue කියන්නෙ front-end framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ front-end එක design කරන්න. දැනට තියෙන ප්‍රසිද්ධම front-end frameworks 3 න් එකක් තමයි  VueJs කියන්නෙ." />
+<meta name="twitter:title" content="VueJs 2 - 01 මොකද්ද මේ Vue කියන්නෙ? - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="VueJs 2 - 01 මොකද්ද මේ Vue කියන්නෙ? - The SIGMA" />
+<meta property="og:description" content="මොකද්ද මේ Vue කියන්නෙ? Vue කියන්නෙ front-end framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ front-end එක design කරන්න. දැනට තියෙන ප්‍රසිද්ධම front-end frameworks 3 න් එකක් තමයි  VueJs කියන්නෙ." />
+<meta property="og:url" content="/index.php/2018/04/10/vuejs-2-01/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="front-end" />
+<meta property="article:tag" content="JavaScript" />
+<meta property="article:tag" content="SPAs" />
+<meta property="article:tag" content="Vue" />
+<meta property="article:tag" content="VueJs" />
+<meta property="article:tag" content="web development" />
+<meta property="article:section" content="web development" />
+<meta property="article:published_time" content="2018-04-10T08:12:56+00:00" />
+<meta property="article:modified_time" content="2018-04-14T17:03:44+00:00" />
+<meta property="og:updated_time" content="2018-04-14T17:03:44+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:image:width" content="912" />
+<meta property="og:image:height" content="364" />
+	<title>VueJs 2 - 01 මොකද්ද මේ Vue කියන්නෙ? - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/04/10/vuejs-2-01/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/04\/10\/vuejs-2-01\/","headline":"VueJs 2 &#8211; 01 මොකද්ද මේ Vue කියන්නෙ?","datePublished":"2018-04-10T08:12:56+00:00","dateModified":"2018-04-14T17:03:44+00:00","author":{"@type":"Person","name":"Prasad Kavinda"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/04\/vuejs-logo.png","width":912,"height":364},"description":"මොකද්ද මේ Vue කියන්නෙ? Vue කියන්නෙ front-end framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ front-end එක design කරන්න. දැනට තියෙන ප්‍රසිද්ධම front-end frameworks 3 න් එකක් තමයි  VueJs කියන්නෙ."}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-fe3f5cc{font-weight:400}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">VueJs 2 &#8211; 01 මොකද්ද මේ Vue කියන්නෙ?</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/b8ebc2d2cfe6cc65d601cd0ec7fec67e?s=24&#038;d=mm&#038;r=g" alt="Prasad Kavinda" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Prasad Kavinda</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-04-10T13:42:56+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="299" src="/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/04/vuejs-logo.png 912w, /wp-content/uploads/2018/04/vuejs-logo-300x120.png 300w, /wp-content/uploads/2018/04/vuejs-logo-768x307.png 768w" layout="intrinsic"><noscript><img width="750" height="299" src="/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p><span class="amp-wp-fe3f5cc">හැමෝටම ආයුබෝවන්! Web designing ගැන උනන්දුවක් දක්වන ඔයාලට අද මම කියල දෙන්න යන්නේ VueJs එහෙමත් නැත්තම Vue ගැන. මේ ගැන එක post එකකින් ලියල ඉවර කරන්න බැරි වෙයි. ඒ නිසා මේ ගැන post කීපයක්ම ලියන්න මම බලාපොරොත්තු වෙනව. ඔයාල මේ ගැන ඉගෙනව ගන්නනම් html, css, JavaScript කියන දේවල් ගැන යම් තරමකට හෝ අවබෝධයක් තියෙන්න ඕනෙ.</span></p>
+<p><amp-img class="wp-image-686 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/vuejs-tutorial_2d2a853c-aa2f-44b0-80df-933b495f77f8-300x126.png" alt="VueJs" width="638" height="268" srcset="/wp-content/uploads/2018/04/vuejs-tutorial_2d2a853c-aa2f-44b0-80df-933b495f77f8-300x126.png 300w, /wp-content/uploads/2018/04/vuejs-tutorial_2d2a853c-aa2f-44b0-80df-933b495f77f8-768x322.png 768w, /wp-content/uploads/2018/04/vuejs-tutorial_2d2a853c-aa2f-44b0-80df-933b495f77f8-1024x430.png 1024w, /wp-content/uploads/2018/04/vuejs-tutorial_2d2a853c-aa2f-44b0-80df-933b495f77f8.png 1215w" layout="intrinsic"></amp-img></p>
+<p> </p>
+<h4><strong> මොකද්ද මේ Vue කියන්නෙ?</strong></h4>
+<p><span class="amp-wp-fe3f5cc"> Vue කියන්නෙ front-end JavaScript framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ front-end එක design කරන්න. ඒ කියන්නෙ මේක Run වෙන්නෙ අපේ web browser එකේ. ඒ නිසා database එකත් එක්ක ගනුදෙනු කරනව වගේ (back-end) වැඩ මේකෙන් කරන්න බැහැ. web site එකේ user ට පේන කොටස design කිරීම සහ ඒකත් එක්ක තියෙන user interactions handle කරන එක තමයි මේකෙන් කරන්න පුළුවන් වෙන්නෙ.</span></p>
+<p><span class="amp-wp-fe3f5cc">දැනට තියෙන ප්‍රසිද්ධම front-end frameworks 3 න් එකක් තමයි  VueJs කියන්නෙ.(ඉතිරි 2, reactJs සහ AngularJs). මේක මේ වෙද්දි ඉතා වේගයෙන් ජනප්‍රියත්වයට පත්වෙමින් පවතිනව.</span></p>
+<p><span class="amp-wp-fe3f5cc">React, angular වගේම SPAs (single page application) හදන්න මේක පාවිච්චි කරනව. ඔයා front-end frameworks වලට අලුත් කෙනෙක් නම් ඉසසෙල්ලම Vue ඉගෙන ගන්න එක පහසුවක් වෙයි. මොකද, react හෝ angular වලට වඩා Vue එක්ක වැඩ කරන එක ටිකක් ලේසියි.</span></p>
+<h4><b>⁣</b><strong>⁣මොකද්ද මේ SPA කියන්නෙ?</strong></h4>
+<p><amp-img class="wp-image-689 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/Single-Page-Application-300x152.jpg" alt="single page application" width="558" height="282" srcset="/wp-content/uploads/2018/04/Single-Page-Application-300x152.jpg 300w, /wp-content/uploads/2018/04/Single-Page-Application-768x390.jpg 768w, /wp-content/uploads/2018/04/Single-Page-Application.jpg 800w" layout="intrinsic"></amp-img></p>
+<p><span class="amp-wp-fe3f5cc">සාමාන්‍ය site එකක් හැදිල තියෙන්නෙ web page ගොඩකින්. අපි website එකක සැ⁣රි සරද්දි, page එකක ඉදල තවත් page එකකට යද්දි වෙන්නෙ, අලුතින්ම ඒ page එක අපේ browser එකට download වෙලා පෙන්නන එක. මෙතනදි සම්පූර්ණ page එකම අලුතින් download වෙන නිසා ටිකක් වෙලා ගතවෙනව.</span></p>
+<p><span class="amp-wp-fe3f5cc">හැබැයි SPA එකකදි වෙන්නෙ ටිකක් වෙනස් වැඩක්. මේවයිදි සැරටම JavaScript භාවිතා වෙනව. SPA එකක (</span>බොහෝ විට) තියෙන්නෙ එක page එකයි. site එකෙන් වැඩි හරියක් ලියවිල ති⁣යෙන්නෙ JavaScript file වල. ඒ site එකක් ඉස්සෙල්ලම load වෙද්දි ඒ තනි page එක සමග js file ටික load වෙනව. ඊළගට user request වලට අනුව ඒ ඒ අවස්ථාවට අදාල page එක JavaScript වලින් render කරල දෙනව. ආපහු අලුතින් මුලු page එකම download වෙන්න ඕන නෑ. මොකද අර පළවෙනියටම page එක ⁣load කරද්දි හැම page එකම render කරන්න ඕන templates, JavaScript file එකක් විදියට download වෙන නිසා. ඒක නිකං හරියට මුලු site එකම එක පාර download උනා වගේ වැඩක්. හැබැයි මේ frameworks වලින් ඒ වැඩේ ඉතා කාර්යක්ෂමව කරල දෙනව.</p>
+<p>ඉතින් මේකෙදි අර කලින් වගේ හැම තිස්සෙම අලුතෙන් page එකක් download (page reload) වෙන්නෙ නැති නිසා සෑහෙන්න speed එකකුත් තියෙනව.</p>
+<p><span class="amp-wp-fe3f5cc">Page reload කරන්නෙ නැති නිසා back-end එකත් එක්ක communicate කිරීම,  AJAX requests වලින් තමයි කරන්නෙ.(form submit කරන්න, database එකෙන් data අරගන්න ව‍ගේ වැඩ)</span></p>
+<p><amp-img class="wp-image-691 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/spa-overview-300x141.png" alt="single page application" width="540" height="254" srcset="/wp-content/uploads/2018/04/spa-overview-300x141.png 300w, /wp-content/uploads/2018/04/spa-overview-768x362.png 768w, /wp-content/uploads/2018/04/spa-overview.png 846w" layout="intrinsic"></amp-img></p>
+<p><span class="amp-wp-fe3f5cc">SPAs වලට තියෙන හොදම උදාහරණයක් තමයි gmail.com කියන්නෙ. ඔයාල gmail account එකට log වෙලා බලන්න, මොන page එකට ගියත් (inbox, settings, sent mail, etc…) ඒ සේරම එකම page එකේ render වෙන එක තමයි වෙන්නෙ.(page reload වීමක් ⁣වෙන්නෙ නෑ)</span></p>
+<p>SPA එකක් කියන්නෙ මොකද්ද කියල දන්නෙ නැති අයට තමයි ඒ පොඩි හැදින්වීම කරේ. දැන් තේරෙනව ඇති කියල හිතනව.</p>
+<h4><strong>basic html</strong></h4>
+<p>හරි දැන් එහෙනං අපි බලමු Vue වලින් කොහොමද වැඩ කරන්නෙ කියල.</p>
+<p>Vue ගැන ඉගෙන ගන්න හොදම තැනක් තමයි <a href="https://vuejs.org/">Vuejs.org</a> කියන්නෙ. මේක තමයි official Vue documentation එක. ඔයාල මේකෙ installation section එකට ගිහින් බැලුවොත් බලා ගන්න පුලුවන්, කොහොමද ඔයාලගෙ site එකට Vue install කර ගන්නෙ කියල. තවම මූලිකම අදියරේ නිසා අපි දැනට CDN එකක් පාවිච්චි කරමු.</p>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Vue demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="my-app"&gt;&lt;/div&gt;
+
+    &lt;script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"&gt;&lt;/script&gt;
+    &lt;script src="app.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>මේක තමයි අපේ basic html එක වෙන්නෙ. මේක index.html කියල file එකක save කරගන්න. ඔයාලට පේනව ඇති මම මේකෙ Vue file එක CDN එකකින් add කරල තියෙනව. ඒ වගේම තව app.js කියල file එකකුත් link කරල තියෙනව. ඒ file එකේ තමයි අපි අපේ app එකට අදාල code එක ලියන්නෙ. ඉතිං app.js කියල file එකකුත් මේ folder එකේම හදාගන්න ඕනෙ. මේ file දෙක තමයි මූලිකවම අපිට ඕන වෙන්නෙ.</p>
+<p>තව දෙයක් කියන්න ඕනෙ. හුඟ දෙනෙක් මේක දන්නවත් ඇති. ඒත් දන්නෙ නැති අයත් ඉන්න නිසා කියන්න ඕනෙ. මම කලිනුත් කිව්වනෙ මේ app එක run වෙන්නෙ browser එකේ කියල. ඒ නිසා අපි අපේ app එක debug කරන්න පාවිච්චි කරන්නෙත් browser එකම තමයි. ඒකට හොඳම browser එකක් තමයි google chrome. ඒත් ඔයාල කැමති browser එකක් පාවිච්චි කරන්න පුළුවන්.  keyboard එකේ F12 key එක එබුවාම console එක open වෙනව. අන්න ඒක අපිට සෑහෙන්න වටින tool එකක්. අපේ code එකේ error එකක් ආවොත් එහෙම ඔන්න ඔතනින් තමයි අපිට ඒක බලාගන්න පුළුවන් වෙන්නෙ.</p>
+<p> </p>
+<p><amp-img class="alignnone wp-image-763 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/console-1-300x118.png" alt="console" width="662" height="260" srcset="/wp-content/uploads/2018/04/console-1-300x118.png 300w, /wp-content/uploads/2018/04/console-1-768x301.png 768w, /wp-content/uploads/2018/04/console-1-1024x402.png 1024w, /wp-content/uploads/2018/04/console-1.png 1246w" layout="intrinsic"></amp-img></p>
+<p>මේක හරියට terminal/cmd එක වගේ එකක් ඒ නිසා ඕන නම් අපිට මේකෙ JavaScript code run කරල බලන්න පුළුවන්. try කරල බලන්න.</p>
+<p>අද මම මීට වඩා දෙයක් කියන්න යන්නෙ නැහැ. මොකද මේ post එකෙන් මම බලාපොරොත්තු උනේ Vue සහ SPA ගැන පොඩි හඳින්වීමක් කරන්න විතරයි. ඊළඟ post එකේ ඉඳන් බලමු කොහොමද Vue වලින් වැඩ කරගන්නෙ කියල. මේ දේවල් ගැන මොනව හරි ප්‍රශ්න එහෙම තියෙනවනම් පහලින් comment එකක් දාන්න.</p>
+<p>ඊළඟ post එකට <a href="/index.php/2018/04/11/vuejs-2-02/">මෙතනින්</a> යන්න.</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/vuejs/" rel="category tag">VueJs</a>, <a href="/index.php/category/web-development/" rel="category tag">web development</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/front-end/" rel="tag">front-end</a>, <a href="/index.php/tag/javascript/" rel="tag">JavaScript</a>, <a href="/index.php/tag/spas/" rel="tag">SPAs</a>, <a href="/index.php/tag/vue/" rel="tag">Vue</a>, <a href="/index.php/tag/vuejs/" rel="tag">VueJs</a>, <a href="/index.php/tag/web-development/" rel="tag">web development</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/04/10/vuejs-2-01/#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

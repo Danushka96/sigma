@@ -1,0 +1,602 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 5 minutes හැමෝටම ආයුබෝවන් යාලුවනේ,මම අද ඔයාලට මුලින්ම කියාදෙන්නේ පරිගණක ජාල​(computer networking)පාඩමක්.මේක මගේ පලවෙනි ලිපිය​.ඉතින් මම මෙම ලිපියෙන් ප්‍රධාන වශයෙන්, 1.පරිගණක ජාලයක් යනු කුමක්ද​? 2.පරිගණක ජාලයක මූලික කොටස් යන ප්‍රධාන කරුණු 2 පිලිබදව පැහැදිලි කිරීමට බලාපොරොත්තු වෙනවා. Read more&hellip;" />
+<meta name="twitter:title" content="COMPUTER NETWORKING - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/03/networking-block-1.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="COMPUTER NETWORKING - The SIGMA" />
+<meta property="og:description" content="Reading Time:  5 minutes හැමෝටම ආයුබෝවන් යාලුවනේ,මම අද ඔයාලට මුලින්ම කියාදෙන්නේ පරිගණක ජාල​(computer networking)පාඩමක්.මේක මගේ පලවෙනි ලිපිය​.ඉතින් මම මෙම ලිපියෙන් ප්‍රධාන වශයෙන්, 1.පරිගණක ජාලයක් යනු කුමක්ද​? 2.පරිගණක ජාලයක මූලික කොටස් යන ප්‍රධාන කරුණු 2 පිලිබදව පැහැදිලි කිරීමට බලාපොරොත්තු වෙනවා. Read more&hellip;" />
+<meta property="og:url" content="/index.php/2018/03/31/computer-networking/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="network" />
+<meta property="article:section" content="network" />
+<meta property="article:published_time" content="2018-03-31T04:32:45+00:00" />
+<meta property="article:modified_time" content="2018-03-31T07:07:31+00:00" />
+<meta property="og:updated_time" content="2018-03-31T07:07:31+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/03/networking-block-1.jpg" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/03/networking-block-1.jpg" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="800" />
+	<title>COMPUTER NETWORKING - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/03/31/computer-networking/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/03\/31\/computer-networking\/","headline":"COMPUTER NETWORKING","datePublished":"2018-03-31T04:32:45+00:00","dateModified":"2018-03-31T07:07:31+00:00","author":{"@type":"Person","name":"Sandun Prasanganath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/networking-block-1.jpg","width":1600,"height":800}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-102b7f8{text-align:left}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">COMPUTER NETWORKING</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/af740a956c98425cdba82a96835bf1ac?s=24&#038;d=mm&#038;r=g" alt="Sandun Prasanganath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Sandun Prasanganath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-03-31T04:32:45+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="375" src="/wp-content/uploads/2018/03/networking-block-1-1024x512.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/03/networking-block-1-1024x512.jpg 1024w, /wp-content/uploads/2018/03/networking-block-1-300x150.jpg 300w, /wp-content/uploads/2018/03/networking-block-1-768x384.jpg 768w, /wp-content/uploads/2018/03/networking-block-1.jpg 1600w" layout="intrinsic"><noscript><img width="750" height="375" src="/wp-content/uploads/2018/03/networking-block-1-1024x512.jpg" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p><amp-img class="aligncenter wp-image-394 size-large amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/networking-block-1024x512.jpg" alt="" width="750" height="375" srcset="/wp-content/uploads/2018/03/networking-block-1024x512.jpg 1024w, /wp-content/uploads/2018/03/networking-block-300x150.jpg 300w, /wp-content/uploads/2018/03/networking-block-768x384.jpg 768w, /wp-content/uploads/2018/03/networking-block.jpg 1600w" layout="intrinsic"></amp-img></p>
+<p>හැමෝටම ආයුබෝවන් යාලුවනේ,මම අද ඔයාලට මුලින්ම කියාදෙන්නේ පරිගණක ජාල​(computer networking)පාඩමක්.මේක මගේ පලවෙනි ලිපිය​.ඉතින් මම මෙම ලිපියෙන් ප්‍රධාන වශයෙන්,<br>
+1.පරිගණක ජාලයක් යනු කුමක්ද​?<br>
+2.පරිගණක ජාලයක මූලික කොටස්<br>
+යන ප්‍රධාන කරුණු 2 පිලිබදව පැහැදිලි කිරීමට බලාපොරොත්තු වෙනවා.</p>
+<h5><strong>මොකක්ද මේ පරිගණක ජාලයක් කියලා කියන්නේ,</strong></h5>
+<blockquote>
+<p class="amp-wp-102b7f8">පරිගණක දෙකක් හෝ ඊට වැඩි ප්‍රමාණයක් එකිනෙකට සම්බන්ද කර සාදා ගන්නා ලද පද්ධතියකට තමයි පරිගණක ජාලයක් කියලා කියන්නේ.</p>
+</blockquote>
+<p><amp-img class="alignnone size-medium wp-image-395 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/networking-300x225.jpg" alt="" width="300" height="225" srcset="/wp-content/uploads/2018/03/networking-300x225.jpg 300w, /wp-content/uploads/2018/03/networking.jpg 400w" layout="intrinsic"></amp-img></p>
+<h6>අපි (Network) එකක් නිර්මාණය කිරීමේ මූලික අරමුණ වන්නේ Computer දෙකක් හෝ ඊට වැඩි ගණනකට දත්ත​(data) හුවමාරු කරගැනීමයි.ඒකට අපිට ඕනිවෙන උපකරණ තමයි(Basic Component Of The Network) කියලා කියන්නේ.අපි දැන් බලමු ඒ උපකරණ මොනාද කියලා.</h6>
+<ol><li><strong>Transmission media </strong></li>
+<li><strong> Connectors </strong></li>
+<li><strong> NIC (Network Interface Card)                                                  </strong></li>
+<li><strong> Protocols </strong></li>
+<li><strong> Address </strong></li>
+<li><strong>Hub / Switch </strong></li>
+<li><strong> Modem </strong></li>
+<li><strong> Router</strong></li>
+</ol><p> </p>
+<p><amp-img class="alignnone size-full wp-image-396 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/download.jpg" alt="" width="272" height="186" layout="intrinsic"></amp-img></p>
+<p>මම මේ සදහන් කල සියලුම උපකරණ Network එකක් නිර්මණය කිරීමට අවශය නොවන අතර මූලික Component</p>
+<p>වලින් අපිට Network එකක්  හදාගන්න පුලුවන්.</p>
+<blockquote>
+<h5><strong><em>දැන් මේ Componentමොනාද කියලා මම පැහැදිලි කරන්නම්.</em></strong></h5>
+</blockquote>
+<p><strong>1.Transmission media</strong></p>
+<p><amp-img class="size-medium wp-image-398 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/images-300x119.jpg" alt="" width="300" height="119" srcset="/wp-content/uploads/2018/03/images-300x119.jpg 300w, /wp-content/uploads/2018/03/images.jpg 356w" layout="intrinsic"></amp-img></p>
+<p> </p>
+<p>Transmission media කියලා කියන්නේ Network එක තුල ඇති  පරිගණක එකින් එක සම්බන්ද කිරීමට යොදාගන්නා ප්‍රධානම දේ කියල කිව්වොත් මම නිවැරදියි.</p>
+<blockquote><p> </p>
+<p><strong>    Transmission media ප්‍රධාන වශයෙන් කොටස් 2 බෙදා දැක්විය හැක​.</strong></p></blockquote>
+<h5><strong>1.Guided media<em>(cables):</em></strong></h5>
+<p class="amp-wp-102b7f8"><strong>  ex:-UTP cable</strong></p>
+<p class="amp-wp-102b7f8">           <strong>Coaxial cable</strong></p>
+<p class="amp-wp-102b7f8"><strong>         Fiber optic</strong></p>
+<h5><strong>2.Unguided media<em>(wireless):</em></strong></h5>
+<p><strong>  ex:-Wif</strong><strong>i</strong></p>
+<p><strong>Wimax</strong></p>
+<p><strong>         Microwave</strong></p>
+<p><amp-img class="alignnone size-full wp-image-397 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/images-1.png" alt="" width="259" height="194" layout="intrinsic"></amp-img></p>
+<p> </p>
+<p><em><strong>මේවායින් උදාහරණ කීපයක් අරන් මම සරලව පැහැදිලි කරන්නම්.</strong></em></p>
+<h5><strong>10 base 2:</strong> මේක <em>Coaxial cable</em> එකක්.<strong><em>Thinnet</em></strong> කියලත් මේකට කියනවා.මේ <em>Cable</em> එකට 185 m දුරට dataගෙනියන්න පුලුවන්,ඒ වගේම data ගෙනයාමේ උපරිම වේගය වන්නේ 10Mbit/s.ඒවගේම මේ <em>Cable</em> හරහා කරන්න පුලුවන්  <strong>Half-duplex communication</strong> එකක් විතරයි.(<em>Duplex</em> ගැන මම ඉදිරියට පැහැදිලි කරන්නම්)</h5>
+<p> </p>
+<p><amp-img class="size-full wp-image-399 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/images-1.jpg" alt="" width="259" height="194" layout="intrinsic"></amp-img></p>
+<h5><strong>10 base 5:</strong> මේකත් <em>Coaxial cable</em> එකක්ම තමයි.මේකට <em><strong>thicknet</strong> </em>කියලත් කියනවා.මේ <em>cable</em> එකෙනුත් dataගෙනයාමේ වේගය වන්නේ 10Mbit/s  ම තමයි, හැබැයි මේCable 1 න් 500 m දුරකට​ <em>data transmit</em> කරන්න පුලුවන්.</h5>
+<p> </p>
+<p><amp-img class="size-full wp-image-400 alignright amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/images-3.jpg" alt="" width="220" height="150" layout="intrinsic"></amp-img></p>
+<p> </p>
+<blockquote><p> </p></blockquote>
+<h5><strong>10 base T:</strong>මේ <em>Cable</em>(10 base T,100 base TX,1000 base T) තමයි පොදුවේ <em>Networking</em> වලට යොදා ගන්නේ.<em>Twisted Pair</em> <em>Ethernet</em> කියලත් මේවට කියනව​.මේ <em>Cable</em> එකේ තියෙන වැදගත්ම දේ තමයි  <strong>Full-duplex</strong> <strong>Communication</strong> වලට වගේම <strong>Half-duplex Communication</strong> වලටත් යොදා ගන්න පුලුවන් එක​.මේ <em>Cable</em> එකෙනුත් <em>Data Transfer Rate</em> එක​ 10 M bit/s වගේම 100 දුරකට <em>data</em> ගෙනියන්නත් පුලුවන්.</h5>
+<h5><strong>100 Base TX:</strong>මේකට <em>Fast Ethernet</em> කියලත් කියනවා.10 Base T Cable එකයි මේ <em>Cable</em> එකයි අතර ප්‍රධාන වෙනස තමයි <em>Data Transmission Speed</em> එක​ 100 M bit/s වීම​.<amp-img class="alignnone size-full wp-image-420 alignright amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/images-4.jpg" alt="" width="225" height="225" srcset="/wp-content/uploads/2018/03/images-4.jpg 225w, /wp-content/uploads/2018/03/images-4-150x150.jpg 150w" layout="intrinsic"></amp-img></h5>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<h5><strong>1000 Base T:</strong>මේකට <em>Gigabit Ethernet</em> කියලා කියනවා.මේකෙ <em>Data Transmission Speed </em> එක 1000 M bit/s (<em>1 Gigabit Per Second</em>)වෙනවා.</h5>
+<p><strong>2.NIC (Network Interface Card)</strong></p>
+<p><em>Network</em> එකේ තියෙන <em>Network Cable</em> එක ගහන <em>port</em> එක තියෙන එකට තමයි <em>NIC</em> කියන්නේ.සමහර <em>Computer</em> වල මේක <em>On Board NIC</em> තියෙනවා වගේම සමහර <em>Computers</em> වල මේක <em>Separate</em> තියනවා.වැදගත්ම දේ තමයි හැම <em>NIC</em> එකටම එකිනෙකට වෙනස් <em>Unique Mac Address</em>  එකක් තිබීම​.<strong><em>Mac Address</em></strong> ගැන ඉදිරි ලිපියකින් මම ඔයාලට පැහැදිලි කරන්නම්.</p>
+<p><amp-img class="alignnone size-full wp-image-421 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/download-1.jpg" alt="" width="220" height="147" layout="intrinsic"></amp-img></p>
+<p><strong>3.Protocol</strong></p>
+<p><strong><em>Protocol</em></strong> එකක් කියලා කියන්නේ නීති මාලාවකට​,ඒකියන්නේ <em>Network</em>  එකක තියෙන <em>Computers 2</em> ක් අතර <em>data</em> හුවමාරු කරනවිට එක​ <em>Computer</em>  එකකින් යවන <em>(Sender) data</em> තව <em>receiver</em> එකකින් ලබාගන්න​ නම් මේ<em>Computer 2</em> ම <em>data</em> යවන්නයි ලබාගන්නයි එකම නීති මාලාවක් පිළිපදින්න ඕනිනේ,අන්න ඒකට තමයි <strong>Protocol</strong> එකක් කියලා කියන්නේ.<br>
+මම පොඩි උදාහරණයක් දෙන්නම්,හිතන්නකෝ දෙමල කතා කරන මිනිහෙකුයි <em>Sinhala</em>  කතා කරන මිනිහෙකුයි ඉන්නවා කියලා.ඉතින් මේ දෙන්නටම සන්නිවේදනය කරගන්න පොදු බාෂාවක් තියෙන්න ඕනිනේ.අන්න ඒ පොදු භාෂාවට තමයි අපි <em>Networking</em> වලදී <strong>Protocol</strong> එකක් කියල කියන්නේ.</p>
+<p><strong>4.Addresses</strong></p>
+<p><em>Network Addresses</em> අපි  පාවිච්චි කරන්නේ <em>Device</em> වෙන්කරලා <em>Unique</em> ව හදුනාගැනීමටයි.හරියට අනිත් අයට අපි ඉන්න තැන වෙන්කරලා හදුනාගන්න අපිට ලිපිනයක් තියෙනවා වගේ.</p>
+<p><strong>5.Router</strong></p>
+<blockquote><p>Router එකක් යනු අන්තර්ජාලය හරහා දත්ත ගෙන යාම සදහා භාවිතා කරන තවත් එක් උපකරණයකි.</p>
+<p> </p>
+<p><amp-img class="alignnone size-full wp-image-423 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/images-5.jpg" alt="" width="275" height="183" layout="intrinsic"></amp-img></p></blockquote>
+<p>පරිගනක ජාලයක ,එක් ස්ථානයක සිට අනෙක් ස්ථානයට දත්ත ගමන් කරනුයේ කුඩා කොටස් වලටය​.ඒවා <em>bits</em> ලෙස හදුන්වයි. මෙම උපකරණ වලට භාෂා නොතේරෙන නිසා <em>Data Packets</em> හදුනා ගන්නේ මේ <em>bits</em> උපයෝගී කරගෙනය​.<br><em>Router</em> හරහා දත්ත ගමන් කරන්නේ <em>Data Packets</em> ලෙසටයි.මෙම <em>Data Packet</em> එකක දත්ත යවන තැන හා දත්ත ලබන තැනට<em> IP Address</em> භාවිතා කරමින් මෙම <em>Data Packets</em> එහා මෙහා ගෙන යාම සිදු කරයි.<br>
+එක් පරිගණක ජාලයක සිට තවත් පරිගණක ජාලයකට<em> Data Packets</em> ගමන් කරන විට අදාල ලගම මාර්ගය​ <em>Best Path</em> තෝරා ගන්නේද මේ <strong><em>Router</em></strong> එක මගිනි.</p>
+<blockquote><p>මෙම<em><strong> Routers</strong></em> ප්‍රධාන කොටස් කීපයකට බෙදිය හැක​,ඒවා නම්:</p></blockquote>
+<p><strong> 1. ADSL Routers</strong></p>
+<p><strong>  2. 3G,4G Routers</strong></p>
+<p><strong>  3.Wireless / Wifi Routers</strong></p>
+<p><em> මේවා පිළිබදව කෙටියෙන් මම පැහැදිලි කරන්නම්,</em></p>
+<p> </p>
+<h5><strong>ADSL(A Digital Subscriber Line) Routers:</strong></h5>
+<p><em>ADSL (A Digital Subscriber Line) Routers</em> බොහෝ විට <em>Broadband</em>  යන නමින් හැදින්වූ අතර​, <em>Digital Subscriber</em> <em>Line</em> සේවාව සපයන දුරකතන මාර්ගයක් ඔස්සේ පරිගනකය අන්තර්ජාලයට සම්බන්ධ කිරීමට භාවිතා කරන උපකරණයකි.</p>
+<p> </p>
+<h5><strong>3G , 4G Routers</strong></h5>
+<p>ඇන්ටනා සහ ස්ථාවර<em> IP SIM</em> කාඩ්පත් යොදා ගනිමින් ඵලදයි පුළුල් පරාස අන්තර් ජාල සබදතා පවත්වා ගැනීමට අපි මේව භාවිතයත්ට ගනියි.</p>
+<p> </p>
+<p><amp-img class="alignnone size-full wp-image-424 alignright amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/download-2.jpg" alt="" width="225" height="225" srcset="/wp-content/uploads/2018/03/download-2.jpg 225w, /wp-content/uploads/2018/03/download-2-150x150.jpg 150w" layout="intrinsic"></amp-img></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<h5><strong>Wireless / Wifi Routers</strong></h5>
+<p><em>Wireless / Wifi Routers</em> යනු රැහැන් රහිත රවුටරය ලෙස කටයුතු කරන ඉලෙක්ට්‍රොනික උපකරණ වේ.</p>
+<p> </p>
+<p><strong>6.Modems</strong></p>
+<p><strong><em>Modem</em></strong> එකක් යනු අන්තර්ජාලය හරහා එක් ස්ථානයක ඇති පරිගනකයක් තවත් ස්ථානයක ඇති පරිගනකයක් හා සම්බන්ධ කිරීමෙන් එම පරිගනක දෙක හරහා අන්තර්ජාලය හරහා දත්ත සන්නිවේදනය කල හැකි වීමයි.</p>
+<p><amp-img class="alignnone size-full wp-image-425 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/download-3.jpg" alt="" width="275" height="183" layout="intrinsic"></amp-img></p>
+<p> </p>
+<p>මෙහිදී පරිගණක එකට සම්බන්ද කරනුයේ දුරකථන මාර්ග ආධාරයෙනි. එනම් මෙහෙදී දත්ත සම්ප්‍රේෂනය සිදු කරනුයේ <em>Electronic waves</em> හරහාය​.</p>
+<p> </p>
+<blockquote><p>ඉතින් යාලුවනේ මම හිතනවා මගේ පලවෙනි ලිපියෙන් Computer Networking පිළිබද මූලික කරුනු ටිකක් ඔයාලට ලැබෙන්න ඇති කියලා.මගේ ඉදිරි ලිපිවලින් Networking පිළිබදව තවදුරටත් පැහැදිලි කිරීමට බලාපොරොත්තු වෙනවා.</p></blockquote>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/network/" rel="category tag">network</a>, <a href="/index.php/category/tech/" rel="category tag">tech</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/network/" rel="tag">network</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/03/31/computer-networking/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

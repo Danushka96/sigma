@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: IoT	</title>
+	<atom:link href="/index.php/2019/01/30/1735/feed/" rel="self" type="application/rss+xml" />
+	<link>/index.php/2019/01/30/1735/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				By: Hasee Amarathunga				</title>
+				<link>/index.php/2019/01/30/1735/#comment-221</link>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2019 02:33:44 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1735#comment-221</guid>
+					<description><![CDATA[Thank you.දිගටම අපිත් එක්ක ඉන්න.]]></description>
+		<content:encoded><![CDATA[<p>Thank you.දිගටම අපිත් එක්ක ඉන්න.</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				By: Asitha Rajapaksha				</title>
+				<link>/index.php/2019/01/30/1735/#comment-220</link>
+		<dc:creator><![CDATA[Asitha Rajapaksha]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2019 02:31:29 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1735#comment-220</guid>
+					<description><![CDATA[එල. මාත් IoT ඉගෙන ගන්න ආසයි. තව හොද Article ටිකක් දාන්න. ස්තූතියි.]]></description>
+		<content:encoded><![CDATA[<p>එල. මාත් IoT ඉගෙන ගන්න ආසයි. තව හොද Article ටිකක් දාන්න. ස්තූතියි.</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				By: Hasee Amarathunga				</title>
+				<link>/index.php/2019/01/30/1735/#comment-219</link>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2019 02:26:33 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1735#comment-219</guid>
+					<description><![CDATA[Thank you very much!I will do some complete projects of IoT in this articles]]></description>
+		<content:encoded><![CDATA[<p>Thank you very much!I will do some complete projects of IoT in this articles</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

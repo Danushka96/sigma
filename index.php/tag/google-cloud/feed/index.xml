@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Google Cloud &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/google-cloud/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Google Offers 100,000$ For Startups</title>
+		<link>/index.php/2018/12/15/google-offer-100000-for-startups/</link>
+				<comments>/index.php/2018/12/15/google-offer-100000-for-startups/#respond</comments>
+				<pubDate>Sat, 15 Dec 2018 08:06:18 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Tech News]]></category>
+		<category><![CDATA[Google Cloud]]></category>
+
+		<guid isPermaLink="false">/?p=1468</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> අද ලිපියෙන් කියන්න යන්නේ Startups වලට වාසි ආරංචියක්. මේක දැන් ටිකක් පරණයි. හැබැයි ගොඩක් දෙනෙක් තාම දන්නේ නෑ මෙහෙම Offer එකක් තියෙනවා කියලා. මේ වගේ Program එකක් පටන් ගන්න මූලික හේතුව වෙලා තියෙන්නේ දැනට Startup එකක් ආරම්භ කරත් මූල්‍යමය අපහසුතා නිසා අවශ්‍ය කරන Compute Engines, Machine Learning Kits, Databases වගේ<a class="moretag" href="/index.php/2018/12/15/google-offer-100000-for-startups/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/12/15/google-offer-100000-for-startups/">Google Offers 100,000$ For Startups</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2018/12/BxVqrKmCMAApg2e.png" alt="" class="wp-image-1471" srcset="/wp-content/uploads/2018/12/BxVqrKmCMAApg2e.png 600w, /wp-content/uploads/2018/12/BxVqrKmCMAApg2e-300x124.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure></div>
+
+
+
+<p>අද ලිපියෙන් කියන්න යන්නේ Startups වලට වාසි ආරංචියක්. මේක දැන් ටිකක් පරණයි. හැබැයි ගොඩක් දෙනෙක් තාම දන්නේ නෑ මෙහෙම Offer එකක් තියෙනවා කියලා. මේ වගේ Program එකක් පටන් ගන්න මූලික හේතුව වෙලා තියෙන්නේ දැනට Startup එකක් ආරම්භ කරත් මූල්‍යමය අපහසුතා නිසා අවශ්‍ය කරන Compute Engines, Machine Learning Kits, Databases වගේ පහසුකම් ලබා ගන්න තියෙන අපහසුතා නිසා නතර වෙලා තියෙනවා නම් ඒ Projects වලට අවශ්‍ය පහසුකම් දෙන්න වගේම අලුත් Startup පටන් ගන්න Motivation එකක් දෙන්න. </p>
+
+
+
+<p>මේ Credits යොදා ගන්න පුළුවන් Main Services කිහිපයක්ම තියෙනවා. </p>
+
+
+
+<h3><u>App Engine / Compute Engine</u></h3>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2018/12/introduction-to-google-compute-engine-6-638.jpg" alt="" class="wp-image-1474" srcset="/wp-content/uploads/2018/12/introduction-to-google-compute-engine-6-638.jpg 638w, /wp-content/uploads/2018/12/introduction-to-google-compute-engine-6-638-300x169.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /><figcaption>Google Cloud Family</figcaption></figure></div>
+
+
+
+<figure class="wp-block-image"><img alt=""/></figure>
+
+
+
+<p>මේ Service එක භාවිතා කරලා ඔයගෙ දැනට තියෙන Project එකක් Google Cloud වල Host කර ගන්න පුළුවන්. App Engine එකක සහ Compute Engine එකක තියෙන වෙනස තමයි App Engine එකේදි ඔයාගෙ Project එක මොන වර්ගයේ ඒ කියන්නේ මොන Language එකෙන් හදලා තියෙන Project එකක්ද කියලා තෝරගත්තාම ඒකට අදාල Environment එක Google එකෙන්ම හදලා දෙනවා. අපිට Default ඒ Environment එක භාවිතා කරලා අපේ Project එක ලේසියෙන්ම Host කරගන්න පුළුවන්. හැබැයි Compute Engine එකකදි අපිට කැමති OS එකකින් Server Machine එකක් ගන්න පුළුවන්. ඊට පස්සේ අපිට අවශ්‍ය කරන Application, Dependencies Install කරගන්න ඕන. </p>
+
+
+
+<h3> <u>Google Cloud AI</u></h3>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2018/12/cloud-automl.jpg" alt="" class="wp-image-1476" srcset="/wp-content/uploads/2018/12/cloud-automl.jpg 980w, /wp-content/uploads/2018/12/cloud-automl-300x190.jpg 300w, /wp-content/uploads/2018/12/cloud-automl-768x486.jpg 768w" sizes="(max-width: 980px) 100vw, 980px" /><figcaption>Google Cloud AI</figcaption></figure></div>
+
+
+
+<p>Projects වලට අවශ්‍ය කරන AI Models Train කරගන්න මේ Cloud AI එක Use කරන්න පුළුවන්. Local Machine එකක Model එකක් train කරනවට වඩා වේගයෙන් Google Computers වලින් තමන්ගේ Model එකක් Train කරගන්න මේ මගින් අවස්ථාවක් හම්බෙනවා. ඒ වගේම අපිට දැනට Train කරලා තියෙන Models පාවිච්චි කරන්නත් පුළුවන්. Natural Language Recognition, Image Recognition, Video Analysis, Translation Services වලට මේ Service එක භාවිතා කරන්න පුළුවන්. </p>
+
+
+
+<h3> <u>Google Map Platform</u></h3>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2018/12/Realtime-Android-Geolocation-Tracking-with-the-Google-Maps-API-2-1024x445.png" alt="" class="wp-image-1477" srcset="/wp-content/uploads/2018/12/Realtime-Android-Geolocation-Tracking-with-the-Google-Maps-API-2-1024x445.png 1024w, /wp-content/uploads/2018/12/Realtime-Android-Geolocation-Tracking-with-the-Google-Maps-API-2-300x130.png 300w, /wp-content/uploads/2018/12/Realtime-Android-Geolocation-Tracking-with-the-Google-Maps-API-2-768x334.png 768w, /wp-content/uploads/2018/12/Realtime-Android-Geolocation-Tracking-with-the-Google-Maps-API-2.png 1380w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+
+<p>Google Maps Platform එක භාවිතා කරලා අපිට නොදන්න තැනට විස්තර, යම් ස්ථානයකට යන Direction එක. ස්ථාන දෙකක් අතර දුර වගේ ගොඩක් දේවල් අපේ Application එකකට Integrate කර ගන්න පුළුවන්. </p>
+
+
+
+<h3> <u>G Suit</u></h3>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2018/12/gsuite-business-platform-767x511@2x-1024x682-1024x682.png" alt="" class="wp-image-1480" srcset="/wp-content/uploads/2018/12/gsuite-business-platform-767x511@2x-1024x682.png 1024w, /wp-content/uploads/2018/12/gsuite-business-platform-767x511@2x-1024x682-300x200.png 300w, /wp-content/uploads/2018/12/gsuite-business-platform-767x511@2x-1024x682-768x512.png 768w, /wp-content/uploads/2018/12/gsuite-business-platform-767x511@2x-1024x682-360x240.png 360w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>G suit</figcaption></figure></div>
+
+
+
+<p>Google එකෙන් දෙන මේ Services දැනටමත් ඔයා යම් Limited Conditions යටතේ ඔයාලා භාවිතා කරනවා ඇති. උදාහරණයක් විදියට Google Drive එකේ Free දෙන 15GB ප්‍රමාණය භාවිතා කරනවා ඇති. Google එකේ Credits භාවිතා කරලා අපිට පුළුවන් මේ Limits තව දුරටත් වැඩි කරගන්න. </p>
+
+
+
+<h3><u>Apply කරන්නේ කොහොමද?</u></h3>
+
+
+
+<p>Apply කරන්න පුළුවන් Packages 3ක් තියෙනවා. තමන්ගේ Startup එකේ Stage එක අනුව ඒකට Apply කරන්න පුළුවන්.</p>
+
+
+
+<ol><li>Start Package &#8211; 3,000$ (1 year)</li><li>Spark Package &#8211; 20,000$ (1 year)</li><li>Surge Package &#8211; 100,000$ (1 year)</li></ol>
+
+
+
+<p>මේ එක එක Package එකෙන් දෙන්නේ එකිනෙකට වෙනස් Features. Surge Package එකට අනිත් දෙකේම තියෙන Features හම්බෙනවා. වැඩි විස්තර මෙතනින් බලන්න.  <a href="https://cloud.google.com/developers/startups/">https://cloud.google.com/developers/startups/</a></p>
+
+
+
+<p>Apply කරන්න මුලින්ම තමන්ගේ Email Account එකෙන් Google Cloud එකට Log වෙලා Credit Card එක link කරගන්න ඕන. ඊට පස්සේ Billing Account එකක් හැදෙනවා. මේ Billing Account එකට තමයි Credits ටික හම්බවෙන්නේ. ( මේ Credits භාවිතා කරන්න පුළුවන් Google Cloud එක ඇතුලේ තියෙන Services වලට විතරයි. ඒ කියන්නේ ඔයා Credit Card එක Link කරාට Credits ඔයාගේ Card එකට Deposit වීමක් වෙන්නේ නෑ. )</p>
+
+
+
+<p>මේ Link එකෙන් ගිහින් තමන්ගේ Details දාලා Apply කරලා බලන්න. සාමාන්‍යයෙන් පැය 48ක් ඇතුලත Application එක review කරලා Approve කරලා email එකක් එවනවා.</p>
+
+
+
+<h4><a href="https://cloud.google.com/developers/startups/apply/" target="_blank" rel="noreferrer noopener" aria-label="https://cloud.google.com/developers/startups/apply/ (opens in a new tab)">https://cloud.google.com/developers/startups/apply/</a></h4>
+
+
+
+<p>Google Cloud Platform එක ගැන හෝ Apply කරන එක ගැන මොකක් හරි ප්‍රශ්ණයක් තිබුණොත් Comment එකක් දාන්න. </p>
+<p>The post <a rel="nofollow" href="/index.php/2018/12/15/google-offer-100000-for-startups/">Google Offers 100,000$ For Startups</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/12/15/google-offer-100000-for-startups/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

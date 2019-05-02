@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>thusitha bandara &#8211; The SIGMA</title>
+	<atom:link href="/index.php/author/thusitha/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>express-03 basic Routing කරමු</title>
+		<link>/index.php/2019/02/08/express-03-basic-routing/</link>
+				<comments>/index.php/2019/02/08/express-03-basic-routing/#respond</comments>
+				<pubDate>Thu, 07 Feb 2019 19:02:28 +0000</pubDate>
+		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[web development]]></category>
+
+		<guid isPermaLink="false">/?p=1789</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ Routing කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ link එකට ගිහින් කලින් post එක බලන්න. අද මම get request handle කරන විදිය තමා කියල දෙන්න බලාපොරොත්තු වෙන්නේ. මම මේ routes ටික ලියන්නේ app.js එකේ මෙතන 1st line එකෙන් කරන්නේ express කියන framework එක<a class="moretag" href="/index.php/2019/02/08/express-03-basic-routing/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ <strong>Routing</strong> කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ <a href="/index.php/2019/01/23/express-02/">link</a> එකට ගිහින්  කලින් post එක බලන්න.</p>
+
+
+
+<p>අද මම <strong>get request handle</strong> කරන විදිය තමා කියල දෙන්න බලාපොරොත්තු වෙන්නේ. මම මේ routes ටික ලියන්නේ <strong>app.js</strong> එකේ </p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-2.jpg" alt="" class="wp-image-1792" width="321" height="67" /></figure>
+
+
+
+<p> මෙතන 1st line එකෙන් කරන්නේ express කියන framework එක load කරගන්නවා  <strong>var express</strong> කියල තියෙන variable එකට. </p>
+
+
+
+<p>එතකොට 2nd line එකෙන් කරන්නේ app කියල variable එකක් හදාගන්නවා express එකේ තියෙන method call කරන්න </p>
+
+
+
+<p>එතකොට දැන් අපි බලමු server එක හදාගන්න හැටි</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-3.jpg" alt="" class="wp-image-1793" width="382" height="78" /></figure>
+
+
+
+<p>මෙතන මම කරලා තියෙන්නේ අපේ express project එක 8080 කියන port එකෙන් open කරන එක.එතකොට මේ නමක් නැති function වලට කියන්නේ anonymous function කියල.</p>
+
+
+
+<p><strong>කොහොමද දැන් මේ express project එක run කරන්නේ?</strong></p>
+
+
+
+<p>ඔයාගේ terminal එකේ node app.js කියලා type කරලා enter කරන්න.</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-4.jpg" alt="" class="wp-image-1794" width="399" height="53" srcset="/wp-content/uploads/2019/02/Capture-4.jpg 331w, /wp-content/uploads/2019/02/Capture-4-300x40.jpg 300w" sizes="(max-width: 399px) 100vw, 399px" /></figure>
+
+
+
+<p> .ඔන්න ඔය විදියට display උනොත් අවුලක් නෑ </p>
+
+
+
+<h4><strong>දැන් බලමු get request handle කරන විදිය</strong> </h4>
+
+
+
+<pre class="wp-block-preformatted">app.get("/home",function(req,res){<br>    res.send("This is home page");<br>}); </pre>
+
+
+
+<p>මෙතන වෙලා තියෙන්නේ get request එකක් ආවොත්   /home කියල එතකොට server එක response කරනවා.This is home page කියල.මට  අමතක උනා කියන්න req වලින් කියන්නේ request කියන එක res වලින් කියන්නේ response කියන එක. send  වලින් වෙන්නේ html page එකක අපේ  message එක render  කරන එක.</p>
+
+
+
+<p><strong>http://localhost:8080/home</strong> කියල ඔයාගේ web browser එකේ address එක විදියට දුන්නොත් <strong>This is home page</strong> කියල display වේවි.<strong>මතක තියාගන්න</strong> ඔය <strong>app.js </strong> වල <strong>මොනවහරි වෙනස් කරොත්,</strong> save කරලා <strong>ආයේ server එක start</strong> කරන්න වෙනවා. </p>
+
+
+
+<p> <strong>ඔයාට මේ send වලදී html tag use  කරන්නත් පුළුවන්</strong>.හැබැයි මේක අපි use කරන් නෑ මොකද ඒක සංකීර්ණ වැඩි සරලවම කිවොත් කැතයි.එත් use කරන්නේ කොහොමද කියල බලන්න මම එක example එකක් දාන්නම්.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br>app.get("/login",function(req,res){<br>    res.send("&lt;h1&gt;This is login page&lt;/h1&gt;");<br>}); </pre>
+
+
+
+<p><strong>මෙන්න මේ get request එක වැදගත්  </strong></p>
+
+
+
+<pre class="wp-block-preformatted">  <br>app.get("/home/:id/sigma",function(req,res){<br>    res.send("sigma page");<br>}); <br></pre>
+
+
+
+<p>මෙතනදී වෙන්නේ pattern එකක් search කරනවා වගේ seen එකක්. <strong>:id</strong> කියන එකට url request එකේදී ඕනි දෙයක් එන්න පුළුවන්.නමුත්  /home / සහ /sigma දෙපැත්තෙන් තිබුනොත් විතරයි sigma page කියල render කරන්නේ  http://localhost:8080/home/dfbsdjfw/sigma මෙන්න මේ වගේ url request එකක්.</p>
+
+
+
+<h4><strong>දැන් අපි හිතමු අපේ website එකේ නැති page එකක් request කරනවා කියලා </strong></h4>
+
+
+
+<pre class="wp-block-preformatted">  <br>app.get("*",function(req,res){<br>    res.send("Page Not found");<br>}); </pre>
+
+
+
+<p><strong>&#8220;*&#8221;</strong> කියන්නේ ඕනිම url get request එකකට render කරනවා Page Not found  කියල.</p>
+
+
+
+<p>මේ get request එක අපේ app.js එකේ මුලින් කියපු ඒවායින් පස්සේ තමයි මේක use කරන්නේ නැත්නම් හැම url requset එකටම  Page Not found කියල තමා එන්නේ.http://localhost:8080/jhwwbdjwdbwkdjnwk වගේ request එකකට අපි code කරලා නැති නිසා අපිට  Page Not found කියන page එක තමා ලැබෙන්නේ</p>
+
+
+
+<p>පහල තියෙනවා මුළු code එකම අද කතා කරපු.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br>var express=require("express");<br>var app=express();<br><br>app.get("/home",function(req,res){<br>    res.send("This is home page");<br>});<br>app.get("/login",function(req,res){<br>    res.send("&lt;h1&gt;This is login page&lt;/h1&gt;");<br>});<br>app.get("/home/:id/sigma",function(req,res){<br>    res.send("sigma page");<br>});<br><br>app.get("*",function(req,res){<br>    res.send("Page Not found");<br>});<br><br>app.listen(8080,function(){<br>    console.log("server has been started");<br>}); </pre>
+
+
+
+<p> අදට මේ ටික ඇති වගේ post එකක් ටිකක් වෙනදට වඩා දිගයි.ඊලග post එකෙන්  හමුවෙමු.</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/08/express-03-basic-routing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>express-02 කොහොමද express install කරගන්නේ?</title>
+		<link>/index.php/2019/01/23/express-02/</link>
+				<comments>/index.php/2019/01/23/express-02/#respond</comments>
+				<pubDate>Wed, 23 Jan 2019 07:18:09 +0000</pubDate>
+		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[express]]></category>
+
+		<guid isPermaLink="false">/?p=1680</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> 1.ඔයාට මුලින්ම Node.js install කරගන්න වෙනවා. ඔයා තාම node install කරලා නැත්නම්.මෙන්න මේ link එකට ගිහින් node download කරගෙන install කරගන්න වෙනවා. මේක install කරගත්තම ඔයාට node සහ npm (node package manager) එකත් auto install වෙනවා. ඔයාට ඕනිනම් පුලුවන් මෙන්න මේ විදියට Node &#38; NPM install වෙලාද කියල බලන්න.command prompt(cmd<a class="moretag" href="/index.php/2019/01/23/express-02/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/23/express-02/">express-02 කොහොමද express install කරගන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<h4><strong>1.ඔයාට මුලින්ම Node.js  install කරගන්න වෙනවා.</strong></h4>
+
+
+
+<p>ඔයා  තාම  node install කරලා නැත්නම්.මෙන්න මේ <a href="https://nodejs.org/en/download/">link</a> එකට ගිහින් node download  කරගෙන install  කරගන්න වෙනවා.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Capture-1024x585.jpg" alt="" class="wp-image-1681" srcset="/wp-content/uploads/2019/01/Capture-1024x585.jpg 1024w, /wp-content/uploads/2019/01/Capture-300x171.jpg 300w, /wp-content/uploads/2019/01/Capture-768x439.jpg 768w, /wp-content/uploads/2019/01/Capture.jpg 1055w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>මේක install කරගත්තම ඔයාට node සහ  npm (node package manager) එකත් auto install වෙනවා. ඔයාට ඕනිනම් පුලුවන් මෙන්න මේ විදියට Node &amp; NPM install වෙලාද කියල බලන්න.command prompt(cmd ) එකට ගිහින් පහත දැක්වෙන ආකාරයට type කරලා බලන්න.</p>
+
+
+
+<p><strong>Node install වෙලාද ? node  -v </strong></p>
+
+
+
+<p><strong>npm install වෙලාද? npm -v </strong></p>
+
+
+
+<p><strong>example :- </strong>මෙන්න මේ විදියට ඔයා install කරපු version එක අනුව ලැබෙයි<strong> </strong></p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/01/Capture-1.jpg" alt="" class="wp-image-1682" width="513" height="122" srcset="/wp-content/uploads/2019/01/Capture-1.jpg 374w, /wp-content/uploads/2019/01/Capture-1-300x71.jpg 300w" sizes="(max-width: 513px) 100vw, 513px" /></figure>
+
+
+
+<h4><strong>2.ඔයාට දෙවනුව කරන්න තියෙන්නේ package.json එක&nbsp;හදාගන්න </strong></h4>
+
+
+
+<p>මට මුලින් කියන්න අමතක උනා මම code edit කරන්න use කරන්නේ vscode text editor එක.ඔයා කැමති නම් install කරගන්න මේ <a href="https://code.visualstudio.com/download">link</a> එකෙන් </p>
+
+
+
+<ul><li>දැන් ඔයා folder එකක් හදාගන්න කැමති නමකින්, මම නම් හදාගෙන තියෙන්නේ v1 කියල.</li><li>ඔයාට පුලුවන් මේ folder එක ඔයාගේ vscode එකෙන් open කරගන්න. ඔයාට terminal එක use කරන්න වෙනවා. terminal එක code editor එකේ පේන්න නැතිනම් ඔයාට තියෙන්නේ view&#8211;&gt;terminal දෙන්න</li><li>ඊට පස්සේ ඔයා <strong>app.js </strong>කියල file එකක් හදාගන්න.</li><li>දැන් ඔයාට තියෙන්නේ package.json කියන json file එක හදාගන්න.මේකට ඔයාට කරන්න තියෙන්නේ terminal එකේ <strong>npm init </strong>කියල type කරල enter කරන්න විතරයි. මෙතනදී ඔයාට  පොඩි form එකක් වගේ දෙයක් set වෙයි .ඔයාට තියෙන්නේ මම පහත කරලා තියෙන විදියට කරන්න.</li></ul>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="/wp-content/uploads/2019/01/Capture-2.jpg" alt="" class="wp-image-1683" width="501" height="578" srcset="/wp-content/uploads/2019/01/Capture-2.jpg 471w, /wp-content/uploads/2019/01/Capture-2-260x300.jpg 260w" sizes="(max-width: 501px) 100vw, 501px" /></figure></div>
+
+
+
+<p>ඔයා enter කරගෙන යනකොට entry point(index .js ) විදියට තිබ්බොත් කරන්න තියෙන්නේ app .js කියල type කරල enter කරන්න. මතක තියාගන්න ගොඩක් වෙලාවට එහෙම වෙන්නේ ඔයා app.js එක, npm init කරන්න කලින් create කරලා තිබ්බේ නැති උනාම.</p>
+
+
+
+<h4><strong>3.දැන් කරන්න තියෙන්නේ express install කරගන්න</strong></h4>
+
+
+
+<p>එකට ඔයාට තියෙන්නේ <strong>npm</strong><strong> install express &#8211;save</strong> command එක දෙන්න.මේකට පොඩි වෙලාවක් යයි.</p>
+
+
+
+<p><strong>&#8211;save</strong> එක දෙන්න මතක් කරලා මොකද නැත්නම් ඔයාට <strong>dependencies manual set</strong> කරන්න වෙනවා.</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/01/Capture-3.jpg" alt="" class="wp-image-1685" width="906" height="116" srcset="/wp-content/uploads/2019/01/Capture-3.jpg 976w, /wp-content/uploads/2019/01/Capture-3-300x38.jpg 300w, /wp-content/uploads/2019/01/Capture-3-768x98.jpg 768w" sizes="(max-width: 906px) 100vw, 906px" /></figure>
+
+
+
+<p>මට කියන්න බැරි උණා <strong>ඇයි package.json එක ඕනි කියල.</strong></p>
+
+
+
+<p>package.json එකේ තමා අපේ project එකට අවශ්‍ය meta data තියාගන්නේ. dependencies,author ,project name ,entry point වගේ meta data .ඔයාට package.json file එක open කරොත් බලාගන්න පුළුවන් වෙයි.</p>
+
+
+
+<p>අදට express install කරන කොටස ඉවරයි. ඊළඟ ලිපියෙන් බලමු කොහොමද express Framework එකෙන් server එකක් start කරලා url-request handle කරන විදිය.</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/23/express-02/">express-02 කොහොමද express install කරගන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/23/express-02/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>express-01 මොකක්ද මේ express කියන්නේ?</title>
+		<link>/index.php/2019/01/22/express-01/</link>
+				<comments>/index.php/2019/01/22/express-01/#respond</comments>
+				<pubDate>Tue, 22 Jan 2019 12:48:09 +0000</pubDate>
+		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[express]]></category>
+		<category><![CDATA[intro]]></category>
+
+		<guid isPermaLink="false">/?p=1606</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> express කියන්නේ මොකක්ද ? express කියන්නේ back-end node.js framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ back-end එක හදන්න. ඒ කියන්නෙ මේක Run වෙන්නෙ අපේ web server එකේ. web site එකක user ට පෙනෙන් නැති logic, database එකත් එක්ක ගනුදෙනු කරනව වගේ (back-end) වැඩ තමා express කරලා දෙන්නේ. මේ<a class="moretag" href="/index.php/2019/01/22/express-01/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p><strong>express  කියන්නේ  මොකක්ද ?</strong></p>
+
+
+
+<p>express  කියන්නේ back-end node.js framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ back-end එක හදන්න. ඒ කියන්නෙ මේක Run වෙන්නෙ අපේ web server  එකේ.  <br>web site එකක user ට පෙනෙන් නැති logic, database එකත් එක්ක ගනුදෙනු කරනව වගේ (back-end) වැඩ තමා express කරලා දෙන්නේ.</p>
+
+
+
+<p>මේ ලිපි මාලාවෙන් අපි බලාපොරොත්තු වෙනවා express පාවිච්චි කරලා web application එකක්   හදන්න .මේකට ඔයාලට HTML, CSS, JS, Bootstrap  ගැනත් පොඩි දැනුමක් තියෙන්න ඕන. ඒ දේවල් වල ගැන ඔයා දන්නේ නැත්නම් ,මම මේ කියන්න හදන්නේ ඔයාලට උඩදි කියපු Skills ටික හදා ගන්න පුළුවන් ක්‍රමයක්. ඒ තමයි W3School එක. මම එක එක Topic එකට අදාල Link එක මෙතනට දාන්නම්. අවශ්‍ය නම් ඒ ටික බලලා දැනුමක් එකතු කර ගන්න.&nbsp; </p>
+
+
+
+<p><strong>HTML</strong>&nbsp;:&nbsp;<a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a></p>
+
+
+
+<p><strong>CSS</strong>&nbsp;:&nbsp;<a href="https://www.w3schools.com/css">https://www.w3schools.com/css</a></p>
+
+
+
+<p><strong>JS :&nbsp;</strong><a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a></p>
+
+
+
+<p><strong>Bootstrap</strong> : <a href="https://www.w3schools.com/bootstrap/default.asp">https://www.w3schools.com/bootstrap/default.asp</a></p>
+
+
+
+<p>ඔයාට framework කියන එක ගැන අවබෝදයක් නැත්නම් <a href="/index.php/2018/04/10/web-application-with-laravel/">මෙන්න</a> මේ link එකට ගිහින් බලන්න<strong> Framework එකක් කියන්නේ මොකද්ද?</strong>. කියල <strong>topic</strong> එකක් තියෙනවා.</p>
+
+
+
+<p><strong>දැන්  අපි බලමු Node.js  කියන්නේ මොකක්ද කියල?</strong></p>
+
+
+
+<p>Node.js  කියන්නේ server-side platform එකක්,Node හදපු පුද්ගලයාගේ නම  <br>Ryan Dahl.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg" alt="" class="wp-image-1661" srcset="/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg 220w, /wp-content/uploads/2019/01/220px-Ryan_Dahl-200x300.jpg 200w" sizes="(max-width: 220px) 100vw, 220px" /><figcaption> <br>Ryan Dahl. </figcaption></figure></div>
+
+
+
+<p><strong>අපි බලමු කොහොමද file request එකක් php වලින් handle කරන්නේ කියල ?</strong></p>
+
+
+
+<p>1.මුලින්ම task එක යොමු කරනවා computer file system එකට.</p>
+
+
+
+<p>2.file  system එක අර request කරපු  file එක open කරලා read කරනකම් wait වෙවී ඉන්නවා.</p>
+
+
+
+<p>3.return කරනවා content එක client ට .</p>
+
+
+
+<p>4.ready  වෙනවා ඊලග request handle කරන්න.</p>
+
+
+
+<p><strong>දැන් අපි බලමු කොහොමද file request එකක් Node වලින්  handle කරන්නේ කියල?</strong></p>
+
+
+
+<p> 1.මුලින්ම task එක යොමු කරනවා computer file system එකට. </p>
+
+
+
+<p> 2.ready  වෙනවා ඊලග request handle කරන්න. </p>
+
+
+
+<p>3.file system එක, අර request කරපු file එක open කරලා read කරාම,server එක return කරනවා content එක client ට. </p>
+
+
+
+<p><strong>ඇයි මම express තෝරාගත්තේ,වෙන</strong> <strong>Node.js</strong> <strong> framework නැද්ද ?</strong></p>
+
+
+
+<p>නෑ තව framework තියෙනවා.නමින් කිවොත් koa2,&nbsp;Sails, NestJS,&nbsp;LoopBack වගේ තව ගොඩක් ඒවා තියෙනවා.හැබැයි මේ වනවිට ගොඩක්ම express තමා use වෙන්නේ.ඔයාලා google search කරොත් බලාන්න පුලුවන්.</p>
+
+
+
+<p> <br>අදට හැඳින්වීමේ කොටස ඉවරයි. ඊළඟ ලිපියෙන් බලමු කොහොමද express  Framework එක ඔයාගෙ Machine එකේ Install කරගන්නේ කියලා. </p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/22/express-01/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

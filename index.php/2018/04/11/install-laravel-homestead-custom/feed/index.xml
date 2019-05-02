@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Install Laravel (Custom)	</title>
+	<atom:link href="/index.php/2018/04/11/install-laravel-homestead-custom/feed/" rel="self" type="application/rss+xml" />
+	<link>/index.php/2018/04/11/install-laravel-homestead-custom/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				By: Laravel වලින් CRUD Operations කරමු. - The SIGMA				</title>
+				<link>/index.php/2018/04/11/install-laravel-homestead-custom/#comment-105</link>
+		<dc:creator><![CDATA[Laravel වලින් CRUD Operations කරමු. - The SIGMA]]></dc:creator>
+		<pubDate>Mon, 03 Sep 2018 18:33:33 +0000</pubDate>
+		<guid isPermaLink="false">/?p=826#comment-105</guid>
+					<description><![CDATA[[&#8230;] Installing Laravel [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] Installing Laravel [&#8230;]</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				By: Laravel Folder Structure - The SIGMA				</title>
+				<link>/index.php/2018/04/11/install-laravel-homestead-custom/#comment-52</link>
+		<dc:creator><![CDATA[Laravel Folder Structure - The SIGMA]]></dc:creator>
+		<pubDate>Thu, 19 Apr 2018 12:18:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=826#comment-52</guid>
+					<description><![CDATA[[&#8230;] &#8211; Custom / [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] &#8211; Custom / [&#8230;]</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

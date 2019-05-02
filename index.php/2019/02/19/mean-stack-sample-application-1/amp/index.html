@@ -1,0 +1,714 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="මේ ලිපි කිහිපයෙන් කරන්න බලාපොරොත්තු වෙන්නේ මේ වෙන වෙනම කතා කරපු Applications ටික එකතු කරලා තනි Application එකක් හදා ගන්න." />
+<meta name="twitter:title" content="MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01) - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2019/02/mean-stacks-feature.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01) - The SIGMA" />
+<meta property="og:description" content="මේ ලිපි කිහිපයෙන් කරන්න බලාපොරොත්තු වෙන්නේ මේ වෙන වෙනම කතා කරපු Applications ටික එකතු කරලා තනි Application එකක් හදා ගන්න." />
+<meta property="og:url" content="/index.php/2019/02/19/mean-stack-sample-application-1/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="angular" />
+<meta property="article:tag" content="front-end" />
+<meta property="article:tag" content="issueTracker" />
+<meta property="article:tag" content="MEAN" />
+<meta property="article:section" content="Uncategorized" />
+<meta property="article:published_time" content="2019-02-19T13:19:30+00:00" />
+<meta property="article:modified_time" content="2019-02-19T13:25:40+00:00" />
+<meta property="og:updated_time" content="2019-02-19T13:25:40+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2019/02/mean-stacks-feature.jpg" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2019/02/mean-stacks-feature.jpg" />
+<meta property="og:image:width" content="785" />
+<meta property="og:image:height" content="275" />
+	<title>MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01) - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2019/02/19/mean-stack-sample-application-1/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2019\/02\/19\/mean-stack-sample-application-1\/","headline":"MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01)","datePublished":"2019-02-19T13:19:30+00:00","dateModified":"2019-02-19T13:25:40+00:00","author":{"@type":"Person","name":"Danushka Herath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2019\/02\/mean-stacks-feature.jpg","width":785,"height":275},"description":"මේ ලිපි කිහිපයෙන් කරන්න බලාපොරොත්තු වෙන්නේ මේ වෙන වෙනම කතා කරපු Applications ටික එකතු කරලා තනි Application එකක් හදා ගන්න."}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-13076d9{text-align:center}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 01)</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/81f32af4149adb5de35857259b875c31?s=24&#038;d=mm&#038;r=g" alt="Danushka Herath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Danushka Herath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2019-02-19T18:49:30+00:00">
+		2 months ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="263" src="/wp-content/uploads/2019/02/mean-stacks-feature.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2019/02/mean-stacks-feature.jpg 785w, /wp-content/uploads/2019/02/mean-stacks-feature-300x105.jpg 300w, /wp-content/uploads/2019/02/mean-stacks-feature-768x269.jpg 768w" layout="intrinsic"><noscript><img width="750" height="263" src="/wp-content/uploads/2019/02/mean-stacks-feature.jpg" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>අපි කලින් ලිපි කිහිපයකින්ම කතා කලා මේ MEAN Stack ගැන වෙන වෙනම Examples විදියට. මේ ලිපි කිහිපයෙන් කරන්න බලාපොරොත්තු වෙන්නේ මේ වෙන වෙනම කතා කරපු Applications ටික එකතු කරලා තනි Application එකක් හදා ගන්න. මේ Application එක Issue Tacking Application එකක්. ඒ කියන්නේ Users ලට Log වෙලා Issues post කරන්න පුළුවන් Application එකක්. </p>
+
+
+
+<p>මේ Post එකෙන් කලින් post වලදි වගේ මේ MEAN Stack එක Install කරන විදිය මුල ඉදන් කියන්න යන්නේ නෑ. ඒ ගැන කලින් ලිපි වලින් අපි කතා කලා. ඒ ලිපි බැලුවේ නැත්නම් මේ Link වලින් මුලින්ම ඒ ටික බලලා ඉන්න. </p>
+
+
+
+<ul><li><a href="/index.php/category/web-development/mean-stack/">MongoDB</a></li><li><a href="/index.php/category/web-development/node-js/">Express</a></li><li><a href="/index.php/category/web-development/angular-js/">Angular</a></li><li><a href="/index.php/category/web-development/node-js/">Node</a></li></ul><p>මේ Project එකේ අන්තිමට මොන වගේ Application එකක් හැදෙයිද කියලා Idea එකක් ගන්න මේ Images ටික බලන්න. </p>
+
+
+
+<figure class="wp-block-image"><amp-img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-1024x341.png" alt="" class="wp-image-1891 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-1024x341.png 1024w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-300x100.png 300w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-768x256.png 768w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67.png 1071w" width="1024" height="341" layout="intrinsic"><noscript><img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f5632774672326b2e706e67-1024x341.png" alt="" class="wp-image-1891" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="341"></noscript></amp-img><figcaption>All Issues</figcaption></figure><figure class="wp-block-image"><amp-img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67.png" alt="" class="wp-image-1892 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67.png 482w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67-269x300.png 269w" width="482" height="538" layout="intrinsic"><noscript><img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f385869574234702e706e67.png" alt="" class="wp-image-1892" sizes="(max-width: 482px) 100vw, 482px" width="482" height="538"></noscript></amp-img><figcaption>Create an Issue<br></figcaption></figure><p></p>
+
+
+
+<figure class="wp-block-image"><amp-img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67.png" alt="" class="wp-image-1893 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67.png 487w, /wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67-240x300.png 240w" width="487" height="610" layout="intrinsic"><noscript><img src="/wp-content/uploads/2019/02/68747470733a2f2f692e696d6775722e636f6d2f586d50785a57332e706e67.png" alt="" class="wp-image-1893" sizes="(max-width: 487px) 100vw, 487px" width="487" height="610"></noscript></amp-img><figcaption>Edit an Issue</figcaption></figure><p>හරි එහෙනම් අපි මුල ඉඳන් වැඩේ පටන් ගමු..</p>
+
+
+
+<p></p>
+
+
+
+<h3 id="c3ab"><u>Installing Node.js &amp; Angular CLI</u></h3>
+
+
+
+<p></p>
+
+
+
+<p>මේ Project එකේ dependencies install කරගන්න ඉදිරියේදී පාවිච්චි කරන්නේ npm package එක. ඒක නිසා මුලින්ම Nodejs Install කරගන්න ඕන. දැනට Nodejs Install කරලා නැත්නම් මේ <a href="https://nodejs.org/%20">Link</a> එකෙන් ගිහින් Download කරගන්න.  </p>
+
+
+
+<p>දැන් අපි ළඟ npm එක තියෙන නිසා අපිට පුළුවන් ලේසියෙන්ම අලුන් Angular project එකක් Initialize කරගන්න. ඒකට මේ Command එකෙන් Packages Install කරගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">$ npm install -g @angular/cli
+
+</pre>
+
+
+
+<p>මේ command එකෙන් අපේ path variable එකක් හැදෙනවා ng commands වලට Response කරන්න පුළුවන් විදියට. </p>
+
+
+
+<p></p>
+
+
+
+<h3><u>FRONT-END Design</u></h3>
+
+
+
+<p></p>
+
+
+
+<p>මේ පළවෙනි ලිපියෙන් කරන්න යන්නේ Front-End එක Design කරගන්න එක. ඒකට මුලින්ම අලුතින් Project එකක් හදා ගන්න ඕන. ඒකට අපි මුලින් Install කරපු ng command එක දැන් භාවිතා කරන්න පුළුවන්. ඒකට මේ Command එක Use කරන්න. (Command Line එකේ)</p>
+
+
+
+<pre class="wp-block-preformatted">ng new frontend
+
+</pre>
+
+
+
+<p>Project එක හදා ගන්නකොට අපෙන් අහනවා Routing Module එක දාන්න ඕනද කියලා. වැඩේ ලේසි වෙන්න ඒකට yes දෙන්න. අපි මේකට ගන්නේ CSS stylesheets. ඒකත් එතනින් Select කරගන්න. </p>
+
+
+
+<p>අදාල Module ටික install වෙලා ඉවර වුණාම font-end කියලා අලුතින් Project එකක් හැදෙයි. ඒකෙ අපේ Font-end එකට අදාල Codes ටික තියා ගන්නේ. දැන් අලුතින් හැදුනු folder එක ඇතුලට ගිහින් ng serve කරලා අලුතින් හැදුනු project එක වැඩ කරනවද කියලා test කරලා බලන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-preformatted">cd fontend<br>ng serve -o</pre>
+
+
+
+<p></p>
+
+
+
+<h3> Adding Angular Material </h3>
+
+
+
+<p></p>
+
+
+
+<p>Interfaces ලස්සනට Design කරගන්න පුළුවන් වෙන්න අපි මේ Project එකට භාවිතා කරනවා Angular Material CSS Library එක. ඒක මේ විදියට Project එකට Add කරගන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-preformatted">ng add @angular/material
+
+</pre>
+
+
+
+<p>මේ Package එක Install වෙනකොට ඔයාගෙන් අහයි මොන වගේ Theme එකක්ද ඕන Animation Use කරන්නද වගේ දේවල්. ඒවට yes select කරලා enter කරන්න. </p>
+
+
+
+<p></p>
+
+
+
+<h3 id="2ad4">Creating Components</h3>
+
+
+
+<p></p>
+
+
+
+<p>දැන් අපි හදන්නේ අපිට ඕන කරන Components ටික හදා ගන්න. මේකට අපි ng command එක use කරනවා. </p>
+
+
+
+<pre class="wp-block-preformatted">ng g c components/list <br>ng g c components/create<br>ng g c components/edit<br></pre>
+
+
+
+<p>මේකෙන් components කියලා folder එකක් හැදිලා ඒක ඇතුලට මේ list, create, edit කියල components 3 create වෙනවා. අපි දැන් බලමු routings ටික හදා ගන්න. </p>
+
+
+
+<p></p>
+
+
+
+<h3 id="3513">Adding Routing</h3>
+
+
+
+<p></p>
+
+
+
+<p>දැන් අපි කලාන් හදා ගත්ත RouterModule එකේ තමයි අපිට ඕන කරන routes ටික ලියා ගන්න ඕන. </p>
+
+
+
+<p><strong>src -&gt; app -&gt; app-routing.module.ts</strong> file එක open කරගෙන මේ Code එක routes කියන variable එක වෙනුවට replace කරගන්න. </p>
+
+
+
+<pre class="wp-block-preformatted"><code>const routes: Routes = [<br>  { path: 'create', component: CreateComponent },<br>  { path: 'edit/:id', component: EditComponent },<br>  { path: 'list', component: ListComponent },<br>  { path: '', redirectTo: '/list', pathMatch: 'full'}<br>];</code> </pre>
+
+
+
+<p>මේ විදියට Code එක දාගෙන උඩින්ම අදාල Components Import කරගන්නත් ඕන වෙනවා. </p>
+
+
+
+<p>මේ ටික කර ගත්තාම ඔයාගෙ AppRoutingModule එක මේ විදියට තියෙන්න ඕන.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br><em>import</em> { NgModule } <em>from</em> '@angular/core';<br><em>import</em> { Routes, RouterModule } <em>from</em> '@angular/router';<br><em>import</em> { CreateComponent } <em>from</em> './components/create/create.component'<br><em>import</em> { EditComponent } <em>from</em> './components/edit/edit.component'<br><em>import</em> { ListComponent } <em>from</em> './components/list/list.component'<br><br>const routes: Routes = [<br>  { path: 'create', component: CreateComponent },<br>  { path: 'edit/:id', component: EditComponent },<br>  { path: 'list', component: ListComponent },<br>  { path: '', redirectTo: '/list', pathMatch: 'full'}<br>];<br><br>@NgModule({<br>  imports: [RouterModule.forRoot(routes)],<br>  exports: [RouterModule]<br>})<br><em>export</em> class AppRoutingModule { }<br></pre>
+
+
+
+<p>දැන් අපි කරන්න යන්නේ හැම page එකේම Display වෙන විදියට පොඩි Menu tool එකක් දාගන්න. ඒකට මේ Code එක app.component.html file එකේ Paste කරගන්න. </p>
+
+
+
+<pre class="wp-block-preformatted"><br><code>&lt;mat-toolbar&gt;<br>  &lt;span&gt;Angular 6 - MEAN Stack Sample Application&lt;/span&gt;<br>&lt;/mat-toolbar&gt;<br>&lt;div&gt;<br>  &lt;router-outlet&gt;&lt;/router-outlet&gt;<br>&lt;/div&gt;</code> </pre>
+
+
+
+<p>අපි මේ Layout එකට &lt;mat-toolbar&gt; කියන tag එක යොදා ගන්න හින්දා මුලින්ම ඒක import කරගන්න ඕන. ඒකට මේ Import command එක app.module.ts එකේ දාන්න</p>
+
+
+
+<pre class="wp-block-preformatted"> <br><code>import { MatToolbarModule } from '@angular/material';</code> </pre>
+
+
+
+<p>ඒ වගේම ඒකෙ Import Array එකටත් මේක දාගන්න ඕන.</p>
+
+
+
+<pre class="wp-block-preformatted"> <br><code>imports: [<br>    ...<br>    MatToolbarModule<br> ],</code> </pre>
+
+
+
+<p>අන්තිමට File එකේ Content එක මේ වගේ තියෙන්න ඕන</p>
+
+
+
+<p class="amp-wp-13076d9"><strong><em>app.module.ts</em></strong></p>
+
+
+
+<pre class="wp-block-preformatted"><em>import</em> { BrowserModule } <em>from</em> '@angular/platform-browser';<br><em>import</em> { NgModule } <em>from</em> '@angular/core';<br><br><em>import</em> { AppRoutingModule } <em>from</em> './app-routing.module';<br><em>import</em> { AppComponent } <em>from</em> './app.component';<br><em>import</em> { BrowserAnimationsModule } <em>from</em> '@angular/platform-browser/animations';<br><em>import</em> { ListComponent } <em>from</em> './components/list/list.component';<br><em>import</em> { CreateComponent } <em>from</em> './components/create/create.component';<br><em>import</em> { EditComponent } <em>from</em> './components/edit/edit.component';<br><em>import</em> { MatToolbarModule } <em>from</em> '@angular/material'; <br><br>@NgModule({<br>  declarations: [<br>    AppComponent,<br>    ListComponent,<br>    CreateComponent,<br>    EditComponent<br>  ],<br>  imports: [<br>    BrowserModule,<br>    AppRoutingModule,<br>    BrowserAnimationsModule,<br>    MatToolbarModule<br>  ],<br>  providers: [],<br>  bootstrap: [AppComponent]<br>})<br><em>export</em> class AppModule { }<br><br></pre>
+
+
+
+<p class="amp-wp-13076d9"><strong><em>app.component.html</em></strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;mat-toolbar&gt;<br>  &lt;span&gt;Angular 6 - MEAN Stack Sample Application&lt;/span&gt;<br>&lt;/mat-toolbar&gt;<br>&lt;div&gt;<br>  &lt;router-outlet&gt;&lt;/router-outlet&gt;<br>&lt;/div&gt;<br><br>&lt;router-outlet&gt;&lt;/router-outlet&gt;<br><br></pre>
+
+
+
+<p>මේක කලාම අපේ Basic Frontend part එක ඉවරයි. ඊළඟ Part එක තමයි අපේ Application එකේ BackEnd එක Design කරගන්න විදිය. ඊළඟ ලිපියෙන් ඒ ගැන කතා කරමු. මේකෙ Installation වල හරි Code වල හරි මොකක් හරි ප්‍රශ්ණයක් ආවොත් Comment එකක් දාන්න. </p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/web-development/angular-js/" rel="category tag">angular.js</a>, <a href="/index.php/category/web-development/mean-stack/" rel="category tag">mean stack</a>, <a href="/index.php/category/web-development/node-js/" rel="category tag">node.js</a>, <a href="/index.php/category/uncategorized/" rel="category tag">Uncategorized</a>, <a href="/index.php/category/web-development/" rel="category tag">web development</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/angular/" rel="tag">angular</a>, <a href="/index.php/tag/front-end/" rel="tag">front-end</a>, <a href="/index.php/tag/issuetracker/" rel="tag">issueTracker</a>, <a href="/index.php/tag/mean/" rel="tag">MEAN</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2019/02/19/mean-stack-sample-application-1/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

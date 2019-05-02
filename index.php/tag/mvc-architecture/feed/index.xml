@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mvc architecture &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/mvc-architecture/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Codeigniter වල folder structure  එක හඳුනාගනිමු</title>
+		<link>/index.php/2018/09/27/folder-structure-of-codeigniter/</link>
+				<comments>/index.php/2018/09/27/folder-structure-of-codeigniter/#comments</comments>
+				<pubDate>Thu, 27 Sep 2018 18:16:11 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[codeigniter]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[mvc architecture]]></category>
+
+		<guid isPermaLink="false">/?p=1413</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන් යාලුවනේ ! ඔන්න මම අද ආවේ codeigniter පාඩම් මාලාවේ දෙවන පාඩමත් සමගින්..මේ පාඩමේදී අපි කතා කරන්න බලාපොරොත්තු වෙන්නේ codeigniter වල folder structure එක ගැන&#8230;කලින් පාඩමේදී අපි කතා කලා MVC architecture එක ගැන සහ කොහොමද codeigniter install කර ගන්නේ කියන එක ගැන..කව්රුහරි කෙනෙක්ට කලින් පාඩම මගහැරුනනම් මෙන්න මෙතනින් ගිහින් බලන්න<a class="moretag" href="/index.php/2018/09/27/folder-structure-of-codeigniter/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/27/folder-structure-of-codeigniter/">Codeigniter වල folder structure  එක හඳුනාගනිමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>ආයුබෝවන් යාලුවනේ ! ඔන්න මම අද ආවේ codeigniter පාඩම් මාලාවේ දෙවන පාඩමත් සමගින්..මේ පාඩමේදී අපි කතා කරන්න බලාපොරොත්තු වෙන්නේ codeigniter වල folder structure එක ගැන&#8230;කලින් පාඩමේදී අපි කතා කලා MVC architecture එක ගැන සහ කොහොමද codeigniter install කර ගන්නේ කියන එක ගැන..කව්රුහරි කෙනෙක්ට කලින් පාඩම මගහැරුනනම් මෙන්න <a href="/index.php/2018/09/20/introduction-of-codeigniter/" rel="noopener" target="_blank">මෙතනින් </a> ගිහින් බලන්න පුලුවන්&#8230;හරි එහෙනන් අද පාඩමට බහිමු..</p>
+<p>codeigniter වල laravel වල වගේ ලොකූ folder structure එකක් නෑ&#8230; codeigniter වල folder structure එක බැලුවොත් application, system සහ user_guide කියලා ප්‍රධාන folder තුනක් දැකගන්න පුලුවන්..මුලින්ම අපි application folder එක ගැන බලමු..</p>
+<p><em><strong>1.0 &#8211; Application Folder</strong></em></p>
+<p>application folder  එකේ තමයි අපිට project එක කරන්න අවශ්‍යි වන වැඩදගත්ම files ටික තියෙන්නෙ. උදාහරණයක් විදිහට ගත්තොත් models, views, controllers, config වගේ වැදගත්ම files මේ ටික තියෙන්නේ මෙන්න මේ applications folder එක ඇතුලෙ.. ඒ නිසා අපි හරියටම  application folder එක ගැන මුලින්ම දැනගනිමු.application කියන ලොකු folder  එක ගත්තොත් මෙන්න මේ වගේ පොඩි පොඩි  folders ගොඩක් ඔයාලට දැකගන්න පුළුවන්.</p>
+<p><img src="/wp-content/uploads/2018/09/application-275x300.jpg" alt="" width="275" height="300" class="size-medium wp-image-1414 aligncenter" srcset="/wp-content/uploads/2018/09/application-275x300.jpg 275w, /wp-content/uploads/2018/09/application.jpg 309w" sizes="(max-width: 275px) 100vw, 275px" /></p>
+<p>හරි අපි දැන් එකින් එක මේ folders ගැන කතා කරලා බලමු.</p>
+<p><em><strong>1.1 &#8211; Cache</strong></em>  &#8211;</p>
+<p>මෙයින් කරන්නේ web page එක access කරන්න speed එක වැඩි කරන එකයි. තවත් විදියකින් කියනවා නම් web page එකේ <span>performance</span> එක වැඩි කරන එකයි.</p>
+<p><em><strong>1.2 &#8211; Config</strong></em> &#8211;</p>
+<p>මේ folder එක ඇතුලෙ නම් ටිකක් වැදගත් php files ගොඩක් තියෙනවා.. හරි folder එක open කරලා බැලුවම මෙන්න මේ වගේ files  ගොඩක් දැකගන්න පුළුවන් .</p>
+<p><img src="/wp-content/uploads/2018/09/config-252x300.jpg" alt="" width="252" height="300" class="size-medium wp-image-1416 aligncenter" srcset="/wp-content/uploads/2018/09/config-252x300.jpg 252w, /wp-content/uploads/2018/09/config.jpg 302w" sizes="(max-width: 252px) 100vw, 252px" /></p>
+<p>&nbsp;</p>
+<p>ඔන්න ඔය උඩින්ම තියෙන autoload.php file එකෙන් තමයි ඔයාලට  ඔයාගේ project එකට අවශ්‍ය  සියලුම libraries ටික load කරගන්නේ.අපේ project එකේ තියෙන base url  ටික set කරන්නේ මේ config.php කියන file එක ඇතුලට..   අපේ project එක database එකත් එක්ක සම්බන්ධ කරන්නේ මෙන්න මේ database.php   මෙන්න මේ file එකෙන්. config folder එක ඇතුලේ තියෙන  මීළඟ වැදගත් වැදගත්ම file එක තමයි routes.php කියන්නේ. browser එක හරහා එන  url  එකට අනුව  අදාළ controller  එකෙ function  එක  call  කරන්නේ මෙන්න මේ routes.php කියන file එකෙන්.</p>
+<p><em><strong>1.3 &#8211; controllers</strong></em></p>
+<p>codeigniter folder structure එකෙ  තියෙන  තවත්  වැදගත්ම folder එකක් තමයි මේ controllers කියන්නේ. ඇත්තටම කිව්වොත් අපේ project එක පාලනය වෙන්නේ මෙන්න මේ කියන controllers folder එකෙන්. සියලුම  <span>server-side functionalities</span>  ඔක්කෝම පාලනය කරන්නෙත් මෙන්න මේ controllers folder එකෙන්..මේ  වැඩේ කොහොමද වෙන්නේ කියලා හරිහැටි දන්නෙ නැතිනම්  බය වෙන්න එපා..ඉදිරි පාඩම් වලදී අපි ගොඩක් කතා කරනවා මේ controllers  ගැන</p>
+<p><em><strong>1.4 </strong></em>&#8211; <em><strong>core</strong></em></p>
+<p>codeigniter කියන framework එක හැදිලා තියෙන ප්‍රධාන files ටික ආරක්ෂා කරන එක තමයි මෙන්න මේ core folder එකෙන් කරන්නෙ.. සාමාන්‍යයෙන් මේ folder එකේ තියෙන files වෙනස් කරන්න  යන්නේ නැහැ. එහෙම වෙනස්  කරනවානම් &#8216;application\core&#8217;  ඇති file එකේ නමින්ම තවත් file එකක් &#8216;system \core&#8217; folder එක  ඇතුලේ  හදන්න ඕනේ.</p>
+<p><em><strong>1.5 &#8211; </strong></em><em><strong>helpers</strong></em></p>
+<p>නමේ තේරුම වගේම තමයි&#8230; මෙයින් කරන්නේ project එක කරගෙන යද්දි  ඔයාට  help  කරන එක.. Helpers  ඇතුලේ define කරලා තියෙනවා functions සෙට් එකක්  අදාල වැඩේ ලේසි කරගන්න..උදාහරණයක් විදිහට ගත්තොත් links හදන්න ලේසි ලේසි වෙන්න URL Helpers තියෙනවා..forms  හදන්න ලේසි වෙන්න Form Helpers තියෙනවා..තව ගත්තොත් Text Helpers, cookie Helpers වගේ ඒවත් තියනවා.. සාමාන්‍යයෙන් helper files තියෙන්නෙ <strong>system/helpers හෝ</strong><span> </span><strong>application/helpers directory</strong>  එක අතුලේ.. අපිට Helper  එකක්  මේ විදියට load  කරගන්න පුලුවන්..</p>
+<p><code>$this-&gt;load-&gt;helper('name');  // name means that , helper name without  .php file extension and the “helper” part</code></p>
+<p><em><strong>1.6</strong></em> &#8211; <em><strong>Libraries<span> </span></strong></em></p>
+<p><em><strong></strong></em>             ඔයාලගේ project   එකට අවශ්‍ය ඔයාල විසින් develop  කරපු files මෙන්න මේ folder  එක අතුලේ store කරන්න පුළුවන් .</p>
+<p><em><strong>1.7 </strong></em>&#8211; <em><strong>Logs</strong></em></p>
+<p>project එකෙ තියන errors , exception handling වගේ ඒවායේ විස්තර තියාගන්නේ  මෙන්න මේ Logs කියන folder එකෙ.</p>
+<p><em><strong>1.8</strong></em> &#8211;<em><strong> models</strong></em></p>
+<p>controller එකක් database   එකත් එක්ක ගනුදෙනු කිරීමේදී තමයි මේ models අවශ්‍යය වෙන්නේ.. controller එකක තියන data, database  එකට  යවද්දීත් database එකේ තියන data, controller එකට  ගනිද්දිත් මෙන්න මේ models අවශ්‍යය වෙනවා..  කෙටියෙන්ම කිව්වොත් controller එකක් database  එකත් සමග සම්බන්ධ වෙන්නේ මෙන්න මේ models හරහායි..models කොහොමද වැඩ කරන්නෙ කියල ඔයාලට ඉදිරි පාඩම් වලදී හොඳටම තේරේවි.</p>
+<p><em><strong>1.9 &#8211; third_party</strong></em></p>
+<p><span>plugins store</span>  කරන්නේ මෙන්න මේ third party කියන folder එක ඇතුලෙ ..</p>
+<p><em><strong>1.10 &#8211;  view</strong></em></p>
+<p>අපිට පෙනෙන output එක එහෙමත් නැත්නම්  සියලුම html files store කරන්නේ  මෙන්න මේ view folder එක ඇතුලේ.</p>
+<p>&nbsp;</p>
+<p><em><strong>2.0  System folder </strong></em></p>
+<p>system කියන ලොකු folder  එක ගත්තොත් මෙන්න මේ වගේ පොඩි පොඩි  folders ගොඩක් ඔයාලට දැකගන්න පුළුවන්</p>
+<p><img src="/wp-content/uploads/2018/09/s.jpg" alt="" width="241" height="206" class="size-full wp-image-1425 aligncenter" /></p>
+<p>ඔයාලට හොඳට බැලුවොත් පෙනෙයි මෙතන තියන folders  ඔක්කොම වගේ කලින් කතා කියලා තියනවා..  අලුත් එකකට කියලා තියෙන්නෙ fonts කියන folder  එක.. fonts  වලට අදාළ සියලුම විස්තර   මේ fonts folder එක ඇතුලෙ තමයි තියාගන්නේ.</p>
+<p><em><strong>3.0</strong> &#8211;<strong> user_guide</strong></em></p>
+<p>user_guide කියන ලොකු folder  එක ගත්තොත් මෙන්න මේ වගේ පොඩි පොඩි  folders ගොඩක් ඔයාලට දැකගන්න පුළුවන්</p>
+<p><img src="/wp-content/uploads/2018/09/guide-148x300.jpg" alt="" width="227" height="460" class=" wp-image-1426 aligncenter" srcset="/wp-content/uploads/2018/09/guide-148x300.jpg 148w, /wp-content/uploads/2018/09/guide.jpg 242w" sizes="(max-width: 227px) 100vw, 227px" /></p>
+<p>folders ගොඩක් වගේ පෙනුනට මේ තියෙන්නෙ codeigniter වල user manual guide එකෙ  offline <span>version</span> එකයි. අපි download  කරන්න සෑම codeigniter version එකක් එක්කම user guide  එක auto download වෙනවා ..මේක  බැලුවොත් ඔයාලට තේරුම තේරුම් ගන්න පුළුවන් codeigniter වල define  කරල තියන functions,Helpers සහ libraries    වගේ දේවල්..</p>
+<p>ඔන්න ඔය ටික තමයි codeigniter වල folder structure එක  ගැන කියන්න තියෙන්නේ.. අදට පාඩම නිමයි.. codeigniter  වලින් basic application  එකක් හදන විදිය අපි  මීළඟ පාඩමින්  බලමු..  හැමෝටම සුභ දවසක් !</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/27/folder-structure-of-codeigniter/">Codeigniter වල folder structure  එක හඳුනාගනිමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/27/folder-structure-of-codeigniter/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+							</item>
+	</channel>
+</rss>

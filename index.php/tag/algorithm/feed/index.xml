@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>algorithm &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/algorithm/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Queue Abstract Data Type (With Implementation)</title>
+		<link>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/</link>
+				<comments>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/#respond</comments>
+				<pubDate>Mon, 09 Apr 2018 14:45:43 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Algo]]></category>
+		<category><![CDATA[algorithm]]></category>
+		<category><![CDATA[implementation]]></category>
+		<category><![CDATA[queue]]></category>
+
+		<guid isPermaLink="false">/?p=552</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා. FIFO? FIFO කියන එකෙන් අදහස් වෙන්නේ First In First Out කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින<a class="moretag" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා.</p>
+<h3><strong>FIFO?</strong></h3>
+<p><img class=" wp-image-629 aligncenter" src="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg" alt="" width="387" height="241" srcset="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg 300w, /wp-content/uploads/2018/04/queue_1446267c_2854335k-768x480.jpg 768w, /wp-content/uploads/2018/04/queue_1446267c_2854335k.jpg 858w" sizes="(max-width: 387px) 100vw, 387px" /></p>
+<p>FIFO කියන එකෙන් අදහස් වෙන්නේ <strong>First In First Out </strong>කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින පේලි වලත් වෙන්නේ ඉස්සරලාම පේලියට එකතු වුණ කෙනා තමයි මුලින්ම පේලියෙන් එළියට යන්නේ. හැබැයි මතකද අපි කලින් ලිපියෙ Stacks ගැන කියන වෙලාවෙදි <strong>LIFO </strong>එකක් ගැන කිවුවා. ඒක බැලුවෙ නැත්නම් <a href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">මෙතනින්</a> බලන්න. ඒකෙදි අපි කලේ මේකෙ විරුද්ධ වැඩේ.</p>
+<h3><strong>Basic Operations</strong></h3>
+<p>Queue එකක තියෙන මූලිකම මෙහෙයුම් කිහිපය තමයි මේ පහලින් තියෙන්නේ.</p>
+<ol>
+<li>Enqueue</li>
+<li>Dequeue</li>
+<li>Peek</li>
+<li>isFull</li>
+<li>isEmplty</li>
+</ol>
+<p>මේ Method ටිකත් අපි කලින් කතා කරපු Stack එකට ගොඩක් සමානයි.</p>
+<h3><strong>Peek : </strong></h3>
+<p style="padding-left: 30px;">Data එකක් එළියට ගන්නේ නැතිව මුලින්ම(Front) තියෙන Data එක බලන Method එක.</p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre style="padding-left: 60px;">begin procedure peek
+
+   return queue[front]
+   
+end procedure
+</pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre style="padding-left: 60px;">int peek() {
+   return queue[front];
+}
+</pre>
+<h3><strong>isFull : </strong></h3>
+<p>Queue එක සම්පූර්ණයෙන්ම පිරිලාද නැද්ද Check කරන Method එක. මේකෙදි අපි කරන්නේ Queue එකේ Rear Point එක Queue එකේ Max Size එකට සමාන වුණොත් True Return කරනවා.</p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">begin</span><span class="pln"> procedure isfull
+
+   </span><span class="kwd">if</span><span class="pln"> rear equals to MAXSIZE
+      </span><span class="kwd">return</span> <span class="kwd">true</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pln">
+   endif
+   
+</span><span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">bool</span><span class="pln"> isfull</span><span class="pun">()</span> <span class="pun">{</span>
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">rear </span><span class="pun">==</span><span class="pln"> MAXSIZE </span><span class="pun">-</span> <span class="lit">1</span><span class="pun">)</span>
+      <span class="kwd">return</span> <span class="kwd">true</span><span class="pun">;</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pun">;</span>
+<span class="pun">}</span></pre>
+<h3><strong>isEmpty : </strong></h3>
+<p>Queue එක හිස් වෙලා තියනවද කියලා Check කරන Method එක. Queue එකක් Empty ද නැද්ද කියලා බලන්නේ Front එකේ Value එක Queue එකේ තියෙන්න පුළුවන් අඩුම අගයට එහෙම නැත්නම් 0ට වඩා අඩුයිද කියලා Check කරන එක.</p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">begin</span><span class="pln"> procedure isempty
+
+   </span><span class="kwd">if</span><span class="pln"> front </span><span class="kwd">is</span><span class="pln"> less than MIN  OR front </span><span class="kwd">is</span><span class="pln"> greater than rear
+      </span><span class="kwd">return</span> <span class="kwd">true</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pln">
+   endif
+   
+</span><span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">bool</span><span class="pln"> isempty</span><span class="pun">()</span> <span class="pun">{</span>
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">front </span><span class="pun">&lt;</span> <span class="lit">0</span> <span class="pun">||</span><span class="pln"> front </span><span class="pun">&gt;</span><span class="pln"> rear</span><span class="pun">)</span> 
+      <span class="kwd">return</span> <span class="kwd">true</span><span class="pun">;</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pun">;</span>
+<span class="pun">}</span></pre>
+<h3><strong>Enqueue : </strong></h3>
+<p>Queue එකට Data Insert කරන Method එක. මේකෙදි අපි පියවර කිහිපයක් අනුගමනය කරනවා Data එකක් Queue එක ඇතුලට දාන්න කලින් අපි එකින් එක පියවර විස්තර ඇතිව බලමු.</p>
+<p style="padding-left: 30px;"><strong>පළමු පියවර : </strong>Queue එක දැනට Full ද කියලා Check කරන එක. ඒ කියන්නේ Queue එක Full වෙලා තිබුණොත් අපිට තවත් Data Insert කරන්න බෑනෙ. ඒක මේ Check එකෙන් පස්සේ Full වෙලා තිබුණොත් නතර කරනවා</p>
+<p style="padding-left: 30px;"><strong>දෙවන පියවර : </strong>Queue එක Full වෙලා තිබුණේ නැත්නම් අපි Rear Point එක 1කින් වැඩි කරනවා. ඒ කියන්නේ Next Empty Space එකට.</p>
+<p><img class=" wp-image-736 aligncenter" src="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg" alt="" width="446" height="251" srcset="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg 300w, /wp-content/uploads/2018/04/queue_enqueue_diagram.jpg 550w" sizes="(max-width: 446px) 100vw, 446px" /></p>
+<p style="padding-left: 30px;"><strong>තුන්වන පියවර : </strong>දැන් Rear Point එක තියෙන තැනට අපිට අවශ්‍ය Data එක Insert කරනවා.</p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="pln">procedure enqueue</span><span class="pun">(</span><span class="pln">data</span><span class="pun">)</span>      
+   <span class="kwd">if</span><span class="pln"> queue </span><span class="kwd">is</span><span class="pln"> full
+      </span><span class="kwd">return</span><span class="pln"> overflow
+   endif
+   
+   rear </span><span class="pun">←</span><span class="pln"> rear </span><span class="pun">+</span> <span class="lit">1</span><span class="pln">
+   
+   queue</span><span class="pun">[</span><span class="pln">rear</span><span class="pun">]</span> <span class="pun">←</span><span class="pln"> data
+   
+   </span><span class="kwd">return</span> <span class="kwd">true</span>
+   
+<span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">int</span><span class="pln"> enqueue</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">)</span>      
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">isfull</span><span class="pun">())</span>
+      <span class="kwd">return</span> <span class="lit">0</span><span class="pun">;</span><span class="pln">
+   
+   rear </span><span class="pun">=</span><span class="pln"> rear </span><span class="pun">+</span> <span class="lit">1</span><span class="pun">;</span><span class="pln">
+   queue</span><span class="pun">[</span><span class="pln">rear</span><span class="pun">]</span> <span class="pun">=</span><span class="pln"> data</span><span class="pun">;</span>
+   
+   <span class="kwd">return</span> <span class="lit">1</span><span class="pun">;</span>
+<span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h3><strong>Dequeue : </strong></h3>
+<p>Queue එකෙන් Data එළියට ගන්න Method එක. මේක කරන්නත් අපි උඩදි කතා කරා වගේ පියවර කිහිපයක් යන්න ඕන.</p>
+<p style="padding-left: 30px;"><strong>පළමු පියවර : </strong>Queue එක Empty ද කියලා Check කරන්න ඕන. මොකද අපිට Empty Queue එකකින් Data එකක් එළියට ගන්න බෑ.</p>
+<p style="padding-left: 30px;"><strong>දෙවන පියවර : </strong>Queue එක Empty වෙලා තිබුණොත් Underflow Error එකක් Display කරනවා. නැත්නම් Front Pointer එක ඊළඟ Element එකට Point කරනවා.</p>
+<p style="padding-left: 30px;"><strong><img class=" wp-image-737 aligncenter" src="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg" alt="" width="449" height="283" srcset="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg 300w, /wp-content/uploads/2018/04/queue_dequeue_diagram.jpg 550w" sizes="(max-width: 449px) 100vw, 449px" /></strong></p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="pln">procedure dequeue
+   </span><span class="kwd">if</span><span class="pln"> queue </span><span class="kwd">is</span><span class="pln"> empty
+      </span><span class="kwd">return</span><span class="pln"> underflow
+   </span><span class="kwd">end</span> <span class="kwd">if</span><span class="pln">
+
+   data </span><span class="pun">=</span><span class="pln"> queue</span><span class="pun">[</span><span class="pln">front</span><span class="pun">]</span><span class="pln">
+   front </span><span class="pun">←</span><span class="pln"> front </span><span class="pun">+</span> <span class="lit">1</span>
+   
+   <span class="kwd">return</span> <span class="kwd">true</span>
+<span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">int</span><span class="pln"> dequeue</span><span class="pun">()</span> <span class="pun">{</span>
+
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">isempty</span><span class="pun">())</span>
+      <span class="kwd">return</span> <span class="lit">0</span><span class="pun">;</span>
+
+   <span class="kwd">int</span><span class="pln"> data </span><span class="pun">=</span><span class="pln"> queue</span><span class="pun">[</span><span class="pln">front</span><span class="pun">];</span><span class="pln">
+   front </span><span class="pun">=</span><span class="pln"> front </span><span class="pun">+</span> <span class="lit">1</span><span class="pun">;</span>
+
+   <span class="kwd">return</span><span class="pln"> data</span><span class="pun">;</span>
+}
+</pre>
+<p>දැන් අපි මේ එකින් එක බලපු Methods ටික එකතු කරලා සම්පූර්ණ Queue එකක Implementation එක බලමු.</p>
+<p><b> Language : C </b></p>
+<pre>typedef void * queue_data_type;
+struct queue_item {
+	queue_data_type contents;
+	struct queue_item* next;
+};
+struct queue_root {
+	struct queue_item* head;
+	struct queue_item* tail;
+};
+
+void init_queue(struct queue_root* queue){
+	queue-&gt;head = queue-&gt;tail = NULL;
+}
+
+void push_queue(struct queue_root* queue, int size, queue_data_type contents){
+	struct queue_item *item = malloc(sizeof(item));
+	item-&gt;contents = contents;
+	item-&gt;next = NULL;
+	if (queue-&gt;head == NULL){
+		queue-&gt;head = queue-&gt;tail = item;
+	} else {
+		queue-&gt;tail = queue-&gt;tail-&gt;next = item;
+	}
+}
+
+queue_data_type pop_queue(struct queue_root* queue){
+	queue_data_type popped;
+	if (queue-&gt;head == NULL){
+		return NULL; // causes a compile warning.  Just check for ==NULL when popping.
+	} else {
+		popped = queue-&gt;head-&gt;contents;
+		struct queue_item* next = queue-&gt;head-&gt;next;
+		free(queue-&gt;head);
+		queue-&gt;head = next;
+		if (queue-&gt;head == NULL)
+			queue-&gt;tail = NULL;
+	}
+	return popped;
+}
+
+void process_queue(struct queue_root* queue, void (*func)(queue_data_type)){
+	if (queue == NULL)
+		return;
+	struct queue_item* current = queue-&gt;head;
+	while (current != NULL){
+		next = current-&gt;next
+		func(current-&gt;contents);
+		current = next;
+	}
+}
+</pre>
+<p>හරි එහෙනම් මොනවා හරි ප්‍රශ්ණයක් තිබුණොත් Comment එකක් දාන්න.</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Stack Abstract Data Type (With Implementation)</title>
+		<link>/index.php/2018/04/05/stack-abstract-data-type-with-implementation/</link>
+				<comments>/index.php/2018/04/05/stack-abstract-data-type-with-implementation/#respond</comments>
+				<pubDate>Thu, 05 Apr 2018 16:58:09 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Algo]]></category>
+		<category><![CDATA[algorithm]]></category>
+		<category><![CDATA[problem solving]]></category>
+		<category><![CDATA[stacks]]></category>
+
+		<guid isPermaLink="false">/?p=504</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> Stacks මුලින්ම මේ පාඩම් මාලාව හැඳින්වීමේදි අපි කතා කරා මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට මේ දේවලි ඕන වෙන්නේ කියලා. ඒ ලිපිය බැලුවේ නැත්නම් මෙතනින් බලන්න. හරි අපි අද කතා කරන්න යන්නේ අපේ පළවෙනි Data Type එක ගැන. stacks කියන්නේ එක්තරා විදියක Operations කිහිපයකට සීමා වෙලා තියෙන Data<a class="moretag" href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">Stack Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><h2 style="text-align: center;"><span style="text-decoration: underline;"><em><strong>Stacks</strong></em></span></h2>
+<p>මුලින්ම මේ පාඩම් මාලාව හැඳින්වීමේදි අපි කතා කරා මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට මේ දේවලි ඕන වෙන්නේ කියලා. ඒ ලිපිය බැලුවේ නැත්නම් <a href="/index.php/2018/04/01/data-structures-i/">මෙතනින්</a> බලන්න.</p>
+<p>හරි අපි අද කතා කරන්න යන්නේ අපේ පළවෙනි Data Type එක ගැන. stacks කියන්නේ එක්තරා විදියක Operations කිහිපයකට සීමා වෙලා තියෙන Data Type එකක්. ඒ කියන්නේ stack එක්ක අපිට කරන්න පුළුවන් වෙන්නේ <strong>Data ඇතුලට දාන එක, අන්තිමට දැම්ම Data එක ආපහු ගන්න එක හා අන්තිමට දැම්ම Data එක මොකද්ද කියලා බලන එක </strong>විතරයි. ඒකයි මේක ගොඩක්ම සරලම මට්ටමේ Data Type එකක් වෙන්නේ. මේ Data Type එකට Array එකකදි වගේ ඕන තැනකට Data දාන්නත් ඕන තැනකින් Data එළියට ගන්නත් බෑ. මේ Data Type එකට Data ගන්න සහ දාන්න පුළුවන් වෙන්නේ <strong>LIFO (Last In First out) </strong>කියන Method එකට අනුව. ඒ කියන්නේ ඔයාට මේ Data Type එකෙන් Data එකක් එළියට ගන්න ඕන නම් ගන්න පුළුවන් වෙන්නේ අන්තිමට ඇතුලට දැම්ම Data එක. තේරුනේ නැහැනේ? හරි අපි තව ටිකක් විස්තර ඇතිව බලමු.</p>
+<h4><strong>FIFO කියන්නේ මොකක්ද?</strong></h4>
+<p>සරලවම විස්තර කරන්න උදාහරණ කිහිපයක් කියන්නම්.</p>
+<p><img class="alignleft wp-image-529 size-medium" src="/wp-content/uploads/2018/04/08182c_28256e3b807445e0b6d98ef62b9da917-204x300.png" alt="stack books" width="204" height="300" srcset="/wp-content/uploads/2018/04/08182c_28256e3b807445e0b6d98ef62b9da917-204x300.png 204w, /wp-content/uploads/2018/04/08182c_28256e3b807445e0b6d98ef62b9da917.png 250w" sizes="(max-width: 204px) 100vw, 204px" />හිතන්න මේ වගේ පොත් ගොඩක් හදන්න වුනොත් ඔයාට පොත් ටික අරගෙන පිළිවෙලට පොත් එකින් එක අරගෙන ගොඩ ගහන්න වෙනවනේ. දැන් හිතන්න ඔයා ආපහු ඔය පිලිවෙලට හදපු පොත් ගොඩින් එකින් එක පොත් ආපහු ගන්නවා කියලා. ඒ කියන්නේ ඔයාට <strong>මුලින්ම ගන්න වෙන්නේ අන්තිමට තිබ්බ පොත. </strong>ඔයා මුලින්ම තිබ්බ පොත ආපහු ගන්න වෙන්නේ අන්තිමට. Stack එකත් මෙන්න මේ උදාහරණයට සමානයි. පොත් කියන්නේ හරියට ඔයාගෙ Stack එක ඇතුලේ තියෙන එක එක Data වගේ. පොත් ගොඩගහනවා වගේ ඔයා මේ Stack එකට Data දාන්න යන්නේ.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img class="alignright wp-image-530" src="/wp-content/uploads/2018/04/main-qimg-f2d56a823063de7de538c37a9f2f8d7b-c-225x300.jpg" alt="stack chairs" width="176" height="235" srcset="/wp-content/uploads/2018/04/main-qimg-f2d56a823063de7de538c37a9f2f8d7b-c-225x300.jpg 225w, /wp-content/uploads/2018/04/main-qimg-f2d56a823063de7de538c37a9f2f8d7b-c.jpg 338w" sizes="(max-width: 176px) 100vw, 176px" />තවත් උදාහරණයක් තමයි හැමෝම වගේ දැකලා ඇති පුටු මේ විදියට එක උඩ එක අහුරලා තියෙන විදිය. හැමෝම මේක ප්‍රායෝගික ජීවිතේදි කරලත් ඇතිනේ. මේකෙදිත් වෙන්නේ උඩදි කිවුව පොත් උදාහරණෙ වුන කතාවම තමයි. අන්තිමට දැම්ම පුටුව තමයි ආපහු ගද්දී මුලින්ම ගන්න වෙන්නේ.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3><strong>Stack Operations</strong></h3>
+<p>මේ ලිපියේ මුලදිත් මම සඳහන් කරා Stack එකක තියෙන මූලිකම Operations ගැන. දැන් හදන්නේ ඒවා ගැන විස්තරාත්මකව කතා කරගෙන යන්න.</p>
+<ol>
+<li>Push</li>
+<li>Pop</li>
+<li>Peek</li>
+</ol>
+<h5><strong>1.PUSH</strong></h5>
+<p style="padding-left: 30px;">මේ Method එකෙදි කරන්නේ Stack එකට Data දාන එක. ඒ කියන්නේ Data දාන්නේ Stack එකේ Top එකට. ඒක වෙන්නේ කොහොමද කියලා උඩ උදාහරණත් එක්ක ඔයාලට තේරෙනවා ඇති කියලා හිතනවා. Stack එකකට Data Insert කරන්න තියෙන එකම Method එක PUSH කරන එක.</p>
+<h5><strong>2.PULL</strong></h5>
+<p style="padding-left: 30px;">මේ Method එක යොදාගෙන තමයි Stack එකේ උඩම තියෙන Data එක ආපහු එළියට ගන්න. ඒකෙදි වෙන්නේ Stack එකෙන් අයින් වෙලා Data එක එළියට එන එක.</p>
+<h5><strong>3.PEEK</strong></h5>
+<p style="padding-left: 30px;">මේකෙදි කරන්නේ Stack එකෙන් Data එක එළියට ගන්නේ නැතුව උඩම තියෙන Data එක මොකද්ද කියලා බලන ඒක. මේකෙදි Stack එකෙන් Data එක අයින් වෙන්නේ නෑ. නිකත් උඩ තියෙන්නේ මොකද්ද කියලා බලන එක විතරයි.</p>
+<h2 style="text-align: center;"><span style="text-decoration: underline;"><strong>Implementation</strong></span></h2>
+<p>Python:</p>
+<pre>class Stack(object):
+
+    def __init__(self):
+        self._list = []
+
+    def push(self, item):
+        self._list.append(item)
+
+    def pop(self):
+        try:
+            return self._list.pop()
+        except IndexError:
+            raise IndexError('pop from empty stack')
+    def peek(self):
+        try:
+            print(_list[len(_list-1)])
+        except IndexError:
+            raise IndexError('empty stack')
+
+def main():
+    st = Stack()
+    # Push and print
+    for i in range(10):
+        st.push(i)
+        print("Pushed ", i)
+    st.push('Hello World')
+
+    # Pop
+    print(st.pop())
+
+    # Exceptions
+    while True:  # Empty the stack
+        try:
+            st.pop()
+        except Exception as e:
+            print('Exception: {0}'.format(e))
+            break
+
+
+if __name__ == '__main__':
+    main()
+</pre>
+<p>C:</p>
+<pre>#include 
+#include 
+
+typedef struct stack {
+	void *data;
+	struct stack *next;
+} Stack;
+
+Stack *new_stack_node(void *data) {
+	Stack *new_node = (Stack*) malloc(sizeof(Stack));
+	if (new_node == NULL) {
+		return NULL;
+	}
+	new_node -&gt; data = data;
+	new_node -&gt; next = NULL;
+	return new_node;
+}
+
+int push(Stack **stack, void *data) {
+	Stack *new_node = new_stack_node(data);
+	if (new_node == NULL) {
+		return 0;
+	}
+	new_node -&gt; next = *stack;
+	*stack = new_node;
+	return 1;
+}
+
+void *pop(Stack **stack) {
+	if (*stack == NULL) {
+		return NULL;
+	}
+	Stack *temp = *stack;
+	*stack = (*stack) -&gt; next;
+	temp -&gt; next = NULL;
+	void *data = temp -&gt; data;
+	free(temp);
+	return data;
+}
+
+int main() {
+	int a = 5;
+	float b = 6.0;
+	char c[] = "Hello World!";
+	Stack *st = NULL;
+	push(&amp;st, (void*) (&amp;a));
+	push(&amp;st, (void*) (&amp;b));
+	push(&amp;st, (void*) (c));
+	char *c_popped = (char*) pop(&amp;st);
+	float b_popped = *((float*) pop(&amp;st));
+	int a_popped = *((int*) pop(&amp;st));
+	printf("%d %f %s\n", a_popped, b_popped, c_popped);
+	if (pop(&amp;st) == NULL) {
+		printf("Unable to pop from empty stack\n");
+	}
+	return 0;
+}
+</pre>
+<p>තවත් Languages වලින් බලන්න <a href="https://github.com/Danushka96/algos/blob/master/stack">මෙතනින්</a> යන්න.</p>
+<p><strong>දැන් අපි මේ ලියපු Stack එක භාවිතා කරලා විසදන්න පුළුවන් ගැටළු මොනවද කියලා පොඩ්ඩක් බලමු.</strong></p>
+<h3><strong>1. Parenthesis </strong></h3>
+<p>මේ ප්‍රශ්ණය තමයි අපි මොකක් හරි String එකක් දුන්නහම ඒ දුන්න String එක ඇතුලේ තියන වරහන් Balance වෙලා තියෙනවද කියලා බලන එක. උදාහරණයක් විදියට <strong>(3*[5+2])</strong> මේ කොටසේ වරහන් Balance වෙලා තියෙන්නේ කියලා පේනවනේ. හැබැයි මේ වගේ එකක් ගන්න. <strong>(5+(5]} </strong>මේක Balance වෙලා නෑ. අන්න ඒ දේ හඳුන ගන්න අපි කොහොමද මේ stack එක යොදා ගන්නේ.</p>
+<p><strong>විසඳුම:</strong></p>
+<ul>
+<li style="padding-left: 30px;">අපි කරන්නේ අපිට Open Bracket(<strong>{[(</strong>) එකක් හම්බෙන හැම වෙලාවකම ඒක අපි Stack එකක් ඇතුලට දාගන්නවා.</li>
+<li style="padding-left: 30px;">Close Bracket එකක් හම්බුණොත් අපි Stack එකෙන් එක පාරක් POP කරලා හම්බෙන Open Bracket එක අපේ Close Bracket එකට සමානයිද කියලා Check කරනවා. සමාන වුණොත් තවත් මේ විදියට ඉස්සරහට Check කරගෙන යනවා. නැත්නම් Program එක Close කරනවා ගැලපෙන්නේ නෑ කියලා.</li>
+<li style="padding-left: 30px;">Bracket හැර හම්බෙන අනිත් හැම Character එකක්ම අපි නොසලකා හරිනවා.</li>
+</ul>
+<p>වැඩේ තේරුණේ නෑ වගේ නම් ආපහු මේ Image එක දිහා බලන්න.</p>
+<p><img class=" wp-image-542 aligncenter" src="/wp-content/uploads/2018/04/stack-data-structure-12-728-300x277.jpg" alt="stack para" width="391" height="361" srcset="/wp-content/uploads/2018/04/stack-data-structure-12-728-300x277.jpg 300w, /wp-content/uploads/2018/04/stack-data-structure-12-728.jpg 590w" sizes="(max-width: 391px) 100vw, 391px" /></p>
+<h3><strong>Implementation:</strong></h3>
+<pre>class Stack():
+    def __init__(self):
+        self.items=[]
+
+    def isEmpty(self):
+        return self.items==[]
+
+    def push(self,item):
+        self.items.append(item)
+
+    def pop(self):
+        return self.items.pop()
+
+    def peek(self):
+        return self.items[len(self.items)-1]
+
+    def size(self):
+        return len(self.items)
+
+x=str(input("Enter the Statement"))
+s1=Stack()
+
+u=0
+d=0
+for k in x:
+    if k=='[' or k=='(' or k=='{':
+        s1.push(k)
+        d+=1
+
+    elif k==']' or k==')' or k=='}':
+        a=s1.pop()
+        print(a,k)
+        if (a=='(' and k==')') or (a=='[' and k==']') or (a=='{' and k=='}'):
+            u+=1
+            
+        else:
+            print("Not a Parantheses")
+
+if u==d:
+    print("This is a Parantheses")
+</pre>
+<p>&nbsp;</p>
+<h3><strong>2. Palindrome</strong></h3>
+<p>මේ ප්‍රශ්ණෙ තමයි මුල ඉඳලා අගට කියෙවුවත් අග ඉඳලා මුලට කියෙවුවත් සමාන විදියට ශබ්ද වෙන වචන හොයන එක. උදාහරණයක් විදියට <strong>MADAM </strong>වගේ.</p>
+<p><strong>විසඳුම:</strong></p>
+<p style="padding-left: 30px;">මේ ප්‍රශ්නෙ විසඳන්න අපි කරන්නේ මේ වගේ වැඩක්. අපිට දෙන String එක Stack එකකට දාගෙන ඒකෙන් POP කරගෙන තවත් Stack එකක් හදා ගන්නවා. ඒ කියන්නේ මේකෙදි Stacks දෙකක් යොදා ගන්න වෙනවා.  ඊට පස්සේ පළවෙනි Stack එකට ආපහු අර String එක දාගෙන මේ Stack දෙකෙන් POP කර කර බලනවා හැම element එකක්ම සමාන වෙනවද කියලා. POP කරන හැම සැරේකම Elements සමාන වෙනවා කියන්නේ මේක Palindrome එකක් වෙනවා.</p>
+<p><strong>Implementation: </strong></p>
+<p>මේකෙ Implementation එක මම කරලා තියෙන්නේ Stack Class එකටමයි. එහෙම නැතුව වෙනම කරන්නත් පුළුවන් අවුලක් නැතුව.</p>
+<pre>class Stack(object):
+    def __init__(self,items):
+        self.items=[]
+        for e in items:
+            self.push(e)
+
+    def push(self,item):
+        self.items.append(item)
+
+    def pop(self):
+        return self.items.pop()
+
+    def __repr__(self):
+        return str(self.items)  
+
+    def isPalindrome(self):
+        tr=Stack([])
+        t=Stack(self.items)
+        while t.items:
+            tr.push(t.pop())
+        t=Stack(self.items)    
+        while t.items and tr.items:
+            c1=t.pop()
+            c2=tr.pop()
+            print c1,c2
+            if c1!=c2: return False
+        return True    
+</pre>
+<p><b>තවත් මේ Stack එක භාවිතා කරලා විසඳන්න පුළුවන් ප්‍රශ්ණ තියෙනවා Post Fix Expressions වගේ ගැටළු. ඒවාට පුළුවන්නම් උත්සාහ කරලා බලන්න. Code එකේ මොනවා හරි ප්‍රශ්ණයක් තිබුණොත් Comment කරන්න උදව් කරන්නම්&#8230;</b></p>
+<p><b>ඊළඟ පාඩම QUEUES.  </b></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">Stack Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/05/stack-abstract-data-type-with-implementation/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>String Matching Algorithms</title>
+		<link>/index.php/2018/03/16/string-search-part-01/</link>
+				<comments>/index.php/2018/03/16/string-search-part-01/#respond</comments>
+				<pubDate>Fri, 16 Mar 2018 16:21:57 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Algo]]></category>
+		<category><![CDATA[algorithm]]></category>
+		<category><![CDATA[boyer moore]]></category>
+		<category><![CDATA[naive]]></category>
+		<category><![CDATA[robin karp]]></category>
+		<category><![CDATA[search]]></category>
+		<category><![CDATA[String Search]]></category>
+
+		<guid isPermaLink="false">/?p=62</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> What is String Match? String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find<a class="moretag" href="/index.php/2018/03/16/string-search-part-01/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><h2><strong>What is String Match?</strong></h2>
+<p>String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find a phrase in a book you search for it one page by page. The manual efficient String Search Algorithm is  the dictionary. Dictionary has ordered every word in ascending order of the alphabet. If you want to find a word from the dictionary you can move to the exact page very fast.</p>
+<p>But Just imaging if you have a book with 1000 pages and just text paragraphs and you want to find a word. You will have to read the entire book to find what you search for. But how computer find a string so quickly from a thousands of words. I&#8217;m going to explain some algorithms works inside the computer from this set of posts. These are the algorithms:</p>
+<ol>
+<li>Naive Search Algorithms</li>
+<li>Boyer &#8211; moore Algorithm</li>
+<li>Robin &#8211; karp Algorithm</li>
+</ol>
+<p><strong>1. Naive Search Algorithm</strong></p>
+<p>Native Search algorithms is kind of idiot algorithm that use in computers to search words. I call it idiot because the run time is very high. However this is the simplest algorithm for implementation</p>
+<pre>#include &lt;stdio.h&gt;
+#include &lt;memory.h&gt;
+
+void bruteForce(char text[],char pattern[]);
+
+int main() {
+char text[]="abbcabab";
+char pattern[]="ab";
+bruteForce(text,pattern);
+}
+
+void bruteForce(char text[],char pattern[]){
+
+int maxShift= strlen(text)- strlen(pattern);
+for (int i=0;i&lt;maxShift;i++){
+int count_of_match=0;
+for (int j=0;j&lt; strlen(pattern);j++) {
+if (text[i + j] == pattern[j]) {
+count_of_match++;
+}
+}
+if (count_of_match== strlen(pattern)){
+printf("%s%d\n","pattern matched at index ",i);
+}
+}
+}
+</pre>
+<p>For this kind of search It will take <strong>O(mn)</strong> kind of complexity for find a single word. It&#8217;s heavily use the system resources because it compares character by character again and again. Therefore we have some other algorithm to make it Faster.</p>
+<p><strong> 2. Boyer Moore Algorithm</strong></p>
+<p>This is a kind of fast algorithm when comparing with naive search. Because this can shift the pattern fast and find the index where the pattern exactly positioned.</p>
+<p>You can more refer about this algorithm from here :  <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm</a></p>
+<p>In this algorithm the most considered thing is <strong>bad characteristic table</strong>.  First we go thorough all characters in the text and <strong>make and array</strong> with <strong>key as the index</strong> and the <strong>value as the index character  last occurred index of the pattern</strong>. If the selected character is <strong>not occurred in the pattern we put -1</strong> as the value . This is the <b>reprocessing </b>part of the algorithm. Once this table is generated you can search for a string with <strong>O(n) </strong>complexity.</p>
+<p>Ok let&#8217;s go for the Implementation.</p>
+<pre>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int findchar(char pat[], char letter);
+int boyer_moore(char txt[], char pat[]);
+void setTable(char text[],char pattern[]);
+int index_table[256];
+
+int main(){
+char text[] = "ratcatbatnatfat";
+char pattern[] = "cat";
+int shift= boyer_moore(text,pattern);
+if (shift!=-1){
+printf("%s%d\n","Match Found at index",shift);
+}else{
+printf("%s\n", "Not found a Match");
+}
+return 0;
+// findchar(pattern,'c');
+}
+
+int boyer_moore (char txt[], char pat[]){
+setTable(txt,pat);
+int i,j,n=strlen(txt),m=strlen(pat),lastch;
+i=m-1;
+j=m-1;
+while (i&lt;n){
+if (txt[i]==pat[j]){
+// printf("%c%s%d\n",txt[i]," i= ",i);
+if (j==0){
+//printf("%s%d\n"," ",i);
+return i;
+}else{
+j--;
+i--;
+}
+}else{
+lastch=index_table[(int)txt[i]];
+// printf("%s%c%d","Last char of ",txt[i],lastch );
+if(lastch==-1){
+i+=m;
+}else{
+i+=(j-lastch);
+}
+// printf("%s%d\n"," i= ",i);
+j=m-1;
+}
+}
+return -1;
+}
+
+int findchar(char pat[], char letter){
+int pat_size= strlen(pat)-1;
+for (int i=0; i&lt;pat_size+1; i++){
+// printf("%c%s%c\n", pat[pat_size-i]," &gt; ",letter);
+if (pat[pat_size-i]==letter){
+// printf("%s%c%d","letter ",letter,(pat_size-i));
+return (pat_size-i);
+}
+}
+return -1;
+}
+
+void setTable(char text[],char pattern[]){
+for (int i=0;i&lt;strlen(text);i++) {
+int current= findchar(pattern,text[i]);
+index_table[(int)text[i]]=current;
+}
+// for (int i=0;i&lt;256;i++){
+// printf("%d\n",index_table[i] );
+// }
+}
+</pre>
+<p>I&#8217;m not going to explain whole code. But If you don&#8217;t understand what kind of method that I have used simply just put a comment about your problem. Then I would like to move in to the rabin karp algorithm.</p>
+<p><strong>3.  Rabin Karp Algorithm</strong></p>
+<p>Rabin karp is kind of method that based on some calculation. Actually humans can&#8217;t go with this process because we are poor in calculations. But a computer can do it very fast. So in this method we use a <strong>Hashing </strong>method to compare two strings. Hash is generated by a mathematical formula. I will paste the Implementation and reference link for find more information about this algorithm.</p>
+<p>Reference : <a href="https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm">https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm</a></p>
+<pre>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+#define d 256
+
+int rabincarp_search(char pattern[], char text[], int q){
+int m = strlen(pattern);
+int n= strlen(text);
+int i,j,t=0,p=0,h=1;
+
+for (i=0; i&lt;m-1; i++){
+h=(h*d)%q;
+}
+
+for (i=0; i&lt;m ; i++){
+p=(p*d + pattern[i])%q;
+t=(t*d + text[i])%q;
+}
+
+for (i=0; i&lt;=n-m; i++){
+if (p==t){
+for (j=0; j&lt;m; j++){
+if (text[i+j]!=pattern[j]){
+break;
+}
+}
+if(j==m){
+printf("%s%d\n", "Pattern has found in index ",i);
+}
+}
+if (i&lt;n-m){
+t=(d*(t-text[i]*h) + text[i+m])%q;
+if (t &lt; 0)
+t = (t + q);
+}
+}
+return 0;
+}
+
+int main(){
+char text[]="carratcappatnat";
+char pattern[]="rat";
+int q=101;
+int shift=rabincarp_search(pattern,text,q);
+return shift;
+}
+
+</pre>
+<p>This will little weird if you don&#8217;t try it yourself. Just try and post your questions here. I will be there to help you. Thank You.</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/03/16/string-search-part-01/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

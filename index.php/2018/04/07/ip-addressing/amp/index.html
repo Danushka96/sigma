@@ -1,0 +1,596 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 5 minutes හැමෝටම ආයුබෝවන් යාලුවනේ.අද මම කතාකරන්න යන්නේ Networking වල තියෙන මූලිකම සහ වැදගත්ම කොටසක් කොටසක් වන ​IP Addressing පිළිබදවයි.මොකක්ද මේ IP Address එකක් කියන්නේ,පරිගණක ජාලයක තියෙන සැම පරිගණකයකටම යම් විශේෂ වූ ලිපිනයක් තියෙනවා.මෙන්න මේ Address එකට තමයි IP Address එකක් කියලා කියන්නේ. මුල්ම ලිපිය Read more&hellip;" />
+<meta name="twitter:title" content="IP ADDRESSING හැදෙන්නේ කොහොමද? - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/04/images-15.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="IP ADDRESSING හැදෙන්නේ කොහොමද? - The SIGMA" />
+<meta property="og:description" content="Reading Time:  5 minutes හැමෝටම ආයුබෝවන් යාලුවනේ.අද මම කතාකරන්න යන්නේ Networking වල තියෙන මූලිකම සහ වැදගත්ම කොටසක් කොටසක් වන ​IP Addressing පිළිබදවයි.මොකක්ද මේ IP Address එකක් කියන්නේ,පරිගණක ජාලයක තියෙන සැම පරිගණකයකටම යම් විශේෂ වූ ලිපිනයක් තියෙනවා.මෙන්න මේ Address එකට තමයි IP Address එකක් කියලා කියන්නේ. මුල්ම ලිපිය Read more&hellip;" />
+<meta property="og:url" content="/index.php/2018/04/07/ip-addressing/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="network" />
+<meta property="article:section" content="network" />
+<meta property="article:published_time" content="2018-04-07T07:28:23+00:00" />
+<meta property="article:modified_time" content="2018-04-07T17:38:29+00:00" />
+<meta property="og:updated_time" content="2018-04-07T17:38:29+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/04/images-12-300x168.jpg" />
+	<title>IP ADDRESSING හැදෙන්නේ කොහොමද? - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/04/07/ip-addressing/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/04\/07\/ip-addressing\/","headline":"IP ADDRESSING හැදෙන්නේ කොහොමද?","datePublished":"2018-04-07T07:28:23+00:00","dateModified":"2018-04-07T17:38:29+00:00","author":{"@type":"Person","name":"Sandun Prasanganath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/04\/images-15.jpg","width":256,"height":159}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-f6bf23d{text-decoration:underline}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-abd0e16{padding-left:30px}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">IP ADDRESSING හැදෙන්නේ කොහොමද?</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/af740a956c98425cdba82a96835bf1ac?s=24&#038;d=mm&#038;r=g" alt="Sandun Prasanganath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Sandun Prasanganath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-04-07T12:58:23+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="256" height="159" src="/wp-content/uploads/2018/04/images-15.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"><noscript><img width="256" height="159" src="/wp-content/uploads/2018/04/images-15.jpg" class="attachment-large size-large wp-post-image" alt=""></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන් යාලුවනේ.අද මම කතාකරන්න යන්නේ Networking වල තියෙන මූලිකම සහ වැදගත්ම කොටසක් කොටසක් වන ​IP Addressing පිළිබදවයි.මොකක්ද මේ IP Address එකක් කියන්නේ,<i>පරිගණක ජාලයක තියෙන සැම පරිගණකයකටම යම් විශේෂ වූ ලිපිනයක් තියෙනවා.මෙන්න මේ Address එකට තමයි IP Address එකක් කියලා කියන්නේ. මුල්ම ලිපිය බැලුවේ නැත්නම් <a href="/index.php/2018/03/31/computer-networking/">මෙතනින්</a> බලන්න.</i></p>
+<p><amp-img class="aligncenter wp-image-568 size-medium amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/images-12-300x168.jpg" alt="ip 4" width="300" height="168" layout="intrinsic"></amp-img></p>
+<p class="separator"><em>මම තවත් සරලව කියන්නම්කෝ.හිතන්නකෝ මේ ලෝකෙ තියෙන සැම නිවසකටම​ විශේෂිත වූ ලිපිනයන් තියෙනවනේ.අන්න ඒ වගේ තමයි Network එකක තියෙන සැම​​ Computers වලටම යම් විශේෂිත වූ ලිපිනයන්තියෙනවා.මෙන්න මේ ලිපිනයන් වලට තමයි IP Address කියල කියන්නේ.</em></p>
+<p> </p>
+<p class="separator">අපේ ලිපිනයක් ගත්තොත් ඒ ලිපිනය දිහා බැලුවහම අපිට කියන්න පුලුවන් ඒ ගෙදර අයිති වෙන්නේ මොන පලාතටද​ කියලා.අන්න ඒ වගේ තමයි Network එකක​ IP Address යි Subnet mask එකයි දෙක එකතු කරලා අපිට කියන්න පුලුවන් ඒ Address එක අයිති වෙන්නේ මොන Subnet works එකටද කියලා.</p>
+<p><i>(Subnet mask , Subnetworks ගැන මම පහලින් පැහැදිලි කරන්නම්):</i></p>
+<p class="separator"><strong>මෙම IP Address ප්‍රධාන කොටස් 2 කි.</strong></p>
+<ol><li class="separator">IPV4 (IP Version 4)</li>
+<li class="separator">IPV6 (IP Version 6)</li>
+</ol><p> </p>
+<h4 class="separator"><strong>1. IPV4 (IP Version 4)***</strong></h4>
+<p class="separator">IPV4  Address ක් Represent කිරීමට bit 32 ක් යොදා ගනු ලබනවා.</p>
+<p class="separator">පරිගණකය මෙම ලිපින නිරූපණය කිරීමට Binary numbers භාවිතා කලද සමාන්‍ය භාවිතයේදී අප විසින් Decimal numbers භාවිතා කරයි.</p>
+<p class="separator"><strong><em>EX: 192.124.124.0</em></strong></p>
+<p class="separator">මෙහිදී අප IP address එක ප්‍රධාන කොටස් 4 කට බෙදන අතර මෙහි එක් කොටසක් octet එකක් ලෙස හැදින්වේ.තවද මෙලෙස බෙදා දැක්වීම Dotted Decimal Notation ලෙස හැදින්වේ.</p>
+<p class="separator"><em> </em></p>
+<p class="separator"><a href="#"><amp-img class="aligncenter amp-wp-enforced-sizes" src="https://3.bp.blogspot.com/-xysXcW4-5J4/Wsec4E_SE1I/AAAAAAAAA2s/UAaRLZsPUDwW6DyFoKUSWbfNC7IifTimwCLcBGAs/s1600/images%2B%25283%2529.png" alt="ip 2" width="303" height="166" layout="intrinsic"><noscript><img class="aligncenter" src="https://3.bp.blogspot.com/-xysXcW4-5J4/Wsec4E_SE1I/AAAAAAAAA2s/UAaRLZsPUDwW6DyFoKUSWbfNC7IifTimwCLcBGAs/s1600/images%2B%25283%2529.png" alt="ip 2" width="303" height="166" border="0"></noscript></amp-img></a></p>
+<p class="separator">මේ එක Octet ගත්විට එහි bit 8 තියෙනවා.ඉතින් අපිට 0-255 දක්වා Numbers පරාසයක් එක octet එකකින් නිරූපනය කරන්න පුලුවන්.</p>
+<p class="separator"><a href="#"><amp-img class="aligncenter amp-wp-enforced-sizes" src="https://1.bp.blogspot.com/-q07DMbFXDrA/Wsed_IiA99I/AAAAAAAAA24/noRCjjSJ920_M2WCL9b9RPMonxZPvOe4ACLcBGAs/s320/download%2B%25281%2529.png" alt="ip 1" width="320" height="150" layout="intrinsic"><noscript><img class="aligncenter" src="https://1.bp.blogspot.com/-q07DMbFXDrA/Wsed_IiA99I/AAAAAAAAA24/noRCjjSJ920_M2WCL9b9RPMonxZPvOe4ACLcBGAs/s320/download%2B%25281%2529.png" alt="ip 1" width="320" height="150" border="0"></noscript></amp-img></a></p>
+<p class="separator">ඉතින් මේ IP Address එකක් ගත්තහම එහි Octet 4 ක් තියෙනවා.එක Octet එකකට bits 8 ගානෙ මුලු bits 32 ක් ඇති හින්දා  එකිනෙකට වෙනස් ලිපින දෙකේ තිස්දෙක බලයක්, ඒ කියන්නෙ ආසන්නව බිලියන 4.2 පමන තිබෙනවා.</p>
+<p class="separator"><em>නමුත් පසුකාලීනව අන්තර්ජාලය වේගයෙන් පැතිරීමත් සමග IPV4 ක්‍රමය  මගින් නිරූපණය කරන්න පුළුවන් උපරිම Device ගණනට ආසන්න අගයක් අන්තර්ජාලය හා සම්බන්ධ වෙමින් තොරතුරු හුවමාරු කරගැනීමත් සමග IPV4 ක්‍රමය අසාර්ථක වු අතර ඒ වෙනුවට IPV6 ක්‍රමය හදුන්වා දෙන ලදී.</em></p>
+<h4 class="separator"><strong>2. IPV6 (IP Version 6)***</strong></h4>
+<p class="separator">IPV4 ක්‍රමයේදී Bits 128 භාවිතා කරයි.එහිදී  2 <sup>128</sup>  ප්‍රමාණයක් IP Addresses ලැබේ.</p>
+<blockquote><p><strong>මේකෙදි මතක තියාගන්න ඕන තවත් වැදගත් කරුණක් තමයි Public IP Address එකක් ඒ කියන්නේ අන්තර්ජාල හා සම්බන්ධ වෙද්දි ලැබෙන IP Address එක අපිට හිතෙන විදියට වෙනස් කරලා අපිට ඕන Address එකක් දාගන්න බෑ. මේ IP Address අපිට දෙන්නේ ISP එහෙමත් නැත්නම් Internet Service Provider කෙනෙක් හරහා. තවත් විදියකට කිවුවොත් අපි භාවිතා කරන Telecom, Dialog, Mobitel වගේ කවුරු හරි ISP කෙනෙක් හරහා. හැබැයි Local Network නැත්නම් Metro එකකදි වගේ අපිට අවශ්‍ය IP ලිපින භාවිතා කරන්න පුළුවන්. ඒවාට කියනවා Local IP Address කියලා</strong></p></blockquote>
+<h5 class="separator"><strong>EX : </strong>2001:db8:85a3::8a2e:370:7334</h5>
+<div class="separator"></div>
+<div class="separator"> <i>මේ IPV6 එකෙත් භාවිතා කරන්නේ IPV4 එකේ මූලික කරුනුම තමයි.</i></div>
+<p> </p>
+<h3 class="amp-wp-cdd8ca0"><span class="amp-wp-f6bf23d"><strong>IP Classes**</strong></span></h3>
+<p class="separator">IP Address එකක ප්‍රධාන කොටස් දෙකක් තියෙනවා.</p>
+<ol><li class="separator"><strong>Net Id</strong></li>
+<li class="separator"><strong>.Host Id</strong></li>
+</ol><p class="separator">මේ කොටස් දෙක බෙදන ආකරය අනුව​ IP Address class 5 ක් ඇත​.</p>
+<ol><li class="separator"><strong>class A</strong></li>
+<li class="separator"><strong>class B</strong></li>
+<li class="separator"><strong>class C</strong></li>
+<li class="separator"><strong>class D</strong></li>
+<li class="separator"><strong>class E</strong></li>
+</ol><p class="separator"><a href="#"><amp-img class="aligncenter amp-wp-enforced-sizes" src="https://1.bp.blogspot.com/-vV9RijwFdj0/WselQtLpv5I/AAAAAAAAA3U/4XRk9ugRvAQ-7XVTReUqftTS_0RbieBlACLcBGAs/s320/download%2B%25283%2529.png" alt="ip mod" width="392" height="190" layout="intrinsic"><noscript><img class="aligncenter" src="https://1.bp.blogspot.com/-vV9RijwFdj0/WselQtLpv5I/AAAAAAAAA3U/4XRk9ugRvAQ-7XVTReUqftTS_0RbieBlACLcBGAs/s320/download%2B%25283%2529.png" alt="ip mod" width="392" height="190" border="0"></noscript></amp-img></a></p>
+<p>දැන් අපි මේ එක එක Class එක ගැන ටිකක් විස්තර ඇතිව කතා කරමු. ඒක කතා කරන්න කලින් පොඩි පැහැදිලි කිරීම් කිහිපයක් තියෙනවා. ඒ මේ Networking වලදි භාවිතා කරන වචන සහ ගණනය කිරීම් කිහිපයක් සම්බන්ධව.</p>
+<p class="amp-wp-abd0e16"><strong>Network Bits : </strong>අපි මුලින්ම කතා කරද්දි කිවුවා මේ IPV4 එකේදි අපි IP එකක් එකක් නිරූපණය කරන්න Bit 32ක් ගන්නවා. ඒ වගේම මේ Bit 32 ඇතුලෙ Network Bits සහ Host Bits කියලා වර්ග දෙකක් තියෙනවා. මේ Network Bits වලින් කරන්නේ IP එක ඇතුලෙ මේ Ip එක මොන Network එකට අදාල IP එකක්ද කියලා Network එක අඳුන ගන්න Bit කීයක් අරගෙන තියෙනවද කියලා.</p>
+<p class="amp-wp-abd0e16"><strong>Number of Networks : </strong>මේකෙදි කතා කරන්නේ උඩින් කියපු Network Bits ටික භාවිතා කරලා අපිට Network කීයක් හදා ගන්න පුළුවන්ද කියලා පොඩි ගණනය කිරීමක් තමයි මේකෙදි කරන්නේ. අපි හිතුවොත් Network Bits ගාන N කියලා අපිට පුළුවන් 2<sup>n</sup> ගණනක් Networks හදා ගන්න</p>
+<p class="amp-wp-abd0e16"><strong>Number of Hosts per Network : </strong>මෙයින් අදහස් කරන්නේ උඩදි අපි සැලකුව එක Network එකකට Hosts එහෙමත් නැත්නම් Computers උපරිම කීයක් Connect කරන්න පුළුවන්ද කියලා. ඒක ගණනය කර ගන්නේ මෙහෙමයි. අපි IP එකේ තියෙන්න පුළුවන් මුළු Bits ගානෙන් Network Bits ගාන අඩු කරාම අපිට ලැබෙනවා Hosts වලට Bits කීයක් යොදාගෙන තියෙනවද කියලා. ඒක දෙකේ පාදයේ බලයක් කරාම අපිට ලැබෙනවා Hosts ගාන කීයද කියලා. හැබැයි මේ ලැබෙන සම්පූර්ණ Hosts ගාණම අපිට භාවිතා කරන්න බෑ. මොකද අපිට Ip Address 2ක් වෙන් කරන්න සිද්ධ වෙනවා Network Address එකටයි Broadcast Address එකටයි. එතකොට අපිට මේ එක Network එකකට Connect කරන්න පුළුවන් සම්පූර්ණ Host ගාණ වෙන්නේ <strong>(Hosts-2) </strong>ප්‍රමාණයක්.</p>
+<p class="amp-wp-abd0e16"><strong>Default Subnet Mask: </strong>මේකෙදි කරන්නේ අපිට ලැබෙන IP Address එක Binary කරලා ඒකෙ Network Bits සියල්ල 1 කරනවා. ඊට පස්සේ ඒක Decimal සංඛ්‍යාවක් කරාම ලැබෙන අගය තමයි Default Subnet Mask එක වෙන්නේ.</p>
+<p class="amp-wp-abd0e16"><strong>First Bit/s : </strong>පහලින් අපි Classes වෙන වෙනම කතා කරනද්දී අපි IP Range එකක් ගැන. ඒකෙදි අපිට අඳුන ගන්න පුළුවන් IP එකක් දුන්නහම හරියටම මේ IP එක අයිති මොන Class එකටද කියලා. ඒක අඳුන ගන්න පුළුවන් විදියක් තමයි මේකෙන් කියවෙන්නේ.</p>
+<p><strong>හරි එහෙනම් අපි එකින් එක Classes අරගෙන බලමු ඒවගෙ තියෙන විශේෂ ලක්ෂණ මොනවද කියලා.</strong></p>
+<hr><h3><strong>CLASS A</strong></h3>
+<p>Class A IP එකක් අඳුන ගන්න තියෙන ලේසිම විදිය තමයි Range එක ගැන සැලකිලිමත් වෙන එක. පළවෙනි Octet එකේ තියෙන සංඛ්‍යාව <strong>0-126 </strong>අතර නම් මේක Class A IP Address එකක්.</p>
+<p class="amp-wp-abd0e16"><strong>Network Bits: (2<sup>7</sup>)</strong></p>
+<p class="amp-wp-abd0e16"><strong>Number of Networks: 126</strong></p>
+<p class="amp-wp-abd0e16"><strong>Number of Hosts: (2<sup>24</sup>-2) = 16777214</strong></p>
+<p class="amp-wp-abd0e16"><strong>Default Subnet Mask: 255.0.0.0</strong></p>
+<p class="amp-wp-abd0e16"><strong>First Bits:</strong> <strong>0</strong></p>
+<p>අපි දැන් බලමු මේ Calculations ටික කරගත්තේ කොහොමද කියලා. මුලින්ම මම සඳහන් කරා මේකෙ Range එක යන්නේ 0-126 අතර කියලා. උදාහරණයක් විදියට මේ වගේ IP Address කිහිපයක්..</p>
+<p class="amp-wp-abd0e16"><strong>45.25.64.25</strong></p>
+<p class="amp-wp-abd0e16"><strong>78.56.25.35</strong></p>
+<p>මේ උදාහරණ වලින් පේනවා ඇති මුල්ම සංඛ්‍යාව තියෙන්නේ 0-126 අතර කියලා. ඒ කියන්නේ මේ වගේ IP Address එකක Network Bits වලට 7 ක් භාවිතා කරලා තියෙනවා. මොකද අපිට එකිනෙකට වෙනස් වර්ග 126 වෙන වෙනම නිරූපණය කරන්න ඕන නම් අවමය Bit 7 ක් ඕන වෙනවා. ඊට පස්සේ මම Host Bits කීයද කියලා හොයා ගත්තේ 32 – Network Bits විදියට. එතනින් පස්සේ සාමාන්‍ය Calculations Set එකක්නෙ තියෙන්නේ. Subnet Mask එක මම හොයා ගත්තේ මුල්ම Octate එක සම්පූර්ණයෙන් Binary 1 කරලා.</p>
+<p><strong>මේකෙ Format එක මේ වගේ එකක්..</strong></p>
+<h4 class="amp-wp-cdd8ca0"><strong>0NNNNNNN.HHHHHHHH.HHHHHHHH.HHHHHHHH</strong></h4>
+<hr><h3><strong>CLASS B</strong></h3>
+<p>මේ Class එකේදි IP Range එක යන්නේ <strong>128-191</strong> අතර.</p>
+<p>මේකෙදි හොඳට බැලුවොත් පෙනෙන දෙයක් තමයි 127 කියන් අංකය කිසිම Class එකකට අයිති වෙලා නෑ. මොකද 127 න් පටන් ගන්න IP කියන්නේ LOOP BACK IP ADDRESS කියලා. උදාහරණයක් විදියට Localhost කියන්නේ 127.0.0.1 කියන IP Address එක.</p>
+<p class="amp-wp-abd0e16"><strong>Network Bits: (2<sup>14</sup>)</strong></p>
+<p class="amp-wp-abd0e16"><strong>Number of Networks: 16384</strong></p>
+<p class="amp-wp-abd0e16"><strong>Number of Hosts: (2<sup>16</sup>-2) = 65534</strong></p>
+<p class="amp-wp-abd0e16"><strong>Default Subnet Mask: 255.255.0.0</strong></p>
+<p class="amp-wp-abd0e16"><strong>First Bits:</strong> <b>10</b></p>
+<p> </p>
+<p><strong>මේකෙ Format එක මේ වගේ එකක්..</strong></p>
+<h4 class="amp-wp-cdd8ca0"><strong>10NNNNNN.NNNNNNNN.HHHHHHHH.HHHHHHHH</strong></h4>
+<hr><h3><strong>CLASS C</strong></h3>
+<p>මේ Class එකේදි IP Range එක යන්නේ <strong>192-223</strong> අතර.</p>
+<p class="amp-wp-abd0e16"><strong>Network Bits: (2<sup>21</sup>)</strong></p>
+<p class="amp-wp-abd0e16"><strong>Number of Networks: 2097152</strong></p>
+<p class="amp-wp-abd0e16"><strong>Number of Hosts: (2<sup>8</sup>-2) = 254</strong></p>
+<p class="amp-wp-abd0e16"><strong>Default Subnet Mask: 255.255.255.0</strong></p>
+<p class="amp-wp-abd0e16"><strong>First Bits:</strong> <strong>1</strong><b>10</b></p>
+<p> </p>
+<p><strong>මේකෙ Format එක මේ වගේ එකක්..</strong></p>
+<h4 class="amp-wp-cdd8ca0"><strong>110NNNNN.NNNNNNNN.NNNNNNNN.HHHHHHHH</strong></h4>
+<hr><p><strong><i>class D වර්ගයේ IP Address Multicasting සඳහාත් Class E වර්ගයේ IP Address Experiment සහ Research සඳහාත් යොදාගනු ලබන අතර ඒවා සම්බන්ධව මෙම ලිපියේදී සාකච්ඡා නොකෙරේ.</i></strong></p>
+<h2 class="amp-wp-cdd8ca0"><strong>Subnet Mask**</strong></h2>
+<p> </p>
+<p class="separator"><a href="https://2.bp.blogspot.com/-rUfpsOXe9YM/Wser5EjSUZI/AAAAAAAAA30/dhRiIqgcaZUuw0iTX7CQKJADhlMQg3mPACLcBGAs/s1600/images%2B%25284%2529.png"><amp-img class="aligncenter amp-wp-enforced-sizes" src="https://2.bp.blogspot.com/-rUfpsOXe9YM/Wser5EjSUZI/AAAAAAAAA30/dhRiIqgcaZUuw0iTX7CQKJADhlMQg3mPACLcBGAs/s320/images%2B%25284%2529.png" alt="ip cheat" width="429" height="189" layout="intrinsic"><noscript><img class="aligncenter" src="https://2.bp.blogspot.com/-rUfpsOXe9YM/Wser5EjSUZI/AAAAAAAAA30/dhRiIqgcaZUuw0iTX7CQKJADhlMQg3mPACLcBGAs/s320/images%2B%25284%2529.png" alt="ip cheat" width="429" height="189" border="0"></noscript></amp-img></a></p>
+<p> </p>
+<p>යම් IP ලිපිනයක Network Bits සියල්ලෙහි අගය 1 කල විට ලැබෙන ලිපිනය Subnet Mask නම් වේ.</p>
+<p>EX-:11111111.11111111.00000000.00000000</p>
+<p> </p>
+<p class="separator"><em>ඉතින් මේ Subnet mask එක බලාගන්න ඕනිනම් ඔයාලා පවිච්චි කරන්නේ Windows මෙහෙයුම් පද්ධතියක් නම් ipconfig type කරන්න​.Linux මෙහෙයුම් පද්ධතියක් නම් ifconfig typeකරන්න​.</em></p>
+<p> </p>
+<h2><strong>Subnet Works**</strong></h2>
+<p> </p>
+<p>මොකක්ද මේ Subnet Works කියලා කියන්නේ,මම ඒක උදාහරණයකින්ම පැහැදිලි කරන්නම්.<br>
+දැන් කාර්‍යලයක ඇති පරිගණක හිතන්නකෝ.ඒ පරිගණක සියල්ලම එක​ Network එකකට සම්බන්ධ වෙලා තිබුනට අපට අවශය විට එම Network එක කුඩා කොටස් වලට කැඩීමට සිදුවෙනවා.මෙන්න මේක තමයි Subnet Work කියලා කියන්නේ.</p>
+<p> </p>
+<p><amp-img class="aligncenter wp-image-582 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/download-16.jpg" alt="ip network" width="325" height="264" layout="intrinsic"></amp-img></p>
+<p> </p>
+<p>EX-: කාර්‍යලයේ ඇති පරිගනණක HR Department එකට කොටසකුත් IT Department    කොටසකුත් Finance Department කොටසකුත් වශයෙන් වෙන් කිරීම​.</p>
+<p> </p>
+<p><em>ඉතින් මෙම ලිපියෙන් IP Addressing සම්බන්ධ මූලික කරුණු කීපයක් පැහැදිලි කල අතර මගේ ඊලග post එකෙන් IP addressing,subnet mask සම්බන්ධ ගණනය කිරීම් කීපයක් කිරීමට බලපොරොත්තු වෙනවා.</em></p>
+<p> </p>
+<p>ස්තූතියි:</p>
+<p> </p>
+<p> </p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/network/" rel="category tag">network</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/network/" rel="tag">network</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/04/07/ip-addressing/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

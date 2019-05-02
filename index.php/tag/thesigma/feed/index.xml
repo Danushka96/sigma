@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>thesigma &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/thesigma/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Machine Learning වලට අත්පොත් තබමු.</title>
+		<link>/index.php/2019/02/12/machinelearningbeginning/</link>
+				<comments>/index.php/2019/02/12/machinelearningbeginning/#comments</comments>
+				<pubDate>Tue, 12 Feb 2019 11:34:13 +0000</pubDate>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+				<category><![CDATA[Machine Learning]]></category>
+		<category><![CDATA[anaconda]]></category>
+		<category><![CDATA[hasee]]></category>
+		<category><![CDATA[hasee amarathunga]]></category>
+		<category><![CDATA[keras]]></category>
+		<category><![CDATA[machine learning]]></category>
+		<category><![CDATA[TenserFlow]]></category>
+		<category><![CDATA[thesigma]]></category>
+
+		<guid isPermaLink="false">/?p=1844</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හොදයි කොහොමද යාලුවනේ ඔන්න මම අද තුන්වෙනි දිගහැරුම අරගෙන ආවා Machine Learning ගැන ලියපු. මීට කලින් ලියපු ලිපි වලින් මම උත්සාහ කළේ Machine Learning කියන්නෙ මොකක්ද මොන වගේ තාක්ෂණයන්ද ඒකේ  අඩංගු වගේම මොන ක්ෂේත්‍ර වලද භාවිතා වෙන්නෙ කියලා උදාහරණ කිහිපයක් එක්කම මං කතා කළා ඔයාලට මතක ඇති. කලින් ලිපි කියවන්න<a class="moretag" href="/index.php/2019/02/12/machinelearningbeginning/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/12/machinelearningbeginning/">Machine Learning වලට අත්පොත් තබමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>හොදයි කොහොමද යාලුවනේ ඔන්න මම අද තුන්වෙනි දිගහැරුම අරගෙන ආවා Machine Learning ගැන ලියපු. මීට කලින් ලියපු ලිපි වලින් මම උත්සාහ කළේ Machine Learning කියන්නෙ මොකක්ද මොන වගේ තාක්ෂණයන්ද ඒකේ  අඩංගු වගේම මොන ක්ෂේත්‍ර වලද භාවිතා වෙන්නෙ කියලා උදාහරණ කිහිපයක් එක්කම මං කතා කළා ඔයාලට මතක ඇති. කලින් ලිපි කියවන්න බැරි වුණ කෙනෙක් ඉන්නවා නම් <strong><a href="/index.php/2019/02/09/machinelearningarticle2/">මෙතනින් </a></strong>ගිහින් කියවන්න පුලුවන්.</p>
+
+
+
+<p>ඔන්න අද මං යන්නෙ Machine Learning කරන්න ඕන කරන Software ,
+Libraries කොහ‍ාමද අපේ Computer එකට Install කරගන්නෙ&nbsp; වගේම කොහොමද මේ Software වලට අදාල Path Environment setup කරගන්නෙ කියලා. ඉතින්
+බැලූ බැල්මට ඔයාල බලනවා ඇති මේක කියාදෙන්නත් දෙයක්ද කියලා. ඒත් මේක ටිකක් අමාරු
+වැඩක් මොකද Machine Learning කරන්න ගොඩක් Software වගේම Libraries
+install කර ගන්න ඕනේ
+අපේ Computer එකට.</p>
+
+
+
+<p>මම මේ ලිපි මාලාවේ Machine Learning &nbsp;කරන්න යන්නෙ <strong>Python 3.6</strong> පාවිච්චි කරලා. ඒ නිසා මුලින්ම Python install කරලා නැති කෙනෙක් ඉන්නවා නම් ඉක්මනට install කරගන්න latest version එකක් 3.6 , 3.7 වගේ &nbsp;<a href="https://www.python.org/downloads/"><strong>මෙතනින් </strong></a>ගිහින්.</p>
+
+
+
+<p>&nbsp;Machine Learning කරද්දි මම Python IDE එක විදියට පාවිච්චි කරන්නෙ JetBrains ලගේ <strong>PyCharm </strong>කියන Python IDE. මොකද Python වලට තියෙන හොදම IDE එකක් තමා මේක. ඔයාලට පුලුවන් මේ IDE එක <strong><a href="https://www.jetbrains.com/pycharm-edu/download">මෙතනින් </a></strong>ගිහින් Download කරගන්න.</p>
+
+
+
+<p>( <a href="https://www.jetbrains.com/pycharm-edu/download">https://www.jetbrains.com/pycharm-edu/download</a>)</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/pycharm-1024x469.jpg" alt="" class="wp-image-1845" srcset="/wp-content/uploads/2019/02/pycharm-1024x469.jpg 1024w, /wp-content/uploads/2019/02/pycharm-300x137.jpg 300w, /wp-content/uploads/2019/02/pycharm-768x352.jpg 768w, /wp-content/uploads/2019/02/pycharm.jpg 1365w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>දැන් තියෙන්නෙ Machine Learning කරන්න ඕන කරන TensorFlow කියන library &nbsp;එක වගේම <strong>TensorFlow </strong>මත Run කරන <strong>Keras&nbsp; </strong>කියන open source neural network library එක install කරන එක. </p>
+
+
+
+<p>TensorFlow ගැන කීවොත් මේකත් Open Source symbolic math library එකක්. ඒවගේම <strong>Neural Network</strong> වලටත් පාවිච්චි වෙනවා මේක. TensorFlow ගැන වැඩි විස්තර ඕනෙනම් ඔයාලට පුලුවන් මෙතනින් <strong><a href="https://www.tensorflow.org/">TensorFlow </a></strong>web site එකට ගිහින් දැනගන්න. </p>
+
+
+
+<p>( <a href="https://www.tensorflow.org/">https://www.tensorflow.org/</a> )</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/tensorflow-1024x483.jpg" alt="" class="wp-image-1846" srcset="/wp-content/uploads/2019/02/tensorflow-1024x483.jpg 1024w, /wp-content/uploads/2019/02/tensorflow-300x141.jpg 300w, /wp-content/uploads/2019/02/tensorflow-768x362.jpg 768w, /wp-content/uploads/2019/02/tensorflow.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; හැබැයි Web site එකට ගියාට නම් ඔයාලට මේක install කරන්න setup එකක් හම්බවෙන්නෙ නෑ මොකද මේක Special library එකක්. මේ වගේ Machine Learning වලට භාවිතා කරන libraries install කරන්න විශේෂ softwares තියෙනවා. ඉතින් <strong>Anaconda </strong>කියන්නෙ එහෙම Python libraries install කරන්න පුලුවන් software එකක්. අපිට පුලුවන් Anaconda install කළාට පස්සේ Anaconda Terminal එකෙන් ඕනේ library එකක් install කරගන්න. එහෙනම් Anaconda download කරගමු මුලින්ම <a href="http:// https://www.anaconda.com/distribution"><strong>මෙතනින් </strong></a>ගිහින්. </p>
+
+
+
+<p>මේක download කරද්දි මතක තියාගන්න ඔයාලගේ Python version එකට ගැලපෙන විදියට මේක download කරගන්න. Python latest version තියෙන නිසා මම Python 3.7 Version 64-Bit Graphical Installer එක තමා install ක‍ළේ මගෙ Windows Computer එකේ. Linux , Mac තිබ්බත් වෙනසක් නෑ. තෝරගන්න පුලුවන් OS එකට අදාල setup එක</p>
+
+
+
+<p>( <a href="https://www.anaconda.com/distribution">https://www.anaconda.com/distribution</a> )</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/anaconda-1024x484.jpg" alt="" class="wp-image-1847" srcset="/wp-content/uploads/2019/02/anaconda-1024x484.jpg 1024w, /wp-content/uploads/2019/02/anaconda-300x142.jpg 300w, /wp-content/uploads/2019/02/anaconda-768x363.jpg 768w, /wp-content/uploads/2019/02/anaconda.jpg 1364w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;හොදයි මේක සාමාන්‍ය Software එකක් install කරන විදියටම ඔයාලට පුලුවන් install කරගන්න. මේකේ Advanced installation step එකේදී Add anaconda to my PATH environment variable කියන එකත් tick කරන්න. එතකොට ඔයාගේ <strong>Environment PATH</strong> එක Automatically setup වෙනවා.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/install-win-path.png" alt="" class="wp-image-1848" srcset="/wp-content/uploads/2019/02/install-win-path.png 814w, /wp-content/uploads/2019/02/install-win-path-300x232.png 300w, /wp-content/uploads/2019/02/install-win-path-768x593.png 768w" sizes="(max-width: 814px) 100vw, 814px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anaconda install වෙන්න මිනිත්තු 10 ක් වගේ යයි සාමාන්‍යයෙන්. ඒක install කළාට පස්සෙ ඔයාට පුලුවන් හරියට install වෙලාද බලන්න. ඔයාග‍ෙ Terminal එකේ හරි Command prompt එකේ හරි <strong>conda </strong>කියලා Type කරලා බලන්න. එතකොට මේ වගේ details පෙන්නාවි හරියට install වෙලානම්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/condaa.png" alt="" class="wp-image-1849" srcset="/wp-content/uploads/2019/02/condaa.png 903w, /wp-content/uploads/2019/02/condaa-300x230.png 300w, /wp-content/uploads/2019/02/condaa-768x589.png 768w" sizes="(max-width: 903px) 100vw, 903px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; දැන් ඔන්න අපිට
+තියෙන්නෙ ඕන කරන libraries ටික install කරගන්න. ඒකට අපිට මේ conda terminal එක use කරන්න පුලුවන්. </p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මුලින්ම අපිට ඕනෙ කරන libraries වලට අදාලව Environment එකක් අපි හදාගන්න ඕනේ. ඒකට මුලින්ම “conda create -n <strong>tfp3.6</strong> python=3.6” කියන Command එක use කරනවා.මොකද 3.7 Machine Learning කරන්න තරම් stable version එකක් නෙමේ. මේකේ tfp3.6 කියන්නෙ මම හදන Environment එකේ නම. ඒකට ඔයාලට කැමති නමක් දාගන්න පුලුවන්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/01-1.png" alt="" class="wp-image-1855" srcset="/wp-content/uploads/2019/02/01-1.png 802w, /wp-content/uploads/2019/02/01-1-300x43.png 300w, /wp-content/uploads/2019/02/01-1-768x111.png 768w" sizes="(max-width: 802px) 100vw, 802px" /></figure>
+
+
+
+<p>මේකෙන්  tfp3.6 කියලා environment එකක් හැදෙනවා ඔයාගෙ anaconda install වුණ PATH එකේ <strong>envs </strong>කියන folder එකේ. ඒ කියන්නෙ දැනට environment දෙකක් තියේ එකක් මුලින් install වෙද්දි හැදුව base PATH එකයි දැන් හදපු  tfp3.6 path එකයි. ඒ වගේම මේකෙදි TensorFlow Python වලට Install කරන්න ඕන කරන අමතර libraries ටිකකුත් install වෙනවා <strong>pip </strong>වගේ.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/001.png" alt="" class="wp-image-1851" srcset="/wp-content/uploads/2019/02/001.png 369w, /wp-content/uploads/2019/02/001-300x128.png 300w" sizes="(max-width: 369px) 100vw, 369px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; හොදයි මෙහෙම environment එක හැදුවට විතරක් මදි අපි ඒක activate කරන්නත් ඕනේ. ඉතින් අපිට පුලුවන් “ activate  tfp3.6 ” කියන command එකෙන් tfp3.6 environment එක activate කරන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/2-3.jpg" alt="" class="wp-image-1854" srcset="/wp-content/uploads/2019/02/2-3.jpg 808w, /wp-content/uploads/2019/02/2-3-300x32.jpg 300w, /wp-content/uploads/2019/02/2-3-768x81.jpg 768w" sizes="(max-width: 808px) 100vw, 808px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; එතකොට මේ වගේ (tfp3.6) කියලා හැම පේළියකම මුලින් පෙන්නාවි command prompt එකේ. දැන් අපිට පුලුවන් pip library එක use කරලා TensorFlow , Keras කියන libraries install කරගන්න පහළ තියෙන command දෙකෙන්.</p>
+
+
+
+<ul><li>pip install tensorflow</li><li>pip install keras</li></ul>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/3-1024x463.jpg" alt="" class="wp-image-1853" srcset="/wp-content/uploads/2019/02/3-1024x463.jpg 1024w, /wp-content/uploads/2019/02/3-300x136.jpg 300w, /wp-content/uploads/2019/02/3-768x347.jpg 768w, /wp-content/uploads/2019/02/3.jpg 1352w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ඉතින් මේ දෙකම install වුණාම ඔන්න conda use කරලා කරපු වැඩ ටික
+ඉවරයි. දැන් තියෙන්නෙ අපේ PyCharm Python IDE එකට ගිහින් අපේ libraries වැඩද බලන්න.</p>
+
+
+
+<p>         PyCharm IDE එක Open කළාම Create New Project click කරලා ඔයාට workplace එකක් create කරගන්න.</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/PyCharm1.png" alt="" class="wp-image-1856" width="553" height="343" srcset="/wp-content/uploads/2019/02/PyCharm1.png 777w, /wp-content/uploads/2019/02/PyCharm1-300x186.png 300w, /wp-content/uploads/2019/02/PyCharm1-768x477.png 768w" sizes="(max-width: 553px) 100vw, 553px" /><figcaption><br></figcaption></figure>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/PyCharm2.png" alt="" class="wp-image-1857" width="556" height="344" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; දැන් ඔයාලට පුලුවන් workplace එකේ ඔයාගේ folder එක Right Click කරලා new python file එකක් හදාගන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/createfile-1024x155.png" alt="" class="wp-image-1858" srcset="/wp-content/uploads/2019/02/createfile-1024x155.png 1024w, /wp-content/uploads/2019/02/createfile-300x45.png 300w, /wp-content/uploads/2019/02/createfile-768x116.png 768w, /wp-content/uploads/2019/02/createfile.png 1363w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මම මේ sample.py කියන file එකේ import tensorflow කියලා type කළොත් TensorFlow import වෙන්න ඕනේ. ඒත් ඔයාලට බලාගන්න පුලුවන් වෙයි error එකක්. </p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/2.png" alt="" class="wp-image-1859" srcset="/wp-content/uploads/2019/02/2.png 879w, /wp-content/uploads/2019/02/2-300x59.png 300w, /wp-content/uploads/2019/02/2-768x151.png 768w" sizes="(max-width: 879px) 100vw, 879px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/22.png" alt="" class="wp-image-1860" srcset="/wp-content/uploads/2019/02/22.png 590w, /wp-content/uploads/2019/02/22-300x79.png 300w" sizes="(max-width: 590px) 100vw, 590px" /></figure>
+
+
+
+<p>       මොකද අපි TensorFlow install කළේ  tfp3.6 කියලා environment එකක් හදලා. ඒ නිසා අපේ Python Interpreter ඒ environment එකේ තියෙන්න ඕන. අපිට ඒ Interpreter Add කරගන්න පුලුවන් IDE එකේ settings වලට ගිහින්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/3.png" alt="" class="wp-image-1862" srcset="/wp-content/uploads/2019/02/3.png 1008w, /wp-content/uploads/2019/02/3-300x122.png 300w, /wp-content/uploads/2019/02/3-768x313.png 768w" sizes="(max-width: 1008px) 100vw, 1008px" /></figure>
+
+
+
+<p>Settings වල Project කියලා මම උඩින් පෙන්නලා තියෙන පින්තූරෙ Project Interpreter කියන තැනට ගියාට පස්සෙ අපිට බලාගන්න පුලුවන් Interpreter මොකක්ද කියලා. මේකේ විදියට නම් මේ Interpreter අපි හදපු  tfp3.6  environment එකට අදාල Interpreter නෙමේ. ඒ නිසා මට පුලුවන් එයාව Add කරගන්න දකුණු පැත්තෙ තියෙන settings එක ඔබලා Add කියන button එකෙන්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/4.png" alt="" class="wp-image-1863" srcset="/wp-content/uploads/2019/02/4.png 790w, /wp-content/uploads/2019/02/4-300x77.png 300w, /wp-content/uploads/2019/02/4-768x198.png 768w" sizes="(max-width: 790px) 100vw, 790px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/5-1.png" alt="" class="wp-image-1864" srcset="/wp-content/uploads/2019/02/5-1.png 830w, /wp-content/uploads/2019/02/5-1-300x99.png 300w, /wp-content/uploads/2019/02/5-1-768x254.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මෙතනින් Conda Environment තෝරලා Existing environment එක tick කරලා ඔයාගේ tfp3.6 Environment PATH එක Add කරගන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/6.png" alt="" class="wp-image-1865" srcset="/wp-content/uploads/2019/02/6.png 817w, /wp-content/uploads/2019/02/6-300x198.png 300w, /wp-content/uploads/2019/02/6-768x507.png 768w" sizes="(max-width: 817px) 100vw, 817px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; එහෙම Add කරගත්තට පස්සෙ පුලුවන් ඔයාලා Add කර ගත්ත Interpreter Select කරලා Ok කරන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/7.png" alt="" class="wp-image-1866" srcset="/wp-content/uploads/2019/02/7.png 1010w, /wp-content/uploads/2019/02/7-300x208.png 300w, /wp-content/uploads/2019/02/7-768x533.png 768w" sizes="(max-width: 1010px) 100vw, 1010px" /></figure>
+
+
+
+<p>දැන් ඔයාලට පුලුවන් &nbsp;TensorFlow , Keras&nbsp;&nbsp;import කරලා බලන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/final-1024x423.jpg" alt="" class="wp-image-1867" srcset="/wp-content/uploads/2019/02/final-1024x423.jpg 1024w, /wp-content/uploads/2019/02/final-300x124.jpg 300w, /wp-content/uploads/2019/02/final-768x317.jpg 768w, /wp-content/uploads/2019/02/final.jpg 1305w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; දැන් කිසිම Error එකක් නැතුව program එක Run වෙනවා ඔයාලට බලාගන්න පුලුවන්. එහෙම මොනා හරි Errors එනවා නම් පහළින් <strong>Comment </strong>එකක් දාන්න. මොකද TensorFlow , keras &nbsp;Run වෙන්න තවත් බොහෝ libraries තියෙනවා. සමහර විට ඔයාලගේ Environment එකේ ඒක නැතිවෙන්න පුලුවන් numpy , scipy වගේ libraries.</p>
+
+
+
+<p>ඉතින් යාලුවනේ මම ඔන්න අද Machine Learning වලට අත්පොත් තිබ්බා. ඒ කියන්නෙ TenserFlow , Keras වගේ libraries install කරගත්තා. බැලූ බැල්මට ලේසි වගේ පේන්න ඇති. ඒත් ඔයාලට තේරෙයි install කරන්න කොච්චර ගේමක් දෙන්න ඕනෙද කියලා මේ libraries. Install කරලම බලන්නකො. එහෙනම් ඊළග දවසෙ ඉදන් පටන් ගමු Machine Learning කරන්න. Install කරද්දි මොනා හරි ප්‍රශ්නයක් වුනොත් <strong>comment </strong>එකක් දාන්න පහළින්. ගිහින් එන්නම්. ස්තූතියි හැමෝටම.</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/12/machinelearningbeginning/">Machine Learning වලට අත්පොත් තබමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/12/machinelearningbeginning/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+							</item>
+	</channel>
+</rss>

@@ -1,0 +1,676 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 4 minutes ආයුබෝවන් ! oop පාඩම් මාලාවේ 11 වන දිගහැරුමත් සමග එකතු වෙන යාලුවෝ හැමෝම සාදරයෙන් පිලිගන්නවා&#8230;the sigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් මේ වෙනකොටත් object orianted programming ගැන ගොඩක් දේවල් ඉගෙනගෙන හමාරයි.ඔයා the Read more&hellip;" />
+<meta name="twitter:title" content="Abstract Class - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/04/main-qimg-50b327ed7acf3bdb6191de0f36050671.png" />
+<meta name="twitter:creator" content="@gayan_hasi" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Abstract Class - The SIGMA" />
+<meta property="og:description" content="Reading Time:  4 minutes ආයුබෝවන් ! oop පාඩම් මාලාවේ 11 වන දිගහැරුමත් සමග එකතු වෙන යාලුවෝ හැමෝම සාදරයෙන් පිලිගන්නවා&#8230;the sigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් මේ වෙනකොටත් object orianted programming ගැන ගොඩක් දේවල් ඉගෙනගෙන හමාරයි.ඔයා the Read more&hellip;" />
+<meta property="og:url" content="/index.php/2018/04/12/abstract-class/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:author" content="https://www.facebook.com/gayansampath.manamendra" />
+<meta property="article:tag" content="abstract class" />
+<meta property="article:tag" content="inheritance" />
+<meta property="article:tag" content="overriding" />
+<meta property="article:tag" content="super keyword" />
+<meta property="article:tag" content="this keyword" />
+<meta property="article:section" content="OOP" />
+<meta property="article:published_time" content="2018-04-12T04:49:04+00:00" />
+<meta property="article:modified_time" content="2018-04-13T04:47:53+00:00" />
+<meta property="og:updated_time" content="2018-04-13T04:47:53+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/03/oop-300x172.png" />
+	<title>Abstract Class - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/04/12/abstract-class/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/04\/12\/abstract-class\/","headline":"Abstract Class","datePublished":"2018-04-12T04:49:04+00:00","dateModified":"2018-04-13T04:47:53+00:00","author":{"@type":"Person","name":"Gayan Sampath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/04\/main-qimg-50b327ed7acf3bdb6191de0f36050671.png","width":602,"height":189}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Abstract Class</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/8bd94eb26945a11011aaca56459c02fd?s=24&#038;d=mm&#038;r=g" alt="Gayan Sampath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Gayan Sampath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-04-12T10:19:04+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="602" height="189" src="/wp-content/uploads/2018/04/main-qimg-50b327ed7acf3bdb6191de0f36050671.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/04/main-qimg-50b327ed7acf3bdb6191de0f36050671.png 602w, /wp-content/uploads/2018/04/main-qimg-50b327ed7acf3bdb6191de0f36050671-300x94.png 300w" layout="intrinsic"><noscript><img width="602" height="189" src="/wp-content/uploads/2018/04/main-qimg-50b327ed7acf3bdb6191de0f36050671.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 602px) 100vw, 602px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p><amp-img class="alignnone size-medium wp-image-112 amp-wp-enforced-sizes" src="/wp-content/uploads/2018/03/oop-300x172.png" alt="" width="300" height="172" srcset="/wp-content/uploads/2018/03/oop-300x172.png 300w, /wp-content/uploads/2018/03/oop.png 500w" layout="intrinsic"></amp-img></p>
+<p>ආයුබෝවන් ! oop පාඩම් මාලාවේ 11 වන දිගහැරුමත් සමග එකතු වෙන යාලුවෝ හැමෝම සාදරයෙන් පිලිගන්නවා…the sigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් මේ වෙනකොටත් object orianted programming ගැන ගොඩක් දේවල් ඉගෙනගෙන හමාරයි.ඔයා the sigma blog අඩවියට අලුත් සාමාජිකයෙක් නම් හරි , oop අව්ල් කෙනෙක් නම් හරි අපේ මුල් පාඩම් ටික <a href="/index.php/category/oop/">මෙතනින්</a> ගිහින් බලන්න අමතක කරන්නත් එපා හොදේ. හරි එහෙනන් පටාන් ගමු අද පාඩම…අද පාඩම තමයි abstract class …. abstract class ගැන කතා කරන්න ඉස්සරින් කලින් පාඩම පොඩ්ඩක් මතක් කරන්නම්…කලින් පාඩමේදී අපි කතා කලා. encapsulation ගැන…මොකද්ද අපි encapsulation කියලා කිව්වේ… class එකක තියන data protect කරන එක එහෙමත් නැත්නම් data ආරක්ෂා කරන එකට අපි කිව්වා encapsulation කියලා…. අපේ encapsulation පාඩම මතක නැතිනම් <a href="/index.php/2018/04/11/encapsulation/">මෙතනින්</a> ගිහින් ඉක්මනට බලනකෝ…එතකොට සුපිරියටම මතක් වෙයි.</p>
+<p>හරි එහෙනම් අපි දැන් බලමු අද පාඩම ගැන..අද පාඩම තමයි abstract class .<br>
+abstract class එකක් ගැන කියන්න ඉස්සරින් මං කියන්නම් abstract method එකක් කියන්නේ මොකක්ද කියලා…ඇත්තටම abstract කියන වචනයෙන්ම කියවෙනවා නේද “මොකුත් නෑ/හිස්” වගේ අදහසක්…ඒකම තමයි මේ class වලත් විශේෂත්වය…හැබැයි පොඩ්ඩක් වෙනස්…ඇත්තටම abstract method එකක් කියන්නෙ body එකක් නැති  එහෙමත් නැත්නම් meaningless body එකක් තියන method එකකට…abstract method එකක් define කරන්නේ method එක ඉදිරියෙන් abstract කියන වචනය දාලා…හරියට නිකන් මෙන්න මේ වගේ…</p>
+<pre>class Person {
+
+     abstract void Jump(){
+
+     }
+
+}
+</pre>
+<p>ඔන්න ඔය විදියට තමයි abstract method එකක් define කරන්නේ…class එකක් ඇතුලේ ඔය වගේ abstract method එකක් හරි ඊට වැඩි ගානක් හරි තිබ්බොත් අන්න ඒ class එකත් abstract class එකක් වෙනවා… හරි එහෙනම් Person class එක ඇතුලෙ තියනවා නේද jump කියලා abstract method එකක් එහෙනම් අපේ Person class එකත් abstract වෙන්න ඕනි නේද…</p>
+<pre>abstract class Person {
+
+         abstract void Jump(){
+
+      }
+
+}
+</pre>
+<p>ඔන්න ඔය වගේ class වලට තමයි abstract class එකක් කියන්නේ…abstract class මොකටද ගන්නේ කියලා අපි පසුව බලමු…දැනට මතක තියාගන්නකෝ abstract class එකක් කියන්නේ ඕන්න ඕකකට කියලා ☺☺..</p>
+<p>මේ abstract class ගත්තොත් විශේෂතා ගොඩක් තියනවා….abstract method එකකනම් ඒකේ body එකේ මොකුත් තියා ගන්න බෑ …නමුත් abstract class එකක් ගත්තොත් ඒකේ abstract methods තියෙන්නත් පුලුවන් abstract නොවන methods තියෙන්නත් පුලුවන්…ඔන්න ඕක එක විශේෂත්වයක් abstract class වල තියෙන…තවත් දෙයක් තමයි මේ abstract class වලට objects හදන්න බෑ….object හදන්න බැහැ කියන්නේ constructor එකකුත් නැහැ..ඔන්න ඕක තවත් විශේෂත්වයක්…පොඩ්ඩක් මේ උදාහරණය දිහා බලන්නකෝ…</p>
+<pre>abstract class Person{
+
+       abstract void jump();
+
+       void run(){
+
+       system.out.println(" i can run fast !");
+
+       }
+
+}
+
+class Student extends Person{
+
+       void study(){
+
+       system.out.println("i am studding !");
+
+       }
+
+}
+</pre>
+<p>හරි එහෙනම් ඔය class දෙක දිහා හොදට බලන්නකෝ…Person class එකෙන් Student class එක inherit වෙලා තියනවා .. එහෙනම් Person class එකේ තියන privet නොවන සියලුම attributes හා methods Student class එක ඇතුලට එනවා නේද…ඒ කියන්නේ Person class එකේ තියන jump කියන abstract class එකත් Student class එක ඇතුලට ඇවිත් තියෙන්නේ…කලින් මං කිව්වනේ class එකක් ඇතුලේ අඩුම එක abstract method එකක්වත් තිබ්බොත් class එක abstract වෙනවා කියලා….එහෙනම් අපේ Student class එකත් මෙන්න මේ වගේ abstract කරන්න ඕනි නේද…</p>
+<pre>abstract class Person{
+
+         abstract void jump();
+
+         void run(){
+
+         system.out.println(" i can run fast !");
+
+         }
+
+}
+
+abstract class Student extends Person{
+
+         void study(){
+
+         system.out.println("i am studding !");
+
+         }
+
+}
+</pre>
+<p>හරි ඔන්න ඔහොම තමයි අපේ code එක එන්නේ…කිසි අව්ලක් නෑ…නමුත් මට ඕනි Student කෙනෙක්ගේ object එකක් හදන්න…Student class එක abstract එකක් නිසා මට Student කෙනෙක්ගෙ object එකක් හදන්න compiler එක ඉඩ දෙන්නේ නෑ…එහෙනම් කොහොමද මං Student කෙනෙක්ගේ object එකක් හදන්නේ…Student class එකේ තියන abstract කෑල්ල අයන් කරානම් හරි නේද …එහෙම කරන්නම් abstract methods class එකෙන් අයින් කරන්න ඕනි…Student Class එකේ තියන jump method එකනේ abstract method එකකට තියෙන්නේ…අන්න ඒ jump method එකේ abstract බව අයින් කලානම් හරි නේද…ඒ කියන්නේ jump method එක Student class එක ඇතුලෙදී override කලා නම් හරි නේද…<a href="/index.php/2018/03/31/method-overriding/">override</a> කලාම jump method එකට body එකක් තියන නිසා ඒ method එකේ abstract බව auto නැතිවෙලා යනවා ….code එක ලිව්වොත් මෙන්න මේ වගේ</p>
+<pre>abstract class Person{
+
+         abstract void jump();
+
+         void run(){
+
+         system.out.println(" i can run fast !");
+
+         }
+
+}
+
+class Student extends Person{
+
+       void jump(){   
+
+       system.out.println("i can jump !");        // overriding the abstract class
+
+       }
+
+       void study(){
+
+       system.out.println("i am studding !");
+
+       }
+
+}
+</pre>
+<p>හරි දැන් මට අව්ලක් නැතිව Student object එක හදන්න පුලුවන් නේද……<br>
+abstract class වල තියන තව විශේෂත්වයක් තමයි , abstract class reference variable එකකට පුලුවන් sub class objects store කර ගන්න..(upcasting)..අපේ උදාහරණයේ විදියටනම් මෙන්න මේ දේ…</p>
+<pre>Person person1= new Student();
+</pre>
+<p>හරි ඔන්න ඔය ටික තමයි abstract class ගැන කියන්න තියෙන්නේ… interface වලදී abstract class හොදටම පාවිච්චි වෙනවා…එතකොට ඔයාලට තවත් හොදට තේරෙයි…</p>
+<p>හරි අපි abstract class ගැන කතා කලානේ…දැන් මං කතා කරන්න හදන්නේ java වල තියෙන වැදගත් key word දෙකක් ගැන..කලින් අපි <a href="/index.php/2018/03/31/method-overriding/">super keyword</a> එක ගැනයි <a href="/index.php/2018/03/21/object-oriented-programming-4/">this keyword</a> එක ගැනයි කතා කලනේ..අද කතා කරන්න යන්නේ final keyword එක ගැනයි static keyword එක ගැනයි…</p>
+<p>final keyword :</p>
+<p>ඇත්තටම කියනවනම් final keyword එකෙන් කරන්නේ variable එකකට නිශ්චිත constant value එකක් assign කරන එක…උදාහරණයක් විදියට ගත්තොත් වෘත්තයක ව.ඵ හොයද්දි අපට ඕනි වෙන £ =3.14 කියන අගය…අපිට ඒක final keyword එක දාලා මේ විදියට define කෙරුව හැකි.</p>
+<pre>final float £ = 3.14 ; 
+</pre>
+<p>ඔන්න ඕක තමයි final keyword එකෙන් කරන්නේ…</p>
+<p>static keyword:</p>
+<p>static keyword එකනම් ටිකක් වැදගත් keyword එකක්…අපිට static keyword එක දාලා attributes define කරන්නත් පුලුවන් methods define කරන්නත් පුලුවන්…attributes එකක් static කලොත් ඒ attribute එකේ value එක program එක අවසන් වුනත් නොවෙනස්ව පවත්වා ගන්න පුලුවන්..හරියට නිකන් මෙන්න මේ වගේ…</p>
+<pre>class Cat{
+
+     int age;
+
+     static int numOfSibligs=0;
+
+     void run(){
+
+          System.out.print("it can be run fast !");
+
+     }
+
+}
+
+Class Demo{
+
+      public static void main(String a[]){
+
+              Cat cat1= new Cat(); // creating a cat object
+
+              numOfSibligs ++;
+
+              System.out.println("cat1 has "+ cat1.numOfSibligs +" sibligs");
+
+              Cat cat2= new Cat(); //creating another object
+
+              numOfSibligs ++ ;
+
+              System.out.println("cat2 has "+ cat2.numOfSibligs +" sibligs");
+
+      }
+
+}
+</pre>
+<p>සාමාන්‍ය variable එකක නම් object එක එක පාරක් හැදුවහම එහි අගය lost වෙලා යනවා. නමුත් static keyword එක පාවිච්චි කලොත් එහෙම වෙන්නෙ නැහැ . out put එකකවත් පොඩ්ඩක් බලන්නකෝ.</p>
+<p>Out put :</p>
+<p><amp-img class="wp-image-839 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/Capture1-300x154.jpg" alt="" width="565" height="290" srcset="/wp-content/uploads/2018/04/Capture1-300x154.jpg 300w, /wp-content/uploads/2018/04/Capture1.jpg 610w" layout="intrinsic"></amp-img></p>
+<p>ඔන්න ඕකයි attribute එකක් static කලාම වෙන්නේ…දැන් අපි බලමු method එකක් static කලාම මොකද වෙන්නේ කියලා…ඇත්තටම method එකක් static කලාම , ඒ method එකට call කරන්න පුලුවන් object එකක් හදන්නේ නැතිව.ඒ කිව්වේ මෙන්න මේකයි.</p>
+<pre>class Cat{
+
+     int age;
+
+     static int numOfSibligs=0;
+
+     static void run(){
+
+          System.out.print("it can be run fast !");
+
+     }
+
+}
+
+class Demo{
+
+      public static void main(String a[]){
+
+              Cat.run();
+
+              
+
+      }
+
+}
+</pre>
+<p>output :</p>
+<p><amp-img class="wp-image-840 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/Capture2-300x144.jpg" alt="" width="544" height="261" srcset="/wp-content/uploads/2018/04/Capture2-300x144.jpg 300w, /wp-content/uploads/2018/04/Capture2.jpg 526w" layout="intrinsic"></amp-img></p>
+<p>ඔන්න ඕක තමයි static keyword එකෙන් වෙන්නේ…</p>
+<p>හරි අදට පාඩම හමාරි..😃😃…හැමෝටම තේරුනා කියලා හිතනවා…මොකක් හරි අව්ලක් තිබුනොත් පහලින් comment එකක් දාන්න…oop වල අවසාන පාඩමත් සමගින් හමුවෙමූ. සුභ දවසක් !</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/oop/" rel="category tag">OOP</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/abstract-class/" rel="tag">abstract class</a>, <a href="/index.php/tag/inheritance/" rel="tag">inheritance</a>, <a href="/index.php/tag/overriding/" rel="tag">overriding</a>, <a href="/index.php/tag/super-keyword/" rel="tag">super keyword</a>, <a href="/index.php/tag/this-keyword/" rel="tag">this keyword</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/04/12/abstract-class/#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

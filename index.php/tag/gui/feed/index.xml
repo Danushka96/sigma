@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Gui &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/gui/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Graphical User Interface &#8211; දෙවන පියවර</title>
+		<link>/index.php/2018/06/08/graphical-user-interface-2/</link>
+				<comments>/index.php/2018/06/08/graphical-user-interface-2/#respond</comments>
+				<pubDate>Fri, 08 Jun 2018 14:36:51 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[GUI]]></category>
+		<category><![CDATA[Gui]]></category>
+		<category><![CDATA[JFrame]]></category>
+		<category><![CDATA[package]]></category>
+		<category><![CDATA[Window]]></category>
+
+		<guid isPermaLink="false">/?p=1118</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හරි යාලුවනේ ..ඔන්න මං අදත් ආවා කලින් පාඩමේ ඉතිරි කොටසත් සමගින්&#8230;the sigma blog අඩවියට පැමිණි ඔයාලා හැමෝම සාදරයෙන් පිලිගන්නවා.. කලින් පාඩමේදී අපි කතා කලා මොකක්ද GUI එකක් කියන්නේ කියලා සහ කොහොමද. GUI එකක් හදා ගන්නේ කියලා&#8230;ඒ ගැන මතක ඇති කියලා හිතනවා..මතක නෑ වගේ නම් මෙතනින් ගිහින් කලින් පාඩමත් බලන් එන්නකෝ..<a class="moretag" href="/index.php/2018/06/08/graphical-user-interface-2/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/06/08/graphical-user-interface-2/">Graphical User Interface &#8211; දෙවන පියවර</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>හරි යාලුවනේ ..ඔන්න මං අදත් ආවා කලින් පාඩමේ ඉතිරි කොටසත් සමගින්&#8230;the sigma blog අඩවියට පැමිණි ඔයාලා හැමෝම සාදරයෙන් පිලිගන්නවා.. කලින් පාඩමේදී අපි කතා කලා මොකක්ද GUI එකක් කියන්නේ කියලා සහ කොහොමද. GUI එකක් හදා ගන්නේ කියලා&#8230;ඒ ගැන මතක ඇති කියලා හිතනවා..මතක නෑ වගේ නම් <a href="/index.php/2018/04/23/graphical-user-interface-1_step/" target="_blank" rel="noopener">මෙතනින්</a> ගිහින් කලින් පාඩමත් බලන් එන්නකෝ..</p>
+<p>අද අපි කතා කරන්න යන්නේ කලින් පාඩමේදී සාදාගත් window එකට graphical element add කරන එක&#8230;.හරි මුලින්ම අපි window එකට නමක් දෙමුකෝ&#8230;තවත් විදියකින් කියනවනම් window එකට title එකක් set කරමුකෝ&#8230;මේ සදහා අපි පාවිච්චි කරනවා setTitle() කියන method එක&#8230;.argument එකක් විදියට අපිට ඕනි title එකක් විදියට pass කරන්න පුලුවන්&#8230;code එක බලන්නකෝ&#8230;</p>
+<pre>import java.awt.*;
+import javax.swing.*;
+
+class Gui extends JFrame{
+	public static void main(String args[]){
+		JFrame MyJavaFrame=new JFrame();
+		MyJavaFrame.setVisible(true);
+		MyJavaFrame.setSize(300,300);
+		MyJavaFrame.setLocationRelativeTo(null);
+		MyJavaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		MyJavaFrame.setTitle("My first Java Frame !");
+       }
+}
+
+</pre>
+<p>Output&#8230;</p>
+<p><img class="wp-image-1119 aligncenter" src="/wp-content/uploads/2018/06/gui1-300x181.jpg" alt="" width="457" height="276" srcset="/wp-content/uploads/2018/06/gui1-300x181.jpg 300w, /wp-content/uploads/2018/06/gui1.jpg 593w" sizes="(max-width: 457px) 100vw, 457px" /></p>
+<p>හරි title එකක් නම් set කලා..දැන් අපි බලමු label එකක් කොහොමද set කරන්නේ කියලා..</p>
+<p>Label එකක් හදනකොට කරන්නෙත් අර window එකක් හදනකොට කරපු දේම තමයි&#8230;ඒ කිව්වේ&#8230;window එකක් හදන අවස්ථාවේ කලේ JFrame කියලා කලින් predefine කරලා තිබුන class එකක object එකක් හදපු එකනේ&#8230;මෙතනදි කරන්නෙත් ඒ දේම තමයි..JLabel කියලා class එකක් කලින් define කරලා තියනවා &#8230;අන්න ඒ class එකේ object එකක් හදන එක තමයි කරන්නේ&#8230;JFrame , JLabel විතරක් නෙවෙයි JPanel,JMenu, JButton,JTextArea,JTextField වගේ class ගොඩක් predefine කරලා තියනවා අපි අර මුලින්ම import කරලා තියන package ඇතුලේ&#8230;අපිට තියෙන්නේ අවශ්ය graphical element එකේ object එකක් හදන එක විතරයි&#8230;හරි ලේසියි නේද😃😃&#8230;.</p>
+<pre>import java.awt.*;
+import javax.swing.*;
+
+class Gui extends JFrame{
+	public static void main(String args[]){
+		JFrame MyJavaFrame=new JFrame();
+		MyJavaFrame.setVisible(true);
+		MyJavaFrame.setSize(300,300);
+		MyJavaFrame.setLocationRelativeTo(null);
+		MyJavaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		MyJavaFrame.setTitle("My first Java Frame !");
+
+		<strong>JLabel lebel1=new JLabel();</strong>
+		
+       }
+}
+
+</pre>
+<p>ඔන්න ඔහොම තමයි label එකක් හදා ගන්නේ&#8230;label එකක් නිකං හැදුවට වැඩක් නෑනේ&#8230;ඒක අපේ window එකට set කරන්නත් ඕනිනේ&#8230;මේ සදහා අපි පාවිච්චි කරනවා add කියන keyword එක.</p>
+<p>හදාගත්ත label එක add කරනකොට add කරන්න බලාපොරොත්තු වන ස්ථානයත් දෙන්න ඕනි වරහන් ඇතුලේ&#8230;North, South, East , West හා Center කියලා add කරන්න පුලුවන් ස්ථාන පහක් තියනවා&#8230;labels,buttons,textFields .. වගේ ඒවා අපිට මේ ස්තාන වලට add කරන්න පුලුවන්..</p>
+<p><img class="wp-image-1123 aligncenter" src="/wp-content/uploads/2018/06/gui5-300x259.jpg" alt="" width="386" height="333" srcset="/wp-content/uploads/2018/06/gui5-300x259.jpg 300w, /wp-content/uploads/2018/06/gui5.jpg 457w" sizes="(max-width: 386px) 100vw, 386px" /></p>
+<p>ඔන්න ඔය ස්ථාන පහටම button එක add කලාම මෙන්න මේ වගේ&#8230;</p>
+<p><img class="wp-image-1124 aligncenter" src="/wp-content/uploads/2018/06/gui6-300x72.jpg" alt="" width="551" height="132" srcset="/wp-content/uploads/2018/06/gui6-300x72.jpg 300w, /wp-content/uploads/2018/06/gui6.jpg 724w" sizes="(max-width: 551px) 100vw, 551px" /></p>
+<p>තව දෙයක් තියනවා ..<strong>.graphical element එක add කරන්න ඕනි ස්ථානය දක්වද්දී පලවෙනි අකුර upper case එකක් වෙන්නත් ඕනි</strong>&#8230;</p>
+<pre>import java.awt.*;
+import javax.swing.*;
+
+class Gui extends JFrame{
+	public static void main(String args[]){
+		JFrame MyJavaFrame=new JFrame();
+		MyJavaFrame.setVisible(true);
+		MyJavaFrame.setSize(300,300);
+		MyJavaFrame.setLocationRelativeTo(null);
+		MyJavaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		MyJavaFrame.setTitle("My first Java Frame !");
+
+		JLabel label1=new JLabel("This is a Lebel !");
+		
+		<strong>MyJavaFrame.add("North",label1);</strong>
+		
+       }
+}
+
+</pre>
+<p>output එකත් බලන්නකෝ&#8230;</p>
+<p><img class="wp-image-1120 aligncenter" src="/wp-content/uploads/2018/06/gui2-300x177.jpg" alt="" width="434" height="256" srcset="/wp-content/uploads/2018/06/gui2-300x177.jpg 300w, /wp-content/uploads/2018/06/gui2.jpg 610w" sizes="(max-width: 434px) 100vw, 434px" /></p>
+<p>හරි label එකකුත් දැම්මා&#8230;දැන් අපි බලමු panel එකක් අපේ window එකට එකතු කරන්නේ කොහොමද කියලා..කලින් වගේම තමයි Jpanel කියන class එකේ object එකක් හදලා add keyword එක පාවිච්චි කරලා set කරන්න තමයි තියෙන්නේ&#8230;</p>
+<pre>import java.awt.*;
+import javax.swing.*;
+
+class Gui extends JFrame{
+	public static void main(String args[]){
+		JFrame MyJavaFrame=new JFrame();
+		MyJavaFrame.setVisible(true);
+		MyJavaFrame.setSize(300,300);
+		MyJavaFrame.setLocationRelativeTo(null);
+		MyJavaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		MyJavaFrame.setTitle("My first Java Frame !");
+
+		JLabel label1=new JLabel("This is a Lebel !");
+		
+		MyJavaFrame.add("North",label1);
+
+		<strong>JPanel panel1=new JPanel();
+	
+		MyJavaFrame.add(panel1);</strong>	
+       }
+}
+
+</pre>
+<p>output එකත් බලන්නකෝ&#8230;</p>
+<p><img class="wp-image-1120 aligncenter" src="/wp-content/uploads/2018/06/gui2-300x177.jpg" alt="" width="397" height="234" srcset="/wp-content/uploads/2018/06/gui2-300x177.jpg 300w, /wp-content/uploads/2018/06/gui2.jpg 610w" sizes="(max-width: 397px) 100vw, 397px" /></p>
+<p>කිසි වෙනසක් පේන්නේ නෑ නේද&#8230;ඇත්තටම panel එක අපේ window එකට add වෙලා තියෙන්නේ..window එකේ පාටයි panel එකේ පාටයි සමාන නිසා තමයි අපිට panel එක පේන්නේ නැත්තේ&#8230; මෙන්න මේ විදියට panel එකේ පාට වෙනස් කරන්නකෝ&#8230;.</p>
+<pre>import java.awt.*;
+import javax.swing.*;
+
+class Gui extends JFrame{
+	public static void main(String args[]){
+		JFrame MyJavaFrame=new JFrame();
+		MyJavaFrame.setVisible(true);
+		MyJavaFrame.setSize(300,300);
+		MyJavaFrame.setLocationRelativeTo(null);
+		MyJavaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		MyJavaFrame.setTitle("My first Java Frame !");
+
+		JLabel label1=new JLabel("This is a Lebel !");
+		
+		MyJavaFrame.add("North",label1);
+
+		JPanel panel1=new JPanel();
+
+		<strong>panel1.setBackground(Color.BLUE);</strong>
+
+		MyJavaFrame.add(panel1);	
+       }
+}
+
+</pre>
+<p>හරි දැන් බලන්නකෝ output එක &#8230;</p>
+<p><img class="wp-image-1121 aligncenter" src="/wp-content/uploads/2018/06/gui3-300x204.jpg" alt="" width="457" height="311" srcset="/wp-content/uploads/2018/06/gui3-300x204.jpg 300w, /wp-content/uploads/2018/06/gui3.jpg 498w" sizes="(max-width: 457px) 100vw, 457px" /></p>
+<p>හරි දැන් panel එක පේනවා නේද..හරි panel එකකුත් හැදුවා&#8230;දැන් අපි බලමු Text field එකකුයි text area එකකුයි හදන්නේ කොහොමද කියලා&#8230;කලින් වගේම JtextField කියන class එකෙයි , JtextArea කියන class එකෙයි object හදන්න තමයි තියෙන්නේ&#8230;පොඩි වෙනසයි තියෙන්නේ object හදනකොට constructor එක ඇතුලේ coloms ගනනයි rows ගනනයි pass කරන්න තියෙන්නේ..</p>
+<pre>import java.awt.*;
+import javax.swing.*;
+
+class Gui extends JFrame{
+	public static void main(String args[]){
+		JFrame MyJavaFrame=new JFrame();
+		MyJavaFrame.setVisible(true);
+		MyJavaFrame.setSize(300,300);
+		MyJavaFrame.setLocationRelativeTo(null);
+		MyJavaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		MyJavaFrame.setTitle("My first Java Frame !");
+
+		JLabel label1=new JLabel("This is a Lebel !");
+		
+		MyJavaFrame.add("North",label1);
+		JPanel panel1=new JPanel();
+
+		panel1.setBackground(Color.BLUE);
+
+		MyJavaFrame.add(panel1);
+
+		<strong>JTextField textField1=new JTextField();
+
+		JTextArea textArea1=new JTextArea(5,5);	</strong>
+	
+		
+       }
+}
+
+
+</pre>
+<p>හරි ඔන්න ඔහොම හදාගත්ත text field එකයි text area එකයි අපේ window එකට add කරනකොට ටිකක් කල්පනා කරන්න වෙනවා&#8230;මොකද දන්නවද&#8230;කලින් අපි panel එකක් හදලා window එකට add කරපු නිසා අලුතින් හදන elements window එකට add කලාට පෙනෙන්නේ නෑ&#8230;අන්න එතකොට අපි අලුත් elements add කරනවා අපේ panel එකට&#8230;</p>
+<pre>import java.awt.*;
+import javax.swing.*;
+
+class Gui extends JFrame{
+	public static void main(String args[]){
+		JFrame MyJavaFrame=new JFrame();
+		MyJavaFrame.setVisible(true);
+		MyJavaFrame.setSize(300,300);
+		MyJavaFrame.setLocationRelativeTo(null);
+		MyJavaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		MyJavaFrame.setTitle("My first Java Frame !");
+
+		JLabel label1=new JLabel("This is a Lebel !");
+		
+		MyJavaFrame.add("North",label1);
+		JPanel panel1=new JPanel();
+
+		panel1.setBackground(Color.BLUE);
+
+		MyJavaFrame.add(panel1);
+
+		<strong>JTextField textField1=new JTextField();
+
+		JTextArea textArea1=new JTextArea(5,5);	
+	
+		panel1.add("North",textField1);
+		panel1.add("South",textArea1);
+		MyJavaFrame.add(panel1);</strong>
+       }
+}
+
+</pre>
+<p>අව්ලක් නෑ නේද..හරි දැන් අපි බලමු button එකක් කොහොමද අපේ window එකට set කරන්නේ කියලා&#8230;ලොකු වෙනසක් නෑ&#8230;JButton කියන class එකේ object එකක් හදන්න තමයි තියෙන්නේ&#8230;button එකට අවශය නම constractor එකින් pass කරන්න පුලුවන්&#8230;හරි අපේ window එකට button එකක් add කරනවා North කියන position එකට&#8230;</p>
+<pre>import java.awt.*;
+import javax.swing.*;
+
+class Gui extends JFrame{
+	public static void main(String args[]){
+		JFrame MyJavaFrame=new JFrame();
+		MyJavaFrame.setVisible(true);
+		MyJavaFrame.setSize(300,300);
+		MyJavaFrame.setLocationRelativeTo(null);
+		MyJavaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		MyJavaFrame.setTitle("My first Java Frame !");
+
+		JButton button=new JButton("Click me !");
+		MyJavaFrame.add("North",button);
+       }
+}
+
+
+</pre>
+<p>හරි ඔන්න ඔය විදියට button එකක් හදාගන්න පුලුවන්&#8230;</p>
+<p>out put එකත් පොඩ්ඩක් බලන්නකෝ&#8230;</p>
+<p><img class="wp-image-1125 aligncenter" src="/wp-content/uploads/2018/06/gui6-1-300x224.jpg" alt="" width="454" height="339" srcset="/wp-content/uploads/2018/06/gui6-1-300x224.jpg 300w, /wp-content/uploads/2018/06/gui6-1.jpg 477w" sizes="(max-width: 454px) 100vw, 454px" /></p>
+<p>හරි නේද&#8230;ඔන්න ඔහොමයි button එකක් add කරන්නේ&#8230;.හරි අදට ඇති වගේ නේ..😃😃……මීලඟ පාඩමත් සමගින් හමුවෙමු.සුභ දවසක්!</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/06/08/graphical-user-interface-2/">Graphical User Interface &#8211; දෙවන පියවර</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/06/08/graphical-user-interface-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

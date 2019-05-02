@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>naive &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/naive/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>String Matching Algorithms</title>
+		<link>/index.php/2018/03/16/string-search-part-01/</link>
+				<comments>/index.php/2018/03/16/string-search-part-01/#respond</comments>
+				<pubDate>Fri, 16 Mar 2018 16:21:57 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Algo]]></category>
+		<category><![CDATA[algorithm]]></category>
+		<category><![CDATA[boyer moore]]></category>
+		<category><![CDATA[naive]]></category>
+		<category><![CDATA[robin karp]]></category>
+		<category><![CDATA[search]]></category>
+		<category><![CDATA[String Search]]></category>
+
+		<guid isPermaLink="false">/?p=62</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> What is String Match? String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find<a class="moretag" href="/index.php/2018/03/16/string-search-part-01/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><h2><strong>What is String Match?</strong></h2>
+<p>String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find a phrase in a book you search for it one page by page. The manual efficient String Search Algorithm is  the dictionary. Dictionary has ordered every word in ascending order of the alphabet. If you want to find a word from the dictionary you can move to the exact page very fast.</p>
+<p>But Just imaging if you have a book with 1000 pages and just text paragraphs and you want to find a word. You will have to read the entire book to find what you search for. But how computer find a string so quickly from a thousands of words. I&#8217;m going to explain some algorithms works inside the computer from this set of posts. These are the algorithms:</p>
+<ol>
+<li>Naive Search Algorithms</li>
+<li>Boyer &#8211; moore Algorithm</li>
+<li>Robin &#8211; karp Algorithm</li>
+</ol>
+<p><strong>1. Naive Search Algorithm</strong></p>
+<p>Native Search algorithms is kind of idiot algorithm that use in computers to search words. I call it idiot because the run time is very high. However this is the simplest algorithm for implementation</p>
+<pre>#include &lt;stdio.h&gt;
+#include &lt;memory.h&gt;
+
+void bruteForce(char text[],char pattern[]);
+
+int main() {
+char text[]="abbcabab";
+char pattern[]="ab";
+bruteForce(text,pattern);
+}
+
+void bruteForce(char text[],char pattern[]){
+
+int maxShift= strlen(text)- strlen(pattern);
+for (int i=0;i&lt;maxShift;i++){
+int count_of_match=0;
+for (int j=0;j&lt; strlen(pattern);j++) {
+if (text[i + j] == pattern[j]) {
+count_of_match++;
+}
+}
+if (count_of_match== strlen(pattern)){
+printf("%s%d\n","pattern matched at index ",i);
+}
+}
+}
+</pre>
+<p>For this kind of search It will take <strong>O(mn)</strong> kind of complexity for find a single word. It&#8217;s heavily use the system resources because it compares character by character again and again. Therefore we have some other algorithm to make it Faster.</p>
+<p><strong> 2. Boyer Moore Algorithm</strong></p>
+<p>This is a kind of fast algorithm when comparing with naive search. Because this can shift the pattern fast and find the index where the pattern exactly positioned.</p>
+<p>You can more refer about this algorithm from here :  <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm</a></p>
+<p>In this algorithm the most considered thing is <strong>bad characteristic table</strong>.  First we go thorough all characters in the text and <strong>make and array</strong> with <strong>key as the index</strong> and the <strong>value as the index character  last occurred index of the pattern</strong>. If the selected character is <strong>not occurred in the pattern we put -1</strong> as the value . This is the <b>reprocessing </b>part of the algorithm. Once this table is generated you can search for a string with <strong>O(n) </strong>complexity.</p>
+<p>Ok let&#8217;s go for the Implementation.</p>
+<pre>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int findchar(char pat[], char letter);
+int boyer_moore(char txt[], char pat[]);
+void setTable(char text[],char pattern[]);
+int index_table[256];
+
+int main(){
+char text[] = "ratcatbatnatfat";
+char pattern[] = "cat";
+int shift= boyer_moore(text,pattern);
+if (shift!=-1){
+printf("%s%d\n","Match Found at index",shift);
+}else{
+printf("%s\n", "Not found a Match");
+}
+return 0;
+// findchar(pattern,'c');
+}
+
+int boyer_moore (char txt[], char pat[]){
+setTable(txt,pat);
+int i,j,n=strlen(txt),m=strlen(pat),lastch;
+i=m-1;
+j=m-1;
+while (i&lt;n){
+if (txt[i]==pat[j]){
+// printf("%c%s%d\n",txt[i]," i= ",i);
+if (j==0){
+//printf("%s%d\n"," ",i);
+return i;
+}else{
+j--;
+i--;
+}
+}else{
+lastch=index_table[(int)txt[i]];
+// printf("%s%c%d","Last char of ",txt[i],lastch );
+if(lastch==-1){
+i+=m;
+}else{
+i+=(j-lastch);
+}
+// printf("%s%d\n"," i= ",i);
+j=m-1;
+}
+}
+return -1;
+}
+
+int findchar(char pat[], char letter){
+int pat_size= strlen(pat)-1;
+for (int i=0; i&lt;pat_size+1; i++){
+// printf("%c%s%c\n", pat[pat_size-i]," &gt; ",letter);
+if (pat[pat_size-i]==letter){
+// printf("%s%c%d","letter ",letter,(pat_size-i));
+return (pat_size-i);
+}
+}
+return -1;
+}
+
+void setTable(char text[],char pattern[]){
+for (int i=0;i&lt;strlen(text);i++) {
+int current= findchar(pattern,text[i]);
+index_table[(int)text[i]]=current;
+}
+// for (int i=0;i&lt;256;i++){
+// printf("%d\n",index_table[i] );
+// }
+}
+</pre>
+<p>I&#8217;m not going to explain whole code. But If you don&#8217;t understand what kind of method that I have used simply just put a comment about your problem. Then I would like to move in to the rabin karp algorithm.</p>
+<p><strong>3.  Rabin Karp Algorithm</strong></p>
+<p>Rabin karp is kind of method that based on some calculation. Actually humans can&#8217;t go with this process because we are poor in calculations. But a computer can do it very fast. So in this method we use a <strong>Hashing </strong>method to compare two strings. Hash is generated by a mathematical formula. I will paste the Implementation and reference link for find more information about this algorithm.</p>
+<p>Reference : <a href="https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm">https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm</a></p>
+<pre>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+#define d 256
+
+int rabincarp_search(char pattern[], char text[], int q){
+int m = strlen(pattern);
+int n= strlen(text);
+int i,j,t=0,p=0,h=1;
+
+for (i=0; i&lt;m-1; i++){
+h=(h*d)%q;
+}
+
+for (i=0; i&lt;m ; i++){
+p=(p*d + pattern[i])%q;
+t=(t*d + text[i])%q;
+}
+
+for (i=0; i&lt;=n-m; i++){
+if (p==t){
+for (j=0; j&lt;m; j++){
+if (text[i+j]!=pattern[j]){
+break;
+}
+}
+if(j==m){
+printf("%s%d\n", "Pattern has found in index ",i);
+}
+}
+if (i&lt;n-m){
+t=(d*(t-text[i]*h) + text[i+m])%q;
+if (t &lt; 0)
+t = (t + q);
+}
+}
+return 0;
+}
+
+int main(){
+char text[]="carratcappatnat";
+char pattern[]="rat";
+int q=101;
+int shift=rabincarp_search(pattern,text,q);
+return shift;
+}
+
+</pre>
+<p>This will little weird if you don&#8217;t try it yourself. Just try and post your questions here. I will be there to help you. Thank You.</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/03/16/string-search-part-01/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

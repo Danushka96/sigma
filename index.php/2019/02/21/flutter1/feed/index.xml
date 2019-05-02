@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: මොකක්ද මේ Flutter ?	</title>
+	<atom:link href="/index.php/2019/02/21/flutter1/feed/" rel="self" type="application/rss+xml" />
+	<link>/index.php/2019/02/21/flutter1/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				By: Kushan Ravindu				</title>
+				<link>/index.php/2019/02/21/flutter1/#comment-239</link>
+		<dc:creator><![CDATA[Kushan Ravindu]]></dc:creator>
+		<pubDate>Sat, 23 Feb 2019 18:55:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1918#comment-239</guid>
+					<description><![CDATA[Fatta mcn.. wede supiri.. digatama meka liypn]]></description>
+		<content:encoded><![CDATA[<p>Fatta mcn.. wede supiri.. digatama meka liypn</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

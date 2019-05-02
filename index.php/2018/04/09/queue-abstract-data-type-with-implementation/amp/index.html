@@ -1,0 +1,672 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 3 minutes අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා. FIFO? FIFO Read more&hellip;" />
+<meta name="twitter:title" content="Queue Abstract Data Type (With Implementation) - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/04/queue.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Queue Abstract Data Type (With Implementation) - The SIGMA" />
+<meta property="og:description" content="Reading Time:  3 minutes අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා. FIFO? FIFO Read more&hellip;" />
+<meta property="og:url" content="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="algorithm" />
+<meta property="article:tag" content="implementation" />
+<meta property="article:tag" content="queue" />
+<meta property="article:section" content="Algo" />
+<meta property="article:published_time" content="2018-04-09T14:45:43+00:00" />
+<meta property="article:modified_time" content="2018-04-09T14:48:38+00:00" />
+<meta property="og:updated_time" content="2018-04-09T14:48:38+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/04/queue.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/04/queue.png" />
+<meta property="og:image:width" content="1574" />
+<meta property="og:image:height" content="1067" />
+	<title>Queue Abstract Data Type (With Implementation) - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/04\/09\/queue-abstract-data-type-with-implementation\/","headline":"Queue Abstract Data Type (With Implementation)","datePublished":"2018-04-09T14:45:43+00:00","dateModified":"2018-04-09T14:48:38+00:00","author":{"@type":"Person","name":"Danushka Herath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/04\/queue.png","width":1574,"height":1067}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-abd0e16{padding-left:30px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-23f99f1{padding-left:60px}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Queue Abstract Data Type (With Implementation)</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/81f32af4149adb5de35857259b875c31?s=24&#038;d=mm&#038;r=g" alt="Danushka Herath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Danushka Herath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-04-09T20:15:43+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="508" src="/wp-content/uploads/2018/04/queue-1024x694.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/04/queue-1024x694.png 1024w, /wp-content/uploads/2018/04/queue-300x203.png 300w, /wp-content/uploads/2018/04/queue-768x521.png 768w, /wp-content/uploads/2018/04/queue.png 1574w" layout="intrinsic"><noscript><img width="750" height="508" src="/wp-content/uploads/2018/04/queue-1024x694.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා.</p>
+<h3><strong>FIFO?</strong></h3>
+<p><amp-img class="wp-image-629 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg" alt="" width="387" height="241" srcset="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg 300w, /wp-content/uploads/2018/04/queue_1446267c_2854335k-768x480.jpg 768w, /wp-content/uploads/2018/04/queue_1446267c_2854335k.jpg 858w" layout="intrinsic"></amp-img></p>
+<p>FIFO කියන එකෙන් අදහස් වෙන්නේ <strong>First In First Out </strong>කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින පේලි වලත් වෙන්නේ ඉස්සරලාම පේලියට එකතු වුණ කෙනා තමයි මුලින්ම පේලියෙන් එළියට යන්නේ. හැබැයි මතකද අපි කලින් ලිපියෙ Stacks ගැන කියන වෙලාවෙදි <strong>LIFO </strong>එකක් ගැන කිවුවා. ඒක බැලුවෙ නැත්නම් <a href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">මෙතනින්</a> බලන්න. ඒකෙදි අපි කලේ මේකෙ විරුද්ධ වැඩේ.</p>
+<h3><strong>Basic Operations</strong></h3>
+<p>Queue එකක තියෙන මූලිකම මෙහෙයුම් කිහිපය තමයි මේ පහලින් තියෙන්නේ.</p>
+<ol><li>Enqueue</li>
+<li>Dequeue</li>
+<li>Peek</li>
+<li>isFull</li>
+<li>isEmplty</li>
+</ol><p>මේ Method ටිකත් අපි කලින් කතා කරපු Stack එකට ගොඩක් සමානයි.</p>
+<h3><strong>Peek : </strong></h3>
+<p class="amp-wp-abd0e16">Data එකක් එළියට ගන්නේ නැතිව මුලින්ම(Front) තියෙන Data එක බලන Method එක.</p>
+<h5 class="amp-wp-abd0e16"><strong>Algorithm:</strong></h5>
+<pre class="amp-wp-23f99f1">begin procedure peek
+
+   return queue[front]
+   
+end procedure
+</pre>
+<h5 class="amp-wp-abd0e16"><strong>Implementation ( C )</strong></h5>
+<pre class="amp-wp-23f99f1">int peek() {
+   return queue[front];
+}
+</pre>
+<h3><strong>isFull : </strong></h3>
+<p>Queue එක සම්පූර්ණයෙන්ම පිරිලාද නැද්ද Check කරන Method එක. මේකෙදි අපි කරන්නේ Queue එකේ Rear Point එක Queue එකේ Max Size එකට සමාන වුණොත් True Return කරනවා.</p>
+<h5 class="amp-wp-abd0e16"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted amp-wp-23f99f1"><span class="kwd">begin</span><span class="pln"> procedure isfull
+
+   </span><span class="kwd">if</span><span class="pln"> rear equals to MAXSIZE
+      </span><span class="kwd">return</span> <span class="kwd">true</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pln">
+   endif
+   
+</span><span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 class="amp-wp-abd0e16"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted amp-wp-23f99f1"><span class="kwd">bool</span><span class="pln"> isfull</span><span class="pun">()</span> <span class="pun">{</span>
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">rear </span><span class="pun">==</span><span class="pln"> MAXSIZE </span><span class="pun">-</span> <span class="lit">1</span><span class="pun">)</span>
+      <span class="kwd">return</span> <span class="kwd">true</span><span class="pun">;</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pun">;</span>
+<span class="pun">}</span></pre>
+<h3><strong>isEmpty : </strong></h3>
+<p>Queue එක හිස් වෙලා තියනවද කියලා Check කරන Method එක. Queue එකක් Empty ද නැද්ද කියලා බලන්නේ Front එකේ Value එක Queue එකේ තියෙන්න පුළුවන් අඩුම අගයට එහෙම නැත්නම් 0ට වඩා අඩුයිද කියලා Check කරන එක.</p>
+<h5 class="amp-wp-abd0e16"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted amp-wp-23f99f1"><span class="kwd">begin</span><span class="pln"> procedure isempty
+
+   </span><span class="kwd">if</span><span class="pln"> front </span><span class="kwd">is</span><span class="pln"> less than MIN  OR front </span><span class="kwd">is</span><span class="pln"> greater than rear
+      </span><span class="kwd">return</span> <span class="kwd">true</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pln">
+   endif
+   
+</span><span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 class="amp-wp-abd0e16"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted amp-wp-23f99f1"><span class="kwd">bool</span><span class="pln"> isempty</span><span class="pun">()</span> <span class="pun">{</span>
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">front </span><span class="pun">&lt;</span> <span class="lit">0</span> <span class="pun">||</span><span class="pln"> front </span><span class="pun">&gt;</span><span class="pln"> rear</span><span class="pun">)</span> 
+      <span class="kwd">return</span> <span class="kwd">true</span><span class="pun">;</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pun">;</span>
+<span class="pun">}</span></pre>
+<h3><strong>Enqueue : </strong></h3>
+<p>Queue එකට Data Insert කරන Method එක. මේකෙදි අපි පියවර කිහිපයක් අනුගමනය කරනවා Data එකක් Queue එක ඇතුලට දාන්න කලින් අපි එකින් එක පියවර විස්තර ඇතිව බලමු.</p>
+<p class="amp-wp-abd0e16"><strong>පළමු පියවර : </strong>Queue එක දැනට Full ද කියලා Check කරන එක. ඒ කියන්නේ Queue එක Full වෙලා තිබුණොත් අපිට තවත් Data Insert කරන්න බෑනෙ. ඒක මේ Check එකෙන් පස්සේ Full වෙලා තිබුණොත් නතර කරනවා</p>
+<p class="amp-wp-abd0e16"><strong>දෙවන පියවර : </strong>Queue එක Full වෙලා තිබුණේ නැත්නම් අපි Rear Point එක 1කින් වැඩි කරනවා. ඒ කියන්නේ Next Empty Space එකට.</p>
+<p><amp-img class="wp-image-736 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg" alt="" width="446" height="251" srcset="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg 300w, /wp-content/uploads/2018/04/queue_enqueue_diagram.jpg 550w" layout="intrinsic"></amp-img></p>
+<p class="amp-wp-abd0e16"><strong>තුන්වන පියවර : </strong>දැන් Rear Point එක තියෙන තැනට අපිට අවශ්‍ය Data එක Insert කරනවා.</p>
+<h5 class="amp-wp-abd0e16"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted amp-wp-23f99f1"><span class="pln">procedure enqueue</span><span class="pun">(</span><span class="pln">data</span><span class="pun">)</span>      
+   <span class="kwd">if</span><span class="pln"> queue </span><span class="kwd">is</span><span class="pln"> full
+      </span><span class="kwd">return</span><span class="pln"> overflow
+   endif
+   
+   rear </span><span class="pun">←</span><span class="pln"> rear </span><span class="pun">+</span> <span class="lit">1</span><span class="pln">
+   
+   queue</span><span class="pun">[</span><span class="pln">rear</span><span class="pun">]</span> <span class="pun">←</span><span class="pln"> data
+   
+   </span><span class="kwd">return</span> <span class="kwd">true</span>
+   
+<span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 class="amp-wp-abd0e16"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted amp-wp-23f99f1"><span class="kwd">int</span><span class="pln"> enqueue</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">)</span>      
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">isfull</span><span class="pun">())</span>
+      <span class="kwd">return</span> <span class="lit">0</span><span class="pun">;</span><span class="pln">
+   
+   rear </span><span class="pun">=</span><span class="pln"> rear </span><span class="pun">+</span> <span class="lit">1</span><span class="pun">;</span><span class="pln">
+   queue</span><span class="pun">[</span><span class="pln">rear</span><span class="pun">]</span> <span class="pun">=</span><span class="pln"> data</span><span class="pun">;</span>
+   
+   <span class="kwd">return</span> <span class="lit">1</span><span class="pun">;</span>
+<span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h3><strong>Dequeue : </strong></h3>
+<p>Queue එකෙන් Data එළියට ගන්න Method එක. මේක කරන්නත් අපි උඩදි කතා කරා වගේ පියවර කිහිපයක් යන්න ඕන.</p>
+<p class="amp-wp-abd0e16"><strong>පළමු පියවර : </strong>Queue එක Empty ද කියලා Check කරන්න ඕන. මොකද අපිට Empty Queue එකකින් Data එකක් එළියට ගන්න බෑ.</p>
+<p class="amp-wp-abd0e16"><strong>දෙවන පියවර : </strong>Queue එක Empty වෙලා තිබුණොත් Underflow Error එකක් Display කරනවා. නැත්නම් Front Pointer එක ඊළඟ Element එකට Point කරනවා.</p>
+<p class="amp-wp-abd0e16"><strong><amp-img class="wp-image-737 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg" alt="" width="449" height="283" srcset="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg 300w, /wp-content/uploads/2018/04/queue_dequeue_diagram.jpg 550w" layout="intrinsic"></amp-img></strong></p>
+<h5 class="amp-wp-abd0e16"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted amp-wp-23f99f1"><span class="pln">procedure dequeue
+   </span><span class="kwd">if</span><span class="pln"> queue </span><span class="kwd">is</span><span class="pln"> empty
+      </span><span class="kwd">return</span><span class="pln"> underflow
+   </span><span class="kwd">end</span> <span class="kwd">if</span><span class="pln">
+
+   data </span><span class="pun">=</span><span class="pln"> queue</span><span class="pun">[</span><span class="pln">front</span><span class="pun">]</span><span class="pln">
+   front </span><span class="pun">←</span><span class="pln"> front </span><span class="pun">+</span> <span class="lit">1</span>
+   
+   <span class="kwd">return</span> <span class="kwd">true</span>
+<span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 class="amp-wp-abd0e16"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted amp-wp-23f99f1"><span class="kwd">int</span><span class="pln"> dequeue</span><span class="pun">()</span> <span class="pun">{</span>
+
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">isempty</span><span class="pun">())</span>
+      <span class="kwd">return</span> <span class="lit">0</span><span class="pun">;</span>
+
+   <span class="kwd">int</span><span class="pln"> data </span><span class="pun">=</span><span class="pln"> queue</span><span class="pun">[</span><span class="pln">front</span><span class="pun">];</span><span class="pln">
+   front </span><span class="pun">=</span><span class="pln"> front </span><span class="pun">+</span> <span class="lit">1</span><span class="pun">;</span>
+
+   <span class="kwd">return</span><span class="pln"> data</span><span class="pun">;</span>
+}
+</pre>
+<p>දැන් අපි මේ එකින් එක බලපු Methods ටික එකතු කරලා සම්පූර්ණ Queue එකක Implementation එක බලමු.</p>
+<p><b> Language : C </b></p>
+<pre>typedef void * queue_data_type;
+struct queue_item {
+	queue_data_type contents;
+	struct queue_item* next;
+};
+struct queue_root {
+	struct queue_item* head;
+	struct queue_item* tail;
+};
+
+void init_queue(struct queue_root* queue){
+	queue-&gt;head = queue-&gt;tail = NULL;
+}
+
+void push_queue(struct queue_root* queue, int size, queue_data_type contents){
+	struct queue_item *item = malloc(sizeof(item));
+	item-&gt;contents = contents;
+	item-&gt;next = NULL;
+	if (queue-&gt;head == NULL){
+		queue-&gt;head = queue-&gt;tail = item;
+	} else {
+		queue-&gt;tail = queue-&gt;tail-&gt;next = item;
+	}
+}
+
+queue_data_type pop_queue(struct queue_root* queue){
+	queue_data_type popped;
+	if (queue-&gt;head == NULL){
+		return NULL; // causes a compile warning.  Just check for ==NULL when popping.
+	} else {
+		popped = queue-&gt;head-&gt;contents;
+		struct queue_item* next = queue-&gt;head-&gt;next;
+		free(queue-&gt;head);
+		queue-&gt;head = next;
+		if (queue-&gt;head == NULL)
+			queue-&gt;tail = NULL;
+	}
+	return popped;
+}
+
+void process_queue(struct queue_root* queue, void (*func)(queue_data_type)){
+	if (queue == NULL)
+		return;
+	struct queue_item* current = queue-&gt;head;
+	while (current != NULL){
+		next = current-&gt;next
+		func(current-&gt;contents);
+		current = next;
+	}
+}
+</pre>
+<p>හරි එහෙනම් මොනවා හරි ප්‍රශ්ණයක් තිබුණොත් Comment එකක් දාන්න.</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/algo/" rel="category tag">Algo</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/algorithm/" rel="tag">algorithm</a>, <a href="/index.php/tag/implementation/" rel="tag">implementation</a>, <a href="/index.php/tag/queue/" rel="tag">queue</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

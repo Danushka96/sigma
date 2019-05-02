@@ -1,0 +1,528 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 3 minutes මේ ලිපියත් එක්ක පටන් ගන්න යන්නේ Laravel කියන Framework එකත් එක්ක කොහොමද වැඩ කරන්නේ කියලා උගන්වන්න යන ලිපි මාලාවක්. මේ පාඩම් මාලාව පදනම් වෙන්නේ PHP එක්ක. ඒක හින්දා PHP ගැන Basic ටිකක් වත් දැනගෙන තිබුණොත් Read more&hellip;" />
+<meta name="twitter:title" content="Web Application with Laravel - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/04/intro-to-laravel-php-framework-1-638.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Web Application with Laravel - The SIGMA" />
+<meta property="og:description" content="Reading Time:  3 minutes මේ ලිපියත් එක්ක පටන් ගන්න යන්නේ Laravel කියන Framework එකත් එක්ක කොහොමද වැඩ කරන්නේ කියලා උගන්වන්න යන ලිපි මාලාවක්. මේ පාඩම් මාලාව පදනම් වෙන්නේ PHP එක්ක. ඒක හින්දා PHP ගැන Basic ටිකක් වත් දැනගෙන තිබුණොත් Read more&hellip;" />
+<meta property="og:url" content="/index.php/2018/04/10/web-application-with-laravel/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="laravel" />
+<meta property="article:tag" content="web" />
+<meta property="article:tag" content="web development" />
+<meta property="article:section" content="web development" />
+<meta property="article:published_time" content="2018-04-10T17:17:22+00:00" />
+<meta property="article:modified_time" content="2018-04-10T17:20:34+00:00" />
+<meta property="og:updated_time" content="2018-04-10T17:20:34+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/04/intro-to-laravel-php-framework-1-638.jpg" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/04/intro-to-laravel-php-framework-1-638.jpg" />
+<meta property="og:image:width" content="638" />
+<meta property="og:image:height" content="491" />
+	<title>Web Application with Laravel - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/04/10/web-application-with-laravel/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/04\/10\/web-application-with-laravel\/","headline":"Web Application with Laravel","datePublished":"2018-04-10T17:17:22+00:00","dateModified":"2018-04-10T17:20:34+00:00","author":{"@type":"Person","name":"Danushka Herath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/04\/intro-to-laravel-php-framework-1-638.jpg","width":638,"height":491}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-abd0e16{padding-left:30px}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Web Application with Laravel</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/81f32af4149adb5de35857259b875c31?s=24&#038;d=mm&#038;r=g" alt="Danushka Herath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Danushka Herath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-04-10T22:47:22+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="638" height="491" src="/wp-content/uploads/2018/04/intro-to-laravel-php-framework-1-638.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/04/intro-to-laravel-php-framework-1-638.jpg 638w, /wp-content/uploads/2018/04/intro-to-laravel-php-framework-1-638-300x231.jpg 300w" layout="intrinsic"><noscript><img width="638" height="491" src="/wp-content/uploads/2018/04/intro-to-laravel-php-framework-1-638.jpg" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 638px) 100vw, 638px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>මේ ලිපියත් එක්ක පටන් ගන්න යන්නේ Laravel කියන Framework එකත් එක්ක කොහොමද වැඩ කරන්නේ කියලා උගන්වන්න යන ලිපි මාලාවක්. මේ පාඩම් මාලාව පදනම් වෙන්නේ PHP එක්ක. ඒක හින්දා PHP ගැන Basic ටිකක් වත් දැනගෙන තිබුණොත් මේක ගොඩක් වැදගත් වෙයි. ( Pure PHP වලින් Application එකක් ගහන්න කන කට්ට දන්නෝ දනිති. 😀 ) ඒ වගේම HTML, CSS, JS ගැනත් පොඩි දැනුමක් තියෙන්න ඕන. ඒ දේවල් වල ගැන දැනටමත් දන්න කෙනෙක් නම් මේ ලිපි Set එක මාර වැදගත් වෙයි. Web Application එකක් ලේසියෙන්ම හදා ගන්න.</p>
+<p>හරි මේ ටික කියවන්න ඕන උඩින් කියපු Requirements නැති කට්ටිය. තියන කට්ටිය මේ ටික Skip කරගෙන ඉස්සරහට යමු. මම මේ කියන්න හදන්නේ ඔයාලට උඩදි කියපු Skills ටික හදා ගන්න පුළුවන් ක්‍රමයක්. ඒ තමයි W3School එක. මම එක එක Topic එකට අදාල Link එක මෙතනට දාන්නම්. අවශ්‍ය නම් ඒ ටික බලලා දැනුමක් එකතු කර ගන්න. (පිළිවෙලට බලාගෙන යන්න)</p>
+<p class="amp-wp-abd0e16"><strong>HTML</strong> : <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a></p>
+<p class="amp-wp-abd0e16"><strong>CSS</strong> : <a href="https://www.w3schools.com/css">https://www.w3schools.com/css</a></p>
+<p class="amp-wp-abd0e16"><strong>JS : </strong><a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a></p>
+<p class="amp-wp-abd0e16"><strong>PHP : </strong><a href="https://www.w3schools.com/php/default.asp">https://www.w3schools.com/php/default.asp</a></p>
+<p> </p>
+<h4><strong>Framework එකක් කියන්නේ මොකද්ද?</strong></h4>
+<p><amp-img class="wp-image-771 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/609024-636477377761919723-16x9-300x169.jpg" alt="" width="414" height="233" srcset="/wp-content/uploads/2018/04/609024-636477377761919723-16x9-300x169.jpg 300w, /wp-content/uploads/2018/04/609024-636477377761919723-16x9-768x432.jpg 768w, /wp-content/uploads/2018/04/609024-636477377761919723-16x9-1024x576.jpg 1024w" layout="intrinsic"></amp-img></p>
+<p>සරල උදාහරණයක් ගමු. අපි හිතමු අපිට ඕන වෙනවා කොටුවක දිග හා පළල අඟල් 8 X 8 වෙන වෙසක් කූඩුවක් හදා ගන්න. අපි මුලින්ම කරන්නේ එක උණ ලීයක් අරගෙන අදාල දිග ප්‍රමාණයට මැනලා හදාගෙන ඒ ලී කෑල්ල යොදාගෙන අනිත් අවශ්‍ය ලී කෑලි 23 ම හදා ගන්නවානේ. නැතුව එක එක ලීය මැන මැන හදන්න යන්නේ නෑනේ. අන්න ඒ වගේ තමයි framework එකත් වැඩ කරන්නේ. ඒ කියන්නේ framework එක හරියට අර දිග මැනලා හදා ගත්ත ලී කෑල්ල වගේ. framework එකෙන් අපිට ඒ විදියට අපිට අවශ්‍ය කරන ඒවා හදලා දීලා තියෙනවා. අපි කරන්නේ ඒ දේවල් නැවත නැවත පාවිච්චි කරන එක. සරලවම මොකද්ද framework එකකින් කරන්නේ කියලා තේරෙන්න ඇති කියලා හිතනවා.</p>
+<h4><strong>Laravel විශේෂ වෙන්නේ ඇයි?</strong></h4>
+<p><amp-img class="wp-image-775 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/laravel-development-300x119.jpg" alt="" width="557" height="221" srcset="/wp-content/uploads/2018/04/laravel-development-300x119.jpg 300w, /wp-content/uploads/2018/04/laravel-development-768x306.jpg 768w, /wp-content/uploads/2018/04/laravel-development-1024x408.jpg 1024w, /wp-content/uploads/2018/04/laravel-development.jpg 1180w" layout="intrinsic"></amp-img></p>
+<p>මේ Laravel වල <a href="https://laravel.com/">Official Site</a> එකට ගියොත් ඔයාලට බලන්න පුළුවන් මේ Framework එකේ තියෙන features මොනවද කියලා. මම හැමදෙයක් ගැනම විස්තර කරන්න යන්නේ නෑ. අවශ්‍යයි කියලා හිතෙන දේවල් විතරක් කියන්නම්.</p>
+<p>Laravel කියන්නේ අපිට තියෙන එකම PHP Framework එක නෙවෙයි. අපිට ඕන තරම් Alternatives තියෙනවා. උදාහරණ විදියට <strong>yii2, codeigniter, zend framwork, symfony </strong>වගේ ගොඩක් ඒවා තියෙනවා. මේ තියෙන්නේ ගොඩක් ජනප්‍රිය කිහිපයක්. මේ වෙද්දී <b>Google Trends  Chart </b>එක තමයි මෙ පහළින් තියෙන්නේ. දැන් හිතාගන්න අපි මේ ඉගෙන ගන්න යන Framework එකේ තියෙන වටිනාකම ගැන.</p>
+
+<p>දැනට තියෙන ජනප්‍රියම Framework එක කියලා ඔයාලට පේනවා ඇති.</p>
+<p>අපි මේ framework එකේ ඉතිහාසය ගැන ටිකක් බලමු. මේක මුලින්ම හදලා තියෙන්නේ මම මුලින් කියපු <strong>Codeigniter </strong>කියන framework එකේ තිබුණු අඩුපාඩුකම් නැති කරන්න.</p>
+<p>මේ framework එක හදපු පුද්ගලයාගේ නම <strong>Taylor Otwell. <amp-img class="wp-image-778 alignleft amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/0_6L2GJ2A6vE_ZUMq--300x300.jpg" alt="" width="173" height="173" srcset="/wp-content/uploads/2018/04/0_6L2GJ2A6vE_ZUMq--300x300.jpg 300w, /wp-content/uploads/2018/04/0_6L2GJ2A6vE_ZUMq--150x150.jpg 150w, /wp-content/uploads/2018/04/0_6L2GJ2A6vE_ZUMq-.jpg 400w" layout="intrinsic"></amp-img></strong>පළමු සංස්කරණය නිකුත් කරලා තියෙන්නේ 2011 ජූනි 08 වෙනිදා (Laravel 1.0). මේ ලිපිය ලියන අද දවස (10/04/2018) වෙද්දී නිකුත් වෙලා තියෙන අන්තිම Version එක තමයි <strong>Laravel 5.6</strong></p>
+<p> </p>
+<p> </p>
+<p>දැන් අපි කතා කරමු Laravel මෙච්චර ප්‍රසිද්ධ වෙන්න එහෙම නැත්නම් විශේෂ වෙන්න හේතුව මොකද්ද කියලා.</p>
+<p class="amp-wp-abd0e16"><strong>1. <strong class="markup--strong markup--li-strong">Modularity or Multi-app: </strong></strong>මේ කියන්නේ අපිට අවශ්‍ය විදියට System එක Module විදියට Develop කරන්නත් Module කරපු කොටස් නැවත එකතු කරන්නත් පුළුවන්.</p>
+<p class="amp-wp-abd0e16"><strong>2. <strong class="markup--strong markup--li-strong">Authentication: </strong></strong>Laravel 5 වලින් පස්සේ ආපු Version එක්ක Authentication ගොඩක් පහසු වෙන විදියට නිර්මාණය කරලා තියෙනවා</p>
+<p class="amp-wp-abd0e16"><strong>3. <strong class="markup--strong markup--li-strong">Caching : </strong></strong>Caching කියන්නේ Site එකක වේගය පිළිබඳ තීර්ණාත්මක සාධකයක්. laravel වලින් Caching හරහා Site එකේ වේගය වැඩි කරලා තියෙනවා.</p>
+<p class="amp-wp-abd0e16"><strong>4. <strong class="markup--strong markup--li-strong">Routing : </strong></strong>Routing කියන්නේ Web Application එකක වැදගත්ම කොටසක්. මේ Framework එකෙන් ලේසියෙන්ම මේ වැඩේ කරගන්න පුළුවන්.</p>
+<p>හරි මේ තියෙන්නේ Basic ම Features ටිකක්. ඒ වගේම මම ගොඩක් කෙටියෙන් තමයි මේවා එකින් එක හඳුන්වලා දීලා තියෙන්නේ. අපි ඉස්සරහට මේ දේවල් විස්තර ඇතිව කතා කරමු. අද කරන්නේ හැඳින්වීමක් විතරයි.</p>
+<h3><strong>MVC ගැන දැනගනිමු</strong></h3>
+<p>MVC කියලා කෙටියෙන් කියන්නේ <strong>Model, View සහ Controller </strong>කියන වචන තුනට. මේ MVC කියන එක ගොඩක් වෙලාවට භාවිතා කරන්නේ User Interfaces හදන්න. මේක ගොඩක් Programming Languages වලදි භාවිතා කරනවා. <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Wiki</a> එකත් පොඩ්ඩක් බලන්න.</p>
+<p><amp-img class="wp-image-796 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png" alt="" width="355" height="240" srcset="/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png 300w, /wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce.png 431w" layout="intrinsic"></amp-img></p>
+<p>මේ තුන එකතු වෙලා කරන්නේ මේ රූපයේ තියෙනවා වගේ වැඩක්. අපේ Browser එක Http Request එකක් හරහා Web Application එකේ Controller එකට කතා කරනවා. දැන් Controller එක කරන්නේ Model එකට කතා කරලා එතනින් Data ඉල්ලගෙන ඒ Data අවශ්‍ය විදියට හදලා HTML එකේ View එකක් හදනවා. මේ Model එකෙන් තමයි අපි Database එකත් එක්ක සම්බන්ධ වෙන්නේ.</p>
+<p>ඉස්සරහදි අපි මේ එකින් එක හදන විදිය සහ ඒවා එකිනෙකට සම්බන්ධ කරන විදිය ගැන කතා කරමු. අදට හැඳින්වීමේ කොටස ඉවරයි. ඊළඟ ලිපියෙන් බලමු කොහොමද Laravel Framework එක ඔයාගෙ Machine එකේ Install කරගන්නේ කියලා.</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/web-development/laravel/" rel="category tag">Laravel</a>, <a href="/index.php/category/web-development/" rel="category tag">web development</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/laravel/" rel="tag">laravel</a>, <a href="/index.php/tag/web/" rel="tag">web</a>, <a href="/index.php/tag/web-development/" rel="tag">web development</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/04/10/web-application-with-laravel/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

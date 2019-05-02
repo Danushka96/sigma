@@ -1,0 +1,741 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="laravel eloquent එක්ක Database Table Relationship වලින් Query Build කරගන්න . One to One &amp; One to many Relationship Explained." />
+<meta name="twitter:title" content="Laravel වලින් Table Relationship එක්ක වැඩ කරමු - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2019/01/eloquent-macros.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Laravel වලින් Table Relationship එක්ක වැඩ කරමු - The SIGMA" />
+<meta property="og:description" content="laravel eloquent එක්ක Database Table Relationship වලින් Query Build කරගන්න . One to One &amp; One to many Relationship Explained." />
+<meta property="og:url" content="/index.php/2019/01/10/laravel-table-relationship/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="database" />
+<meta property="article:tag" content="elequent" />
+<meta property="article:tag" content="laravel" />
+<meta property="article:tag" content="mysql" />
+<meta property="article:tag" content="relational" />
+<meta property="article:section" content="Laravel" />
+<meta property="article:published_time" content="2019-01-10T10:46:16+00:00" />
+<meta property="article:modified_time" content="2019-01-10T10:46:18+00:00" />
+<meta property="og:updated_time" content="2019-01-10T10:46:18+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2019/01/eloquent-macros-1024x524.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2019/01/eloquent-macros-1024x524.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="524" />
+	<title>Laravel වලින් Table Relationship එක්ක වැඩ කරමු - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2019/01/10/laravel-table-relationship/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2019\/01\/10\/laravel-table-relationship\/","headline":"Laravel වලින් Table Relationship එක්ක වැඩ කරමු","datePublished":"2019-01-10T10:46:16+00:00","dateModified":"2019-01-10T10:46:18+00:00","author":{"@type":"Person","name":"Danushka Herath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2019\/01\/eloquent-macros.png","width":2200,"height":1125},"description":"laravel eloquent එක්ක Database Table Relationship වලින් Query Build කරගන්න . One to One & One to many Relationship Explained."}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/81f32af4149adb5de35857259b875c31?s=24&#038;d=mm&#038;r=g" alt="Danushka Herath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Danushka Herath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2019-01-10T16:16:16+00:00">
+		4 months ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="384" src="/wp-content/uploads/2019/01/eloquent-macros-1024x524.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2019/01/eloquent-macros-1024x524.png 1024w, /wp-content/uploads/2019/01/eloquent-macros-300x153.png 300w, /wp-content/uploads/2019/01/eloquent-macros-768x393.png 768w" layout="intrinsic"><noscript><img width="750" height="384" src="/wp-content/uploads/2019/01/eloquent-macros-1024x524.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක් කර ගන්න සාමාන්‍යයෙන් අපි Query එකක් ලිවුවොත් For loop දාගෙන සෑහෙන්න දඟලන්න වෙනවා. </p>
+
+
+
+<p>උදාහරණයක් විදියට අපි හිතමු Students, Schools කියලා Table 2ක් තියෙනවා කියලා. එක Student කෙනෙකුට එක School එකක් තියෙනවා‍‍. එක School එකකට Students ලා ගොඩක් ඉන්නවා. මේ වගේ වෙලාවක මට ඕන වෙනවා School Type එක “mixed” කියලා තියෙන School වල Student List එකක් හදා ගන්න. දැන් මුලින්ම කරන්න ඕන Student Table එකේ Query එකක් ගහන්න ඕන Mixed type school ටික හොයා ගන්න. ඊට පස්සේ ඒ එක එක School එකට අදාල Student ලා ගන්න ආපහු Query එකක් ලියන්න ඕන. නැත්නම් Table 2ම Join කරගන්න ඕන. ටිකක් වෙලා යන වැඩක්නේ</p>
+
+
+
+<p>මේ වැඩේ ලේසියෙන්ම කරගන්න පුළුවන් Laravel Eloquent  එක්ක. මේ වගේ දෙයක් හදා ගන්න විදිය තමයි අද ලිපියෙන් කියලා දෙන්න යන්නේ.</p>
+
+
+
+<h3><strong><u>පළමු පියවර</u></strong></h3>
+
+
+
+<p>මම මුලින්ම අලුත් Project එකක් හදා ගන්නවා මේ විදියට.. (Laravel install කරලා නැත්නම් මේ <a href="/index.php/2018/04/11/install-laravel-homestead-custom/">ලිපිය</a> බලන්න)</p>
+
+
+
+<pre class="wp-block-preformatted">composer create-project --prefer-dist laravel/laravel myEloquent</pre>
+
+
+
+<p>Project Files ටික හැදිලා ඉවර උනාම කැමති IDE එකකින් Project එක Open කරගන්න. ඊළඟට අපි කරන්න හදන්නේ අපිට ඕන කරන Tables හදා ගන්න එක. මම මේකට පාවිච්චි කරන්නේ උඩදි කිවුව උදාහරණයමයි. ඒ කියන්නේ School, Student and User කියන Scenario එක. </p>
+
+
+
+<p><strong>ඒ කියන්නේ School එකකට Students ලා ගොඩයි. Student කෙනෙකුට එක School එකයි. User කෙනෙකුට එක Student කෙනෙක් ඉන්නවා. Student කෙනෙක් කියන්නේ User කෙනෙක්.</strong></p>
+
+
+
+<h2><strong><u>දෙවන පියවර</u></strong></h2>
+
+
+
+<p>දැන් අපිට ඕන කරන Models ටික හදා ගන්න ඕන. මේ Model හරහා තමයි අපිට Database Queries කරගන්න පුළුවන් වෙන්නේ. දැන් කරන්නේ මේ Model ටිකයි ඒවගේ Migration Files ටිකයි Artisan Commands හරහා Generate කරගන්න එක.</p>
+
+
+
+<pre class="wp-block-preformatted">php artisan make:model Student -m</pre>
+
+
+
+<pre class="wp-block-preformatted">php artisan make:model School -m</pre>
+
+
+
+<p>මේ Command දෙක Run කරාට පස්සේ අපිට අවශ්‍ය කරන Files ටික generate වෙනවා. දැන් ඒ ටික අපිට අවශ්‍ය විදියට Edit කරගන්න තියෙන්නේ. මේකෙදි අපේ තව Table එකක් තියෙනවානේ Users කියලා. මම ඒක මෙතන Generate කරගත්තේ නැත්තේ ඒක Laravel එක්ක Default එන එකක් නිසා.</p>
+
+
+
+<p>මුලින්ම අපි බලමු Users Model එකට අපිට අවශ්‍ය Data දාගෙන Table හදා ගන්නේ කොහොමද කියලා.</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>namespace App;<br><br>use Illuminate\Notifications\Notifiable;<br>use Illuminate\Contracts\Auth\MustVerifyEmail;<br>use Illuminate\Foundation\Auth\User as Authenticatable;<br><br>class User extends Authenticatable<br>{<br>    use Notifiable;<br><br><em>/**</em><br><em>     * The attributes that are mass assignable.</em><br><em>     *</em><br><em>     * @var array</em><br><em>     */</em><br>    protected $fillable = [<br>        'firstName', 'lastName','email', 'password',<br>    ];<br><br><em>/**</em><br><em>     * The attributes that should be hidden for arrays.</em><br><em>     *</em><br><em>     * @var array</em><br><em>     */</em><br>    protected $hidden = [<br>        'password', 'remember_token',<br>    ];<br>}<br><br></pre>
+
+
+
+<p>මෙතනදි වෙනස් කරලා තියෙන්නේ Default එන name වෙනුවට firstName, lastName 2කට කඩලා තියෙනවා. මේ Model එකට අදාලව Migration File එක මේ විදියට හදා ගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>use Illuminate\Support\Facades\Schema;<br>use Illuminate\Database\Schema\Blueprint;<br>use Illuminate\Database\Migrations\Migration;<br><br>class CreateUsersTable extends Migration<br>{<br><em>/**</em><br><em>     * Run the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function up()<br>    {<br>        Schema::create('users', function (Blueprint $table) {<br>            $table-&gt;increments('id');<br>            $table-&gt;string('firstName');<br>            $table-&gt;string('lastName');<br>            $table-&gt;string('email')-&gt;unique();<br>            $table-&gt;timestamp('email_verified_at')-&gt;nullable();<br>            $table-&gt;string('password');<br>            $table-&gt;rememberToken();<br>            $table-&gt;timestamps();<br>        });<br>    }<br><br><em>/**</em><br><em>     * Reverse the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function down()<br>    {<br>        Schema::dropIfExists('users');<br>    }<br>}<br><br></pre>
+
+
+
+<p><strong>Student Model </strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>namespace App;<br><br>use Illuminate\Database\Eloquent\Model;<br><br>class Student extends Model<br>{<br>    protected $fillable = ['regNumber','contact','school_id','user_id'];<br>}<br><br></pre>
+
+
+
+<p><strong>Student Migration</strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>use Illuminate\Support\Facades\Schema;<br>use Illuminate\Database\Schema\Blueprint;<br>use Illuminate\Database\Migrations\Migration;<br><br>class CreateStudentsTable extends Migration<br>{<br><em>/**</em><br><em>     * Run the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function up()<br>    {<br>        Schema::create('students', function (Blueprint $table) {<br>            $table-&gt;increments('id');<br>            $table-&gt;string('contact');<br>            $table-&gt;integer('school_id');<br>            $table-&gt;integer('user_id');<br>            $table-&gt;timestamps();<br>        });<br>    }<br><br><em>/**</em><br><em>     * Reverse the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function down()<br>    {<br>        Schema::dropIfExists('students');<br>    }<br>}<br><br></pre>
+
+
+
+<p>මේකෙදි මම student table එක ඇතුලට School, User  tables වලට අදාල records හඳුන ගන්න school_id, user_id තියා ගන්නවා. සාමාන්‍යයෙන් මේ වගේ foreign keys set කරගන්නකොට “tablename_id” විදියට තමයි යොදා ගන්න ඕන.</p>
+
+
+
+<p><strong>School Model</strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>namespace App;<br><br>use Illuminate\Database\Eloquent\Model;<br><br>class School extends Model<br>{<br>    protected $fillable=['name','contact'];<br>}<br><br></pre>
+
+
+
+<p><strong>School Migration</strong></p>
+
+
+
+<pre class="wp-block-preformatted"> &lt;?php<br><br>use Illuminate\Support\Facades\Schema;<br>use Illuminate\Database\Schema\Blueprint;<br>use Illuminate\Database\Migrations\Migration;<br><br>class CreateSchoolsTable extends Migration<br>{<br><em>/**</em><br><em>     * Run the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function up()<br>    {<br>        Schema::create('schools', function (Blueprint $table) {<br>            $table-&gt;increments('id');<br>            $table-&gt;string('name');<br>            $table-&gt;string('contact');<br>            $table-&gt;timestamps();<br>        });<br>    }<br><br><em>/**</em><br><em>     * Reverse the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function down()<br>    {<br>        Schema::dropIfExists('schools');<br>    }<br>}<br><br></pre>
+
+
+
+<p>මේ විදියට අපි Migration Files ටික හදා ගත්තට පස්සේ කරන්න තියෙන්නේ migrate කරගන්න එක. ඒකට මේ Command එක run කරන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">php artisan migrate<br></pre>
+
+
+
+<p>හරි දැන් අපිට කරන්න තියෙන්නේ relations ටික table වලින් query වෙන විදියට set කරගන්න එක. </p>
+
+
+
+<h2><strong>Relationship Types</strong></h2>
+
+
+
+<p>Relationship Types ප්‍රධාන වශයෙන් 3ක් තියෙනවා.</p>
+
+
+
+<ol><li><strong>One to One</strong></li><li><strong>One to Many</strong></li><li><strong>Many to Many</strong></li></ol><p>දැන් අපි set කරන්න යන්නේ student සහ user අතර one to one relationship එකක්. ඒ වගේම student සහ school අතර one to many relationship එකක්. Many to Many Relationship එක set කරගන්න විදිය ගැන මම වෙනම ලිපියකින් කියලා දෙන්නම්. නැත්නම් මෙ Article එක අද ඉවර කරන්න වෙන්නේ නෑ. 😀 </p>
+
+
+
+<p>මේ ගැන වැඩිදුර තොරතුරු ඕන නම් මේ <a href="https://laravel.com/docs/5.7/eloquent-relationships">Official Laravel Documentation</a> එක බලන්න</p>
+
+
+
+<h3><u><strong>One to One Relationship (Student -&gt; User )</strong></u></h3>
+
+
+
+<p>අපි හදා ගත්ත Student Model එකයි User Model එකයි change කරන්න දැන් තියෙන්නේ. මුලින්ම අපි Student Model එක ගැන බලමු.</p>
+
+
+
+<p>මේ code එක Student Model එකේ $fillable කියන Array එකට යටින් paste කරගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">public function user(){<br><em>return</em> <em>$this</em>-&gt;belongsTo('App\User');<br>}</pre>
+
+
+
+<p>මේකෙන් අපි කියන්නේ Student Belongs to User කියන එක.</p>
+
+
+
+<p>දැන් User Model එක Open කරගෙන මේ Code එක කලින් වගේම $fillable Array එකට යටින් Paste කරගන්න. </p>
+
+
+
+<pre class="wp-block-preformatted">public function student(){<br><em>return</em> <em>$this</em>-&gt;hasOne('App\Student');<br>}</pre>
+
+
+
+<p>මෙතනින් කරන්නේ User has one student කියන එක. හැබැයි ඔයාලා දන්නවා ඇති අපිට One to One Relationship එකකදි පුළුවන් කැමති Table එකකට foreign key එක දාලා Relation එක set කරන්න පුළුවන්. දැන් ප්‍රශ්ණයක් තියෙනවානේ මොකටද Belongs to දාන්න ඕන මොකටද HasOne දාන්න ඕන කියලා. ඒක බලන්න ඕන Foreign key එක දාන Table එක අනුව. මේ උදාහරණය අනුව මම User_id field එකක් දැම්මා Students Table එකට.  ඒක නිසා belongsTo දාන්න ඕන Student Model එකට.</p>
+
+
+
+<h2><strong><u>One to Many Relationship ( Student-&gt;School)</u></strong></h2>
+
+
+
+<p>දැන් වෙන්න ඕන වැඩේ තේරෙනවානේ. අපිට කරන්න තියෙන්නේ Model අතර සම්බන්ධතාවක් හදා ගන්න. ඒකෙන් Relationship Set වෙනවා. </p>
+
+
+
+<p>අපි ආපහු student model එකෙන් වැඩේ පටන් ගමු. මේ Code එක User() කියලා උඩදි දාපු function එකට පහලින් දාගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">public function school(){<br><em>return</em> <em>$this</em>-&gt;belongsTo('App\School');<br>}</pre>
+
+
+
+<p>මේක School Model එකට දාගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">public function students(){<br><em>return</em> <em>$this</em>-&gt;hasMany('App\Student');<br>}</pre>
+
+
+
+<p>කලින් වගේම මෙක one-to-many relationship එකක් නිසා අපි කරන්නේ Student Belongs to School relation එකයි school has many students එකයි මේ විදියට set කරගන්න එක. </p>
+
+
+
+<p>දැන් අපි බලමු හරියට මේ relation set වුණාද කියලා. ඒක කරන්න අපිට පොඩි tool එකක් තියෙනවා artisan commands වල. ඒක තමයි <strong>Tinker .  </strong>මේක යොදාගෙන අපිට ගොඩක් ප්‍රයෝජන ගන්න පුළුවන්. හැබැයි මේකෙදි අපි කතා කරන්නේ relations set කරගන්නේ කොහොමද කියලා. </p>
+
+
+
+<p>මුලින්ම Project එක open කරලා තියෙන IDE එකේ terminal එක open කරගෙන මේ Command එක run කරවන්න. </p>
+
+
+
+<pre class="wp-block-preformatted">php artisan tinker</pre>
+
+
+
+<figure class="wp-block-image"><amp-img src="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png" alt="" class="wp-image-1526 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png 642w, /wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14-300x45.png 300w" width="642" height="96" layout="intrinsic"><noscript><img src="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png" alt="" class="wp-image-1526" sizes="(max-width: 642px) 100vw, 642px" width="642" height="96"></noscript></amp-img><figcaption>tinker Screen shot</figcaption></figure><p>දැන් සාමාන්‍යයෙන් php වලින් variable assign කරන විදියට මේ වගේ type කරලා run කරගන්න. ඊට කලින් Database එකට Data ටිකක් දාගෙන ඉන්න. නැත්නම් බලන්න වෙන්නේ නෑ.</p>
+
+
+
+<pre class="wp-block-preformatted">$user  = \App\Student::first()<br></pre>
+
+
+
+<p>මේක මුලින්ම tinker එකේ type කරලා බලන්න result එකක් එනවද කියලා. error එකක් එනවා නම් Comment එකක් දාන්න නැත්නම් Google කරලා බලන්න අනිවාර්‍යයෙන් ඇති. මෙකෙදි ඔයා දාපු පළවෙනි data එක ආවොත් මේ ඊළඟ එක දාලා බලන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">$user-&gt;user</pre>
+
+
+
+<p>මෙකෙදි පෙන්නන්නේ student ට අදාල user කවුද කියන එක. මේක අපි මුලින්ම set කරා Model එකේ one to one relationship එකක්. දැන් අපිට කිසිම Query එකක් ලියන්නේ නැතුව මේ Eloquent එක හරහා අදාල Data ගන්න පුළුවන්. මේ වගේම දැන් try කරලා බලමු school එක ගන්න පුළුවන්ද කියලා. </p>
+
+
+
+<pre class="wp-block-preformatted">$user-&gt;school</pre>
+
+
+
+<p>මේකෙදි හරියට Result එකක් ආවා කියන්නේ අපේ relation ටික වැඩ කියන එක. ඕන නම් School Object එකක් හදලා බලමු Students ලා ගන්න පුළුවන්ද කියලා.</p>
+
+
+
+<pre class="wp-block-preformatted">$school = \App\School::first()<br><br>$school-&gt;students</pre>
+
+
+
+<p>දැන් හරියට Data ටික එනවා කියන්නේ Result එක හරි. මේ විදියට අලුතින් Model හදලා Query කරලා බලන්න. අනිත් එක තමයි අපි model එක ඇතුලෙ relations methods විදියට ලිවුවට මෙතනදි ඒ method එක call කරන්නේ Function එකක් විදියට නෙවෙයි. නිකන්ම attribute එකක් විදියට. ඒ ගැන සැලකිලිමත් වෙන්න. මේ විදියටම tinker එකේ call කරා වගේ අපිට Controller එකක් හරි View එකක් හරි ඇතුලෙදිත් මේ වගේ Data retrieve කර ගන්න පුළුවන්.</p>
+
+
+
+<p>හරි එහෙනම් මොකක් හරි ප්‍රශ්ණයක් තිබුණොත් අහන්න. ඊළඟ tutorial එකෙන් Many to Many එකක් set කරගෙන් වැඩ කරන විදිය බලමු. </p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/web-development/laravel/" rel="category tag">Laravel</a>, <a href="/index.php/category/web-development/" rel="category tag">web development</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/database/" rel="tag">database</a>, <a href="/index.php/tag/elequent/" rel="tag">elequent</a>, <a href="/index.php/tag/laravel/" rel="tag">laravel</a>, <a href="/index.php/tag/mysql/" rel="tag">mysql</a>, <a href="/index.php/tag/relational/" rel="tag">relational</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2019/01/10/laravel-table-relationship/#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

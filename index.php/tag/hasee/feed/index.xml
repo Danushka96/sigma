@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hasee &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/hasee/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Machine Learning වලට අත්පොත් තබමු.</title>
+		<link>/index.php/2019/02/12/machinelearningbeginning/</link>
+				<comments>/index.php/2019/02/12/machinelearningbeginning/#comments</comments>
+				<pubDate>Tue, 12 Feb 2019 11:34:13 +0000</pubDate>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+				<category><![CDATA[Machine Learning]]></category>
+		<category><![CDATA[anaconda]]></category>
+		<category><![CDATA[hasee]]></category>
+		<category><![CDATA[hasee amarathunga]]></category>
+		<category><![CDATA[keras]]></category>
+		<category><![CDATA[machine learning]]></category>
+		<category><![CDATA[TenserFlow]]></category>
+		<category><![CDATA[thesigma]]></category>
+
+		<guid isPermaLink="false">/?p=1844</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හොදයි කොහොමද යාලුවනේ ඔන්න මම අද තුන්වෙනි දිගහැරුම අරගෙන ආවා Machine Learning ගැන ලියපු. මීට කලින් ලියපු ලිපි වලින් මම උත්සාහ කළේ Machine Learning කියන්නෙ මොකක්ද මොන වගේ තාක්ෂණයන්ද ඒකේ  අඩංගු වගේම මොන ක්ෂේත්‍ර වලද භාවිතා වෙන්නෙ කියලා උදාහරණ කිහිපයක් එක්කම මං කතා කළා ඔයාලට මතක ඇති. කලින් ලිපි කියවන්න<a class="moretag" href="/index.php/2019/02/12/machinelearningbeginning/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/12/machinelearningbeginning/">Machine Learning වලට අත්පොත් තබමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>හොදයි කොහොමද යාලුවනේ ඔන්න මම අද තුන්වෙනි දිගහැරුම අරගෙන ආවා Machine Learning ගැන ලියපු. මීට කලින් ලියපු ලිපි වලින් මම උත්සාහ කළේ Machine Learning කියන්නෙ මොකක්ද මොන වගේ තාක්ෂණයන්ද ඒකේ  අඩංගු වගේම මොන ක්ෂේත්‍ර වලද භාවිතා වෙන්නෙ කියලා උදාහරණ කිහිපයක් එක්කම මං කතා කළා ඔයාලට මතක ඇති. කලින් ලිපි කියවන්න බැරි වුණ කෙනෙක් ඉන්නවා නම් <strong><a href="/index.php/2019/02/09/machinelearningarticle2/">මෙතනින් </a></strong>ගිහින් කියවන්න පුලුවන්.</p>
+
+
+
+<p>ඔන්න අද මං යන්නෙ Machine Learning කරන්න ඕන කරන Software ,
+Libraries කොහ‍ාමද අපේ Computer එකට Install කරගන්නෙ&nbsp; වගේම කොහොමද මේ Software වලට අදාල Path Environment setup කරගන්නෙ කියලා. ඉතින්
+බැලූ බැල්මට ඔයාල බලනවා ඇති මේක කියාදෙන්නත් දෙයක්ද කියලා. ඒත් මේක ටිකක් අමාරු
+වැඩක් මොකද Machine Learning කරන්න ගොඩක් Software වගේම Libraries
+install කර ගන්න ඕනේ
+අපේ Computer එකට.</p>
+
+
+
+<p>මම මේ ලිපි මාලාවේ Machine Learning &nbsp;කරන්න යන්නෙ <strong>Python 3.6</strong> පාවිච්චි කරලා. ඒ නිසා මුලින්ම Python install කරලා නැති කෙනෙක් ඉන්නවා නම් ඉක්මනට install කරගන්න latest version එකක් 3.6 , 3.7 වගේ &nbsp;<a href="https://www.python.org/downloads/"><strong>මෙතනින් </strong></a>ගිහින්.</p>
+
+
+
+<p>&nbsp;Machine Learning කරද්දි මම Python IDE එක විදියට පාවිච්චි කරන්නෙ JetBrains ලගේ <strong>PyCharm </strong>කියන Python IDE. මොකද Python වලට තියෙන හොදම IDE එකක් තමා මේක. ඔයාලට පුලුවන් මේ IDE එක <strong><a href="https://www.jetbrains.com/pycharm-edu/download">මෙතනින් </a></strong>ගිහින් Download කරගන්න.</p>
+
+
+
+<p>( <a href="https://www.jetbrains.com/pycharm-edu/download">https://www.jetbrains.com/pycharm-edu/download</a>)</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/pycharm-1024x469.jpg" alt="" class="wp-image-1845" srcset="/wp-content/uploads/2019/02/pycharm-1024x469.jpg 1024w, /wp-content/uploads/2019/02/pycharm-300x137.jpg 300w, /wp-content/uploads/2019/02/pycharm-768x352.jpg 768w, /wp-content/uploads/2019/02/pycharm.jpg 1365w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>දැන් තියෙන්නෙ Machine Learning කරන්න ඕන කරන TensorFlow කියන library &nbsp;එක වගේම <strong>TensorFlow </strong>මත Run කරන <strong>Keras&nbsp; </strong>කියන open source neural network library එක install කරන එක. </p>
+
+
+
+<p>TensorFlow ගැන කීවොත් මේකත් Open Source symbolic math library එකක්. ඒවගේම <strong>Neural Network</strong> වලටත් පාවිච්චි වෙනවා මේක. TensorFlow ගැන වැඩි විස්තර ඕනෙනම් ඔයාලට පුලුවන් මෙතනින් <strong><a href="https://www.tensorflow.org/">TensorFlow </a></strong>web site එකට ගිහින් දැනගන්න. </p>
+
+
+
+<p>( <a href="https://www.tensorflow.org/">https://www.tensorflow.org/</a> )</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/tensorflow-1024x483.jpg" alt="" class="wp-image-1846" srcset="/wp-content/uploads/2019/02/tensorflow-1024x483.jpg 1024w, /wp-content/uploads/2019/02/tensorflow-300x141.jpg 300w, /wp-content/uploads/2019/02/tensorflow-768x362.jpg 768w, /wp-content/uploads/2019/02/tensorflow.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; හැබැයි Web site එකට ගියාට නම් ඔයාලට මේක install කරන්න setup එකක් හම්බවෙන්නෙ නෑ මොකද මේක Special library එකක්. මේ වගේ Machine Learning වලට භාවිතා කරන libraries install කරන්න විශේෂ softwares තියෙනවා. ඉතින් <strong>Anaconda </strong>කියන්නෙ එහෙම Python libraries install කරන්න පුලුවන් software එකක්. අපිට පුලුවන් Anaconda install කළාට පස්සේ Anaconda Terminal එකෙන් ඕනේ library එකක් install කරගන්න. එහෙනම් Anaconda download කරගමු මුලින්ම <a href="http:// https://www.anaconda.com/distribution"><strong>මෙතනින් </strong></a>ගිහින්. </p>
+
+
+
+<p>මේක download කරද්දි මතක තියාගන්න ඔයාලගේ Python version එකට ගැලපෙන විදියට මේක download කරගන්න. Python latest version තියෙන නිසා මම Python 3.7 Version 64-Bit Graphical Installer එක තමා install ක‍ළේ මගෙ Windows Computer එකේ. Linux , Mac තිබ්බත් වෙනසක් නෑ. තෝරගන්න පුලුවන් OS එකට අදාල setup එක</p>
+
+
+
+<p>( <a href="https://www.anaconda.com/distribution">https://www.anaconda.com/distribution</a> )</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/anaconda-1024x484.jpg" alt="" class="wp-image-1847" srcset="/wp-content/uploads/2019/02/anaconda-1024x484.jpg 1024w, /wp-content/uploads/2019/02/anaconda-300x142.jpg 300w, /wp-content/uploads/2019/02/anaconda-768x363.jpg 768w, /wp-content/uploads/2019/02/anaconda.jpg 1364w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;හොදයි මේක සාමාන්‍ය Software එකක් install කරන විදියටම ඔයාලට පුලුවන් install කරගන්න. මේකේ Advanced installation step එකේදී Add anaconda to my PATH environment variable කියන එකත් tick කරන්න. එතකොට ඔයාගේ <strong>Environment PATH</strong> එක Automatically setup වෙනවා.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/install-win-path.png" alt="" class="wp-image-1848" srcset="/wp-content/uploads/2019/02/install-win-path.png 814w, /wp-content/uploads/2019/02/install-win-path-300x232.png 300w, /wp-content/uploads/2019/02/install-win-path-768x593.png 768w" sizes="(max-width: 814px) 100vw, 814px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anaconda install වෙන්න මිනිත්තු 10 ක් වගේ යයි සාමාන්‍යයෙන්. ඒක install කළාට පස්සෙ ඔයාට පුලුවන් හරියට install වෙලාද බලන්න. ඔයාග‍ෙ Terminal එකේ හරි Command prompt එකේ හරි <strong>conda </strong>කියලා Type කරලා බලන්න. එතකොට මේ වගේ details පෙන්නාවි හරියට install වෙලානම්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/condaa.png" alt="" class="wp-image-1849" srcset="/wp-content/uploads/2019/02/condaa.png 903w, /wp-content/uploads/2019/02/condaa-300x230.png 300w, /wp-content/uploads/2019/02/condaa-768x589.png 768w" sizes="(max-width: 903px) 100vw, 903px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; දැන් ඔන්න අපිට
+තියෙන්නෙ ඕන කරන libraries ටික install කරගන්න. ඒකට අපිට මේ conda terminal එක use කරන්න පුලුවන්. </p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මුලින්ම අපිට ඕනෙ කරන libraries වලට අදාලව Environment එකක් අපි හදාගන්න ඕනේ. ඒකට මුලින්ම “conda create -n <strong>tfp3.6</strong> python=3.6” කියන Command එක use කරනවා.මොකද 3.7 Machine Learning කරන්න තරම් stable version එකක් නෙමේ. මේකේ tfp3.6 කියන්නෙ මම හදන Environment එකේ නම. ඒකට ඔයාලට කැමති නමක් දාගන්න පුලුවන්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/01-1.png" alt="" class="wp-image-1855" srcset="/wp-content/uploads/2019/02/01-1.png 802w, /wp-content/uploads/2019/02/01-1-300x43.png 300w, /wp-content/uploads/2019/02/01-1-768x111.png 768w" sizes="(max-width: 802px) 100vw, 802px" /></figure>
+
+
+
+<p>මේකෙන්  tfp3.6 කියලා environment එකක් හැදෙනවා ඔයාගෙ anaconda install වුණ PATH එකේ <strong>envs </strong>කියන folder එකේ. ඒ කියන්නෙ දැනට environment දෙකක් තියේ එකක් මුලින් install වෙද්දි හැදුව base PATH එකයි දැන් හදපු  tfp3.6 path එකයි. ඒ වගේම මේකෙදි TensorFlow Python වලට Install කරන්න ඕන කරන අමතර libraries ටිකකුත් install වෙනවා <strong>pip </strong>වගේ.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/001.png" alt="" class="wp-image-1851" srcset="/wp-content/uploads/2019/02/001.png 369w, /wp-content/uploads/2019/02/001-300x128.png 300w" sizes="(max-width: 369px) 100vw, 369px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; හොදයි මෙහෙම environment එක හැදුවට විතරක් මදි අපි ඒක activate කරන්නත් ඕනේ. ඉතින් අපිට පුලුවන් “ activate  tfp3.6 ” කියන command එකෙන් tfp3.6 environment එක activate කරන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/2-3.jpg" alt="" class="wp-image-1854" srcset="/wp-content/uploads/2019/02/2-3.jpg 808w, /wp-content/uploads/2019/02/2-3-300x32.jpg 300w, /wp-content/uploads/2019/02/2-3-768x81.jpg 768w" sizes="(max-width: 808px) 100vw, 808px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; එතකොට මේ වගේ (tfp3.6) කියලා හැම පේළියකම මුලින් පෙන්නාවි command prompt එකේ. දැන් අපිට පුලුවන් pip library එක use කරලා TensorFlow , Keras කියන libraries install කරගන්න පහළ තියෙන command දෙකෙන්.</p>
+
+
+
+<ul><li>pip install tensorflow</li><li>pip install keras</li></ul>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/3-1024x463.jpg" alt="" class="wp-image-1853" srcset="/wp-content/uploads/2019/02/3-1024x463.jpg 1024w, /wp-content/uploads/2019/02/3-300x136.jpg 300w, /wp-content/uploads/2019/02/3-768x347.jpg 768w, /wp-content/uploads/2019/02/3.jpg 1352w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ඉතින් මේ දෙකම install වුණාම ඔන්න conda use කරලා කරපු වැඩ ටික
+ඉවරයි. දැන් තියෙන්නෙ අපේ PyCharm Python IDE එකට ගිහින් අපේ libraries වැඩද බලන්න.</p>
+
+
+
+<p>         PyCharm IDE එක Open කළාම Create New Project click කරලා ඔයාට workplace එකක් create කරගන්න.</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/PyCharm1.png" alt="" class="wp-image-1856" width="553" height="343" srcset="/wp-content/uploads/2019/02/PyCharm1.png 777w, /wp-content/uploads/2019/02/PyCharm1-300x186.png 300w, /wp-content/uploads/2019/02/PyCharm1-768x477.png 768w" sizes="(max-width: 553px) 100vw, 553px" /><figcaption><br></figcaption></figure>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/PyCharm2.png" alt="" class="wp-image-1857" width="556" height="344" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; දැන් ඔයාලට පුලුවන් workplace එකේ ඔයාගේ folder එක Right Click කරලා new python file එකක් හදාගන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/createfile-1024x155.png" alt="" class="wp-image-1858" srcset="/wp-content/uploads/2019/02/createfile-1024x155.png 1024w, /wp-content/uploads/2019/02/createfile-300x45.png 300w, /wp-content/uploads/2019/02/createfile-768x116.png 768w, /wp-content/uploads/2019/02/createfile.png 1363w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මම මේ sample.py කියන file එකේ import tensorflow කියලා type කළොත් TensorFlow import වෙන්න ඕනේ. ඒත් ඔයාලට බලාගන්න පුලුවන් වෙයි error එකක්. </p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/2.png" alt="" class="wp-image-1859" srcset="/wp-content/uploads/2019/02/2.png 879w, /wp-content/uploads/2019/02/2-300x59.png 300w, /wp-content/uploads/2019/02/2-768x151.png 768w" sizes="(max-width: 879px) 100vw, 879px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/22.png" alt="" class="wp-image-1860" srcset="/wp-content/uploads/2019/02/22.png 590w, /wp-content/uploads/2019/02/22-300x79.png 300w" sizes="(max-width: 590px) 100vw, 590px" /></figure>
+
+
+
+<p>       මොකද අපි TensorFlow install කළේ  tfp3.6 කියලා environment එකක් හදලා. ඒ නිසා අපේ Python Interpreter ඒ environment එකේ තියෙන්න ඕන. අපිට ඒ Interpreter Add කරගන්න පුලුවන් IDE එකේ settings වලට ගිහින්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/3.png" alt="" class="wp-image-1862" srcset="/wp-content/uploads/2019/02/3.png 1008w, /wp-content/uploads/2019/02/3-300x122.png 300w, /wp-content/uploads/2019/02/3-768x313.png 768w" sizes="(max-width: 1008px) 100vw, 1008px" /></figure>
+
+
+
+<p>Settings වල Project කියලා මම උඩින් පෙන්නලා තියෙන පින්තූරෙ Project Interpreter කියන තැනට ගියාට පස්සෙ අපිට බලාගන්න පුලුවන් Interpreter මොකක්ද කියලා. මේකේ විදියට නම් මේ Interpreter අපි හදපු  tfp3.6  environment එකට අදාල Interpreter නෙමේ. ඒ නිසා මට පුලුවන් එයාව Add කරගන්න දකුණු පැත්තෙ තියෙන settings එක ඔබලා Add කියන button එකෙන්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/4.png" alt="" class="wp-image-1863" srcset="/wp-content/uploads/2019/02/4.png 790w, /wp-content/uploads/2019/02/4-300x77.png 300w, /wp-content/uploads/2019/02/4-768x198.png 768w" sizes="(max-width: 790px) 100vw, 790px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/5-1.png" alt="" class="wp-image-1864" srcset="/wp-content/uploads/2019/02/5-1.png 830w, /wp-content/uploads/2019/02/5-1-300x99.png 300w, /wp-content/uploads/2019/02/5-1-768x254.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මෙතනින් Conda Environment තෝරලා Existing environment එක tick කරලා ඔයාගේ tfp3.6 Environment PATH එක Add කරගන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/6.png" alt="" class="wp-image-1865" srcset="/wp-content/uploads/2019/02/6.png 817w, /wp-content/uploads/2019/02/6-300x198.png 300w, /wp-content/uploads/2019/02/6-768x507.png 768w" sizes="(max-width: 817px) 100vw, 817px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; එහෙම Add කරගත්තට පස්සෙ පුලුවන් ඔයාලා Add කර ගත්ත Interpreter Select කරලා Ok කරන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/7.png" alt="" class="wp-image-1866" srcset="/wp-content/uploads/2019/02/7.png 1010w, /wp-content/uploads/2019/02/7-300x208.png 300w, /wp-content/uploads/2019/02/7-768x533.png 768w" sizes="(max-width: 1010px) 100vw, 1010px" /></figure>
+
+
+
+<p>දැන් ඔයාලට පුලුවන් &nbsp;TensorFlow , Keras&nbsp;&nbsp;import කරලා බලන්න.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/final-1024x423.jpg" alt="" class="wp-image-1867" srcset="/wp-content/uploads/2019/02/final-1024x423.jpg 1024w, /wp-content/uploads/2019/02/final-300x124.jpg 300w, /wp-content/uploads/2019/02/final-768x317.jpg 768w, /wp-content/uploads/2019/02/final.jpg 1305w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; දැන් කිසිම Error එකක් නැතුව program එක Run වෙනවා ඔයාලට බලාගන්න පුලුවන්. එහෙම මොනා හරි Errors එනවා නම් පහළින් <strong>Comment </strong>එකක් දාන්න. මොකද TensorFlow , keras &nbsp;Run වෙන්න තවත් බොහෝ libraries තියෙනවා. සමහර විට ඔයාලගේ Environment එකේ ඒක නැතිවෙන්න පුලුවන් numpy , scipy වගේ libraries.</p>
+
+
+
+<p>ඉතින් යාලුවනේ මම ඔන්න අද Machine Learning වලට අත්පොත් තිබ්බා. ඒ කියන්නෙ TenserFlow , Keras වගේ libraries install කරගත්තා. බැලූ බැල්මට ලේසි වගේ පේන්න ඇති. ඒත් ඔයාලට තේරෙයි install කරන්න කොච්චර ගේමක් දෙන්න ඕනෙද කියලා මේ libraries. Install කරලම බලන්නකො. එහෙනම් ඊළග දවසෙ ඉදන් පටන් ගමු Machine Learning කරන්න. Install කරද්දි මොනා හරි ප්‍රශ්නයක් වුනොත් <strong>comment </strong>එකක් දාන්න පහළින්. ගිහින් එන්නම්. ස්තූතියි හැමෝටම.</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/12/machinelearningbeginning/">Machine Learning වලට අත්පොත් තබමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/12/machinelearningbeginning/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+							</item>
+		<item>
+		<title>Machine Learning දෙවැනි දිගහැරුම.</title>
+		<link>/index.php/2019/02/09/machinelearningarticle2/</link>
+				<comments>/index.php/2019/02/09/machinelearningarticle2/#comments</comments>
+				<pubDate>Sat, 09 Feb 2019 08:23:44 +0000</pubDate>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+				<category><![CDATA[Machine Learning]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[anki vector robot]]></category>
+		<category><![CDATA[artificial intelligence]]></category>
+		<category><![CDATA[hasee]]></category>
+		<category><![CDATA[hasee amarathunga]]></category>
+		<category><![CDATA[machine]]></category>
+		<category><![CDATA[machine learning]]></category>
+		<category><![CDATA[robotics]]></category>
+		<category><![CDATA[vector robot]]></category>
+
+		<guid isPermaLink="false">/?p=1801</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> හොදයි අද මම ඔන්න අරගෙන ආවා Machine Learning ගැන ලියපු දෙවැනි ලිපිය. පළවෙනි ලිපියෙ මම Machine Learning කියන්නෙ මොකක්ද ඒකේ මොන වගේ තාක්ෂණයක්ද තියෙන්නෙ වගේම තවත් ගොඩක් දේ &#160;පැහැදිලි කළා ඔයාලට මතක ඇති. ඒ ලිපිය කියවපු නැති කෙනෙක් ඉන්නවා නම් මෙතනින් ගිහින් කියවන්න. &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; අද මං කතා කරන්න යන්නෙ Machine<a class="moretag" href="/index.php/2019/02/09/machinelearningarticle2/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/09/machinelearningarticle2/">Machine Learning දෙවැනි දිගහැරුම.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>හොදයි අද මම ඔන්න අරගෙන ආවා <strong>Machine Learning</strong> ගැන ලියපු දෙවැනි ලිපිය. පළවෙනි ලිපියෙ මම <strong>Machine Learning </strong>කියන්නෙ මොකක්ද ඒකේ මොන වගේ තාක්ෂණයක්ද තියෙන්නෙ වගේම තවත් ගොඩක් දේ &nbsp;පැහැදිලි කළා ඔයාලට මතක ඇති. ඒ ලිපිය කියවපු නැති කෙනෙක් ඉන්නවා නම් <strong><a href="/index.php/2019/01/31/machine-learning/">මෙතනින්</a></strong><a href="/index.php/2019/01/31/machine-learning/"> </a>ගිහින් කියවන්න.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; අද මං කතා කරන්න යන්නෙ <strong>Machine Learning </strong>කොහොමද අපිට සැබෑ ජීවිතයෙදි පාවිච්චි කරන්න පුලුවන් කියලා. හොදයි අපි කෙළින්ම එමු මාතෘකාවට. ඔයාලට මම කලින් ලිපියෙ කීවා <strong>Machine Learning </strong>වලට ගොඩක්ම අවශ්‍ය වටින්නෙ මොකක්ද කියලා. ඒ තමා <strong>Data</strong>. <strong>Data </strong>නැත්නම්<strong> Machine Learning </strong>කියලා දෙයක් නෑ. ඉතින් අපි මොකක් හරි යන්ත්‍රයකට <strong>Machine Learning </strong>කරද්දි අපිට විශාල දත්ත ගබඩාවක් තියේ නම් ඒ යන්ත්‍රය මගින් අපි බලාපොරොත්තු වෙන Output එකේ <strong>Accuracy </strong>එක වැඩියි. ඒ කියන්නෙ අපට සාර්ථක ප්‍රතිඵලයක් ඒ යන්ත්‍රය ලබා දෙනවා අපේ Input වලට අදාලව.</p>
+
+
+
+<p>හොදයි අපි කතා
+කරමු අද ලෝකේ භාවිතා වන Powerful තාක්ෂණික ක්‍රමයක් ගැන.ඒ තමා <strong>Image
+Recognition</strong>.</p>
+
+
+
+<p><strong>Image Recognition </strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; අද ලොකේ භාවිතා කරන සාර්ථකම ප්‍රතිඵල
+තියෙන තාක්ෂණයක් තමා Image Recognition කියන්නෙ. ඇයි මම එහෙම කියන්නෙ මොකද අද වැඩි දෙනා
+කතා කරන Robotics තාක්ෂණයෙ පවා මුලිකවම
+භාවිතා වෙන දෙයක් තමා මේ Image Recognition. මොකක්ද මේ Image Recognition කියන්නෙ. Image
+Recognition කියන්නෙ මොකක්
+හරි කැමරාවක් මගින් යම් කිසි වස්තුවක් හදුනා ගැනීමේ හැකියාව. මම හදුනා ගැනීම කියලා
+අදහස් කලේ ඒ වස්තුව මොකක්ද ඒකෙ තියෙන ලේබල් මොනවද වර්ණය මොකක්ද වගේ දේවල්. උදාහරණයක්
+කීවොත් මම ගන්නම් Card Pack එකේ තියෙන එක කාඩ් එකක්. </p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/1-1.jpg" alt="" class="wp-image-1803" width="364" height="343" srcset="/wp-content/uploads/2019/02/1-1.jpg 689w, /wp-content/uploads/2019/02/1-1-300x283.jpg 300w" sizes="(max-width: 364px) 100vw, 364px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මම මේ කාඩ් එකට
+කැමරාවක් අල්ලද්දි ඒ කාඩ් එක මොකක්ද කියලා අදුන ගන්න විදියට මම Machine
+Learning කරනවා නම් මම Train කරන්න ඕන Data මොනවද. අපිට පුලුවන්
+එක කාඩ් එකකට අදාලව පින්තූර ගොඩක් එක එක කෝණ වලින් එක එක වර්ග වල කාඩ් පැක් වලින් තැලුණු
+පොඩි වුණ වගේම අලුත්ම card වලින් පින්තූර
+ඕනෑ තරම් ප්‍රමාණයක් ගන්න මොකද එතකොට තමා අපි බලාපොරොත්තු වෙන Output එක ගන්න පුලුවන් වඩා
+වැඩි නිරවද්‍යතාවයකින්. උදාහරණයක් විදියට මම Heart King ට අදාලව train කරන පින්තූර කිහිපයක්
+පෙන්නුවොත්.</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Untitled-1.png" alt="" class="wp-image-1804" width="514" height="359" srcset="/wp-content/uploads/2019/02/Untitled-1.png 1000w, /wp-content/uploads/2019/02/Untitled-1-300x210.png 300w, /wp-content/uploads/2019/02/Untitled-1-768x538.png 768w" sizes="(max-width: 514px) 100vw, 514px" /></figure>
+
+
+
+<p>ඉතින් Image Recognition වල වෙන්නෙ මෙන්න මේක. අපිට පුලුවන් අපේ  යන්ත්‍රයට Machine Learning කරන්න මේ Data පාවිච්චි කරලා.</p>
+
+
+
+<p>Robotics තාක්ෂණයේ Image Recognition පාවිච්චි වෙන විදිය
+ගැන කතා කළොත් Robotics තාක්ෂණය තුළ
+ඉතාමත් සංකීර්ණ විශාල දත්ත මත පදනම් වුණ Image Recognition තාක්ෂණයක් තමා
+පාවිච්චි වෙන්නෙ. මොකද හොද Robotic කෙනෙක් කියන්නෙ ගොඩක් දේවල් කරන්න පුලුවන් කෙනෙක්. ඒ කරන
+දේවල් මත පදනම් වෙන්න කොච්චර Image ගානක් ඕනද
+කියලා ඔයාලට හිතාගන්න පුලුවන්නෙ. මොකද මනුස්සයෙක් දෛනිකව කොච්චර image ප්‍රමාණයක් දකිනවද එක
+එක කෝණ වලින් වර්ණ වලින් වගේම එක එක ලේබල් වලින්. ඉතින් ඒ වගේම තමා රොබෝ කෙනෙක් train කරන්නත් මිලියන ප්‍රමාණයේ
+දත්ත අවශ්‍යයි වගේම විශාල කාලයක් යනවා ඒ දත්ත වලට අනුකූලව train කරන්න.</p>
+
+
+
+<p>උදාහරණයක් කීවොත් මෑත කාලීනව නිෂ්පාදනය කරලා වෙළදපොලට නිකුත් කරපු Anki Vector &nbsp;Robot ගැන ඔයාල අහල ඇති සමහර විට. එයා ගැන කියනවා නම් මෙතෙක් නිර්මාණය වුණ හුරුබුහුටිම Artificial Intelligence රොබෝ කෙනෙක් තමා මේ Vector robot. ඒ වගේම ක්‍රියාශීලීම රොබෝ කෙනෙක් මෙයා. මෙයා සුරතල් සතෙක් වගේ ඒ කියන්නෙ මුලින් ම අපිට පුලුවන් මෙයාව අපිට කීකරු කරගන්න. එතකොට මෙයා අපිට අවනත වෙනවා අපි කියන දේ කරනවා. </p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/anki-1024x576.jpg" alt="" class="wp-image-1805" srcset="/wp-content/uploads/2019/02/anki-1024x576.jpg 1024w, /wp-content/uploads/2019/02/anki-300x169.jpg 300w, /wp-content/uploads/2019/02/anki-768x432.jpg 768w, /wp-content/uploads/2019/02/anki.jpg 1552w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ඉතින් මේ රොබෝ train වෙන්නත් අවශ්‍ය කරන්නෙ දත්ත. එදිනෙදා මේ රොබෝ අපි දිහා බලලා කොඩක් දේ ඉගෙන ගන්නවා මොකද මෙයා Artificial Intelligence රොබෝ කෙනෙක් නිසා. මේ Image Recognition කියන තාක්ෂණය ඉතාමත් සාර්ථක ලෙස භාවිතා වෙන උදාහරණයක් තමා මේ Anki Robot . ඔයාලට මේ රොබෝ  ගැන වැඩි විස්තර දැන ගන්න පුලුවන් මේ Anki Vector Robot ගෙ <a href="https://www.anki.com/en-us/vector">සයිට් </a>එකෙන්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/anki4-1024x454.jpg" alt="" class="wp-image-1806" srcset="/wp-content/uploads/2019/02/anki4-1024x454.jpg 1024w, /wp-content/uploads/2019/02/anki4-300x133.jpg 300w, /wp-content/uploads/2019/02/anki4-768x341.jpg 768w, /wp-content/uploads/2019/02/anki4.jpg 1283w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ඉතින් මම මේ රොබෝ ගැන මෙච්චර කියවගෙන යන්නෙ ඇයි කියලා
+සමහරු බලනවා ඇති. මං මේ කියන්න උත්සාහ කරන්නෙ Image Recognition කොච්චර දුරකට සංකීර්ණව
+භාවිතා කරන්න පුලුවන්ද කියලා. ඒකයි මම &nbsp;Anki Robot ගෙ උදාහරණය ගත්තෙ.</p>
+
+
+
+<p>Image Recognition කියන්නෙ කොච්චර කතා කළත් ඉවර කරන්න බැරි දෙයක්. ඉතින් මම හිතුවා අදට මෙතනින් නවත්තන්න. මම හිතනවා මේ ලිපිය Machine Learning කරන්න ආස කෙනෙකුට ප්‍රයෝජනවත් වෙන්න ඇති කියලා. ආයේ දවසක Machine Learning ගැන තවත් ගොඩක් දේවල් කතා කරන්න ලිපියක් අරගෙන එන්නම් example projects , programming code එක්කම. ස්තූතියි.</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/09/machinelearningarticle2/">Machine Learning දෙවැනි දිගහැරුම.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/09/machinelearningarticle2/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+							</item>
+		<item>
+		<title>Machine Learning</title>
+		<link>/index.php/2019/01/31/machine-learning/</link>
+				<comments>/index.php/2019/01/31/machine-learning/#comments</comments>
+				<pubDate>Thu, 31 Jan 2019 10:15:30 +0000</pubDate>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+				<category><![CDATA[Machine Learning]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Artificial Interlligent]]></category>
+		<category><![CDATA[hasee]]></category>
+		<category><![CDATA[hasee amarathunga]]></category>
+		<category><![CDATA[machine learning]]></category>
+
+		<guid isPermaLink="false">/?p=1757</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning. කෘතීම බුද්ධි තාක්ෂණය එහෙම නැත්නම් Artificial Intelligence කෙලින්ම කීවොත් වර්තමානයත් අනාගතයත් යා කරන පරිගණක පරම්පරාව අද බොහෝ දෙනා කතා කරන තාක්ෂයක්. ඒ තාක්ෂණයෙ තියෙන<a class="moretag" href="/index.php/2019/01/31/machine-learning/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/31/machine-learning/">Machine Learning</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning.</p>
+
+
+
+<p>කෘතීම බුද්ධි තාක්ෂණය එහෙම නැත්නම් Artificial Intelligence කෙලින්ම කීවොත් වර්තමානයත් අනාගතයත් යා කරන පරිගණක පරම්පරාව අද බොහෝ දෙනා කතා කරන තාක්ෂයක්. ඒ තාක්ෂණයෙ තියෙන ඉතා නිර්මාණශීලි තාක්ෂණයක් තමා මේ Machine Learning කියන්නෙ. Vacuum tube තාක්ෂණයේ ඉදලා Micro-Processor දක්වා ආවේ මිනිසා සෘජුව සම්බන්ධ වුණු තාක්ෂණයක්. නමුත් මේ Machine Learning කියන්නෙ සම්පූර්ණයෙන්ම වෙනස් තාක්ෂණයක් වගේම දියුණු තාක්ෂණයක්. පර්යේෂණාත්මක තාක්ෂණයක්.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; හොදයි අපි බලමු මොකක්ද මේ Machine
+Learning කියන්නෙ කියලා.
+කෙලින්ම කීවොත් මේ පරිගණක විද්‍යාවේ තියෙන දියුණුම පැතිකඩක්. ඒ කියන්නෙ පරිගණකය
+විසින්ම ස්වයංක්‍රීයව ඉගෙන ගෙන අත්දැකීම් ලබා ගෙන දැනුම වැඩි කරගෙන යම් කිසි
+කාර්යක් කරන්න පුලුවන් මට්ටමකට පැමිණිමක්. </p>
+
+
+
+<p>මම ඉගෙන ගැනීම
+කියලා අදහස් කළේ සාමාන්‍ය මනුස්සයෙක් වගේ &nbsp;යම් කිසි දත්ත වගේ දේවල් හදුනා ගැනීමේ හැකියාව
+වටහා ගැනීමේ හැකියාව මෙන්ම එම දත්ත අනුකූලව තීරණ ගැනීමේ හැකියාව වගේ දේවල් මේ ඉගෙනීම
+යටතට අයත්. නමුත් මෙය ඉතාමත් අමාරු දෙයක්. ඇයි මම එහෙම කියන්නෙ මොකද හැම දත්තයකට
+අදාලවම නිවැරදි තීරණයක් ගන්න සාමාන්‍ය මනුසසයෙකුට පවා අමාරුයි. ඒ නිසා මේක කරන්න විශේෂ
+ඇල්ගොරිතම් ගොඩනගන්න වෙනවා.මෙම ඇල්ගොරිතම් වලට පාදක කරගන්න විශේෂ දත්ත අවශ්‍යයි . ඒවගේම
+පෙර පුහුණු කළ අත්දැකීම් අවශ්‍යයි. ඒ අත්දැකීම් තුළ අන්තර්ගත විය යුතුයි විශේෂ ගණිතමය
+සංකල්ප සංඛ්‍යාන සම්භාවිතාව මෙන්ම Optimizations වගේ සංකල්ප.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; හැබැයි මෙහෙම ඉගෙන ගන්න කොච්චර කාලයක්
+යනවද කියලා ඔයාලට හිතෙනවද? උදාහරණයක්
+විදියට මට හොදට English ඉගෙන ගන්න අවුරුදු 2ක් ගියා කියමුකො. Machine එකකට කොච්චර කාලයක් යයිද? ඒක තමා තාම පර්යේෂණ මට්ටමේ
+තියෙන්නෙ මොකද Machine එකකට ඉගෙන ගන්නත් ඒ හා සමාන කාලයක් යනවා. මේ කාලය අඩු කරගන්නෙ
+කොහොමද කියලා පරිගණක විද්‍යාඥයො තාමත් පර්යේෂණ කරනවා. ඉතින් මේ Machine
+Learning කියන
+තාක්ෂණයට ගොඩක්ම වැදගත්වෙන්නෙ දත්ත. විශාල දත්ත ගබඩාවක් අවශ්‍යයි&nbsp; Machine Learning කාර්යක්ෂම විදියට
+කරන්න නම්.</p>
+
+
+
+<p>එකිනෙකට වෙනස්
+විදියෙ කාර්යන් කරන්න ගොඩනගපු ඇල්ගොරිතම් කිහිපයක් මං කියන්නම්</p>
+
+
+
+<ul><li>Vision Processing</li><li>Language Processing</li><li>Robotics</li><li>Games</li><li>Pattern Recognition</li><li>Forecasting</li></ul>
+
+
+
+<p>Machine Learning තාක්ෂණය ගොඩනගන්න ක්‍රම
+කිහිපයක් තියෙනවා. ඒ අතරෙ ගොඩක්ම භාවිතා කරන තාක්ෂණයක් තමා Supervised
+Learning සහ
+Unsupervised Learning.</p>
+
+
+
+<p><strong>Supervised Learning</strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Supervised Learning ගැන කතා කලොත් මේක‍ෙ වෙන්නෙ
+හුරුවෙන්න අපේක්ෂා කරන ක්‍රියාවට අදාල දත්ත වල පවතින ක්‍රියාපටිපාටි (functions)
+ඉගෙන ගැනීමක්.
+ඒ කියන්නෙ හුරු වෙන්න තියෙන ක්‍රියාවට අදාල දත්ත විශ්ලේෂණය කරලා නිගමනය කරන්න
+පුලුවන් ක්‍රියාපටිපාටියක් ගොඩනගනවා. මේ ක්‍රියාපටිපාටිය පාවිච්චි කරලා අලුත් දෙයක්
+නිර්මාණය කරන්න පුලුවන්. උදාහරණ කීවොත් Voice recognition. ඒ වගේම Email තුළ අඩංගු වන Spam හදුනා ගැනීම වගේ දේවල්
+මේ Supervised Learning යටතට අයත්.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ඒ වගේම Neural
+Network , Naïve Bayes classifiers , Mahouts Implements වගේම Supports
+Vector Machines(SVMs) වගේ බොහෝ ඇල්ගොරිතම්
+Supervised
+Learning තුළ අන්තර්ගතයි.</p>
+
+
+
+<p><strong>Unsupervised Learning</strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මෙහිදී ඉගෙනීමට කළින් අර්ථ දක්වන ලද
+දත්ත කිසිවක් භාවිත් වීමක් නෑ. මේකෙදි පාව්ච්චි වෙන්නෙ භාවිතා නොකරන ලද දත්ත වල අර්ථය
+පමණයි. උදහරණ කීවොත් Self-organizing maps , Hierarchical clustering වගේම k-means
+clustering වගේ දේවල් මේ Unsupervised
+Learning යටතට අයත්.</p>
+
+
+
+<p>Supervised Learning සහ
+Unsupervised
+Learning යටතට අයත්
+තවත් බොහෝ Learning methods අන්තර්ගතයි. ඒ
+අතර විශේෂ ක්‍රම කිහිපයක් ගැන මම කතා කරන්නම්.</p>
+
+
+
+<p><strong>Reinforcement learning</strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මේකෙදි වෙන්නෙ කලින් ඉගෙනගද්දි
+තිබුණ වැරදි තැන් හදා ගෙන ඊළග වටයෙදි ඒ වැරදි නිවැරදි කරමින් &nbsp;ඉගෙන ගැනීමක් වගේ දෙයක්. ඒ කියන්නෙ මේ ක්‍රමයෙදි
+අදාල Machine එකේ ප්‍රතිඵල
+වැඩි දියුණු කරගැනීමක් සිදු වෙනවා. </p>
+
+
+
+<p><strong>Over-fitting</strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; අදාල යන්ත්‍රය ඉතාමත් හොදින් පුහුණු කිරීමක් මෙහිදී වෙනවා මොකද නියම දත්ත තුළ දෝෂ සහිත දත්තද පවතින්න පුලුවන්. ඒ නිසා එහෙම දත්ත තිබ්බොත් අලුත් දත්ත වලට යන්ත්‍රය දක්වන ප්‍රතිචාරය සෘණාත්මක වෙන්න පුලුවන්. ඒ නිසා Over-fitting කියන තාක්ෂණයෙදි යන්ත්‍රය ඵලදායී ලෙස දත්ත මතක තබා ගැනීමක් සිදුවෙනවා. ඒ වගේම ප්‍රතිදානය ගැන අනාවැකි පළකිරීමක් සිදු වෙනවා. නමුත් මේකෙදි සම්පූර්ණයෙන්ම අලුත් දත්ත තිබුණොත් යන්ත්‍රයේ &nbsp;Accuracy එක අඩු වෙනවා.</p>
+
+
+
+<p><strong>Under-fitting</strong></p>
+
+
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>අවාසි රාශියක් ඇති තාක්ෂණ ක්‍රමයකි මෙය. මොකද මෙහෙදී ක්‍රමවත් පුහුණු කිරීමක් සිදුවෙන්නෙ නෑ යන්ත්‍රයට.කෙළින්ම කීවොත් මෙය දත්ත පුහුණු කිරීමේදී Poor Performance සහිත තාක්ෂණයකි.</p>
+
+
+
+<p></p>
+
+
+
+<p>තවත් ක්‍රම රාශියක් අන්තර්ගතයි මේ Machine Learning තාක්ෂණය යටතේ. නම් වශයෙන් කීවොත් <strong>Recommendation </strong>, <strong>Clustering </strong>,&nbsp; <strong>Classification </strong>වගේ. මේ දේවල් පිළිබද මම ඉදිරියෙදි කතා කරන්න බලාපොරොත්තු වෙනවා උදාහරණ එක්ක.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ඉතින් අදට මම Machine Learning ගැන පොඩි හදුන්වාදීමක් පමණයි කලේ අලුතින් මේ ගැන ඉගෙන ගන්න කැමති අයට. මම ඊළග ලිපියෙන් කියන්නම් කොහොමද මේ Machine Learning කරන්න පටන් ගන්නෙ කියලා <strong>Programming Language</strong> එකක් පාවිච්චි කරලා. ඊළග ලිපියෙන් හමු වන බලාපොරොත්තුවෙන් මම ගිහින් එන්නම්. සතූතියි හැමෝටම!</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/31/machine-learning/">Machine Learning</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/31/machine-learning/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

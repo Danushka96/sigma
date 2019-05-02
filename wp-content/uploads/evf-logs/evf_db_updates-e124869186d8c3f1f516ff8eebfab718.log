@@ -1,0 +1,7 @@
+2019-01-10T06:38:32+00:00 INFO Queuing 1.4.4 - evf_update_144_delete_options
+2019-01-10T06:38:32+00:00 INFO Queuing 1.4.4 - evf_update_144_db_version
+2019-01-10T06:38:33+00:00 INFO Running evf_update_144_delete_options callback
+2019-01-10T06:38:33+00:00 INFO Finished running evf_update_144_delete_options callback
+2019-01-10T06:38:33+00:00 INFO Running evf_update_144_db_version callback
+2019-01-10T06:38:33+00:00 INFO Finished running evf_update_144_db_version callback
+2019-01-10T06:38:33+00:00 INFO Data update complete

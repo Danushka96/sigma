@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>implementation &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/implementation/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Queue Abstract Data Type (With Implementation)</title>
+		<link>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/</link>
+				<comments>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/#respond</comments>
+				<pubDate>Mon, 09 Apr 2018 14:45:43 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Algo]]></category>
+		<category><![CDATA[algorithm]]></category>
+		<category><![CDATA[implementation]]></category>
+		<category><![CDATA[queue]]></category>
+
+		<guid isPermaLink="false">/?p=552</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා. FIFO? FIFO කියන එකෙන් අදහස් වෙන්නේ First In First Out කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින<a class="moretag" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා.</p>
+<h3><strong>FIFO?</strong></h3>
+<p><img class=" wp-image-629 aligncenter" src="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg" alt="" width="387" height="241" srcset="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg 300w, /wp-content/uploads/2018/04/queue_1446267c_2854335k-768x480.jpg 768w, /wp-content/uploads/2018/04/queue_1446267c_2854335k.jpg 858w" sizes="(max-width: 387px) 100vw, 387px" /></p>
+<p>FIFO කියන එකෙන් අදහස් වෙන්නේ <strong>First In First Out </strong>කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින පේලි වලත් වෙන්නේ ඉස්සරලාම පේලියට එකතු වුණ කෙනා තමයි මුලින්ම පේලියෙන් එළියට යන්නේ. හැබැයි මතකද අපි කලින් ලිපියෙ Stacks ගැන කියන වෙලාවෙදි <strong>LIFO </strong>එකක් ගැන කිවුවා. ඒක බැලුවෙ නැත්නම් <a href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">මෙතනින්</a> බලන්න. ඒකෙදි අපි කලේ මේකෙ විරුද්ධ වැඩේ.</p>
+<h3><strong>Basic Operations</strong></h3>
+<p>Queue එකක තියෙන මූලිකම මෙහෙයුම් කිහිපය තමයි මේ පහලින් තියෙන්නේ.</p>
+<ol>
+<li>Enqueue</li>
+<li>Dequeue</li>
+<li>Peek</li>
+<li>isFull</li>
+<li>isEmplty</li>
+</ol>
+<p>මේ Method ටිකත් අපි කලින් කතා කරපු Stack එකට ගොඩක් සමානයි.</p>
+<h3><strong>Peek : </strong></h3>
+<p style="padding-left: 30px;">Data එකක් එළියට ගන්නේ නැතිව මුලින්ම(Front) තියෙන Data එක බලන Method එක.</p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre style="padding-left: 60px;">begin procedure peek
+
+   return queue[front]
+   
+end procedure
+</pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre style="padding-left: 60px;">int peek() {
+   return queue[front];
+}
+</pre>
+<h3><strong>isFull : </strong></h3>
+<p>Queue එක සම්පූර්ණයෙන්ම පිරිලාද නැද්ද Check කරන Method එක. මේකෙදි අපි කරන්නේ Queue එකේ Rear Point එක Queue එකේ Max Size එකට සමාන වුණොත් True Return කරනවා.</p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">begin</span><span class="pln"> procedure isfull
+
+   </span><span class="kwd">if</span><span class="pln"> rear equals to MAXSIZE
+      </span><span class="kwd">return</span> <span class="kwd">true</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pln">
+   endif
+   
+</span><span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">bool</span><span class="pln"> isfull</span><span class="pun">()</span> <span class="pun">{</span>
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">rear </span><span class="pun">==</span><span class="pln"> MAXSIZE </span><span class="pun">-</span> <span class="lit">1</span><span class="pun">)</span>
+      <span class="kwd">return</span> <span class="kwd">true</span><span class="pun">;</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pun">;</span>
+<span class="pun">}</span></pre>
+<h3><strong>isEmpty : </strong></h3>
+<p>Queue එක හිස් වෙලා තියනවද කියලා Check කරන Method එක. Queue එකක් Empty ද නැද්ද කියලා බලන්නේ Front එකේ Value එක Queue එකේ තියෙන්න පුළුවන් අඩුම අගයට එහෙම නැත්නම් 0ට වඩා අඩුයිද කියලා Check කරන එක.</p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">begin</span><span class="pln"> procedure isempty
+
+   </span><span class="kwd">if</span><span class="pln"> front </span><span class="kwd">is</span><span class="pln"> less than MIN  OR front </span><span class="kwd">is</span><span class="pln"> greater than rear
+      </span><span class="kwd">return</span> <span class="kwd">true</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pln">
+   endif
+   
+</span><span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">bool</span><span class="pln"> isempty</span><span class="pun">()</span> <span class="pun">{</span>
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">front </span><span class="pun">&lt;</span> <span class="lit">0</span> <span class="pun">||</span><span class="pln"> front </span><span class="pun">&gt;</span><span class="pln"> rear</span><span class="pun">)</span> 
+      <span class="kwd">return</span> <span class="kwd">true</span><span class="pun">;</span>
+   <span class="kwd">else</span>
+      <span class="kwd">return</span> <span class="kwd">false</span><span class="pun">;</span>
+<span class="pun">}</span></pre>
+<h3><strong>Enqueue : </strong></h3>
+<p>Queue එකට Data Insert කරන Method එක. මේකෙදි අපි පියවර කිහිපයක් අනුගමනය කරනවා Data එකක් Queue එක ඇතුලට දාන්න කලින් අපි එකින් එක පියවර විස්තර ඇතිව බලමු.</p>
+<p style="padding-left: 30px;"><strong>පළමු පියවර : </strong>Queue එක දැනට Full ද කියලා Check කරන එක. ඒ කියන්නේ Queue එක Full වෙලා තිබුණොත් අපිට තවත් Data Insert කරන්න බෑනෙ. ඒක මේ Check එකෙන් පස්සේ Full වෙලා තිබුණොත් නතර කරනවා</p>
+<p style="padding-left: 30px;"><strong>දෙවන පියවර : </strong>Queue එක Full වෙලා තිබුණේ නැත්නම් අපි Rear Point එක 1කින් වැඩි කරනවා. ඒ කියන්නේ Next Empty Space එකට.</p>
+<p><img class=" wp-image-736 aligncenter" src="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg" alt="" width="446" height="251" srcset="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg 300w, /wp-content/uploads/2018/04/queue_enqueue_diagram.jpg 550w" sizes="(max-width: 446px) 100vw, 446px" /></p>
+<p style="padding-left: 30px;"><strong>තුන්වන පියවර : </strong>දැන් Rear Point එක තියෙන තැනට අපිට අවශ්‍ය Data එක Insert කරනවා.</p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="pln">procedure enqueue</span><span class="pun">(</span><span class="pln">data</span><span class="pun">)</span>      
+   <span class="kwd">if</span><span class="pln"> queue </span><span class="kwd">is</span><span class="pln"> full
+      </span><span class="kwd">return</span><span class="pln"> overflow
+   endif
+   
+   rear </span><span class="pun">←</span><span class="pln"> rear </span><span class="pun">+</span> <span class="lit">1</span><span class="pln">
+   
+   queue</span><span class="pun">[</span><span class="pln">rear</span><span class="pun">]</span> <span class="pun">←</span><span class="pln"> data
+   
+   </span><span class="kwd">return</span> <span class="kwd">true</span>
+   
+<span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">int</span><span class="pln"> enqueue</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">)</span>      
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">isfull</span><span class="pun">())</span>
+      <span class="kwd">return</span> <span class="lit">0</span><span class="pun">;</span><span class="pln">
+   
+   rear </span><span class="pun">=</span><span class="pln"> rear </span><span class="pun">+</span> <span class="lit">1</span><span class="pun">;</span><span class="pln">
+   queue</span><span class="pun">[</span><span class="pln">rear</span><span class="pun">]</span> <span class="pun">=</span><span class="pln"> data</span><span class="pun">;</span>
+   
+   <span class="kwd">return</span> <span class="lit">1</span><span class="pun">;</span>
+<span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h3><strong>Dequeue : </strong></h3>
+<p>Queue එකෙන් Data එළියට ගන්න Method එක. මේක කරන්නත් අපි උඩදි කතා කරා වගේ පියවර කිහිපයක් යන්න ඕන.</p>
+<p style="padding-left: 30px;"><strong>පළමු පියවර : </strong>Queue එක Empty ද කියලා Check කරන්න ඕන. මොකද අපිට Empty Queue එකකින් Data එකක් එළියට ගන්න බෑ.</p>
+<p style="padding-left: 30px;"><strong>දෙවන පියවර : </strong>Queue එක Empty වෙලා තිබුණොත් Underflow Error එකක් Display කරනවා. නැත්නම් Front Pointer එක ඊළඟ Element එකට Point කරනවා.</p>
+<p style="padding-left: 30px;"><strong><img class=" wp-image-737 aligncenter" src="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg" alt="" width="449" height="283" srcset="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg 300w, /wp-content/uploads/2018/04/queue_dequeue_diagram.jpg 550w" sizes="(max-width: 449px) 100vw, 449px" /></strong></p>
+<h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="pln">procedure dequeue
+   </span><span class="kwd">if</span><span class="pln"> queue </span><span class="kwd">is</span><span class="pln"> empty
+      </span><span class="kwd">return</span><span class="pln"> underflow
+   </span><span class="kwd">end</span> <span class="kwd">if</span><span class="pln">
+
+   data </span><span class="pun">=</span><span class="pln"> queue</span><span class="pun">[</span><span class="pln">front</span><span class="pun">]</span><span class="pln">
+   front </span><span class="pun">←</span><span class="pln"> front </span><span class="pun">+</span> <span class="lit">1</span>
+   
+   <span class="kwd">return</span> <span class="kwd">true</span>
+<span class="kwd">end</span><span class="pln"> procedure</span></pre>
+<h5 style="padding-left: 30px;"><strong>Implementation ( C )</strong></h5>
+<pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="kwd">int</span><span class="pln"> dequeue</span><span class="pun">()</span> <span class="pun">{</span>
+
+   <span class="kwd">if</span><span class="pun">(</span><span class="pln">isempty</span><span class="pun">())</span>
+      <span class="kwd">return</span> <span class="lit">0</span><span class="pun">;</span>
+
+   <span class="kwd">int</span><span class="pln"> data </span><span class="pun">=</span><span class="pln"> queue</span><span class="pun">[</span><span class="pln">front</span><span class="pun">];</span><span class="pln">
+   front </span><span class="pun">=</span><span class="pln"> front </span><span class="pun">+</span> <span class="lit">1</span><span class="pun">;</span>
+
+   <span class="kwd">return</span><span class="pln"> data</span><span class="pun">;</span>
+}
+</pre>
+<p>දැන් අපි මේ එකින් එක බලපු Methods ටික එකතු කරලා සම්පූර්ණ Queue එකක Implementation එක බලමු.</p>
+<p><b> Language : C </b></p>
+<pre>typedef void * queue_data_type;
+struct queue_item {
+	queue_data_type contents;
+	struct queue_item* next;
+};
+struct queue_root {
+	struct queue_item* head;
+	struct queue_item* tail;
+};
+
+void init_queue(struct queue_root* queue){
+	queue-&gt;head = queue-&gt;tail = NULL;
+}
+
+void push_queue(struct queue_root* queue, int size, queue_data_type contents){
+	struct queue_item *item = malloc(sizeof(item));
+	item-&gt;contents = contents;
+	item-&gt;next = NULL;
+	if (queue-&gt;head == NULL){
+		queue-&gt;head = queue-&gt;tail = item;
+	} else {
+		queue-&gt;tail = queue-&gt;tail-&gt;next = item;
+	}
+}
+
+queue_data_type pop_queue(struct queue_root* queue){
+	queue_data_type popped;
+	if (queue-&gt;head == NULL){
+		return NULL; // causes a compile warning.  Just check for ==NULL when popping.
+	} else {
+		popped = queue-&gt;head-&gt;contents;
+		struct queue_item* next = queue-&gt;head-&gt;next;
+		free(queue-&gt;head);
+		queue-&gt;head = next;
+		if (queue-&gt;head == NULL)
+			queue-&gt;tail = NULL;
+	}
+	return popped;
+}
+
+void process_queue(struct queue_root* queue, void (*func)(queue_data_type)){
+	if (queue == NULL)
+		return;
+	struct queue_item* current = queue-&gt;head;
+	while (current != NULL){
+		next = current-&gt;next
+		func(current-&gt;contents);
+		current = next;
+	}
+}
+</pre>
+<p>හරි එහෙනම් මොනවා හරි ප්‍රශ්ණයක් තිබුණොත් Comment එකක් දාන්න.</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

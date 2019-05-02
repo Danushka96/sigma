@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: VueJs 2 &#8211; 07 more about Vue components	</title>
+	<atom:link href="/index.php/2018/05/01/vuejs-2-07/feed/" rel="self" type="application/rss+xml" />
+	<link>/index.php/2018/05/01/vuejs-2-07/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				By: Nadene Kellett				</title>
+				<link>/index.php/2018/05/01/vuejs-2-07/#comment-104</link>
+		<dc:creator><![CDATA[Nadene Kellett]]></dc:creator>
+		<pubDate>Sun, 26 Aug 2018 14:04:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=982#comment-104</guid>
+					<description><![CDATA[thanks to the author for taking his time on this one.]]></description>
+		<content:encoded><![CDATA[<p>thanks to the author for taking his time on this one.</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

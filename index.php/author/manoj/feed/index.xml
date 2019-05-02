@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>manoj &#8211; The SIGMA</title>
+	<atom:link href="/index.php/author/manoj/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>node js very basic</title>
+		<link>/index.php/2019/02/06/node-js-basic-in-one-post/</link>
+				<comments>/index.php/2019/02/06/node-js-basic-in-one-post/#respond</comments>
+				<pubDate>Wed, 06 Feb 2019 18:11:44 +0000</pubDate>
+		<dc:creator><![CDATA[manoj]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[nodejs]]></category>
+
+		<guid isPermaLink="false">/?p=1769</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> මේ post එකෙන් මම කියන්න යන්නේ node js වල ප්‍රදාන දේවල් වන variables, array, array looping, functions,ගැන සරල හැදින්වීමක්. මුලින්ම බලමු කොහොමද node වලදී variable එකක් declare කරන්නේ කියල. දැන් අපි මේ code එකේ output එක බලමු. ඔයාල මේ code එක කැමති name එකක් සහ .js extention දාල save කරල<a class="moretag" href="/index.php/2019/02/06/node-js-basic-in-one-post/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/06/node-js-basic-in-one-post/">node js very basic</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p><strong>මේ  post එකෙන් මම කියන්න යන්නේ node js වල ප්‍රදාන දේවල් වන variables, array, array looping, functions,ගැන සරල හැදින්වීමක්. </strong></p>
+
+
+
+<p> මුලින්ම බලමු කොහොමද node වලදී variable එකක් declare කරන්නේ කියල.</p>
+
+
+
+<pre class="wp-block-code"><code>//variables
+//we can use var and const for declare variables 
+//const variables can not change after declaration
+var name="TheSigma"; // for sring variable use "" and do not forget ;
+var number=123; // for number 
+const check="this is const variable"
+
+// then we print output using console.log
+console.log("name :",name);
+console.log("number :",number);
+console.log("check :",check);</code></pre>
+
+
+
+<p>දැන් අපි මේ code එකේ output එක බලමු. ඔයාල මේ code එක කැමති name එකක් සහ .js extention දාල save කරල ඒ save කරපු file location එකේ command prompt එක open කරගෙන node playground.js කියල type කරලා enter press කරන්න. මේ විදියේ output එකක් ඔයාලට දකින්න පුළුවන් වෙයි.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/1.jpg" alt="" class="wp-image-1777" srcset="/wp-content/uploads/2019/02/1.jpg 440w, /wp-content/uploads/2019/02/1-300x102.jpg 300w" sizes="(max-width: 440px) 100vw, 440px" /></figure>
+
+
+
+<p>මන් කලින් කිව්වා const දාපු variables value assign කරාට පස්සේ change කරන්න බෑ  කියල. අපි බලමු check කියන variable එක change කරලා.</p>
+
+
+
+<pre class="wp-block-code"><code>//variables
+//we can use var and const for declare variables 
+//const variables can not change after declaration
+var name="TheSigma"; // for sring variable use "" and do not forget ;
+var number=123; // for number 
+const check="this is const variable"
+
+// then we print output using console.log
+console.log("name :",name);
+console.log("number :",number);
+console.log("check :",check);
+
+//now we change check variable
+check="value2";
+//now print check value
+console.log("value after changed : ",check);</code></pre>
+
+
+
+<p>දැන් කලින් කරා  වගේ run කරල බලමු.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/2-1.jpg" alt="" class="wp-image-1776" srcset="/wp-content/uploads/2019/02/2-1.jpg 619w, /wp-content/uploads/2019/02/2-1-300x176.jpg 300w" sizes="(max-width: 619px) 100vw, 619px" /></figure>
+
+
+
+<p>පේනවා ඇති error එකක් print වෙලා තියෙනවා ඒ අපි const variable එකක් change කරපු නිසා :).</p>
+
+
+
+<p><strong>Array</strong></p>
+
+
+
+<p>දැන් අපි බලමු node වල array එකක් declare කරන විදිය.</p>
+
+
+
+<p> declaration</p>
+
+
+
+<pre class="wp-block-code"><code>var array = [1,2,3,4];</code></pre>
+
+
+
+<p>array එකක variables එකම type එකේ වෙන්න ඕන සහ [] ඇතුලේ තමයි variables ලියන්න ඕන.</p>
+
+
+
+<p>දැන් අපි array එකේ values print කරන විදිය බලමු.මේකත් අපිට console.log(array name) දාල print කරන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-code"><code>console.log(array) //output : [ 1, 2, 3,4 ]</code></pre>
+
+
+
+<p>special index එකක value එකක් print කරනවනම් මේ format එකට code කරන්න ඕන .console.log(arrayName[index])</p>
+
+
+
+<pre class="wp-block-code"><code>console.log(array[1]) //output: 2</code></pre>
+
+
+
+<p>for loop එකකින්  array element print කරන විදිය.</p>
+
+
+
+<pre class="wp-block-code"><code>for(i=0;i&lt;array.length;i++){ 
+	console.log(array[i]);
+}</code></pre>
+
+
+
+<p>දැන් බලමු  map keyword එක  බාවිතා කරල  array එකක variables  print කරන විදිය.</p>
+
+
+
+<pre class="wp-block-code"><code>array.map(function(each){
+	console.log(each);   //මෙතන each කියල ගත්තෙ for loop එකේ i //කියල ගනිපු variable එක 
+})</code></pre>
+
+
+
+<p><strong>functions</strong></p>
+
+
+
+<p>node වලදි function එකක් declare කරන්නෙ function කියන keyword එකෙන් simplest example එකක් ගත්තොත් හිතන්න ඔයාට variables ගොඩක් print කර ගන්න ඕන මේක සාමාන්‍ය විදියට කරොත් print statements ගොඩක් ලියන්න වෙනව ඒත් function එකක් use කරොත් එක print statement එකෙන් වැඩේ ගොඩ දාගන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-code"><code>function namePrint(){
+	var name1="test 1";
+	var number1= 1;
+	var name2="test 2";
+}</code></pre>
+
+
+
+<p> දැන් අපිට මේ function එකේ තියෙන variables print කරගන්න පුළුවන් එක print statement එකෙන් </p>
+
+
+
+<pre class="wp-block-code"><code>console.log(namePrint());</code></pre>
+
+
+
+<p>අපි numbers දෙකක් එකතු කරන්න වගේ වැඩකට function එකක් ලියනවනම් ඒ function එක ඇතුලට values pass කරන්න වෙනවනෙ ඒක කරන විදිය තමයි පහල code example එකේ තියෙන්නෙ </p>
+
+
+
+<pre class="wp-block-code"><code>function sum(a,b){
+	var c=a+b;
+	console.log("sum of : ",a," + ",b," = ",c);
+}
+
+//දැන් function  එකට call  කරමු 
+sum(3,5); //output= sum of :  3  +  5  =  8</code></pre>
+
+
+
+<p>complete code for this post -&gt;</p>
+
+
+
+<pre class="wp-block-code"><code>
+var name="TheSigma"; // for sring variable use "" and do not forget ;
+var number=123; // for number 
+const check="this is const variable"
+
+// then we print output using console.log
+console.log("name :",name);
+console.log("number :",number);
+console.log("check :",check);
+
+//now we change check variable
+//check="value2";
+//now print check value
+//console.log("value after changed : ",check);
+
+
+var array = [1,2,3,4];
+
+console.log(array) 
+console.log(array[1]) 
+
+for(i=0;i&lt;array.length;i++){
+	console.log(array[i]);
+}
+
+array.map(function(each){
+	console.log(each);   
+})
+function namePrint(){
+	var name1="test 1";
+	var number1= 1;
+	var name2="test 2";
+}
+
+console.log(namePrint());
+function sum(a,b){
+	var c=a+b;
+	console.log("sum of : ",a," + ",b," = ",c);
+}
+
+sum(3,5);
+</code></pre>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/06/node-js-basic-in-one-post/">node js very basic</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/06/node-js-basic-in-one-post/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Full Tutorial About Darkweb</title>
+		<link>/index.php/2018/09/15/full-tutorial-about-darkweb/</link>
+				<comments>/index.php/2018/09/15/full-tutorial-about-darkweb/#respond</comments>
+				<pubDate>Sat, 15 Sep 2018 07:00:14 +0000</pubDate>
+		<dc:creator><![CDATA[manoj]]></dc:creator>
+				<category><![CDATA[cyber security]]></category>
+		<category><![CDATA[darknet]]></category>
+		<category><![CDATA[darkweb]]></category>
+
+		<guid isPermaLink="false">/?p=1302</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span> මේ එකෙන් මන් darkweb ගැන complete විස්තරයක් සහ darkweb බාවිත කරන විදිය සහ අපේ website එකක් darkweb එකට host විදිය කියල දෙන්න බලාපොරොත්තු වෙනවා. part 1-&#62; part 2-&#62; &#160;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/15/full-tutorial-about-darkweb/">Full Tutorial About Darkweb</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span>මේ එකෙන් මන් darkweb ගැන complete විස්තරයක් සහ darkweb බාවිත කරන විදිය සහ අපේ website එකක් darkweb එකට host විදිය කියල දෙන්න බලාපොරොත්තු වෙනවා.</p>
+<p>part 1-&gt;</p>
+<p><iframe width="750" height="422" src="https://www.youtube.com/embed/ebR01fboQ5Q?start=95&#038;feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>part 2-&gt;</p>
+<p><iframe width="750" height="422" src="https://www.youtube.com/embed/s1w7dVC3_lk?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>&nbsp;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/15/full-tutorial-about-darkweb/">Full Tutorial About Darkweb</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/15/full-tutorial-about-darkweb/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</title>
+		<link>/index.php/2018/08/27/wireshark-tutorial/</link>
+				<comments>/index.php/2018/08/27/wireshark-tutorial/#respond</comments>
+				<pubDate>Mon, 27 Aug 2018 17:16:53 +0000</pubDate>
+		<dc:creator><![CDATA[manoj]]></dc:creator>
+				<category><![CDATA[cyber security]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[wireshark]]></category>
+
+		<guid isPermaLink="false">/?p=1185</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span> හරි අද අපි බලමු මොකද්ද මේ wireshark කියන්නේ කියල සහ මේ tool එක බාවිතා කරන විදිය.. ඇත්තටම මොකද්ද මේ wireshark? protocols සහ අනෙක් වැදගත් දේවල්.. &#160;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/08/27/wireshark-tutorial/">මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span>හරි අද අපි බලමු මොකද්ද මේ wireshark කියන්නේ කියල සහ මේ tool එක බාවිතා කරන විදිය..</p>
+<p>ඇත්තටම මොකද්ද මේ wireshark?</p>
+<p><iframe width="750" height="422" src="https://www.youtube.com/embed/EiV_d6rPCtQ?start=197&#038;feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>protocols සහ අනෙක් වැදගත් දේවල්..</p>
+<p><iframe width="750" height="422" src="https://www.youtube.com/embed/JxdXtKC7tRg?start=2&#038;feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>&nbsp;</p>
+<p><iframe width="750" height="422" src="https://www.youtube.com/embed/iabW-AyWlJk?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/08/27/wireshark-tutorial/">මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/08/27/wireshark-tutorial/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

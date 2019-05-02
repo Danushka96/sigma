@@ -1,0 +1,708 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 6 minutes හැමෝටම ආයුබෝවන්! Vue ගැන ලියන 8 වෙනි post එක. කලින් post එකේ කිව්ව වගේ, මේ post එකෙන් මම කියන්න යන්නෙ HTTP request එහෙමත් නැත්තම් AJAX request එක්ක ගනුදෙනු කරන්නෙ කොහොමද කියල. කලින් posts බැලුවෙ නැත්තම් Read more&hellip;" />
+<meta name="twitter:title" content="VueJs 2 - 08 Handling AJAX - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="VueJs 2 - 08 Handling AJAX - The SIGMA" />
+<meta property="og:description" content="Reading Time:  6 minutes හැමෝටම ආයුබෝවන්! Vue ගැන ලියන 8 වෙනි post එක. කලින් post එකේ කිව්ව වගේ, මේ post එකෙන් මම කියන්න යන්නෙ HTTP request එහෙමත් නැත්තම් AJAX request එක්ක ගනුදෙනු කරන්නෙ කොහොමද කියල. කලින් posts බැලුවෙ නැත්තම් Read more&hellip;" />
+<meta property="og:url" content="/index.php/2018/05/01/vuejs-2-08/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="AJAX" />
+<meta property="article:tag" content="axios" />
+<meta property="article:tag" content="HTTP request" />
+<meta property="article:tag" content="Vue" />
+<meta property="article:tag" content="VueJs" />
+<meta property="article:tag" content="web development" />
+<meta property="article:section" content="web development" />
+<meta property="article:published_time" content="2018-05-01T17:09:33+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:image:width" content="912" />
+<meta property="og:image:height" content="364" />
+	<title>VueJs 2 - 08 Handling AJAX - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/05/01/vuejs-2-08/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/05\/01\/vuejs-2-08\/","headline":"VueJs 2 &#8211; 08 Handling AJAX","datePublished":"2018-05-01T17:09:33+00:00","dateModified":"2018-05-01T17:09:33+00:00","author":{"@type":"Person","name":"Prasad Kavinda"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/04\/vuejs-logo.png","width":912,"height":364}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">VueJs 2 &#8211; 08 Handling AJAX</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/b8ebc2d2cfe6cc65d601cd0ec7fec67e?s=24&#038;d=mm&#038;r=g" alt="Prasad Kavinda" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Prasad Kavinda</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-05-01T22:39:33+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="299" src="/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/04/vuejs-logo.png 912w, /wp-content/uploads/2018/04/vuejs-logo-300x120.png 300w, /wp-content/uploads/2018/04/vuejs-logo-768x307.png 768w" layout="intrinsic"><noscript><img width="750" height="299" src="/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්! Vue ගැන ලියන 8 වෙනි post එක. <a href="/index.php/2018/05/01/vuejs-2-07/">කලින් post එකේ</a> කිව්ව වගේ, මේ post එකෙන් මම කියන්න යන්නෙ HTTP request එහෙමත් නැත්තම් AJAX request එක්ක ගනුදෙනු කරන්නෙ කොහොමද කියල. කලින් posts බැලුවෙ නැත්තම් <a href="/index.php/category/vuejs/">මෙතනින්</a> ගිහින් බලන්න පුළුවන්.</p>
+<h4><strong>what is AJAX ??</strong></h4>
+<p>ගොඩක් අය දන්නව ඇති AJAX කියන්නෙ මොකද්ද කියල. ඒත් දන්නෙ නැති අයත් ඉන්න නිසා සහ post එක සම්පූරණ වෙන්න ඕනෙ නිසා ඒ ගැන මම කියන්නම්.</p>
+<p><amp-img class="aligncenter amp-wp-enforced-sizes" src="https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05110044/text-How-AJAX-Works.png" alt="Image result for ajax request" width="818" height="372" layout="intrinsic"><noscript><img class="aligncenter" src="https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05110044/text-How-AJAX-Works.png" alt="Image result for ajax request" width="818" height="372"></noscript></amp-img></p>
+<p>AJAX කියන්නෙ Asynchronous JavaScript And XML කියන එක කෙටි කරල.(මේකෙ XML කියල තිබුනට, දැන් XML භාවිතා වෙන්නෙ නැති තරම්. ඒ වෙනුවට JSON තමයි භාවිතා කරන්නෙ.) සරලවම කිව්වොත් මේකෙන් වෙන්නෙ, page එක reload කරන්නෙ නැතුව back-end එකත් එකක් communicate කරන්න පුළුවන් වෙන එක. සාමාන්‍ය site එකක (AJAX භාවිතා නොකරන site එකක) back-end එකට data යවන්න නම් (form එකක් submit කරද්දි වගේ)  page එක reload කරන්න ඕනෙ. හැබැයි අපි AJAX භාවිතා කරොත් එහෙම ඕනෙ නැහැ. ඒ page එකේ ඉදිද්දිම data communicate කරන්න පුළුවන්. ඒක සෑහෙන්න ලොකු පහසුවක්. උදාහරණයකට Facebook එක ගන්නකො. අපි post එකකට like එකක් දානව කියල හිතමු. ඒ like එක database එකේ save වෙන්න නම් page එක reload කරන්න වෙනව. අපි දාන හැම like, comment එකකටම page එක refresh වෙන්න ඕනෙ. ඒක සෑහෙන්න කරදරයක්. හැබැයි fb එකේ එහෙම වෙන්නෙ නැහැ. ඒ AJAX භාවිතා කරල තියෙන නිසා. එතකොට page එක එහෙමම තියෙද්දි, අපිටත් නොදැනීම ඒ likes/comments, database එකේ save වෙනව. ඒ වගේම wall එක දිගේ පහළට යන්න යන්න අලුතෙන් posts load වෙනව කියල ඔයාල දන්නව. ඒක වෙන්නෙත් AJAX request වලින්. දැන් ඔයාලට තේරෙනව ඇති AJAX කියන්නෙ මොකද්ද කියල සහ ඒක මොනවටද භාවිතා කරන්නෙ කියල.</p>
+<h4><strong>jsonplaceholder</strong></h4>
+<p>AJAX request වලින් ගනුදෙනු කරන්න නම් සේරටම කලින් අපිට back-end එකක් තියෙන්න ඕනනෙ. ඒක ඔයාල කැමති විදියකට හදාගන්න පුළුවන්. PHP, python, NodeJs වගේ ඔය ඕන එකකින් ඔයාලට back-end එක හදාගන්න පුළුවන්නෙ. මේක vue ගැන ලියන post එකක් නිසා back-end එක හදන විදිය ගැන මම කියන්න යන්නෙ නැහැ. ඒත් අපිට ගනුදෙනු කරන්න back-end එකක් ඕනෙ නිසා මම ඒකට <a href="https://jsonplaceholder.typicode.com/">jsonplaceholder.typicode.com</a> site එකේ තියෙන API එක භාවිතා කරනව. මේක testing purposes සඳහාම තියෙන site එකක්. ඒකෙ dummy data තියෙනව. get/post request වලින් එ් data අපිට අරගන්න පුළුවන්. API එක ගැන විස්තර ඒ site එකේ තියෙනව.</p>
+<p><amp-img class="wp-image-1090 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/05/jsonplacehole-300x163.png" alt="" width="718" height="390" srcset="/wp-content/uploads/2018/05/jsonplacehole-300x163.png 300w, /wp-content/uploads/2018/05/jsonplacehole-768x417.png 768w, /wp-content/uploads/2018/05/jsonplacehole-1024x556.png 1024w" layout="intrinsic"><noscript><img class="wp-image-1090 aligncenter" src="/wp-content/uploads/2018/05/jsonplacehole-300x163.png" alt="" width="718" height="390" sizes="(max-width: 718px) 100vw, 718px"></noscript></amp-img></p>
+<blockquote><p>තව දෙයක් තියෙනව AJAX request යවද්දි, නිකංම index.html page එක browser එකෙන් open කරල හරියන්නෙ නැහැ. apache වගේ server එකකින් ඒක serve කරන්න ඕනෙ. නැත්තම් වැඩ කරන්නෙ නැහැ. WAMP, XAMPP වගේ software එකින් ඒක කරගන්න පුළුවන්. ඒක කරන විදිය ඔයාල දන්නව ඇති කියල හිතනව.  දන්නෙ නැත්තම් comment එකක් දාන්න, කියල දෙන්නම්.</p></blockquote>
+<h4><strong>axios</strong></h4>
+<p>දැන් අපි බලමු Vue වලින් AJAX request handle කරන්නෙ කොහොමද කියල. ඒකට ක්‍රම කීපයක්ම තියෙනව. එකක් තමයි JavaScript fetch API එක භාවිතා කරන එක. මේක JavaScript වලට අලුතෙන් ආපු දෙයක්. ඒ නිසා සමහර (පරණ) browser වල මේක වැඩ කරන්නෙ නැහැ. තව ක්‍රමයක් තමයි JQuery භාවිතා කිරීම. එහෙමත් නැත්තම් හොඳම ක්‍රමය තමයි axios වගේ library එකක් භාවිතා කරන්න එක. මම මේ post එකෙන් කියල දෙන්න යන්නෙ <a href="https://github.com/axios/axios">axios</a> වලින් කොහෙමද මේක කරන්නෙ කියල.</p>
+<p><amp-img class="wp-image-1092 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/05/axios-300x163.png" alt="axios" width="762" height="414" srcset="/wp-content/uploads/2018/05/axios-300x163.png 300w, /wp-content/uploads/2018/05/axios-768x417.png 768w, /wp-content/uploads/2018/05/axios-1024x556.png 1024w" layout="intrinsic"><noscript><img class="wp-image-1092 aligncenter" src="/wp-content/uploads/2018/05/axios-300x163.png" alt="axios" width="762" height="414" sizes="(max-width: 762px) 100vw, 762px"></noscript></amp-img></p>
+<p>axios හාවිතා කරන්න නම් ඒක අපේ page එකේ include කරල තියෙන්න ඕනෙ. මේක තමයි recommended CDN එක.</p>
+<pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://unpkg.com/axios/dist/axios.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre>
+<p>මේක index.html එකේ include කරාම අපිට පුළුවන් axios භාවිතා කරන්න.</p>
+<p>axios වලින් get request එකක් යවන්නෙ මේ විදියට.</p>
+<pre><span class="pl-smi">axios</span>.<span class="pl-c1">get</span>('<strong>target_url</strong><span class="pl-s"><span class="pl-pds">'</span></span>)
+  .<span class="pl-c1">then</span>(<span class="pl-k">function</span> (<span class="pl-smi">response</span>) {
+    // code to be executed when the request is successful
+  })
+  .<span class="pl-c1">catch</span>(<span class="pl-k">function</span> (<span class="pl-smi">error</span>) {
+    // if error happened, catch the error here
+  });</pre>
+<p>මේකෙ <strong>target_url</strong> කියන එක වෙනුවට, ඔයාට request එක යවන්න ඕනෙ url එක දෙන්න ඕනෙ. ඊළඟට තියෙන <strong>.then</strong> function එක ඇතුලෙ ලියන්න ඕනෙ, request එක සාර්ථක උනාම වෙන්න ඕන දේ. <strong>.catch</strong> එකේ ලියන්න ඕනෙ request එක fail උනොත් ඒක handle කරන්න අවශ්‍ය code එක.</p>
+<p>අපි <strong>jsonplaceholder.typicode.com/posts/</strong> කියන url එකට get request එකක් යවල බලමු. එතකොට එ් site එකේ කියල තියෙන විදියට dummy posts 100 ක් response එක විදියට එන්න ඕනෙ. මේ AJAX request එක ලියන්න ඕනෙ mounted (හෝ created) function එක ඇතුලෙ. එතකොට app එක mount වුන ගමන් මේක run වෙනව. අපිට ඒක මේ විදියට ලියන්න පුළුවන්.</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    mounted: function () {
+        axios.get('https://jsonplaceholder.typicode.com/posts/')
+        .then( function (res) {
+            console.log(res)
+        });
+    }
+});</pre>
+<p>දැන් app එක mount වුන ගමන් මේකෙ තියෙන url එකට get request එකක් යනව. ඊළඟට ඒ request එකෙන් එන response එක .then function එක ඇතුලට  pass වෙනව(res කියන්නෙ ඒක). එතකොට ඔයාලට බලාගන්න පුළුවන් back-end එකෙන් එන response එක console එකේ print වෙනව. ඒකෙ තියෙන data කියන property එක expand කරල බලන්නකො. ඒකෙ තමයි response එකත් එක්ක එන data තියෙන්නෙ. ඔයාලට බලාගන්න පුළුවන් back-end එකෙන් ආපු dummy data.</p>
+<p><amp-img class="aligncenter wp-image-1074 size-full amp-wp-enforced-sizes" src="/wp-content/uploads/2018/05/example-get-request.png" alt="example get request" width="1910" height="685" srcset="/wp-content/uploads/2018/05/example-get-request.png 1910w, /wp-content/uploads/2018/05/example-get-request-300x108.png 300w, /wp-content/uploads/2018/05/example-get-request-768x275.png 768w, /wp-content/uploads/2018/05/example-get-request-1024x367.png 1024w" layout="intrinsic"><noscript><img class="aligncenter wp-image-1074 size-full" src="/wp-content/uploads/2018/05/example-get-request.png" alt="example get request" width="1910" height="685" sizes="(max-width: 1910px) 100vw, 1910px"></noscript></amp-img></p>
+<p> </p>
+<p>post request එකක් යවන්නෙත් මේ විදියටමයි. axios.<strong>get</strong> වෙනුවට axios.<strong>post</strong> method එක භාවිතා කරන්න ඕනෙ. ඒ වගේම post කරන්න ඕනෙ data ඒකෙ 2වනි argument එක විදියට දෙන්න ඕනෙ. මේ වගේ.</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    mounted: function () {
+        axios.post('https://jsonplaceholder.typicode.com/posts/', {
+            // data to be sent
+            title: 'The title',
+            body: 'The body'
+        })
+        .then( function (res) {
+            console.log(res)
+        });
+    }
+});</pre>
+<p>හරි, දැන් ඔයාලට තේරෙනව ඇති කොහොමද axios භාවිතා කරල back-end එකත් එක්ක communicate කරන්නෙ කියල. දැන් අපි බලමු කලින් post එකේ අපි හදපු app එකේ messages ටික back-end එකකින් ගන්නෙ කොහොමද කියල.</p>
+<p>මේකටත් මම කලින් පාවිච්චි කරපු dummy back-end එකම තමයි භාවිතා කරන්නෙ. https://jsonplaceholder.typicode.com/posts/ කියන url එකට get request එකක් යැව්වම dummy messages 100 ක් එනවනෙ. ඒ messages 100, messages කියන data එකේ store කරන්න තියෙන්නෙ. මේ විදියට, (get request එකෙන් response එක ඇතුලෙ තියෙන data කියන object property එකේ තමයි මේ messages තියෙන්නෙ. ඒනිසා තමයි this.messages = res.data කියල මේතනදි මම  ලියල තියෙන්නෙ.)</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    data: {
+        newTitle: 'Title',
+        newBody: 'Message body',
+        messages: []
+    },
+    mounted: function () {
+        axios.get('https://jsonplaceholder.typicode.com/posts/')
+        .then( res =&gt; {
+            this.messages = res.data
+        });
+    },
+    methods: {
+        addMessage: function () {
+            this.messages.unshift(res.data)
+            this.newTitle = ''
+            this.newBody = ''
+        }
+    }
+});</pre>
+<blockquote><p>index.html -&gt; #my-app</p></blockquote>
+<pre>&lt;div id="my-app"&gt;
+
+  &lt;div class="container" style="margin-top:10px"&gt;
+    &lt;form style="padding:10px" class="col-sm-8 bg-light mb-3" @submit.prevent="addMessage()"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;h1&gt;Recent Messages&lt;/h1&gt;
+    &lt;blog-message v-for="message in messages" :title="message.title" :body="message.body"&gt;&lt;/blog-message&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>දැන් මේක run කරාම dummy messages 100ක්, කලින් අපි හදපු blog-post component 100ක display වෙන්න ඕනෙ.</p>
+<p>දැන් අපි බලමු අලුතෙන් message එකක් add කරන්නෙ කොහොමද කියල. post request එකක් තමයි එතකොට යවන්න ඕනෙ. ඊළඟට <strong>.then </strong>එක ඇතුලෙ ඒ message එක messages කියන data එකට add කරන්න පුළුවන්. මේ වගේ.</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    data: {
+        newTitle: 'Title',
+        newBody: 'Message body',
+        messages: []
+    },
+    mounted: function () {
+        axios.get('https://jsonplaceholder.typicode.com/posts/')
+        .then( res =&gt; {
+            this.messages = res.data
+        });
+    },
+    methods: {
+        addMessage: function () {
+            axios.post('https://jsonplaceholder.typicode.com/posts/', {
+                title: this.newTitle,
+                body: this.newBody 
+            }).then(res =&gt; {
+                this.messages.unshift(res.data)
+                this.newTitle = ''
+                this.newBody = ''
+            })
+        }
+    }
+});</pre>
+<p>දැන් අලුතෙන් message එකක් add කරාම ඒක back-end එකට post වෙනව. ඊළඟට ඒක messages array එකට add වෙනව. ඒ නිසා එක page එකෙත් display වෙනව.</p>
+<p>දැන් අපේ simple app එකේ වැඩ ඉවරයි. සම්පූර්ණ code එක පහල තියෙනව.</p>
+<blockquote><p>index.html</p></blockquote>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Vue demo&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="my-app"&gt;
+
+      &lt;div class="container" style="margin-top:10px"&gt;
+        &lt;form style="padding:10px" class="col-sm-8 bg-light mb-3" @submit.prevent="addMessage()"&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+            &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group"&gt;
+            &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+          &lt;/div&gt;
+          &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+
+        &lt;h1&gt;Recent Messages&lt;/h1&gt;
+        &lt;blog-message v-for="message in messages" :title="message.title" :body="message.body"&gt;&lt;/blog-message&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/axios/dist/axios.min.js"&gt;&lt;/script&gt;
+    &lt;script src="app.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<blockquote><p>app.js</p></blockquote>
+<pre>Vue.component('blog-message', {
+  props: ['title', 'body'],
+  template: `
+    &lt;div class="card bg-light mb-3"&gt;
+      &lt;div class="card-header"&gt;{{ title }}&lt;/div&gt;
+      &lt;div class="card-body"&gt;
+        &lt;p class="card-text"&gt;{{ body }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  `,
+  data: function () {
+    return {
+      count: 0,
+    }
+  },
+});
+
+const app = new Vue({
+  el: '#my-app',
+  data: {
+    newTitle: 'Title',
+    newBody: 'Message body',
+    messages: []
+  },
+  mounted: function () {
+    axios.get('https://jsonplaceholder.typicode.com/posts/')
+    .then( res =&gt; {
+      console.log(res)
+      this.messages = res.data
+    });
+  },
+  methods: {
+    addMessage: function () {
+      axios.post('https://jsonplaceholder.typicode.com/posts/', {
+        title: this.newTitle,
+        body: this.newBody
+      }).then(res =&gt; {
+        this.messages.unshift(res.data)
+        this.newTitle = ''
+        this.newBody = ''
+      })
+
+    }
+  }
+});
+</pre>
+<p>දැන් ඔයාලට තේරෙනව ඇති axios භාවිතා කරල කොහොමද back-end එකක් එක්ක ගණුදෙනු කරන්නෙ කියල.</p>
+<p>තව දෙයක් තියෙනව කියන්න. ඔයා app එක debug කරනකොට එහෙම මේක ගොඩක් වැදගත් වෙයි. ඒ තමයි browser එකේ dev tool වල තියෙන network tab එක. app එකෙන් කරන සියළුම requests මෙතන පෙන්නනව. ඒකෙන් ඔයාලට බලාගන්න පුළුවන් app එකෙන් යන එන http requests මොනවද කියල. ඒවගේම ඒ එක එක request එකට අදාල විස්තර ගොඩක් (request headers, response) මේකෙන් පෙන්නනව. ඒක ඔයාලට ගොඩක් ප්‍රයොජනවත් වේවි. මේ තියෙන්නෙ අපි හදපු app එක load වුන ගමන් කරන get request එක.</p>
+<p><amp-img class="wp-image-1086 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/05/posts-1-300x163.png" alt="network tab" width="837" height="455" srcset="/wp-content/uploads/2018/05/posts-1-300x163.png 300w, /wp-content/uploads/2018/05/posts-1-768x417.png 768w, /wp-content/uploads/2018/05/posts-1-1024x556.png 1024w" layout="intrinsic"><noscript><img class="wp-image-1086 aligncenter" src="/wp-content/uploads/2018/05/posts-1-300x163.png" alt="network tab" width="837" height="455" sizes="(max-width: 837px) 100vw, 837px"></noscript></amp-img></p>
+<p>ඔන්න දැන් අපි ඉතාම සරළ app එකකුත් හැදුව. කලින් post වල මම කියපු දේවල් ප්‍රායෝගිකව භාවිතා වෙන විදිය ඔයාලට දැන් තේරෙනව ඇති කියල හිතනව. ඉතිං අදට මෙතනින් ඉවරයි.</p>
+<p>post එක ගැන අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවම හරි තියෙනම් comment එකක් දාන්න. 😀</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/vuejs/" rel="category tag">VueJs</a>, <a href="/index.php/category/web-development/" rel="category tag">web development</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/ajax/" rel="tag">AJAX</a>, <a href="/index.php/tag/axios/" rel="tag">axios</a>, <a href="/index.php/tag/http-request/" rel="tag">HTTP request</a>, <a href="/index.php/tag/vue/" rel="tag">Vue</a>, <a href="/index.php/tag/vuejs/" rel="tag">VueJs</a>, <a href="/index.php/tag/web-development/" rel="tag">web development</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/05/01/vuejs-2-08/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,630 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Reading Time: 3 minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning. කෘතීම බුද්ධි තාක්ෂණය එහෙම නැත්නම් Artificial Intelligence කෙලින්ම කීවොත් Read more&hellip;" />
+<meta name="twitter:title" content="Machine Learning - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2019/01/introduction-to-machine-learning_social.jpg" />
+<meta name="twitter:creator" content="@haseeAmarathun" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Machine Learning - The SIGMA" />
+<meta property="og:description" content="Reading Time:  3 minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning. කෘතීම බුද්ධි තාක්ෂණය එහෙම නැත්නම් Artificial Intelligence කෙලින්ම කීවොත් Read more&hellip;" />
+<meta property="og:url" content="/index.php/2019/01/31/machine-learning/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:author" content="https://www.facebook.com/hasee.hasee.73" />
+<meta property="article:tag" content="AI" />
+<meta property="article:tag" content="Artificial Interlligent" />
+<meta property="article:tag" content="hasee" />
+<meta property="article:tag" content="hasee amarathunga" />
+<meta property="article:tag" content="machine learning" />
+<meta property="article:section" content="Machine Learning" />
+<meta property="article:published_time" content="2019-01-31T10:15:30+00:00" />
+<meta property="article:modified_time" content="2019-01-31T10:18:32+00:00" />
+<meta property="og:updated_time" content="2019-01-31T10:18:32+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2019/01/introduction-to-machine-learning_social.jpg" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2019/01/introduction-to-machine-learning_social.jpg" />
+<meta property="og:image:width" content="750" />
+<meta property="og:image:height" content="375" />
+	<title>Machine Learning - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2019/01/31/machine-learning/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2019\/01\/31\/machine-learning\/","headline":"Machine Learning","datePublished":"2019-01-31T10:15:30+00:00","dateModified":"2019-01-31T10:18:32+00:00","author":{"@type":"Person","name":"Hasee Amarathunga"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2019\/01\/introduction-to-machine-learning_social.jpg","width":750,"height":375}}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Machine Learning</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/00e329a5b20ba4bc7a396d9acddcd2b5?s=24&#038;d=mm&#038;r=g" alt="Hasee Amarathunga" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Hasee Amarathunga</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2019-01-31T15:45:30+00:00">
+		3 months ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="375" src="/wp-content/uploads/2019/01/introduction-to-machine-learning_social.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2019/01/introduction-to-machine-learning_social.jpg 750w, /wp-content/uploads/2019/01/introduction-to-machine-learning_social-300x150.jpg 300w" layout="intrinsic"><noscript><img width="750" height="375" src="/wp-content/uploads/2019/01/introduction-to-machine-learning_social.jpg" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>              හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning.</p>
+
+
+
+<p>කෘතීම බුද්ධි තාක්ෂණය එහෙම නැත්නම් Artificial Intelligence කෙලින්ම කීවොත් වර්තමානයත් අනාගතයත් යා කරන පරිගණක පරම්පරාව අද බොහෝ දෙනා කතා කරන තාක්ෂයක්. ඒ තාක්ෂණයෙ තියෙන ඉතා නිර්මාණශීලි තාක්ෂණයක් තමා මේ Machine Learning කියන්නෙ. Vacuum tube තාක්ෂණයේ ඉදලා Micro-Processor දක්වා ආවේ මිනිසා සෘජුව සම්බන්ධ වුණු තාක්ෂණයක්. නමුත් මේ Machine Learning කියන්නෙ සම්පූර්ණයෙන්ම වෙනස් තාක්ෂණයක් වගේම දියුණු තාක්ෂණයක්. පර්යේෂණාත්මක තාක්ෂණයක්.</p>
+
+
+
+<p>            හොදයි අපි බලමු මොකක්ද මේ Machine
+Learning කියන්නෙ කියලා.
+කෙලින්ම කීවොත් මේ පරිගණක විද්‍යාවේ තියෙන දියුණුම පැතිකඩක්. ඒ කියන්නෙ පරිගණකය
+විසින්ම ස්වයංක්‍රීයව ඉගෙන ගෙන අත්දැකීම් ලබා ගෙන දැනුම වැඩි කරගෙන යම් කිසි
+කාර්යක් කරන්න පුලුවන් මට්ටමකට පැමිණිමක්. </p>
+
+
+
+<p>මම ඉගෙන ගැනීම
+කියලා අදහස් කළේ සාමාන්‍ය මනුස්සයෙක් වගේ  යම් කිසි දත්ත වගේ දේවල් හදුනා ගැනීමේ හැකියාව
+වටහා ගැනීමේ හැකියාව මෙන්ම එම දත්ත අනුකූලව තීරණ ගැනීමේ හැකියාව වගේ දේවල් මේ ඉගෙනීම
+යටතට අයත්. නමුත් මෙය ඉතාමත් අමාරු දෙයක්. ඇයි මම එහෙම කියන්නෙ මොකද හැම දත්තයකට
+අදාලවම නිවැරදි තීරණයක් ගන්න සාමාන්‍ය මනුසසයෙකුට පවා අමාරුයි. ඒ නිසා මේක කරන්න විශේෂ
+ඇල්ගොරිතම් ගොඩනගන්න වෙනවා.මෙම ඇල්ගොරිතම් වලට පාදක කරගන්න විශේෂ දත්ත අවශ්‍යයි . ඒවගේම
+පෙර පුහුණු කළ අත්දැකීම් අවශ්‍යයි. ඒ අත්දැකීම් තුළ අන්තර්ගත විය යුතුයි විශේෂ ගණිතමය
+සංකල්ප සංඛ්‍යාන සම්භාවිතාව මෙන්ම Optimizations වගේ සංකල්ප.</p>
+
+
+
+<p>            හැබැයි මෙහෙම ඉගෙන ගන්න කොච්චර කාලයක්
+යනවද කියලා ඔයාලට හිතෙනවද? උදාහරණයක්
+විදියට මට හොදට English ඉගෙන ගන්න අවුරුදු 2ක් ගියා කියමුකො. Machine එකකට කොච්චර කාලයක් යයිද? ඒක තමා තාම පර්යේෂණ මට්ටමේ
+තියෙන්නෙ මොකද Machine එකකට ඉගෙන ගන්නත් ඒ හා සමාන කාලයක් යනවා. මේ කාලය අඩු කරගන්නෙ
+කොහොමද කියලා පරිගණක විද්‍යාඥයො තාමත් පර්යේෂණ කරනවා. ඉතින් මේ Machine
+Learning කියන
+තාක්ෂණයට ගොඩක්ම වැදගත්වෙන්නෙ දත්ත. විශාල දත්ත ගබඩාවක් අවශ්‍යයි  Machine Learning කාර්යක්ෂම විදියට
+කරන්න නම්.</p>
+
+
+
+<p>එකිනෙකට වෙනස්
+විදියෙ කාර්යන් කරන්න ගොඩනගපු ඇල්ගොරිතම් කිහිපයක් මං කියන්නම්</p>
+
+
+
+<ul><li>Vision Processing</li><li>Language Processing</li><li>Robotics</li><li>Games</li><li>Pattern Recognition</li><li>Forecasting</li></ul><p>Machine Learning තාක්ෂණය ගොඩනගන්න ක්‍රම
+කිහිපයක් තියෙනවා. ඒ අතරෙ ගොඩක්ම භාවිතා කරන තාක්ෂණයක් තමා Supervised
+Learning සහ
+Unsupervised Learning.</p>
+
+
+
+<p><strong>Supervised Learning</strong></p>
+
+
+
+<p>                Supervised Learning ගැන කතා කලොත් මේක‍ෙ වෙන්නෙ
+හුරුවෙන්න අපේක්ෂා කරන ක්‍රියාවට අදාල දත්ත වල පවතින ක්‍රියාපටිපාටි (functions)
+ඉගෙන ගැනීමක්.
+ඒ කියන්නෙ හුරු වෙන්න තියෙන ක්‍රියාවට අදාල දත්ත විශ්ලේෂණය කරලා නිගමනය කරන්න
+පුලුවන් ක්‍රියාපටිපාටියක් ගොඩනගනවා. මේ ක්‍රියාපටිපාටිය පාවිච්චි කරලා අලුත් දෙයක්
+නිර්මාණය කරන්න පුලුවන්. උදාහරණ කීවොත් Voice recognition. ඒ වගේම Email තුළ අඩංගු වන Spam හදුනා ගැනීම වගේ දේවල්
+මේ Supervised Learning යටතට අයත්.</p>
+
+
+
+<p>            ඒ වගේම Neural
+Network , Naïve Bayes classifiers , Mahouts Implements වගේම Supports
+Vector Machines(SVMs) වගේ බොහෝ ඇල්ගොරිතම්
+Supervised
+Learning තුළ අන්තර්ගතයි.</p>
+
+
+
+<p><strong>Unsupervised Learning</strong></p>
+
+
+
+<p>            මෙහිදී ඉගෙනීමට කළින් අර්ථ දක්වන ලද
+දත්ත කිසිවක් භාවිත් වීමක් නෑ. මේකෙදි පාව්ච්චි වෙන්නෙ භාවිතා නොකරන ලද දත්ත වල අර්ථය
+පමණයි. උදහරණ කීවොත් Self-organizing maps , Hierarchical clustering වගේම k-means
+clustering වගේ දේවල් මේ Unsupervised
+Learning යටතට අයත්.</p>
+
+
+
+<p>Supervised Learning සහ
+Unsupervised
+Learning යටතට අයත්
+තවත් බොහෝ Learning methods අන්තර්ගතයි. ඒ
+අතර විශේෂ ක්‍රම කිහිපයක් ගැන මම කතා කරන්නම්.</p>
+
+
+
+<p><strong>Reinforcement learning</strong></p>
+
+
+
+<p>                මේකෙදි වෙන්නෙ කලින් ඉගෙනගද්දි
+තිබුණ වැරදි තැන් හදා ගෙන ඊළග වටයෙදි ඒ වැරදි නිවැරදි කරමින්  ඉගෙන ගැනීමක් වගේ දෙයක්. ඒ කියන්නෙ මේ ක්‍රමයෙදි
+අදාල Machine එකේ ප්‍රතිඵල
+වැඩි දියුණු කරගැනීමක් සිදු වෙනවා. </p>
+
+
+
+<p><strong>Over-fitting</strong></p>
+
+
+
+<p>                අදාල යන්ත්‍රය ඉතාමත් හොදින් පුහුණු කිරීමක් මෙහිදී වෙනවා මොකද නියම දත්ත තුළ දෝෂ සහිත දත්තද පවතින්න පුලුවන්. ඒ නිසා එහෙම දත්ත තිබ්බොත් අලුත් දත්ත වලට යන්ත්‍රය දක්වන ප්‍රතිචාරය සෘණාත්මක වෙන්න පුලුවන්. ඒ නිසා Over-fitting කියන තාක්ෂණයෙදි යන්ත්‍රය ඵලදායී ලෙස දත්ත මතක තබා ගැනීමක් සිදුවෙනවා. ඒ වගේම ප්‍රතිදානය ගැන අනාවැකි පළකිරීමක් සිදු වෙනවා. නමුත් මේකෙදි සම්පූර්ණයෙන්ම අලුත් දත්ත තිබුණොත් යන්ත්‍රයේ  Accuracy එක අඩු වෙනවා.</p>
+
+
+
+<p><strong>Under-fitting</strong></p>
+
+
+
+<p><strong>                </strong>අවාසි රාශියක් ඇති තාක්ෂණ ක්‍රමයකි මෙය. මොකද මෙහෙදී ක්‍රමවත් පුහුණු කිරීමක් සිදුවෙන්නෙ නෑ යන්ත්‍රයට.කෙළින්ම කීවොත් මෙය දත්ත පුහුණු කිරීමේදී Poor Performance සහිත තාක්ෂණයකි.</p>
+
+
+
+<p></p>
+
+
+
+<p>තවත් ක්‍රම රාශියක් අන්තර්ගතයි මේ Machine Learning තාක්ෂණය යටතේ. නම් වශයෙන් කීවොත් <strong>Recommendation </strong>, <strong>Clustering </strong>,  <strong>Classification </strong>වගේ. මේ දේවල් පිළිබද මම ඉදිරියෙදි කතා කරන්න බලාපොරොත්තු වෙනවා උදාහරණ එක්ක.</p>
+
+
+
+<p>            ඉතින් අදට මම Machine Learning ගැන පොඩි හදුන්වාදීමක් පමණයි කලේ අලුතින් මේ ගැන ඉගෙන ගන්න කැමති අයට. මම ඊළග ලිපියෙන් කියන්නම් කොහොමද මේ Machine Learning කරන්න පටන් ගන්නෙ කියලා <strong>Programming Language</strong> එකක් පාවිච්චි කරලා. ඊළග ලිපියෙන් හමු වන බලාපොරොත්තුවෙන් මම ගිහින් එන්නම්. සතූතියි හැමෝටම!</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/ml/" rel="category tag">Machine Learning</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/ai/" rel="tag">AI</a>, <a href="/index.php/tag/artificial-interlligent/" rel="tag">Artificial Interlligent</a>, <a href="/index.php/tag/hasee/" rel="tag">hasee</a>, <a href="/index.php/tag/hasee-amarathunga/" rel="tag">hasee amarathunga</a>, <a href="/index.php/tag/machine-learning/" rel="tag">machine learning</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2019/01/31/machine-learning/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

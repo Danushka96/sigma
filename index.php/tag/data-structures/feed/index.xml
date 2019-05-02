@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Data Structures &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/data-structures/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Data Structures හඳුනා ගනිමු.</title>
+		<link>/index.php/2018/04/01/data-structures-i/</link>
+				<comments>/index.php/2018/04/01/data-structures-i/#respond</comments>
+				<pubDate>Sun, 01 Apr 2018 15:29:21 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Data Structures]]></category>
+		<category><![CDATA[DSA]]></category>
+		<category><![CDATA[intro]]></category>
+
+		<guid isPermaLink="false">/?p=498</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> මේ ලිපි මාලාවෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ විවිධ අවශ්‍යතා අනුව අපි භාවිතා කරන Data Structures සම්බන්ධව. මුලින්ම අපි බලමු මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට Data Structures අවශ්‍ය වෙන්නේ කියලා. මොනවද මේ Data Structures? Data Structures එකක් කියන්නේ සරලවම Computer Program එකක් ලියද්දී අපිට අවශ්‍ය වෙන Data නැත්නම් Program එකෙන් Process<a class="moretag" href="/index.php/2018/04/01/data-structures-i/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/01/data-structures-i/">Data Structures හඳුනා ගනිමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><p>මේ ලිපි මාලාවෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ විවිධ අවශ්‍යතා අනුව අපි භාවිතා කරන Data Structures සම්බන්ධව. මුලින්ම අපි බලමු මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට Data Structures අවශ්‍ය වෙන්නේ කියලා.</p>
+<h3>මොනවද මේ Data Structures?</h3>
+<p><img class=" wp-image-500 aligncenter" src="/wp-content/uploads/2018/04/149042-636270893746801661-16x9-300x169.jpg" alt="Default" width="359" height="202" srcset="/wp-content/uploads/2018/04/149042-636270893746801661-16x9-300x169.jpg 300w, /wp-content/uploads/2018/04/149042-636270893746801661-16x9-768x432.jpg 768w, /wp-content/uploads/2018/04/149042-636270893746801661-16x9-1024x576.jpg 1024w" sizes="(max-width: 359px) 100vw, 359px" /></p>
+<p>Data Structures එකක් කියන්නේ සරලවම Computer Program එකක් ලියද්දී අපිට අවශ්‍ය වෙන Data නැත්නම් Program එකෙන් Process කරන Data තාවකාලිකව හරි ස්ථිරව හරි තියාගන්න භාවිතා කරන ක්‍රමවේදයක්. ඒ වගේම මේ වගේ ක්‍රමයකදි අපිට ඒ Store කරගන්න Data වලට වේගයෙන් Access වෙන්න අවශ්‍ය කරන විවිධ ක්‍රම සලසා දීලා තියෙනවා.</p>
+<p>උදාහරණයක් විදියට ඔයා දැනටමත් මොනවා හරි Programming Language එකක් කරලා තියෙනවා නම් දන්නවා ඇති Arrays, Lists, Tuples, Dictionaries වගේ දේවල්. (මේ ගැන දන්නේ නැත්නම් අපේ <a href="/index.php/category/oop/">Programming</a> පාඩම් ටිකත් එක්ක එකතු වෙලා ඉන්න. ඉස්සරහදි ඒ දේවල් කියලා දෙන්නම්). මේ වගේ Programming Language එකක් එක්ක හදලා අපිට දෙන Default Data Structures වලට අමතරව අපිට අවශ්‍ය විදියට Data Structures අලුතින් හදා ගන්න පුළුවන්. උදාහරණයක් විදියට ඔයාට ඕන නම් Array එකක තියෙන Index ඔයාට ඕන විදියට වෙනස් කරගෙන භාවිතා කරන්න ඔයාට පුළුවන් ඔයාගෙම Array System එකක් Define කරගන්න.</p>
+<p>තවත් දෙයක් තමයි මේ විදියට හදා ගන්න Data Structures වලින් අපිට ගන්න පුළුවන් වැඩ ගොඩක් තියෙනවා. ඒවා ගැන අපි තව විස්තර ඇතිව ඉස්සරහට කතා කරගෙන යමු. මූලිකවම මේ ලිපි පෙලින් කතා කරන්න බලාපොරොත්තු වෙන <strong>Data Structures </strong>කිහිපයක් තියෙනවා. ඒවාට අමතරව අවශ්‍ය වුනොත් තවත් Data Structures ගැන කතා කරමු.</p>
+<ol>
+<li><strong>Stack</strong></li>
+<li><strong>Queue</strong></li>
+<li><strong>Tree</strong></li>
+<li><strong>Graph</strong></li>
+</ol>
+<p>මේ Data Structures 4න් මල්ම දෙක ගොඩක් සරලයි. ලොකු දෙයක් කතා කරන්න නෑ ඇත්තටම. මොකද මේ Structures ගොඩක් වෙලාවට අපේ ජීවත් වෙන ලෝකයේ සිද්ධිත් එක්ක සම්බන්ධ නිසා ලේසියෙන්ම තේරුම් ගන්න පුළුවන්. අන්තිම Structures 2 ගැන නම් ගොඩක් දේවල් කතා කරන්න තියෙනවා.</p>
+<p>අනිත් දේ තමයි Data Structures කිවුවාම ගොඩක් කට්ටියට තියෙන ප්‍රශ්ණයක් තමයි මේ දේවල් ඉගෙන ගන්න ඕන Programming Language එක මොකද්ද කියන එක. ඒ වගේම දැනට ඔයා දන්න මොකක් හරි Programming Language එකක් තියෙනවා නම් ඒකෙන් මේ දේවල් කරන්න බැරිද කියන එක. සරලම කරුණ තමයි දැනටම ඔයා මොකක්ම හරි Language එකක් දන්නවා නම් ඒකෙන් මේ දේවල් කරන්න උත්සාහ කරන්න. මේකෙදි මම ගොඩක්ම Recommend කරන්නේ නම් Python වගේ සරල Language එකක්. මොකද එතකොට ඔයාට ලොකුවට Programming Concepts ගැන හිතන්නේ නැතුව Data Structure එක ගැන අවධානය යොමු කරන්න පුළුවන්. Sample Codes දාද්දී Languages කිහිපයකින් දාන්න උත්සාහ කරන්නම්.</p>
+<p>හරි එහෙනෙම් පොඩි හරි Idea එකක් ගත්තා කියලා හිතනවා මේ කරන්න යන දේ ගැන. එහෙනම් මුල්ම පාඩම <strong>STACKS </strong>එක්ක ඊළඟ පාඩමෙන් හමුවෙමු.</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/01/data-structures-i/">Data Structures හඳුනා ගනිමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/01/data-structures-i/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

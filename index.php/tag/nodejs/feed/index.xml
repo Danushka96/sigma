@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nodejs &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/nodejs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>node js very basic</title>
+		<link>/index.php/2019/02/06/node-js-basic-in-one-post/</link>
+				<comments>/index.php/2019/02/06/node-js-basic-in-one-post/#respond</comments>
+				<pubDate>Wed, 06 Feb 2019 18:11:44 +0000</pubDate>
+		<dc:creator><![CDATA[manoj]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[nodejs]]></category>
+
+		<guid isPermaLink="false">/?p=1769</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> මේ post එකෙන් මම කියන්න යන්නේ node js වල ප්‍රදාන දේවල් වන variables, array, array looping, functions,ගැන සරල හැදින්වීමක්. මුලින්ම බලමු කොහොමද node වලදී variable එකක් declare කරන්නේ කියල. දැන් අපි මේ code එකේ output එක බලමු. ඔයාල මේ code එක කැමති name එකක් සහ .js extention දාල save කරල<a class="moretag" href="/index.php/2019/02/06/node-js-basic-in-one-post/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/06/node-js-basic-in-one-post/">node js very basic</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p><strong>මේ  post එකෙන් මම කියන්න යන්නේ node js වල ප්‍රදාන දේවල් වන variables, array, array looping, functions,ගැන සරල හැදින්වීමක්. </strong></p>
+
+
+
+<p> මුලින්ම බලමු කොහොමද node වලදී variable එකක් declare කරන්නේ කියල.</p>
+
+
+
+<pre class="wp-block-code"><code>//variables
+//we can use var and const for declare variables 
+//const variables can not change after declaration
+var name="TheSigma"; // for sring variable use "" and do not forget ;
+var number=123; // for number 
+const check="this is const variable"
+
+// then we print output using console.log
+console.log("name :",name);
+console.log("number :",number);
+console.log("check :",check);</code></pre>
+
+
+
+<p>දැන් අපි මේ code එකේ output එක බලමු. ඔයාල මේ code එක කැමති name එකක් සහ .js extention දාල save කරල ඒ save කරපු file location එකේ command prompt එක open කරගෙන node playground.js කියල type කරලා enter press කරන්න. මේ විදියේ output එකක් ඔයාලට දකින්න පුළුවන් වෙයි.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/1.jpg" alt="" class="wp-image-1777" srcset="/wp-content/uploads/2019/02/1.jpg 440w, /wp-content/uploads/2019/02/1-300x102.jpg 300w" sizes="(max-width: 440px) 100vw, 440px" /></figure>
+
+
+
+<p>මන් කලින් කිව්වා const දාපු variables value assign කරාට පස්සේ change කරන්න බෑ  කියල. අපි බලමු check කියන variable එක change කරලා.</p>
+
+
+
+<pre class="wp-block-code"><code>//variables
+//we can use var and const for declare variables 
+//const variables can not change after declaration
+var name="TheSigma"; // for sring variable use "" and do not forget ;
+var number=123; // for number 
+const check="this is const variable"
+
+// then we print output using console.log
+console.log("name :",name);
+console.log("number :",number);
+console.log("check :",check);
+
+//now we change check variable
+check="value2";
+//now print check value
+console.log("value after changed : ",check);</code></pre>
+
+
+
+<p>දැන් කලින් කරා  වගේ run කරල බලමු.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/2-1.jpg" alt="" class="wp-image-1776" srcset="/wp-content/uploads/2019/02/2-1.jpg 619w, /wp-content/uploads/2019/02/2-1-300x176.jpg 300w" sizes="(max-width: 619px) 100vw, 619px" /></figure>
+
+
+
+<p>පේනවා ඇති error එකක් print වෙලා තියෙනවා ඒ අපි const variable එකක් change කරපු නිසා :).</p>
+
+
+
+<p><strong>Array</strong></p>
+
+
+
+<p>දැන් අපි බලමු node වල array එකක් declare කරන විදිය.</p>
+
+
+
+<p> declaration</p>
+
+
+
+<pre class="wp-block-code"><code>var array = [1,2,3,4];</code></pre>
+
+
+
+<p>array එකක variables එකම type එකේ වෙන්න ඕන සහ [] ඇතුලේ තමයි variables ලියන්න ඕන.</p>
+
+
+
+<p>දැන් අපි array එකේ values print කරන විදිය බලමු.මේකත් අපිට console.log(array name) දාල print කරන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-code"><code>console.log(array) //output : [ 1, 2, 3,4 ]</code></pre>
+
+
+
+<p>special index එකක value එකක් print කරනවනම් මේ format එකට code කරන්න ඕන .console.log(arrayName[index])</p>
+
+
+
+<pre class="wp-block-code"><code>console.log(array[1]) //output: 2</code></pre>
+
+
+
+<p>for loop එකකින්  array element print කරන විදිය.</p>
+
+
+
+<pre class="wp-block-code"><code>for(i=0;i&lt;array.length;i++){ 
+	console.log(array[i]);
+}</code></pre>
+
+
+
+<p>දැන් බලමු  map keyword එක  බාවිතා කරල  array එකක variables  print කරන විදිය.</p>
+
+
+
+<pre class="wp-block-code"><code>array.map(function(each){
+	console.log(each);   //මෙතන each කියල ගත්තෙ for loop එකේ i //කියල ගනිපු variable එක 
+})</code></pre>
+
+
+
+<p><strong>functions</strong></p>
+
+
+
+<p>node වලදි function එකක් declare කරන්නෙ function කියන keyword එකෙන් simplest example එකක් ගත්තොත් හිතන්න ඔයාට variables ගොඩක් print කර ගන්න ඕන මේක සාමාන්‍ය විදියට කරොත් print statements ගොඩක් ලියන්න වෙනව ඒත් function එකක් use කරොත් එක print statement එකෙන් වැඩේ ගොඩ දාගන්න පුළුවන්.</p>
+
+
+
+<pre class="wp-block-code"><code>function namePrint(){
+	var name1="test 1";
+	var number1= 1;
+	var name2="test 2";
+}</code></pre>
+
+
+
+<p> දැන් අපිට මේ function එකේ තියෙන variables print කරගන්න පුළුවන් එක print statement එකෙන් </p>
+
+
+
+<pre class="wp-block-code"><code>console.log(namePrint());</code></pre>
+
+
+
+<p>අපි numbers දෙකක් එකතු කරන්න වගේ වැඩකට function එකක් ලියනවනම් ඒ function එක ඇතුලට values pass කරන්න වෙනවනෙ ඒක කරන විදිය තමයි පහල code example එකේ තියෙන්නෙ </p>
+
+
+
+<pre class="wp-block-code"><code>function sum(a,b){
+	var c=a+b;
+	console.log("sum of : ",a," + ",b," = ",c);
+}
+
+//දැන් function  එකට call  කරමු 
+sum(3,5); //output= sum of :  3  +  5  =  8</code></pre>
+
+
+
+<p>complete code for this post -&gt;</p>
+
+
+
+<pre class="wp-block-code"><code>
+var name="TheSigma"; // for sring variable use "" and do not forget ;
+var number=123; // for number 
+const check="this is const variable"
+
+// then we print output using console.log
+console.log("name :",name);
+console.log("number :",number);
+console.log("check :",check);
+
+//now we change check variable
+//check="value2";
+//now print check value
+//console.log("value after changed : ",check);
+
+
+var array = [1,2,3,4];
+
+console.log(array) 
+console.log(array[1]) 
+
+for(i=0;i&lt;array.length;i++){
+	console.log(array[i]);
+}
+
+array.map(function(each){
+	console.log(each);   
+})
+function namePrint(){
+	var name1="test 1";
+	var number1= 1;
+	var name2="test 2";
+}
+
+console.log(namePrint());
+function sum(a,b){
+	var c=a+b;
+	console.log("sum of : ",a," + ",b," = ",c);
+}
+
+sum(3,5);
+</code></pre>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/06/node-js-basic-in-one-post/">node js very basic</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/06/node-js-basic-in-one-post/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</title>
+		<link>/index.php/2019/01/16/angular7/</link>
+				<comments>/index.php/2019/01/16/angular7/#comments</comments>
+				<pubDate>Wed, 16 Jan 2019 03:41:40 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[angular.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[angular]]></category>
+		<category><![CDATA[MEAN]]></category>
+		<category><![CDATA[mongo DB]]></category>
+		<category><![CDATA[nodejs]]></category>
+		<category><![CDATA[npm]]></category>
+
+		<guid isPermaLink="false">/?p=1551</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා MEAN stack වල Database system එක වන mongoDB ගැන..ඒ පාඩම් ටික කලින් මඟ හැරුන කෙනෙක් ඉන්නවනම් මෙතනින් ගිහින් බලන්න පුලුවන්..අද<a class="moretag" href="/index.php/2019/01/16/angular7/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/16/angular7/">Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා  MEAN stack  වල Database system එක  වන mongoDB  ගැන..ඒ පාඩම් ටික කලින් මඟ හැරුන කෙනෙක් ඉන්නවනම් <a href="/index.php/category/web-development/mean-stack/">මෙතනින්</a> ගිහින් බලන්න පුලුවන්..අද මම පටන් ගන්න යන්නේ ඒ පාඩම් මාලාවේ දෙවන දිගහැරුමයි..ඒ තමයි  <strong>Angular</strong>  .</p>
+
+
+
+<p>ඇත්තටම කියනවනම් Angular කියන්නේ ඉතාම කෙටි කාලෙකින් මෑත කාලීනව ගොඩක් ජනප්‍රිය වුන javascript front end framework(client side frame work) එකක්.2016  September 14  තමයි මුලින්ම Angular හදුන්වා දෙන්නේ..ඊටපස්සේ 2017 march 23 දී Angular version 4 ද, 2017 november 1 දී Angular version 5 ද, 2018  May 4 දී Angular version 6 ද හදුන්වා දෙනවා ..මං මේ post එක ලියන මේ මොහොතේ තියන latest ම version එක තමයි 2018  October  මාසයේ හදුන්වා දුන් Angular version 7..පේනවනේ නේද  මේ  frame work එක දියණු වෙලා තියන ඉක්මන😃😃😃..ඇත්තටම Angular හදුන්වා දුන්නේ google වුනාට microsoft ලාගේ typescript language එකත් මේකේ තියනවා..ඒ ගැන අපි පස්සේ හෙමීට බලමුකෝ..😀😀</p>
+
+
+
+<p>ඇත්තටම  මොකද්ද    මේ  Angular වල තියෙන විශේෂත්වය ..ඒ තමයි එක page එකක ඉදලා තවත් page එකකට යද්දි url එකට අදාලව component වෙනස් වීමක් පමණයි වෙන්නේ..මුලු page එකම refresh වීමක් වෙන්නෑ…ඔන්න ඔය නිසා අපිට පුලුවන් අපේ app එකේ efficiency එක වැඩි කර ගන්න..ඔන්න ඕක තමයි Angular frame work එකේ තියන ප්‍රධානම විශේෂත්වය..හරි එහෙනන්  Angular ගැන පොඩි හෝ idea එකක් ගන්න ඇති කියලා හිතනවා..අපි දැන් බලමු Angular කොහොමද install කරගන්නේ කියලා..</p>
+
+
+
+<p>මේ සදහා අපිට මුලින්ම nodejs සහ npm ( Node Package Manager  ) install කර ගන්න වෙනවා..සාමානයයෙන් nodejs intall කරනකොට npm auto ම install වෙනවා..පහල තියන url එකෙන් ගිහින් ඔයාගේ machine එකට අදාල nodejs version එක <a href="https://nodejs.org/en/">download</a> කරලා install කර ගන්න පුලුවන්..</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/cap4-1024x502.jpg" alt="" class="wp-image-1554" srcset="/wp-content/uploads/2019/01/cap4-1024x502.jpg 1024w, /wp-content/uploads/2019/01/cap4-300x147.jpg 300w, /wp-content/uploads/2019/01/cap4-768x377.jpg 768w, /wp-content/uploads/2019/01/cap4.jpg 1350w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ඔන්න ඔය විදියට install කර ගත්ත nodejs version එක අපිට බලන්න පුලුවන් command prompt එකේ ng -v ලෙස type කරලා..npm -v ලෙස type කරලා npm version එක බලන්න පුලුවන්.ඔන්න ඔය ටික තමයි prerequisites වෙන්නේ Angular සමග වැඩ කරද්දි.</p>
+
+
+
+<p>ඔන්න ඔය prerequisites satisfy කලාම අපිට පුලුවන් අලුත් Angular project එකක් start කරන්න.මේ සදහා ng new &lt;project_name&gt; කියන command එක පාවිච්චි කරන්න පුලුවන්..හරි මම Desktop එකේ අලුත් project එකක් හදනවා angular කියලා..ඊට අදාල command ටික මෙන්න මේ විදියට run කරන්න පුලුවන්..</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg" alt="" data-id="1566" data-link="/?attachment_id=1566" class="wp-image-1566" srcset="/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg 1024w, /wp-content/uploads/2019/01/Capture1-1-300x30.jpg 300w, /wp-content/uploads/2019/01/Capture1-1-768x76.jpg 768w, /wp-content/uploads/2019/01/Capture1-1.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+
+
+
+<p>ඊටපස්සේ මෙන්න මේ වගේ files ගොඩක් Download වෙනවා..</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/cap2-2-1024x492.jpg" alt="" data-id="1568" data-link="/?attachment_id=1568" class="wp-image-1568" srcset="/wp-content/uploads/2019/01/cap2-2-1024x492.jpg 1024w, /wp-content/uploads/2019/01/cap2-2-300x144.jpg 300w, /wp-content/uploads/2019/01/cap2-2-768x369.jpg 768w, /wp-content/uploads/2019/01/cap2-2.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/cap3-1-1024x255.jpg" alt="" class="wp-image-1569" srcset="/wp-content/uploads/2019/01/cap3-1-1024x255.jpg 1024w, /wp-content/uploads/2019/01/cap3-1-300x75.jpg 300w, /wp-content/uploads/2019/01/cap3-1-768x191.jpg 768w, /wp-content/uploads/2019/01/cap3-1.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>හරි එහෙනම් අපි දැන් අලුත් project එකක් start කලා angular කියලා..අපි දැන් බලමු හදා ගත්ත project එක run කරන්නේ කොහොමද කියලා..ගොඩක් frame work වල වගේම Angular වලත් තියනවා එයාටම කියලා server එකක්..project එක run කරනවානම් මුලින්ම අපි ng serve හරි npm start හරි ගහලා server එක start කරගෙන ඉන්න ඕනි.ඊට පස්සේ ng -open හරි ng -o හරි ගැහුවහම automatically ඔයාලගේ browser එකේ localhost:4200 කියන port එකේ app එක run වෙනවා..ඔන්න ඔය විදියට app එක run කලාම මෙන්න මේ වගේ view එකක් අපිට බලා ගන්න පුලුවන්.</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/a-1024x462.jpg" alt="" data-id="1573" data-link="/?attachment_id=1573" class="wp-image-1573" srcset="/wp-content/uploads/2019/01/a-1024x462.jpg 1024w, /wp-content/uploads/2019/01/a-300x135.jpg 300w, /wp-content/uploads/2019/01/a-768x347.jpg 768w, /wp-content/uploads/2019/01/a.jpg 1351w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+
+
+
+<p>හරි අදට ඇති නේද😃..පාඩම නම් ටිකක් දිග වුනා තමයි , නමුත් අපි දැන ගත්තා මොකද්ද Angular කියන්නේ, ඇයි Angular විශේෂ වෙනේ ,කොහාමද Angular project එකක් හදා ගන්නේ හා කොහොමද හදා ගත්ත Angular project එක run කරන්නේ කියන එක ගැන..මීලඟ පාඩමේදී අපි බලමු Angular වල folder structure එක සහ index page එක කොහොමද render වුනේ කියන එක ගැන…අදට පාඩම හමාර කරන්නයි යන්නේ..post එක ගැන ඔයාලගේ අදහස comment එකක් දාන්නත් අමතක කරන්න එපා..මීලඟ පාඩමෙන් හමුවනතුරු ඔබට සුභ දවසක්!😊</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/16/angular7/">Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/16/angular7/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+	</channel>
+</rss>

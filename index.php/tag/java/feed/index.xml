@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>java &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/java/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>මොකක්ද මේ ionic framework එකක් කියන්නේ ?</title>
+		<link>/index.php/2019/01/20/ionic-framework-part1/</link>
+				<comments>/index.php/2019/01/20/ionic-framework-part1/#respond</comments>
+				<pubDate>Sun, 20 Jan 2019 13:01:58 +0000</pubDate>
+		<dc:creator><![CDATA[Sandun Prasanganath]]></dc:creator>
+				<category><![CDATA[android]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[web]]></category>
+
+		<guid isPermaLink="false">/?p=1626</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ.එක දිගටම web lessons කීපයක් පලකරපු හින්දා අද මම හිතුවා ටිකක් වෙනස් දෙයක් ගැන​ කතා කරන්න​.පසු ගිය ලිපියෙන් මම​ කතා කලා MEAN STACK වල​ database system එක වන​ mongo DB ගැන, කව්‍ රුහරි ඒ ලිපිය බැලුවෙ නැත්තම් මෙතනින් බලන්න පුලුවන්. මෙම ලිපියේ සිට ඉදිරි ලිපි පෙලකින් මම මේ<a class="moretag" href="/index.php/2019/01/20/ionic-framework-part1/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/20/ionic-framework-part1/">මොකක්ද මේ ionic framework එකක් කියන්නේ ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>හැමෝටම ආයුබෝවන් යාලුවනේ.එක දිගටම web lessons කීපයක් පලකරපු හින්දා අද මම හිතුවා ටිකක් වෙනස් දෙයක් ගැන​ කතා කරන්න​.පසු ගිය ලිපියෙන් මම​ කතා කලා MEAN STACK වල​ database system එක වන​ mongo DB ගැන, කව්‍ රුහරි ඒ ලිපිය බැලුවෙ නැත්තම් <a href="/index.php/2018/09/24/mean-part-2-mongo-db/">මෙතනින්</a> බලන්න පුලුවන්.</p>
+
+
+
+<p class="has-text-color has-accent-color"><em>මෙම ලිපියේ සිට ඉදිරි ලිපි පෙලකින් මම මේ ionic framework එකක් කියන්නේ මොකක්ද එකෙන් application එකක් නිර්මාණය කරන්නේ කොහොමද කියන කරුනු පැහැදිලි කරන්නම්</em></p>
+
+
+
+<p>මම මුලින් අහපු ප්‍රශ්නයම නැවත අසන්නම්,ඒ තමයි මේ ionic framework එකක් කියන්නෙ මොකක්ද කියන එක​,සරලවම කිව්වොත් ionic framework එකක් කියන්නේ mobile application develop කරන්න තියෙන framework එකක්.</p>
+
+
+
+<p>තවත් සරලව කිව්වොත් අපි android phone වලට application එකක් develop කරනවනම් අපිට android studio වගේ දෙයක් පාවිච්චි කරල වෙනම ඒ application එක develop කරන්න වෙනවා.ios වලට නම් වෙනම application develop කරන්න වෙනවා, windows os  වලටත් එහෙම්මයි,</p>
+
+
+
+<p class="has-text-color has-header-gradient-color"><em>කෙටියෙන්ම කිව්වොත් එක platform එකක develop කරපු application එකක් වෙනත් platform එකක වැඩ කරන්න බැ කියන එකනෙ&#8230;&#8230;</em></p>
+
+
+
+<p>මේ platform 3 ම එකවර වැඩ කරන්න පුලුවන් application එකක් තමයි ionic framework එකක් කියන්නේ.මේක <strong>Hybrid Mobile Application එකක්.</strong></p>
+
+
+
+<p>ionic වලින් වැඩ කරන්න කලින් ඔයාගෙ computer එකේ node js install කරල තියෙන්න ඕනි.( <br>මේ <a href="https://nodejs.org/en/download/">Link</a> එකෙන් ගිහින් ඔයාට එක කරගන්න​ පුලුවන් )</p>
+
+
+
+<p><strong>ionic install කරන ආකාරය මම දැන් පැහැදිලි කරන්නම්.</strong></p>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong>npm install -g cordova ionic</strong></p>
+
+
+
+<p class="has-text-color has-header-gradient-color">හරියට install වුනානම්, <strong>ionic -v</strong> සහ <strong>cordova -v</strong> type  කලහම ඔයලට ionic සහ​ cordova version එක බලාගන්න​ පුලුවන්.</p>
+
+
+
+<p>ionic install කරල අවසන් වුනාම​ අලුත් application එකක් start කරන්න පුලුවන්.ඒ සදහා ප්‍රදාන solution 3 ක් තියෙනවා.</p>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2019/01/Capture-1024x302.png" alt="" class="wp-image-1634" srcset="/wp-content/uploads/2019/01/Capture-1024x302.png 1024w, /wp-content/uploads/2019/01/Capture-300x89.png 300w, /wp-content/uploads/2019/01/Capture-768x227.png 768w, /wp-content/uploads/2019/01/Capture.png 1118w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+
+<ul><li>application එකක් නිර්මාණය​ කිරීමේදී අපිට blank project එකක් තෝරාගත හැකිය​.ඒ සදහා,</li></ul>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong>$ ionic start myApp blank&nbsp;&#8211;v2</strong></p>
+
+
+
+<ul><li>application එක නිර්මානය කිරීමේදි tabs use කරල තියෙන​ project එකක් අපිට​ තෝරා ගන්න පුලුවන්.ඒ සදහා,</li></ul>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong> $ ionic start myApp tabs &#8211;v2 </strong></p>
+
+
+
+<ul><li>side menu(menu bar) පාවිච්චි කරලා  <br>තියෙන​ project application එකක් පටන් ගන්න පුලුවන්,ඒ සදහා,</li></ul>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong> $ ionic start myApp sidemenu&nbsp;&#8211;v2</strong></p>
+
+
+
+<p>මෙහෙම application එක create කලාට පස්සෙ අපිට පුලුවන් ඒ අදාල​ application එක run කරන්න​.</p>
+
+
+
+<p class="has-text-color has-header-gradient-color"><em>(&#8211;v2 යන්නෙන් අදහස් වන්නේ ionic version 2 යන්නයි)</em></p>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong> cd myApp <br>ionic serve </strong></p>
+
+
+
+<p>මගින් myApp කියන මේ application එක run කරන්න පුලුවන්.</p>
+
+
+
+<p class="has-text-color has-header-gradient-color"><em>ඉතින් මේ ලිපියෙන් මම ionic framework </em>එක​ <em>computer එකට install කරන්නේ කොහොමද​,install කරන්න අවශය මූලික requirements මොනාද කියලා පැහැදිලි කලා.මගේ ඊලග ලිපියෙන් start කරපු </em>මේ <em>application එකේ ඉදිරියට වැඩ කරන්නේ කොහොමද කියලා පැහැදිලි කරන්නම්.</em></p>
+
+
+
+<p class="has-text-color has-background-color-color"><em>ionic official website : </em><a href="https://ionicframework.com/">https://ionicframework.com/</a></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/20/ionic-framework-part1/">මොකක්ද මේ ionic framework එකක් කියන්නේ ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/20/ionic-framework-part1/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Java</title>
+		<link>/index.php/2019/01/20/java/</link>
+				<comments>/index.php/2019/01/20/java/#respond</comments>
+				<pubDate>Sun, 20 Jan 2019 04:36:01 +0000</pubDate>
+		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
+				<category><![CDATA[java]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[install]]></category>
+
+		<guid isPermaLink="false">/?p=1018</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ මම අද ඔයාලට කියල දෙන්න යන්නේ java කියන programming language එක ගැන.java කියන්නේ object oriented language එකක්. අද අපි බලමු java install කරගන්නේ කොහොමද කියල. මුලින්ම ඔය java development kit(jdk) එක download කරගන්න ඕනි.ඒ සදහා link එක මෙතනින් ලින්ක් එකටගියාම ඔයාලට පහල තියෙන විදියෙ page එකක් බලාගන්න<a class="moretag" href="/index.php/2019/01/20/java/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/20/java/">Java</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>හැමෝටම ආයුබෝවන් යාලුවනේ මම අද ඔයාලට කියල දෙන්න යන්නේ java කියන programming language එක ගැන.java කියන්නේ object oriented language එකක්.</p>
+<p>අද අපි බලමු java install කරගන්නේ කොහොමද කියල.<br />
+මුලින්ම ඔය java development kit(jdk) එක download කරගන්න ඕනි.ඒ සදහා link එක <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">මෙතනින් </a> ලින්ක් එකටගියාම ඔයාලට පහල තියෙන විදියෙ page එකක් බලාගන්න පුළුවන්.<img class=" wp-image-1021 aligncenter" src="/wp-content/uploads/2018/04/Capture1-2-300x271.jpg" alt="" width="410" height="370" srcset="/wp-content/uploads/2018/04/Capture1-2-300x271.jpg 300w, /wp-content/uploads/2018/04/Capture1-2.jpg 586w" sizes="(max-width: 410px) 100vw, 410px" /><br />
+ඔයාට පුළුවන් මෙතනින් කැමති java platform එකක් තෝරාගන්න. example එකක් විදියට මම මෙතනින් java platform (jdk)10 තෝරගත්ත කියමුකෝ.එතකොට ඔයාට පහත පරිදි window එකක් දකින්න පුළුවන්.<br />
+<img class=" wp-image-1024 aligncenter" src="/wp-content/uploads/2018/04/Capture2-1-300x100.jpg" alt="" width="408" height="136" srcset="/wp-content/uploads/2018/04/Capture2-1-300x100.jpg 300w, /wp-content/uploads/2018/04/Capture2-1.jpg 547w" sizes="(max-width: 408px) 100vw, 408px" /><br />
+මෙතනින් ඔයාගේ operating system එකට ගැලපෙන install file එක තෝරගෙන download කරගන්න.ඊට පස්සෙ install කරගන්න.</p>
+<p>Install කරල ඉවර උනාම තව දෙයක් තියෙනව කරන්න. ඒ තමයි java path එක හදන එක.<br />
+දැන් ඔයා command prompt එකට ගිහින් javac ලෙස type කර enter කරල බලන්න.එතකොට පහත පරිදි window එකක් එන්නෙ නැතුව error එකක් ආවොත්, ඔයාට path එක හදන්න සිදුවෙනවා.<br />
+<img class="wp-image-1028 aligncenter" src="/wp-content/uploads/2018/04/Capture3-300x161.jpg" alt="" width="518" height="278" srcset="/wp-content/uploads/2018/04/Capture3-300x161.jpg 300w, /wp-content/uploads/2018/04/Capture3-768x412.jpg 768w, /wp-content/uploads/2018/04/Capture3.jpg 962w" sizes="(max-width: 518px) 100vw, 518px" /><br />
+path එක හදාගන්න මේවිදියට යන්න.</p>
+<blockquote><p><strong>my computer &gt;properties &gt;Advanced system setting &gt;Enviroment variables</strong></p></blockquote>
+<p>එවිට ලැබෙන window එකේ පහත highlight කර ඇති new button එක click කරන්න,<br />
+<img class=" wp-image-1029 aligncenter" src="/wp-content/uploads/2018/04/Capture4-274x300.jpg" alt="" width="332" height="364" srcset="/wp-content/uploads/2018/04/Capture4-274x300.jpg 274w, /wp-content/uploads/2018/04/Capture4.jpg 511w" sizes="(max-width: 332px) 100vw, 332px" /><br />
+ඉන්පසු ලැබෙන window එකේ variable name එකට Path ලෙසද variable value එකට ඔයා java install කරපු Drive එකේ සිට java jdk bin folder එක දක්වාම තිබෙන address එක ලබාදී ok click කරන්න. ඔයා install කරද්දි default settings වෙනස් කරේ නැත්ත්ම්, මේ වගේ path එකක් තමයි තියෙන්න ඕනෙ.</p>
+<p>&gt;c:/programe files/java/</p>
+<p>නිදසුනක් පහත රුපසටහනේ දක්වා ඇත.<br />
+<img class=" wp-image-1031 aligncenter" src="/wp-content/uploads/2018/04/Capture5-300x127.jpg" alt="" width="454" height="192" srcset="/wp-content/uploads/2018/04/Capture5-300x127.jpg 300w, /wp-content/uploads/2018/04/Capture5-768x324.jpg 768w, /wp-content/uploads/2018/04/Capture5.jpg 803w" sizes="(max-width: 454px) 100vw, 454px" /></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/20/java/">Java</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/20/java/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Classes &#038; Objects</title>
+		<link>/index.php/2018/03/17/classes-objects/</link>
+				<comments>/index.php/2018/03/17/classes-objects/#comments</comments>
+				<pubDate>Sat, 17 Mar 2018 07:36:10 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[OOP]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[object oriented programming]]></category>
+		<category><![CDATA[oop]]></category>
+
+		<guid isPermaLink="false">/?p=114</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>                   කොහොමද යාලුවනේ. අපේ thesigma blog අඩවියට පැමිණි ඔබ සෑම සාදරයෙන් පිළිගන්නවා. මෙහිදී අපි කතාකරන්නට බලාපොරොත්තු වෙනවා මොකද්ද මේ object oriented programming කියන්නේ කියලා. ගොඩක් ළමයින්ට තියෙන ප්‍රශ්නයක් තමයි object oriented programming පිළිබඳව හරි හැටි දැනුමක් නොමැතිකම. මේ හේතුව නිසා මම මගේ<a class="moretag" href="/index.php/2018/03/17/classes-objects/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/17/classes-objects/">Classes &amp; Objects</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><img class="size-medium wp-image-112 aligncenter" src="/wp-content/uploads/2018/03/oop-300x172.png" alt="" width="300" height="172" srcset="/wp-content/uploads/2018/03/oop-300x172.png 300w, /wp-content/uploads/2018/03/oop.png 500w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p style="text-align: left;">                <em>  කොහොමද යාලුවනේ. අපේ thesigma blog අඩවියට පැමිණි ඔබ සෑම සාදරයෙන් පිළිගන්නවා. මෙහිදී අපි කතාකරන්නට බලාපොරොත්තු වෙනවා මොකද්ද මේ object oriented programming කියන්නේ කියලා. ගොඩක් ළමයින්ට තියෙන ප්‍රශ්නයක් තමයි object oriented programming පිළිබඳව හරි හැටි දැනුමක් නොමැතිකම. මේ හේතුව නිසා මම මගේ පළමු blog පෝස්ට් එක object oriented programming ගැන සිංහලෙන්ම ලියන්නට හිතුවා.මේ සඳහා අපි යොදාගැනීමට බලාපොරොත්තු වෙනවා java පරිගණක භාෂාව.මම හිතනවා ඔයාලට මෙයින් object oriented programming ගැන හොඳ අදහසක් ගන්නට පුළුවන් වෙයි කියලා. ඇත්තටම මේ object oriented කියන්නේ  සං</em><em>කල්පය</em><em>ක් ඉංග්‍රීසියෙන් කියනවනං concept එකක්. මෙයින් අපිට පුළුවන් අපේ programming සම්බන්ධ වැඩ පහසු කර ගන්නට. programming පැත්තෙන් හිතන්වනම් මේ සංකල්පයෙහි සරල තේරුම තමයි සම්පූර්ණ ප්‍රශ්නයම කොටස් කර coding කරලා එකට සම්බන්ධ කිරීමයි. ඉස්සර සම්පූර්ණ program එකම තනි පිටුවකට තමයි code කෙරේ. මෙහිදී විශාල program වල දෝෂ ආවම ඒවා නිවරදි කරන්නට බොහෝ කාලයක් මෙන්ම විශාල වෙහෙසක් දරන්නටත් සිදුවුණා. මෙන්න මේ හේතුව නිසා programmers ලා නව සංකල්පයකට යොමුවන්නට පෙළඹුණා . පසුව ඔවුන් තීරණය කළා මුළු program එකම අනු කොටස් වලට වෙන්කර code කර එකිනෙක්ට සම්බන්ධ කරන්නට. මෙන්න මේ සංකල්පයට තමයි object oriented programming කියලා කියන්නේ.</em></p>
+<p><img class="size-medium wp-image-111 aligncenter" src="/wp-content/uploads/2018/03/oop-300x155.jpg" alt="" width="300" height="155" srcset="/wp-content/uploads/2018/03/oop-300x155.jpg 300w, /wp-content/uploads/2018/03/oop.jpg 653w" sizes="(max-width: 300px) 100vw, 300px" /><br />
+හරි එහෙනම් අපි බලමු මොකක්ද මේ object oriented programming කියන්නේ, මොකක්ද මෙහි විශේෂත්වය සහ කොහොමද මෙම සංකල්පය අපි code කරන විට යොදාගන්නෙ කියල .<br />
+ඇත්තටම මේ <em> සං</em><em>කල්පය</em> classes සහ object මත පදනම් වූවක්. අපි පළමුව බලමු මොකද්ද මේ class එකක් සහ object එකක් කියන්නෙ කියලා. ඇත්තටම class එකක් කියලා කියන්නේ මොකක් හරි දෙයක් හදන්නට ගන්න template එකක් වගේ එකක් .උදාහරණයක් විදිහට ගන්නවනම් ගෙයක් හදන්නට ගන්න ප්ලෑන් එක වගේ එකක්. එකමත් ප්ලෑන් එක පාවිච්චි කරලා අපිට පුළුවන් ගෙවල් කිහිපයක් හදාරන්නට. මෙන්න මේ ප්ලෑන් එකට නැත්නම් template එකට අපි පරිගණක භාෂාවේ කියනවා class එකක් කියලා. මෙන්න මේ ක්ලාස් එකෙන් හැදෙන වස්තුවට එහෙම නැත්නම් හැදෙන දේට අපි කියනවා object එකක් කියලා.</p>
+<p><img class="size-medium wp-image-108 aligncenter" src="/wp-content/uploads/2018/03/class-300x300.gif" alt="" width="300" height="300" srcset="/wp-content/uploads/2018/03/class-300x300.gif 300w, /wp-content/uploads/2018/03/class-150x150.gif 150w" sizes="(max-width: 300px) 100vw, 300px" /><br />
+අපි කලින් උදාහරණයේ විදිහට නම් ප්ලෑන් එක පාවිච්චි කරනවා හදපු ගෙදරක් වගේ. මේ එක ප්ලෑන් එක පාවිච්චි කරලා විශාලත්වයෙන් අඩු හෝ වැඩි,වර්ණ වෙනස් වන ආකාරයට ගෙවල් කීපයක් සාදා ගන්න. එකම ප්ලෑන් එකට අනුව සාදන නිසා මේ සෑම ගෙදරකම වියුහය එකම බව ඔබට තේරෙනවා ඇති .</p>
+<p><img class="alignnone size-medium wp-image-110" src="/wp-content/uploads/2018/03/object_2-300x225.jpg" alt="" width="300" height="225" srcset="/wp-content/uploads/2018/03/object_2-300x225.jpg 300w, /wp-content/uploads/2018/03/object_2.jpg 638w" sizes="(max-width: 300px) 100vw, 300px" />            <img class="alignnone size-medium wp-image-109" src="/wp-content/uploads/2018/03/object-300x169.png" alt="" width="300" height="169" srcset="/wp-content/uploads/2018/03/object-300x169.png 300w, /wp-content/uploads/2018/03/object-768x434.png 768w, /wp-content/uploads/2018/03/object.png 880w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>පරිගණක භාෂාවට අනුව කියනවනම් එක class එකක් පාවිච්චි කරලා අපිට පුළුවන් object ගොඩාක් හදාගන්ට . මේ විදිහට එකම ක්ලාස් එක පාවිච්චි කරල හදන හැම object එක වියූහය එකමයි කියලා ඔයාලට තේරෙනවා ඇති . ඔන්න ඔය සරල සංසිද්ධිය object oriented කියන සංකල්පයේ තියන ප්‍රධානම දෙයක්. class එකක් ගත්තොත් properties දෙකක් තියෙනවා attributes සහ methods කියලා. attributes එකක් කියන්නේ class එකක් සතු දෙයක් .එහෙමත් නැත්ත්ම් class එකක් පාවිච්චි කරලා අපි හදන object එකේ තියෙන දෙයක්.මෙන්න මේ attributes වලට අපි instance variables කියලත් කියනවා. උදාහරණයක් විදිහට අපි ගත්තොත් බල්ලා කියන class එක ගත්තොත් එකේ attributes වෙන්නේ පොදුවේ class එක සතු දේවල්ය.එනම් බල්ලා කියන class එකෙ attributes විදිහට අපිට ගන්න පුළුවන් පාට, කකුල් ගණන වැනි දේවල්. methods එකක් කියන්නේ අපි හදන class එකේ හැසිරීම් ප්‍රකාශ කරන එකක්. අපේ බල්ලා කියන class එකේ නම් methods විදිහට අපිට ගන්න පුලුවන් දීවීම, බීරිම වැනි දේවල්.</p>
+<p><img class="alignnone size-medium wp-image-115" src="/wp-content/uploads/2018/03/java-object-300x169.png" alt="" width="300" height="169" srcset="/wp-content/uploads/2018/03/java-object-300x169.png 300w, /wp-content/uploads/2018/03/java-object-768x433.png 768w, /wp-content/uploads/2018/03/java-object.png 772w" sizes="(max-width: 300px) 100vw, 300px" />    <img class="alignnone size-medium wp-image-116" src="/wp-content/uploads/2018/03/052016_0704_ObjectsandC6-300x170.jpg" alt="" width="300" height="170" srcset="/wp-content/uploads/2018/03/052016_0704_ObjectsandC6-300x170.jpg 300w, /wp-content/uploads/2018/03/052016_0704_ObjectsandC6-768x436.jpg 768w, /wp-content/uploads/2018/03/052016_0704_ObjectsandC6.jpg 793w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>මම හිතනවා classes සහ objects පිළිබඳ හොඳ අදහසක් ලැබෙන්න ඇති කියලා. රැඳී සිටින්න <em>thesigma blog </em>අඩවිය සමගින් මීළඟ object oriented පාඩම සමගින් හමුවෙමු. ස්තුතියි!</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/03/17/classes-objects/">Classes &amp; Objects</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/03/17/classes-objects/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+							</item>
+	</channel>
+</rss>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>elequent &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/elequent/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Laravel වලින් Table Relationship එක්ක වැඩ කරමු</title>
+		<link>/index.php/2019/01/10/laravel-table-relationship/</link>
+				<comments>/index.php/2019/01/10/laravel-table-relationship/#respond</comments>
+				<pubDate>Thu, 10 Jan 2019 10:46:16 +0000</pubDate>
+		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
+				<category><![CDATA[Laravel]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[elequent]]></category>
+		<category><![CDATA[laravel]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[relational]]></category>
+
+		<guid isPermaLink="false">/?p=1516</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක්<a class="moretag" href="/index.php/2019/01/10/laravel-table-relationship/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක් කර ගන්න සාමාන්‍යයෙන් අපි Query එකක් ලිවුවොත් For loop දාගෙන සෑහෙන්න දඟලන්න වෙනවා. </p>
+
+
+
+<p>උදාහරණයක් විදියට අපි හිතමු Students, Schools කියලා Table 2ක් තියෙනවා කියලා. එක Student කෙනෙකුට එක School එකක් තියෙනවා‍‍. එක School එකකට Students ලා ගොඩක් ඉන්නවා. මේ වගේ වෙලාවක මට ඕන වෙනවා School Type එක &#8220;mixed&#8221; කියලා තියෙන School වල Student List එකක් හදා ගන්න. දැන් මුලින්ම කරන්න ඕන Student Table එකේ Query එකක් ගහන්න ඕන Mixed type school ටික හොයා ගන්න. ඊට පස්සේ ඒ එක එක School එකට අදාල Student ලා ගන්න ආපහු Query එකක් ලියන්න ඕන. නැත්නම් Table 2ම Join කරගන්න ඕන. ටිකක් වෙලා යන වැඩක්නේ</p>
+
+
+
+<p>මේ වැඩේ ලේසියෙන්ම කරගන්න පුළුවන් Laravel Eloquent  එක්ක. මේ වගේ දෙයක් හදා ගන්න විදිය තමයි අද ලිපියෙන් කියලා දෙන්න යන්නේ.</p>
+
+
+
+<h3><strong><u>පළමු පියවර</u></strong></h3>
+
+
+
+<p>මම මුලින්ම අලුත් Project එකක් හදා ගන්නවා මේ විදියට.. (Laravel install කරලා නැත්නම් මේ <a href="/index.php/2018/04/11/install-laravel-homestead-custom/">ලිපිය</a> බලන්න)</p>
+
+
+
+<pre class="wp-block-preformatted">composer create-project --prefer-dist laravel/laravel myEloquent</pre>
+
+
+
+<p>Project Files ටික හැදිලා ඉවර උනාම කැමති IDE එකකින් Project එක Open කරගන්න. ඊළඟට අපි කරන්න හදන්නේ අපිට ඕන කරන Tables හදා ගන්න එක. මම මේකට පාවිච්චි කරන්නේ උඩදි කිවුව උදාහරණයමයි. ඒ කියන්නේ School, Student and User කියන Scenario එක. </p>
+
+
+
+<p><strong>ඒ කියන්නේ School එකකට Students ලා ගොඩයි. Student කෙනෙකුට එක School එකයි. User කෙනෙකුට එක Student කෙනෙක් ඉන්නවා. Student කෙනෙක් කියන්නේ User කෙනෙක්.</strong></p>
+
+
+
+<h2><strong><u>දෙවන පියවර</u></strong></h2>
+
+
+
+<p>දැන් අපිට ඕන කරන Models ටික හදා ගන්න ඕන. මේ Model හරහා තමයි අපිට Database Queries කරගන්න පුළුවන් වෙන්නේ. දැන් කරන්නේ මේ Model ටිකයි ඒවගේ Migration Files ටිකයි Artisan Commands හරහා Generate කරගන්න එක.</p>
+
+
+
+<pre class="wp-block-preformatted">php artisan make:model Student -m</pre>
+
+
+
+<pre class="wp-block-preformatted">php artisan make:model School -m</pre>
+
+
+
+<p>මේ Command දෙක Run කරාට පස්සේ අපිට අවශ්‍ය කරන Files ටික generate වෙනවා. දැන් ඒ ටික අපිට අවශ්‍ය විදියට Edit කරගන්න තියෙන්නේ. මේකෙදි අපේ තව Table එකක් තියෙනවානේ Users කියලා. මම ඒක මෙතන Generate කරගත්තේ නැත්තේ ඒක Laravel එක්ක Default එන එකක් නිසා.</p>
+
+
+
+<p>මුලින්ම අපි බලමු Users Model එකට අපිට අවශ්‍ය Data දාගෙන Table හදා ගන්නේ කොහොමද කියලා.</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>namespace App;<br><br>use Illuminate\Notifications\Notifiable;<br>use Illuminate\Contracts\Auth\MustVerifyEmail;<br>use Illuminate\Foundation\Auth\User as Authenticatable;<br><br>class User extends Authenticatable<br>{<br>    use Notifiable;<br><br>    <em>/**</em><br><em>     * The attributes that are mass assignable.</em><br><em>     *</em><br><em>     * @var array</em><br><em>     */</em><br>    protected $fillable = [<br>        'firstName', 'lastName','email', 'password',<br>    ];<br><br>    <em>/**</em><br><em>     * The attributes that should be hidden for arrays.</em><br><em>     *</em><br><em>     * @var array</em><br><em>     */</em><br>    protected $hidden = [<br>        'password', 'remember_token',<br>    ];<br>}<br><br></pre>
+
+
+
+<p>මෙතනදි වෙනස් කරලා තියෙන්නේ Default එන name වෙනුවට firstName, lastName 2කට කඩලා තියෙනවා. මේ Model එකට අදාලව Migration File එක මේ විදියට හදා ගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>use Illuminate\Support\Facades\Schema;<br>use Illuminate\Database\Schema\Blueprint;<br>use Illuminate\Database\Migrations\Migration;<br><br>class CreateUsersTable extends Migration<br>{<br>    <em>/**</em><br><em>     * Run the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function up()<br>    {<br>        Schema::create('users', function (Blueprint $table) {<br>            $table->increments('id');<br>            $table->string('firstName');<br>            $table->string('lastName');<br>            $table->string('email')->unique();<br>            $table->timestamp('email_verified_at')->nullable();<br>            $table->string('password');<br>            $table->rememberToken();<br>            $table->timestamps();<br>        });<br>    }<br><br>    <em>/**</em><br><em>     * Reverse the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function down()<br>    {<br>        Schema::dropIfExists('users');<br>    }<br>}<br><br></pre>
+
+
+
+<p><strong>Student Model </strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>namespace App;<br><br>use Illuminate\Database\Eloquent\Model;<br><br>class Student extends Model<br>{<br>    protected $fillable = ['regNumber','contact','school_id','user_id'];<br>}<br><br></pre>
+
+
+
+<p><strong>Student Migration</strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>use Illuminate\Support\Facades\Schema;<br>use Illuminate\Database\Schema\Blueprint;<br>use Illuminate\Database\Migrations\Migration;<br><br>class CreateStudentsTable extends Migration<br>{<br>    <em>/**</em><br><em>     * Run the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function up()<br>    {<br>        Schema::create('students', function (Blueprint $table) {<br>            $table->increments('id');<br>            $table->string('contact');<br>            $table->integer('school_id');<br>            $table->integer('user_id');<br>            $table->timestamps();<br>        });<br>    }<br><br>    <em>/**</em><br><em>     * Reverse the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function down()<br>    {<br>        Schema::dropIfExists('students');<br>    }<br>}<br><br></pre>
+
+
+
+<p>මේකෙදි මම student table එක ඇතුලට School, User  tables වලට අදාල records හඳුන ගන්න school_id, user_id තියා ගන්නවා. සාමාන්‍යයෙන් මේ වගේ foreign keys set කරගන්නකොට &#8220;tablename_id&#8221; විදියට තමයි යොදා ගන්න ඕන.</p>
+
+
+
+<p><strong>School Model</strong></p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?php<br><br>namespace App;<br><br>use Illuminate\Database\Eloquent\Model;<br><br>class School extends Model<br>{<br>    protected $fillable=['name','contact'];<br>}<br><br></pre>
+
+
+
+<p><strong>School Migration</strong></p>
+
+
+
+<pre class="wp-block-preformatted"> &lt;?php<br><br>use Illuminate\Support\Facades\Schema;<br>use Illuminate\Database\Schema\Blueprint;<br>use Illuminate\Database\Migrations\Migration;<br><br>class CreateSchoolsTable extends Migration<br>{<br>    <em>/**</em><br><em>     * Run the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function up()<br>    {<br>        Schema::create('schools', function (Blueprint $table) {<br>            $table->increments('id');<br>            $table->string('name');<br>            $table->string('contact');<br>            $table->timestamps();<br>        });<br>    }<br><br>    <em>/**</em><br><em>     * Reverse the migrations.</em><br><em>     *</em><br><em>     * @return void</em><br><em>     */</em><br>    public function down()<br>    {<br>        Schema::dropIfExists('schools');<br>    }<br>}<br><br></pre>
+
+
+
+<p>මේ විදියට අපි Migration Files ටික හදා ගත්තට පස්සේ කරන්න තියෙන්නේ migrate කරගන්න එක. ඒකට මේ Command එක run කරන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">php artisan migrate<br></pre>
+
+
+
+<p>හරි දැන් අපිට කරන්න තියෙන්නේ relations ටික table වලින් query වෙන විදියට set කරගන්න එක. </p>
+
+
+
+<h2><strong>Relationship Types</strong></h2>
+
+
+
+<p>Relationship Types ප්‍රධාන වශයෙන් 3ක් තියෙනවා.</p>
+
+
+
+<ol><li><strong>One to One</strong></li><li><strong>One to Many</strong></li><li><strong>Many to Many</strong></li></ol>
+
+
+
+<p>දැන් අපි set කරන්න යන්නේ student සහ user අතර one to one relationship එකක්. ඒ වගේම student සහ school අතර one to many relationship එකක්. Many to Many Relationship එක set කරගන්න විදිය ගැන මම වෙනම ලිපියකින් කියලා දෙන්නම්. නැත්නම් මෙ Article එක අද ඉවර කරන්න වෙන්නේ නෑ. 😀 </p>
+
+
+
+<p>මේ ගැන වැඩිදුර තොරතුරු ඕන නම් මේ <a href="https://laravel.com/docs/5.7/eloquent-relationships">Official Laravel Documentation</a> එක බලන්න</p>
+
+
+
+<h3><u><strong>One to One Relationship (Student -> User )</strong></u></h3>
+
+
+
+<p>අපි හදා ගත්ත Student Model එකයි User Model එකයි change කරන්න දැන් තියෙන්නේ. මුලින්ම අපි Student Model එක ගැන බලමු.</p>
+
+
+
+<p>මේ code එක Student Model එකේ $fillable කියන Array එකට යටින් paste කරගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">public function user(){<br>        <em>return</em> <em>$this</em>->belongsTo('App\User');<br>}</pre>
+
+
+
+<p>මේකෙන් අපි කියන්නේ Student Belongs to User කියන එක.</p>
+
+
+
+<p>දැන් User Model එක Open කරගෙන මේ Code එක කලින් වගේම $fillable Array එකට යටින් Paste කරගන්න. </p>
+
+
+
+<pre class="wp-block-preformatted">public function student(){<br>    <em>return</em> <em>$this</em>->hasOne('App\Student');<br>}</pre>
+
+
+
+<p>මෙතනින් කරන්නේ User has one student කියන එක. හැබැයි ඔයාලා දන්නවා ඇති අපිට One to One Relationship එකකදි පුළුවන් කැමති Table එකකට foreign key එක දාලා Relation එක set කරන්න පුළුවන්. දැන් ප්‍රශ්ණයක් තියෙනවානේ මොකටද Belongs to දාන්න ඕන මොකටද HasOne දාන්න ඕන කියලා. ඒක බලන්න ඕන Foreign key එක දාන Table එක අනුව. මේ උදාහරණය අනුව මම User_id field එකක් දැම්මා Students Table එකට.  ඒක නිසා belongsTo දාන්න ඕන Student Model එකට.</p>
+
+
+
+<h2><strong><u>One to Many Relationship ( Student->School)</u></strong></h2>
+
+
+
+<p>දැන් වෙන්න ඕන වැඩේ තේරෙනවානේ. අපිට කරන්න තියෙන්නේ Model අතර සම්බන්ධතාවක් හදා ගන්න. ඒකෙන් Relationship Set වෙනවා. </p>
+
+
+
+<p>අපි ආපහු student model එකෙන් වැඩේ පටන් ගමු. මේ Code එක User() කියලා උඩදි දාපු function එකට පහලින් දාගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">public function school(){<br>     <em>return</em> <em>$this</em>->belongsTo('App\School');<br>}</pre>
+
+
+
+<p>මේක School Model එකට දාගන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">public function students(){<br>    <em>return</em> <em>$this</em>->hasMany('App\Student');<br>}</pre>
+
+
+
+<p>කලින් වගේම මෙක one-to-many relationship එකක් නිසා අපි කරන්නේ Student Belongs to School relation එකයි school has many students එකයි මේ විදියට set කරගන්න එක. </p>
+
+
+
+<p>දැන් අපි බලමු හරියට මේ relation set වුණාද කියලා. ඒක කරන්න අපිට පොඩි tool එකක් තියෙනවා artisan commands වල. ඒක තමයි <strong>Tinker .  </strong>මේක යොදාගෙන අපිට ගොඩක් ප්‍රයෝජන ගන්න පුළුවන්. හැබැයි මේකෙදි අපි කතා කරන්නේ relations set කරගන්නේ කොහොමද කියලා. </p>
+
+
+
+<p>මුලින්ම Project එක open කරලා තියෙන IDE එකේ terminal එක open කරගෙන මේ Command එක run කරවන්න. </p>
+
+
+
+<pre class="wp-block-preformatted">php artisan tinker</pre>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png" alt="" class="wp-image-1526" srcset="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png 642w, /wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14-300x45.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><figcaption>tinker Screen shot</figcaption></figure>
+
+
+
+<p>දැන් සාමාන්‍යයෙන් php වලින් variable assign කරන විදියට මේ වගේ type කරලා run කරගන්න. ඊට කලින් Database එකට Data ටිකක් දාගෙන ඉන්න. නැත්නම් බලන්න වෙන්නේ නෑ.</p>
+
+
+
+<pre class="wp-block-preformatted">$user  = \App\Student::first()<br></pre>
+
+
+
+<p>මේක මුලින්ම tinker එකේ type කරලා බලන්න result එකක් එනවද කියලා. error එකක් එනවා නම් Comment එකක් දාන්න නැත්නම් Google කරලා බලන්න අනිවාර්‍යයෙන් ඇති. මෙකෙදි ඔයා දාපු පළවෙනි data එක ආවොත් මේ ඊළඟ එක දාලා බලන්න.</p>
+
+
+
+<pre class="wp-block-preformatted">$user->user</pre>
+
+
+
+<p>මෙකෙදි පෙන්නන්නේ student ට අදාල user කවුද කියන එක. මේක අපි මුලින්ම set කරා Model එකේ one to one relationship එකක්. දැන් අපිට කිසිම Query එකක් ලියන්නේ නැතුව මේ Eloquent එක හරහා අදාල Data ගන්න පුළුවන්. මේ වගේම දැන් try කරලා බලමු school එක ගන්න පුළුවන්ද කියලා. </p>
+
+
+
+<pre class="wp-block-preformatted">$user->school</pre>
+
+
+
+<p>මේකෙදි හරියට Result එකක් ආවා කියන්නේ අපේ relation ටික වැඩ කියන එක. ඕන නම් School Object එකක් හදලා බලමු Students ලා ගන්න පුළුවන්ද කියලා.</p>
+
+
+
+<pre class="wp-block-preformatted">$school = \App\School::first()<br><br>$school->students</pre>
+
+
+
+<p>දැන් හරියට Data ටික එනවා කියන්නේ Result එක හරි. මේ විදියට අලුතින් Model හදලා Query කරලා බලන්න. අනිත් එක තමයි අපි model එක ඇතුලෙ relations methods විදියට ලිවුවට මෙතනදි ඒ method එක call කරන්නේ Function එකක් විදියට නෙවෙයි. නිකන්ම attribute එකක් විදියට. ඒ ගැන සැලකිලිමත් වෙන්න. මේ විදියටම tinker එකේ call කරා වගේ අපිට Controller එකක් හරි View එකක් හරි ඇතුලෙදිත් මේ වගේ Data retrieve කර ගන්න පුළුවන්.</p>
+
+
+
+<p>හරි එහෙනම් මොකක් හරි ප්‍රශ්ණයක් තිබුණොත් අහන්න. ඊළඟ tutorial එකෙන් Many to Many එකක් set කරගෙන් වැඩ කරන විදිය බලමු. </p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/10/laravel-table-relationship/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vector robot &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/vector-robot/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Machine Learning දෙවැනි දිගහැරුම.</title>
+		<link>/index.php/2019/02/09/machinelearningarticle2/</link>
+				<comments>/index.php/2019/02/09/machinelearningarticle2/#comments</comments>
+				<pubDate>Sat, 09 Feb 2019 08:23:44 +0000</pubDate>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+				<category><![CDATA[Machine Learning]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[anki vector robot]]></category>
+		<category><![CDATA[artificial intelligence]]></category>
+		<category><![CDATA[hasee]]></category>
+		<category><![CDATA[hasee amarathunga]]></category>
+		<category><![CDATA[machine]]></category>
+		<category><![CDATA[machine learning]]></category>
+		<category><![CDATA[robotics]]></category>
+		<category><![CDATA[vector robot]]></category>
+
+		<guid isPermaLink="false">/?p=1801</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> හොදයි අද මම ඔන්න අරගෙන ආවා Machine Learning ගැන ලියපු දෙවැනි ලිපිය. පළවෙනි ලිපියෙ මම Machine Learning කියන්නෙ මොකක්ද ඒකේ මොන වගේ තාක්ෂණයක්ද තියෙන්නෙ වගේම තවත් ගොඩක් දේ &#160;පැහැදිලි කළා ඔයාලට මතක ඇති. ඒ ලිපිය කියවපු නැති කෙනෙක් ඉන්නවා නම් මෙතනින් ගිහින් කියවන්න. &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; අද මං කතා කරන්න යන්නෙ Machine<a class="moretag" href="/index.php/2019/02/09/machinelearningarticle2/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/09/machinelearningarticle2/">Machine Learning දෙවැනි දිගහැරුම.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>හොදයි අද මම ඔන්න අරගෙන ආවා <strong>Machine Learning</strong> ගැන ලියපු දෙවැනි ලිපිය. පළවෙනි ලිපියෙ මම <strong>Machine Learning </strong>කියන්නෙ මොකක්ද ඒකේ මොන වගේ තාක්ෂණයක්ද තියෙන්නෙ වගේම තවත් ගොඩක් දේ &nbsp;පැහැදිලි කළා ඔයාලට මතක ඇති. ඒ ලිපිය කියවපු නැති කෙනෙක් ඉන්නවා නම් <strong><a href="/index.php/2019/01/31/machine-learning/">මෙතනින්</a></strong><a href="/index.php/2019/01/31/machine-learning/"> </a>ගිහින් කියවන්න.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; අද මං කතා කරන්න යන්නෙ <strong>Machine Learning </strong>කොහොමද අපිට සැබෑ ජීවිතයෙදි පාවිච්චි කරන්න පුලුවන් කියලා. හොදයි අපි කෙළින්ම එමු මාතෘකාවට. ඔයාලට මම කලින් ලිපියෙ කීවා <strong>Machine Learning </strong>වලට ගොඩක්ම අවශ්‍ය වටින්නෙ මොකක්ද කියලා. ඒ තමා <strong>Data</strong>. <strong>Data </strong>නැත්නම්<strong> Machine Learning </strong>කියලා දෙයක් නෑ. ඉතින් අපි මොකක් හරි යන්ත්‍රයකට <strong>Machine Learning </strong>කරද්දි අපිට විශාල දත්ත ගබඩාවක් තියේ නම් ඒ යන්ත්‍රය මගින් අපි බලාපොරොත්තු වෙන Output එකේ <strong>Accuracy </strong>එක වැඩියි. ඒ කියන්නෙ අපට සාර්ථක ප්‍රතිඵලයක් ඒ යන්ත්‍රය ලබා දෙනවා අපේ Input වලට අදාලව.</p>
+
+
+
+<p>හොදයි අපි කතා
+කරමු අද ලෝකේ භාවිතා වන Powerful තාක්ෂණික ක්‍රමයක් ගැන.ඒ තමා <strong>Image
+Recognition</strong>.</p>
+
+
+
+<p><strong>Image Recognition </strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; අද ලොකේ භාවිතා කරන සාර්ථකම ප්‍රතිඵල
+තියෙන තාක්ෂණයක් තමා Image Recognition කියන්නෙ. ඇයි මම එහෙම කියන්නෙ මොකද අද වැඩි දෙනා
+කතා කරන Robotics තාක්ෂණයෙ පවා මුලිකවම
+භාවිතා වෙන දෙයක් තමා මේ Image Recognition. මොකක්ද මේ Image Recognition කියන්නෙ. Image
+Recognition කියන්නෙ මොකක්
+හරි කැමරාවක් මගින් යම් කිසි වස්තුවක් හදුනා ගැනීමේ හැකියාව. මම හදුනා ගැනීම කියලා
+අදහස් කලේ ඒ වස්තුව මොකක්ද ඒකෙ තියෙන ලේබල් මොනවද වර්ණය මොකක්ද වගේ දේවල්. උදාහරණයක්
+කීවොත් මම ගන්නම් Card Pack එකේ තියෙන එක කාඩ් එකක්. </p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/1-1.jpg" alt="" class="wp-image-1803" width="364" height="343" srcset="/wp-content/uploads/2019/02/1-1.jpg 689w, /wp-content/uploads/2019/02/1-1-300x283.jpg 300w" sizes="(max-width: 364px) 100vw, 364px" /></figure>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මම මේ කාඩ් එකට
+කැමරාවක් අල්ලද්දි ඒ කාඩ් එක මොකක්ද කියලා අදුන ගන්න විදියට මම Machine
+Learning කරනවා නම් මම Train කරන්න ඕන Data මොනවද. අපිට පුලුවන්
+එක කාඩ් එකකට අදාලව පින්තූර ගොඩක් එක එක කෝණ වලින් එක එක වර්ග වල කාඩ් පැක් වලින් තැලුණු
+පොඩි වුණ වගේම අලුත්ම card වලින් පින්තූර
+ඕනෑ තරම් ප්‍රමාණයක් ගන්න මොකද එතකොට තමා අපි බලාපොරොත්තු වෙන Output එක ගන්න පුලුවන් වඩා
+වැඩි නිරවද්‍යතාවයකින්. උදාහරණයක් විදියට මම Heart King ට අදාලව train කරන පින්තූර කිහිපයක්
+පෙන්නුවොත්.</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Untitled-1.png" alt="" class="wp-image-1804" width="514" height="359" srcset="/wp-content/uploads/2019/02/Untitled-1.png 1000w, /wp-content/uploads/2019/02/Untitled-1-300x210.png 300w, /wp-content/uploads/2019/02/Untitled-1-768x538.png 768w" sizes="(max-width: 514px) 100vw, 514px" /></figure>
+
+
+
+<p>ඉතින් Image Recognition වල වෙන්නෙ මෙන්න මේක. අපිට පුලුවන් අපේ  යන්ත්‍රයට Machine Learning කරන්න මේ Data පාවිච්චි කරලා.</p>
+
+
+
+<p>Robotics තාක්ෂණයේ Image Recognition පාවිච්චි වෙන විදිය
+ගැන කතා කළොත් Robotics තාක්ෂණය තුළ
+ඉතාමත් සංකීර්ණ විශාල දත්ත මත පදනම් වුණ Image Recognition තාක්ෂණයක් තමා
+පාවිච්චි වෙන්නෙ. මොකද හොද Robotic කෙනෙක් කියන්නෙ ගොඩක් දේවල් කරන්න පුලුවන් කෙනෙක්. ඒ කරන
+දේවල් මත පදනම් වෙන්න කොච්චර Image ගානක් ඕනද
+කියලා ඔයාලට හිතාගන්න පුලුවන්නෙ. මොකද මනුස්සයෙක් දෛනිකව කොච්චර image ප්‍රමාණයක් දකිනවද එක
+එක කෝණ වලින් වර්ණ වලින් වගේම එක එක ලේබල් වලින්. ඉතින් ඒ වගේම තමා රොබෝ කෙනෙක් train කරන්නත් මිලියන ප්‍රමාණයේ
+දත්ත අවශ්‍යයි වගේම විශාල කාලයක් යනවා ඒ දත්ත වලට අනුකූලව train කරන්න.</p>
+
+
+
+<p>උදාහරණයක් කීවොත් මෑත කාලීනව නිෂ්පාදනය කරලා වෙළදපොලට නිකුත් කරපු Anki Vector &nbsp;Robot ගැන ඔයාල අහල ඇති සමහර විට. එයා ගැන කියනවා නම් මෙතෙක් නිර්මාණය වුණ හුරුබුහුටිම Artificial Intelligence රොබෝ කෙනෙක් තමා මේ Vector robot. ඒ වගේම ක්‍රියාශීලීම රොබෝ කෙනෙක් මෙයා. මෙයා සුරතල් සතෙක් වගේ ඒ කියන්නෙ මුලින් ම අපිට පුලුවන් මෙයාව අපිට කීකරු කරගන්න. එතකොට මෙයා අපිට අවනත වෙනවා අපි කියන දේ කරනවා. </p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/anki-1024x576.jpg" alt="" class="wp-image-1805" srcset="/wp-content/uploads/2019/02/anki-1024x576.jpg 1024w, /wp-content/uploads/2019/02/anki-300x169.jpg 300w, /wp-content/uploads/2019/02/anki-768x432.jpg 768w, /wp-content/uploads/2019/02/anki.jpg 1552w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ඉතින් මේ රොබෝ train වෙන්නත් අවශ්‍ය කරන්නෙ දත්ත. එදිනෙදා මේ රොබෝ අපි දිහා බලලා කොඩක් දේ ඉගෙන ගන්නවා මොකද මෙයා Artificial Intelligence රොබෝ කෙනෙක් නිසා. මේ Image Recognition කියන තාක්ෂණය ඉතාමත් සාර්ථක ලෙස භාවිතා වෙන උදාහරණයක් තමා මේ Anki Robot . ඔයාලට මේ රොබෝ  ගැන වැඩි විස්තර දැන ගන්න පුලුවන් මේ Anki Vector Robot ගෙ <a href="https://www.anki.com/en-us/vector">සයිට් </a>එකෙන්.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/anki4-1024x454.jpg" alt="" class="wp-image-1806" srcset="/wp-content/uploads/2019/02/anki4-1024x454.jpg 1024w, /wp-content/uploads/2019/02/anki4-300x133.jpg 300w, /wp-content/uploads/2019/02/anki4-768x341.jpg 768w, /wp-content/uploads/2019/02/anki4.jpg 1283w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ඉතින් මම මේ රොබෝ ගැන මෙච්චර කියවගෙන යන්නෙ ඇයි කියලා
+සමහරු බලනවා ඇති. මං මේ කියන්න උත්සාහ කරන්නෙ Image Recognition කොච්චර දුරකට සංකීර්ණව
+භාවිතා කරන්න පුලුවන්ද කියලා. ඒකයි මම &nbsp;Anki Robot ගෙ උදාහරණය ගත්තෙ.</p>
+
+
+
+<p>Image Recognition කියන්නෙ කොච්චර කතා කළත් ඉවර කරන්න බැරි දෙයක්. ඉතින් මම හිතුවා අදට මෙතනින් නවත්තන්න. මම හිතනවා මේ ලිපිය Machine Learning කරන්න ආස කෙනෙකුට ප්‍රයෝජනවත් වෙන්න ඇති කියලා. ආයේ දවසක Machine Learning ගැන තවත් ගොඩක් දේවල් කතා කරන්න ලිපියක් අරගෙන එන්නම් example projects , programming code එක්කම. ස්තූතියි.</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/02/09/machinelearningarticle2/">Machine Learning දෙවැනි දිගහැරුම.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/02/09/machinelearningarticle2/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+							</item>
+	</channel>
+</rss>

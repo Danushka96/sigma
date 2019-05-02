@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: MEAN Part 2 (Mongo DB)	</title>
+	<atom:link href="/index.php/2018/09/24/mean-part-2-mongo-db/feed/" rel="self" type="application/rss+xml" />
+	<link>/index.php/2018/09/24/mean-part-2-mongo-db/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				By: Gayan Sampath				</title>
+				<link>/index.php/2018/09/24/mean-part-2-mongo-db/#comment-116</link>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+		<pubDate>Tue, 25 Sep 2018 04:29:05 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1369#comment-116</guid>
+					<description><![CDATA[El el bng..]]></description>
+		<content:encoded><![CDATA[<p>El el bng..</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

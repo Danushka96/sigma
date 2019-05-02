@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>VueJs &#8211; The SIGMA</title>
+	<atom:link href="/index.php/category/vuejs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>VueJs 2 &#8211; 08 Handling AJAX</title>
+		<link>/index.php/2018/05/01/vuejs-2-08/</link>
+				<comments>/index.php/2018/05/01/vuejs-2-08/#comments</comments>
+				<pubDate>Tue, 01 May 2018 17:09:33 +0000</pubDate>
+		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
+				<category><![CDATA[VueJs]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[AJAX]]></category>
+		<category><![CDATA[axios]]></category>
+		<category><![CDATA[HTTP request]]></category>
+		<category><![CDATA[Vue]]></category>
+
+		<guid isPermaLink="false">/?p=1065</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්! Vue ගැන ලියන 8 වෙනි post එක. කලින් post එකේ කිව්ව වගේ, මේ post එකෙන් මම කියන්න යන්නෙ HTTP request එහෙමත් නැත්තම් AJAX request එක්ක ගනුදෙනු කරන්නෙ කොහොමද කියල. කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න පුළුවන්. what is AJAX ?? ගොඩක් අය දන්නව ඇති AJAX කියන්නෙ මොකද්ද<a class="moretag" href="/index.php/2018/05/01/vuejs-2-08/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/05/01/vuejs-2-08/">VueJs 2 &#8211; 08 Handling AJAX</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්! Vue ගැන ලියන 8 වෙනි post එක. <a href="/index.php/2018/05/01/vuejs-2-07/" target="blank">කලින් post එකේ</a> කිව්ව වගේ, මේ post එකෙන් මම කියන්න යන්නෙ HTTP request එහෙමත් නැත්තම් AJAX request එක්ක ගනුදෙනු කරන්නෙ කොහොමද කියල. කලින් posts බැලුවෙ නැත්තම් <a href="/index.php/category/vuejs/" target="blank">මෙතනින්</a> ගිහින් බලන්න පුළුවන්.</p>
+<h4><strong>what is AJAX ??</strong></h4>
+<p>ගොඩක් අය දන්නව ඇති AJAX කියන්නෙ මොකද්ද කියල. ඒත් දන්නෙ නැති අයත් ඉන්න නිසා සහ post එක සම්පූරණ වෙන්න ඕනෙ නිසා ඒ ගැන මම කියන්නම්.</p>
+<p><img class="aligncenter" src="https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05110044/text-How-AJAX-Works.png" alt="Image result for ajax request" width="818" height="372" /></p>
+<p>AJAX කියන්නෙ Asynchronous JavaScript And XML කියන එක කෙටි කරල.(මේකෙ XML කියල තිබුනට, දැන් XML භාවිතා වෙන්නෙ නැති තරම්. ඒ වෙනුවට JSON තමයි භාවිතා කරන්නෙ.) සරලවම කිව්වොත් මේකෙන් වෙන්නෙ, page එක reload කරන්නෙ නැතුව back-end එකත් එකක් communicate කරන්න පුළුවන් වෙන එක. සාමාන්‍ය site එකක (AJAX භාවිතා නොකරන site එකක) back-end එකට data යවන්න නම් (form එකක් submit කරද්දි වගේ)  page එක reload කරන්න ඕනෙ. හැබැයි අපි AJAX භාවිතා කරොත් එහෙම ඕනෙ නැහැ. ඒ page එකේ ඉදිද්දිම data communicate කරන්න පුළුවන්. ඒක සෑහෙන්න ලොකු පහසුවක්. උදාහරණයකට Facebook එක ගන්නකො. අපි post එකකට like එකක් දානව කියල හිතමු. ඒ like එක database එකේ save වෙන්න නම් page එක reload කරන්න වෙනව. අපි දාන හැම like, comment එකකටම page එක refresh වෙන්න ඕනෙ. ඒක සෑහෙන්න කරදරයක්. හැබැයි fb එකේ එහෙම වෙන්නෙ නැහැ. ඒ AJAX භාවිතා කරල තියෙන නිසා. එතකොට page එක එහෙමම තියෙද්දි, අපිටත් නොදැනීම ඒ likes/comments, database එකේ save වෙනව. ඒ වගේම wall එක දිගේ පහළට යන්න යන්න අලුතෙන් posts load වෙනව කියල ඔයාල දන්නව. ඒක වෙන්නෙත් AJAX request වලින්. දැන් ඔයාලට තේරෙනව ඇති AJAX කියන්නෙ මොකද්ද කියල සහ ඒක මොනවටද භාවිතා කරන්නෙ කියල.</p>
+<h4><strong>jsonplaceholder</strong></h4>
+<p>AJAX request වලින් ගනුදෙනු කරන්න නම් සේරටම කලින් අපිට back-end එකක් තියෙන්න ඕනනෙ. ඒක ඔයාල කැමති විදියකට හදාගන්න පුළුවන්. PHP, python, NodeJs වගේ ඔය ඕන එකකින් ඔයාලට back-end එක හදාගන්න පුළුවන්නෙ. මේක vue ගැන ලියන post එකක් නිසා back-end එක හදන විදිය ගැන මම කියන්න යන්නෙ නැහැ. ඒත් අපිට ගනුදෙනු කරන්න back-end එකක් ඕනෙ නිසා මම ඒකට <a href="https://jsonplaceholder.typicode.com/" target="blank">jsonplaceholder.typicode.com</a> site එකේ තියෙන API එක භාවිතා කරනව. මේක testing purposes සඳහාම තියෙන site එකක්. ඒකෙ dummy data තියෙනව. get/post request වලින් එ් data අපිට අරගන්න පුළුවන්. API එක ගැන විස්තර ඒ site එකේ තියෙනව.</p>
+<p><img class="wp-image-1090 aligncenter" src="/wp-content/uploads/2018/05/jsonplacehole-300x163.png" alt="" width="718" height="390" srcset="/wp-content/uploads/2018/05/jsonplacehole-300x163.png 300w, /wp-content/uploads/2018/05/jsonplacehole-768x417.png 768w, /wp-content/uploads/2018/05/jsonplacehole-1024x556.png 1024w" sizes="(max-width: 718px) 100vw, 718px" /></p>
+<blockquote><p>තව දෙයක් තියෙනව AJAX request යවද්දි, නිකංම index.html page එක browser එකෙන් open කරල හරියන්නෙ නැහැ. apache වගේ server එකකින් ඒක serve කරන්න ඕනෙ. නැත්තම් වැඩ කරන්නෙ නැහැ. WAMP, XAMPP වගේ software එකින් ඒක කරගන්න පුළුවන්. ඒක කරන විදිය ඔයාල දන්නව ඇති කියල හිතනව.  දන්නෙ නැත්තම් comment එකක් දාන්න, කියල දෙන්නම්.</p></blockquote>
+<h4><strong>axios</strong></h4>
+<p>දැන් අපි බලමු Vue වලින් AJAX request handle කරන්නෙ කොහොමද කියල. ඒකට ක්‍රම කීපයක්ම තියෙනව. එකක් තමයි JavaScript fetch API එක භාවිතා කරන එක. මේක JavaScript වලට අලුතෙන් ආපු දෙයක්. ඒ නිසා සමහර (පරණ) browser වල මේක වැඩ කරන්නෙ නැහැ. තව ක්‍රමයක් තමයි JQuery භාවිතා කිරීම. එහෙමත් නැත්තම් හොඳම ක්‍රමය තමයි axios වගේ library එකක් භාවිතා කරන්න එක. මම මේ post එකෙන් කියල දෙන්න යන්නෙ <a href="https://github.com/axios/axios" target="blank">axios</a> වලින් කොහෙමද මේක කරන්නෙ කියල.</p>
+<p><img class="wp-image-1092 aligncenter" src="/wp-content/uploads/2018/05/axios-300x163.png" alt="axios" width="762" height="414" srcset="/wp-content/uploads/2018/05/axios-300x163.png 300w, /wp-content/uploads/2018/05/axios-768x417.png 768w, /wp-content/uploads/2018/05/axios-1024x556.png 1024w" sizes="(max-width: 762px) 100vw, 762px" /></p>
+<p>axios හාවිතා කරන්න නම් ඒක අපේ page එකේ include කරල තියෙන්න ඕනෙ. මේක තමයි recommended CDN එක.</p>
+<pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://unpkg.com/axios/dist/axios.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre>
+<p>මේක index.html එකේ include කරාම අපිට පුළුවන් axios භාවිතා කරන්න.</p>
+<p>axios වලින් get request එකක් යවන්නෙ මේ විදියට.</p>
+<pre><span class="pl-smi">axios</span>.<span class="pl-c1">get</span>('<strong>target_url</strong><span class="pl-s"><span class="pl-pds">'</span></span>)
+  .<span class="pl-c1">then</span>(<span class="pl-k">function</span> (<span class="pl-smi">response</span>) {
+    // code to be executed when the request is successful
+  })
+  .<span class="pl-c1">catch</span>(<span class="pl-k">function</span> (<span class="pl-smi">error</span>) {
+    // if error happened, catch the error here
+  });</pre>
+<p>මේකෙ <strong>target_url</strong> කියන එක වෙනුවට, ඔයාට request එක යවන්න ඕනෙ url එක දෙන්න ඕනෙ. ඊළඟට තියෙන <strong>.then</strong> function එක ඇතුලෙ ලියන්න ඕනෙ, request එක සාර්ථක උනාම වෙන්න ඕන දේ. <strong>.catch</strong> එකේ ලියන්න ඕනෙ request එක fail උනොත් ඒක handle කරන්න අවශ්‍ය code එක.</p>
+<p>අපි <strong>jsonplaceholder.typicode.com/posts/</strong> කියන url එකට get request එකක් යවල බලමු. එතකොට එ් site එකේ කියල තියෙන විදියට dummy posts 100 ක් response එක විදියට එන්න ඕනෙ. මේ AJAX request එක ලියන්න ඕනෙ mounted (හෝ created) function එක ඇතුලෙ. එතකොට app එක mount වුන ගමන් මේක run වෙනව. අපිට ඒක මේ විදියට ලියන්න පුළුවන්.</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    mounted: function () {
+        axios.get('https://jsonplaceholder.typicode.com/posts/')
+        .then( function (res) {
+            console.log(res)
+        });
+    }
+});</pre>
+<p>දැන් app එක mount වුන ගමන් මේකෙ තියෙන url එකට get request එකක් යනව. ඊළඟට ඒ request එකෙන් එන response එක .then function එක ඇතුලට  pass වෙනව(res කියන්නෙ ඒක). එතකොට ඔයාලට බලාගන්න පුළුවන් back-end එකෙන් එන response එක console එකේ print වෙනව. ඒකෙ තියෙන data කියන property එක expand කරල බලන්නකො. ඒකෙ තමයි response එකත් එක්ක එන data තියෙන්නෙ. ඔයාලට බලාගන්න පුළුවන් back-end එකෙන් ආපු dummy data.</p>
+<p><img class="aligncenter wp-image-1074 size-full" src="/wp-content/uploads/2018/05/example-get-request.png" alt="example get request" width="1910" height="685" srcset="/wp-content/uploads/2018/05/example-get-request.png 1910w, /wp-content/uploads/2018/05/example-get-request-300x108.png 300w, /wp-content/uploads/2018/05/example-get-request-768x275.png 768w, /wp-content/uploads/2018/05/example-get-request-1024x367.png 1024w" sizes="(max-width: 1910px) 100vw, 1910px" /></p>
+<p>&nbsp;</p>
+<p>post request එකක් යවන්නෙත් මේ විදියටමයි. axios.<strong>get</strong> වෙනුවට axios.<strong>post</strong> method එක භාවිතා කරන්න ඕනෙ. ඒ වගේම post කරන්න ඕනෙ data ඒකෙ 2වනි argument එක විදියට දෙන්න ඕනෙ. මේ වගේ.</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    mounted: function () {
+        axios.post('https://jsonplaceholder.typicode.com/posts/', {
+            // data to be sent
+            title: 'The title',
+            body: 'The body'
+        })
+        .then( function (res) {
+            console.log(res)
+        });
+    }
+});</pre>
+<p>හරි, දැන් ඔයාලට තේරෙනව ඇති කොහොමද axios භාවිතා කරල back-end එකත් එක්ක communicate කරන්නෙ කියල. දැන් අපි බලමු කලින් post එකේ අපි හදපු app එකේ messages ටික back-end එකකින් ගන්නෙ කොහොමද කියල.</p>
+<p>මේකටත් මම කලින් පාවිච්චි කරපු dummy back-end එකම තමයි භාවිතා කරන්නෙ. https://jsonplaceholder.typicode.com/posts/ කියන url එකට get request එකක් යැව්වම dummy messages 100 ක් එනවනෙ. ඒ messages 100, messages කියන data එකේ store කරන්න තියෙන්නෙ. මේ විදියට, (get request එකෙන් response එක ඇතුලෙ තියෙන data කියන object property එකේ තමයි මේ messages තියෙන්නෙ. ඒනිසා තමයි this.messages = res.data කියල මේතනදි මම  ලියල තියෙන්නෙ.)</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    data: {
+        newTitle: 'Title',
+        newBody: 'Message body',
+        messages: []
+    },
+    mounted: function () {
+        axios.get('https://jsonplaceholder.typicode.com/posts/')
+        .then( res =&gt; {
+            this.messages = res.data
+        });
+    },
+    methods: {
+        addMessage: function () {
+            this.messages.unshift(res.data)
+            this.newTitle = ''
+            this.newBody = ''
+        }
+    }
+});</pre>
+<blockquote><p>index.html -&gt; #my-app</p></blockquote>
+<pre>&lt;div id="my-app"&gt;
+
+  &lt;div class="container" style="margin-top:10px"&gt;
+    &lt;form style="padding:10px" class="col-sm-8 bg-light mb-3" @submit.prevent="addMessage()"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;h1&gt;Recent Messages&lt;/h1&gt;
+    &lt;blog-message v-for="message in messages" :title="message.title" :body="message.body"&gt;&lt;/blog-message&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>දැන් මේක run කරාම dummy messages 100ක්, කලින් අපි හදපු blog-post component 100ක display වෙන්න ඕනෙ.</p>
+<p>දැන් අපි බලමු අලුතෙන් message එකක් add කරන්නෙ කොහොමද කියල. post request එකක් තමයි එතකොට යවන්න ඕනෙ. ඊළඟට <strong>.then </strong>එක ඇතුලෙ ඒ message එක messages කියන data එකට add කරන්න පුළුවන්. මේ වගේ.</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    data: {
+        newTitle: 'Title',
+        newBody: 'Message body',
+        messages: []
+    },
+    mounted: function () {
+        axios.get('https://jsonplaceholder.typicode.com/posts/')
+        .then( res =&gt; {
+            this.messages = res.data
+        });
+    },
+    methods: {
+        addMessage: function () {
+            axios.post('https://jsonplaceholder.typicode.com/posts/', {
+                title: this.newTitle,
+                body: this.newBody 
+            }).then(res =&gt; {
+                this.messages.unshift(res.data)
+                this.newTitle = ''
+                this.newBody = ''
+            })
+        }
+    }
+});</pre>
+<p>දැන් අලුතෙන් message එකක් add කරාම ඒක back-end එකට post වෙනව. ඊළඟට ඒක messages array එකට add වෙනව. ඒ නිසා එක page එකෙත් display වෙනව.</p>
+<p>දැන් අපේ simple app එකේ වැඩ ඉවරයි. සම්පූර්ණ code එක පහල තියෙනව.</p>
+<blockquote><p>index.html</p></blockquote>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Vue demo&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="my-app"&gt;
+
+      &lt;div class="container" style="margin-top:10px"&gt;
+        &lt;form style="padding:10px" class="col-sm-8 bg-light mb-3" @submit.prevent="addMessage()"&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+            &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group"&gt;
+            &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+          &lt;/div&gt;
+          &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+
+        &lt;h1&gt;Recent Messages&lt;/h1&gt;
+        &lt;blog-message v-for="message in messages" :title="message.title" :body="message.body"&gt;&lt;/blog-message&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/axios/dist/axios.min.js"&gt;&lt;/script&gt;
+    &lt;script src="app.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<blockquote><p>app.js</p></blockquote>
+<pre>Vue.component('blog-message', {
+  props: ['title', 'body'],
+  template: `
+    &lt;div class="card bg-light mb-3"&gt;
+      &lt;div class="card-header"&gt;{{ title }}&lt;/div&gt;
+      &lt;div class="card-body"&gt;
+        &lt;p class="card-text"&gt;{{ body }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  `,
+  data: function () {
+    return {
+      count: 0,
+    }
+  },
+});
+
+const app = new Vue({
+  el: '#my-app',
+  data: {
+    newTitle: 'Title',
+    newBody: 'Message body',
+    messages: []
+  },
+  mounted: function () {
+    axios.get('https://jsonplaceholder.typicode.com/posts/')
+    .then( res =&gt; {
+      console.log(res)
+      this.messages = res.data
+    });
+  },
+  methods: {
+    addMessage: function () {
+      axios.post('https://jsonplaceholder.typicode.com/posts/', {
+        title: this.newTitle,
+        body: this.newBody
+      }).then(res =&gt; {
+        this.messages.unshift(res.data)
+        this.newTitle = ''
+        this.newBody = ''
+      })
+
+    }
+  }
+});
+</pre>
+<p>දැන් ඔයාලට තේරෙනව ඇති axios භාවිතා කරල කොහොමද back-end එකක් එක්ක ගණුදෙනු කරන්නෙ කියල.</p>
+<p>තව දෙයක් තියෙනව කියන්න. ඔයා app එක debug කරනකොට එහෙම මේක ගොඩක් වැදගත් වෙයි. ඒ තමයි browser එකේ dev tool වල තියෙන network tab එක. app එකෙන් කරන සියළුම requests මෙතන පෙන්නනව. ඒකෙන් ඔයාලට බලාගන්න පුළුවන් app එකෙන් යන එන http requests මොනවද කියල. ඒවගේම ඒ එක එක request එකට අදාල විස්තර ගොඩක් (request headers, response) මේකෙන් පෙන්නනව. ඒක ඔයාලට ගොඩක් ප්‍රයොජනවත් වේවි. මේ තියෙන්නෙ අපි හදපු app එක load වුන ගමන් කරන get request එක.</p>
+<p><img class="wp-image-1086 aligncenter" src="/wp-content/uploads/2018/05/posts-1-300x163.png" alt="network tab" width="837" height="455" srcset="/wp-content/uploads/2018/05/posts-1-300x163.png 300w, /wp-content/uploads/2018/05/posts-1-768x417.png 768w, /wp-content/uploads/2018/05/posts-1-1024x556.png 1024w" sizes="(max-width: 837px) 100vw, 837px" /></p>
+<p>ඔන්න දැන් අපි ඉතාම සරළ app එකකුත් හැදුව. කලින් post වල මම කියපු දේවල් ප්‍රායෝගිකව භාවිතා වෙන විදිය ඔයාලට දැන් තේරෙනව ඇති කියල හිතනව. ඉතිං අදට මෙතනින් ඉවරයි.</p>
+<p>post එක ගැන අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවම හරි තියෙනම් comment එකක් දාන්න. 😀</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/05/01/vuejs-2-08/">VueJs 2 &#8211; 08 Handling AJAX</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/05/01/vuejs-2-08/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>VueJs 2 &#8211; 07 more about Vue components</title>
+		<link>/index.php/2018/05/01/vuejs-2-07/</link>
+				<comments>/index.php/2018/05/01/vuejs-2-07/#comments</comments>
+				<pubDate>Mon, 30 Apr 2018 20:27:10 +0000</pubDate>
+		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
+				<category><![CDATA[VueJs]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[Vue]]></category>
+		<category><![CDATA[Vue component]]></category>
+
+		<guid isPermaLink="false">/?p=982</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, මේ VueJs ගැන ලියන 7 වෙනි post එක. අද post එකෙනුත් මම vue components ගැනම තමයි කියන්න යන්නෙ. විශේෂයෙන්, vue component එකක් ප්‍රායෝගිකව කොහොමද භාවිතා වෙන්නෙ කියල සහ props කියන්නෙ මොනවද කියල. කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න. අපි අද පොඩි app එකක් හදමු. හිතමුකො අපි හදනව කියල, මේ<a class="moretag" href="/index.php/2018/05/01/vuejs-2-07/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/05/01/vuejs-2-07/">VueJs 2 &#8211; 07 more about Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්, මේ VueJs ගැන ලියන 7 වෙනි post එක. අද post එකෙනුත් මම vue components ගැනම තමයි කියන්න යන්නෙ. විශේෂයෙන්, vue component එකක් ප්‍රායෝගිකව කොහොමද භාවිතා වෙන්නෙ කියල සහ props කියන්නෙ මොනවද කියල. කලින් posts බැලුවෙ නැත්තම් <a href="/index.php/category/vuejs/" target="blank">මෙතනින්</a> ගිහින් බලන්න.</p>
+<p>අපි අද පොඩි app එකක් හදමු. හිතමුකො අපි හදනව කියල, මේ වගේ පොඩි පොඩි messages display කරන්න පුළුවන් blog එකක්.</p>
+<p><img class="wp-image-1050 aligncenter" src="/wp-content/uploads/2018/04/full-output-300x185.png" alt="completed app" width="821" height="507" srcset="/wp-content/uploads/2018/04/full-output-300x185.png 300w, /wp-content/uploads/2018/04/full-output-768x473.png 768w, /wp-content/uploads/2018/04/full-output-1024x631.png 1024w" sizes="(max-width: 821px) 100vw, 821px" /></p>
+<p>ගොඩක් අය bootstrap ගැන දන්න නිසා, මම මේක style කරන්න bootstrap පාවිච්චි කරනව. ඒ නිසා bootstrap CDN එකත් index.html එකේ include කරන්න ඕනෙ. Blog එකේ messages display කරන්න bootstrap වල තියෙන මෙන්න මේ card කියන component එක භාවිතා කරනව. ඒකට අදාල template එක <a href="http://getbootstrap.com/docs/4.1/components/card/" target="blank">getbootstrap.com</a> එකෙන් ගන්න පුළුවන්.</p>
+<p><img class="wp-image-1060 aligncenter" src="/wp-content/uploads/2018/04/bootstrap-template-300x163.png" alt="getbootstrap.com" width="922" height="501" srcset="/wp-content/uploads/2018/04/bootstrap-template-300x163.png 300w, /wp-content/uploads/2018/04/bootstrap-template-768x417.png 768w, /wp-content/uploads/2018/04/bootstrap-template-1024x556.png 1024w" sizes="(max-width: 922px) 100vw, 922px" /></p>
+<pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-primary mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Primary card title<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre>
+<p>හැම message එකක්ම display කරන්නෙ මේ card කියන component එක භාවිතා කරල නිසා, ඒක Vue component එකක් විදියට හදා ගත්තම නැවත නැවත භාවිතා කරන්න පුළුවන්. ඒක කරන්නෙ කොහොමද කියල අපි බලමු.</p>
+<p>හරි, මේ component එකේ තියෙන්නෙ, blog එකේ තියෙන message එකක් නිසා අපි මේකට blog-message කියල නම දාමු. ඊළගට මේකට අදාල template එක මේ විදියට set කරන්න පුළුවන්.</p>
+<pre>Vue.component('blog-message', {
+    template: `
+        &lt;div class="card bg-light mb-3"&gt;
+            &lt;div class="card-header"&gt;Header&lt;/div&gt;
+            &lt;div class="card-body"&gt;
+                &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    `,
+});</pre>
+<p>මෙහෙම තිබුනට මේ component එකෙන් වැඩක් ගන්න අමාරුයි. මොකද මේ component එකේ තියෙන message එක hard code කරලනෙ තියෙන්නෙ. ඉතිං මේ component එක කිහිප වතාවක් භාවිතා කරොත් එකම message එක තමයි පෙන්නන්නෙ. ඒ නිසා මේ component එකේ තියෙන contents වෙනස් කිරීමේ හැකියාව තියෙන්න ඕනෙ, ඒ වගේම මේකෙ එක එක instance වල, වෙනස් වෙනස් message display කිරීමේ හැකියාව තියෙන්න ඕනෙ. ඒක කරන්න පුළුවන් props හාවිතා කරල.</p>
+<h4><strong>props</strong></h4>
+<p>Props වලින් කරන්නෙ, අපි හදපු component එකට, පිටින් මොනවහරි data pass කරන්න ඉඩ දෙන එක. ඒව(Props) හරියට, අපි හදපු custom element එකේ තියෙන custom attributes වගේ. ⁣අපේ component එකේ, title එක සහ body එක වෙනස් කිරීමේ හැකියාව තියෙන්න ඕනෙ. ඒ වගේම ඒ data, පිටින් ලබාගැනීමේ හැකියාව තියෙන්න ඕනෙ. ඒ නිසා අපි title සහ body කියල props 2ක් මගින් ඒ data, මේ component එ⁣කට pass කරමු. ඒක මේ විදියට කරන්න පුලුවන්.</p>
+<pre>&lt;div id="my-app"&gt;
+    &lt;div class="container" style="margin-top: 10px"&gt;
+        &lt;blog-message <strong>title</strong>="First post" <strong>body</strong>="the body of the first post"&gt;&lt;/blog-message&gt;
+        &lt;blog-message <strong>title</strong>="Second post" <strong>body</strong>="The body of the second post"&gt;&lt;/blog-message&gt;
+        &lt;blog-message <strong>title</strong>="Third post" <strong>body</strong>="The body of the third post"&gt;&lt;/blog-message&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>මේ විදියට props හරහා pass කරපු data, component එක ඇතුලෙදි සාමාන්‍ය data වගේම පාවිච්චි කරන්න පුළුවන්. හැබැයි මේ විදියට props හරහා pass කරපු data, component එක ඇතුලෙදි භාවිතා කරන්න නම්, component එක ඇතුලෙ භාවිතා කරන props මොනවද කියල, component එකේ define කරල ති⁣යෙන්න ඕනෙ. පහල තියෙන code එක බලන්නකො. ඒකෙ component එක ඇතුලෙ props කියන property එකෙන් මම කරල තියෙන්නෙ ඒක. (එ්කෙ තේරුම තමයි, මේ component එකට title සහ body කියල props 2ක් pass කරන්න පුළුවන් කියන එක.) දැන් title සහ body කියන දෙක, සමාන්‍ය data 2ක් වගේම භාවිතා කරන්න පුළුවන්.</p>
+<pre>Vue.component('blog-message', {
+    props: ['title', 'body'],
+    template: `
+        &lt;div class="card bg-light mb-3"&gt;
+            &lt;div class="card-header"&gt;{{ title }}&lt;/div&gt;
+            &lt;div class="card-body"&gt;
+                &lt;p class="card-text"&gt;{{ body }}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    `,
+});</pre>
+<p>මේක run කරාම පහල image ඒකේ තියෙන විදියෙ output එකක් එන්න ඕනෙ.</p>
+<p><img class="wp-image-996 aligncenter" src="/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-300x104.png" alt="sample site" width="787" height="272" srcset="/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-300x104.png 300w, /wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-768x266.png 768w, /wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-1024x354.png 1024w" sizes="(max-width: 787px) 100vw, 787px" /></p>
+<p>දැන් අපිට විවිද messages ⁣display කරන්න පුළුවන් component එකක් තියෙනව.</p>
+<p>page එකේ display කරන ඔක්කොම messages ටික main Vue instance එකේ store කර ගන්න පුළුවන්. දැනට අපි මේ data, hard code කරල තියමු. ඊළග post එකෙන් කියන්නම් back-end එකෙන් මේව අරගන්න විදිය. මේ විදියට messages කියල object එකක තමයි ඒක මම store කරන්නෙ.</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    data: {
+        messages:{
+            {title: 'First post', body: 'The body of the first post'},
+            {title: 'Second post', body: 'The body of the second post'},
+            {title: 'Third post', body: 'The body of the third post'},
+        }
+    }
+});</pre>
+<p>දැන් මෙහෙම store කරපු messages ටික, v-for එක භාවිතා කරල, එක message එකට එක component එක ගානෙ output කරන්න පුළුවන්. ඒ වගේම v-bind එකෙන් පුළුවන් ඒ එක එක instance එකට අදාල title එක සහ body එක bind කරන්න. මේ විදියට.</p>
+<pre>Vue.component('blog-message', {
+    props: ['title', 'body'],
+    template: `
+        &lt;div class="card bg-light mb-3"&gt;
+            &lt;div class="card-header"&gt;{{ title }}&lt;/div&gt;
+            &lt;div class="card-body"&gt;
+                &lt;p class="card-text"&gt;{{ body }}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    `
+});
+
+const app = new Vue({
+    el: '#my-app',
+    data: {
+        messages:{
+            {title: 'First post', body: 'The body of the first post'},
+            {title: 'Second post', body: 'The body of the second post'},
+            {title: 'Third post', body: 'The body of the third post'},
+        }
+    },
+});</pre>
+<pre>&lt;div id="my-app"&gt;
+    &lt;div class="container" style="margin-top:10px"&gt;
+        &lt;blog-message v-for="message in messages" v-bind:title="message.title" v-bind:message="message.body"/&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<h4><strong>add new message</strong></h4>
+<p>දැන් අපි මේකෙ messages display කරන කොටස හදල ඉවරයි. අපි කොහොමද අලුත් message එකක් මේකට add කරන්නෙ. දැන් අපි බලමු ඒක කරන්නෙ කොහොමද කියල.</p>
+<p>ඉස්සෙල්ලම අපි හදා ගමු message එක type කරන්න අවශ්‍ය form එක.</p>
+<pre>&lt;form style="padding:10px" class="col-sm-8 bg-light mb-3"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+<p>මේ තියෙන්නෙ ඒ form එක. මේක මේ විදියට index.html එකේ enter කරන්න පුළුවන්.</p>
+<pre>&lt;div id="my-app"&gt;
+  &lt;div class="container" style="margin-top:10px"&gt;
+    &lt;form style="padding:10px" class="col-sm-8 bg-light mb-3"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;h1&gt;Recent Messages&lt;/h1&gt;
+    &lt;blog-message v-for="message in messages" :title="message.title" :body="message.body"&gt;&lt;/blog-message&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>මේ form එකේ තියෙන message title එක සහ message body එක store කරගන්න, newTitle, newBody කියල data 2ක් define කරගන්න පුළුවන්. v-model directive එක භාවිතා කරල, form එකේ title සහ body කියන text field දෙකට,  ඒ data 2 bind කරලයි තියෙන්නෙ.</p>
+<pre>data: {
+    newTitle: '',
+    newBody: '',
+    messages: []
+}
+</pre>
+<p>හරි දැන් form එකත් හරි. දැන් තියෙන්නෙ add button එක click කරාම, post එක add වෙන functionality එක හදන්න. ඒකට අදාල code එක methods object එක ඇතුලෙ ලියන්න පුළුවන්. අපි ඒක addPost කියල method එකක ලියමු. පොඩි දෙයයි කරන්න තියෙන්නෙ. newTitle එක සහ newBody එක අඩංගු object එකක් messages කියන array එකට add කරන්න තියෙන්නෙ. එතකොට message කියන data එක වෙනස් වෙන නිසා, Vue වලින් automaticallyම ආපහු ඔක්කොම messages ටික render කරනව. මේ තියෙන්නෙ ඒකට අදාල code එක.</p>
+<pre>methods: {
+    addMessage: function () {
+        this.messages.unshift({
+             title: this.newTitle,
+             body: this.newBody
+        })
+        this.newTitle = ''
+        this.newBody = ''
+    }
+}
+</pre>
+<p>දැන්, form එක submit කරද්දි මේ method එක call කරාම හරි. ඒකට v-on:submit directive එක භාවිතා කරන්න ඕනෙ. සම්පූර්ණ code එක ⁣පහළ තියෙනව.</p>
+<pre>Vue.component('blog-message', {
+    props: ['title', 'body'],
+    template: `
+        &lt;div class="card bg-light mb-3"&gt;
+            &lt;div class="card-header"&gt;{{ title }}&lt;/div&gt;
+            &lt;div class="card-body"&gt;
+                &lt;p class="card-text"&gt;{{ body }}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    `,
+});
+
+const app = new Vue({
+    el: '#my-app',
+    data: {
+        newTitle: 'Title',
+        newBody: 'Message body',
+        messages: []
+    },
+
+    methods: {
+        addMessage: function () {
+            this.messages.unshift({ title: this.newTitle, body: this.newBody }) 
+            this.newTitle = '' 
+            this.newBody = '' 
+         }
+    }
+});
+</pre>
+<pre>&lt;div id="my-app"&gt;
+
+  &lt;div class="container" style="margin-top:10px"&gt;
+    &lt;form style="padding:10px" class="col-sm-8 bg-light mb-3" @submit.prevent="addMessage()"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;h1&gt;Recent Messages&lt;/h1&gt;
+    &lt;blog-message v-for="message in messages" :title="message.title" :body="message.body"&gt;&lt;/blog-message&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>දැන් බොහෝ දුරට app එක හදල ඉවරයි. add කරන Messages, locally store කරගන්න දැන් අපිට පුළුවන්නෙ. අදට මම මෙතනින් නවත්තන්නම්. දැන් ඔයාලට යම් අදහසක් එන්න ඇති, කලින් post වල මම කියපු දේවල් කොහොමද ප්‍රායොගිකව භාවිතා වෙන්නෙ කියල. ඊළග post එකෙන් මම කියන්නම් database එකක store කිරීම සදහා, back-end එකට මේ messages යවන්නෙ කොහොමද කියල. සහ back-end එකෙන් නැවත ඒව අරගන්නෙ කොහෙමද කියල. post එක ගැන අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවම හරි තියෙනම් comment එකක් දාන්න. 😀</p>
+<p>ඊළඟ post එකට <a href="/index.php/2018/05/01/vuejs-2-08/">මෙතනින්</a> යන්න.</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/05/01/vuejs-2-07/">VueJs 2 &#8211; 07 more about Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/05/01/vuejs-2-07/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>VueJs 2 &#8211; 06 Vue components</title>
+		<link>/index.php/2018/04/22/vuejs-2-06/</link>
+				<comments>/index.php/2018/04/22/vuejs-2-06/#respond</comments>
+				<pubDate>Sun, 22 Apr 2018 18:25:56 +0000</pubDate>
+		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
+				<category><![CDATA[VueJs]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[Vue]]></category>
+		<category><![CDATA[Vue components]]></category>
+
+		<guid isPermaLink="false">/?p=902</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 6 වෙනි post එකෙන් මම මේ කියන්න යන්නෙ Vue වල තියෙන ඉතා වැදගත් feature එකක් වෙන Vue components ගැන. Vue ගැන ලියපු කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න. අපි vue app එකක් ලියද්දි, ඒ app එකට අදාල template එක(html markup එක), app එක mount<a class="moretag" href="/index.php/2018/04/22/vuejs-2-06/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/22/vuejs-2-06/">VueJs 2 &#8211; 06 Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p><span style="font-weight: 400;">හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 6 වෙනි post එකෙන් මම මේ කියන්න යන්නෙ Vue වල තියෙන ඉතා වැදගත් feature එකක් වෙන Vue components ගැන. Vue ගැන ලියපු කලින් posts බැලුවෙ නැත්තම් <a href="/index.php/category/vuejs/">මෙතනින්</a> ගිහින් බලන්න.</span></p>
+<p><span style="font-weight: 400;">අපි vue app එකක් ලියද්දි, ඒ app එකට අදාල template එක(html markup එක), app එක mount කරල තියෙන element එක ඇතුලෙ (index.html එක අැතුලෙ) කෙලින්ම ලියන්න පුළුවන්. මම කලින් උදාහරණවලදි කරා වගේ</span></p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    data: { name: 'John Doe' }
+});
+</pre>
+<pre>&lt;div id="my-app"&gt;
+    &lt;h1&gt;Hello, {{ name }} &lt;/h1&gt;
+&lt;/div&gt;</pre>
+<p><span style="font-weight: 400;">එහෙම නැත්තම්, app.js file එකේ තියෙන vue instance එක ඇතුලෙම template කියන property එකට, String එකක් විදියට දෙන්නත් පුළුවන්. මේ වගේ.</span></p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    template: `&lt;h1&gt;Hello, {{ name }}&lt;/h1&gt;`,
+    data: { name: 'John Doe' }
+});
+</pre>
+<p><span style="font-weight: 400;">දැන් මේ template එක, #my-app element එක ඇතුලෙ render වෙනව.</span></p>
+<p><span style="font-weight: 400;">හැබැයි මේ විදියට ලියද්දි, template එකේ තියෙන elements, හැම තිස්සෙම තනි root element එකක් ඇතුලෙ තියෙන්න ඕනෙ. තේරුනේ නැත්තම් මේක බලන්නකො.</span></p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    template: `
+        &lt;h1&gt;Hello, {{ name }}&lt;/h1&gt;
+        &lt;p&gt;who are you?&lt;/p&gt;
+    `,
+    data: { name: 'John Doe' }
+});
+</pre>
+<p>මෙතනදි template එක විදියට elements 2ක් තියෙනව.(h1 එකක් සහ paragraph එකක්) ⁣ඒ දෙකම root level elements. ඒ නිසා මේක run වෙන්නෙ නැහැ. error එකක් එනව. මේක run වෙන්න නම් පහල තියෙන විදියට div එකකින් මේක wrap කරන්න පුළුවන්.</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    template: `
+        &lt;div&gt;
+            &lt;h1&gt;Hello, {{ name }}&lt;/h1&gt;
+            &lt;p&gt;who are you?&lt;/p&gt;
+        &lt;/div&gt;
+    `,
+    data: { name: 'John Doe' }
+});
+</pre>
+<p>දැන් ඔක්කොම elements තියෙන්නෙ div කියන root element එකේ නිසා ප්‍රශ්නයක් වෙන්නෙ නැහැ.</p>
+<p><span style="font-weight: 400;">මේ මොන විදියට කරත්, app එකක් හදද්දි, මෙහෙම එකම template එකක් දිගට ලියාගෙන යද්දි, ඒක ගොඩක් සංකීර්ණ වෙන්න පුළුවන්. ඒ නිසා තමයි Vue components කියල දෙයක් තියෙන්නෙ. Vue component එකක් කියන්නෙ, app එකේ කුඩා කොටසක් වගේ. අපේ app එක කොටස් වලට වෙන් කරල, ඒ එක එක කොටස vue components  විදියට හදන්න පුළුවන්. උදාහරණයක් විදියට, ඔයාල blog එකක් හදනවනම්, ඒකෙ navbar එක වෙනම component එකක් විදියට හදන්න පුළුවන්. Blog post තව component එකක් විදියට හදන්න පුළුවන්. Post එකේ comments තව component එකක්. footer එක තව component එකක්. මේ වගේ ඔයාල කැමති විදියකට components වලට වෙන් කරන්න පුළුවන්. දැන් මේ components එකතු කරල app එක හදාගන්න පුළුවන්. Vue components නැවත නැවත භාවිතා කරන්නත් පුළුවන් නිසා ඒක සෑහෙන්න පහසුවක් වෙනව. App එකේ එක එක කොටස, එක එක component එකෙන් control වෙන නිසා, app එක maintain කරන එකත් ලේසියි.</span></p>
+<p><span style="font-weight: 400;">Vue component එකක් මේ විදියට හදන්න පුළුවන්. මේ components හදන්නෙ Vue object එකට එළියෙන්, Vue object එකට කලින්.</span></p>
+<pre>Vue.component('test', {});
+</pre>
+<p>මෙතනදි පළවෙනි parameter එක විදියට දෙන්න ඕනෙ, component එකේ නම(test). දෙවනි parameter එක විදියට දෙන්නෙ object එකක්. ඒ object එකේ තියෙන්නෙ component එකට අදාල properties. Vue instance එකට pass කරන object එක වගේම object එකක් තමයි මේකත්. ඒකෙදි වගේම data, methods, template, created වගේ properties define කරන්න පුලුවන්.(හැබැයි el වගේ root vue instance එකට විශේෂිත වුනු properties define කරන්න බැහැ.) ඒ define කරන properties අදාල වෙන්නෙ, ඒව define කරල තියෙන component එකට විතරයි.</p>
+<pre>Vue.component('test', {
+    template: '&lt;h1&gt;Hello! This is a Vue Component&lt;/h1&gt;'
+});
+
+const app = new Vue({
+ el: '#my-app',
+});
+</pre>
+<p><span style="font-weight: 400;">මේ විදිය හදා ගත්ත component එක, app එක mount කරල තියෙන element එක(#my-app) ඇතුලෙ ඕන තැනක භාවිතා කරන්න පුළුවන්. හරියට custom html element එකක් වගේ. මේ විදියට.</span></p>
+<pre>&lt;div id="my-app"&gt;
+    &lt;test&gt;&lt;/test&gt;
+&lt;/div&gt;</pre>
+<p><span style="font-weight: 400;"> දැන් මේක run කරාම, මේ වගේ output එකක් බලාගන්න පුලුවන් වෙයි. ඔයාලට බලාගන්න පුළුවන් test කියන tag එක වෙනුවට, test component එකේ තියෙන template එක render වෙලා තියෙනව.</span></p>
+<p><img class="wp-image-935 aligncenter" src="/wp-content/uploads/2018/04/first-component-300x159.png" alt="Vue component example" width="826" height="438" srcset="/wp-content/uploads/2018/04/first-component-300x159.png 300w, /wp-content/uploads/2018/04/first-component-768x406.png 768w, /wp-content/uploads/2018/04/first-component.png 1536w" sizes="(max-width: 826px) 100vw, 826px" /></p>
+<h4><strong>data is a function</strong></h4>
+<p>Vue component වලට අදාලව වෙනම data, methods වගේ properties define කරන්න පුලුවන් කියල මම කලින් කිව්වනෙ. හැබැයි component එකක් ඇතුලෙ define කරන data property එකේ පොඩි වෙනසක් තියෙනව. කලින් අපි, main Vue instance එකේදි, data property එක object එකක් විදියට තමයි define කරේ. හැබැයි component එකක් ඇතුලෙදි ඒක function එකක් විදියට තමයි define කරන්න ඕනෙ. ඒ function එකෙන් object එකක් return කරන්න ඕනෙ. ඒ object එකේ තමයි component එකට අදාල data define කරන්නෙ. data කියන property එක විතරයි මේ විදියට වෙනස් වෙන්න ඕනෙ. අනිත් ඒවයි වෙනසක් නැහැ. පහලින් තියෙන්නෙ component එකක් ඇතුලෙ data property එක define කරන්න විදිය.</p>
+<pre>Vue.component('test', {
+    template: '&lt;h1&gt; {{message}} &lt;/h1&gt;',
+    data: function () {
+        return {
+            message: 'Hello! This is a Vue Component'
+        }
+    }
+});
+
+const app = new Vue({
+    el: '#my-app',
+});
+</pre>
+<p>මම කලිනුත් කිව්ව, එක Vue component එකක්, අපි කැමති වතාවක් නැවත නැවත භාවිතා කරන්න පුළුවන් කියල. එහෙම භාවිතා කරාම, ඒ එකම component එකේ විවිද instances, එක්නෙකින් ස්වායත්තව තමයි වැඩ කරන්නෙ. පහල උදාහරණය බලන්නකො.</p>
+<pre>Vue.component('test', {
+    template: `
+        &lt;div&gt;
+            &lt;h1&gt; count: {{ count }} &lt;/h1&gt;
+            &lt;button @click="count++"&gt;count++&lt;/button&gt;
+        &lt;/div&gt;
+    `,
+    data: function () {
+        return {
+            count: 0,
+        }
+    }
+});
+
+const app = new Vue({
+    el: '#my-app',
+});
+
+</pre>
+<pre>&lt;div id="my-app"&gt;
+    &lt;test&gt;&lt;/test&gt;
+    &lt;test&gt;&lt;/test&gt;
+&lt;/div&gt;
+</pre>
+<p>මෙතනදි test කියන component එක දෙපාරක් භාවිතා කරල තියෙනව. ඒනිසා count++ කියල button 2ක් තියෙනව. හැබැයි මේ button click කරද්දි ඒ ඒ button එකට අදාල instance එකේ count එක විතරයි increment වෙන්නෙ. එකම component එකේ instance 2 ක් උනාට, ඒ දෙක වෙන වෙනම තමයි වැඩ කරන්නෙ. හරියට වෙනස් component 2 ක් වගේ.</p>
+<p>දැන් ඔයාලට Vue components කියන්නෙ මොනවද කියල පොඩි හරි අදහසක් එන්න ඇති කියල හිතනව. අදට මෙතනින් නවතින්නම්. post එක ගැන අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවම හරි තියෙනම් comment එකක් දාන්න. 😀</p>
+<p>ඊළඟ post එකට <a href="/index.php/2018/05/01/vuejs-2-07/">මෙතනින්</a> යන්න.</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/22/vuejs-2-06/">VueJs 2 &#8211; 06 Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/22/vuejs-2-06/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>view &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/view/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Components in Angular</title>
+		<link>/index.php/2019/01/24/components-in-angular/</link>
+				<comments>/index.php/2019/01/24/components-in-angular/#respond</comments>
+				<pubDate>Thu, 24 Jan 2019 16:25:24 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[angular.js]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[attibute]]></category>
+		<category><![CDATA[class]]></category>
+		<category><![CDATA[component]]></category>
+		<category><![CDATA[decorator]]></category>
+		<category><![CDATA[index.html]]></category>
+		<category><![CDATA[metadata]]></category>
+		<category><![CDATA[method]]></category>
+		<category><![CDATA[root component]]></category>
+		<category><![CDATA[template]]></category>
+		<category><![CDATA[terminal]]></category>
+		<category><![CDATA[typescript]]></category>
+		<category><![CDATA[view]]></category>
+
+		<guid isPermaLink="false">/?p=1700</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> කොහොමද යාලුවනේ! ඔන්න මං අදත් ආවා Angular පාඩම් මාලාවේ තුන්නවෙනි පාඩමත් සමගින්.කලින් පාඩමේදී අපි කතා කලා Angular වල folder structure එක සහ index page එක render වුන විදිය ගැන. අද පාඩමේදී අපි කතා කරන්ට බලාපොරොත්තු වෙන්නේ Angular වල components ගැන.ගොඩක් දේවල් කතා කරන්න තියන නිසා කෙලින්ම පාඩමට බහිමු. Angular වල<a class="moretag" href="/index.php/2019/01/24/components-in-angular/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/24/components-in-angular/">Components in Angular</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>කොහොමද යාලුවනේ! ඔන්න මං අදත් ආවා Angular පාඩම් මාලාවේ තුන්නවෙනි පාඩමත් සමගින්.<a href="/index.php/2019/01/19/angular-7-step2/">කලින් පාඩමේදී</a> අපි කතා කලා Angular වල folder structure එක සහ index page එක render වුන විදිය ගැන. අද පාඩමේදී අපි කතා කරන්ට බලාපොරොත්තු වෙන්නේ Angular වල components ගැන.ගොඩක් දේවල් කතා කරන්න තියන නිසා කෙලින්ම පාඩමට බහිමු.</p>
+
+
+
+<p>Angular වල component එකක් හැදිලා තියෙන්නේ Template , class හා metadata කියන කොටස් තුනේ එකතුවෙන්.view එකට අදාලව තියන HTML code ඔක්කොම වගේ අයිති වෙන්නේ මෙන්න මේ Template කියන කොටසට…component එකේ properties , methods හා view එකට අදාලව තියන logic තියාගන්නේ component class එක ඇතුලේ..metadata කියන කොටසේ තමයි තියෙන්නේ component එක අපේ app එකට සම්බන්ධ(attach)  කිරීමට අදාල විස්තර…Metadata define කරලා තියෙන්නේ Decorator කියලා එකකින්.Decorator එකක් කියන්නේ අපේ component එක app එකට සම්බන්ධ කිරීමට අදාල විස්තර සපයන විශේෂ function  එකක්.component එකක ප්‍රධාන කොටස් තුන ගැන සරලව ඔය ටික තමයි කියන්න තියෙන්නේ…දැන් අපි එකින් එක ගැන තව පොඩ්ඩක් කතා කරලා බලමු.</p>
+
+
+
+<p>මුලින්ම අපි අලුත් component එකක් හදාගමු. ඔයාලගේ terminal එකේ අපි කලින් හදා ගත්ත angular project එක ඇතුලට ගිහින්<code>ng g c&nbsp;&lt;component_name&gt;</code>  කියන command එක දුන්නාම අලුත් component එකක් හදා ගන්න පුලවන්.ඔන්න ඔය විදියට component එකක් හදා ගත්තාම ඔයාලට පේනවා file 4 ක් තියන folder එකක් තමයි component එකක් විදියට හැදිලා එන්නේ.අන්න ඒ file 4 ගැන සලකා බැලුවොත් , typescript (.ts ) file එකේ තමයි component එකේ class එකයි metadata යි තියා ගන්නේ.html file එකේ තමයි component එකේ view එක තියෙන්නේ. component  එකකට අදාල styles තියාගන්නේ මෙන්න මේ .css කියන css file එක ඇතුලේ..අනික් file එක(.spec.ts) නම් පාවිච්චි කරන්නේ testing වලට.</p>
+
+
+
+<p>ඔයාලට මතකද දන්නේ නෑ මං කලින් පාඩමේදී පාවිච්චි කලා root component කියලා වචනයක්..ඒ වෙලාවෙදි ඒක ගැන කතා කලේ නැති වුනාට දැන් අපි ඒ ගැන පොඩ්ඩක් කතා කරලා බලමු.root component එක තමයි අපේ app එකේ තියන ප්‍රධානම component එක.අපි අලුතින් හදන component දාන්නේ මෙන්න මේ root component එක ඇතුලට.මුලින්ම අපිට index page එක render වෙද්දි පෙනුනේ මෙන්න මේ root component එකේ elements තමයි.මුලින්ම අපි root component එකේ typescript file එකට ගිහින් බලමු.</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/Capture-4.jpg" alt="" data-id="1702" data-link="/?attachment_id=1702" class="wp-image-1702" srcset="/wp-content/uploads/2019/01/Capture-4.jpg 821w, /wp-content/uploads/2019/01/Capture-4-300x99.jpg 300w, /wp-content/uploads/2019/01/Capture-4-768x253.jpg 768w" sizes="(max-width: 821px) 100vw, 821px" /></figure></li></ul>
+
+
+
+<p>ඔන්න ඔහොම තමයි root component එකට අදාල typescript file එක( app.component.ts file ) තියෙන්නේ. මෙහි මුලින්ම තියනවා Metadata..</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/tempsnip.png" alt="" class="wp-image-1703" srcset="/wp-content/uploads/2019/01/tempsnip.png 821w, /wp-content/uploads/2019/01/tempsnip-300x99.png 300w, /wp-content/uploads/2019/01/tempsnip-768x253.png 768w" sizes="(max-width: 821px) 100vw, 821px" /></figure>
+
+
+
+<p>Metadata ගැන බැලුවොත්, මුලින්ම තියන selector එක , component එක html file එකට attach කරන විට  custom html tag එකක් විදියට වැඩ කරනවා &#8230;අපි open කරලා තියෙන්නේ root component එකට අදාල typescript file එක නිසා එහි selector එක නම් කරලා තියනවා app-root කියලා..දැන් ඔයාලට index.html file එක ඇතුලට ගියොත් බලාගන්න පුලුවන් app-root කියලා custom html tag එකක් තියනවා</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-1.png" alt="" data-id="1704" data-link="/?attachment_id=1704" class="wp-image-1704" srcset="/wp-content/uploads/2019/01/tempsnip-1.png 852w, /wp-content/uploads/2019/01/tempsnip-1-300x130.png 300w, /wp-content/uploads/2019/01/tempsnip-1-768x334.png 768w" sizes="(max-width: 852px) 100vw, 852px" /></figure></li></ul>
+
+
+
+<p>ඔන්න ඔය custom html tag එක තියන තැනට තමයි root component එක index page එකට attach කරලා තියෙන්නේ.</p>
+
+
+
+<p>component එකක් තවත් component එකකට හරි අදාල html page එකකට හරි attach කරන්න පුලුවන් විදි තුනක් තියනවා..පලමු ක්‍රමය තමයි selector එක custom html tag එකක් විදියට පාවිච්චි කරලා attach කරන්න පුලුවන්..අපි ඉහලින් කතා කලේ අන්න ඒ ක්‍රමය ගැන තමයි..දෙවෙනි ක්‍රමය තමයි selector එක class එකක් විදියට පාවිච්චි කරල attach කරන්නත් පුලුවන්..code එක ගත්තොත් මෙන්න මේ වගේ..</p>
+
+
+
+<p><strong><em>app-component.ts</em></strong></p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-2.png" alt="" data-id="1705" data-link="/?attachment_id=1705" class="wp-image-1705" srcset="/wp-content/uploads/2019/01/tempsnip-2.png 793w, /wp-content/uploads/2019/01/tempsnip-2-300x113.png 300w, /wp-content/uploads/2019/01/tempsnip-2-768x290.png 768w" sizes="(max-width: 793px) 100vw, 793px" /></figure></li></ul>
+
+
+
+<p><strong><em>index.html</em></strong></p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-3.png" alt="" data-id="1707" data-link="/?attachment_id=1707" class="wp-image-1707" srcset="/wp-content/uploads/2019/01/tempsnip-3.png 760w, /wp-content/uploads/2019/01/tempsnip-3-300x158.png 300w" sizes="(max-width: 760px) 100vw, 760px" /></figure></li></ul>
+
+
+
+<p>තුන්වෙනි විදිය තමයි selector එක attribute එකක් විදියට පාවිච්චි කරලත් component එක page එකට attach කරන පුලුවන්.ඒකේ code එක ගත්තොත් මෙන්න මේ වගේ..</p>
+
+
+
+<p><strong><em>app.component.ts﻿</em></strong></p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/tempsnip-4.png" alt="" class="wp-image-1708" srcset="/wp-content/uploads/2019/01/tempsnip-4.png 512w, /wp-content/uploads/2019/01/tempsnip-4-300x154.png 300w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+
+
+
+<p><strong><em>Index.html</em></strong></p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-5.png" alt="" data-id="1709" data-link="/?attachment_id=1709" class="wp-image-1709" srcset="/wp-content/uploads/2019/01/tempsnip-5.png 738w, /wp-content/uploads/2019/01/tempsnip-5-300x152.png 300w" sizes="(max-width: 738px) 100vw, 738px" /></figure></li></ul>
+
+
+
+<p>ඔන්න ඔය ක්‍රම තුනෙන් කැමති විදියක් පාවිච්චි කරලා අලුත් component එකක් html page එකට attach කරන්න පුලුවන්.</p>
+
+
+
+<p>Metadata වල ඊලගට තියෙන්නේ templateurl එකයි styleurls එකයි. templateurl එකෙන් තමයි අපේ component එකේ html page එක තියන තැන පෙන්නනේ. component එකේ styles තියන css file එක තියන තැන පෙන්නනේ මෙන්න මේ styleurls එකෙන්.component එකකට අදාල metadata නම් තියෙන්නේ ඔච්චරයි..</p>
+
+
+
+<p>typescript file එකේ metadata වලට යටින් තියෙන්නේ component එකේ class එක..component එකේ methods , properties තියාගන්නේ මෙන්න මේ component class එක ඇතුලේ. මුලින් අපි කතා කලානේ root componet එකේ metadata ගැන.දැන් බලමු root componet එකේ class එක ගැන.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/tempsnip-6.png" alt="" class="wp-image-1710" srcset="/wp-content/uploads/2019/01/tempsnip-6.png 665w, /wp-content/uploads/2019/01/tempsnip-6-300x149.png 300w" sizes="(max-width: 665px) 100vw, 665px" /></figure>
+
+
+
+<p>ඉහලදි මම පෙන්නපු විදියට root component එකේ typescript file එක ඔන්න ඔය විදියට තමයි තියෙන්නේ. root component කියලා metadata වලට යටින් තියෙන්නේ component class එක.root component class එක ගත්තොත් ඔයාලට පේනවා ඇති title කියලා property එකක් define කරලා තියනවා..ඔන්න ඔය විදියට අපේ component එකට අවශය properties , methods ඕනි තරමක් define කරන්න පුලුවන් මෙන්න මේ component class එක ඇතුලේ.</p>
+
+
+
+<p>component එකක තියන අනෙක් කොටස තමයි view එක .component එකේ view එක පෙන්නනේ මෙන්න මේ html file එකෙන්.root component එකේ view එක බැලුවොත් මෙන්න මේ වගේ view එකක් තමයි තිබුනේ.</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/a-1024x462.jpg" alt="" data-id="1573" data-link="/index.php/2019/01/16/angular7/a/" class="wp-image-1573" srcset="/wp-content/uploads/2019/01/a-1024x462.jpg 1024w, /wp-content/uploads/2019/01/a-300x135.jpg 300w, /wp-content/uploads/2019/01/a-768x347.jpg 768w, /wp-content/uploads/2019/01/a.jpg 1351w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+
+
+
+<p>root component එකට අදාල html file එක බැලුවොත් මෙන්න මේ වගේ.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/tempsnip-7.png" alt="" class="wp-image-1711" srcset="/wp-content/uploads/2019/01/tempsnip-7.png 928w, /wp-content/uploads/2019/01/tempsnip-7-300x156.png 300w, /wp-content/uploads/2019/01/tempsnip-7-768x399.png 768w" sizes="(max-width: 928px) 100vw, 928px" /></figure>
+
+
+
+<p>මුලින්ම තියනවා well come message එක.</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-8.png" alt="" data-id="1712" data-link="/?attachment_id=1712" class="wp-image-1712" srcset="/wp-content/uploads/2019/01/tempsnip-8.png 849w, /wp-content/uploads/2019/01/tempsnip-8-300x44.png 300w, /wp-content/uploads/2019/01/tempsnip-8-768x112.png 768w" sizes="(max-width: 849px) 100vw, 849px" /></figure></li></ul>
+
+
+
+<p>ඔයාලට මතක ඇති root component class එකේ property එකක් තිබුණා title කියලා.අන්න ඒ title property එක තමයි well come massage එක වදියට මෙතනදි display වෙලා තියෙන්නේ.ඔන්න ඔය වඳියට component class එකේ define කරන properties සහ methods අපේ component එකේ view එකට අවශය විදියට display   කරලා පෙන්න පුලුවන්.component ගැන කියන්න තියෙන්නෙනම් ඔච්චරයි. component ගැන තවමත් පොඩි  හෝ අවුලක් තියනවනම්  මෙන්න මේ උදාහරණයත් බලන්නකෝ.</p>
+
+
+
+<p>මෙහිදී මම කරන්න යන්නේ අලුතින් component එකක් හදාගෙන ඒක root component එකට attach කරලා display කරන එක.</p>
+
+
+
+<p>මුලින්ම මම component එකක් හදා ගන්නම් <em>&#8220;firstComponent&#8221;</em> කියලා.</p>
+
+
+
+<p><code>ng g c firstComponent</code></p>
+
+
+
+<p>හරි, දැන් ඔයාලට හැදිලා එන්න ඇති file 4 ක් තියන &#8220;firstComponent&#8221; කියලා folder එකක්. මුලින්ම මම හදා ගත්ත අලුත් component එකේ property එකක් define කරනවා &#8220;header&#8221; කියලා. &#8220;header &#8221; එකට value එකක් දෙනවා &#8220;This is my first component &#8221; කියලා.</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-9.png" alt="" data-id="1713" data-link="/?attachment_id=1713" class="wp-image-1713" srcset="/wp-content/uploads/2019/01/tempsnip-9.png 701w, /wp-content/uploads/2019/01/tempsnip-9-300x151.png 300w" sizes="(max-width: 701px) 100vw, 701px" /></figure></li></ul>
+
+
+
+<p>හරි , දැන් ඒ define කරපු property එක මෙන්න මේ විදියට html page එකට set කරමු.</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Capture-5.jpg" alt="" class="wp-image-1714" srcset="/wp-content/uploads/2019/01/Capture-5.jpg 769w, /wp-content/uploads/2019/01/Capture-5-300x34.jpg 300w, /wp-content/uploads/2019/01/Capture-5-768x86.jpg 768w" sizes="(max-width: 769px) 100vw, 769px" /></figure>
+
+
+
+<p>හරි දැන් හදා ගත්ත component එක root component එකට attach කරමු.  අපේ හදා ගත්ත component එක  පැහැදිලිව පෙනෙන්න ඕනි නිසා root component එකේ දැනට තියන elements delete කරලා අපේ අලුත් component එක attach කරමු.හරියට මෙන්න මේ වගේ.</p>
+
+
+
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/Capture-6.jpg" alt="" data-id="1715" data-link="/?attachment_id=1715" class="wp-image-1715" srcset="/wp-content/uploads/2019/01/Capture-6.jpg 629w, /wp-content/uploads/2019/01/Capture-6-300x73.jpg 300w" sizes="(max-width: 629px) 100vw, 629px" /></figure></li></ul>
+
+
+
+<p>ඔන්න ඔය විදියට අලුත් component එක  attach කලාට පස්සේ මෙන්න මේ වගේ view එකක් ඔයාලට දැක ගන්න පුලුවන්</p>
+
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Capture-7.jpg" alt="" class="wp-image-1716" srcset="/wp-content/uploads/2019/01/Capture-7.jpg 494w, /wp-content/uploads/2019/01/Capture-7-300x131.jpg 300w" sizes="(max-width: 494px) 100vw, 494px" /></figure>
+
+
+
+<p>හරි, components ගැන හොදටම තේරෙන්න ඇති කියලා හිතනවා..තවත් මොකක් හරි අව්ලක් තියනවනම් comment එකක් දාන්න.මීලඟ පාඩමෙන් අපි බලමු Angular වල data binding ගැන.මීලඟ පාඩමෙන් හමුවන තුරු  ඔබට  සුභ දවසක් ! ☺☺</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/24/components-in-angular/">Components in Angular</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/24/components-in-angular/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Laravel- Middleware</title>
+		<link>/index.php/2018/09/14/laravel-middleware/</link>
+				<comments>/index.php/2018/09/14/laravel-middleware/#comments</comments>
+				<pubDate>Fri, 14 Sep 2018 03:10:55 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[Laravel]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[controller]]></category>
+		<category><![CDATA[kernel]]></category>
+		<category><![CDATA[laravel]]></category>
+		<category><![CDATA[middleware]]></category>
+		<category><![CDATA[route]]></category>
+		<category><![CDATA[view]]></category>
+
+		<guid isPermaLink="false">/?p=1251</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන්! කොහොමද යාලුවනේ..ඔන්න මම අදත් ආවා laravel framework එකේ තියන තවත් future එකක් පිලිබදව විස්තරත් සමගින්..මුලින්ම කියන්න ඕනි ඔයාලා කාට හරි අපේ මුල පාඩම් ටික මගහැරුනනම් මෙන්න මෙතනින් ගිහින් බලන්න පුලුවන්..හරි අපි එහෙනං අද පාඩමට බහිමු.අද පාඩම තමයි middleware. ඇත්තටම laravel වල තියන ගොඩක් හොද future එකක් තමයි middleware කියන්නේ..කෙටියෙන්ම<a class="moretag" href="/index.php/2018/09/14/laravel-middleware/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/14/laravel-middleware/">Laravel- Middleware</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span>ආයුබෝවන්! කොහොමද යාලුවනේ..ඔන්න මම අදත් ආවා laravel framework එකේ තියන තවත් future එකක් පිලිබදව විස්තරත් සමගින්..මුලින්ම කියන්න ඕනි ඔයාලා කාට හරි අපේ මුල පාඩම් ටික මගහැරුනනම් <a href="/index.php/category/web-development/laravel/" target="_blank" rel="noopener">මෙන්න මෙතනින්</a> ගිහින් බලන්න පුලුවන්..හරි අපි එහෙනං අද පාඩමට බහිමු.අද පාඩම තමයි middleware. ඇත්තටම laravel වල තියන ගොඩක් හොද future එකක් තමයි middleware කියන්නේ..කෙටියෙන්ම කිව්වොත් middleware එකක් කියන්නේ user හා request එක අතරමැද තියන layer එකක්. මෙන්න මේ layer (middleware ) එකෙන් තමයි user ට system එක access කරන්ට permition ලබා දෙන්නේ ..</p>
+<p>laravel folder structure එක ගත්තොත් middleware එක තියෙන්නේ App/Http/Middleware කියන තැන. මේ Middleware folder එක ඇතුලට ගියාම ඔයාලට දැකගන්න පුලුවන් laravel වල default එන middlewares කිහිපයක්ම තියනවා.(VerifyCsrfToken , Authenticate , EncryptCookies. ..etc).අපිට ඕනි නම් middleware එකක් හදන්න පුලුවන්</p>
+<pre>php artisan make:middleware &lt;middleware_name&gt;</pre>
+<p>කියන artisan command එක run කරලා.middleware එකක් හදා ගත්තට පසුව අපි පලමුවෙන්ම කරන්න ඕනි දේ තමයි හදාගත්ත middleware එක App/Http/Kernel.php එකේ register කර ගන්න එක. හරි ඔන්න ඕකයි සිද්ධිය..☺☺..පොඩ්ඩක් පොඩ්ඩක් අව්ල් වගේනං අපි පොඩි උදාහරණයක්ම ඇරගෙන වැඩේ කරලා බලමුකෝ..😃😃</p>
+<p>හරි මම middleware එකක් හදා ගන්නවා checkIp කියලා..</p>
+<pre>php artisan make:middleware checkIp</pre>
+<p>ඊට පස්සේ ඒ හදා ගත්ත middleware එක මෙන්න මේ විදියට kernel එකේ register කර ගන්නවා..</p>
+<pre>&lt;?php namespace App\Http; use Illuminate\Foundation\Http\Kernel as HttpKernel; class Kernel extends HttpKernel { /** * The application's global HTTP middleware stack. * * These middleware are run during every request to your application. * * @var array */ protected $middleware = [ \App\Http\Middleware\CheckForMaintenanceMode::class, \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class, \App\Http\Middleware\TrimStrings::class, \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class, \App\Http\Middleware\TrustProxies::class, ]; /** * The application's route middleware groups. * * @var array */ protected $middlewareGroups = [ 'web' =&gt; [
+            \App\Http\Middleware\EncryptCookies::class,
+            \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            \Illuminate\Session\Middleware\StartSession::class,
+            // \Illuminate\Session\Middleware\AuthenticateSession::class,
+            \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+            \App\Http\Middleware\VerifyCsrfToken::class,
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        ],
+
+        'api' =&gt; [
+            'throttle:60,1',
+            'bindings',
+        ],
+    ];
+
+    /**
+     * The application's route middleware.
+     *
+     * These middleware may be assigned to groups or used individually.
+     *
+     * @var array
+     */
+    protected $routeMiddleware = [
+        'auth' =&gt; \App\Http\Middleware\Authenticate::class,
+        'auth.basic' =&gt; \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'bindings' =&gt; \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        'cache.headers' =&gt; \Illuminate\Http\Middleware\SetCacheHeaders::class,
+        'can' =&gt; \Illuminate\Auth\Middleware\Authorize::class,
+        'guest' =&gt; \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'signed' =&gt; \Illuminate\Routing\Middleware\ValidateSignature::class,
+        'throttle' =&gt; \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'verified' =&gt; \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        
+        'checkIp'=&gt; \App\Http\Middleware\checkIp::class,
+    ];
+}
+
+
+</pre>
+<p>හරි මට දැන් කරන්න ඕනි දේ තමයි 127.0.0.1 කියන Ip address එකින් request එකක් ආවොත් එයා system එකට ඇතුලු වෙන එක වලක්වන එක. එතකොට අපි checkIp කියන middleware එකේ මෙහෙම කලානම් හරි නේද&#8230;</p>
+<p><img src="/wp-content/uploads/2018/09/ch-300x211.jpg" alt="" width="635" height="447" class=" wp-image-1289 aligncenter" srcset="/wp-content/uploads/2018/09/ch-300x211.jpg 300w, /wp-content/uploads/2018/09/ch.jpg 632w" sizes="(max-width: 635px) 100vw, 635px" /></p>
+<p>හරි දැන් මෙන්න මේ විදියට rote එකයි view එකකුයි set කරලා run කරලා බලන්නකෝ&#8230;</p>
+<p>Route ;</p>
+<pre>Route::get('/home',function(){
+    return view('testView.home');
+})-&gt;middleware('checkIp');
+
+</pre>
+<p>output</p>
+<p><img src="/wp-content/uploads/2018/09/check-300x133.jpg" alt="" width="686" height="304" class=" wp-image-1256 aligncenter" srcset="/wp-content/uploads/2018/09/check-300x133.jpg 300w, /wp-content/uploads/2018/09/check-768x340.jpg 768w, /wp-content/uploads/2018/09/check-1024x454.jpg 1024w, /wp-content/uploads/2018/09/check.jpg 1354w" sizes="(max-width: 686px) 100vw, 686px" /></p>
+<p>වැඩේ හරි නේද&#8230;127.0.0.1 කියන ip එකෙන් එන requests වලට system එක access කරන්න එක middleware එකෙන් වලක්වලා තියෙන්නේ..</p>
+<p>ඔන්න ඔය විදියට route එකට middleware එක set කරනවට අමතරව අපිට පුලුවන් middleware එක controller එකක් ඇතුලට set කරන්න&#8230;එහෙම කලාම වෙන්නේ ඒ controller එකේ තියන සියලුම methods සදහාම middleware එකෙන් ආරක්ෂාවක් සැලසීමයි..controller එකට middleware එක අපි set කරන්නේ __construct() කියන method එක එකේදී..හරි අපි එහෙනං ඒකත් කරලා බලමු.</p>
+<p><img src="/wp-content/uploads/2018/09/middleware-300x185.jpg" alt="" width="635" height="392" class=" wp-image-1290 aligncenter" srcset="/wp-content/uploads/2018/09/middleware-300x185.jpg 300w, /wp-content/uploads/2018/09/middleware.jpg 632w" sizes="(max-width: 635px) 100vw, 635px" /></p>
+<p>දැන් පුරුදු විදියටම route එකයි view එකයි set කරලා output එක බලන්නකෝ&#8230;</p>
+<p>Route -&gt;</p>
+<pre> Route::get('/home','studentController@index');
+</pre>
+<p>Output</p>
+<p><img src="/wp-content/uploads/2018/09/check-300x133.jpg" alt="" width="672" height="298" class="wp-image-1256 aligncenter" srcset="/wp-content/uploads/2018/09/check-300x133.jpg 300w, /wp-content/uploads/2018/09/check-768x340.jpg 768w, /wp-content/uploads/2018/09/check-1024x454.jpg 1024w, /wp-content/uploads/2018/09/check.jpg 1354w" sizes="(max-width: 672px) 100vw, 672px" /></p>
+<p>ඔන්න ඔය විදියට තමයි middleware එකක් set කරන්නේ..middleware එකට වැඩි ගනනක් අපිට set කරන්න ඕනිනම්, middlewares ටික __constructor() method එකේ parameters විදියට අපිට pass කරන්න පුලුවන්.හරියට මෙන්න මේ විදියට&#8230;</p>
+<p>demo1,demo2,demo3 කියලා middlewares තුනක් මං ගන්නම්..</p>
+<pre>public function __construct(){
+        $this-&gt;middleware('demo1','demo2','demo3');
+}
+</pre>
+<p>ඔන්න ඔය විදියට තමයි multiple middlewares set කරන්නේ&#8230; middlewares ගොඩක් තියනවනම් controllers විශාල ගානකට set කරන්න ආමාරුයි නේ&#8230;😯😯 අන්න ඒ නිසා අපිට පුලුවන් ඒවා kernel එකේදීම ඒවා ටික group කරගන්න..හරි මගේ demo1,demo2 සහ demo3 කියන middlewares ටික group කරලා ඒකට මම නමක් දෙනවා demo කියලා&#8230;</p>
+<pre>    protected $middlewareGroups = [
+        'web' =&gt; [
+            \App\Http\Middleware\EncryptCookies::class,
+            \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            \Illuminate\Session\Middleware\StartSession::class,
+            // \Illuminate\Session\Middleware\AuthenticateSession::class,
+            \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+            \App\Http\Middleware\VerifyCsrfToken::class,
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        ],
+
+        'api' =&gt; [
+            'throttle:60,1',
+            'bindings',
+        ],
+
+        'demo'=&gt;[
+            'demo1',
+            'demo2',
+            'demo3',
+        ],
+    ];
+
+
+</pre>
+<p>දැන් middleware එක controller එකට set කරමු&#8230;</p>
+<pre>public function __construct(){
+        $this-&gt;middleware('demo');
+}
+</pre>
+<p>හරි අපි දැන් හිතමු කලින් database එකේ ඉන්න user කෙනෙක්ට system එක access කරන එක වලක්වන්න ඕනි කියලා&#8230;අන්න එතකොට middleware එක set කරන්නේ කොහොමද කියලා දැන් අපි බලමු.<br />
+මගේ database එකට නමක් දෙනවා studentdatabase කියලා..ඒකේ තියන student table එක සලකමුකෝ&#8230;</p>
+<p><img src="/wp-content/uploads/2018/09/database-300x135.jpg" alt="" width="627" height="282" class="wp-image-1257 aligncenter" srcset="/wp-content/uploads/2018/09/database-300x135.jpg 300w, /wp-content/uploads/2018/09/database-768x346.jpg 768w, /wp-content/uploads/2018/09/database-1024x461.jpg 1024w, /wp-content/uploads/2018/09/database.jpg 1110w" sizes="(max-width: 627px) 100vw, 627px" /></p>
+<p>දැන් මට ඕනි name එක &#8216;smith&#8217; කියලා තියන student , system එක access කරන එක වලක්වන්ට..එතකොට route එක මෙන්න මේ විදියට set කරන්න පුලුවන්..</p>
+<pre> Route::get('/profileInfo',function(){
+    return view('testView.prof');
+})-&gt;middleware('profile:smith');
+
+</pre>
+<p>route එක ඔන්න ඔය විදියට set කරන්න පුලුවන්..middleware එක මෙන්න මේ විදියට define කලානම් හරි නේද..</p>
+<p><img src="/wp-content/uploads/2018/09/prof-300x254.jpg" alt="" width="586" height="496" class=" wp-image-1297 aligncenter" srcset="/wp-content/uploads/2018/09/prof-300x254.jpg 300w, /wp-content/uploads/2018/09/prof.jpg 622w" sizes="(max-width: 586px) 100vw, 586px" /></p>
+<p>Output එකත් බලන්නකෝ&#8230;</p>
+<p><img src="/wp-content/uploads/2018/09/name-300x129.jpg" alt="" width="585" height="252" class=" wp-image-1258 aligncenter" srcset="/wp-content/uploads/2018/09/name-300x129.jpg 300w, /wp-content/uploads/2018/09/name-768x331.jpg 768w, /wp-content/uploads/2018/09/name-1024x442.jpg 1024w, /wp-content/uploads/2018/09/name.jpg 1366w" sizes="(max-width: 585px) 100vw, 585px" />;</p>
+<p>හරි නේද &#8230;&#8217;smith&#8217; user ට system එක access කරන්න දෙන එක middleware එකෙන් වලක්වලා තියෙන්නේ&#8230;.</p>
+<p>හරි ඔන්න ඔය ටික තමයි middleware එක ගැන කියන්ට තියෙන්නේ&#8230;අදට පාඩම ඉවරයි..ඔයාලගේ අදහස් කියලා comment එකක් දාන්නත් අමතක කරන්න එපා..project එකට අදාල source code එක පහල තියන link එකට ගිහින් බලාගන්න පුලුවන්..සුබ දවසක් හැමෝටම !</p>
+<p><a href="https://github.com/GayanSampathManamendra/demoProject">GitHub Source Code</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/09/14/laravel-middleware/">Laravel- Middleware</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/09/14/laravel-middleware/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+	</channel>
+</rss>

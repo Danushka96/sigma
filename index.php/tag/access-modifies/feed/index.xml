@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>access modifies &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/access-modifies/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Encapsulation</title>
+		<link>/index.php/2018/04/11/encapsulation/</link>
+				<comments>/index.php/2018/04/11/encapsulation/#respond</comments>
+				<pubDate>Wed, 11 Apr 2018 08:12:16 +0000</pubDate>
+		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
+				<category><![CDATA[OOP]]></category>
+		<category><![CDATA[access modifies]]></category>
+		<category><![CDATA[encapsulation]]></category>
+		<category><![CDATA[this keyword]]></category>
+
+		<guid isPermaLink="false">/?p=802</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන් යාලුවන් හැමෝටම..object oriented consept එකේ මීලග පාඩමත් සමග එකතු වෙන යලුවන් හැමෝම සාදරයෙන් පිලිගන්නවා.අද පාඩමේදී මම කතා කරන්න බලාපොරොත්තු වෙනවා oop වල තියන අලුත්ම කොටසක් ගැන.ඒ තමයි encasulation.encapsulation ගැන කතා කරන්න ඉස්සරින් සපුරුදු විදියටම කලින් පාඩම පොඩ්ඩක් මතක් කරලා ඉන්නම්. කලින් පාඩමේදී අපි කතා කලේ polymorphsm ගැන &#8230;මොකද්ද අපි<a class="moretag" href="/index.php/2018/04/11/encapsulation/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/11/encapsulation/">Encapsulation</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p><img class="alignnone size-medium wp-image-112" src="/wp-content/uploads/2018/03/oop-300x172.png" alt="" width="300" height="172" srcset="/wp-content/uploads/2018/03/oop-300x172.png 300w, /wp-content/uploads/2018/03/oop.png 500w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>ආයුබෝවන් යාලුවන් හැමෝටම..object oriented consept එකේ මීලග පාඩමත් සමග එකතු වෙන යලුවන් හැමෝම සාදරයෙන් පිලිගන්නවා.අද පාඩමේදී මම කතා කරන්න බලාපොරොත්තු වෙනවා oop වල තියන අලුත්ම කොටසක් ගැන.ඒ තමයි encasulation.encapsulation ගැන කතා කරන්න ඉස්සරින් සපුරුදු විදියටම කලින් පාඩම පොඩ්ඩක් මතක් කරලා ඉන්නම්.</p>
+<p>කලින් පාඩමේදී අපි කතා කලේ polymorphsm ගැන &#8230;මොකද්ද අපි poymorphsm කියලා කිව්වේ&#8230;poymorephsm කියලා අපි කිව්වේ, එක action එකක් කුම කිහිපයකින් කරන එකට නේද&#8230;polymorphsm ප්‍රධාන වශයෙන් compile time polymorephsm(static polymorphsm) හා run time polymorphm(dinamic method dispatch) කියලා කොටස් දෙකකට බෙදෙනවා කියලත් කිව්වා ..එක action එකක් method overloading පාවිච්චි කරලා ක්‍රම කිහිපයකින් කරන එකට අපි කිව්වා compile time poymorephsm (static poymorephsm) කියලා. run time polymorephsm එහෙමත් නැත්නම් dinamic method dispactch කියලා අපි කිව්වේ මොකද්ද&#8230;..run time poymorephsm එහෙමත් නැත්නම් dinamic method dispactch කියලා අපි කිව්වේ sub classes වල objects store කර ගන්න super class reference variable එකක් හදාගෙන ඒ හදාගත්තු reference variable එක පාවච්චි කරලා sub class වල තියන attributes හා methods වලට call කරන එකට.ඒ super class reference variable එක sub class objects store කරන්න තියන පොදු variable එකක් කියලත් අපි කිව්වා &#8230;හරි දැන් මතක් වුනා නේද polymorphsm ගැන&#8230;.තව දුරටත් විස්තර ඇතුව polymorphsm ගැන බලන්න ඕනි නම් <a href="/index.php/2018/04/06/polymorphism/" target="_blank" rel="noopener">මෙතනින්</a> අපේ කලින් පාඩමට ගිහින් බලලා එන්න&#8230;</p>
+<p>හරි එහෙනන් අපි අද පාඩමට බහිමු.කලින් කිව්ව විදියට අද පාඩම encapsulation වුනාට java වල තියෙන පොඩි කොටසක් මං කලින්ම මතක් කරලා ඉන්නම්..එතකොට අද පාඩම තේරුම් ගන්න එක ටිකක් ලේසි වෙයි.. ඒ තමා access modifies . මේ ගැන නම් කතා කරන්න දේකුත් නෑ..මොකද අපි කලින් පාඩමකින් හොදටම කතා කලා මේක ගැන..ඒ වුනාට පොඩි සාරාංශයක් කරලා දාන්නම් &#8230;</p>
+<p><img class="alignnone wp-image-803" src="/wp-content/uploads/2018/04/Access-Modifiers-in-Java-300x102.png" alt="" width="576" height="196" srcset="/wp-content/uploads/2018/04/Access-Modifiers-in-Java-300x102.png 300w, /wp-content/uploads/2018/04/Access-Modifiers-in-Java-768x262.png 768w, /wp-content/uploads/2018/04/Access-Modifiers-in-Java.png 1016w" sizes="(max-width: 576px) 100vw, 576px" /></p>
+<p>ඔන්න ඕක තමයි access modifies ගැන කියන්න තියන සාරාංශ කතාව.තව දුරටත් අමතක වීමක් තියනවනම් <a href="/index.php/2018/03/18/object-oriented-programming/" target="_blank" rel="noopener">මෙතනින්</a> ගිහින් අපේ ඒ පාඩමත් බලන් එන්නකෝ&#8230;</p>
+<p>හරි එහෙනම් අපි  බලමු   encapsulation කියන්නේ මොකක්ද කියලා. ඇත්තටම encapsulation වලින් කරන්නේ  class එකක තියෙන data protect  කරන එක. ඒ කියන්නේ class එක ඇතුලේ තියන attributes සහ methods ආරක්ෂා කරන එක. ගොඩක්  වෙලාවට අපි protect කරන්න ගන්නේ attributes තමයි.  .හරි එහෙනම් පුරුදු විදිහට මම උදාහරණයකින් පැහැදිලි කරන්නම්කො. මම ගන්නවා parson කියලා class එක. ඒකෙ attributes  තුනක් ගන්නවා මම ගන්නවා name , age සහ city  කියලා. හරි එහෙනම් අපි class  එක හදාගෙන ඉමුකො.</p>
+<pre>class Person{
+      String name;
+      int age;
+      String city;
+
+}
+
+</pre>
+<p>හරි ඔන්න ඔය විදිහට නේද Person class එක එන්නේ. එහෙනම් අපි දැන් අපි parson ගෙ object එකකුත් හදාගෙන attributes වලට values assign කරමු.</p>
+<pre>class Person{
+      String name;
+      int age;
+      String city;
+
+}
+
+class Demo{
+      public static void main(String a[]){
+
+             Person person1=new Person();
+             person1.name="john";
+             person1.age=25;
+             person1.city="Kandy";
+
+             System.out.println("My name is :"+person1.name);
+             System.out.println("My age is :"+person1.age);
+             System.out.println("My city is :"+person1.city);
+             
+      }
+
+}
+
+</pre>
+<p>හරි output එකක් බලන්නකෝ. කිසි අවුලක් නෑ නේද.</p>
+<p><img class="alignnone wp-image-804" src="/wp-content/uploads/2018/04/Capture-3-300x142.jpg" alt="" width="530" height="251" srcset="/wp-content/uploads/2018/04/Capture-3-300x142.jpg 300w, /wp-content/uploads/2018/04/Capture-3.jpg 536w" sizes="(max-width: 530px) 100vw, 530px" /></p>
+<p>පොඩ්ඩක් එහෙනම් බලන්නකෝ ඔයාලා හදපු person class එක දිහා. ඒකෙ තියන attributes ඔක්කොටොම කිසිම access modifier එක දාලා නෑ. ඒ කියන්නෙ ඒ හැම attribute එකක්ම default attribute එකක්. default නම් තමන්ගේ package එකේ ඔක්කොටම access කරන්න පුළුවන් නේ. ඒ නිසා තමයි අපි එළියේ(Demo)  class එකෙ  ඉදලා  person class ඒකෙ attributes වලට values assign  කරේ.  හරි දැන් එහෙනම් හිතලා බලන්නකෝ ඔය attributes ඔක්කොම private කළොත් මොකද වෙන්නේ කියලා.  private attributes වලට access කරන්න පුළුවන් තමන්ගේ class එකේ අයට විතරයි නේද&#8230; එහෙනම් කොහොමද අපි Demo class එකෙ ඉදලා මේ attributes වලට values assign කරන්නේ සහ ඒවා read කරන්නේ ?? අන්න එතකොට අපි  මේ attributes  වලට values assign කරන්න සහ ඒවා  read කරන්න පුළුවන් වෙන විදියට method හදාගන්නවා. හරි දැන් කියන්න බලන්න මේ methods  වල access  modifier එක මොන වගේ  එකක් වෙන්න ඕනෙද&#8230;method  වල access modifier එක private වුනොත් වැඩක් නැහැ නේද.. මොකද අපි මේ methods හදා ගත්තේ අර privet attributes ටිකට access කරන්නනේ&#8230;  එතකොට ඒ හදාගත්තු methods  ටිකත් private වුනොත්  ඒ methods   ටිකටත්  call කරන්න  බැරි වෙනවා නේද.. අන්න ඒ නිසා අපි හදාගන්න methods ටික public  උනානම් හරි. මොකද අපිට පුලුවන් එතකොට Demo class එකේ  ඉඳදලා public methods වලට call කරලා අර privet attributes ටිකට values assign  කරන්නයි  ඒවා  read කරන්නයි. මෙන්න මේ විදිහට private attributes වලට values assign හදන මේ .methodවලට අපි සාමාන්‍යයෙන් කියනවා getters සහ setters කියලා එහෙනම් අපි මේ getters සහ setters පාවිච්චි කරලා attributes වලට values assign කරන්නෙ කොහොමද කියලා බලමු.</p>
+<pre>class Person{
+     privet String name;
+     privet int age;
+     privet String city;
+  
+     public void setName(String name){
+            this.name=name;            //  assign a name
+     }
+     
+     public void setAge(int age){
+            this.age=age;             // assign a age
+     }
+
+     public void setCity(String city){
+            this.city=city;           // assign a sity
+     }
+
+     public void getName(){
+            System.out.println("My name is :"+this.name);  //  getting the assigned name
+     }
+
+     public void getAge(){
+            System.out.println("My age is :"+this.age);    // getting the assigned age
+     }
+
+     public void getCity(){
+            System.out.println("My city is :"+this.city);  // getting the assigned city
+     }
+}
+
+class Demo{
+      public static void main(String a[]){
+
+             Person person1=new Person();
+             person1.setName("Smith");
+             person1.setAge(20);
+             person1.setCity("colombo");
+             person1.getName();
+             person1.getAge();
+             person1.getCity();
+             
+      }
+
+}
+
+</pre>
+<p>ඔන්න ඔය විදිහට තමයි getters සහ setters පාවිච්චි කරලා private attributes values sign කරන්නෙත් ඒව read කරන්නෙත්. this keyword එක පාවිච්චි කලේ ඇයි කියලා යාළුවෝ දන්නවනේ&#8230; මොකද අපි කලින් පාඩමක කතා කරලා තියනවා <a href="/index.php/2018/03/21/object-oriented-programming-4/" target="_blank" rel="noopener">this keyword</a> එක ඇයි පාවිච්චි කරන්නේ කියලා.අපි මේ කරපු දේ ගැන කෙටියෙන් කියනවා නම් , මෙයින් කරලා තියෙන්නේ class එකක තියන data වලට access කරන එක සීමා කිරීම්යි. තවත් විදියකින් කියනවා නම් class data වලට access කරන එක සීමා කරලා data protect කිරීමයි . ඔන්න ඔය සරල ක්‍රියාවලියට තමයි encapsulation කියලා කියන්නේ. හරි අද පාඩම තේරුනා කියලා හිතනවා. මොකක් හරි අවුලක් ආවොත් comment එකක් දාන්න මීළඟ පාඩමෙන් හමුවෙමු. සුබ දවසක්!</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/11/encapsulation/">Encapsulation</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/11/encapsulation/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

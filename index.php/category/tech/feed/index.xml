@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tech &#8211; The SIGMA</title>
+	<atom:link href="/index.php/category/tech/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>මොකක්ද මේ ionic framework එකක් කියන්නේ ?</title>
+		<link>/index.php/2019/01/20/ionic-framework-part1/</link>
+				<comments>/index.php/2019/01/20/ionic-framework-part1/#respond</comments>
+				<pubDate>Sun, 20 Jan 2019 13:01:58 +0000</pubDate>
+		<dc:creator><![CDATA[Sandun Prasanganath]]></dc:creator>
+				<category><![CDATA[android]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[web]]></category>
+
+		<guid isPermaLink="false">/?p=1626</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ.එක දිගටම web lessons කීපයක් පලකරපු හින්දා අද මම හිතුවා ටිකක් වෙනස් දෙයක් ගැන​ කතා කරන්න​.පසු ගිය ලිපියෙන් මම​ කතා කලා MEAN STACK වල​ database system එක වන​ mongo DB ගැන, කව්‍ රුහරි ඒ ලිපිය බැලුවෙ නැත්තම් මෙතනින් බලන්න පුලුවන්. මෙම ලිපියේ සිට ඉදිරි ලිපි පෙලකින් මම මේ<a class="moretag" href="/index.php/2019/01/20/ionic-framework-part1/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/20/ionic-framework-part1/">මොකක්ද මේ ionic framework එකක් කියන්නේ ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>හැමෝටම ආයුබෝවන් යාලුවනේ.එක දිගටම web lessons කීපයක් පලකරපු හින්දා අද මම හිතුවා ටිකක් වෙනස් දෙයක් ගැන​ කතා කරන්න​.පසු ගිය ලිපියෙන් මම​ කතා කලා MEAN STACK වල​ database system එක වන​ mongo DB ගැන, කව්‍ රුහරි ඒ ලිපිය බැලුවෙ නැත්තම් <a href="/index.php/2018/09/24/mean-part-2-mongo-db/">මෙතනින්</a> බලන්න පුලුවන්.</p>
+
+
+
+<p class="has-text-color has-accent-color"><em>මෙම ලිපියේ සිට ඉදිරි ලිපි පෙලකින් මම මේ ionic framework එකක් කියන්නේ මොකක්ද එකෙන් application එකක් නිර්මාණය කරන්නේ කොහොමද කියන කරුනු පැහැදිලි කරන්නම්</em></p>
+
+
+
+<p>මම මුලින් අහපු ප්‍රශ්නයම නැවත අසන්නම්,ඒ තමයි මේ ionic framework එකක් කියන්නෙ මොකක්ද කියන එක​,සරලවම කිව්වොත් ionic framework එකක් කියන්නේ mobile application develop කරන්න තියෙන framework එකක්.</p>
+
+
+
+<p>තවත් සරලව කිව්වොත් අපි android phone වලට application එකක් develop කරනවනම් අපිට android studio වගේ දෙයක් පාවිච්චි කරල වෙනම ඒ application එක develop කරන්න වෙනවා.ios වලට නම් වෙනම application develop කරන්න වෙනවා, windows os  වලටත් එහෙම්මයි,</p>
+
+
+
+<p class="has-text-color has-header-gradient-color"><em>කෙටියෙන්ම කිව්වොත් එක platform එකක develop කරපු application එකක් වෙනත් platform එකක වැඩ කරන්න බැ කියන එකනෙ&#8230;&#8230;</em></p>
+
+
+
+<p>මේ platform 3 ම එකවර වැඩ කරන්න පුලුවන් application එකක් තමයි ionic framework එකක් කියන්නේ.මේක <strong>Hybrid Mobile Application එකක්.</strong></p>
+
+
+
+<p>ionic වලින් වැඩ කරන්න කලින් ඔයාගෙ computer එකේ node js install කරල තියෙන්න ඕනි.( <br>මේ <a href="https://nodejs.org/en/download/">Link</a> එකෙන් ගිහින් ඔයාට එක කරගන්න​ පුලුවන් )</p>
+
+
+
+<p><strong>ionic install කරන ආකාරය මම දැන් පැහැදිලි කරන්නම්.</strong></p>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong>npm install -g cordova ionic</strong></p>
+
+
+
+<p class="has-text-color has-header-gradient-color">හරියට install වුනානම්, <strong>ionic -v</strong> සහ <strong>cordova -v</strong> type  කලහම ඔයලට ionic සහ​ cordova version එක බලාගන්න​ පුලුවන්.</p>
+
+
+
+<p>ionic install කරල අවසන් වුනාම​ අලුත් application එකක් start කරන්න පුලුවන්.ඒ සදහා ප්‍රදාන solution 3 ක් තියෙනවා.</p>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2019/01/Capture-1024x302.png" alt="" class="wp-image-1634" srcset="/wp-content/uploads/2019/01/Capture-1024x302.png 1024w, /wp-content/uploads/2019/01/Capture-300x89.png 300w, /wp-content/uploads/2019/01/Capture-768x227.png 768w, /wp-content/uploads/2019/01/Capture.png 1118w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+
+<ul><li>application එකක් නිර්මාණය​ කිරීමේදී අපිට blank project එකක් තෝරාගත හැකිය​.ඒ සදහා,</li></ul>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong>$ ionic start myApp blank&nbsp;&#8211;v2</strong></p>
+
+
+
+<ul><li>application එක නිර්මානය කිරීමේදි tabs use කරල තියෙන​ project එකක් අපිට​ තෝරා ගන්න පුලුවන්.ඒ සදහා,</li></ul>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong> $ ionic start myApp tabs &#8211;v2 </strong></p>
+
+
+
+<ul><li>side menu(menu bar) පාවිච්චි කරලා  <br>තියෙන​ project application එකක් පටන් ගන්න පුලුවන්,ඒ සදහා,</li></ul>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong> $ ionic start myApp sidemenu&nbsp;&#8211;v2</strong></p>
+
+
+
+<p>මෙහෙම application එක create කලාට පස්සෙ අපිට පුලුවන් ඒ අදාල​ application එක run කරන්න​.</p>
+
+
+
+<p class="has-text-color has-header-gradient-color"><em>(&#8211;v2 යන්නෙන් අදහස් වන්නේ ionic version 2 යන්නයි)</em></p>
+
+
+
+<p style="text-align:center" class="has-text-color has-background has-white-color has-black-background-color"><strong> cd myApp <br>ionic serve </strong></p>
+
+
+
+<p>මගින් myApp කියන මේ application එක run කරන්න පුලුවන්.</p>
+
+
+
+<p class="has-text-color has-header-gradient-color"><em>ඉතින් මේ ලිපියෙන් මම ionic framework </em>එක​ <em>computer එකට install කරන්නේ කොහොමද​,install කරන්න අවශය මූලික requirements මොනාද කියලා පැහැදිලි කලා.මගේ ඊලග ලිපියෙන් start කරපු </em>මේ <em>application එකේ ඉදිරියට වැඩ කරන්නේ කොහොමද කියලා පැහැදිලි කරන්නම්.</em></p>
+
+
+
+<p class="has-text-color has-background-color-color"><em>ionic official website : </em><a href="https://ionicframework.com/">https://ionicframework.com/</a></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/20/ionic-framework-part1/">මොකක්ද මේ ionic framework එකක් කියන්නේ ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/20/ionic-framework-part1/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</title>
+		<link>/index.php/2018/08/27/wireshark-tutorial/</link>
+				<comments>/index.php/2018/08/27/wireshark-tutorial/#respond</comments>
+				<pubDate>Mon, 27 Aug 2018 17:16:53 +0000</pubDate>
+		<dc:creator><![CDATA[manoj]]></dc:creator>
+				<category><![CDATA[cyber security]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[wireshark]]></category>
+
+		<guid isPermaLink="false">/?p=1185</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span> හරි අද අපි බලමු මොකද්ද මේ wireshark කියන්නේ කියල සහ මේ tool එක බාවිතා කරන විදිය.. ඇත්තටම මොකද්ද මේ wireshark? protocols සහ අනෙක් වැදගත් දේවල්.. &#160;</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/08/27/wireshark-tutorial/">මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span>හරි අද අපි බලමු මොකද්ද මේ wireshark කියන්නේ කියල සහ මේ tool එක බාවිතා කරන විදිය..</p>
+<p>ඇත්තටම මොකද්ද මේ wireshark?</p>
+<p><iframe width="750" height="422" src="https://www.youtube.com/embed/EiV_d6rPCtQ?start=197&#038;feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>protocols සහ අනෙක් වැදගත් දේවල්..</p>
+<p><iframe width="750" height="422" src="https://www.youtube.com/embed/JxdXtKC7tRg?start=2&#038;feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>&nbsp;</p>
+<p><iframe width="750" height="422" src="https://www.youtube.com/embed/iabW-AyWlJk?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/08/27/wireshark-tutorial/">මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/08/27/wireshark-tutorial/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>share mouse keyboard with multiple computers</title>
+		<link>/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/</link>
+				<comments>/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/#respond</comments>
+				<pubDate>Sun, 08 Apr 2018 21:16:40 +0000</pubDate>
+		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
+				<category><![CDATA[Entertainment]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[mouse keyboard]]></category>
+		<category><![CDATA[mousewithoutboarders]]></category>
+		<category><![CDATA[share]]></category>
+		<category><![CDATA[synergy]]></category>
+
+		<guid isPermaLink="false">/?p=712</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> ‍මේ කියන්න යන්නෙ lap එකේ වැඩ කරද්දි (විශේෂයෙන් ගෙදරදි) මට නිතරම උදව්වෙන පොඩි software කෑල්ලක් ගැන.(කෑල්ලක් කිව්වට, කෑලි 2 ක් තියෙනව ඇත්තටම 😀 ) Desktop එකයි lap එකයි දෙකම On කරගෙන වැඩ කරද්දි මට තිබ්බ ප්‍රශ්නයක් තමයි හැමතිස්සෙම mouse එකෙන් mouse එකට මාරු වෙන්න වෙන එක.(desktop එකෙන් lap එකට, lap<a class="moretag" href="/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/">share mouse keyboard with multiple computers</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>‍මේ කියන්න යන්නෙ lap එකේ වැඩ කරද්දි (විශේෂයෙන් ගෙදරදි) මට නිතරම උදව්වෙන පොඩි software කෑල්ලක් ගැන.(කෑල්ලක් කිව්වට, කෑලි 2 ක් තියෙනව ඇත්තටම 😀 ) Desktop එකයි lap එකයි දෙකම On කරගෙන වැඩ කරද්දි මට තිබ්බ ප්‍රශ්නයක් තමයි හැමතිස්සෙම mouse එකෙන් mouse එකට මාරු වෙන්න වෙන එක.(desktop එකෙන් lap එකට, lap එකෙන් desktop එකට) මේකට විසදුමක් නැද්ද කියල හොයද්දි මට හම්බ උනා <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35460">මේක</a>.</p>
+<p>Mouse without Boarders කියල පොඩි software එකක්. මේක Microsoft ලගෙ එකක්. ඒ උනාට සම්පූර්ණයෙන්ම Free. මේක අපිට  mouse/keyboard share කරන්න ඕනෙ computers දෙකේම (දෙකක් විතරක් නෙවෙයි 4ක් වෙනකන් පුළුවන්) install කරන්න ඕනෙ. ඊළඟට පළවෙනි computer එකෙන් දෙන key එක දෙවනි computer එකේ enter කරාම හරි. දැන් මේ computer 2, එකම network එකකට connect  උන ගමන් (router එකකට වගේ), එක computer එකක තියෙන mouse/keyboard වලිින් අනිත් computer එකත් control කරන්න පුළුවන්. ඒ විතරක් නෙවෙයි file උනත් drag &amp; drop කරන්න පුළුවන්. clipboard එක උනත් share වෙනව. ඒත් ඉතින් මේක වැඩ කරන්නෙ windows වල විතරයි.</p>
+<p>Linux/Windows අතරෙ mouse එක share කරන්න ඉතින් ඒකෙන් බෑ. මම සමහර වෙලාවට linux වලිනුත් වැඩ කරන නිසා, දෙකටම හරියන එකක් හොයද්දි  හම්බ උනා synergy කියල software එකක්.</p>
+<p><img class="size-medium wp-image-720 aligncenter" src="/wp-content/uploads/2018/04/Synergy-Logo-Large-300x94.png" alt="synergy logo" width="300" height="94" srcset="/wp-content/uploads/2018/04/Synergy-Logo-Large-300x94.png 300w, /wp-content/uploads/2018/04/Synergy-Logo-Large-768x240.png 768w, /wp-content/uploads/2018/04/Synergy-Logo-Large.png 1000w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>මේකෙන් පුළුවන් Linux/windows/mac ඕක එකක් එක්ක connect කරන්න. හැබැයි ඉතිං මේක free එකක් නෙවෙයි.(Linux වලට නම් free) එ්ත් ඉතිං free එකක් torrent එකකින් හොයාගන්න බැරිවෙන්නෙ නෑ 😐 . මේකත් ඉතිං අර කලින් එක වගේ computer 2කේම install කරන්න ඕනෙ. හැබැයි මේකෙ version කීපයක්ම තියෙන නිසා computer 2කේම එකම version එකක් තියෙන්න ඕන නැත්තම් connect වෙන්නෙ නෑ.</p>
+<p>mouse with boarders වගේ නෙවෙයි මේකෙදි එක computer එකක් server එකක් විදියට set කරල, ඉතිරි එ්ව client විදියට හදන්න ඕනෙ. එතකොට අර server computer එකේ mouse/keyboard වලින් client ලව control කරන්න පුළුවන්. mouse with boarders එක එහෙම නෑ. ඕන එකකින් ඕන එකක් control කරන්න පුළුවන්. ඒ වගේම synergy වලින් file share කරන්නත් බෑ.</p>
+<p>අන්තිමට කියන්න තියෙන්නෙ මෙච්චරයි. මේ වගේ software තියෙනකම් අපිට දියවැඩියාව හැදෙන එක නවත්තන්න බෑ. ඇයි ඉතිං ඒකටවත් මහන්සි වෙන්න කැමති නෑ නෙ. 😀 😀</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/">share mouse keyboard with multiple computers</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/04/09/share-mouse-keyboard-with-multiple-computers/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Vue component &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/vue-component/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>VueJs 2 &#8211; 07 more about Vue components</title>
+		<link>/index.php/2018/05/01/vuejs-2-07/</link>
+				<comments>/index.php/2018/05/01/vuejs-2-07/#comments</comments>
+				<pubDate>Mon, 30 Apr 2018 20:27:10 +0000</pubDate>
+		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
+				<category><![CDATA[VueJs]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[Vue]]></category>
+		<category><![CDATA[Vue component]]></category>
+
+		<guid isPermaLink="false">/?p=982</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, මේ VueJs ගැන ලියන 7 වෙනි post එක. අද post එකෙනුත් මම vue components ගැනම තමයි කියන්න යන්නෙ. විශේෂයෙන්, vue component එකක් ප්‍රායෝගිකව කොහොමද භාවිතා වෙන්නෙ කියල සහ props කියන්නෙ මොනවද කියල. කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න. අපි අද පොඩි app එකක් හදමු. හිතමුකො අපි හදනව කියල, මේ<a class="moretag" href="/index.php/2018/05/01/vuejs-2-07/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2018/05/01/vuejs-2-07/">VueJs 2 &#8211; 07 more about Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්, මේ VueJs ගැන ලියන 7 වෙනි post එක. අද post එකෙනුත් මම vue components ගැනම තමයි කියන්න යන්නෙ. විශේෂයෙන්, vue component එකක් ප්‍රායෝගිකව කොහොමද භාවිතා වෙන්නෙ කියල සහ props කියන්නෙ මොනවද කියල. කලින් posts බැලුවෙ නැත්තම් <a href="/index.php/category/vuejs/" target="blank">මෙතනින්</a> ගිහින් බලන්න.</p>
+<p>අපි අද පොඩි app එකක් හදමු. හිතමුකො අපි හදනව කියල, මේ වගේ පොඩි පොඩි messages display කරන්න පුළුවන් blog එකක්.</p>
+<p><img class="wp-image-1050 aligncenter" src="/wp-content/uploads/2018/04/full-output-300x185.png" alt="completed app" width="821" height="507" srcset="/wp-content/uploads/2018/04/full-output-300x185.png 300w, /wp-content/uploads/2018/04/full-output-768x473.png 768w, /wp-content/uploads/2018/04/full-output-1024x631.png 1024w" sizes="(max-width: 821px) 100vw, 821px" /></p>
+<p>ගොඩක් අය bootstrap ගැන දන්න නිසා, මම මේක style කරන්න bootstrap පාවිච්චි කරනව. ඒ නිසා bootstrap CDN එකත් index.html එකේ include කරන්න ඕනෙ. Blog එකේ messages display කරන්න bootstrap වල තියෙන මෙන්න මේ card කියන component එක භාවිතා කරනව. ඒකට අදාල template එක <a href="http://getbootstrap.com/docs/4.1/components/card/" target="blank">getbootstrap.com</a> එකෙන් ගන්න පුළුවන්.</p>
+<p><img class="wp-image-1060 aligncenter" src="/wp-content/uploads/2018/04/bootstrap-template-300x163.png" alt="getbootstrap.com" width="922" height="501" srcset="/wp-content/uploads/2018/04/bootstrap-template-300x163.png 300w, /wp-content/uploads/2018/04/bootstrap-template-768x417.png 768w, /wp-content/uploads/2018/04/bootstrap-template-1024x556.png 1024w" sizes="(max-width: 922px) 100vw, 922px" /></p>
+<pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-primary mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Primary card title<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre>
+<p>හැම message එකක්ම display කරන්නෙ මේ card කියන component එක භාවිතා කරල නිසා, ඒක Vue component එකක් විදියට හදා ගත්තම නැවත නැවත භාවිතා කරන්න පුළුවන්. ඒක කරන්නෙ කොහොමද කියල අපි බලමු.</p>
+<p>හරි, මේ component එකේ තියෙන්නෙ, blog එකේ තියෙන message එකක් නිසා අපි මේකට blog-message කියල නම දාමු. ඊළගට මේකට අදාල template එක මේ විදියට set කරන්න පුළුවන්.</p>
+<pre>Vue.component('blog-message', {
+    template: `
+        &lt;div class="card bg-light mb-3"&gt;
+            &lt;div class="card-header"&gt;Header&lt;/div&gt;
+            &lt;div class="card-body"&gt;
+                &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    `,
+});</pre>
+<p>මෙහෙම තිබුනට මේ component එකෙන් වැඩක් ගන්න අමාරුයි. මොකද මේ component එකේ තියෙන message එක hard code කරලනෙ තියෙන්නෙ. ඉතිං මේ component එක කිහිප වතාවක් භාවිතා කරොත් එකම message එක තමයි පෙන්නන්නෙ. ඒ නිසා මේ component එකේ තියෙන contents වෙනස් කිරීමේ හැකියාව තියෙන්න ඕනෙ, ඒ වගේම මේකෙ එක එක instance වල, වෙනස් වෙනස් message display කිරීමේ හැකියාව තියෙන්න ඕනෙ. ඒක කරන්න පුළුවන් props හාවිතා කරල.</p>
+<h4><strong>props</strong></h4>
+<p>Props වලින් කරන්නෙ, අපි හදපු component එකට, පිටින් මොනවහරි data pass කරන්න ඉඩ දෙන එක. ඒව(Props) හරියට, අපි හදපු custom element එකේ තියෙන custom attributes වගේ. ⁣අපේ component එකේ, title එක සහ body එක වෙනස් කිරීමේ හැකියාව තියෙන්න ඕනෙ. ඒ වගේම ඒ data, පිටින් ලබාගැනීමේ හැකියාව තියෙන්න ඕනෙ. ඒ නිසා අපි title සහ body කියල props 2ක් මගින් ඒ data, මේ component එ⁣කට pass කරමු. ඒක මේ විදියට කරන්න පුලුවන්.</p>
+<pre>&lt;div id="my-app"&gt;
+    &lt;div class="container" style="margin-top: 10px"&gt;
+        &lt;blog-message <strong>title</strong>="First post" <strong>body</strong>="the body of the first post"&gt;&lt;/blog-message&gt;
+        &lt;blog-message <strong>title</strong>="Second post" <strong>body</strong>="The body of the second post"&gt;&lt;/blog-message&gt;
+        &lt;blog-message <strong>title</strong>="Third post" <strong>body</strong>="The body of the third post"&gt;&lt;/blog-message&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>මේ විදියට props හරහා pass කරපු data, component එක ඇතුලෙදි සාමාන්‍ය data වගේම පාවිච්චි කරන්න පුළුවන්. හැබැයි මේ විදියට props හරහා pass කරපු data, component එක ඇතුලෙදි භාවිතා කරන්න නම්, component එක ඇතුලෙ භාවිතා කරන props මොනවද කියල, component එකේ define කරල ති⁣යෙන්න ඕනෙ. පහල තියෙන code එක බලන්නකො. ඒකෙ component එක ඇතුලෙ props කියන property එකෙන් මම කරල තියෙන්නෙ ඒක. (එ්කෙ තේරුම තමයි, මේ component එකට title සහ body කියල props 2ක් pass කරන්න පුළුවන් කියන එක.) දැන් title සහ body කියන දෙක, සමාන්‍ය data 2ක් වගේම භාවිතා කරන්න පුළුවන්.</p>
+<pre>Vue.component('blog-message', {
+    props: ['title', 'body'],
+    template: `
+        &lt;div class="card bg-light mb-3"&gt;
+            &lt;div class="card-header"&gt;{{ title }}&lt;/div&gt;
+            &lt;div class="card-body"&gt;
+                &lt;p class="card-text"&gt;{{ body }}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    `,
+});</pre>
+<p>මේක run කරාම පහල image ඒකේ තියෙන විදියෙ output එකක් එන්න ඕනෙ.</p>
+<p><img class="wp-image-996 aligncenter" src="/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-300x104.png" alt="sample site" width="787" height="272" srcset="/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-300x104.png 300w, /wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-768x266.png 768w, /wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-1024x354.png 1024w" sizes="(max-width: 787px) 100vw, 787px" /></p>
+<p>දැන් අපිට විවිද messages ⁣display කරන්න පුළුවන් component එකක් තියෙනව.</p>
+<p>page එකේ display කරන ඔක්කොම messages ටික main Vue instance එකේ store කර ගන්න පුළුවන්. දැනට අපි මේ data, hard code කරල තියමු. ඊළග post එකෙන් කියන්නම් back-end එකෙන් මේව අරගන්න විදිය. මේ විදියට messages කියල object එකක තමයි ඒක මම store කරන්නෙ.</p>
+<pre>const app = new Vue({
+    el: '#my-app',
+    data: {
+        messages:{
+            {title: 'First post', body: 'The body of the first post'},
+            {title: 'Second post', body: 'The body of the second post'},
+            {title: 'Third post', body: 'The body of the third post'},
+        }
+    }
+});</pre>
+<p>දැන් මෙහෙම store කරපු messages ටික, v-for එක භාවිතා කරල, එක message එකට එක component එක ගානෙ output කරන්න පුළුවන්. ඒ වගේම v-bind එකෙන් පුළුවන් ඒ එක එක instance එකට අදාල title එක සහ body එක bind කරන්න. මේ විදියට.</p>
+<pre>Vue.component('blog-message', {
+    props: ['title', 'body'],
+    template: `
+        &lt;div class="card bg-light mb-3"&gt;
+            &lt;div class="card-header"&gt;{{ title }}&lt;/div&gt;
+            &lt;div class="card-body"&gt;
+                &lt;p class="card-text"&gt;{{ body }}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    `
+});
+
+const app = new Vue({
+    el: '#my-app',
+    data: {
+        messages:{
+            {title: 'First post', body: 'The body of the first post'},
+            {title: 'Second post', body: 'The body of the second post'},
+            {title: 'Third post', body: 'The body of the third post'},
+        }
+    },
+});</pre>
+<pre>&lt;div id="my-app"&gt;
+    &lt;div class="container" style="margin-top:10px"&gt;
+        &lt;blog-message v-for="message in messages" v-bind:title="message.title" v-bind:message="message.body"/&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<h4><strong>add new message</strong></h4>
+<p>දැන් අපි මේකෙ messages display කරන කොටස හදල ඉවරයි. අපි කොහොමද අලුත් message එකක් මේකට add කරන්නෙ. දැන් අපි බලමු ඒක කරන්නෙ කොහොමද කියල.</p>
+<p>ඉස්සෙල්ලම අපි හදා ගමු message එක type කරන්න අවශ්‍ය form එක.</p>
+<pre>&lt;form style="padding:10px" class="col-sm-8 bg-light mb-3"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+<p>මේ තියෙන්නෙ ඒ form එක. මේක මේ විදියට index.html එකේ enter කරන්න පුළුවන්.</p>
+<pre>&lt;div id="my-app"&gt;
+  &lt;div class="container" style="margin-top:10px"&gt;
+    &lt;form style="padding:10px" class="col-sm-8 bg-light mb-3"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;h1&gt;Recent Messages&lt;/h1&gt;
+    &lt;blog-message v-for="message in messages" :title="message.title" :body="message.body"&gt;&lt;/blog-message&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>මේ form එකේ තියෙන message title එක සහ message body එක store කරගන්න, newTitle, newBody කියල data 2ක් define කරගන්න පුළුවන්. v-model directive එක භාවිතා කරල, form එකේ title සහ body කියන text field දෙකට,  ඒ data 2 bind කරලයි තියෙන්නෙ.</p>
+<pre>data: {
+    newTitle: '',
+    newBody: '',
+    messages: []
+}
+</pre>
+<p>හරි දැන් form එකත් හරි. දැන් තියෙන්නෙ add button එක click කරාම, post එක add වෙන functionality එක හදන්න. ඒකට අදාල code එක methods object එක ඇතුලෙ ලියන්න පුළුවන්. අපි ඒක addPost කියල method එකක ලියමු. පොඩි දෙයයි කරන්න තියෙන්නෙ. newTitle එක සහ newBody එක අඩංගු object එකක් messages කියන array එකට add කරන්න තියෙන්නෙ. එතකොට message කියන data එක වෙනස් වෙන නිසා, Vue වලින් automaticallyම ආපහු ඔක්කොම messages ටික render කරනව. මේ තියෙන්නෙ ඒකට අදාල code එක.</p>
+<pre>methods: {
+    addMessage: function () {
+        this.messages.unshift({
+             title: this.newTitle,
+             body: this.newBody
+        })
+        this.newTitle = ''
+        this.newBody = ''
+    }
+}
+</pre>
+<p>දැන්, form එක submit කරද්දි මේ method එක call කරාම හරි. ඒකට v-on:submit directive එක භාවිතා කරන්න ඕනෙ. සම්පූර්ණ code එක ⁣පහළ තියෙනව.</p>
+<pre>Vue.component('blog-message', {
+    props: ['title', 'body'],
+    template: `
+        &lt;div class="card bg-light mb-3"&gt;
+            &lt;div class="card-header"&gt;{{ title }}&lt;/div&gt;
+            &lt;div class="card-body"&gt;
+                &lt;p class="card-text"&gt;{{ body }}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    `,
+});
+
+const app = new Vue({
+    el: '#my-app',
+    data: {
+        newTitle: 'Title',
+        newBody: 'Message body',
+        messages: []
+    },
+
+    methods: {
+        addMessage: function () {
+            this.messages.unshift({ title: this.newTitle, body: this.newBody }) 
+            this.newTitle = '' 
+            this.newBody = '' 
+         }
+    }
+});
+</pre>
+<pre>&lt;div id="my-app"&gt;
+
+  &lt;div class="container" style="margin-top:10px"&gt;
+    &lt;form style="padding:10px" class="col-sm-8 bg-light mb-3" @submit.prevent="addMessage()"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;input type="text" v-model="newTitle" class="form-control" placeholder="Message title" required&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;textarea v-model="newBody" class="form-control" rows="3" placeholder="Message body" required&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;h1&gt;Recent Messages&lt;/h1&gt;
+    &lt;blog-message v-for="message in messages" :title="message.title" :body="message.body"&gt;&lt;/blog-message&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>දැන් බොහෝ දුරට app එක හදල ඉවරයි. add කරන Messages, locally store කරගන්න දැන් අපිට පුළුවන්නෙ. අදට මම මෙතනින් නවත්තන්නම්. දැන් ඔයාලට යම් අදහසක් එන්න ඇති, කලින් post වල මම කියපු දේවල් කොහොමද ප්‍රායොගිකව භාවිතා වෙන්නෙ කියල. ඊළග post එකෙන් මම කියන්නම් database එකක store කිරීම සදහා, back-end එකට මේ messages යවන්නෙ කොහොමද කියල. සහ back-end එකෙන් නැවත ඒව අරගන්නෙ කොහෙමද කියල. post එක ගැන අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවම හරි තියෙනම් comment එකක් දාන්න. 😀</p>
+<p>ඊළඟ post එකට <a href="/index.php/2018/05/01/vuejs-2-08/">මෙතනින්</a> යන්න.</p>
+<p>The post <a rel="nofollow" href="/index.php/2018/05/01/vuejs-2-07/">VueJs 2 &#8211; 07 more about Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2018/05/01/vuejs-2-07/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

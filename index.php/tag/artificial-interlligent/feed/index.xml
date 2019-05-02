@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Artificial Interlligent &#8211; The SIGMA</title>
+	<atom:link href="/index.php/tag/artificial-interlligent/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>&#60;For Those Who Code/&#62;</description>
+	<lastBuildDate>
+	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Machine Learning</title>
+		<link>/index.php/2019/01/31/machine-learning/</link>
+				<comments>/index.php/2019/01/31/machine-learning/#comments</comments>
+				<pubDate>Thu, 31 Jan 2019 10:15:30 +0000</pubDate>
+		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
+				<category><![CDATA[Machine Learning]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Artificial Interlligent]]></category>
+		<category><![CDATA[hasee]]></category>
+		<category><![CDATA[hasee amarathunga]]></category>
+		<category><![CDATA[machine learning]]></category>
+
+		<guid isPermaLink="false">/?p=1757</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning. කෘතීම බුද්ධි තාක්ෂණය එහෙම නැත්නම් Artificial Intelligence කෙලින්ම කීවොත් වර්තමානයත් අනාගතයත් යා කරන පරිගණක පරම්පරාව අද බොහෝ දෙනා කතා කරන තාක්ෂයක්. ඒ තාක්ෂණයෙ තියෙන<a class="moretag" href="/index.php/2019/01/31/machine-learning/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/31/machine-learning/">Machine Learning</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning.</p>
+
+
+
+<p>කෘතීම බුද්ධි තාක්ෂණය එහෙම නැත්නම් Artificial Intelligence කෙලින්ම කීවොත් වර්තමානයත් අනාගතයත් යා කරන පරිගණක පරම්පරාව අද බොහෝ දෙනා කතා කරන තාක්ෂයක්. ඒ තාක්ෂණයෙ තියෙන ඉතා නිර්මාණශීලි තාක්ෂණයක් තමා මේ Machine Learning කියන්නෙ. Vacuum tube තාක්ෂණයේ ඉදලා Micro-Processor දක්වා ආවේ මිනිසා සෘජුව සම්බන්ධ වුණු තාක්ෂණයක්. නමුත් මේ Machine Learning කියන්නෙ සම්පූර්ණයෙන්ම වෙනස් තාක්ෂණයක් වගේම දියුණු තාක්ෂණයක්. පර්යේෂණාත්මක තාක්ෂණයක්.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; හොදයි අපි බලමු මොකක්ද මේ Machine
+Learning කියන්නෙ කියලා.
+කෙලින්ම කීවොත් මේ පරිගණක විද්‍යාවේ තියෙන දියුණුම පැතිකඩක්. ඒ කියන්නෙ පරිගණකය
+විසින්ම ස්වයංක්‍රීයව ඉගෙන ගෙන අත්දැකීම් ලබා ගෙන දැනුම වැඩි කරගෙන යම් කිසි
+කාර්යක් කරන්න පුලුවන් මට්ටමකට පැමිණිමක්. </p>
+
+
+
+<p>මම ඉගෙන ගැනීම
+කියලා අදහස් කළේ සාමාන්‍ය මනුස්සයෙක් වගේ &nbsp;යම් කිසි දත්ත වගේ දේවල් හදුනා ගැනීමේ හැකියාව
+වටහා ගැනීමේ හැකියාව මෙන්ම එම දත්ත අනුකූලව තීරණ ගැනීමේ හැකියාව වගේ දේවල් මේ ඉගෙනීම
+යටතට අයත්. නමුත් මෙය ඉතාමත් අමාරු දෙයක්. ඇයි මම එහෙම කියන්නෙ මොකද හැම දත්තයකට
+අදාලවම නිවැරදි තීරණයක් ගන්න සාමාන්‍ය මනුසසයෙකුට පවා අමාරුයි. ඒ නිසා මේක කරන්න විශේෂ
+ඇල්ගොරිතම් ගොඩනගන්න වෙනවා.මෙම ඇල්ගොරිතම් වලට පාදක කරගන්න විශේෂ දත්ත අවශ්‍යයි . ඒවගේම
+පෙර පුහුණු කළ අත්දැකීම් අවශ්‍යයි. ඒ අත්දැකීම් තුළ අන්තර්ගත විය යුතුයි විශේෂ ගණිතමය
+සංකල්ප සංඛ්‍යාන සම්භාවිතාව මෙන්ම Optimizations වගේ සංකල්ප.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; හැබැයි මෙහෙම ඉගෙන ගන්න කොච්චර කාලයක්
+යනවද කියලා ඔයාලට හිතෙනවද? උදාහරණයක්
+විදියට මට හොදට English ඉගෙන ගන්න අවුරුදු 2ක් ගියා කියමුකො. Machine එකකට කොච්චර කාලයක් යයිද? ඒක තමා තාම පර්යේෂණ මට්ටමේ
+තියෙන්නෙ මොකද Machine එකකට ඉගෙන ගන්නත් ඒ හා සමාන කාලයක් යනවා. මේ කාලය අඩු කරගන්නෙ
+කොහොමද කියලා පරිගණක විද්‍යාඥයො තාමත් පර්යේෂණ කරනවා. ඉතින් මේ Machine
+Learning කියන
+තාක්ෂණයට ගොඩක්ම වැදගත්වෙන්නෙ දත්ත. විශාල දත්ත ගබඩාවක් අවශ්‍යයි&nbsp; Machine Learning කාර්යක්ෂම විදියට
+කරන්න නම්.</p>
+
+
+
+<p>එකිනෙකට වෙනස්
+විදියෙ කාර්යන් කරන්න ගොඩනගපු ඇල්ගොරිතම් කිහිපයක් මං කියන්නම්</p>
+
+
+
+<ul><li>Vision Processing</li><li>Language Processing</li><li>Robotics</li><li>Games</li><li>Pattern Recognition</li><li>Forecasting</li></ul>
+
+
+
+<p>Machine Learning තාක්ෂණය ගොඩනගන්න ක්‍රම
+කිහිපයක් තියෙනවා. ඒ අතරෙ ගොඩක්ම භාවිතා කරන තාක්ෂණයක් තමා Supervised
+Learning සහ
+Unsupervised Learning.</p>
+
+
+
+<p><strong>Supervised Learning</strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Supervised Learning ගැන කතා කලොත් මේක‍ෙ වෙන්නෙ
+හුරුවෙන්න අපේක්ෂා කරන ක්‍රියාවට අදාල දත්ත වල පවතින ක්‍රියාපටිපාටි (functions)
+ඉගෙන ගැනීමක්.
+ඒ කියන්නෙ හුරු වෙන්න තියෙන ක්‍රියාවට අදාල දත්ත විශ්ලේෂණය කරලා නිගමනය කරන්න
+පුලුවන් ක්‍රියාපටිපාටියක් ගොඩනගනවා. මේ ක්‍රියාපටිපාටිය පාවිච්චි කරලා අලුත් දෙයක්
+නිර්මාණය කරන්න පුලුවන්. උදාහරණ කීවොත් Voice recognition. ඒ වගේම Email තුළ අඩංගු වන Spam හදුනා ගැනීම වගේ දේවල්
+මේ Supervised Learning යටතට අයත්.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ඒ වගේම Neural
+Network , Naïve Bayes classifiers , Mahouts Implements වගේම Supports
+Vector Machines(SVMs) වගේ බොහෝ ඇල්ගොරිතම්
+Supervised
+Learning තුළ අන්තර්ගතයි.</p>
+
+
+
+<p><strong>Unsupervised Learning</strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මෙහිදී ඉගෙනීමට කළින් අර්ථ දක්වන ලද
+දත්ත කිසිවක් භාවිත් වීමක් නෑ. මේකෙදි පාව්ච්චි වෙන්නෙ භාවිතා නොකරන ලද දත්ත වල අර්ථය
+පමණයි. උදහරණ කීවොත් Self-organizing maps , Hierarchical clustering වගේම k-means
+clustering වගේ දේවල් මේ Unsupervised
+Learning යටතට අයත්.</p>
+
+
+
+<p>Supervised Learning සහ
+Unsupervised
+Learning යටතට අයත්
+තවත් බොහෝ Learning methods අන්තර්ගතයි. ඒ
+අතර විශේෂ ක්‍රම කිහිපයක් ගැන මම කතා කරන්නම්.</p>
+
+
+
+<p><strong>Reinforcement learning</strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; මේකෙදි වෙන්නෙ කලින් ඉගෙනගද්දි
+තිබුණ වැරදි තැන් හදා ගෙන ඊළග වටයෙදි ඒ වැරදි නිවැරදි කරමින් &nbsp;ඉගෙන ගැනීමක් වගේ දෙයක්. ඒ කියන්නෙ මේ ක්‍රමයෙදි
+අදාල Machine එකේ ප්‍රතිඵල
+වැඩි දියුණු කරගැනීමක් සිදු වෙනවා. </p>
+
+
+
+<p><strong>Over-fitting</strong></p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; අදාල යන්ත්‍රය ඉතාමත් හොදින් පුහුණු කිරීමක් මෙහිදී වෙනවා මොකද නියම දත්ත තුළ දෝෂ සහිත දත්තද පවතින්න පුලුවන්. ඒ නිසා එහෙම දත්ත තිබ්බොත් අලුත් දත්ත වලට යන්ත්‍රය දක්වන ප්‍රතිචාරය සෘණාත්මක වෙන්න පුලුවන්. ඒ නිසා Over-fitting කියන තාක්ෂණයෙදි යන්ත්‍රය ඵලදායී ලෙස දත්ත මතක තබා ගැනීමක් සිදුවෙනවා. ඒ වගේම ප්‍රතිදානය ගැන අනාවැකි පළකිරීමක් සිදු වෙනවා. නමුත් මේකෙදි සම්පූර්ණයෙන්ම අලුත් දත්ත තිබුණොත් යන්ත්‍රයේ &nbsp;Accuracy එක අඩු වෙනවා.</p>
+
+
+
+<p><strong>Under-fitting</strong></p>
+
+
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>අවාසි රාශියක් ඇති තාක්ෂණ ක්‍රමයකි මෙය. මොකද මෙහෙදී ක්‍රමවත් පුහුණු කිරීමක් සිදුවෙන්නෙ නෑ යන්ත්‍රයට.කෙළින්ම කීවොත් මෙය දත්ත පුහුණු කිරීමේදී Poor Performance සහිත තාක්ෂණයකි.</p>
+
+
+
+<p></p>
+
+
+
+<p>තවත් ක්‍රම රාශියක් අන්තර්ගතයි මේ Machine Learning තාක්ෂණය යටතේ. නම් වශයෙන් කීවොත් <strong>Recommendation </strong>, <strong>Clustering </strong>,&nbsp; <strong>Classification </strong>වගේ. මේ දේවල් පිළිබද මම ඉදිරියෙදි කතා කරන්න බලාපොරොත්තු වෙනවා උදාහරණ එක්ක.</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ඉතින් අදට මම Machine Learning ගැන පොඩි හදුන්වාදීමක් පමණයි කලේ අලුතින් මේ ගැන ඉගෙන ගන්න කැමති අයට. මම ඊළග ලිපියෙන් කියන්නම් කොහොමද මේ Machine Learning කරන්න පටන් ගන්නෙ කියලා <strong>Programming Language</strong> එකක් පාවිච්චි කරලා. ඊළග ලිපියෙන් හමු වන බලාපොරොත්තුවෙන් මම ගිහින් එන්නම්. සතූතියි හැමෝටම!</p>
+<p>The post <a rel="nofollow" href="/index.php/2019/01/31/machine-learning/">Machine Learning</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/index.php/2019/01/31/machine-learning/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

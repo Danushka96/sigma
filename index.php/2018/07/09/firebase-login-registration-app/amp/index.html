@@ -1,0 +1,1758 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Firebase කියන්නේ මොකද්ද? Firebase Authentication Tool එක භාවිතා කරෙගෙන Login Regisration Panel එකක් Android App එකක් ඇතුලේ හදා ගන්න විදිය බලමු" />
+<meta name="twitter:title" content="Firebase එක්ක Login, Registration App එකක් හදමු - The SIGMA" />
+<meta name="twitter:image" content="/wp-content/uploads/2018/07/1_zTdZMxbTkVdXCOoZlXLnsg.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Firebase එක්ක Login, Registration App එකක් හදමු - The SIGMA" />
+<meta property="og:description" content="Firebase කියන්නේ මොකද්ද? Firebase Authentication Tool එක භාවිතා කරෙගෙන Login Regisration Panel එකක් Android App එකක් ඇතුලේ හදා ගන්න විදිය බලමු" />
+<meta property="og:url" content="/index.php/2018/07/09/firebase-login-registration-app/" />
+<meta property="og:site_name" content="The SIGMA" />
+<meta property="article:tag" content="android" />
+<meta property="article:tag" content="authentication" />
+<meta property="article:tag" content="firebase" />
+<meta property="article:tag" content="login" />
+<meta property="article:tag" content="register" />
+<meta property="article:tag" content="reset" />
+<meta property="article:section" content="android" />
+<meta property="article:published_time" content="2018-07-09T08:19:28+00:00" />
+<meta property="article:modified_time" content="2019-03-02T16:57:34+00:00" />
+<meta property="og:updated_time" content="2019-03-02T16:57:34+00:00" />
+<meta property="og:image" content="/wp-content/uploads/2018/07/1_zTdZMxbTkVdXCOoZlXLnsg.png" />
+<meta property="og:image:secure_url" content="/wp-content/uploads/2018/07/1_zTdZMxbTkVdXCOoZlXLnsg.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="465" />
+	<title>Firebase එක්ක Login, Registration App එකක් හදමු - The SIGMA</title>
+		<link rel="canonical" href="/index.php/2018/07/09/firebase-login-registration-app/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/07\/09\/firebase-login-registration-app\/","headline":"Firebase එක්ක Login, Registration App එකක් හදමු","datePublished":"2018-07-09T08:19:28+00:00","dateModified":"2019-03-02T16:57:34+00:00","author":{"@type":"Person","name":"Danushka Herath"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/07\/1_zTdZMxbTkVdXCOoZlXLnsg.png","width":1024,"height":465},"description":"Firebase කියන්නේ මොකද්ද? Firebase Authentication Tool එක භාවිතා කරෙගෙන Login Regisration Panel එකක් Android App එකක් ඇතුලේ හදා ගන්න විදිය බලමු"}</script>
+	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="Everest Forms 1.4.8" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ */
+amp-img.amp-wp-enforced-sizes[layout=intrinsic] > img,
+.amp-wp-unknown-size > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 750px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-19fae44{display:block}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-267f6d5{font-size:14px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cdd8ca0{text-align:center}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a1b1bb7{color:#00f}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cc68ddc{color:#f00}	</style>
+</head>
+
+<body data-rsssl=1 class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				The SIGMA			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Firebase එක්ක Login, Registration App එකක් හදමු</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/81f32af4149adb5de35857259b875c31?s=24&#038;d=mm&#038;r=g" alt="Danushka Herath" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Danushka Herath</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-07-09T13:49:28+00:00">
+		10 months ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="750" height="341" src="/wp-content/uploads/2018/07/1_zTdZMxbTkVdXCOoZlXLnsg-1024x465.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/07/1_zTdZMxbTkVdXCOoZlXLnsg.png 1024w, /wp-content/uploads/2018/07/1_zTdZMxbTkVdXCOoZlXLnsg-300x136.png 300w, /wp-content/uploads/2018/07/1_zTdZMxbTkVdXCOoZlXLnsg-768x349.png 768w" layout="intrinsic"><noscript><img width="750" height="341" src="/wp-content/uploads/2018/07/1_zTdZMxbTkVdXCOoZlXLnsg-1024x465.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">12</span> <span class="rt-label rt-postfix">minutes</span></span><p>මේ ලිපියෙන් කතා කරන්න යන්නේ Firebase එක්ක Android Studio වලින් Login Panel එකක් හදන්නේ කොහොමද කියලා. මේ වැඩේට අපිට මෙන්න මේ Prerequisites ටික අවශ්‍ය වෙනවා.</p>
+<ol><li><span class="amp-wp-267f6d5"><strong>Android Studio ( &gt; 3.0  )</strong></span></li>
+<li><span class="amp-wp-267f6d5"><strong>අලුත් Firebase Project එකක්</strong></span></li>
+<li><span class="amp-wp-267f6d5"> <strong>Android Studio එක ගැන පොඩි දැනුමක්</strong></span></li>
+</ol><p>මුලින්ම බලමු මේ <a href="https://en.wikipedia.org/wiki/Firebase">Firebase</a> කියන්නේ මොකක්ද කියලා. Firebase කියන්නේ Google ලගේ දැනට අවුරුදු කිහිපයකට කලින්(2012) පටන් ගත්ත Project එකක්. මේක යොදා ගන්නේ ගොඩක් දුරට Mobile Application වලට. හැබැයි Web Application වලදි භාවිතා කරන්නත් කිසිම අවුලක් නෑ. ඒවටත් Plugins තියෙනවා දාගන්න. මූලිකවම ගත්තොත් Firebase යොදා ගන්න පුළුවන් වෙන්නේ Analytics Side එකට. හැබැයි මේකෙ තව ගොඩක් දේවල් තියෙනවා. පොඩි Idea එකක් ගන්න මේ Image එක බලන්න.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/firebase-features-300x169.png" alt="" width="767" height="432" class="wp-image-1151 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/firebase-features-300x169.png 300w, /wp-content/uploads/2018/07/firebase-features-768x432.png 768w, /wp-content/uploads/2018/07/firebase-features.png 888w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/firebase-features-300x169.png" alt="" width="767" height="432" class="wp-image-1151 aligncenter" sizes="(max-width: 767px) 100vw, 767px"></noscript></amp-img></p>
+<p> </p>
+<p>අපි මේ වැඩේදි යොදා ගන්න හදන්නේ<strong> Authentication</strong> කියන Feature එක.</p>
+<p>Developer කෙනෙකුට Firebase වල වාසි ගොඩක් තියෙනවා. ඒ ගැන මුලින්ම බලමු මොනාද කියලා.</p>
+<ol><li> Clicks කිහිපයකින් Firebase Plugin එක App එකට Attach කරගන්න පුළුවන්</li>
+<li>Database එක්ක ැඩ කරන්න PHP වගේ Server Side Script ලියන්න අවශ්‍ය වෙන්නේ නෑ</li>
+<li>නොමිලේ භාවිතා කරන්න පුළුවන් ( Connection 50 දක්වා )</li>
+<li>Facebook, Google, Twitter වගේ Services වලින් Auth කරන්න පුළුවන් Plugins Inbuilt එනවා</li>
+</ol><p>තවත් ගොඩක් වාසි තියෙනවා තමන්ගේ App එක Firebase එක්ක Connect කරගන්න එකෙන්. හරි මේ තමයි අපි කරන්න හදන වැඩේට අවශ්‍ය වටපිටාව. දැන් වැඩේට බහිමු.</p>
+<hr><p> </p>
+<p>මුලින්ම කරන්න ඕන Android Studio එකේ අලුත් Project එකක් හදා ගන්න එක. මම මේකට භාවිතා කරන්න යන්නේ <strong>API 22: Android 5.1 </strong>version එක. අලුතින් Project එක හදද්දි ඒකත් බලන්න. නැත්නම් XML File වල අවුල් එන්න පුුළුවන්.</p>
+<p>Launch Activity එක LoginActivity කියලා දාගන්න.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/Capture-1-300x94.png" alt="" width="456" height="143" class="wp-image-1154 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/Capture-1-300x94.png 300w, /wp-content/uploads/2018/07/Capture-1.png 557w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/Capture-1-300x94.png" alt="" width="456" height="143" class="wp-image-1154 aligncenter" sizes="(max-width: 456px) 100vw, 456px"></noscript></amp-img></p>
+<h3 class="amp-wp-cdd8ca0"><span class="amp-wp-a1b1bb7"><em><strong>STEP 01</strong></em></span></h3>
+<p>දැන් Project එක හැදිලා ඉවර වුණාම අපි App එක Firebase එක්ක Connect කරගන්න ඕන. ඒක කරන්නේ මෙහෙමයි. Android Studio එකේ උඩ තියෙන Tools Menu එකේ තියෙනවා Firebase කියලා Menu item එකක්. ඒක උඩ Click කරන්න. එහෙම කලාම දකුණු පැත්තේ අලුත් Menu එකක් Open වෙනවා. ඒකෙ තියෙනවා එක එක Services Install කරගන්න Shortcuts Link කරලා. ඒකෙන් Real time Database කියන එක Select කරගන්න. මේ වගේ.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/Capture-2-225x300.png" alt="" width="336" height="448" class="wp-image-1155 alignleft amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/Capture-2-225x300.png 225w, /wp-content/uploads/2018/07/Capture-2.png 441w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/Capture-2-225x300.png" alt="" width="336" height="448" class="wp-image-1155 alignleft" sizes="(max-width: 336px) 100vw, 336px"></noscript></amp-img> <amp-img src="/wp-content/uploads/2018/07/Capture-3-242x300.png" alt="" width="358" height="444" class="alignnone wp-image-1156 amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/Capture-3-242x300.png 242w, /wp-content/uploads/2018/07/Capture-3.png 437w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/Capture-3-242x300.png" alt="" width="358" height="444" class="alignnone wp-image-1156" sizes="(max-width: 358px) 100vw, 358px"></noscript></amp-img></p>
+<p>උඩ දකුණු පැත්තේ තියෙන Image එකේ විදියට Connect to Database Button එක Click කරාම අලුත් Window එකක් Open වෙනවා Firebase Console එකට. ඒකෙන් අලුත් Project එකක් හදා ගන්න පුළුවන් Firebase Console එකේ.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/Capture-4-300x80.png" alt="" width="514" height="137" class="wp-image-1157 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/Capture-4-300x80.png 300w, /wp-content/uploads/2018/07/Capture-4.png 679w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/Capture-4-300x80.png" alt="" width="514" height="137" class="wp-image-1157 aligncenter" sizes="(max-width: 514px) 100vw, 514px"></noscript></amp-img></p>
+<p>මෙතනින් කැමති නමක් දීලා Connect කරන්න. ටික වෙලාවකින් Firebase එක්ක හරියට Connect වුණා කියලා Message එකක් පෙන්නයි.</p>
+<p>දැන් <a href="https://console.firebase.google.com/">https://console.firebase.google.com</a> එකට ගිහින් ඔයා හදපු Project එක Open කරගන්න. ඒකෙ මේ විදියට Settings Change කරගන්න.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/Capture-5-300x60.png" alt="" width="620" height="124" class="wp-image-1158 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/Capture-5-300x60.png 300w, /wp-content/uploads/2018/07/Capture-5-768x153.png 768w, /wp-content/uploads/2018/07/Capture-5-1024x204.png 1024w, /wp-content/uploads/2018/07/Capture-5.png 1343w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/Capture-5-300x60.png" alt="" width="620" height="124" class="wp-image-1158 aligncenter" sizes="(max-width: 620px) 100vw, 620px"></noscript></amp-img></p>
+<h3 class="amp-wp-cdd8ca0"><em><strong><span class="amp-wp-a1b1bb7">STEP 02</span></strong></em></h3>
+<p>ඊට පස්සේ කරන්න තියෙන්නේ Gradle Files වල පොඩි Changes කිහිපයක්. මුලින්ම root එකේ තියෙන Build.gradle එක open කරගන්න. ඒකට මේ Line 2 add කරලා sync කරගන්න.</p>
+<pre>build.gradle
+dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        classpath 'com.google.gms:google-services:4.0.1'
+    }
+
+</pre>
+<p>දැන් app folder එක ඇතුලේ තියෙන Build.gradle File එක Open කරගෙන ඒකට මේ Line ටික add කරගන්න.</p>
+<pre>app/build.gradle
+dependencies {
+    compile "com.google.firebase:firebase-auth:9.0.2"
+}
+ 
+apply plugin: 'com.google.gms.google-services'
+
+</pre>
+<h5 class="amp-wp-cdd8ca0"><span class="amp-wp-a1b1bb7"><em><strong>STEP 03</strong></em></span></h5>
+<p>දැන් අපි හදන්න යන App එකේ Interfaces වලට අවශ්‍ය වෙන Files ටිකක් හදා ගමු. මේ files ටික එන්න ඕන <strong>res/values </strong>කියන Path එකට.</p>
+<p><span class="amp-wp-cc68ddc">strings.xml</span></p>
+<pre>&lt;resources&gt;
+&lt;string name="app_name"&gt;Firebase Auth&lt;/string&gt;
+&lt;string name="action_sign_in_short"&gt;Register&lt;/string&gt;
+&lt;string name="email"&gt;Email&lt;/string&gt;
+&lt;string name="minimum_password"&gt;Password too short, enter minimum 6 characters!&lt;/string&gt;
+&lt;string name="auth_failed"&gt;Authentication failed, check your email and password or sign up&lt;/string&gt;
+&lt;string name="change_email"&gt;Change Email&lt;/string&gt;
+&lt;string name="change_password"&gt;Change Password&lt;/string&gt;
+&lt;string name="send_password_reset_email"&gt;Send Password reset email&lt;/string&gt;
+&lt;string name="remove_user"&gt;Remove user&lt;/string&gt;
+&lt;string name="new_pass"&gt;New Password&lt;/string&gt;
+&lt;string name="title_activity_profile"&gt;Firebase&lt;/string&gt;
+&lt;string name="title_activity_login"&gt;Sign in&lt;/string&gt;
+&lt;string name="hint_email"&gt;Email&lt;/string&gt;
+&lt;string name="hint_password"&gt;Password&lt;/string&gt;
+&lt;string name="hint_name"&gt;Fullname&lt;/string&gt;
+&lt;string name="btn_login"&gt;LOGIN&lt;/string&gt;
+&lt;string name="btn_link_to_register"&gt;Not a member? Get registered in Firebase now!&lt;/string&gt;
+&lt;string name="btn_link_to_login"&gt;Already registered. Login Me!&lt;/string&gt;
+&lt;string name="title_activity_reset_password"&gt;ResetPasswordActivity&lt;/string&gt;
+&lt;string name="btn_forgot_password"&gt;Forgot your password?&lt;/string&gt;
+&lt;string name="btn_reset_password"&gt;Reset Password&lt;/string&gt;
+&lt;string name="btn_back"&gt;&lt;![CDATA[&lt;&lt; Back]]&gt;&lt;/string&gt;
+&lt;string name="hint_new_email"&gt;New Email&lt;/string&gt;
+&lt;string name="btn_change"&gt;Change&lt;/string&gt;
+&lt;string name="btn_send"&gt;Send&lt;/string&gt;
+&lt;string name="btn_remove"&gt;Remove&lt;/string&gt;
+&lt;string name="btn_sign_out"&gt;Sign Out&lt;/string&gt;
+&lt;string name="lbl_forgot_password"&gt;Forgot password?&lt;/string&gt;
+&lt;string name="forgot_password_msg"&gt;We just need your registered Email Id to sent you password reset instructions.&lt;/string&gt;
+&lt;/resources&gt;
+</pre>
+<p><span class="amp-wp-cc68ddc">colors.xml</span></p>
+<pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;resources&gt;
+&lt;color name="colorPrimary"&gt;#00bcd4&lt;/color&gt;
+&lt;color name="colorPrimaryDark"&gt;#0097a7&lt;/color&gt;
+&lt;color name="colorAccent"&gt;#f2fe71&lt;/color&gt;
+
+&lt;color name="bg_login"&gt;#26ae90&lt;/color&gt;
+&lt;color name="bg_register"&gt;#2e3237&lt;/color&gt;
+&lt;color name="bg_main"&gt;#428bca&lt;/color&gt;
+&lt;color name="white"&gt;#ffffff&lt;/color&gt;
+&lt;color name="input_login"&gt;#222222&lt;/color&gt;
+&lt;color name="input_login_hint"&gt;#999999&lt;/color&gt;
+&lt;color name="input_register"&gt;#888888&lt;/color&gt;
+&lt;color name="input_register_bg"&gt;#3b4148&lt;/color&gt;
+&lt;color name="input_register_hint"&gt;#5e6266&lt;/color&gt;
+&lt;color name="btn_login"&gt;#26ae90&lt;/color&gt;
+&lt;color name="btn_login_bg"&gt;#eceef1&lt;/color&gt;
+&lt;color name="lbl_name"&gt;#333333&lt;/color&gt;
+&lt;color name="btn_logut_bg"&gt;#ff6861&lt;/color&gt;
+&lt;/resources&gt;
+</pre>
+<p><span class="amp-wp-cc68ddc">dimens.xml</span></p>
+<pre>&lt;resources&gt;
+&lt;!-- Default screen margins, per the Android Design guidelines. --&gt;
+&lt;dimen name="activity_horizontal_margin"&gt;16dp&lt;/dimen&gt;
+&lt;dimen name="activity_vertical_margin"&gt;16dp&lt;/dimen&gt;
+&lt;dimen name="fab_margin"&gt;16dp&lt;/dimen&gt;
+&lt;dimen name="logo_w_h"&gt;100dp&lt;/dimen&gt;
+&lt;/resources&gt;
+</pre>
+<h2 class="amp-wp-cdd8ca0"><strong>Sign Up with Email &amp; Password</strong></h2>
+<p>උඩින් දාලා තියෙන විදියට Files ටික හදා ගත්තට පස්සේ අපි මුලින්ම කරන්න හදන්නේ අලුතින් Users ලා Register කරන Interface එකයි ඒකට අදාල Activity එකයි හදා ගන්න එක. මුලින්ම Signup Activity එක හදා ගන්න. ඒකට මේ විදියට Code කරගන්න</p>
+<p>මේ Signup layout එක…</p>
+<pre>activity_signup.xml
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="info.androidhive.firebase.LoginActivity"&gt;
+
+&lt;LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@color/colorPrimaryDark"
+android:gravity="center"
+android:orientation="vertical"
+android:padding="@dimen/activity_horizontal_margin"&gt;
+
+
+&lt;ImageView
+android:layout_width="@dimen/logo_w_h"
+android:layout_height="@dimen/logo_w_h"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="30dp"
+android:src="@mipmap/ic_launcher" /&gt;
+
+&lt;android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"&gt;
+
+&lt;EditText
+android:id="@+id/email"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="@string/email"
+android:inputType="textEmailAddress"
+android:maxLines="1"
+android:singleLine="true"
+android:textColor="@android:color/white" /&gt;
+
+&lt;/android.support.design.widget.TextInputLayout&gt;
+
+&lt;android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"&gt;
+
+&lt;EditText
+android:id="@+id/password"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:focusableInTouchMode="true"
+android:hint="@string/hint_password"
+android:imeActionId="@+id/login"
+android:imeOptions="actionUnspecified"
+android:inputType="textPassword"
+android:maxLines="1"
+android:singleLine="true"
+android:textColor="@android:color/white" /&gt;
+
+&lt;/android.support.design.widget.TextInputLayout&gt;
+
+&lt;Button
+android:id="@+id/sign_up_button"
+style="?android:textAppearanceSmall"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="@color/colorAccent"
+android:text="@string/action_sign_in_short"
+android:textColor="@android:color/black"
+android:textStyle="bold" /&gt;
+
+&lt;Button
+android:id="@+id/btn_reset_password"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dip"
+android:background="@null"
+android:text="@string/btn_forgot_password"
+android:textAllCaps="false"
+android:textColor="@color/colorAccent" /&gt;
+
+&lt;!-- Link to Login Screen --&gt;
+
+&lt;Button
+android:id="@+id/sign_in_button"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dip"
+android:background="@null"
+android:text="@string/btn_link_to_login"
+android:textAllCaps="false"
+android:textColor="@color/white"
+android:textSize="15dp" /&gt;
+&lt;/LinearLayout&gt;
+
+&lt;ProgressBar
+android:id="@+id/progressBar"
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_gravity="center|bottom"
+android:layout_marginBottom="20dp"
+android:visibility="gone" /&gt;
+&lt;/android.support.design.widget.CoordinatorLayout&gt;
+</pre>
+<p>දැන් අලුත් SignupActivity කියලා File එකක් හදා ගන්න. ඒකෙ මේ Code එක දාගන්න.</p>
+<p><span class="amp-wp-cc68ddc">SignupActivity.java</span></p>
+<pre>package info.androidhive.firebase;
+ 
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+ 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+ 
+public class SignupActivity extends AppCompatActivity {
+ 
+    private EditText inputEmail, inputPassword;
+    private Button btnSignIn, btnSignUp, btnResetPassword;
+    private ProgressBar progressBar;
+    private FirebaseAuth auth;
+ 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_signup);
+ 
+        //Get Firebase auth instance
+        auth = FirebaseAuth.getInstance();
+ 
+        btnSignIn = (Button) findViewById(R.id.sign_in_button);
+        btnSignUp = (Button) findViewById(R.id.sign_up_button);
+        inputEmail = (EditText) findViewById(R.id.email);
+        inputPassword = (EditText) findViewById(R.id.password);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        btnResetPassword = (Button) findViewById(R.id.btn_reset_password);
+ 
+        btnResetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SignupActivity.this, ResetPasswordActivity.class));
+            }
+        });
+ 
+        btnSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+ 
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+ 
+                String email = inputEmail.getText().toString().trim();
+                String password = inputPassword.getText().toString().trim();
+ 
+                if (TextUtils.isEmpty(email)) {
+                    Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+ 
+                if (TextUtils.isEmpty(password)) {
+                    Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+ 
+                if (password.length() &lt; 6) {
+                    Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+ 
+                progressBar.setVisibility(View.VISIBLE);
+                //create user
+                auth.createUserWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(SignupActivity.this, new OnCompleteListener() {
+                            @Override
+                            public void onComplete(@NonNull Task task) {
+                                Toast.makeText(SignupActivity.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
+                                progressBar.setVisibility(View.GONE);
+                                // If sign in fails, display a message to the user. If sign in succeeds
+                                // the auth state listener will be notified and logic to handle the
+                                // signed in user can be handled in the listener.
+                                if (!task.isSuccessful()) {
+                                    Toast.makeText(SignupActivity.this, "Authentication failed." + task.getException(),
+                                            Toast.LENGTH_SHORT).show();
+                                } else {
+                                    startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                                    finish();
+                                }
+                            }
+                        });
+ 
+            }
+        });
+    }
+ 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        progressBar.setVisibility(View.GONE);
+    }
+}
+
+</pre>
+<p>මේ XML file එකෙන් Users ලට Signup වෙන්න මේ වගේ Interface එකක් හැදෙනවා.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/android-firebase-sign-up-screen-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1160 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/android-firebase-sign-up-screen-2-300x292.jpg 300w, /wp-content/uploads/2018/07/android-firebase-sign-up-screen-2.jpg 639w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/android-firebase-sign-up-screen-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1160 aligncenter" sizes="(max-width: 300px) 100vw, 300px"></noscript></amp-img></p>
+<p>හැබැයි මේ Interface එක අපිට test කරන්න විදියක් නෑ තාම. මොකද අපේ Start Activity එක හදලා තියෙන්නේ Login Activity එකට නිසා. අපි දැන් අපේ Login Activity එක හදලා ඒකෙන් Signup Activity එකට Link එකක් හදා ගමු.</p>
+<h2 class="amp-wp-cdd8ca0"><strong>Log In with Email &amp; Password</strong></h2>
+<p>මේ තියෙන්නේ activity_login.xml එකේ Source Code එක.</p>
+<p><span class="amp-wp-cc68ddc">activity_login.xml</span></p>
+<pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="info.androidhive.firebase.LoginActivity"&gt;
+
+&lt;LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@color/colorPrimary"
+android:gravity="center"
+android:orientation="vertical"
+android:padding="@dimen/activity_horizontal_margin"&gt;
+
+
+&lt;ImageView
+android:layout_width="@dimen/logo_w_h"
+android:layout_height="@dimen/logo_w_h"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="30dp"
+android:src="@mipmap/ic_launcher" /&gt;
+
+&lt;android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"&gt;
+
+&lt;EditText
+android:id="@+id/email"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="10dp"
+android:hint="@string/hint_email"
+android:inputType="textEmailAddress"
+android:textColor="@android:color/white"
+android:textColorHint="@android:color/white" /&gt;
+&lt;/android.support.design.widget.TextInputLayout&gt;
+
+&lt;android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"&gt;
+
+&lt;EditText
+android:id="@+id/password"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="10dp"
+android:hint="@string/hint_password"
+android:inputType="textPassword"
+android:textColor="@android:color/white"
+android:textColorHint="@android:color/white" /&gt;
+&lt;/android.support.design.widget.TextInputLayout&gt;
+
+&lt;!-- Login Button --&gt;
+
+&lt;Button
+android:id="@+id/btn_login"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dip"
+android:background="@color/colorAccent"
+android:text="@string/btn_login"
+android:textColor="@android:color/black" /&gt;
+
+&lt;Button
+android:id="@+id/btn_reset_password"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dip"
+android:background="@null"
+android:text="@string/btn_forgot_password"
+android:textAllCaps="false"
+android:textColor="@color/colorAccent" /&gt;
+
+&lt;!-- Link to Login Screen --&gt;
+
+&lt;Button
+android:id="@+id/btn_signup"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dip"
+android:background="@null"
+android:text="@string/btn_link_to_register"
+android:textAllCaps="false"
+android:textColor="@color/white"
+android:textSize="15dp" /&gt;
+&lt;/LinearLayout&gt;
+
+&lt;ProgressBar
+android:id="@+id/progressBar"
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_gravity="center|bottom"
+android:layout_marginBottom="20dp"
+android:visibility="gone" /&gt;
+&lt;/android.support.design.widget.CoordinatorLayout&gt;
+</pre>
+<p>Firebase Console එකෙන් අපිට පුළුවන් සරලවම signInWithEmailAndPassword() කියන Function එක call කරලා User කෙනෙක් Sing in කරවන්න. ඒකට අදාල Activity එක මේ විදියට ලියා ගන්න පුළුවන්.</p>
+<p>LoginActivity.java</p>
+<pre>package info.androidhive.firebase;
+ 
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+ 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+ 
+public class LoginActivity extends AppCompatActivity {
+ 
+    private EditText inputEmail, inputPassword;
+    private FirebaseAuth auth;
+    private ProgressBar progressBar;
+    private Button btnSignup, btnLogin, btnReset;
+ 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+ 
+        //Get Firebase auth instance
+        auth = FirebaseAuth.getInstance();
+ 
+        if (auth.getCurrentUser() != null) {
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            finish();
+        }
+ 
+        // set the view now
+        setContentView(R.layout.activity_login);
+ 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+ 
+        inputEmail = (EditText) findViewById(R.id.email);
+        inputPassword = (EditText) findViewById(R.id.password);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        btnSignup = (Button) findViewById(R.id.btn_signup);
+        btnLogin = (Button) findViewById(R.id.btn_login);
+        btnReset = (Button) findViewById(R.id.btn_reset_password);
+ 
+        //Get Firebase auth instance
+        auth = FirebaseAuth.getInstance();
+ 
+        btnSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+            }
+        });
+ 
+        btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
+            }
+        });
+ 
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = inputEmail.getText().toString();
+                final String password = inputPassword.getText().toString();
+ 
+                if (TextUtils.isEmpty(email)) {
+                    Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+ 
+                if (TextUtils.isEmpty(password)) {
+                    Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+ 
+                progressBar.setVisibility(View.VISIBLE);
+ 
+                //authenticate user
+                auth.signInWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener() {
+                            @Override
+                            public void onComplete(@NonNull Task task) {
+                                // If sign in fails, display a message to the user. If sign in succeeds
+                                // the auth state listener will be notified and logic to handle the
+                                // signed in user can be handled in the listener.
+                                progressBar.setVisibility(View.GONE);
+                                if (!task.isSuccessful()) {
+                                    // there was an error
+                                    if (password.length() &lt; 6) {
+                                        inputPassword.setError(getString(R.string.minimum_password));
+                                    } else {
+                                        Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
+                                    }
+                                } else {
+                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
+                            }
+                        });
+            }
+        });
+    }
+}
+</pre>
+<p>මේකෙන් අපිට මේ වගේ Interface එකක් හදා ගන්න පුළුවන් වෙනවා..</p>
+<p><amp-img src="/wp-content/uploads/2018/07/android-firebase-login-screen-2-300x291.jpg" alt="" width="300" height="291" class="size-medium wp-image-1161 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/android-firebase-login-screen-2-300x291.jpg 300w, /wp-content/uploads/2018/07/android-firebase-login-screen-2.jpg 631w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/android-firebase-login-screen-2-300x291.jpg" alt="" width="300" height="291" class="size-medium wp-image-1161 aligncenter" sizes="(max-width: 300px) 100vw, 300px"></noscript></amp-img></p>
+<p>දැන් App එක run කරලා බලන්න Errors තියෙනවද කියලා. Signup වෙලා බලන්න හරියට Register වෙනවද කියලා. ඒක Firebase Console එකේ මේ විදියට බලන්න පුළුවන්.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/Capture-6-300x75.png" alt="" width="584" height="146" class="wp-image-1162 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/Capture-6-300x75.png 300w, /wp-content/uploads/2018/07/Capture-6-768x191.png 768w, /wp-content/uploads/2018/07/Capture-6-1024x255.png 1024w, /wp-content/uploads/2018/07/Capture-6.png 1362w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/Capture-6-300x75.png" alt="" width="584" height="146" class="wp-image-1162 aligncenter" sizes="(max-width: 584px) 100vw, 584px"></noscript></amp-img></p>
+<p>ඊළඟට බලමු කොහොමද Password Reset Email එකක් යවන්නේ කියලා..</p>
+<p> </p>
+<p> </p>
+<h2 class="amp-wp-cdd8ca0"><strong>Forgot Password – Send Reset Password Email</strong></h2>
+<p> </p>
+<p> </p>
+<p>මේකට අලුත් File 2ක් හදා ගන්න ඕන. <strong>ResetPasswordActivity.java , activity_reset_password.xml </strong>File 2 හදා ගන්න.</p>
+<p><span class="amp-wp-cc68ddc">activity_reset_password.xml</span></p>
+<pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="center"
+android:background="@color/colorPrimary"
+android:fitsSystemWindows="true"
+tools:context="info.androidhive.firebase.LoginActivity"&gt;
+
+&lt;LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="30dp"
+android:gravity="center"
+android:orientation="vertical"
+android:padding="@dimen/activity_horizontal_margin"&gt;
+
+
+&lt;ImageView
+android:layout_width="@dimen/logo_w_h"
+android:layout_height="@dimen/logo_w_h"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="10dp"
+android:src="@mipmap/ic_launcher" /&gt;
+
+&lt;TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:padding="10dp"
+android:text="@string/lbl_forgot_password"
+android:textColor="@android:color/white"
+android:textSize="20dp" /&gt;
+
+&lt;TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginBottom="10dp"
+android:gravity="center_horizontal"
+android:padding="@dimen/activity_horizontal_margin"
+android:text="@string/forgot_password_msg"
+android:textColor="@android:color/white"
+android:textSize="14dp" /&gt;
+
+&lt;android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"&gt;
+
+&lt;EditText
+android:id="@+id/email"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="10dp"
+android:layout_marginTop="20dp"
+android:hint="@string/hint_email"
+android:inputType="textEmailAddress"
+android:textColor="@android:color/white"
+android:textColorHint="@android:color/white" /&gt;
+&lt;/android.support.design.widget.TextInputLayout&gt;
+
+&lt;!-- Login Button --&gt;
+
+&lt;Button
+android:id="@+id/btn_reset_password"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dip"
+android:background="@color/colorAccent"
+android:text="@string/btn_reset_password"
+android:textColor="@android:color/black" /&gt;
+
+&lt;Button
+android:id="@+id/btn_back"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:background="@null"
+android:text="@string/btn_back"
+android:textColor="@color/colorAccent" /&gt;
+
+&lt;/LinearLayout&gt;
+
+&lt;ProgressBar
+android:id="@+id/progressBar"
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_gravity="center|bottom"
+android:layout_marginBottom="20dp"
+android:visibility="gone" /&gt;
+&lt;/android.support.design.widget.CoordinatorLayout&gt;
+
+</pre>
+<p><span class="amp-wp-cc68ddc"><strong>ResetPasswordActivity.java</strong></span></p>
+<pre>package info.androidhive.firebase;
+ 
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+ 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+ 
+public class ResetPasswordActivity extends AppCompatActivity {
+ 
+    private EditText inputEmail;
+    private Button btnReset, btnBack;
+    private FirebaseAuth auth;
+    private ProgressBar progressBar;
+ 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_reset_password);
+ 
+        inputEmail = (EditText) findViewById(R.id.email);
+        btnReset = (Button) findViewById(R.id.btn_reset_password);
+        btnBack = (Button) findViewById(R.id.btn_back);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+ 
+        auth = FirebaseAuth.getInstance();
+ 
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+ 
+        btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+ 
+                String email = inputEmail.getText().toString().trim();
+ 
+                if (TextUtils.isEmpty(email)) {
+                    Toast.makeText(getApplication(), "Enter your registered email id", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+ 
+                progressBar.setVisibility(View.VISIBLE);
+                auth.sendPasswordResetEmail(email)
+                        .addOnCompleteListener(new OnCompleteListener() {
+                            @Override
+                            public void onComplete(@NonNull Task task) {
+                                if (task.isSuccessful()) {
+                                    Toast.makeText(ResetPasswordActivity.this, "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    Toast.makeText(ResetPasswordActivity.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                                }
+ 
+                                progressBar.setVisibility(View.GONE);
+                            }
+                        });
+            }
+        });
+    }
+ 
+}
+</pre>
+<p>ඒකෙන් මේ වගේ Interface එකක් හැදෙනවා.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/android-firebase-forgot-password-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1163 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/android-firebase-forgot-password-2-300x292.jpg 300w, /wp-content/uploads/2018/07/android-firebase-forgot-password-2.jpg 636w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/android-firebase-forgot-password-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1163 aligncenter" sizes="(max-width: 300px) 100vw, 300px"></noscript></amp-img></p>
+<p>දැන් App එක run කරලා බලන්න දැන්ට Register වෙලා ඉන්න Email එකක් දීලා Password Reset Mail එකක් එනවද කියලා. මේ විදියේ Email එකක් එන්නේ.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/android-firebase-reset-password-email-300x122.png" alt="" width="642" height="261" class="wp-image-1164 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/android-firebase-reset-password-email-300x122.png 300w, /wp-content/uploads/2018/07/android-firebase-reset-password-email.png 720w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/android-firebase-reset-password-email-300x122.png" alt="" width="642" height="261" class="wp-image-1164 aligncenter" sizes="(max-width: 642px) 100vw, 642px"></noscript></amp-img></p>
+<p>දැන් අපේ මූලික ආකෘතිය හදාගෙන ඉවරයි. අපිට ඕන නම් මීට අමතරව Profile Page එකක් හදා ගන්න පුළුවන්. එක එක Function කිහිපයක්ම තියෙනවා Firebase එක්ක ලේසියෙන් කරගන්න පුළුවන්. ඒවායින් කිහිපයක් මේ විදියට හදා ගන්න පුළුවන්.</p>
+<h2>Checking User Session</h2>
+<pre>auth = FirebaseAuth.getInstance();
+        if (auth.getCurrentUser() != null) {
+            // User is logged in
+        }
+</pre>
+<h2>Change Password</h2>
+<pre>FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+ 
+user.updatePassword(newPassword.getText().toString().trim())
+            .addOnCompleteListener(new OnCompleteListener() {
+        @Override
+        public void onComplete(@NonNull Task task) {
+            if (task.isSuccessful()) {
+                Toast.makeText(MainActivity.this, "Password is updated!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(MainActivity.this, "Failed to update password!", Toast.LENGTH_SHORT).show();
+                progressBar.setVisibility(View.GONE);
+            }
+        }
+    });
+</pre>
+<h2>Change Email</h2>
+<pre>FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+ 
+user.updateEmail(newEmail.getText().toString().trim())
+            .addOnCompleteListener(new OnCompleteListener() {
+        @Override
+        public void onComplete(@NonNull Task task) {
+            if (task.isSuccessful()) {
+                Toast.makeText(MainActivity.this, "Email address is updated.", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(MainActivity.this, "Failed to update email!", Toast.LENGTH_LONG).show();
+            }
+        }
+    });
+</pre>
+<h2>Deleting Account / User</h2>
+<pre>FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+if (user != null) {
+        user.delete()
+                .addOnCompleteListener(new OnCompleteListener() {
+                    @Override
+                    public void onComplete(@NonNull Task task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(MainActivity.this, "Your profile is deleted:( Create a account now!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(MainActivity.this, "Failed to delete your account!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
+</pre>
+<h2>Sign Out</h2>
+<pre>auth.signOut();
+ 
+// this listener will be called when there is change in firebase user session
+FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    // user auth state is changed - user is null
+                    // launch login activity
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                    finish();
+                }
+            }
+        };
+</pre>
+<p>මේ Functions ඔක්කොම එකට එකතු කරලා අපිට පුළුවන් Profile Page එක හදා ගන්න. ඒක අපි ActivityMain එකේ හදමු. ඒක මේ විදියට Code කරගන්න.</p>
+<p><span class="amp-wp-cc68ddc">activity_main.xml</span></p>
+<pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context=".MainActivity"&gt;
+
+&lt;android.support.design.widget.AppBarLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:theme="@style/AppTheme.AppBarOverlay"
+app:elevation="0dp"&gt;
+
+&lt;android.support.v7.widget.Toolbar
+android:id="@+id/toolbar"
+android:layout_width="match_parent"
+android:layout_height="?attr/actionBarSize"
+android:background="?attr/colorPrimaryDark"
+app:layout_scrollFlags="scroll|enterAlways"
+app:popupTheme="@style/AppTheme.PopupOverlay" /&gt;
+
+&lt;/android.support.design.widget.AppBarLayout&gt;
+
+&lt;LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"&gt;
+
+&lt;EditText
+android:id="@+id/old_email"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="@string/hint_email"
+android:inputType="textEmailAddress"
+android:maxLines="1"
+android:singleLine="true" /&gt;
+
+&lt;EditText
+android:id="@+id/new_email"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="@string/hint_new_email"
+android:inputType="textEmailAddress"
+android:maxLines="1"
+android:singleLine="true" /&gt;
+
+&lt;EditText
+android:id="@+id/password"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:focusableInTouchMode="true"
+android:hint="@string/prompt_password"
+android:imeActionId="@+id/login"
+android:imeOptions="actionUnspecified"
+android:inputType="textPassword"
+android:maxLines="1"
+android:singleLine="true" /&gt;
+
+&lt;EditText
+android:id="@+id/newPassword"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:focusableInTouchMode="true"
+android:hint="@string/new_pass"
+android:imeActionId="@+id/login"
+android:imeOptions="actionUnspecified"
+android:inputType="textPassword"
+android:maxLines="1"
+android:singleLine="true" /&gt;
+
+&lt;Button
+android:id="@+id/changeEmail"
+style="?android:textAppearanceSmall"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="@color/colorPrimaryDark"
+android:text="@string/btn_change"
+android:textColor="@android:color/white"
+android:textStyle="bold" /&gt;
+
+&lt;Button
+android:id="@+id/changePass"
+style="?android:textAppearanceSmall"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="@color/colorPrimaryDark"
+android:text="@string/btn_change"
+android:textColor="@android:color/white"
+android:textStyle="bold" /&gt;
+
+&lt;Button
+android:id="@+id/send"
+style="?android:textAppearanceSmall"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="@color/colorPrimaryDark"
+android:text="@string/btn_send"
+android:textColor="@android:color/white"
+android:textStyle="bold" /&gt;
+
+&lt;ProgressBar
+android:id="@+id/progressBar"
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:visibility="gone" /&gt;
+
+&lt;Button
+android:id="@+id/remove"
+style="?android:textAppearanceSmall"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="@color/colorPrimaryDark"
+android:text="@string/btn_remove"
+android:textColor="@android:color/white"
+android:textStyle="bold" /&gt;
+
+&lt;Button
+android:id="@+id/change_email_button"
+style="?android:textAppearanceSmall"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:text="@string/change_email"
+android:textStyle="bold" /&gt;
+
+&lt;Button
+android:id="@+id/change_password_button"
+style="?android:textAppearanceSmall"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:text="@string/change_password"
+android:textStyle="bold" /&gt;
+
+&lt;Button
+android:id="@+id/sending_pass_reset_button"
+style="?android:textAppearanceSmall"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:text="@string/send_password_reset_email"
+android:textStyle="bold" /&gt;
+
+&lt;Button
+android:id="@+id/remove_user_button"
+style="?android:textAppearanceSmall"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:text="@string/remove_user"
+android:textStyle="bold" /&gt;
+
+&lt;Button
+android:id="@+id/sign_out"
+style="?android:textAppearanceSmall"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="@color/colorPrimary"
+android:text="@string/btn_sign_out"
+android:textColor="@android:color/white"
+android:textStyle="bold" /&gt;
+
+&lt;/LinearLayout&gt;
+
+&lt;/android.support.design.widget.CoordinatorLayout&gt;
+</pre>
+<p><span class="amp-wp-cc68ddc">MainActivity.java</span></p>
+<pre>package info.androidhive.firebase;
+ 
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+ 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+ 
+public class MainActivity extends AppCompatActivity {
+ 
+    private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
+            changeEmail, changePassword, sendEmail, remove, signOut;
+ 
+    private EditText oldEmail, newEmail, password, newPassword;
+    private ProgressBar progressBar;
+    private FirebaseAuth.AuthStateListener authListener;
+    private FirebaseAuth auth;
+ 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+ 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(getString(R.string.app_name));
+        setSupportActionBar(toolbar);
+ 
+        //get firebase auth instance
+        auth = FirebaseAuth.getInstance();
+ 
+        //get current user
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+ 
+        authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    // user auth state is changed - user is null
+                    // launch login activity
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                    finish();
+                }
+            }
+        };
+ 
+        btnChangeEmail = (Button) findViewById(R.id.change_email_button);
+        btnChangePassword = (Button) findViewById(R.id.change_password_button);
+        btnSendResetEmail = (Button) findViewById(R.id.sending_pass_reset_button);
+        btnRemoveUser = (Button) findViewById(R.id.remove_user_button);
+        changeEmail = (Button) findViewById(R.id.changeEmail);
+        changePassword = (Button) findViewById(R.id.changePass);
+        sendEmail = (Button) findViewById(R.id.send);
+        remove = (Button) findViewById(R.id.remove);
+        signOut = (Button) findViewById(R.id.sign_out);
+ 
+        oldEmail = (EditText) findViewById(R.id.old_email);
+        newEmail = (EditText) findViewById(R.id.new_email);
+        password = (EditText) findViewById(R.id.password);
+        newPassword = (EditText) findViewById(R.id.newPassword);
+ 
+        oldEmail.setVisibility(View.GONE);
+        newEmail.setVisibility(View.GONE);
+        password.setVisibility(View.GONE);
+        newPassword.setVisibility(View.GONE);
+        changeEmail.setVisibility(View.GONE);
+        changePassword.setVisibility(View.GONE);
+        sendEmail.setVisibility(View.GONE);
+        remove.setVisibility(View.GONE);
+ 
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+ 
+        if (progressBar != null) {
+            progressBar.setVisibility(View.GONE);
+        }
+ 
+        btnChangeEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oldEmail.setVisibility(View.GONE);
+                newEmail.setVisibility(View.VISIBLE);
+                password.setVisibility(View.GONE);
+                newPassword.setVisibility(View.GONE);
+                changeEmail.setVisibility(View.VISIBLE);
+                changePassword.setVisibility(View.GONE);
+                sendEmail.setVisibility(View.GONE);
+                remove.setVisibility(View.GONE);
+            }
+        });
+ 
+        changeEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
+                if (user != null &amp;&amp; !newEmail.getText().toString().trim().equals("")) {
+                    user.updateEmail(newEmail.getText().toString().trim())
+                            .addOnCompleteListener(new OnCompleteListener() {
+                                @Override
+                                public void onComplete(@NonNull Task task) {
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(MainActivity.this, "Email address is updated. Please sign in with new email id!", Toast.LENGTH_LONG).show();
+                                        signOut();
+                                        progressBar.setVisibility(View.GONE);
+                                    } else {
+                                        Toast.makeText(MainActivity.this, "Failed to update email!", Toast.LENGTH_LONG).show();
+                                        progressBar.setVisibility(View.GONE);
+                                    }
+                                }
+                            });
+                } else if (newEmail.getText().toString().trim().equals("")) {
+                    newEmail.setError("Enter email");
+                    progressBar.setVisibility(View.GONE);
+                }
+            }
+        });
+ 
+        btnChangePassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oldEmail.setVisibility(View.GONE);
+                newEmail.setVisibility(View.GONE);
+                password.setVisibility(View.GONE);
+                newPassword.setVisibility(View.VISIBLE);
+                changeEmail.setVisibility(View.GONE);
+                changePassword.setVisibility(View.VISIBLE);
+                sendEmail.setVisibility(View.GONE);
+                remove.setVisibility(View.GONE);
+            }
+        });
+ 
+        changePassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
+                if (user != null &amp;&amp; !newPassword.getText().toString().trim().equals("")) {
+                    if (newPassword.getText().toString().trim().length() &lt; 6) {
+                        newPassword.setError("Password too short, enter minimum 6 characters");
+                        progressBar.setVisibility(View.GONE);
+                    } else {
+                        user.updatePassword(newPassword.getText().toString().trim())
+                                .addOnCompleteListener(new OnCompleteListener() {
+                                    @Override
+                                    public void onComplete(@NonNull Task task) {
+                                        if (task.isSuccessful()) {
+                                            Toast.makeText(MainActivity.this, "Password is updated, sign in with new password!", Toast.LENGTH_SHORT).show();
+                                            signOut();
+                                            progressBar.setVisibility(View.GONE);
+                                        } else {
+                                            Toast.makeText(MainActivity.this, "Failed to update password!", Toast.LENGTH_SHORT).show();
+                                            progressBar.setVisibility(View.GONE);
+                                        }
+                                    }
+                                });
+                    }
+                } else if (newPassword.getText().toString().trim().equals("")) {
+                    newPassword.setError("Enter password");
+                    progressBar.setVisibility(View.GONE);
+                }
+            }
+        });
+ 
+        btnSendResetEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oldEmail.setVisibility(View.VISIBLE);
+                newEmail.setVisibility(View.GONE);
+                password.setVisibility(View.GONE);
+                newPassword.setVisibility(View.GONE);
+                changeEmail.setVisibility(View.GONE);
+                changePassword.setVisibility(View.GONE);
+                sendEmail.setVisibility(View.VISIBLE);
+                remove.setVisibility(View.GONE);
+            }
+        });
+ 
+        sendEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
+                if (!oldEmail.getText().toString().trim().equals("")) {
+                    auth.sendPasswordResetEmail(oldEmail.getText().toString().trim())
+                            .addOnCompleteListener(new OnCompleteListener() {
+                                @Override
+                                public void onComplete(@NonNull Task task) {
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(MainActivity.this, "Reset password email is sent!", Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.GONE);
+                                    } else {
+                                        Toast.makeText(MainActivity.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.GONE);
+                                    }
+                                }
+                            });
+                } else {
+                    oldEmail.setError("Enter email");
+                    progressBar.setVisibility(View.GONE);
+                }
+            }
+        });
+ 
+        btnRemoveUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
+                if (user != null) {
+                    user.delete()
+                            .addOnCompleteListener(new OnCompleteListener() {
+                                @Override
+                                public void onComplete(@NonNull Task task) {
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(MainActivity.this, "Your profile is deleted:( Create a account now!", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(MainActivity.this, SignupActivity.class));
+                                        finish();
+                                        progressBar.setVisibility(View.GONE);
+                                    } else {
+                                        Toast.makeText(MainActivity.this, "Failed to delete your account!", Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.GONE);
+                                    }
+                                }
+                            });
+                }
+            }
+        });
+ 
+        signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signOut();
+            }
+        });
+ 
+    }
+ 
+    //sign out method
+    public void signOut() {
+        auth.signOut();
+    }
+ 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        progressBar.setVisibility(View.GONE);
+    }
+ 
+    @Override
+    public void onStart() {
+        super.onStart();
+        auth.addAuthStateListener(authListener);
+    }
+ 
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (authListener != null) {
+            auth.removeAuthStateListener(authListener);
+        }
+    }
+}
+</pre>
+<p>මේ වගේ Interface එකක් මේ xml එකෙන් හදා ගන්න පුළුවන්.</p>
+<p><amp-img src="/wp-content/uploads/2018/07/android-firebase-profile-activity-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1165 aligncenter amp-wp-enforced-sizes" srcset="/wp-content/uploads/2018/07/android-firebase-profile-activity-2-300x292.jpg 300w, /wp-content/uploads/2018/07/android-firebase-profile-activity-2.jpg 633w" layout="intrinsic"><noscript><img src="/wp-content/uploads/2018/07/android-firebase-profile-activity-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1165 aligncenter" sizes="(max-width: 300px) 100vw, 300px"></noscript></amp-img>හිතුවට වැඩිය ටිකක් වැඩි වුණා Content එක. ලිපි 2කට දාලා වැඩක් නැති නිසා එකේම ලියලා දැම්මේ. Compile කරනකොට මොකක් හරි අවුලක් ආවොත් Comment එකක් දාන්න. නැත්නම් මේ ලිපියේ මොකක් හරි වැරැද්දක් Edit වෙන්න ඕන තැනක් තියෙනවා නම් ඒකත් කියන්න.</p>
+<p>අලුත් ලිපියකින් හමු වෙමු …….</p>
+<div id="emojics-root"></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/index.php/category/android/" rel="category tag">android</a>, <a href="/index.php/category/programming/" rel="category tag">Programming</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/index.php/tag/android/" rel="tag">android</a>, <a href="/index.php/tag/authentication/" rel="tag">authentication</a>, <a href="/index.php/tag/firebase/" rel="tag">firebase</a>, <a href="/index.php/tag/login/" rel="tag">login</a>, <a href="/index.php/tag/register/" rel="tag">register</a>, <a href="/index.php/tag/reset/" rel="tag">reset</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/index.php/2018/07/09/firebase-login-registration-app/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>The SIGMA</h2>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>
