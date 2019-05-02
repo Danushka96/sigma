@@ -6,12 +6,12 @@
 	<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:description" content="මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව." />
 <meta name="twitter:title" content="VueJs 2 - 04 Event එක්ක වැඩ කරමු - The SIGMA" />
-<meta name="twitter:image" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta name="twitter:image" content="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/vuejs-logo.png" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="VueJs 2 - 04 Event එක්ක වැඩ කරමු - The SIGMA" />
 <meta property="og:description" content="මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව." />
-<meta property="og:url" content="/index.php/2018/04/14/vuejs-2-04/" />
+<meta property="og:url" content="https://danushka96.github.io/sigma/index.php/2018/04/14/vuejs-2-04/" />
 <meta property="og:site_name" content="The SIGMA" />
 <meta property="article:tag" content="events" />
 <meta property="article:tag" content="Vue" />
@@ -20,14 +20,14 @@
 <meta property="article:published_time" content="2018-04-14T15:17:34+00:00" />
 <meta property="article:modified_time" content="2018-04-27T20:05:31+00:00" />
 <meta property="og:updated_time" content="2018-04-27T20:05:31+00:00" />
-<meta property="og:image" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
-<meta property="og:image:secure_url" content="/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:image" content="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/vuejs-logo.png" />
+<meta property="og:image:secure_url" content="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/vuejs-logo.png" />
 <meta property="og:image:width" content="912" />
 <meta property="og:image:height" content="364" />
 	<title>VueJs 2 - 04 Event එක්ක වැඩ කරමු - The SIGMA</title>
-		<link rel="canonical" href="/index.php/2018/04/14/vuejs-2-04/" />
+		<link rel="canonical" href="https://danushka96.github.io/sigma/index.php/2018/04/14/vuejs-2-04/" />
 	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"\/index.php\/2018\/04\/14\/vuejs-2-04\/","headline":"VueJs 2 &#8211; 04 Event එක්ක වැඩ කරමු","datePublished":"2018-04-14T15:17:34+00:00","dateModified":"2018-04-27T20:05:31+00:00","author":{"@type":"Person","name":"Prasad Kavinda"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2018\/04\/vuejs-logo.png","width":912,"height":364},"description":"මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව."}</script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"The Sigma","logo":{"@type":"ImageObject","url":"https:\/\/danushka96.github.io\/sigma\/wp-content\/uploads\/2018\/03\/29136634_567036186984192_1224655159326408704_n.jpg","width":83,"height":60}},"@type":"Article","mainEntityOfPage":"https:\/\/danushka96.github.io\/sigma\/index.php\/2018\/04\/14\/vuejs-2-04\/","headline":"VueJs 2 &#8211; 04 Event එක්ක වැඩ කරමු","datePublished":"2018-04-14T15:17:34+00:00","dateModified":"2018-04-27T20:05:31+00:00","author":{"@type":"Person","name":"Prasad Kavinda"},"image":{"@type":"ImageObject","url":"https:\/\/danushka96.github.io\/sigma\/wp-content\/uploads\/2018\/04\/vuejs-logo.png","width":912,"height":364},"description":"මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව."}</script>
 	<meta name="generator" content="AMP Plugin v1.1.1; mode=reader"><meta name="generator" content="WordPress 5.1.1" />
 <meta name="generator" content="Everest Forms 1.4.8" />
 	<style amp-custom>
@@ -342,7 +342,7 @@ amp-carousel > amp-img > img {
 }
 
 .amp-wp-iframe-placeholder {
-	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background: #c2c2c2 url( https://danushka96.github.io/sigma/wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
 	background-size: 48px 48px;
 	min-height: 48px;
 }
@@ -444,7 +444,7 @@ text-decoration: underline;
 
 <header id="top" class="amp-wp-header">
 	<div>
-		<a href="/">
+		<a href="https://danushka96.github.io/sigma/">
 									<span class="amp-site-title">
 				The SIGMA			</span>
 		</a>
@@ -466,10 +466,10 @@ text-decoration: underline;
 	</header>
 
 	<figure class="amp-wp-article-featured-image wp-caption">
-	<amp-img width="750" height="299" src="/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="/wp-content/uploads/2018/04/vuejs-logo.png 912w, /wp-content/uploads/2018/04/vuejs-logo-300x120.png 300w, /wp-content/uploads/2018/04/vuejs-logo-768x307.png 768w" layout="intrinsic"><noscript><img width="750" height="299" src="/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
+	<amp-img width="750" height="299" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/vuejs-logo.png 912w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/vuejs-logo-300x120.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/vuejs-logo-768x307.png 768w" layout="intrinsic"><noscript><img width="750" height="299" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/vuejs-logo.png" class="attachment-large size-large wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px"></noscript></amp-img>	</figure>
 
 	<div class="amp-wp-article-content">
-		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම එසේම වේවා 😀 ! Vue ගැන ලියන 4 වෙනි post එක. <a href="/index.php/2018/04/12/vuejs-2-03/">කලින් post එකේ</a>දි අපි Vue directives ගැන කතා කරානෙ. ඒකෙදි කිව්ව වගේම අද කියන්න යන්නෙ Vue වලින් events handle කරන්නෙ කොහොමද කියල. මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව. v-on එකට මේ වගේ syntax එකක් තමයි තියෙන්නෙ.</p>
+		<span class="rt-reading-time amp-wp-19fae44"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම එසේම වේවා 😀 ! Vue ගැන ලියන 4 වෙනි post එක. <a href="https://danushka96.github.io/sigma/index.php/2018/04/12/vuejs-2-03/">කලින් post එකේ</a>දි අපි Vue directives ගැන කතා කරානෙ. ඒකෙදි කිව්ව වගේම අද කියන්න යන්නෙ Vue වලින් events handle කරන්නෙ කොහොමද කියල. මං හිතනව ඔයාල events කියන්නෙ මොනවද කියල දන්නව ඇති කියල. mouse click, drag, keyup, keydown ඔය වගේ ඒවනෙ. (ඒ වගේම අපිට custom event උනත් හදන්න පුළුවන්නෙ) මේ events වලට event listeners set කරන්න v-on කියන directive එක භාවිතා කරනව. v-on එකට මේ වගේ syntax එකක් තමයි තියෙන්නෙ.</p>
 <blockquote><p>v-on:<strong>event</strong>=”<strong>expression or method</strong>“</p></blockquote>
 <p>මේකෙ event කියන්නෙ අපි listen කරන event එක.(click, keyup, keydown, submit වගේ) ඒකට value එක විදියට දෙන්න ඕනෙ, ඒ event එක trigger උනාම වෙන්න ඕනෙ මොකද්ද කියල. ඒකට ඕන නම් එතනම expression එකක් ලියන්නත් පුළුවන් නැත්තම් (methods object එකේ) define කරපු method එකක් දෙන්න පුළුවන්. අපි උදාහරණයකින් බලමු කොහොමද මේක කරන්නෙ කියල.</p>
 <p>මගේ data object එකේ තියෙන age කියන අගය button එකක් click කරද්දි එකකින් වැඩි වෙන්න ඕනෙ කියල හිතමු.</p>
@@ -553,7 +553,7 @@ methods: {
 });
 </pre>
 <p>මේක run කරල බැලුවම මේ වගේ console එකේ print වෙනව බලා ගන්න පුළුවන්.</p>
-<p><amp-img class="wp-image-835 aligncenter amp-wp-enforced-sizes" src="/wp-content/uploads/2018/04/keymodifier-300x191.png" alt="key modifier example output" width="674" height="429" srcset="/wp-content/uploads/2018/04/keymodifier-300x191.png 300w, /wp-content/uploads/2018/04/keymodifier-768x489.png 768w, /wp-content/uploads/2018/04/keymodifier-1024x651.png 1024w, /wp-content/uploads/2018/04/keymodifier.png 1226w" layout="intrinsic"></amp-img></p>
+<p><amp-img class="wp-image-835 aligncenter amp-wp-enforced-sizes" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/keymodifier-300x191.png" alt="key modifier example output" width="674" height="429" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/keymodifier-300x191.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/keymodifier-768x489.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/keymodifier-1024x651.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/keymodifier.png 1226w" layout="intrinsic"></amp-img></p>
 <p>v-model භාවිතා කිරීමේ තවත් වාසියක් මෙතනදි බලාගන්න පුළුවන්. logMessage method එකේ 2වනි පේළියෙදි name=” කියල දීල තියෙනව. මේකෙන් වෙන්නෙ, <kbd>enter</kbd> key එක ඔබන හැම වතාවකදිම, input field එක clear කරන එක. මොකද, (කලින් post එකේ කිව්ව වගේ) data වලට වෙන වෙනස්වීම් දිහා Vue වලින් බලාගෙන ඉන්න නිසා, ඒ data වෙනස් වෙද්දි, ඒ data bind වෙලා තියෙන හැම තැනමත්, ඒ විදියටම වෙනස් වෙනව.</p>
 <p>තව දෙයක් තියෙනව. අපිට ඕනෙ නම් key combination එකක් (<kbd>alt</kbd>+<kbd>enter</kbd>, <kbd>shift</kbd>+<kbd>enter</kbd> වගේ) උනත් යොදන්න පුළුවන්. <kbd>Alt</kbd>+<kbd>Enter</kbd> key combination එක පාවිච්චි කරන්නම් <strong>.alt</strong> modifier එක පාවිච්චි කරන්නයි තියෙන්නෙ.</p>
 <pre>v-on:keyDown.alt.enter="logMessage"
@@ -564,17 +564,17 @@ methods: {
 </pre>
 </blockquote>
 <p>මේවගේ modifier වර්ග තව තියෙනව. මේවයෙ තවත් විස්තර ඔයාලට <a href="https://vuejs.org/v2/guide/events.html">VueJs.org</a> එකෙන් බලන්න පුළුවන්. මම අදට මෙතනින් නවත්තන්නම්. ඊළඟ post එකෙන් හමුවෙමු. අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවහරි තියෙනම් comment එකක් දාන්න. 😀</p>
-<p>ඊළඟ post එකට <a href="/index.php/2018/04/20/vuejs-2-05/">මෙතනින්</a> යන්න.</p>
+<p>ඊළඟ post එකට <a href="https://danushka96.github.io/sigma/index.php/2018/04/20/vuejs-2-05/">මෙතනින්</a> යන්න.</p>
 <div id="emojics-root"></div>	</div>
 
 	<footer class="amp-wp-article-footer">
 			<div class="amp-wp-meta amp-wp-tax-category">
-		Categories: <a href="/index.php/category/vuejs/" rel="category tag">VueJs</a>, <a href="/index.php/category/web-development/" rel="category tag">web development</a>	</div>
+		Categories: <a href="https://danushka96.github.io/sigma/index.php/category/vuejs/" rel="category tag">VueJs</a>, <a href="https://danushka96.github.io/sigma/index.php/category/web-development/" rel="category tag">web development</a>	</div>
 
 	<div class="amp-wp-meta amp-wp-tax-tag">
-		Tags: <a href="/index.php/tag/events/" rel="tag">events</a>, <a href="/index.php/tag/vue/" rel="tag">Vue</a>, <a href="/index.php/tag/vuejs/" rel="tag">VueJs</a>	</div>
+		Tags: <a href="https://danushka96.github.io/sigma/index.php/tag/events/" rel="tag">events</a>, <a href="https://danushka96.github.io/sigma/index.php/tag/vue/" rel="tag">Vue</a>, <a href="https://danushka96.github.io/sigma/index.php/tag/vuejs/" rel="tag">VueJs</a>	</div>
 		<div class="amp-wp-meta amp-wp-comments-link">
-		<a href="/index.php/2018/04/14/vuejs-2-04/#comments">
+		<a href="https://danushka96.github.io/sigma/index.php/2018/04/14/vuejs-2-04/#comments">
 			Leave a Comment		</a>
 	</div>
 	</footer>

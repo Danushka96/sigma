@@ -9,8 +9,8 @@
 
 <channel>
 	<title>reset &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/reset/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/reset/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Firebase එක්ක Login, Registration App එකක් හදමු</title>
-		<link>/index.php/2018/07/09/firebase-login-registration-app/</link>
-				<comments>/index.php/2018/07/09/firebase-login-registration-app/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/#comments</comments>
 				<pubDate>Mon, 09 Jul 2018 08:19:28 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[android]]></category>
@@ -34,9 +34,9 @@
 		<category><![CDATA[register]]></category>
 		<category><![CDATA[reset]]></category>
 
-		<guid isPermaLink="false">/?p=1150</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">12</span> <span class="rt-label rt-postfix">minutes</span></span> මේ ලිපියෙන් කතා කරන්න යන්නේ Firebase එක්ක Android Studio වලින් Login Panel එකක් හදන්නේ කොහොමද කියලා. මේ වැඩේට අපිට මෙන්න මේ Prerequisites ටික අවශ්‍ය වෙනවා. Android Studio ( &#62; 3.0  ) අලුත් Firebase Project එකක්  Android Studio එක ගැන පොඩි දැනුමක් මුලින්ම බලමු මේ Firebase කියන්නේ මොකක්ද කියලා. Firebase කියන්නේ<a class="moretag" href="/index.php/2018/07/09/firebase-login-registration-app/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/07/09/firebase-login-registration-app/">Firebase එක්ක Login, Registration App එකක් හදමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1150</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">12</span> <span class="rt-label rt-postfix">minutes</span></span> මේ ලිපියෙන් කතා කරන්න යන්නේ Firebase එක්ක Android Studio වලින් Login Panel එකක් හදන්නේ කොහොමද කියලා. මේ වැඩේට අපිට මෙන්න මේ Prerequisites ටික අවශ්‍ය වෙනවා. Android Studio ( &#62; 3.0  ) අලුත් Firebase Project එකක්  Android Studio එක ගැන පොඩි දැනුමක් මුලින්ම බලමු මේ Firebase කියන්නේ මොකක්ද කියලා. Firebase කියන්නේ<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/">Firebase එක්ක Login, Registration App එකක් හදමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">12</span> <span class="rt-label rt-postfix">minutes</span></span><p>මේ ලිපියෙන් කතා කරන්න යන්නේ Firebase එක්ක Android Studio වලින් Login Panel එකක් හදන්නේ කොහොමද කියලා. මේ වැඩේට අපිට මෙන්න මේ Prerequisites ටික අවශ්‍ය වෙනවා.</p>
 <ol>
@@ -45,7 +45,7 @@
 <li><span style="font-size: 14px;"> <strong>Android Studio එක ගැන පොඩි දැනුමක්</strong></span></li>
 </ol>
 <p>මුලින්ම බලමු මේ <a href="https://en.wikipedia.org/wiki/Firebase">Firebase</a> කියන්නේ මොකක්ද කියලා. Firebase කියන්නේ Google ලගේ දැනට අවුරුදු කිහිපයකට කලින්(2012) පටන් ගත්ත Project එකක්. මේක යොදා ගන්නේ ගොඩක් දුරට Mobile Application වලට. හැබැයි Web Application වලදි භාවිතා කරන්නත් කිසිම අවුලක් නෑ. ඒවටත් Plugins තියෙනවා දාගන්න. මූලිකවම ගත්තොත් Firebase යොදා ගන්න පුළුවන් වෙන්නේ Analytics Side එකට. හැබැයි මේකෙ තව ගොඩක් දේවල් තියෙනවා. පොඩි Idea එකක් ගන්න මේ Image එක බලන්න.</p>
-<p><img src="/wp-content/uploads/2018/07/firebase-features-300x169.png" alt="" width="767" height="432" class=" wp-image-1151 aligncenter" srcset="/wp-content/uploads/2018/07/firebase-features-300x169.png 300w, /wp-content/uploads/2018/07/firebase-features-768x432.png 768w, /wp-content/uploads/2018/07/firebase-features.png 888w" sizes="(max-width: 767px) 100vw, 767px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/firebase-features-300x169.png" alt="" width="767" height="432" class=" wp-image-1151 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/firebase-features-300x169.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/firebase-features-768x432.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/firebase-features.png 888w" sizes="(max-width: 767px) 100vw, 767px" /></p>
 <p>&nbsp;</p>
 <p>අපි මේ වැඩේදි යොදා ගන්න හදන්නේ<strong> Authentication</strong> කියන Feature එක.</p>
 <p>Developer කෙනෙකුට Firebase වල වාසි ගොඩක් තියෙනවා. ඒ ගැන මුලින්ම බලමු මොනාද කියලා.</p>
@@ -60,15 +60,15 @@
 <p>&nbsp;</p>
 <p>මුලින්ම කරන්න ඕන Android Studio එකේ අලුත් Project එකක් හදා ගන්න එක. මම මේකට භාවිතා කරන්න යන්නේ <strong>API 22: Android 5.1 </strong>version එක. අලුතින් Project එක හදද්දි ඒකත් බලන්න. නැත්නම් XML File වල අවුල් එන්න පුුළුවන්.</p>
 <p>Launch Activity එක LoginActivity කියලා දාගන්න.</p>
-<p><img src="/wp-content/uploads/2018/07/Capture-1-300x94.png" alt="" width="456" height="143" class=" wp-image-1154 aligncenter" srcset="/wp-content/uploads/2018/07/Capture-1-300x94.png 300w, /wp-content/uploads/2018/07/Capture-1.png 557w" sizes="(max-width: 456px) 100vw, 456px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-1-300x94.png" alt="" width="456" height="143" class=" wp-image-1154 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-1-300x94.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-1.png 557w" sizes="(max-width: 456px) 100vw, 456px" /></p>
 <h3 style="text-align: center;"><span style="color: #0000ff;"><em><strong>STEP 01</strong></em></span></h3>
 <p>දැන් Project එක හැදිලා ඉවර වුණාම අපි App එක Firebase එක්ක Connect කරගන්න ඕන. ඒක කරන්නේ මෙහෙමයි. Android Studio එකේ උඩ තියෙන Tools Menu එකේ තියෙනවා Firebase කියලා Menu item එකක්. ඒක උඩ Click කරන්න. එහෙම කලාම දකුණු පැත්තේ අලුත් Menu එකක් Open වෙනවා. ඒකෙ තියෙනවා එක එක Services Install කරගන්න Shortcuts Link කරලා. ඒකෙන් Real time Database කියන එක Select කරගන්න. මේ වගේ.</p>
-<p><img src="/wp-content/uploads/2018/07/Capture-2-225x300.png" alt="" width="336" height="448" class="wp-image-1155 alignleft" srcset="/wp-content/uploads/2018/07/Capture-2-225x300.png 225w, /wp-content/uploads/2018/07/Capture-2.png 441w" sizes="(max-width: 336px) 100vw, 336px" /> <img src="/wp-content/uploads/2018/07/Capture-3-242x300.png" alt="" width="358" height="444" class="alignnone wp-image-1156" srcset="/wp-content/uploads/2018/07/Capture-3-242x300.png 242w, /wp-content/uploads/2018/07/Capture-3.png 437w" sizes="(max-width: 358px) 100vw, 358px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-2-225x300.png" alt="" width="336" height="448" class="wp-image-1155 alignleft" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-2-225x300.png 225w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-2.png 441w" sizes="(max-width: 336px) 100vw, 336px" /> <img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-3-242x300.png" alt="" width="358" height="444" class="alignnone wp-image-1156" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-3-242x300.png 242w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-3.png 437w" sizes="(max-width: 358px) 100vw, 358px" /></p>
 <p>උඩ දකුණු පැත්තේ තියෙන Image එකේ විදියට Connect to Database Button එක Click කරාම අලුත් Window එකක් Open වෙනවා Firebase Console එකට. ඒකෙන් අලුත් Project එකක් හදා ගන්න පුළුවන් Firebase Console එකේ.</p>
-<p><img src="/wp-content/uploads/2018/07/Capture-4-300x80.png" alt="" width="514" height="137" class=" wp-image-1157 aligncenter" srcset="/wp-content/uploads/2018/07/Capture-4-300x80.png 300w, /wp-content/uploads/2018/07/Capture-4.png 679w" sizes="(max-width: 514px) 100vw, 514px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-4-300x80.png" alt="" width="514" height="137" class=" wp-image-1157 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-4-300x80.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-4.png 679w" sizes="(max-width: 514px) 100vw, 514px" /></p>
 <p>මෙතනින් කැමති නමක් දීලා Connect කරන්න. ටික වෙලාවකින් Firebase එක්ක හරියට Connect වුණා කියලා Message එකක් පෙන්නයි.</p>
 <p>දැන් <a href="https://console.firebase.google.com/">https://console.firebase.google.com/</a> එකට ගිහින් ඔයා හදපු Project එක Open කරගන්න. ඒකෙ මේ විදියට Settings Change කරගන්න.</p>
-<p><img src="/wp-content/uploads/2018/07/Capture-5-300x60.png" alt="" width="620" height="124" class=" wp-image-1158 aligncenter" srcset="/wp-content/uploads/2018/07/Capture-5-300x60.png 300w, /wp-content/uploads/2018/07/Capture-5-768x153.png 768w, /wp-content/uploads/2018/07/Capture-5-1024x204.png 1024w, /wp-content/uploads/2018/07/Capture-5.png 1343w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-5-300x60.png" alt="" width="620" height="124" class=" wp-image-1158 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-5-300x60.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-5-768x153.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-5-1024x204.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-5.png 1343w" sizes="(max-width: 620px) 100vw, 620px" /></p>
 <h3 style="text-align: center;"><em><strong><span style="color: #0000ff;">STEP 02</span></strong></em></h3>
 <p>ඊට පස්සේ කරන්න තියෙන්නේ Gradle Files වල පොඩි Changes කිහිපයක්. මුලින්ම root එකේ තියෙන Build.gradle එක open කරගන්න. ඒකට මේ Line 2 add කරලා sync කරගන්න.</p>
 <pre>build.gradle
@@ -373,7 +373,7 @@ public class SignupActivity extends AppCompatActivity {
 
 </authresult></authresult></pre>
 <p>මේ XML file එකෙන් Users ලට Signup වෙන්න මේ වගේ Interface එකක් හැදෙනවා.</p>
-<p><img src="/wp-content/uploads/2018/07/android-firebase-sign-up-screen-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1160 aligncenter" srcset="/wp-content/uploads/2018/07/android-firebase-sign-up-screen-2-300x292.jpg 300w, /wp-content/uploads/2018/07/android-firebase-sign-up-screen-2.jpg 639w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-sign-up-screen-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1160 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-sign-up-screen-2-300x292.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-sign-up-screen-2.jpg 639w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <p>හැබැයි මේ Interface එක අපිට test කරන්න විදියක් නෑ තාම. මොකද අපේ Start Activity එක හදලා තියෙන්නේ Login Activity එකට නිසා. අපි දැන් අපේ Login Activity එක හදලා ඒකෙන් Signup Activity එකට Link එකක් හදා ගමු.</p>
 <h2 style="text-align: center;"><strong>Log In with Email &amp; Password</strong></h2>
 <p>මේ තියෙන්නේ activity_login.xml එකේ Source Code එක.</p>
@@ -594,9 +594,9 @@ public class LoginActivity extends AppCompatActivity {
 }
 </authresult></authresult></pre>
 <p>මේකෙන් අපිට මේ වගේ Interface එකක් හදා ගන්න පුළුවන් වෙනවා..</p>
-<p><img src="/wp-content/uploads/2018/07/android-firebase-login-screen-2-300x291.jpg" alt="" width="300" height="291" class="size-medium wp-image-1161 aligncenter" srcset="/wp-content/uploads/2018/07/android-firebase-login-screen-2-300x291.jpg 300w, /wp-content/uploads/2018/07/android-firebase-login-screen-2.jpg 631w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-login-screen-2-300x291.jpg" alt="" width="300" height="291" class="size-medium wp-image-1161 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-login-screen-2-300x291.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-login-screen-2.jpg 631w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <p>දැන් App එක run කරලා බලන්න Errors තියෙනවද කියලා. Signup වෙලා බලන්න හරියට Register වෙනවද කියලා. ඒක Firebase Console එකේ මේ විදියට බලන්න පුළුවන්.</p>
-<p><img src="/wp-content/uploads/2018/07/Capture-6-300x75.png" alt="" width="584" height="146" class=" wp-image-1162 aligncenter" srcset="/wp-content/uploads/2018/07/Capture-6-300x75.png 300w, /wp-content/uploads/2018/07/Capture-6-768x191.png 768w, /wp-content/uploads/2018/07/Capture-6-1024x255.png 1024w, /wp-content/uploads/2018/07/Capture-6.png 1362w" sizes="(max-width: 584px) 100vw, 584px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-6-300x75.png" alt="" width="584" height="146" class=" wp-image-1162 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-6-300x75.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-6-768x191.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-6-1024x255.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/Capture-6.png 1362w" sizes="(max-width: 584px) 100vw, 584px" /></p>
 <p>ඊළඟට බලමු කොහොමද Password Reset Email එකක් යවන්නේ කියලා..</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -774,9 +774,9 @@ public class ResetPasswordActivity extends AppCompatActivity {
 }
 </void></void></pre>
 <p>ඒකෙන් මේ වගේ Interface එකක් හැදෙනවා.</p>
-<p><img src="/wp-content/uploads/2018/07/android-firebase-forgot-password-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1163 aligncenter" srcset="/wp-content/uploads/2018/07/android-firebase-forgot-password-2-300x292.jpg 300w, /wp-content/uploads/2018/07/android-firebase-forgot-password-2.jpg 636w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-forgot-password-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1163 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-forgot-password-2-300x292.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-forgot-password-2.jpg 636w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <p>දැන් App එක run කරලා බලන්න දැන්ට Register වෙලා ඉන්න Email එකක් දීලා Password Reset Mail එකක් එනවද කියලා. මේ විදියේ Email එකක් එන්නේ.</p>
-<p><img src="/wp-content/uploads/2018/07/android-firebase-reset-password-email-300x122.png" alt="" width="642" height="261" class=" wp-image-1164 aligncenter" srcset="/wp-content/uploads/2018/07/android-firebase-reset-password-email-300x122.png 300w, /wp-content/uploads/2018/07/android-firebase-reset-password-email.png 720w" sizes="(max-width: 642px) 100vw, 642px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-reset-password-email-300x122.png" alt="" width="642" height="261" class=" wp-image-1164 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-reset-password-email-300x122.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-reset-password-email.png 720w" sizes="(max-width: 642px) 100vw, 642px" /></p>
 <p>දැන් අපේ මූලික ආකෘතිය හදාගෙන ඉවරයි. අපිට ඕන නම් මීට අමතරව Profile Page එකක් හදා ගන්න පුළුවන්. එක එක Function කිහිපයක්ම තියෙනවා Firebase එක්ක ලේසියෙන් කරගන්න පුළුවන්. ඒවායින් කිහිපයක් මේ විදියට හදා ගන්න පුළුවන්.</p>
 <h2>Checking User Session</h2>
 <pre>auth = FirebaseAuth.getInstance();
@@ -1299,11 +1299,11 @@ public class MainActivity extends AppCompatActivity {
 }
 </void></void></void></void></void></void></void></void></pre>
 <p>මේ වගේ Interface එකක් මේ xml එකෙන් හදා ගන්න පුළුවන්.</p>
-<p><img src="/wp-content/uploads/2018/07/android-firebase-profile-activity-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1165 aligncenter" srcset="/wp-content/uploads/2018/07/android-firebase-profile-activity-2-300x292.jpg 300w, /wp-content/uploads/2018/07/android-firebase-profile-activity-2.jpg 633w" sizes="(max-width: 300px) 100vw, 300px" />හිතුවට වැඩිය ටිකක් වැඩි වුණා Content එක. ලිපි 2කට දාලා වැඩක් නැති නිසා එකේම ලියලා දැම්මේ. Compile කරනකොට මොකක් හරි අවුලක් ආවොත් Comment එකක් දාන්න. නැත්නම් මේ ලිපියේ මොකක් හරි වැරැද්දක් Edit වෙන්න ඕන තැනක් තියෙනවා නම් ඒකත් කියන්න.</p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-profile-activity-2-300x292.jpg" alt="" width="300" height="292" class="size-medium wp-image-1165 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-profile-activity-2-300x292.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/07/android-firebase-profile-activity-2.jpg 633w" sizes="(max-width: 300px) 100vw, 300px" />හිතුවට වැඩිය ටිකක් වැඩි වුණා Content එක. ලිපි 2කට දාලා වැඩක් නැති නිසා එකේම ලියලා දැම්මේ. Compile කරනකොට මොකක් හරි අවුලක් ආවොත් Comment එකක් දාන්න. නැත්නම් මේ ලිපියේ මොකක් හරි වැරැද්දක් Edit වෙන්න ඕන තැනක් තියෙනවා නම් ඒකත් කියන්න.</p>
 <p>අලුත් ලිපියකින් හමු වෙමු &#8230;&#8230;.</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/07/09/firebase-login-registration-app/">Firebase එක්ක Login, Registration App එකක් හදමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/">Firebase එක්ක Login, Registration App එකක් හදමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/07/09/firebase-login-registration-app/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/feed/</wfw:commentRss>
 		<slash:comments>2</slash:comments>
 							</item>
 	</channel>

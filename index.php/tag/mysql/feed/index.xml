@@ -9,8 +9,8 @@
 
 <channel>
 	<title>mysql &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/mysql/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/mysql/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Laravel වලින් Table Relationship එක්ක වැඩ කරමු</title>
-		<link>/index.php/2019/01/10/laravel-table-relationship/</link>
-				<comments>/index.php/2019/01/10/laravel-table-relationship/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/#respond</comments>
 				<pubDate>Thu, 10 Jan 2019 10:46:16 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Laravel]]></category>
@@ -34,9 +34,9 @@
 		<category><![CDATA[mysql]]></category>
 		<category><![CDATA[relational]]></category>
 
-		<guid isPermaLink="false">/?p=1516</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක්<a class="moretag" href="/index.php/2019/01/10/laravel-table-relationship/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1516</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක්<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span>
 <p>අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක් කර ගන්න සාමාන්‍යයෙන් අපි Query එකක් ලිවුවොත් For loop දාගෙන සෑහෙන්න දඟලන්න වෙනවා. </p>
@@ -55,7 +55,7 @@
 
 
 
-<p>මම මුලින්ම අලුත් Project එකක් හදා ගන්නවා මේ විදියට.. (Laravel install කරලා නැත්නම් මේ <a href="/index.php/2018/04/11/install-laravel-homestead-custom/">ලිපිය</a> බලන්න)</p>
+<p>මම මුලින්ම අලුත් Project එකක් හදා ගන්නවා මේ විදියට.. (Laravel install කරලා නැත්නම් මේ <a href="https://danushka96.github.io/sigma/index.php/2018/04/11/install-laravel-homestead-custom/">ලිපිය</a> බලන්න)</p>
 
 
 
@@ -247,7 +247,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png" alt="" class="wp-image-1526" srcset="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png 642w, /wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14-300x45.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><figcaption>tinker Screen shot</figcaption></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png" alt="" class="wp-image-1526" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png 642w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14-300x45.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><figcaption>tinker Screen shot</figcaption></figure>
 
 
 
@@ -288,9 +288,9 @@
 
 
 <p>හරි එහෙනම් මොකක් හරි ප්‍රශ්ණයක් තිබුණොත් අහන්න. ඊළඟ tutorial එකෙන් Many to Many එකක් set කරගෙන් වැඩ කරන විදිය බලමු. </p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/01/10/laravel-table-relationship/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

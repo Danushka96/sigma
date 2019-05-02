@@ -9,8 +9,8 @@
 
 <channel>
 	<title>thusitha bandara &#8211; The SIGMA</title>
-	<atom:link href="/index.php/author/thusitha/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/author/thusitha/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,20 +22,20 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>express-03 basic Routing කරමු</title>
-		<link>/index.php/2019/02/08/express-03-basic-routing/</link>
-				<comments>/index.php/2019/02/08/express-03-basic-routing/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/#respond</comments>
 				<pubDate>Thu, 07 Feb 2019 19:02:28 +0000</pubDate>
 		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
 				<category><![CDATA[node.js]]></category>
 		<category><![CDATA[Uncategorized]]></category>
 		<category><![CDATA[web development]]></category>
 
-		<guid isPermaLink="false">/?p=1789</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ Routing කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ link එකට ගිහින් කලින් post එක බලන්න. අද මම get request handle කරන විදිය තමා කියල දෙන්න බලාපොරොත්තු වෙන්නේ. මම මේ routes ටික ලියන්නේ app.js එකේ මෙතන 1st line එකෙන් කරන්නේ express කියන framework එක<a class="moretag" href="/index.php/2019/02/08/express-03-basic-routing/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1789</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ Routing කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ link එකට ගිහින් කලින් post එක බලන්න. අද මම get request handle කරන විදිය තමා කියල දෙන්න බලාපොරොත්තු වෙන්නේ. මම මේ routes ටික ලියන්නේ app.js එකේ මෙතන 1st line එකෙන් කරන්නේ express කියන framework එක<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
-<p>මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ <strong>Routing</strong> කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ <a href="/index.php/2019/01/23/express-02/">link</a> එකට ගිහින්  කලින් post එක බලන්න.</p>
+<p>මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ <strong>Routing</strong> කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ <a href="https://danushka96.github.io/sigma/index.php/2019/01/23/express-02/">link</a> එකට ගිහින්  කලින් post එක බලන්න.</p>
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-2.jpg" alt="" class="wp-image-1792" width="321" height="67" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-2.jpg" alt="" class="wp-image-1792" width="321" height="67" /></figure>
 
 
 
@@ -59,7 +59,7 @@
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-3.jpg" alt="" class="wp-image-1793" width="382" height="78" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-3.jpg" alt="" class="wp-image-1793" width="382" height="78" /></figure>
 
 
 
@@ -75,7 +75,7 @@
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-4.jpg" alt="" class="wp-image-1794" width="399" height="53" srcset="/wp-content/uploads/2019/02/Capture-4.jpg 331w, /wp-content/uploads/2019/02/Capture-4-300x40.jpg 300w" sizes="(max-width: 399px) 100vw, 399px" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-4.jpg" alt="" class="wp-image-1794" width="399" height="53" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-4.jpg 331w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-4-300x40.jpg 300w" sizes="(max-width: 399px) 100vw, 399px" /></figure>
 
 
 
@@ -144,24 +144,24 @@
 
 
 <p> අදට මේ ටික ඇති වගේ post එකක් ටිකක් වෙනදට වඩා දිගයි.ඊලග post එකෙන්  හමුවෙමු.</p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/02/08/express-03-basic-routing/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>express-02 කොහොමද express install කරගන්නේ?</title>
-		<link>/index.php/2019/01/23/express-02/</link>
-				<comments>/index.php/2019/01/23/express-02/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/01/23/express-02/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/01/23/express-02/#respond</comments>
 				<pubDate>Wed, 23 Jan 2019 07:18:09 +0000</pubDate>
 		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
 				<category><![CDATA[node.js]]></category>
 		<category><![CDATA[web development]]></category>
 		<category><![CDATA[express]]></category>
 
-		<guid isPermaLink="false">/?p=1680</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> 1.ඔයාට මුලින්ම Node.js install කරගන්න වෙනවා. ඔයා තාම node install කරලා නැත්නම්.මෙන්න මේ link එකට ගිහින් node download කරගෙන install කරගන්න වෙනවා. මේක install කරගත්තම ඔයාට node සහ npm (node package manager) එකත් auto install වෙනවා. ඔයාට ඕනිනම් පුලුවන් මෙන්න මේ විදියට Node &#38; NPM install වෙලාද කියල බලන්න.command prompt(cmd<a class="moretag" href="/index.php/2019/01/23/express-02/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/23/express-02/">express-02 කොහොමද express install කරගන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1680</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> 1.ඔයාට මුලින්ම Node.js install කරගන්න වෙනවා. ඔයා තාම node install කරලා නැත්නම්.මෙන්න මේ link එකට ගිහින් node download කරගෙන install කරගන්න වෙනවා. මේක install කරගත්තම ඔයාට node සහ npm (node package manager) එකත් auto install වෙනවා. ඔයාට ඕනිනම් පුලුවන් මෙන්න මේ විදියට Node &#38; NPM install වෙලාද කියල බලන්න.command prompt(cmd<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/01/23/express-02/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/23/express-02/">express-02 කොහොමද express install කරගන්නේ?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
 <h4><strong>1.ඔයාට මුලින්ම Node.js  install කරගන්න වෙනවා.</strong></h4>
@@ -172,7 +172,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Capture-1024x585.jpg" alt="" class="wp-image-1681" srcset="/wp-content/uploads/2019/01/Capture-1024x585.jpg 1024w, /wp-content/uploads/2019/01/Capture-300x171.jpg 300w, /wp-content/uploads/2019/01/Capture-768x439.jpg 768w, /wp-content/uploads/2019/01/Capture.jpg 1055w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-1024x585.jpg" alt="" class="wp-image-1681" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-1024x585.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-300x171.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-768x439.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture.jpg 1055w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -192,7 +192,7 @@
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/01/Capture-1.jpg" alt="" class="wp-image-1682" width="513" height="122" srcset="/wp-content/uploads/2019/01/Capture-1.jpg 374w, /wp-content/uploads/2019/01/Capture-1-300x71.jpg 300w" sizes="(max-width: 513px) 100vw, 513px" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-1.jpg" alt="" class="wp-image-1682" width="513" height="122" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-1.jpg 374w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-1-300x71.jpg 300w" sizes="(max-width: 513px) 100vw, 513px" /></figure>
 
 
 
@@ -208,7 +208,7 @@
 
 
 
-<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="/wp-content/uploads/2019/01/Capture-2.jpg" alt="" class="wp-image-1683" width="501" height="578" srcset="/wp-content/uploads/2019/01/Capture-2.jpg 471w, /wp-content/uploads/2019/01/Capture-2-260x300.jpg 260w" sizes="(max-width: 501px) 100vw, 501px" /></figure></div>
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-2.jpg" alt="" class="wp-image-1683" width="501" height="578" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-2.jpg 471w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-2-260x300.jpg 260w" sizes="(max-width: 501px) 100vw, 501px" /></figure></div>
 
 
 
@@ -228,7 +228,7 @@
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/01/Capture-3.jpg" alt="" class="wp-image-1685" width="906" height="116" srcset="/wp-content/uploads/2019/01/Capture-3.jpg 976w, /wp-content/uploads/2019/01/Capture-3-300x38.jpg 300w, /wp-content/uploads/2019/01/Capture-3-768x98.jpg 768w" sizes="(max-width: 906px) 100vw, 906px" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-3.jpg" alt="" class="wp-image-1685" width="906" height="116" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-3.jpg 976w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-3-300x38.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-3-768x98.jpg 768w" sizes="(max-width: 906px) 100vw, 906px" /></figure>
 
 
 
@@ -249,15 +249,15 @@
 
 
 <p></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/23/express-02/">express-02 කොහොමද express install කරගන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/23/express-02/">express-02 කොහොමද express install කරගන්නේ?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/01/23/express-02/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/01/23/express-02/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>express-01 මොකක්ද මේ express කියන්නේ?</title>
-		<link>/index.php/2019/01/22/express-01/</link>
-				<comments>/index.php/2019/01/22/express-01/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/01/22/express-01/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/01/22/express-01/#respond</comments>
 				<pubDate>Tue, 22 Jan 2019 12:48:09 +0000</pubDate>
 		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
 				<category><![CDATA[node.js]]></category>
@@ -265,9 +265,9 @@
 		<category><![CDATA[express]]></category>
 		<category><![CDATA[intro]]></category>
 
-		<guid isPermaLink="false">/?p=1606</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> express කියන්නේ මොකක්ද ? express කියන්නේ back-end node.js framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ back-end එක හදන්න. ඒ කියන්නෙ මේක Run වෙන්නෙ අපේ web server එකේ. web site එකක user ට පෙනෙන් නැති logic, database එකත් එක්ක ගනුදෙනු කරනව වගේ (back-end) වැඩ තමා express කරලා දෙන්නේ. මේ<a class="moretag" href="/index.php/2019/01/22/express-01/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1606</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> express කියන්නේ මොකක්ද ? express කියන්නේ back-end node.js framework එකක්. ඒ කියන්නෙ මේක යොදා ගන්නෙ website එකේ back-end එක හදන්න. ඒ කියන්නෙ මේක Run වෙන්නෙ අපේ web server එකේ. web site එකක user ට පෙනෙන් නැති logic, database එකත් එක්ක ගනුදෙනු කරනව වගේ (back-end) වැඩ තමා express කරලා දෙන්නේ. මේ<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/01/22/express-01/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
 <p><strong>express  කියන්නේ  මොකක්ද ?</strong></p>
@@ -298,7 +298,7 @@
 
 
 
-<p>ඔයාට framework කියන එක ගැන අවබෝදයක් නැත්නම් <a href="/index.php/2018/04/10/web-application-with-laravel/">මෙන්න</a> මේ link එකට ගිහින් බලන්න<strong> Framework එකක් කියන්නේ මොකද්ද?</strong>. කියල <strong>topic</strong> එකක් තියෙනවා.</p>
+<p>ඔයාට framework කියන එක ගැන අවබෝදයක් නැත්නම් <a href="https://danushka96.github.io/sigma/index.php/2018/04/10/web-application-with-laravel/">මෙන්න</a> මේ link එකට ගිහින් බලන්න<strong> Framework එකක් කියන්නේ මොකද්ද?</strong>. කියල <strong>topic</strong> එකක් තියෙනවා.</p>
 
 
 
@@ -310,7 +310,7 @@
 
 
 
-<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg" alt="" class="wp-image-1661" srcset="/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg 220w, /wp-content/uploads/2019/01/220px-Ryan_Dahl-200x300.jpg 200w" sizes="(max-width: 220px) 100vw, 220px" /><figcaption> <br>Ryan Dahl. </figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg" alt="" class="wp-image-1661" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/220px-Ryan_Dahl.jpg 220w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/220px-Ryan_Dahl-200x300.jpg 200w" sizes="(max-width: 220px) 100vw, 220px" /><figcaption> <br>Ryan Dahl. </figcaption></figure></div>
 
 
 
@@ -375,9 +375,9 @@
 
 
 <p></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/22/express-01/">express-01 මොකක්ද මේ express කියන්නේ?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/01/22/express-01/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/01/22/express-01/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

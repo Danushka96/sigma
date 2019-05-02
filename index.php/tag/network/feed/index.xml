@@ -9,8 +9,8 @@
 
 <channel>
 	<title>network &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/network/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/network/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,21 +22,21 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>OSI(Open System Interconnect)Layers</title>
-		<link>/index.php/2018/04/08/osiopen-system-interconnectlayers/</link>
-				<comments>/index.php/2018/04/08/osiopen-system-interconnectlayers/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/08/osiopen-system-interconnectlayers/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/08/osiopen-system-interconnectlayers/#respond</comments>
 				<pubDate>Sat, 07 Apr 2018 20:53:35 +0000</pubDate>
 		<dc:creator><![CDATA[Sandun Prasanganath]]></dc:creator>
 				<category><![CDATA[network]]></category>
 
-		<guid isPermaLink="false">/?p=610</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ!,Networking යටතේ ලියවෙන මේ මගේ 3 වන ලිපිය​​,ඉතින් මගේ කලින් ලිපි කියවලා Computer Networking ගැන පොඩි හරි දැනුමක් ගන්න ඇති කියලා මම හිතනවා. ඉතින් මේ ලිපියෙන් මම ප්‍රධාන වශයෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Network Layers එහෙම නැත්තම් OSI(Open System Interconnect)Layers ගැන​. &#160; මම මුලින්ම අහන්නම්කො මොකක්ද මේ OSI<a class="moretag" href="/index.php/2018/04/08/osiopen-system-interconnectlayers/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/08/osiopen-system-interconnectlayers/">OSI(Open System Interconnect)Layers</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=610</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ!,Networking යටතේ ලියවෙන මේ මගේ 3 වන ලිපිය​​,ඉතින් මගේ කලින් ලිපි කියවලා Computer Networking ගැන පොඩි හරි දැනුමක් ගන්න ඇති කියලා මම හිතනවා. ඉතින් මේ ලිපියෙන් මම ප්‍රධාන වශයෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Network Layers එහෙම නැත්තම් OSI(Open System Interconnect)Layers ගැන​. &#160; මම මුලින්ම අහන්නම්කො මොකක්ද මේ OSI<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/08/osiopen-system-interconnectlayers/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/08/osiopen-system-interconnectlayers/">OSI(Open System Interconnect)Layers</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන් යාලුවනේ!,<strong>Networking</strong> යටතේ ලියවෙන මේ මගේ 3 වන ලිපිය​​,ඉතින් මගේ කලින් ලිපි <a href="/index.php/2018/04/07/ip-addressing/">කියවලා</a> Computer Networking ගැන පොඩි හරි දැනුමක් ගන්න ඇති කියලා මම හිතනවා. ඉතින් මේ ලිපියෙන් මම ප්‍රධාන වශයෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ <strong>Network Layers</strong> එහෙම නැත්තම් <strong>OSI(Open System Interconnect)Layers</strong> ගැන​.</p>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන් යාලුවනේ!,<strong>Networking</strong> යටතේ ලියවෙන මේ මගේ 3 වන ලිපිය​​,ඉතින් මගේ කලින් ලිපි <a href="https://danushka96.github.io/sigma/index.php/2018/04/07/ip-addressing/">කියවලා</a> Computer Networking ගැන පොඩි හරි දැනුමක් ගන්න ඇති කියලා මම හිතනවා. ඉතින් මේ ලිපියෙන් මම ප්‍රධාන වශයෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ <strong>Network Layers</strong> එහෙම නැත්තම් <strong>OSI(Open System Interconnect)Layers</strong> ගැන​.</p>
 <p>&nbsp;</p>
 <p>මම මුලින්ම අහන්නම්කො මොකක්ද මේ <strong>OSI Layers</strong> කියලා කියන්නේ කියලා,<strong>තොරතුරු හුවමාරු පද්ධතියක එම තොරතුරු ගලා යන ආකාරය එක් එක් කොටස් වලට බෙදා දැක්වීම තමයි මේ OSI Layers වලින් සිදුවෙන්නේ</strong>.</p>
 <p>&nbsp;</p>
-<p><img class="size-full wp-image-616 aligncenter" src="/wp-content/uploads/2018/04/images-5.png" alt="" width="283" height="178" /></p>
+<p><img class="size-full wp-image-616 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/images-5.png" alt="" width="283" height="178" /></p>
 <p>&nbsp;</p>
 <p>මම තවත් පැහැදිලි කරන්නම්කෝ,හිතන්න Network එකක තියෙන Computer එකකින් තවත් Computer එකකට Data යවනවා කියලා.එතකොට ඒ Data යවන Computer එකේ සිට Data ලබාගෙන එම Data User ට Moniter කරන තෙක් සිදුවන ක්‍රියාවලිය විවිධ කොටස් වලට බෙදා දැක්වීම තමයි මේ <strong>OSI Layers</strong> කියලා කියන්නේ.</p>
 <p>ඉතින් මම හිතනවා මේ <strong>OSI Layers</strong> ගැන ඔයලට යම් අවබෝධයක් ලැබෙන්න ඇති කියලා.</p>
@@ -50,7 +50,7 @@
 <p>&nbsp;</p>
 <p>මොනවද මේ Vendors කියලා කියන්නේ,විවිධ Communication උපකරණ හදන අය ඒවගේම Software Developers වගේ අයට තමයි මේ Vendors කියලා කියන්නේ.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-625" src="/wp-content/uploads/2018/04/download-17.jpg" alt="" width="292" height="173" /></p>
+<p><img class="alignnone size-full wp-image-625" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-17.jpg" alt="" width="292" height="173" /></p>
 <p>&nbsp;</p>
 <p>මේ OSI Layers අපිට ප්‍රධාන වශයෙන් 7ක් දැකගන්නට පුලුවන්.ඒවා තමයි;</p>
 <p>&nbsp;</p>
@@ -71,7 +71,7 @@
 </ol>
 <p>මෙයින් කියවෙන්නේ Application,Presentation,Session,Transport Layers, Upper Layers යන​ කොටසටත්,Network,Data Link,Physical layers, Lower Layers යන​ කොටසටත් අයිති වන බවය.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-635 alignright" src="/wp-content/uploads/2018/04/download-7.png" alt="" width="228" height="221" /></p>
+<p><img class="alignnone size-full wp-image-635 alignright" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-7.png" alt="" width="228" height="221" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>2.TCP/IP Layers</strong></p>
@@ -84,19 +84,19 @@
 </ol>
 <p>යනුවෙනි.</p>
 <p>&nbsp;</p>
-<p><img class="size-full wp-image-638 aligncenter" src="/wp-content/uploads/2018/04/download-8.png" alt="" width="291" height="173" /></p>
+<p><img class="size-full wp-image-638 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-8.png" alt="" width="291" height="173" /></p>
 <p>&nbsp;</p>
 <p>දැන් අපි මේ Layers එකින් එක පැහැදිලි කරගමු.</p>
 <p>&nbsp;</p>
 <p><strong>1. Application Layer</strong></p>
 <p>මේ Layer එකෙන් තමයි අපිට User Interface ලබාදෙන්නේ.ඒ කියන්නේ Desktop එක​,ඒ වගේම මේ කොටසින් තමයි Network Service එකට අවශය Programmes පාවිච්චි කරන්නත් ඉඩ දෙන්නේ.ඒ වගේම මේ Layer එකෙන් කරන වැඩ තමයි File Transfer,E-mail වගේ ඒවා,</p>
 <p>මේකෙ වැදගත්ම දේ තමයි මේකෙ භාවිතා කරන Protocol මොනවද කියන එක​,Telnet,HTTP,FTP මෙහිදී භාවිතා කරනවා.</p>
-<p><img class="alignnone size-full wp-image-640 aligncenter" src="/wp-content/uploads/2018/04/images-23.jpg" alt="" width="298" height="169" /></p>
+<p><img class="alignnone size-full wp-image-640 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/images-23.jpg" alt="" width="298" height="169" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>2.Presentation Layer</strong></p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-642" src="/wp-content/uploads/2018/04/download-18.jpg" alt="" width="287" height="176" /></p>
+<p><img class="alignnone size-full wp-image-642" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-18.jpg" alt="" width="287" height="176" /></p>
 <p>&nbsp;</p>
 <p>මේ Layer දී Data එක් එක් Data Format වලට පරිවර්ථනය කිරීම තමයි සිදුකරන්නේ.මම ඒක උදාහරණයකින්ම පැහැදිලි කරන්නම්කෝ,</p>
 <p>හිතන්නකෝ මෙහෙම​,අපිට Network එක​ හරහා Mp3 File එකක් ආව කියලා එතකොට ඒ Mp3 File ඒක අයිති Format එකට දාන එක තමයි මේ Presentation Layer එකේ ප්‍රධාන වැඩේ.මේ Layer එකෙන් කරන තවත් වැඩක් තමයි එක එක Format වලට දාන data User ට​ Access කරන්න පුලුවන්ද කියලා sure කරගන්න එක.</p>
@@ -106,18 +106,18 @@
 <p>&nbsp;</p>
 <p>Network එකේ Data Communicate කරන Device වල Application අතරේ Connection එක​ තියාගැනීම හා ඒවා කලමනාකරනය කිරීම තමයි මේ Session Layer එකෙන් සිදුවන්නේ.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-645" src="/wp-content/uploads/2018/04/download-19.jpg" alt="" width="246" height="205" /></p>
+<p><img class="alignnone size-full wp-image-645" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-19.jpg" alt="" width="246" height="205" /></p>
 <p>&nbsp;</p>
 <p>ඒ වගේම Data Communicate එක <strong>Simplex</strong> ද​ <strong>Half-Duplex</strong> ද <strong>Full-Duplex</strong> ද​ කියලා තීරණය කරන්නෙත් මේ Session Layer එකෙන්ම තමයි.</p>
 <p>ඉතින් මොනවද මේ Simplex,Half,Full <strong>Duplex</strong> කියන්නේ,මම කෙටියෙන් පැහැදිලි කරන්නම්,</p>
 <p>&nbsp;</p>
 <p>එක් දිශාවකට පමණක් Signal ගමන් කිරීම තමයි මේ Simplex කියලා කියන්නේ.උදාහරණ ලෙස Television,Radio හැදින්විය හැක​.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-medium wp-image-647 aligncenter" src="/wp-content/uploads/2018/04/download-20-300x134.jpg" alt="" width="300" height="134" srcset="/wp-content/uploads/2018/04/download-20-300x134.jpg 300w, /wp-content/uploads/2018/04/download-20.jpg 337w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><img class="alignnone size-medium wp-image-647 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-20-300x134.jpg" alt="" width="300" height="134" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-20-300x134.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-20.jpg 337w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <p>&nbsp;</p>
 <p>දිශාවන් දෙකටම Signal යැවිය හැකිනම් එය Half-Duplex ලෙස හැදින්වේ.නමුත් මෙහි විශේශත්වය වන්නේ වන්නේ වරකට Signal යැවිය හැක්කේ එක් දිශාවකට පමනි.උදාහරණ ලෙස vocy tocy හැදින්විය හැක​</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-648" src="/wp-content/uploads/2018/04/download-21.jpg" alt="" width="220" height="150" /></p>
+<p><img class="alignnone size-full wp-image-648" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-21.jpg" alt="" width="220" height="150" /></p>
 <p>&nbsp;</p>
 <p>දිශාවන් දෙකටම Signal යැවිය හැකිනම් එය Full-Duplex ලෙස හැදින්වේ.මෙය Half-Duplex වඩා වෙනස් වන්නේ මෙහි එකවර දිශා දෙකටම Signal යැවිය හැක​.උදහරණ ලෙස​ Telephone හැදින්විය හැක​.</p>
 <p>&nbsp;</p>
@@ -126,7 +126,7 @@
 <p>&nbsp;</p>
 <p>මේ Layer එකේදි තමයි Data packet එක Segment එකක් බවට පත්වන්නේ.Data Encapsulation යටතේ මේ ගැන මම වැඩිපුර  කතා කරන්නම්.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-medium wp-image-653 alignright" src="/wp-content/uploads/2018/04/images-6-300x136.png" alt="" width="300" height="136" srcset="/wp-content/uploads/2018/04/images-6-300x136.png 300w, /wp-content/uploads/2018/04/images-6.png 333w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><img class="alignnone size-medium wp-image-653 alignright" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/images-6-300x136.png" alt="" width="300" height="136" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/images-6-300x136.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/images-6.png 333w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -137,19 +137,19 @@
 <p>මේ Layer එකෙන් තමයි ඇත්තටම Data යවන වැඩේ බාරගන්නේ.මම මෙහෙම කියන්නම්කෝ,Router එක අයිති වෙන්නෙත් මේකටම තමයි.ඒ කියන්නේ Source Computer සිට User දක්වා Data යැවීමට Best Path එක තෝරා ගන්නේ මේ Network Layer එක හරහා.</p>
 <p>ඉතින් IP Address භාවිතා කරන්නෙත් මේ Layer එකේදිම තමයි.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-655" src="/wp-content/uploads/2018/04/images-24.jpg" alt="" width="297" height="170" /></p>
+<p><img class="alignnone size-full wp-image-655" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/images-24.jpg" alt="" width="297" height="170" /></p>
 <p>&nbsp;</p>
 <p><strong>6.Data Link Layer</strong></p>
 <p>&nbsp;</p>
 <p>Data Transmission එකේ මොකක් හරි වැරැද්දක් තියෙනවනම් ඒක දැනුම් දෙන්නේ මේ Layer එකේදි,Switch,Bridge,NIC</p>
 <p>භාවිතා කරන්නේ මේ Data Link Layer එකේදී,මෙහිදී භාවිතා කරන Protocol වන්නේ STP , VTP , CDP  වේ.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-656 aligncenter" src="/wp-content/uploads/2018/04/images-25.jpg" alt="" width="259" height="194" /></p>
+<p><img class="alignnone size-full wp-image-656 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/images-25.jpg" alt="" width="259" height="194" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>7.Physical Layer</strong></p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-658" src="/wp-content/uploads/2018/04/download-9.png" alt="" width="259" height="194" /></p>
+<p><img class="alignnone size-full wp-image-658" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-9.png" alt="" width="259" height="194" /></p>
 <p>&nbsp;</p>
 <p>මොන Layer එකෙන් ආවත් අන්තිමට එන්න ඕනි මේ Physical Layer එකෙන්,ඒ කියන්නේ Wire හෝ Wireless මොන විදියට Data ආවත් අන්තිමට එන්නේ මේ Layer එක හරහා.</p>
 <p>Hub,Connectors,Cable අයිති වෙන්නෙත් මේ Network layer එකටම තමයි.</p>
@@ -166,25 +166,25 @@
 <p>ස්තූතියි:</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/08/osiopen-system-interconnectlayers/">OSI(Open System Interconnect)Layers</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/08/osiopen-system-interconnectlayers/">OSI(Open System Interconnect)Layers</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/08/osiopen-system-interconnectlayers/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/08/osiopen-system-interconnectlayers/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>IP ADDRESSING හැදෙන්නේ කොහොමද?</title>
-		<link>/index.php/2018/04/07/ip-addressing/</link>
-				<comments>/index.php/2018/04/07/ip-addressing/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/07/ip-addressing/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/07/ip-addressing/#comments</comments>
 				<pubDate>Sat, 07 Apr 2018 07:28:23 +0000</pubDate>
 		<dc:creator><![CDATA[Sandun Prasanganath]]></dc:creator>
 				<category><![CDATA[network]]></category>
 
-		<guid isPermaLink="false">/?p=567</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ.අද මම කතාකරන්න යන්නේ Networking වල තියෙන මූලිකම සහ වැදගත්ම කොටසක් කොටසක් වන ​IP Addressing පිළිබදවයි.මොකක්ද මේ IP Address එකක් කියන්නේ,පරිගණක ජාලයක තියෙන සැම පරිගණකයකටම යම් විශේෂ වූ ලිපිනයක් තියෙනවා.මෙන්න මේ Address එකට තමයි IP Address එකක් කියලා කියන්නේ. මුල්ම ලිපිය බැලුවේ නැත්නම් මෙතනින් බලන්න. මම තවත් සරලව කියන්නම්කෝ.හිතන්නකෝ මේ ලෝකෙ තියෙන සැම නිවසකටම​ විශේෂිත වූ ලිපිනයන්<a class="moretag" href="/index.php/2018/04/07/ip-addressing/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/07/ip-addressing/">IP ADDRESSING හැදෙන්නේ කොහොමද?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=567</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ.අද මම කතාකරන්න යන්නේ Networking වල තියෙන මූලිකම සහ වැදගත්ම කොටසක් කොටසක් වන ​IP Addressing පිළිබදවයි.මොකක්ද මේ IP Address එකක් කියන්නේ,පරිගණක ජාලයක තියෙන සැම පරිගණකයකටම යම් විශේෂ වූ ලිපිනයක් තියෙනවා.මෙන්න මේ Address එකට තමයි IP Address එකක් කියලා කියන්නේ. මුල්ම ලිපිය බැලුවේ නැත්නම් මෙතනින් බලන්න. මම තවත් සරලව කියන්නම්කෝ.හිතන්නකෝ මේ ලෝකෙ තියෙන සැම නිවසකටම​ විශේෂිත වූ ලිපිනයන්<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/07/ip-addressing/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/07/ip-addressing/">IP ADDRESSING හැදෙන්නේ කොහොමද?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන් යාලුවනේ.අද මම කතාකරන්න යන්නේ Networking වල තියෙන මූලිකම සහ වැදගත්ම කොටසක් කොටසක් වන ​IP Addressing පිළිබදවයි.මොකක්ද මේ IP Address එකක් කියන්නේ,<i>පරිගණක ජාලයක තියෙන සැම පරිගණකයකටම යම් විශේෂ වූ ලිපිනයක් තියෙනවා.මෙන්න මේ Address එකට තමයි IP Address එකක් කියලා කියන්නේ. මුල්ම ලිපිය බැලුවේ නැත්නම් <a href="/index.php/2018/03/31/computer-networking/">මෙතනින්</a> බලන්න.</i></p>
-<p><img class="aligncenter wp-image-568 size-medium" src="/wp-content/uploads/2018/04/images-12-300x168.jpg" alt="ip 4" width="300" height="168" /></p>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන් යාලුවනේ.අද මම කතාකරන්න යන්නේ Networking වල තියෙන මූලිකම සහ වැදගත්ම කොටසක් කොටසක් වන ​IP Addressing පිළිබදවයි.මොකක්ද මේ IP Address එකක් කියන්නේ,<i>පරිගණක ජාලයක තියෙන සැම පරිගණකයකටම යම් විශේෂ වූ ලිපිනයක් තියෙනවා.මෙන්න මේ Address එකට තමයි IP Address එකක් කියලා කියන්නේ. මුල්ම ලිපිය බැලුවේ නැත්නම් <a href="https://danushka96.github.io/sigma/index.php/2018/03/31/computer-networking/">මෙතනින්</a> බලන්න.</i></p>
+<p><img class="aligncenter wp-image-568 size-medium" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/images-12-300x168.jpg" alt="ip 4" width="300" height="168" /></p>
 <p class="separator"><em>මම තවත් සරලව කියන්නම්කෝ.හිතන්නකෝ මේ ලෝකෙ තියෙන සැම නිවසකටම​ විශේෂිත වූ ලිපිනයන් තියෙනවනේ.අන්න ඒ වගේ තමයි Network එකක තියෙන සැම​​ Computers වලටම යම් විශේෂිත වූ ලිපිනයන්තියෙනවා.මෙන්න මේ ලිපිනයන් වලට තමයි IP Address කියල කියන්නේ.</em></p>
 <p>&nbsp;</p>
 <p class="separator">අපේ ලිපිනයක් ගත්තොත් ඒ ලිපිනය දිහා බැලුවහම අපිට කියන්න පුලුවන් ඒ ගෙදර අයිති වෙන්නේ මොන පලාතටද​ කියලා.අන්න ඒ වගේ තමයි Network එකක​ IP Address යි Subnet mask එකයි දෙක එකතු කරලා අපිට කියන්න පුලුවන් ඒ Address එක අයිති වෙන්නේ මොන Subnet works එකටද කියලා.</p>
@@ -288,7 +288,7 @@
 <p>මොකක්ද මේ Subnet Works කියලා කියන්නේ,මම ඒක උදාහරණයකින්ම පැහැදිලි කරන්නම්.<br />
 දැන් කාර්‍යලයක ඇති පරිගණක හිතන්නකෝ.ඒ පරිගණක සියල්ලම එක​ Network එකකට සම්බන්ධ වෙලා තිබුනට අපට අවශය විට එම Network එක කුඩා කොටස් වලට කැඩීමට සිදුවෙනවා.මෙන්න මේක තමයි Subnet Work කියලා කියන්නේ.</p>
 <p>&nbsp;</p>
-<p><img class="aligncenter wp-image-582" src="/wp-content/uploads/2018/04/download-16.jpg" alt="ip network" width="325" height="264" /></p>
+<p><img class="aligncenter wp-image-582" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/download-16.jpg" alt="ip network" width="325" height="264" /></p>
 <p>&nbsp;</p>
 <p>EX-: කාර්‍යලයේ ඇති පරිගනණක HR Department එකට කොටසකුත් IT Department    කොටසකුත් Finance Department කොටසකුත් වශයෙන් වෙන් කිරීම​.</p>
 <p>&nbsp;</p>
@@ -297,25 +297,25 @@
 <p>ස්තූතියි:</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/07/ip-addressing/">IP ADDRESSING හැදෙන්නේ කොහොමද?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/07/ip-addressing/">IP ADDRESSING හැදෙන්නේ කොහොමද?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/07/ip-addressing/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/07/ip-addressing/feed/</wfw:commentRss>
 		<slash:comments>1</slash:comments>
 							</item>
 		<item>
 		<title>COMPUTER NETWORKING</title>
-		<link>/index.php/2018/03/31/computer-networking/</link>
-				<comments>/index.php/2018/03/31/computer-networking/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/03/31/computer-networking/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/03/31/computer-networking/#comments</comments>
 				<pubDate>Sat, 31 Mar 2018 04:32:45 +0000</pubDate>
 		<dc:creator><![CDATA[Sandun Prasanganath]]></dc:creator>
 				<category><![CDATA[network]]></category>
 		<category><![CDATA[tech]]></category>
 
-		<guid isPermaLink="false">/?p=393</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ,මම අද ඔයාලට මුලින්ම කියාදෙන්නේ පරිගණක ජාල​(computer networking)පාඩමක්.මේක මගේ පලවෙනි ලිපිය​.ඉතින් මම මෙම ලිපියෙන් ප්‍රධාන වශයෙන්, 1.පරිගණක ජාලයක් යනු කුමක්ද​? 2.පරිගණක ජාලයක මූලික කොටස් යන ප්‍රධාන කරුණු 2 පිලිබදව පැහැදිලි කිරීමට බලාපොරොත්තු වෙනවා. මොකක්ද මේ පරිගණක ජාලයක් කියලා කියන්නේ, පරිගණක දෙකක් හෝ ඊට වැඩි ප්‍රමාණයක් එකිනෙකට සම්බන්ද කර<a class="moretag" href="/index.php/2018/03/31/computer-networking/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/31/computer-networking/">COMPUTER NETWORKING</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=393</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ,මම අද ඔයාලට මුලින්ම කියාදෙන්නේ පරිගණක ජාල​(computer networking)පාඩමක්.මේක මගේ පලවෙනි ලිපිය​.ඉතින් මම මෙම ලිපියෙන් ප්‍රධාන වශයෙන්, 1.පරිගණක ජාලයක් යනු කුමක්ද​? 2.පරිගණක ජාලයක මූලික කොටස් යන ප්‍රධාන කරුණු 2 පිලිබදව පැහැදිලි කිරීමට බලාපොරොත්තු වෙනවා. මොකක්ද මේ පරිගණක ජාලයක් කියලා කියන්නේ, පරිගණක දෙකක් හෝ ඊට වැඩි ප්‍රමාණයක් එකිනෙකට සම්බන්ද කර<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/03/31/computer-networking/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/31/computer-networking/">COMPUTER NETWORKING</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p><img class="aligncenter wp-image-394 size-large" src="/wp-content/uploads/2018/03/networking-block-1024x512.jpg" alt="" width="750" height="375" srcset="/wp-content/uploads/2018/03/networking-block-1024x512.jpg 1024w, /wp-content/uploads/2018/03/networking-block-300x150.jpg 300w, /wp-content/uploads/2018/03/networking-block-768x384.jpg 768w, /wp-content/uploads/2018/03/networking-block.jpg 1600w" sizes="(max-width: 750px) 100vw, 750px" /></p>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p><img class="aligncenter wp-image-394 size-large" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/networking-block-1024x512.jpg" alt="" width="750" height="375" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/networking-block-1024x512.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/networking-block-300x150.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/networking-block-768x384.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/networking-block.jpg 1600w" sizes="(max-width: 750px) 100vw, 750px" /></p>
 <p>හැමෝටම ආයුබෝවන් යාලුවනේ,මම අද ඔයාලට මුලින්ම කියාදෙන්නේ පරිගණක ජාල​(computer networking)පාඩමක්.මේක මගේ පලවෙනි ලිපිය​.ඉතින් මම මෙම ලිපියෙන් ප්‍රධාන වශයෙන්,<br />
 1.පරිගණක ජාලයක් යනු කුමක්ද​?<br />
 2.පරිගණක ජාලයක මූලික කොටස්<br />
@@ -324,7 +324,7 @@
 <blockquote>
 <p style="text-align: left;">පරිගණක දෙකක් හෝ ඊට වැඩි ප්‍රමාණයක් එකිනෙකට සම්බන්ද කර සාදා ගන්නා ලද පද්ධතියකට තමයි පරිගණක ජාලයක් කියලා කියන්නේ.</p>
 </blockquote>
-<p><img class="alignnone size-medium wp-image-395" src="/wp-content/uploads/2018/03/networking-300x225.jpg" alt="" width="300" height="225" srcset="/wp-content/uploads/2018/03/networking-300x225.jpg 300w, /wp-content/uploads/2018/03/networking.jpg 400w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><img class="alignnone size-medium wp-image-395" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/networking-300x225.jpg" alt="" width="300" height="225" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/networking-300x225.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/networking.jpg 400w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <h6>අපි (Network) එකක් නිර්මාණය කිරීමේ මූලික අරමුණ වන්නේ Computer දෙකක් හෝ ඊට වැඩි ගණනකට දත්ත​(data) හුවමාරු කරගැනීමයි.ඒකට අපිට ඕනිවෙන උපකරණ තමයි(Basic Component Of The Network) කියලා කියන්නේ.අපි දැන් බලමු ඒ උපකරණ මොනාද කියලා.</h6>
 <ol>
 <li><strong>Transmission media </strong></li>
@@ -337,14 +337,14 @@
 <li><strong> Router</strong></li>
 </ol>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-396" src="/wp-content/uploads/2018/03/download.jpg" alt="" width="272" height="186" /></p>
+<p><img class="alignnone size-full wp-image-396" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/download.jpg" alt="" width="272" height="186" /></p>
 <p>මම මේ සදහන් කල සියලුම උපකරණ Network එකක් නිර්මණය කිරීමට අවශය නොවන අතර මූලික Component</p>
 <p>වලින් අපිට Network එකක්  හදාගන්න පුලුවන්.</p>
 <blockquote>
 <h5><strong><em>දැන් මේ Componentමොනාද කියලා මම පැහැදිලි කරන්නම්.</em></strong></h5>
 </blockquote>
 <p><strong>1.Transmission media</strong></p>
-<p><img class="size-medium wp-image-398 aligncenter" src="/wp-content/uploads/2018/03/images-300x119.jpg" alt="" width="300" height="119" srcset="/wp-content/uploads/2018/03/images-300x119.jpg 300w, /wp-content/uploads/2018/03/images.jpg 356w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><img class="size-medium wp-image-398 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images-300x119.jpg" alt="" width="300" height="119" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images-300x119.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images.jpg 356w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <p>&nbsp;</p>
 <p>Transmission media කියලා කියන්නේ Network එක තුල ඇති  පරිගණක එකින් එක සම්බන්ද කිරීමට යොදාගන්නා ප්‍රධානම දේ කියල කිව්වොත් මම නිවැරදියි.</p>
 <blockquote><p>&nbsp;</p>
@@ -357,19 +357,19 @@
 <p><strong>  ex:-Wif</strong><strong>i</strong></p>
 <p><strong>Wimax</strong></p>
 <p><strong>         Microwave</strong></p>
-<p><img class="alignnone size-full wp-image-397" src="/wp-content/uploads/2018/03/images-1.png" alt="" width="259" height="194" /></p>
+<p><img class="alignnone size-full wp-image-397" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images-1.png" alt="" width="259" height="194" /></p>
 <p>&nbsp;</p>
 <p><em><strong>මේවායින් උදාහරණ කීපයක් අරන් මම සරලව පැහැදිලි කරන්නම්.</strong></em></p>
 <h5><strong>10 base 2:</strong> මේක <em>Coaxial cable</em> එකක්.<strong><em>Thinnet</em></strong> කියලත් මේකට කියනවා.මේ <em>Cable</em> එකට 185 m දුරට dataගෙනියන්න පුලුවන්,ඒ වගේම data ගෙනයාමේ උපරිම වේගය වන්නේ 10Mbit/s.ඒවගේම මේ <em>Cable</em> හරහා කරන්න පුලුවන්  <strong>Half-duplex communication</strong> එකක් විතරයි.(<em>Duplex</em> ගැන මම ඉදිරියට පැහැදිලි කරන්නම්)</h5>
 <p>&nbsp;</p>
-<p><img class="size-full wp-image-399 aligncenter" src="/wp-content/uploads/2018/03/images-1.jpg" alt="" width="259" height="194" /></p>
+<p><img class="size-full wp-image-399 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images-1.jpg" alt="" width="259" height="194" /></p>
 <h5><strong>10 base 5:</strong> මේකත් <em>Coaxial cable</em> එකක්ම තමයි.මේකට <em><strong>thicknet</strong> </em>කියලත් කියනවා.මේ <em>cable</em> එකෙනුත් dataගෙනයාමේ වේගය වන්නේ 10Mbit/s  ම තමයි, හැබැයි මේCable 1 න් 500 m දුරකට​ <em>data transmit</em> කරන්න පුලුවන්.</h5>
 <p>&nbsp;</p>
-<p><img class="size-full wp-image-400 alignright" src="/wp-content/uploads/2018/03/images-3.jpg" alt="" width="220" height="150" /></p>
+<p><img class="size-full wp-image-400 alignright" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images-3.jpg" alt="" width="220" height="150" /></p>
 <p>&nbsp;</p>
 <blockquote><p>&nbsp;</p></blockquote>
 <h5><strong>10 base T:</strong>මේ <em>Cable</em>(10 base T,100 base TX,1000 base T) තමයි පොදුවේ <em>Networking</em> වලට යොදා ගන්නේ.<em>Twisted Pair</em> <em>Ethernet</em> කියලත් මේවට කියනව​.මේ <em>Cable</em> එකේ තියෙන වැදගත්ම දේ තමයි  <strong>Full-duplex</strong> <strong>Communication</strong> වලට වගේම <strong>Half-duplex Communication</strong> වලටත් යොදා ගන්න පුලුවන් එක​.මේ <em>Cable</em> එකෙනුත් <em>Data Transfer Rate</em> එක​ 10 M bit/s වගේම 100 දුරකට <em>data</em> ගෙනියන්නත් පුලුවන්.</h5>
-<h5><strong>100 Base TX:</strong>මේකට <em>Fast Ethernet</em> කියලත් කියනවා.10 Base T Cable එකයි මේ <em>Cable</em> එකයි අතර ප්‍රධාන වෙනස තමයි <em>Data Transmission Speed</em> එක​ 100 M bit/s වීම​.<img class="alignnone size-full wp-image-420 alignright" src="/wp-content/uploads/2018/03/images-4.jpg" alt="" width="225" height="225" srcset="/wp-content/uploads/2018/03/images-4.jpg 225w, /wp-content/uploads/2018/03/images-4-150x150.jpg 150w" sizes="(max-width: 225px) 100vw, 225px" /></h5>
+<h5><strong>100 Base TX:</strong>මේකට <em>Fast Ethernet</em> කියලත් කියනවා.10 Base T Cable එකයි මේ <em>Cable</em> එකයි අතර ප්‍රධාන වෙනස තමයි <em>Data Transmission Speed</em> එක​ 100 M bit/s වීම​.<img class="alignnone size-full wp-image-420 alignright" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images-4.jpg" alt="" width="225" height="225" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images-4.jpg 225w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images-4-150x150.jpg 150w" sizes="(max-width: 225px) 100vw, 225px" /></h5>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -378,7 +378,7 @@
 <h5><strong>1000 Base T:</strong>මේකට <em>Gigabit Ethernet</em> කියලා කියනවා.මේකෙ <em>Data Transmission Speed </em> එක 1000 M bit/s (<em>1 Gigabit Per Second</em>)වෙනවා.</h5>
 <p><strong>2.NIC (Network Interface Card)</strong></p>
 <p><em>Network</em> එකේ තියෙන <em>Network Cable</em> එක ගහන <em>port</em> එක තියෙන එකට තමයි <em>NIC</em> කියන්නේ.සමහර <em>Computer</em> වල මේක <em>On Board NIC</em> තියෙනවා වගේම සමහර <em>Computers</em> වල මේක <em>Separate</em> තියනවා.වැදගත්ම දේ තමයි හැම <em>NIC</em> එකටම එකිනෙකට වෙනස් <em>Unique Mac Address</em>  එකක් තිබීම​.<strong><em>Mac Address</em></strong> ගැන ඉදිරි ලිපියකින් මම ඔයාලට පැහැදිලි කරන්නම්.</p>
-<p><img class="alignnone size-full wp-image-421 aligncenter" src="/wp-content/uploads/2018/03/download-1.jpg" alt="" width="220" height="147" /></p>
+<p><img class="alignnone size-full wp-image-421 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/download-1.jpg" alt="" width="220" height="147" /></p>
 <p><strong>3.Protocol</strong></p>
 <p><strong><em>Protocol</em></strong> එකක් කියලා කියන්නේ නීති මාලාවකට​,ඒකියන්නේ <em>Network</em>  එකක තියෙන <em>Computers 2</em> ක් අතර <em>data</em> හුවමාරු කරනවිට එක​ <em>Computer</em>  එකකින් යවන <em>(Sender) data</em> තව <em>receiver</em> එකකින් ලබාගන්න​ නම් මේ<em>Computer 2</em> ම <em>data</em> යවන්නයි ලබාගන්නයි එකම නීති මාලාවක් පිළිපදින්න ඕනිනේ,අන්න ඒකට තමයි <strong>Protocol</strong> එකක් කියලා කියන්නේ.<br />
 මම පොඩි උදාහරණයක් දෙන්නම්,හිතන්නකෝ දෙමල කතා කරන මිනිහෙකුයි <em>Sinhala</em>  කතා කරන මිනිහෙකුයි ඉන්නවා කියලා.ඉතින් මේ දෙන්නටම සන්නිවේදනය කරගන්න පොදු බාෂාවක් තියෙන්න ඕනිනේ.අන්න ඒ පොදු භාෂාවට තමයි අපි <em>Networking</em> වලදී <strong>Protocol</strong> එකක් කියල කියන්නේ.</p>
@@ -387,7 +387,7 @@
 <p><strong>5.Router</strong></p>
 <blockquote><p>Router එකක් යනු අන්තර්ජාලය හරහා දත්ත ගෙන යාම සදහා භාවිතා කරන තවත් එක් උපකරණයකි.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-423" src="/wp-content/uploads/2018/03/images-5.jpg" alt="" width="275" height="183" /></p></blockquote>
+<p><img class="alignnone size-full wp-image-423" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/images-5.jpg" alt="" width="275" height="183" /></p></blockquote>
 <p>පරිගනක ජාලයක ,එක් ස්ථානයක සිට අනෙක් ස්ථානයට දත්ත ගමන් කරනුයේ කුඩා කොටස් වලටය​.ඒවා <em>bits</em> ලෙස හදුන්වයි. මෙම උපකරණ වලට භාෂා නොතේරෙන නිසා <em>Data Packets</em> හදුනා ගන්නේ මේ <em>bits</em> උපයෝගී කරගෙනය​.<br />
 <em>Router</em> හරහා දත්ත ගමන් කරන්නේ <em>Data Packets</em> ලෙසටයි.මෙම <em>Data Packet</em> එකක දත්ත යවන තැන හා දත්ත ලබන තැනට<em> IP Address</em> භාවිතා කරමින් මෙම <em>Data Packets</em> එහා මෙහා ගෙන යාම සිදු කරයි.<br />
 එක් පරිගණක ජාලයක සිට තවත් පරිගණක ජාලයකට<em> Data Packets</em> ගමන් කරන විට අදාල ලගම මාර්ගය​ <em>Best Path</em> තෝරා ගන්නේද මේ <strong><em>Router</em></strong> එක මගිනි.</p>
@@ -403,7 +403,7 @@
 <h5><strong>3G , 4G Routers</strong></h5>
 <p>ඇන්ටනා සහ ස්ථාවර<em> IP SIM</em> කාඩ්පත් යොදා ගනිමින් ඵලදයි පුළුල් පරාස අන්තර් ජාල සබදතා පවත්වා ගැනීමට අපි මේව භාවිතයත්ට ගනියි.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-424 alignright" src="/wp-content/uploads/2018/03/download-2.jpg" alt="" width="225" height="225" srcset="/wp-content/uploads/2018/03/download-2.jpg 225w, /wp-content/uploads/2018/03/download-2-150x150.jpg 150w" sizes="(max-width: 225px) 100vw, 225px" /></p>
+<p><img class="alignnone size-full wp-image-424 alignright" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/download-2.jpg" alt="" width="225" height="225" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/download-2.jpg 225w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/download-2-150x150.jpg 150w" sizes="(max-width: 225px) 100vw, 225px" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -415,7 +415,7 @@
 <p>&nbsp;</p>
 <p><strong>6.Modems</strong></p>
 <p><strong><em>Modem</em></strong> එකක් යනු අන්තර්ජාලය හරහා එක් ස්ථානයක ඇති පරිගනකයක් තවත් ස්ථානයක ඇති පරිගනකයක් හා සම්බන්ධ කිරීමෙන් එම පරිගනක දෙක හරහා අන්තර්ජාලය හරහා දත්ත සන්නිවේදනය කල හැකි වීමයි.</p>
-<p><img class="alignnone size-full wp-image-425 aligncenter" src="/wp-content/uploads/2018/03/download-3.jpg" alt="" width="275" height="183" /></p>
+<p><img class="alignnone size-full wp-image-425 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/download-3.jpg" alt="" width="275" height="183" /></p>
 <p>&nbsp;</p>
 <p>මෙහිදී පරිගණක එකට සම්බන්ද කරනුයේ දුරකථන මාර්ග ආධාරයෙනි. එනම් මෙහෙදී දත්ත සම්ප්‍රේෂනය සිදු කරනුයේ <em>Electronic waves</em> හරහාය​.</p>
 <p>&nbsp;</p>
@@ -425,9 +425,9 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/31/computer-networking/">COMPUTER NETWORKING</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/31/computer-networking/">COMPUTER NETWORKING</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/03/31/computer-networking/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/03/31/computer-networking/feed/</wfw:commentRss>
 		<slash:comments>4</slash:comments>
 							</item>
 	</channel>

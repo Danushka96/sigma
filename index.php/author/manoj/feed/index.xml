@@ -9,8 +9,8 @@
 
 <channel>
 	<title>manoj &#8211; The SIGMA</title>
-	<atom:link href="/index.php/author/manoj/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/author/manoj/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,17 +22,17 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>node js very basic</title>
-		<link>/index.php/2019/02/06/node-js-basic-in-one-post/</link>
-				<comments>/index.php/2019/02/06/node-js-basic-in-one-post/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/02/06/node-js-basic-in-one-post/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/02/06/node-js-basic-in-one-post/#respond</comments>
 				<pubDate>Wed, 06 Feb 2019 18:11:44 +0000</pubDate>
 		<dc:creator><![CDATA[manoj]]></dc:creator>
 				<category><![CDATA[node.js]]></category>
 		<category><![CDATA[web development]]></category>
 		<category><![CDATA[nodejs]]></category>
 
-		<guid isPermaLink="false">/?p=1769</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> මේ post එකෙන් මම කියන්න යන්නේ node js වල ප්‍රදාන දේවල් වන variables, array, array looping, functions,ගැන සරල හැදින්වීමක්. මුලින්ම බලමු කොහොමද node වලදී variable එකක් declare කරන්නේ කියල. දැන් අපි මේ code එකේ output එක බලමු. ඔයාල මේ code එක කැමති name එකක් සහ .js extention දාල save කරල<a class="moretag" href="/index.php/2019/02/06/node-js-basic-in-one-post/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/06/node-js-basic-in-one-post/">node js very basic</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1769</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> මේ post එකෙන් මම කියන්න යන්නේ node js වල ප්‍රදාන දේවල් වන variables, array, array looping, functions,ගැන සරල හැදින්වීමක්. මුලින්ම බලමු කොහොමද node වලදී variable එකක් declare කරන්නේ කියල. දැන් අපි මේ code එකේ output එක බලමු. ඔයාල මේ code එක කැමති name එකක් සහ .js extention දාල save කරල<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/02/06/node-js-basic-in-one-post/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/06/node-js-basic-in-one-post/">node js very basic</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
 <p><strong>මේ  post එකෙන් මම කියන්න යන්නේ node js වල ප්‍රදාන දේවල් වන variables, array, array looping, functions,ගැන සරල හැදින්වීමක්. </strong></p>
@@ -61,7 +61,7 @@ console.log("check :",check);</code></pre>
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/1.jpg" alt="" class="wp-image-1777" srcset="/wp-content/uploads/2019/02/1.jpg 440w, /wp-content/uploads/2019/02/1-300x102.jpg 300w" sizes="(max-width: 440px) 100vw, 440px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/1.jpg" alt="" class="wp-image-1777" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/1.jpg 440w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/1-300x102.jpg 300w" sizes="(max-width: 440px) 100vw, 440px" /></figure>
 
 
 
@@ -92,7 +92,7 @@ console.log("value after changed : ",check);</code></pre>
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/2-1.jpg" alt="" class="wp-image-1776" srcset="/wp-content/uploads/2019/02/2-1.jpg 619w, /wp-content/uploads/2019/02/2-1-300x176.jpg 300w" sizes="(max-width: 619px) 100vw, 619px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/2-1.jpg" alt="" class="wp-image-1776" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/2-1.jpg 619w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/2-1-300x176.jpg 300w" sizes="(max-width: 619px) 100vw, 619px" /></figure>
 
 
 
@@ -240,24 +240,24 @@ function sum(a,b){
 
 sum(3,5);
 </code></pre>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/06/node-js-basic-in-one-post/">node js very basic</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/06/node-js-basic-in-one-post/">node js very basic</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/02/06/node-js-basic-in-one-post/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/02/06/node-js-basic-in-one-post/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>Full Tutorial About Darkweb</title>
-		<link>/index.php/2018/09/15/full-tutorial-about-darkweb/</link>
-				<comments>/index.php/2018/09/15/full-tutorial-about-darkweb/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/09/15/full-tutorial-about-darkweb/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/09/15/full-tutorial-about-darkweb/#respond</comments>
 				<pubDate>Sat, 15 Sep 2018 07:00:14 +0000</pubDate>
 		<dc:creator><![CDATA[manoj]]></dc:creator>
 				<category><![CDATA[cyber security]]></category>
 		<category><![CDATA[darknet]]></category>
 		<category><![CDATA[darkweb]]></category>
 
-		<guid isPermaLink="false">/?p=1302</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1302</guid>
 				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span> මේ එකෙන් මන් darkweb ගැන complete විස්තරයක් සහ darkweb බාවිත කරන විදිය සහ අපේ website එකක් darkweb එකට host විදිය කියල දෙන්න බලාපොරොත්තු වෙනවා. part 1-&#62; part 2-&#62; &#160;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/15/full-tutorial-about-darkweb/">Full Tutorial About Darkweb</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/15/full-tutorial-about-darkweb/">Full Tutorial About Darkweb</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span>මේ එකෙන් මන් darkweb ගැන complete විස්තරයක් සහ darkweb බාවිත කරන විදිය සහ අපේ website එකක් darkweb එකට host විදිය කියල දෙන්න බලාපොරොත්තු වෙනවා.</p>
 <p>part 1-&gt;</p>
@@ -265,24 +265,24 @@ sum(3,5);
 <p>part 2-&gt;</p>
 <p><iframe width="750" height="422" src="https://www.youtube.com/embed/s1w7dVC3_lk?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/15/full-tutorial-about-darkweb/">Full Tutorial About Darkweb</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/15/full-tutorial-about-darkweb/">Full Tutorial About Darkweb</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/09/15/full-tutorial-about-darkweb/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/09/15/full-tutorial-about-darkweb/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</title>
-		<link>/index.php/2018/08/27/wireshark-tutorial/</link>
-				<comments>/index.php/2018/08/27/wireshark-tutorial/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/08/27/wireshark-tutorial/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/08/27/wireshark-tutorial/#respond</comments>
 				<pubDate>Mon, 27 Aug 2018 17:16:53 +0000</pubDate>
 		<dc:creator><![CDATA[manoj]]></dc:creator>
 				<category><![CDATA[cyber security]]></category>
 		<category><![CDATA[tech]]></category>
 		<category><![CDATA[wireshark]]></category>
 
-		<guid isPermaLink="false">/?p=1185</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1185</guid>
 				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span> හරි අද අපි බලමු මොකද්ද මේ wireshark කියන්නේ කියල සහ මේ tool එක බාවිතා කරන විදිය.. ඇත්තටම මොකද්ද මේ wireshark? protocols සහ අනෙක් වැදගත් දේවල්.. &#160;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/08/27/wireshark-tutorial/">මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/08/27/wireshark-tutorial/">මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">1</span> <span class="rt-label rt-postfix">minute</span></span>හරි අද අපි බලමු මොකද්ද මේ wireshark කියන්නේ කියල සහ මේ tool එක බාවිතා කරන විදිය..</p>
 <p>ඇත්තටම මොකද්ද මේ wireshark?</p>
@@ -291,9 +291,9 @@ sum(3,5);
 <p><iframe width="750" height="422" src="https://www.youtube.com/embed/JxdXtKC7tRg?start=2&#038;feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
 <p>&nbsp;</p>
 <p><iframe width="750" height="422" src="https://www.youtube.com/embed/iabW-AyWlJk?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/08/27/wireshark-tutorial/">මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/08/27/wireshark-tutorial/">මොකක්ද මේ wireshark සහ wireshark install කරන විදිය</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/08/27/wireshark-tutorial/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/08/27/wireshark-tutorial/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

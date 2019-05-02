@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Laravel &#8211; The SIGMA</title>
-	<atom:link href="/index.php/category/web-development/laravel/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/category/web-development/laravel/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Laravel වලින් Table Relationship එක්ක වැඩ කරමු</title>
-		<link>/index.php/2019/01/10/laravel-table-relationship/</link>
-				<comments>/index.php/2019/01/10/laravel-table-relationship/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/#respond</comments>
 				<pubDate>Thu, 10 Jan 2019 10:46:16 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Laravel]]></category>
@@ -34,9 +34,9 @@
 		<category><![CDATA[mysql]]></category>
 		<category><![CDATA[relational]]></category>
 
-		<guid isPermaLink="false">/?p=1516</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක්<a class="moretag" href="/index.php/2019/01/10/laravel-table-relationship/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1516</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක්<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span>
 <p>අද ලිපියෙන් කතා කරන්න හදන්නේ Laravel වල තියෙන Feature එකක් ගැන. සාමාන්‍යයෙන් අපි SQL වගේ Relational Database එකක් එක්ක වැඩ කරද්දී අපිට නිතරම ඕන වෙන දෙයක් තමයි එක Table එකක ඉදන් තවත් Table එකක අදාල Data Set එකක් ගන්න එක. ඒ කියන්නේ Relationship එකක් වැඩ කරන එක. මේ වගේ වැඩක් කර ගන්න සාමාන්‍යයෙන් අපි Query එකක් ලිවුවොත් For loop දාගෙන සෑහෙන්න දඟලන්න වෙනවා. </p>
@@ -55,7 +55,7 @@
 
 
 
-<p>මම මුලින්ම අලුත් Project එකක් හදා ගන්නවා මේ විදියට.. (Laravel install කරලා නැත්නම් මේ <a href="/index.php/2018/04/11/install-laravel-homestead-custom/">ලිපිය</a> බලන්න)</p>
+<p>මම මුලින්ම අලුත් Project එකක් හදා ගන්නවා මේ විදියට.. (Laravel install කරලා නැත්නම් මේ <a href="https://danushka96.github.io/sigma/index.php/2018/04/11/install-laravel-homestead-custom/">ලිපිය</a> බලන්න)</p>
 
 
 
@@ -247,7 +247,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png" alt="" class="wp-image-1526" srcset="/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png 642w, /wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14-300x45.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><figcaption>tinker Screen shot</figcaption></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png" alt="" class="wp-image-1526" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14.png 642w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Screenshot-from-2019-01-10-13-51-14-300x45.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><figcaption>tinker Screen shot</figcaption></figure>
 
 
 
@@ -288,15 +288,15 @@
 
 
 <p>හරි එහෙනම් මොකක් හරි ප්‍රශ්ණයක් තිබුණොත් අහන්න. ඊළඟ tutorial එකෙන් Many to Many එකක් set කරගෙන් වැඩ කරන විදිය බලමු. </p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/">Laravel වලින් Table Relationship එක්ක වැඩ කරමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/01/10/laravel-table-relationship/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/01/10/laravel-table-relationship/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>Laravel වලින් Database Migrations කරමු.</title>
-		<link>/index.php/2018/09/17/laravel-database-migrations/</link>
-				<comments>/index.php/2018/09/17/laravel-database-migrations/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/#respond</comments>
 				<pubDate>Mon, 17 Sep 2018 18:24:22 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Laravel]]></category>
@@ -308,13 +308,13 @@
 		<category><![CDATA[php]]></category>
 		<category><![CDATA[sinhala]]></category>
 
-		<guid isPermaLink="false">/?p=1271</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230; වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel<a class="moretag" href="/index.php/2018/09/17/laravel-database-migrations/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1271</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230; වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230;</p>
-<p>වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel post එක නම් අපේ අනිත් ලිපි Set එකත් <a href="/index.php/2018/04/10/web-application-with-laravel/">මෙතනින්</a> බලන්න.</p>
-<p><img src="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg" alt="" width="523" height="298" class=" wp-image-1273 aligncenter" srcset="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg 300w, /wp-content/uploads/2018/09/Why_Laravel.jpg 700w" sizes="(max-width: 523px) 100vw, 523px" /></p>
+<p>වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel post එක නම් අපේ අනිත් ලිපි Set එකත් <a href="https://danushka96.github.io/sigma/index.php/2018/04/10/web-application-with-laravel/">මෙතනින්</a> බලන්න.</p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg" alt="" width="523" height="298" class=" wp-image-1273 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Why_Laravel.jpg 700w" sizes="(max-width: 523px) 100vw, 523px" /></p>
 <h2><span style="text-decoration: underline; color: #0000ff;"><strong>මූලික හැඳින්වීම</strong></span></h2>
 <p>උඩ තියෙන Image එක කියන්නේ Why Laravel කියන ප්‍රශ්නෙට තියෙන උත්තර. ඒ කියන්නේ අනිත් PHP Frameworks එක්ක compare කරලා බලද්දි Laravel වල තියෙන විශේෂත්වය. ඒකෙ උඩින්ම තියෙන දෙයක් තමයි මේ Migrations කියන එක. ඒකට ගොඩක් specialty එකක් දීලා තියෙන්නේ ඒකෙන් ලොකු වැඩ ගොඩක් Simple විදියට කරගන්න අවස්ථාවක් තියෙන හින්දා.</p>
 <p>සාමාන්‍යයෙන් අපි මොකක්ම හරි Web Application එකක් Laravel නැතිව වෙනත් විදියකින් හදනවා නම් අපි කරන්නේ අපේ Source Code එක වෙනම හදලා Database එක වෙනම හදලා මේ දෙක php වලින් Connect කරගන්න එකනේ. දැන් හිතන්න ඔය System එක තවත් කාට හරි දෙන්න ඕන වුණා කියලා. එතකොට අපිට සිද්ධ වෙනවා අපේ source code එකත් එක්ක SQL Server එකෙන් export කරගත්තු database file එකත් දෙන්න. ඊට පස්සේ මේ system එක ගන්න කෙනා ආපහු ඒ database එක import කරගන්න. මොකක්ම හරි Error එකක් ඇවිත් අර database file එක import වෙන්නේ නැති වුණොත් අපිට ආපහු ඒ file එක edit කරන එක ඇත්තටම අමාරු වැඩක්. මොකද ඒකෙ තියෙන්නේ generate වෙලා තියෙන code set එකක් නිසා.</p>
@@ -386,15 +386,15 @@ class CreateFlightsTable extends Migration
 <p style="padding-left: 30px;">මෙකෙන් කලින් කරපු වැඩේට ටිකක් සමාන වැඩක් කරගන්න පුළුවන්. හැබැයි මේකෙදි database එක reset වෙන්නේ නැතිව වෙන්නේ ඔක්කොම Tables ටික ඉස්සරලාම drop කරගන්න එක. ඊට පස්සේ Migration files ටික run කරගන්නවා.</p>
 <p>ලිපිය තවත් දික් වෙලා Boring වෙන නිසා මම Database Queries ලියා ගන්න විදිය ගැන තවත් ලිපියකින් කතා කරන්නම්. මේ ලිපිය ගැන මොකක් හරි ප්‍රශ්ණයක් තියෙනවා නම් Comment එකක් දාන්න. අලුත් ලිපියකින් හමු වෙමු&#8230;..</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/09/17/laravel-database-migrations/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>Laravel- Middleware</title>
-		<link>/index.php/2018/09/14/laravel-middleware/</link>
-				<comments>/index.php/2018/09/14/laravel-middleware/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/09/14/laravel-middleware/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/09/14/laravel-middleware/#comments</comments>
 				<pubDate>Fri, 14 Sep 2018 03:10:55 +0000</pubDate>
 		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
 				<category><![CDATA[Laravel]]></category>
@@ -406,11 +406,11 @@ class CreateFlightsTable extends Migration
 		<category><![CDATA[route]]></category>
 		<category><![CDATA[view]]></category>
 
-		<guid isPermaLink="false">/?p=1251</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන්! කොහොමද යාලුවනේ..ඔන්න මම අදත් ආවා laravel framework එකේ තියන තවත් future එකක් පිලිබදව විස්තරත් සමගින්..මුලින්ම කියන්න ඕනි ඔයාලා කාට හරි අපේ මුල පාඩම් ටික මගහැරුනනම් මෙන්න මෙතනින් ගිහින් බලන්න පුලුවන්..හරි අපි එහෙනං අද පාඩමට බහිමු.අද පාඩම තමයි middleware. ඇත්තටම laravel වල තියන ගොඩක් හොද future එකක් තමයි middleware කියන්නේ..කෙටියෙන්ම<a class="moretag" href="/index.php/2018/09/14/laravel-middleware/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/14/laravel-middleware/">Laravel- Middleware</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1251</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන්! කොහොමද යාලුවනේ..ඔන්න මම අදත් ආවා laravel framework එකේ තියන තවත් future එකක් පිලිබදව විස්තරත් සමගින්..මුලින්ම කියන්න ඕනි ඔයාලා කාට හරි අපේ මුල පාඩම් ටික මගහැරුනනම් මෙන්න මෙතනින් ගිහින් බලන්න පුලුවන්..හරි අපි එහෙනං අද පාඩමට බහිමු.අද පාඩම තමයි middleware. ඇත්තටම laravel වල තියන ගොඩක් හොද future එකක් තමයි middleware කියන්නේ..කෙටියෙන්ම<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/09/14/laravel-middleware/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/14/laravel-middleware/">Laravel- Middleware</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span>ආයුබෝවන්! කොහොමද යාලුවනේ..ඔන්න මම අදත් ආවා laravel framework එකේ තියන තවත් future එකක් පිලිබදව විස්තරත් සමගින්..මුලින්ම කියන්න ඕනි ඔයාලා කාට හරි අපේ මුල පාඩම් ටික මගහැරුනනම් <a href="/index.php/category/web-development/laravel/" target="_blank" rel="noopener">මෙන්න මෙතනින්</a> ගිහින් බලන්න පුලුවන්..හරි අපි එහෙනං අද පාඩමට බහිමු.අද පාඩම තමයි middleware. ඇත්තටම laravel වල තියන ගොඩක් හොද future එකක් තමයි middleware කියන්නේ..කෙටියෙන්ම කිව්වොත් middleware එකක් කියන්නේ user හා request එක අතරමැද තියන layer එකක්. මෙන්න මේ layer (middleware ) එකෙන් තමයි user ට system එක access කරන්ට permition ලබා දෙන්නේ ..</p>
+								<content:encoded><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span>ආයුබෝවන්! කොහොමද යාලුවනේ..ඔන්න මම අදත් ආවා laravel framework එකේ තියන තවත් future එකක් පිලිබදව විස්තරත් සමගින්..මුලින්ම කියන්න ඕනි ඔයාලා කාට හරි අපේ මුල පාඩම් ටික මගහැරුනනම් <a href="https://danushka96.github.io/sigma/index.php/category/web-development/laravel/" target="_blank" rel="noopener">මෙන්න මෙතනින්</a> ගිහින් බලන්න පුලුවන්..හරි අපි එහෙනං අද පාඩමට බහිමු.අද පාඩම තමයි middleware. ඇත්තටම laravel වල තියන ගොඩක් හොද future එකක් තමයි middleware කියන්නේ..කෙටියෙන්ම කිව්වොත් middleware එකක් කියන්නේ user හා request එක අතරමැද තියන layer එකක්. මෙන්න මේ layer (middleware ) එකෙන් තමයි user ට system එක access කරන්ට permition ලබා දෙන්නේ ..</p>
 <p>laravel folder structure එක ගත්තොත් middleware එක තියෙන්නේ App/Http/Middleware කියන තැන. මේ Middleware folder එක ඇතුලට ගියාම ඔයාලට දැකගන්න පුලුවන් laravel වල default එන middlewares කිහිපයක්ම තියනවා.(VerifyCsrfToken , Authenticate , EncryptCookies. ..etc).අපිට ඕනි නම් middleware එකක් හදන්න පුලුවන්</p>
 <pre>php artisan make:middleware &lt;middleware_name&gt;</pre>
 <p>කියන artisan command එක run කරලා.middleware එකක් හදා ගත්තට පසුව අපි පලමුවෙන්ම කරන්න ඕනි දේ තමයි හදාගත්ත middleware එක App/Http/Kernel.php එකේ register කර ගන්න එක. හරි ඔන්න ඕකයි සිද්ධිය..☺☺..පොඩ්ඩක් පොඩ්ඩක් අව්ල් වගේනං අපි පොඩි උදාහරණයක්ම ඇරගෙන වැඩේ කරලා බලමුකෝ..😃😃</p>
@@ -458,7 +458,7 @@ class CreateFlightsTable extends Migration
 
 </pre>
 <p>හරි මට දැන් කරන්න ඕනි දේ තමයි 127.0.0.1 කියන Ip address එකින් request එකක් ආවොත් එයා system එකට ඇතුලු වෙන එක වලක්වන එක. එතකොට අපි checkIp කියන middleware එකේ මෙහෙම කලානම් හරි නේද&#8230;</p>
-<p><img src="/wp-content/uploads/2018/09/ch-300x211.jpg" alt="" width="635" height="447" class=" wp-image-1289 aligncenter" srcset="/wp-content/uploads/2018/09/ch-300x211.jpg 300w, /wp-content/uploads/2018/09/ch.jpg 632w" sizes="(max-width: 635px) 100vw, 635px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/ch-300x211.jpg" alt="" width="635" height="447" class=" wp-image-1289 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/ch-300x211.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/ch.jpg 632w" sizes="(max-width: 635px) 100vw, 635px" /></p>
 <p>හරි දැන් මෙන්න මේ විදියට rote එකයි view එකකුයි set කරලා run කරලා බලන්නකෝ&#8230;</p>
 <p>Route ;</p>
 <pre>Route::get('/home',function(){
@@ -467,16 +467,16 @@ class CreateFlightsTable extends Migration
 
 </pre>
 <p>output</p>
-<p><img src="/wp-content/uploads/2018/09/check-300x133.jpg" alt="" width="686" height="304" class=" wp-image-1256 aligncenter" srcset="/wp-content/uploads/2018/09/check-300x133.jpg 300w, /wp-content/uploads/2018/09/check-768x340.jpg 768w, /wp-content/uploads/2018/09/check-1024x454.jpg 1024w, /wp-content/uploads/2018/09/check.jpg 1354w" sizes="(max-width: 686px) 100vw, 686px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check-300x133.jpg" alt="" width="686" height="304" class=" wp-image-1256 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check-300x133.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check-768x340.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check-1024x454.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check.jpg 1354w" sizes="(max-width: 686px) 100vw, 686px" /></p>
 <p>වැඩේ හරි නේද&#8230;127.0.0.1 කියන ip එකෙන් එන requests වලට system එක access කරන්න එක middleware එකෙන් වලක්වලා තියෙන්නේ..</p>
 <p>ඔන්න ඔය විදියට route එකට middleware එක set කරනවට අමතරව අපිට පුලුවන් middleware එක controller එකක් ඇතුලට set කරන්න&#8230;එහෙම කලාම වෙන්නේ ඒ controller එකේ තියන සියලුම methods සදහාම middleware එකෙන් ආරක්ෂාවක් සැලසීමයි..controller එකට middleware එක අපි set කරන්නේ __construct() කියන method එක එකේදී..හරි අපි එහෙනං ඒකත් කරලා බලමු.</p>
-<p><img src="/wp-content/uploads/2018/09/middleware-300x185.jpg" alt="" width="635" height="392" class=" wp-image-1290 aligncenter" srcset="/wp-content/uploads/2018/09/middleware-300x185.jpg 300w, /wp-content/uploads/2018/09/middleware.jpg 632w" sizes="(max-width: 635px) 100vw, 635px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/middleware-300x185.jpg" alt="" width="635" height="392" class=" wp-image-1290 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/middleware-300x185.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/middleware.jpg 632w" sizes="(max-width: 635px) 100vw, 635px" /></p>
 <p>දැන් පුරුදු විදියටම route එකයි view එකයි set කරලා output එක බලන්නකෝ&#8230;</p>
 <p>Route -&gt;</p>
 <pre> Route::get('/home','studentController@index');
 </pre>
 <p>Output</p>
-<p><img src="/wp-content/uploads/2018/09/check-300x133.jpg" alt="" width="672" height="298" class="wp-image-1256 aligncenter" srcset="/wp-content/uploads/2018/09/check-300x133.jpg 300w, /wp-content/uploads/2018/09/check-768x340.jpg 768w, /wp-content/uploads/2018/09/check-1024x454.jpg 1024w, /wp-content/uploads/2018/09/check.jpg 1354w" sizes="(max-width: 672px) 100vw, 672px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check-300x133.jpg" alt="" width="672" height="298" class="wp-image-1256 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check-300x133.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check-768x340.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check-1024x454.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/check.jpg 1354w" sizes="(max-width: 672px) 100vw, 672px" /></p>
 <p>ඔන්න ඔය විදියට තමයි middleware එකක් set කරන්නේ..middleware එකට වැඩි ගනනක් අපිට set කරන්න ඕනිනම්, middlewares ටික __constructor() method එකේ parameters විදියට අපිට pass කරන්න පුලුවන්.හරියට මෙන්න මේ විදියට&#8230;</p>
 <p>demo1,demo2,demo3 කියලා middlewares තුනක් මං ගන්නම්..</p>
 <pre>public function __construct(){
@@ -516,7 +516,7 @@ class CreateFlightsTable extends Migration
 </pre>
 <p>හරි අපි දැන් හිතමු කලින් database එකේ ඉන්න user කෙනෙක්ට system එක access කරන එක වලක්වන්න ඕනි කියලා&#8230;අන්න එතකොට middleware එක set කරන්නේ කොහොමද කියලා දැන් අපි බලමු.<br />
 මගේ database එකට නමක් දෙනවා studentdatabase කියලා..ඒකේ තියන student table එක සලකමුකෝ&#8230;</p>
-<p><img src="/wp-content/uploads/2018/09/database-300x135.jpg" alt="" width="627" height="282" class="wp-image-1257 aligncenter" srcset="/wp-content/uploads/2018/09/database-300x135.jpg 300w, /wp-content/uploads/2018/09/database-768x346.jpg 768w, /wp-content/uploads/2018/09/database-1024x461.jpg 1024w, /wp-content/uploads/2018/09/database.jpg 1110w" sizes="(max-width: 627px) 100vw, 627px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/database-300x135.jpg" alt="" width="627" height="282" class="wp-image-1257 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/database-300x135.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/database-768x346.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/database-1024x461.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/database.jpg 1110w" sizes="(max-width: 627px) 100vw, 627px" /></p>
 <p>දැන් මට ඕනි name එක &#8216;smith&#8217; කියලා තියන student , system එක access කරන එක වලක්වන්ට..එතකොට route එක මෙන්න මේ විදියට set කරන්න පුලුවන්..</p>
 <pre> Route::get('/profileInfo',function(){
     return view('testView.prof');
@@ -524,15 +524,15 @@ class CreateFlightsTable extends Migration
 
 </pre>
 <p>route එක ඔන්න ඔය විදියට set කරන්න පුලුවන්..middleware එක මෙන්න මේ විදියට define කලානම් හරි නේද..</p>
-<p><img src="/wp-content/uploads/2018/09/prof-300x254.jpg" alt="" width="586" height="496" class=" wp-image-1297 aligncenter" srcset="/wp-content/uploads/2018/09/prof-300x254.jpg 300w, /wp-content/uploads/2018/09/prof.jpg 622w" sizes="(max-width: 586px) 100vw, 586px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/prof-300x254.jpg" alt="" width="586" height="496" class=" wp-image-1297 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/prof-300x254.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/prof.jpg 622w" sizes="(max-width: 586px) 100vw, 586px" /></p>
 <p>Output එකත් බලන්නකෝ&#8230;</p>
-<p><img src="/wp-content/uploads/2018/09/name-300x129.jpg" alt="" width="585" height="252" class=" wp-image-1258 aligncenter" srcset="/wp-content/uploads/2018/09/name-300x129.jpg 300w, /wp-content/uploads/2018/09/name-768x331.jpg 768w, /wp-content/uploads/2018/09/name-1024x442.jpg 1024w, /wp-content/uploads/2018/09/name.jpg 1366w" sizes="(max-width: 585px) 100vw, 585px" />;</p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/name-300x129.jpg" alt="" width="585" height="252" class=" wp-image-1258 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/name-300x129.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/name-768x331.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/name-1024x442.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/name.jpg 1366w" sizes="(max-width: 585px) 100vw, 585px" />;</p>
 <p>හරි නේද &#8230;&#8217;smith&#8217; user ට system එක access කරන්න දෙන එක middleware එකෙන් වලක්වලා තියෙන්නේ&#8230;.</p>
 <p>හරි ඔන්න ඔය ටික තමයි middleware එක ගැන කියන්ට තියෙන්නේ&#8230;අදට පාඩම ඉවරයි..ඔයාලගේ අදහස් කියලා comment එකක් දාන්නත් අමතක කරන්න එපා..project එකට අදාල source code එක පහල තියන link එකට ගිහින් බලාගන්න පුලුවන්..සුබ දවසක් හැමෝටම !</p>
 <p><a href="https://github.com/GayanSampathManamendra/demoProject">GitHub Source Code</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/14/laravel-middleware/">Laravel- Middleware</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/14/laravel-middleware/">Laravel- Middleware</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/09/14/laravel-middleware/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/09/14/laravel-middleware/feed/</wfw:commentRss>
 		<slash:comments>2</slash:comments>
 							</item>
 	</channel>

@@ -9,8 +9,8 @@
 
 <channel>
 	<title>java &#8211; The SIGMA</title>
-	<atom:link href="/index.php/category/programming/java/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/category/programming/java/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,38 +22,38 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Java</title>
-		<link>/index.php/2019/01/20/java/</link>
-				<comments>/index.php/2019/01/20/java/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/01/20/java/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/01/20/java/#respond</comments>
 				<pubDate>Sun, 20 Jan 2019 04:36:01 +0000</pubDate>
 		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
 				<category><![CDATA[java]]></category>
 		<category><![CDATA[Programming]]></category>
 		<category><![CDATA[install]]></category>
 
-		<guid isPermaLink="false">/?p=1018</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ මම අද ඔයාලට කියල දෙන්න යන්නේ java කියන programming language එක ගැන.java කියන්නේ object oriented language එකක්. අද අපි බලමු java install කරගන්නේ කොහොමද කියල. මුලින්ම ඔය java development kit(jdk) එක download කරගන්න ඕනි.ඒ සදහා link එක මෙතනින් ලින්ක් එකටගියාම ඔයාලට පහල තියෙන විදියෙ page එකක් බලාගන්න<a class="moretag" href="/index.php/2019/01/20/java/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/20/java/">Java</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1018</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන් යාලුවනේ මම අද ඔයාලට කියල දෙන්න යන්නේ java කියන programming language එක ගැන.java කියන්නේ object oriented language එකක්. අද අපි බලමු java install කරගන්නේ කොහොමද කියල. මුලින්ම ඔය java development kit(jdk) එක download කරගන්න ඕනි.ඒ සදහා link එක මෙතනින් ලින්ක් එකටගියාම ඔයාලට පහල තියෙන විදියෙ page එකක් බලාගන්න<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/01/20/java/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/20/java/">Java</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන් යාලුවනේ මම අද ඔයාලට කියල දෙන්න යන්නේ java කියන programming language එක ගැන.java කියන්නේ object oriented language එකක්.</p>
 <p>අද අපි බලමු java install කරගන්නේ කොහොමද කියල.<br />
-මුලින්ම ඔය java development kit(jdk) එක download කරගන්න ඕනි.ඒ සදහා link එක <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">මෙතනින් </a> ලින්ක් එකටගියාම ඔයාලට පහල තියෙන විදියෙ page එකක් බලාගන්න පුළුවන්.<img class=" wp-image-1021 aligncenter" src="/wp-content/uploads/2018/04/Capture1-2-300x271.jpg" alt="" width="410" height="370" srcset="/wp-content/uploads/2018/04/Capture1-2-300x271.jpg 300w, /wp-content/uploads/2018/04/Capture1-2.jpg 586w" sizes="(max-width: 410px) 100vw, 410px" /><br />
+මුලින්ම ඔය java development kit(jdk) එක download කරගන්න ඕනි.ඒ සදහා link එක <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">මෙතනින් </a> ලින්ක් එකටගියාම ඔයාලට පහල තියෙන විදියෙ page එකක් බලාගන්න පුළුවන්.<img class=" wp-image-1021 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture1-2-300x271.jpg" alt="" width="410" height="370" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture1-2-300x271.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture1-2.jpg 586w" sizes="(max-width: 410px) 100vw, 410px" /><br />
 ඔයාට පුළුවන් මෙතනින් කැමති java platform එකක් තෝරාගන්න. example එකක් විදියට මම මෙතනින් java platform (jdk)10 තෝරගත්ත කියමුකෝ.එතකොට ඔයාට පහත පරිදි window එකක් දකින්න පුළුවන්.<br />
-<img class=" wp-image-1024 aligncenter" src="/wp-content/uploads/2018/04/Capture2-1-300x100.jpg" alt="" width="408" height="136" srcset="/wp-content/uploads/2018/04/Capture2-1-300x100.jpg 300w, /wp-content/uploads/2018/04/Capture2-1.jpg 547w" sizes="(max-width: 408px) 100vw, 408px" /><br />
+<img class=" wp-image-1024 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture2-1-300x100.jpg" alt="" width="408" height="136" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture2-1-300x100.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture2-1.jpg 547w" sizes="(max-width: 408px) 100vw, 408px" /><br />
 මෙතනින් ඔයාගේ operating system එකට ගැලපෙන install file එක තෝරගෙන download කරගන්න.ඊට පස්සෙ install කරගන්න.</p>
 <p>Install කරල ඉවර උනාම තව දෙයක් තියෙනව කරන්න. ඒ තමයි java path එක හදන එක.<br />
 දැන් ඔයා command prompt එකට ගිහින් javac ලෙස type කර enter කරල බලන්න.එතකොට පහත පරිදි window එකක් එන්නෙ නැතුව error එකක් ආවොත්, ඔයාට path එක හදන්න සිදුවෙනවා.<br />
-<img class="wp-image-1028 aligncenter" src="/wp-content/uploads/2018/04/Capture3-300x161.jpg" alt="" width="518" height="278" srcset="/wp-content/uploads/2018/04/Capture3-300x161.jpg 300w, /wp-content/uploads/2018/04/Capture3-768x412.jpg 768w, /wp-content/uploads/2018/04/Capture3.jpg 962w" sizes="(max-width: 518px) 100vw, 518px" /><br />
+<img class="wp-image-1028 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture3-300x161.jpg" alt="" width="518" height="278" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture3-300x161.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture3-768x412.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture3.jpg 962w" sizes="(max-width: 518px) 100vw, 518px" /><br />
 path එක හදාගන්න මේවිදියට යන්න.</p>
 <blockquote><p><strong>my computer &gt;properties &gt;Advanced system setting &gt;Enviroment variables</strong></p></blockquote>
 <p>එවිට ලැබෙන window එකේ පහත highlight කර ඇති new button එක click කරන්න,<br />
-<img class=" wp-image-1029 aligncenter" src="/wp-content/uploads/2018/04/Capture4-274x300.jpg" alt="" width="332" height="364" srcset="/wp-content/uploads/2018/04/Capture4-274x300.jpg 274w, /wp-content/uploads/2018/04/Capture4.jpg 511w" sizes="(max-width: 332px) 100vw, 332px" /><br />
+<img class=" wp-image-1029 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture4-274x300.jpg" alt="" width="332" height="364" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture4-274x300.jpg 274w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture4.jpg 511w" sizes="(max-width: 332px) 100vw, 332px" /><br />
 ඉන්පසු ලැබෙන window එකේ variable name එකට Path ලෙසද variable value එකට ඔයා java install කරපු Drive එකේ සිට java jdk bin folder එක දක්වාම තිබෙන address එක ලබාදී ok click කරන්න. ඔයා install කරද්දි default settings වෙනස් කරේ නැත්ත්ම්, මේ වගේ path එකක් තමයි තියෙන්න ඕනෙ.</p>
 <p>&gt;c:/programe files/java/</p>
 <p>නිදසුනක් පහත රුපසටහනේ දක්වා ඇත.<br />
-<img class=" wp-image-1031 aligncenter" src="/wp-content/uploads/2018/04/Capture5-300x127.jpg" alt="" width="454" height="192" srcset="/wp-content/uploads/2018/04/Capture5-300x127.jpg 300w, /wp-content/uploads/2018/04/Capture5-768x324.jpg 768w, /wp-content/uploads/2018/04/Capture5.jpg 803w" sizes="(max-width: 454px) 100vw, 454px" /></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/20/java/">Java</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<img class=" wp-image-1031 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture5-300x127.jpg" alt="" width="454" height="192" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture5-300x127.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture5-768x324.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture5.jpg 803w" sizes="(max-width: 454px) 100vw, 454px" /></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/20/java/">Java</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/01/20/java/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/01/20/java/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

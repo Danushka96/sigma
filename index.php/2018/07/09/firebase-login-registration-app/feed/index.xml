@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Firebase එක්ක Login, Registration App එකක් හදමු	</title>
-	<atom:link href="/index.php/2018/07/09/firebase-login-registration-app/feed/" rel="self" type="application/rss+xml" />
-	<link>/index.php/2018/07/09/firebase-login-registration-app/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
@@ -21,10 +21,10 @@
 			<item>
 				<title>
 				By: Danushka Herath				</title>
-				<link>/index.php/2018/07/09/firebase-login-registration-app/#comment-236</link>
+				<link>https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/#comment-236</link>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 		<pubDate>Fri, 15 Feb 2019 16:19:58 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1150#comment-236</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1150#comment-236</guid>
 					<description><![CDATA[අදාල Activity එක Kill වෙන එක වෙන්නේ.]]></description>
 		<content:encoded><![CDATA[<p>අදාල Activity එක Kill වෙන එක වෙන්නේ.</p>
 ]]></content:encoded>
@@ -32,10 +32,10 @@
 						<item>
 				<title>
 				By: Kasun				</title>
-				<link>/index.php/2018/07/09/firebase-login-registration-app/#comment-235</link>
+				<link>https://danushka96.github.io/sigma/index.php/2018/07/09/firebase-login-registration-app/#comment-235</link>
 		<dc:creator><![CDATA[Kasun]]></dc:creator>
 		<pubDate>Fri, 15 Feb 2019 13:22:54 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1150#comment-235</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1150#comment-235</guid>
 					<description><![CDATA[මේකෙ ගොඩක් තැන්වල call කරල තියෙන finish() function එකෙන් මොකද්ද වෙන්නෙ?]]></description>
 		<content:encoded><![CDATA[<p>මේකෙ ගොඩක් තැන්වල call කරල තියෙන finish() function එකෙන් මොකද්ද වෙන්නෙ?</p>
 ]]></content:encoded>

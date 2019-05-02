@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Machine Learning වලට අත්පොත් තබමු.	</title>
-	<atom:link href="/index.php/2019/02/12/machinelearningbeginning/feed/" rel="self" type="application/rss+xml" />
-	<link>/index.php/2019/02/12/machinelearningbeginning/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/2019/02/12/machinelearningbeginning/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/index.php/2019/02/12/machinelearningbeginning/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
@@ -21,10 +21,10 @@
 			<item>
 				<title>
 				By: isuru				</title>
-				<link>/index.php/2019/02/12/machinelearningbeginning/#comment-247</link>
+				<link>https://danushka96.github.io/sigma/index.php/2019/02/12/machinelearningbeginning/#comment-247</link>
 		<dc:creator><![CDATA[isuru]]></dc:creator>
 		<pubDate>Fri, 08 Mar 2019 04:44:35 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1844#comment-247</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1844#comment-247</guid>
 					<description><![CDATA[නියම වැඩක් දිගටම කරගෙන යන්න]]></description>
 		<content:encoded><![CDATA[<p>නියම වැඩක් දිගටම කරගෙන යන්න</p>
 ]]></content:encoded>
@@ -32,10 +32,10 @@
 						<item>
 				<title>
 				By: Hasee Amarathunga				</title>
-				<link>/index.php/2019/02/12/machinelearningbeginning/#comment-234</link>
+				<link>https://danushka96.github.io/sigma/index.php/2019/02/12/machinelearningbeginning/#comment-234</link>
 		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
 		<pubDate>Fri, 15 Feb 2019 11:15:53 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1844#comment-234</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1844#comment-234</guid>
 					<description><![CDATA[This is a common problem in many computers because you need to install the numpy library to your environment using conda. So your problem will resolve using following two command in the terminal
 
 &lt;code&gt;activate tfp3.6
@@ -48,10 +48,10 @@
 						<item>
 				<title>
 				By: Sepalika Perera				</title>
-				<link>/index.php/2019/02/12/machinelearningbeginning/#comment-233</link>
+				<link>https://danushka96.github.io/sigma/index.php/2019/02/12/machinelearningbeginning/#comment-233</link>
 		<dc:creator><![CDATA[Sepalika Perera]]></dc:creator>
 		<pubDate>Fri, 15 Feb 2019 11:09:09 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1844#comment-233</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1844#comment-233</guid>
 					<description><![CDATA[I have some problem. import tensorflow is not working in my program.But tensorflow is already installed in my Environment. Can you please help me to fix this]]></description>
 		<content:encoded><![CDATA[<p>I have some problem. import tensorflow is not working in my program.But tensorflow is already installed in my Environment. Can you please help me to fix this</p>
 ]]></content:encoded>

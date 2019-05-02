@@ -9,8 +9,8 @@
 
 <channel>
 	<title>String Search &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/string-search/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/string-search/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>String Matching Algorithms</title>
-		<link>/index.php/2018/03/16/string-search-part-01/</link>
-				<comments>/index.php/2018/03/16/string-search-part-01/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/#respond</comments>
 				<pubDate>Fri, 16 Mar 2018 16:21:57 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Algo]]></category>
@@ -34,9 +34,9 @@
 		<category><![CDATA[search]]></category>
 		<category><![CDATA[String Search]]></category>
 
-		<guid isPermaLink="false">/?p=62</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> What is String Match? String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find<a class="moretag" href="/index.php/2018/03/16/string-search-part-01/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=62</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> What is String Match? String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><h2><strong>What is String Match?</strong></h2>
 <p>String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find a phrase in a book you search for it one page by page. The manual efficient String Search Algorithm is  the dictionary. Dictionary has ordered every word in ascending order of the alphabet. If you want to find a word from the dictionary you can move to the exact page very fast.</p>
@@ -207,9 +207,9 @@ return shift;
 
 </pre>
 <p>This will little weird if you don&#8217;t try it yourself. Just try and post your questions here. I will be there to help you. Thank You.</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/03/16/string-search-part-01/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

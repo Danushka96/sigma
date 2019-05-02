@@ -9,8 +9,8 @@
 
 <channel>
 	<title>mounted &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/mounted/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/mounted/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>VueJs 2 &#8211; 05 filters and computed properties</title>
-		<link>/index.php/2018/04/20/vuejs-2-05/</link>
-				<comments>/index.php/2018/04/20/vuejs-2-05/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/20/vuejs-2-05/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/20/vuejs-2-05/#comments</comments>
 				<pubDate>Fri, 20 Apr 2018 16:41:53 +0000</pubDate>
 		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
 				<category><![CDATA[VueJs]]></category>
@@ -34,11 +34,11 @@
 		<category><![CDATA[mounted]]></category>
 		<category><![CDATA[Vue]]></category>
 
-		<guid isPermaLink="false">/?p=899</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, VueJs ගැන කරන 5 වෙනි post එක. අද කියන්න යන්නෙ computed properties සහ filters ගැන. කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න. ගොඩක් වෙලාවට අපි app එකක් හදද්දි, app එකේ භාවිතාවෙන data වලට විවිද operations කරන්න සිදුවෙනව. උදාහරණයක් විදියට මෙහෙම හිතන්නකො. අපේ app එකේ firstName, lastName කියල data<a class="moretag" href="/index.php/2018/04/20/vuejs-2-05/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/20/vuejs-2-05/">VueJs 2 &#8211; 05 filters and computed properties</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=899</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, VueJs ගැන කරන 5 වෙනි post එක. අද කියන්න යන්නෙ computed properties සහ filters ගැන. කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න. ගොඩක් වෙලාවට අපි app එකක් හදද්දි, app එකේ භාවිතාවෙන data වලට විවිද operations කරන්න සිදුවෙනව. උදාහරණයක් විදියට මෙහෙම හිතන්නකො. අපේ app එකේ firstName, lastName කියල data<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/20/vuejs-2-05/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/20/vuejs-2-05/">VueJs 2 &#8211; 05 filters and computed properties</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්, VueJs ගැන කරන 5 වෙනි post එක. අද කියන්න යන්නෙ computed properties සහ filters ගැන.<span style="font-weight: 400;"> කලින් posts බැලුවෙ නැත්තම් <a href="/index.php/category/vuejs/">මෙතනින් </a>ගිහින් බලන්න. </span></p>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්, VueJs ගැන කරන 5 වෙනි post එක. අද කියන්න යන්නෙ computed properties සහ filters ගැන.<span style="font-weight: 400;"> කලින් posts බැලුවෙ නැත්තම් <a href="https://danushka96.github.io/sigma/index.php/category/vuejs/">මෙතනින් </a>ගිහින් බලන්න. </span></p>
 <p>ගොඩක් වෙලාවට අපි app එකක් හදද්දි, app එකේ භාවිතාවෙන data වලට විවිද operations කරන්න සිදුවෙනව. උදාහරණයක් විදියට මෙහෙම හිතන්නකො. අපේ app එකේ firstName, lastName කියල data 2ක් තියෙනව.</p>
 <pre>data: {
     firstName: 'John',
@@ -47,7 +47,7 @@
 </pre>
 <p>දැන් අපිට කොහේදි හරි full name එක පාවිච්චි කරන්න ඕන උනොත්,</p>
 <pre>firstName + ' ' + LastName</pre>
-<p>කියල ලියන්න වෙනව. මේක එච්චර අමාරු දෙයක් නෙවෙයි කියල ඔයාලට හිතේවි. ඒත් මීට වඩා ලොකු/සංකීර්ණ විදියෙ operations/calculations කරන්න උනාම, සහ ඒව නැවත නැවත ලියන්න උනාම, මේක සෑහෙන්න වදයක් වෙනව. ඒවගේම app එකක, template එකේම logic(calculations) එකත් ලියන එක එච්චර හොඳ දෙයක් නෙවෙයි. මොකද එහෙම සේරම mix එකේ ලිව්වම maintain කරන්න අමාරු වෙනව. ඉතිං ඔන්න ඔය වගේ හේතු නිසා තමයි Vue වල computed property කියල එකක් තියෙන්නෙ. computed property ත් හරියට methods වගේ.(<a href="/index.php/2018/04/11/vuejs-2-02/" target="blank">2වෙනි post එකේ</a> මම methods ගැන කිව්ව මතක ඇති) Vue object එක ඇතුලෙ computed කියල object එකක මේ computed properties ලියන්න පුළුවන්. කලින් උදාහරණයම ගත්තොත් මේ වගේ ලියන්න පුළුවන්.</p>
+<p>කියල ලියන්න වෙනව. මේක එච්චර අමාරු දෙයක් නෙවෙයි කියල ඔයාලට හිතේවි. ඒත් මීට වඩා ලොකු/සංකීර්ණ විදියෙ operations/calculations කරන්න උනාම, සහ ඒව නැවත නැවත ලියන්න උනාම, මේක සෑහෙන්න වදයක් වෙනව. ඒවගේම app එකක, template එකේම logic(calculations) එකත් ලියන එක එච්චර හොඳ දෙයක් නෙවෙයි. මොකද එහෙම සේරම mix එකේ ලිව්වම maintain කරන්න අමාරු වෙනව. ඉතිං ඔන්න ඔය වගේ හේතු නිසා තමයි Vue වල computed property කියල එකක් තියෙන්නෙ. computed property ත් හරියට methods වගේ.(<a href="https://danushka96.github.io/sigma/index.php/2018/04/11/vuejs-2-02/" target="blank">2වෙනි post එකේ</a> මම methods ගැන කිව්ව මතක ඇති) Vue object එක ඇතුලෙ computed කියල object එකක මේ computed properties ලියන්න පුළුවන්. කලින් උදාහරණයම ගත්තොත් මේ වගේ ලියන්න පුළුවන්.</p>
 <pre>const app = new Vue({
     el: '#my-app',
     data: {
@@ -121,18 +121,18 @@
 });
 </pre>
 <p><span style="font-weight: 400;">Browser එකේ console එක open කරල බලන්නකො.(<kbd>F12</kbd>) created function එකේ ලියපු console.log එක run වෙලා ⁣තියෙනව බලාගන්න පුලුවන්. හැබැයි mounted function එකේ තියෙන console.log එක run වෙලා නැහැ මොකද, අපි app එක කොහේටවත් mount කරල නැති නිසා.</span></p>
-<p><img class="wp-image-927 aligncenter" src="/wp-content/uploads/2018/04/created-300x136.png" alt="created" width="794" height="360" srcset="/wp-content/uploads/2018/04/created-300x136.png 300w, /wp-content/uploads/2018/04/created-768x347.png 768w, /wp-content/uploads/2018/04/created-1024x463.png 1024w, /wp-content/uploads/2018/04/created.png 1546w" sizes="(max-width: 794px) 100vw, 794px" /></p>
+<p><img class="wp-image-927 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/created-300x136.png" alt="created" width="794" height="360" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/created-300x136.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/created-768x347.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/created-1024x463.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/created.png 1546w" sizes="(max-width: 794px) 100vw, 794px" /></p>
 <p><span style="font-weight: 400;">දැන් Browser console එකේ පහල තියෙන command එක ගැහුවම, my-app කියන element එකට app එක mount වෙනව.</span></p>
 <pre>app.$mount("#my-app")</pre>
 <p><span style="font-weight: 400;">මේක console එකේ type කරල enter key එක ඔබන්න. දැන් ඔයාලට බලාගන්න පුලුවන් MOUNTED කියල print වෙනව.</span></p>
-<p><img class="wp-image-928 aligncenter" src="/wp-content/uploads/2018/04/and-mounted-300x169.png" alt="mounted" width="768" height="433" srcset="/wp-content/uploads/2018/04/and-mounted-300x169.png 300w, /wp-content/uploads/2018/04/and-mounted-768x433.png 768w, /wp-content/uploads/2018/04/and-mounted-1024x577.png 1024w, /wp-content/uploads/2018/04/and-mounted.png 1535w" sizes="(max-width: 768px) 100vw, 768px" /></p>
+<p><img class="wp-image-928 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/and-mounted-300x169.png" alt="mounted" width="768" height="433" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/and-mounted-300x169.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/and-mounted-768x433.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/and-mounted-1024x577.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/and-mounted.png 1535w" sizes="(max-width: 768px) 100vw, 768px" /></p>
 <p><span style="font-weight: 400;">App එක create වෙද්දිම app එකට අවශ්‍ය data, back-end එ⁣කෙන් AJAX request හරහා අරගන්නකොට වගේ, මේ created සහ mounted කියන functions වැදගත් වෙනව. මොකද, ඒකට අදාල code එක created කියන function එකේ ලිව්වම, app එක create වෙද්දිම ඒ code එක ඉබේම run වෙන නිසා, app එක create උන ගමන් ඒකට අවශ්‍ය data ඉබේම අරගන්නව.</span></p>
 <p><span style="font-weight: 400;">අදට මෙතනින් ඉවරයි. ඊළග post එකෙන් බලමු Vue components කියන්නෙ මොනවද කියල. අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවහරිම තියෙනම් comment එකක් දාන්න. 😀</span></p>
-<p>ඊළඟ post එකට <a href="/index.php/2018/04/22/vuejs-2-06">මෙතනින්</a> යන්න.</p>
+<p>ඊළඟ post එකට <a href="https://danushka96.github.io/sigma/index.php/2018/04/22/vuejs-2-06">මෙතනින්</a> යන්න.</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/20/vuejs-2-05/">VueJs 2 &#8211; 05 filters and computed properties</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/20/vuejs-2-05/">VueJs 2 &#8211; 05 filters and computed properties</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/20/vuejs-2-05/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/20/vuejs-2-05/feed/</wfw:commentRss>
 		<slash:comments>2</slash:comments>
 							</item>
 	</channel>

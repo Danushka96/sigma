@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Vue component &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/vue-component/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/vue-component/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>VueJs 2 &#8211; 07 more about Vue components</title>
-		<link>/index.php/2018/05/01/vuejs-2-07/</link>
-				<comments>/index.php/2018/05/01/vuejs-2-07/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/05/01/vuejs-2-07/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/05/01/vuejs-2-07/#comments</comments>
 				<pubDate>Mon, 30 Apr 2018 20:27:10 +0000</pubDate>
 		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
 				<category><![CDATA[VueJs]]></category>
@@ -31,15 +31,15 @@
 		<category><![CDATA[Vue]]></category>
 		<category><![CDATA[Vue component]]></category>
 
-		<guid isPermaLink="false">/?p=982</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, මේ VueJs ගැන ලියන 7 වෙනි post එක. අද post එකෙනුත් මම vue components ගැනම තමයි කියන්න යන්නෙ. විශේෂයෙන්, vue component එකක් ප්‍රායෝගිකව කොහොමද භාවිතා වෙන්නෙ කියල සහ props කියන්නෙ මොනවද කියල. කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න. අපි අද පොඩි app එකක් හදමු. හිතමුකො අපි හදනව කියල, මේ<a class="moretag" href="/index.php/2018/05/01/vuejs-2-07/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/05/01/vuejs-2-07/">VueJs 2 &#8211; 07 more about Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=982</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, මේ VueJs ගැන ලියන 7 වෙනි post එක. අද post එකෙනුත් මම vue components ගැනම තමයි කියන්න යන්නෙ. විශේෂයෙන්, vue component එකක් ප්‍රායෝගිකව කොහොමද භාවිතා වෙන්නෙ කියල සහ props කියන්නෙ මොනවද කියල. කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න. අපි අද පොඩි app එකක් හදමු. හිතමුකො අපි හදනව කියල, මේ<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/05/01/vuejs-2-07/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/05/01/vuejs-2-07/">VueJs 2 &#8211; 07 more about Vue components</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්, මේ VueJs ගැන ලියන 7 වෙනි post එක. අද post එකෙනුත් මම vue components ගැනම තමයි කියන්න යන්නෙ. විශේෂයෙන්, vue component එකක් ප්‍රායෝගිකව කොහොමද භාවිතා වෙන්නෙ කියල සහ props කියන්නෙ මොනවද කියල. කලින් posts බැලුවෙ නැත්තම් <a href="/index.php/category/vuejs/" target="blank">මෙතනින්</a> ගිහින් බලන්න.</p>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්, මේ VueJs ගැන ලියන 7 වෙනි post එක. අද post එකෙනුත් මම vue components ගැනම තමයි කියන්න යන්නෙ. විශේෂයෙන්, vue component එකක් ප්‍රායෝගිකව කොහොමද භාවිතා වෙන්නෙ කියල සහ props කියන්නෙ මොනවද කියල. කලින් posts බැලුවෙ නැත්තම් <a href="https://danushka96.github.io/sigma/index.php/category/vuejs/" target="blank">මෙතනින්</a> ගිහින් බලන්න.</p>
 <p>අපි අද පොඩි app එකක් හදමු. හිතමුකො අපි හදනව කියල, මේ වගේ පොඩි පොඩි messages display කරන්න පුළුවන් blog එකක්.</p>
-<p><img class="wp-image-1050 aligncenter" src="/wp-content/uploads/2018/04/full-output-300x185.png" alt="completed app" width="821" height="507" srcset="/wp-content/uploads/2018/04/full-output-300x185.png 300w, /wp-content/uploads/2018/04/full-output-768x473.png 768w, /wp-content/uploads/2018/04/full-output-1024x631.png 1024w" sizes="(max-width: 821px) 100vw, 821px" /></p>
+<p><img class="wp-image-1050 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/full-output-300x185.png" alt="completed app" width="821" height="507" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/full-output-300x185.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/full-output-768x473.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/full-output-1024x631.png 1024w" sizes="(max-width: 821px) 100vw, 821px" /></p>
 <p>ගොඩක් අය bootstrap ගැන දන්න නිසා, මම මේක style කරන්න bootstrap පාවිච්චි කරනව. ඒ නිසා bootstrap CDN එකත් index.html එකේ include කරන්න ඕනෙ. Blog එකේ messages display කරන්න bootstrap වල තියෙන මෙන්න මේ card කියන component එක භාවිතා කරනව. ඒකට අදාල template එක <a href="http://getbootstrap.com/docs/4.1/components/card/" target="blank">getbootstrap.com</a> එකෙන් ගන්න පුළුවන්.</p>
-<p><img class="wp-image-1060 aligncenter" src="/wp-content/uploads/2018/04/bootstrap-template-300x163.png" alt="getbootstrap.com" width="922" height="501" srcset="/wp-content/uploads/2018/04/bootstrap-template-300x163.png 300w, /wp-content/uploads/2018/04/bootstrap-template-768x417.png 768w, /wp-content/uploads/2018/04/bootstrap-template-1024x556.png 1024w" sizes="(max-width: 922px) 100vw, 922px" /></p>
+<p><img class="wp-image-1060 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/bootstrap-template-300x163.png" alt="getbootstrap.com" width="922" height="501" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/bootstrap-template-300x163.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/bootstrap-template-768x417.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/bootstrap-template-1024x556.png 1024w" sizes="(max-width: 922px) 100vw, 922px" /></p>
 <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-primary mb-3"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
@@ -83,7 +83,7 @@
     `,
 });</pre>
 <p>මේක run කරාම පහල image ඒකේ තියෙන විදියෙ output එකක් එන්න ඕනෙ.</p>
-<p><img class="wp-image-996 aligncenter" src="/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-300x104.png" alt="sample site" width="787" height="272" srcset="/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-300x104.png 300w, /wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-768x266.png 768w, /wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-1024x354.png 1024w" sizes="(max-width: 787px) 100vw, 787px" /></p>
+<p><img class="wp-image-996 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-300x104.png" alt="sample site" width="787" height="272" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-300x104.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-768x266.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Screenshot-from-2018-04-23-15-19-19-1024x354.png 1024w" sizes="(max-width: 787px) 100vw, 787px" /></p>
 <p>දැන් අපිට විවිද messages ⁣display කරන්න පුළුවන් component එකක් තියෙනව.</p>
 <p>page එකේ display කරන ඔක්කොම messages ටික main Vue instance එකේ store කර ගන්න පුළුවන්. දැනට අපි මේ data, hard code කරල තියමු. ඊළග post එකෙන් කියන්නම් back-end එකෙන් මේව අරගන්න විදිය. මේ විදියට messages කියල object එකක තමයි ඒක මම store කරන්නෙ.</p>
 <pre>const app = new Vue({
@@ -225,10 +225,10 @@ const app = new Vue({
 &lt;/div&gt;
 </pre>
 <p>දැන් බොහෝ දුරට app එක හදල ඉවරයි. add කරන Messages, locally store කරගන්න දැන් අපිට පුළුවන්නෙ. අදට මම මෙතනින් නවත්තන්නම්. දැන් ඔයාලට යම් අදහසක් එන්න ඇති, කලින් post වල මම කියපු දේවල් කොහොමද ප්‍රායොගිකව භාවිතා වෙන්නෙ කියල. ඊළග post එකෙන් මම කියන්නම් database එකක store කිරීම සදහා, back-end එකට මේ messages යවන්නෙ කොහොමද කියල. සහ back-end එකෙන් නැවත ඒව අරගන්නෙ කොහෙමද කියල. post එක ගැන අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවම හරි තියෙනම් comment එකක් දාන්න. 😀</p>
-<p>ඊළඟ post එකට <a href="/index.php/2018/05/01/vuejs-2-08/">මෙතනින්</a> යන්න.</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/05/01/vuejs-2-07/">VueJs 2 &#8211; 07 more about Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>ඊළඟ post එකට <a href="https://danushka96.github.io/sigma/index.php/2018/05/01/vuejs-2-08/">මෙතනින්</a> යන්න.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/05/01/vuejs-2-07/">VueJs 2 &#8211; 07 more about Vue components</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/05/01/vuejs-2-07/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/05/01/vuejs-2-07/feed/</wfw:commentRss>
 		<slash:comments>1</slash:comments>
 							</item>
 	</channel>

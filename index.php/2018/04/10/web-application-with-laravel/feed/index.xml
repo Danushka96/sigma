@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Web Application with Laravel	</title>
-	<atom:link href="/index.php/2018/04/10/web-application-with-laravel/feed/" rel="self" type="application/rss+xml" />
-	<link>/index.php/2018/04/10/web-application-with-laravel/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/2018/04/10/web-application-with-laravel/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/index.php/2018/04/10/web-application-with-laravel/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
@@ -21,10 +21,10 @@
 			<item>
 				<title>
 				By: Laravel වලින් Database Migrations කරමු. - The SIGMA				</title>
-				<link>/index.php/2018/04/10/web-application-with-laravel/#comment-110</link>
+				<link>https://danushka96.github.io/sigma/index.php/2018/04/10/web-application-with-laravel/#comment-110</link>
 		<dc:creator><![CDATA[Laravel වලින් Database Migrations කරමු. - The SIGMA]]></dc:creator>
 		<pubDate>Mon, 17 Sep 2018 18:24:25 +0000</pubDate>
-		<guid isPermaLink="false">/?p=768#comment-110</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=768#comment-110</guid>
 					<description><![CDATA[[&#8230;] laravel post එක නම් අපේ අනිත් ලිපි Set එකත් මෙතනින් [&#8230;]]]></description>
 		<content:encoded><![CDATA[<p>[&#8230;] laravel post එක නම් අපේ අනිත් ලිපි Set එකත් මෙතනින් [&#8230;]</p>
 ]]></content:encoded>

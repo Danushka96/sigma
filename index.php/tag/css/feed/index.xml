@@ -9,8 +9,8 @@
 
 <channel>
 	<title>css &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/css/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/css/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>මොකක්ද මේ CodeIgniter කියන්නේ ?</title>
-		<link>/index.php/2018/09/20/introduction-of-codeigniter/</link>
-				<comments>/index.php/2018/09/20/introduction-of-codeigniter/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/#respond</comments>
 				<pubDate>Thu, 20 Sep 2018 05:18:22 +0000</pubDate>
 		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
 				<category><![CDATA[codeigniter]]></category>
@@ -33,9 +33,9 @@
 		<category><![CDATA[MVC]]></category>
 		<category><![CDATA[php]]></category>
 
-		<guid isPermaLink="false">/?p=1314</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන් යාලුවනේ!  මේ ලිපියත් එක්ක පටන් ගන්න යන්නේ CodeIgniter කියන Framework එකත් එක්ක කොහොමද වැඩ කරන්නේ කියලා උගන්වන්න යන ලිපි මාලාවක්. මේ පාඩම් මාලාව පදනම් වෙන්නේ PHP එක්ක. ඒක හින්දා PHP ගැන Basic ටිකක් වත් දැනගෙන තිබුණොත් මේක ගොඩක් වැදගත් වෙයි.  ඒ වගේම HTML, CSS, JS ගැනත් පොඩි දැනුමක් තියෙන්න ඕන.<a class="moretag" href="/index.php/2018/09/20/introduction-of-codeigniter/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/20/introduction-of-codeigniter/">මොකක්ද මේ CodeIgniter කියන්නේ ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1314</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන් යාලුවනේ!  මේ ලිපියත් එක්ක පටන් ගන්න යන්නේ CodeIgniter කියන Framework එකත් එක්ක කොහොමද වැඩ කරන්නේ කියලා උගන්වන්න යන ලිපි මාලාවක්. මේ පාඩම් මාලාව පදනම් වෙන්නේ PHP එක්ක. ඒක හින්දා PHP ගැන Basic ටිකක් වත් දැනගෙන තිබුණොත් මේක ගොඩක් වැදගත් වෙයි.  ඒ වගේම HTML, CSS, JS ගැනත් පොඩි දැනුමක් තියෙන්න ඕන.<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/">මොකක්ද මේ CodeIgniter කියන්නේ ?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><p>ආයුබෝවන් යාලුවනේ!  මේ ලිපියත් එක්ක පටන් ගන්න යන්නේ <span>CodeIgniter</span> කියන Framework එකත් එක්ක කොහොමද වැඩ කරන්නේ කියලා උගන්වන්න යන ලිපි මාලාවක්. මේ පාඩම් මාලාව පදනම් වෙන්නේ PHP එක්ක. ඒක හින්දා PHP ගැන Basic ටිකක් වත් දැනගෙන තිබුණොත් මේක ගොඩක් වැදගත් වෙයි.  ඒ වගේම HTML, CSS, JS ගැනත් පොඩි දැනුමක් තියෙන්න ඕන. ඒ දේවල් වල ගැන දැනටමත් දන්න කෙනෙක් නම් මේ ලිපි Set එක මාර වැදගත් වෙයි. Web Application එකක් ලේසියෙන්ම හදා ගන්න.</p>
 <p>හරි මේ ටික කියවන්න ඕන උඩින් කියපු Requirements නැති කට්ටිය. තියන කට්ටිය මේ ටික Skip කරගෙන ඉස්සරහට යමු. මම මේ කියන්න හදන්නේ ඔයාලට උඩදි කියපු Skills ටික හදා ගන්න පුළුවන් ක්‍රමයක්. ඒ තමයි W3School එක. මම එක එක Topic එකට අදාල Link එක මෙතනට දාන්නම්. අවශ්‍ය නම් ඒ ටික බලලා දැනුමක් එකතු කර ගන්න. (පිළිවෙලට බලාගෙන යන්න)</p>
@@ -46,18 +46,18 @@
 <p>හරි එහෙනම්අ පි මුලින්ම බලමු මොකක්ද මේ MVC architecture එක කියන්නේ කියලා.</p>
 <h4><strong>ඇත්තටම මොකක්ද මේ </strong><strong>MVC architecture එක </strong><strong>කියන්නේ ?</strong></h4>
 <p>MVC කියලා කෙටියෙන් කියන්නේ <strong>Model, View සහ Controller </strong>කියන වචන තුනට. මේ MVC කියන එක ගොඩක් වෙලාවට භාවිතා කරන්නේ User Interfaces හදන්න. මේක ගොඩක් Programming Languages වලදි භාවිතා කරනවා.<span> </span><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Wiki</a><span> </span>එකත් පොඩ්ඩක් බලන්න.</p>
-<p><img class=" wp-image-796 aligncenter" src="/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png" alt="" width="355" height="240" srcset="/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png 300w, /wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce.png 431w" sizes="(max-width: 355px) 100vw, 355px" /></p>
+<p><img class=" wp-image-796 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png" alt="" width="355" height="240" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce.png 431w" sizes="(max-width: 355px) 100vw, 355px" /></p>
 <p>මේ තුන එකතු වෙලා කරන්නේ මේ රූපයේ තියෙනවා වගේ වැඩක්. අපේ Browser එක Http Request එකක් හරහා Web Application එකේ Controller එකට කතා කරනවා. දැන් Controller එක කරන්නේ Model එකට කතා කරලා එතනින් Data ඉල්ලගෙන ඒ Data අවශ්‍ය විදියට හදලා HTML එකේ View එකක් හදනවා. මේ Model එකෙන් තමයි අපි Database එකත් එක්ක සම්බන්ධ වෙන්නේ.</p>
 <p>ඔන්න ඔකට තමයි MVC architecture එක කියල කියන්නේ.ඔන්න ඔය දේ තමයි <span>CodeIgniter</span> කියන Framework  එකෙත් පාවිච්චි වෙන්නෙ..MVC architecture එක ගැන හොඳ Idea එකක් අති කියලා හිතනවා. අපි දැන් බලමු කොහොමද <span>CodeIgniter Install </span> කරගන්නෙ කියලා.</p>
 <p>පොඩි දෙයයි කරන්න තියෙන්නේ ..පහල තියන Link  එකින් ගිහින් files  ටික download කරගෙන extract  කර ගන්න.</p>
 <p><a href="https://www.codeigniter.com/" rel="noopener" target="_blank">               Download Codeigniter</a></p>
-<p><img src="/wp-content/uploads/2018/09/tempsnip-300x135.png" alt="" width="711" height="320" class=" wp-image-1321 aligncenter" srcset="/wp-content/uploads/2018/09/tempsnip-300x135.png 300w, /wp-content/uploads/2018/09/tempsnip-768x345.png 768w, /wp-content/uploads/2018/09/tempsnip-1024x460.png 1024w, /wp-content/uploads/2018/09/tempsnip.png 1346w" sizes="(max-width: 711px) 100vw, 711px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip-300x135.png" alt="" width="711" height="320" class=" wp-image-1321 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip-300x135.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip-768x345.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip-1024x460.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip.png 1346w" sizes="(max-width: 711px) 100vw, 711px" /></p>
 <p>&nbsp;</p>
 <p>හරි දැන් files  ටික text editer එකකින් Open කරලා බලුවොත් දැකගන්ට ගන්ට පුලුවන් Application  කියලා Folder එකකුයි, System කියලා Folder එකකුයි , user_guide කියලා Folder එකකුයි තව files ටිකකුයි තියනවා.ඔක තමයි වල codeigniter වල folder structure  එක.ඊලග පඩමෙන් අපි බලමු codeigniter වල folder structure  එක විස්තර සහිතව.අදට පාඩම නිමයි .ඊලග පාඩමත් සමගින් හමුවෙමු.හමෝටම සුබ දවසක්!</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/20/introduction-of-codeigniter/">මොකක්ද මේ CodeIgniter කියන්නේ ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/">මොකක්ද මේ CodeIgniter කියන්නේ ?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/09/20/introduction-of-codeigniter/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

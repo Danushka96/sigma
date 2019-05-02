@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Access modifiers	</title>
-	<atom:link href="/index.php/2018/03/18/object-oriented-programming/feed/" rel="self" type="application/rss+xml" />
-	<link>/index.php/2018/03/18/object-oriented-programming/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/2018/03/18/object-oriented-programming/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/index.php/2018/03/18/object-oriented-programming/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
@@ -21,10 +21,10 @@
 			<item>
 				<title>
 				By: Johan wiraj				</title>
-				<link>/index.php/2018/03/18/object-oriented-programming/#comment-241</link>
+				<link>https://danushka96.github.io/sigma/index.php/2018/03/18/object-oriented-programming/#comment-241</link>
 		<dc:creator><![CDATA[Johan wiraj]]></dc:creator>
 		<pubDate>Mon, 25 Feb 2019 09:33:16 +0000</pubDate>
-		<guid isPermaLink="false">/?p=129#comment-241</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=129#comment-241</guid>
 					<description><![CDATA[Thanks bro]]></description>
 		<content:encoded><![CDATA[<p>Thanks bro</p>
 ]]></content:encoded>

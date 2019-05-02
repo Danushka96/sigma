@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Gayan Sampath &#8211; The SIGMA</title>
-	<atom:link href="/index.php/author/gayan/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/author/gayan/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Components in Angular</title>
-		<link>/index.php/2019/01/24/components-in-angular/</link>
-				<comments>/index.php/2019/01/24/components-in-angular/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/01/24/components-in-angular/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/01/24/components-in-angular/#respond</comments>
 				<pubDate>Thu, 24 Jan 2019 16:25:24 +0000</pubDate>
 		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
 				<category><![CDATA[angular.js]]></category>
@@ -41,12 +41,12 @@
 		<category><![CDATA[typescript]]></category>
 		<category><![CDATA[view]]></category>
 
-		<guid isPermaLink="false">/?p=1700</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> කොහොමද යාලුවනේ! ඔන්න මං අදත් ආවා Angular පාඩම් මාලාවේ තුන්නවෙනි පාඩමත් සමගින්.කලින් පාඩමේදී අපි කතා කලා Angular වල folder structure එක සහ index page එක render වුන විදිය ගැන. අද පාඩමේදී අපි කතා කරන්ට බලාපොරොත්තු වෙන්නේ Angular වල components ගැන.ගොඩක් දේවල් කතා කරන්න තියන නිසා කෙලින්ම පාඩමට බහිමු. Angular වල<a class="moretag" href="/index.php/2019/01/24/components-in-angular/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/24/components-in-angular/">Components in Angular</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1700</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> කොහොමද යාලුවනේ! ඔන්න මං අදත් ආවා Angular පාඩම් මාලාවේ තුන්නවෙනි පාඩමත් සමගින්.කලින් පාඩමේදී අපි කතා කලා Angular වල folder structure එක සහ index page එක render වුන විදිය ගැන. අද පාඩමේදී අපි කතා කරන්ට බලාපොරොත්තු වෙන්නේ Angular වල components ගැන.ගොඩක් දේවල් කතා කරන්න තියන නිසා කෙලින්ම පාඩමට බහිමු. Angular වල<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/01/24/components-in-angular/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/24/components-in-angular/">Components in Angular</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span>
-<p>කොහොමද යාලුවනේ! ඔන්න මං අදත් ආවා Angular පාඩම් මාලාවේ තුන්නවෙනි පාඩමත් සමගින්.<a href="/index.php/2019/01/19/angular-7-step2/">කලින් පාඩමේදී</a> අපි කතා කලා Angular වල folder structure එක සහ index page එක render වුන විදිය ගැන. අද පාඩමේදී අපි කතා කරන්ට බලාපොරොත්තු වෙන්නේ Angular වල components ගැන.ගොඩක් දේවල් කතා කරන්න තියන නිසා කෙලින්ම පාඩමට බහිමු.</p>
+<p>කොහොමද යාලුවනේ! ඔන්න මං අදත් ආවා Angular පාඩම් මාලාවේ තුන්නවෙනි පාඩමත් සමගින්.<a href="https://danushka96.github.io/sigma/index.php/2019/01/19/angular-7-step2/">කලින් පාඩමේදී</a> අපි කතා කලා Angular වල folder structure එක සහ index page එක render වුන විදිය ගැන. අද පාඩමේදී අපි කතා කරන්ට බලාපොරොත්තු වෙන්නේ Angular වල components ගැන.ගොඩක් දේවල් කතා කරන්න තියන නිසා කෙලින්ම පාඩමට බහිමු.</p>
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/Capture-4.jpg" alt="" data-id="1702" data-link="/?attachment_id=1702" class="wp-image-1702" srcset="/wp-content/uploads/2019/01/Capture-4.jpg 821w, /wp-content/uploads/2019/01/Capture-4-300x99.jpg 300w, /wp-content/uploads/2019/01/Capture-4-768x253.jpg 768w" sizes="(max-width: 821px) 100vw, 821px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-4.jpg" alt="" data-id="1702" data-link="https://danushka96.github.io/sigma/?attachment_id=1702" class="wp-image-1702" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-4.jpg 821w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-4-300x99.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-4-768x253.jpg 768w" sizes="(max-width: 821px) 100vw, 821px" /></figure></li></ul>
 
 
 
@@ -70,7 +70,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/tempsnip.png" alt="" class="wp-image-1703" srcset="/wp-content/uploads/2019/01/tempsnip.png 821w, /wp-content/uploads/2019/01/tempsnip-300x99.png 300w, /wp-content/uploads/2019/01/tempsnip-768x253.png 768w" sizes="(max-width: 821px) 100vw, 821px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip.png" alt="" class="wp-image-1703" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip.png 821w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-300x99.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-768x253.png 768w" sizes="(max-width: 821px) 100vw, 821px" /></figure>
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-1.png" alt="" data-id="1704" data-link="/?attachment_id=1704" class="wp-image-1704" srcset="/wp-content/uploads/2019/01/tempsnip-1.png 852w, /wp-content/uploads/2019/01/tempsnip-1-300x130.png 300w, /wp-content/uploads/2019/01/tempsnip-1-768x334.png 768w" sizes="(max-width: 852px) 100vw, 852px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-1.png" alt="" data-id="1704" data-link="https://danushka96.github.io/sigma/?attachment_id=1704" class="wp-image-1704" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-1.png 852w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-1-300x130.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-1-768x334.png 768w" sizes="(max-width: 852px) 100vw, 852px" /></figure></li></ul>
 
 
 
@@ -94,7 +94,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-2.png" alt="" data-id="1705" data-link="/?attachment_id=1705" class="wp-image-1705" srcset="/wp-content/uploads/2019/01/tempsnip-2.png 793w, /wp-content/uploads/2019/01/tempsnip-2-300x113.png 300w, /wp-content/uploads/2019/01/tempsnip-2-768x290.png 768w" sizes="(max-width: 793px) 100vw, 793px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-2.png" alt="" data-id="1705" data-link="https://danushka96.github.io/sigma/?attachment_id=1705" class="wp-image-1705" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-2.png 793w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-2-300x113.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-2-768x290.png 768w" sizes="(max-width: 793px) 100vw, 793px" /></figure></li></ul>
 
 
 
@@ -102,7 +102,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-3.png" alt="" data-id="1707" data-link="/?attachment_id=1707" class="wp-image-1707" srcset="/wp-content/uploads/2019/01/tempsnip-3.png 760w, /wp-content/uploads/2019/01/tempsnip-3-300x158.png 300w" sizes="(max-width: 760px) 100vw, 760px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-3.png" alt="" data-id="1707" data-link="https://danushka96.github.io/sigma/?attachment_id=1707" class="wp-image-1707" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-3.png 760w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-3-300x158.png 300w" sizes="(max-width: 760px) 100vw, 760px" /></figure></li></ul>
 
 
 
@@ -114,7 +114,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/tempsnip-4.png" alt="" class="wp-image-1708" srcset="/wp-content/uploads/2019/01/tempsnip-4.png 512w, /wp-content/uploads/2019/01/tempsnip-4-300x154.png 300w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-4.png" alt="" class="wp-image-1708" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-4.png 512w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-4-300x154.png 300w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-5.png" alt="" data-id="1709" data-link="/?attachment_id=1709" class="wp-image-1709" srcset="/wp-content/uploads/2019/01/tempsnip-5.png 738w, /wp-content/uploads/2019/01/tempsnip-5-300x152.png 300w" sizes="(max-width: 738px) 100vw, 738px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-5.png" alt="" data-id="1709" data-link="https://danushka96.github.io/sigma/?attachment_id=1709" class="wp-image-1709" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-5.png 738w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-5-300x152.png 300w" sizes="(max-width: 738px) 100vw, 738px" /></figure></li></ul>
 
 
 
@@ -138,7 +138,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/tempsnip-6.png" alt="" class="wp-image-1710" srcset="/wp-content/uploads/2019/01/tempsnip-6.png 665w, /wp-content/uploads/2019/01/tempsnip-6-300x149.png 300w" sizes="(max-width: 665px) 100vw, 665px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-6.png" alt="" class="wp-image-1710" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-6.png 665w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-6-300x149.png 300w" sizes="(max-width: 665px) 100vw, 665px" /></figure>
 
 
 
@@ -150,7 +150,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/a-1024x462.jpg" alt="" data-id="1573" data-link="/index.php/2019/01/16/angular7/a/" class="wp-image-1573" srcset="/wp-content/uploads/2019/01/a-1024x462.jpg 1024w, /wp-content/uploads/2019/01/a-300x135.jpg 300w, /wp-content/uploads/2019/01/a-768x347.jpg 768w, /wp-content/uploads/2019/01/a.jpg 1351w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a-1024x462.jpg" alt="" data-id="1573" data-link="https://danushka96.github.io/sigma/index.php/2019/01/16/angular7/a/" class="wp-image-1573" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a-1024x462.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a-300x135.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a-768x347.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a.jpg 1351w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
 
 
 
@@ -158,7 +158,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/tempsnip-7.png" alt="" class="wp-image-1711" srcset="/wp-content/uploads/2019/01/tempsnip-7.png 928w, /wp-content/uploads/2019/01/tempsnip-7-300x156.png 300w, /wp-content/uploads/2019/01/tempsnip-7-768x399.png 768w" sizes="(max-width: 928px) 100vw, 928px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-7.png" alt="" class="wp-image-1711" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-7.png 928w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-7-300x156.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-7-768x399.png 768w" sizes="(max-width: 928px) 100vw, 928px" /></figure>
 
 
 
@@ -166,7 +166,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-8.png" alt="" data-id="1712" data-link="/?attachment_id=1712" class="wp-image-1712" srcset="/wp-content/uploads/2019/01/tempsnip-8.png 849w, /wp-content/uploads/2019/01/tempsnip-8-300x44.png 300w, /wp-content/uploads/2019/01/tempsnip-8-768x112.png 768w" sizes="(max-width: 849px) 100vw, 849px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-8.png" alt="" data-id="1712" data-link="https://danushka96.github.io/sigma/?attachment_id=1712" class="wp-image-1712" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-8.png 849w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-8-300x44.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-8-768x112.png 768w" sizes="(max-width: 849px) 100vw, 849px" /></figure></li></ul>
 
 
 
@@ -190,7 +190,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/tempsnip-9.png" alt="" data-id="1713" data-link="/?attachment_id=1713" class="wp-image-1713" srcset="/wp-content/uploads/2019/01/tempsnip-9.png 701w, /wp-content/uploads/2019/01/tempsnip-9-300x151.png 300w" sizes="(max-width: 701px) 100vw, 701px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-9.png" alt="" data-id="1713" data-link="https://danushka96.github.io/sigma/?attachment_id=1713" class="wp-image-1713" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-9.png 701w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/tempsnip-9-300x151.png 300w" sizes="(max-width: 701px) 100vw, 701px" /></figure></li></ul>
 
 
 
@@ -198,7 +198,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Capture-5.jpg" alt="" class="wp-image-1714" srcset="/wp-content/uploads/2019/01/Capture-5.jpg 769w, /wp-content/uploads/2019/01/Capture-5-300x34.jpg 300w, /wp-content/uploads/2019/01/Capture-5-768x86.jpg 768w" sizes="(max-width: 769px) 100vw, 769px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-5.jpg" alt="" class="wp-image-1714" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-5.jpg 769w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-5-300x34.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-5-768x86.jpg 768w" sizes="(max-width: 769px) 100vw, 769px" /></figure>
 
 
 
@@ -206,7 +206,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/Capture-6.jpg" alt="" data-id="1715" data-link="/?attachment_id=1715" class="wp-image-1715" srcset="/wp-content/uploads/2019/01/Capture-6.jpg 629w, /wp-content/uploads/2019/01/Capture-6-300x73.jpg 300w" sizes="(max-width: 629px) 100vw, 629px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-6.jpg" alt="" data-id="1715" data-link="https://danushka96.github.io/sigma/?attachment_id=1715" class="wp-image-1715" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-6.jpg 629w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-6-300x73.jpg 300w" sizes="(max-width: 629px) 100vw, 629px" /></figure></li></ul>
 
 
 
@@ -214,20 +214,20 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/Capture-7.jpg" alt="" class="wp-image-1716" srcset="/wp-content/uploads/2019/01/Capture-7.jpg 494w, /wp-content/uploads/2019/01/Capture-7-300x131.jpg 300w" sizes="(max-width: 494px) 100vw, 494px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-7.jpg" alt="" class="wp-image-1716" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-7.jpg 494w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture-7-300x131.jpg 300w" sizes="(max-width: 494px) 100vw, 494px" /></figure>
 
 
 
 <p>හරි, components ගැන හොදටම තේරෙන්න ඇති කියලා හිතනවා..තවත් මොකක් හරි අව්ලක් තියනවනම් comment එකක් දාන්න.මීලඟ පාඩමෙන් අපි බලමු Angular වල data binding ගැන.මීලඟ පාඩමෙන් හමුවන තුරු  ඔබට  සුභ දවසක් ! ☺☺</p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/24/components-in-angular/">Components in Angular</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/24/components-in-angular/">Components in Angular</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/01/24/components-in-angular/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/01/24/components-in-angular/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>Angular 7 මුල සිට ඉගෙන ගනිමු &#8211; 2 කොටස</title>
-		<link>/index.php/2019/01/19/angular-7-step2/</link>
-				<comments>/index.php/2019/01/19/angular-7-step2/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/01/19/angular-7-step2/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/01/19/angular-7-step2/#respond</comments>
 				<pubDate>Sat, 19 Jan 2019 02:54:18 +0000</pubDate>
 		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
 				<category><![CDATA[angular.js]]></category>
@@ -237,12 +237,12 @@
 		<category><![CDATA[json]]></category>
 		<category><![CDATA[testnig]]></category>
 
-		<guid isPermaLink="false">/?p=1588</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන් හැමෝටම! ඔන්න මම අදත් ආවා Angular පාඩම් මාලාවේ දෙවන පාඩමත් සමගින්.අපි කලින් පාඩමේ කතා කලා මොකද්ද Angular කියන්නේ, ඇයි Angular පාවිච්චි කරන්නේ කියලා හා කොහොමද Angular install කරලා run කරන්නේ කියන එක ගැන.කලින් පාඩම මඟ හැරුන කෙනෙක් ඉන්නවනම් මෙතනින් ගිහින් බලන්නත් පුලුවන්..හරි එහෙනන් අපි අද පාඩමට බහිමු. මුලින්ම අපි<a class="moretag" href="/index.php/2019/01/19/angular-7-step2/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/19/angular-7-step2/">Angular 7 මුල සිට ඉගෙන ගනිමු &#8211; 2 කොටස</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1588</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන් හැමෝටම! ඔන්න මම අදත් ආවා Angular පාඩම් මාලාවේ දෙවන පාඩමත් සමගින්.අපි කලින් පාඩමේ කතා කලා මොකද්ද Angular කියන්නේ, ඇයි Angular පාවිච්චි කරන්නේ කියලා හා කොහොමද Angular install කරලා run කරන්නේ කියන එක ගැන.කලින් පාඩම මඟ හැරුන කෙනෙක් ඉන්නවනම් මෙතනින් ගිහින් බලන්නත් පුලුවන්..හරි එහෙනන් අපි අද පාඩමට බහිමු. මුලින්ම අපි<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/01/19/angular-7-step2/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/19/angular-7-step2/">Angular 7 මුල සිට ඉගෙන ගනිමු &#8211; 2 කොටස</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
-<p>ආයුබෝවන් හැමෝටම! ඔන්න මම අදත් ආවා Angular පාඩම් මාලාවේ දෙවන පාඩමත් සමගින්.අපි කලින් පාඩමේ කතා කලා මොකද්ද Angular කියන්නේ, ඇයි Angular පාවිච්චි කරන්නේ කියලා හා කොහොමද Angular install කරලා run කරන්නේ කියන එක ගැන.කලින් පාඩම මඟ හැරුන කෙනෙක් ඉන්නවනම් <a href="/index.php/2019/01/16/angular7/">මෙතනින්</a> ගිහින් බලන්නත් පුලුවන්..හරි එහෙනන් අපි අද පාඩමට බහිමු.</p>
+<p>ආයුබෝවන් හැමෝටම! ඔන්න මම අදත් ආවා Angular පාඩම් මාලාවේ දෙවන පාඩමත් සමගින්.අපි කලින් පාඩමේ කතා කලා මොකද්ද Angular කියන්නේ, ඇයි Angular පාවිච්චි කරන්නේ කියලා හා කොහොමද Angular install කරලා run කරන්නේ කියන එක ගැන.කලින් පාඩම මඟ හැරුන කෙනෙක් ඉන්නවනම් <a href="https://danushka96.github.io/sigma/index.php/2019/01/16/angular7/">මෙතනින්</a> ගිහින් බලන්නත් පුලුවන්..හරි එහෙනන් අපි අද පාඩමට බහිමු.</p>
 
 
 
@@ -250,7 +250,7 @@
 
 
 
-<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2019/01/folder.jpg" alt="" class="wp-image-1589" srcset="/wp-content/uploads/2019/01/folder.jpg 314w, /wp-content/uploads/2019/01/folder-300x268.jpg 300w" sizes="(max-width: 314px) 100vw, 314px" /></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/folder.jpg" alt="" class="wp-image-1589" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/folder.jpg 314w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/folder-300x268.jpg 300w" sizes="(max-width: 314px) 100vw, 314px" /></figure></div>
 
 
 
@@ -274,7 +274,7 @@
 
 
 
-<div class="wp-block-image"><figure class="aligncenter"><img src="/wp-content/uploads/2019/01/li.jpg" alt="" class="wp-image-1590"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/li.jpg" alt="" class="wp-image-1590"/></figure></div>
 
 
 
@@ -291,15 +291,15 @@
 
 
 <p style="text-align:left" class="has-background has-white-background-color">හරි අදට අපි කතා කරන්න බලාපොරොත්තු වෙන්නේ ඔච්චරයි..මීලඟ පාඩමේදී අපි බලමු Angular වල component ගැන..post එක ගැන ඔයාලගේ අදහස comment එකක් දාන්නත් අමතක කරන්න එපා..මීලඟ පාඩමෙන් හමුවනතුරු ඔබට සුභ දවසක්!  !</p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/19/angular-7-step2/">Angular 7 මුල සිට ඉගෙන ගනිමු &#8211; 2 කොටස</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/19/angular-7-step2/">Angular 7 මුල සිට ඉගෙන ගනිමු &#8211; 2 කොටස</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/01/19/angular-7-step2/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/01/19/angular-7-step2/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</title>
-		<link>/index.php/2019/01/16/angular7/</link>
-				<comments>/index.php/2019/01/16/angular7/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/01/16/angular7/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/01/16/angular7/#comments</comments>
 				<pubDate>Wed, 16 Jan 2019 03:41:40 +0000</pubDate>
 		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
 				<category><![CDATA[angular.js]]></category>
@@ -310,12 +310,12 @@
 		<category><![CDATA[nodejs]]></category>
 		<category><![CDATA[npm]]></category>
 
-		<guid isPermaLink="false">/?p=1551</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා MEAN stack වල Database system එක වන mongoDB ගැන..ඒ පාඩම් ටික කලින් මඟ හැරුන කෙනෙක් ඉන්නවනම් මෙතනින් ගිහින් බලන්න පුලුවන්..අද<a class="moretag" href="/index.php/2019/01/16/angular7/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/16/angular7/">Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1551</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා MEAN stack වල Database system එක වන mongoDB ගැන..ඒ පාඩම් ටික කලින් මඟ හැරුන කෙනෙක් ඉන්නවනම් මෙතනින් ගිහින් බලන්න පුලුවන්..අද<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/01/16/angular7/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/16/angular7/">Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
-<p>මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා  MEAN stack  වල Database system එක  වන mongoDB  ගැන..ඒ පාඩම් ටික කලින් මඟ හැරුන කෙනෙක් ඉන්නවනම් <a href="/index.php/category/web-development/mean-stack/">මෙතනින්</a> ගිහින් බලන්න පුලුවන්..අද මම පටන් ගන්න යන්නේ ඒ පාඩම් මාලාවේ දෙවන දිගහැරුමයි..ඒ තමයි  <strong>Angular</strong>  .</p>
+<p>මුලින්ම ආයුබෝවන් කියනවා යාලුවෝ හැමෝටම..ගොඩ කාලෙකට පස්සේ ඔන්න මං ඇරගෙන ආවා අලුත්ම පාඩම් මාලාවක්..thesigma blog අඩවියත් සමග නිරන්තරයෙන් රැදී සිටි යාලුවෝ නම් දන්නවා අපි කලින් අපි කලින් පාඩමේ කතා කලා  MEAN stack  වල Database system එක  වන mongoDB  ගැන..ඒ පාඩම් ටික කලින් මඟ හැරුන කෙනෙක් ඉන්නවනම් <a href="https://danushka96.github.io/sigma/index.php/category/web-development/mean-stack/">මෙතනින්</a> ගිහින් බලන්න පුලුවන්..අද මම පටන් ගන්න යන්නේ ඒ පාඩම් මාලාවේ දෙවන දිගහැරුමයි..ඒ තමයි  <strong>Angular</strong>  .</p>
 
 
 
@@ -331,7 +331,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/cap4-1024x502.jpg" alt="" class="wp-image-1554" srcset="/wp-content/uploads/2019/01/cap4-1024x502.jpg 1024w, /wp-content/uploads/2019/01/cap4-300x147.jpg 300w, /wp-content/uploads/2019/01/cap4-768x377.jpg 768w, /wp-content/uploads/2019/01/cap4.jpg 1350w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap4-1024x502.jpg" alt="" class="wp-image-1554" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap4-1024x502.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap4-300x147.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap4-768x377.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap4.jpg 1350w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -343,7 +343,7 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg" alt="" data-id="1566" data-link="/?attachment_id=1566" class="wp-image-1566" srcset="/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg 1024w, /wp-content/uploads/2019/01/Capture1-1-300x30.jpg 300w, /wp-content/uploads/2019/01/Capture1-1-768x76.jpg 768w, /wp-content/uploads/2019/01/Capture1-1.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg" alt="" data-id="1566" data-link="https://danushka96.github.io/sigma/?attachment_id=1566" class="wp-image-1566" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture1-1-1024x102.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture1-1-300x30.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture1-1-768x76.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/Capture1-1.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
 
 
 
@@ -351,11 +351,11 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/cap2-2-1024x492.jpg" alt="" data-id="1568" data-link="/?attachment_id=1568" class="wp-image-1568" srcset="/wp-content/uploads/2019/01/cap2-2-1024x492.jpg 1024w, /wp-content/uploads/2019/01/cap2-2-300x144.jpg 300w, /wp-content/uploads/2019/01/cap2-2-768x369.jpg 768w, /wp-content/uploads/2019/01/cap2-2.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap2-2-1024x492.jpg" alt="" data-id="1568" data-link="https://danushka96.github.io/sigma/?attachment_id=1568" class="wp-image-1568" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap2-2-1024x492.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap2-2-300x144.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap2-2-768x369.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap2-2.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/01/cap3-1-1024x255.jpg" alt="" class="wp-image-1569" srcset="/wp-content/uploads/2019/01/cap3-1-1024x255.jpg 1024w, /wp-content/uploads/2019/01/cap3-1-300x75.jpg 300w, /wp-content/uploads/2019/01/cap3-1-768x191.jpg 768w, /wp-content/uploads/2019/01/cap3-1.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap3-1-1024x255.jpg" alt="" class="wp-image-1569" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap3-1-1024x255.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap3-1-300x75.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap3-1-768x191.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/cap3-1.jpg 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -363,14 +363,14 @@
 
 
 
-<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="/wp-content/uploads/2019/01/a-1024x462.jpg" alt="" data-id="1573" data-link="/?attachment_id=1573" class="wp-image-1573" srcset="/wp-content/uploads/2019/01/a-1024x462.jpg 1024w, /wp-content/uploads/2019/01/a-300x135.jpg 300w, /wp-content/uploads/2019/01/a-768x347.jpg 768w, /wp-content/uploads/2019/01/a.jpg 1351w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
+<ul class="wp-block-gallery columns-1 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a-1024x462.jpg" alt="" data-id="1573" data-link="https://danushka96.github.io/sigma/?attachment_id=1573" class="wp-image-1573" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a-1024x462.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a-300x135.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a-768x347.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2019/01/a.jpg 1351w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul>
 
 
 
 <p>හරි අදට ඇති නේද😃..පාඩම නම් ටිකක් දිග වුනා තමයි , නමුත් අපි දැන ගත්තා මොකද්ද Angular කියන්නේ, ඇයි Angular විශේෂ වෙනේ ,කොහාමද Angular project එකක් හදා ගන්නේ හා කොහොමද හදා ගත්ත Angular project එක run කරන්නේ කියන එක ගැන..මීලඟ පාඩමේදී අපි බලමු Angular වල folder structure එක සහ index page එක කොහොමද render වුනේ කියන එක ගැන…අදට පාඩම හමාර කරන්නයි යන්නේ..post එක ගැන ඔයාලගේ අදහස comment එකක් දාන්නත් අමතක කරන්න එපා..මීලඟ පාඩමෙන් හමුවනතුරු ඔබට සුභ දවසක්!😊</p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/16/angular7/">Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/16/angular7/">Angular7 මුල සිට ඉගෙන ගනිමු-1 කොටස</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/01/16/angular7/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/01/16/angular7/feed/</wfw:commentRss>
 		<slash:comments>2</slash:comments>
 							</item>
 	</channel>

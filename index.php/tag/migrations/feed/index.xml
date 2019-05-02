@@ -9,8 +9,8 @@
 
 <channel>
 	<title>migrations &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/migrations/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/migrations/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Laravel වලින් Database Migrations කරමු.</title>
-		<link>/index.php/2018/09/17/laravel-database-migrations/</link>
-				<comments>/index.php/2018/09/17/laravel-database-migrations/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/#respond</comments>
 				<pubDate>Mon, 17 Sep 2018 18:24:22 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Laravel]]></category>
@@ -35,13 +35,13 @@
 		<category><![CDATA[php]]></category>
 		<category><![CDATA[sinhala]]></category>
 
-		<guid isPermaLink="false">/?p=1271</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230; වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel<a class="moretag" href="/index.php/2018/09/17/laravel-database-migrations/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1271</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230; වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230;</p>
-<p>වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel post එක නම් අපේ අනිත් ලිපි Set එකත් <a href="/index.php/2018/04/10/web-application-with-laravel/">මෙතනින්</a> බලන්න.</p>
-<p><img src="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg" alt="" width="523" height="298" class=" wp-image-1273 aligncenter" srcset="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg 300w, /wp-content/uploads/2018/09/Why_Laravel.jpg 700w" sizes="(max-width: 523px) 100vw, 523px" /></p>
+<p>වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel post එක නම් අපේ අනිත් ලිපි Set එකත් <a href="https://danushka96.github.io/sigma/index.php/2018/04/10/web-application-with-laravel/">මෙතනින්</a> බලන්න.</p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg" alt="" width="523" height="298" class=" wp-image-1273 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Why_Laravel.jpg 700w" sizes="(max-width: 523px) 100vw, 523px" /></p>
 <h2><span style="text-decoration: underline; color: #0000ff;"><strong>මූලික හැඳින්වීම</strong></span></h2>
 <p>උඩ තියෙන Image එක කියන්නේ Why Laravel කියන ප්‍රශ්නෙට තියෙන උත්තර. ඒ කියන්නේ අනිත් PHP Frameworks එක්ක compare කරලා බලද්දි Laravel වල තියෙන විශේෂත්වය. ඒකෙ උඩින්ම තියෙන දෙයක් තමයි මේ Migrations කියන එක. ඒකට ගොඩක් specialty එකක් දීලා තියෙන්නේ ඒකෙන් ලොකු වැඩ ගොඩක් Simple විදියට කරගන්න අවස්ථාවක් තියෙන හින්දා.</p>
 <p>සාමාන්‍යයෙන් අපි මොකක්ම හරි Web Application එකක් Laravel නැතිව වෙනත් විදියකින් හදනවා නම් අපි කරන්නේ අපේ Source Code එක වෙනම හදලා Database එක වෙනම හදලා මේ දෙක php වලින් Connect කරගන්න එකනේ. දැන් හිතන්න ඔය System එක තවත් කාට හරි දෙන්න ඕන වුණා කියලා. එතකොට අපිට සිද්ධ වෙනවා අපේ source code එකත් එක්ක SQL Server එකෙන් export කරගත්තු database file එකත් දෙන්න. ඊට පස්සේ මේ system එක ගන්න කෙනා ආපහු ඒ database එක import කරගන්න. මොකක්ම හරි Error එකක් ඇවිත් අර database file එක import වෙන්නේ නැති වුණොත් අපිට ආපහු ඒ file එක edit කරන එක ඇත්තටම අමාරු වැඩක්. මොකද ඒකෙ තියෙන්නේ generate වෙලා තියෙන code set එකක් නිසා.</p>
@@ -113,9 +113,9 @@ class CreateFlightsTable extends Migration
 <p style="padding-left: 30px;">මෙකෙන් කලින් කරපු වැඩේට ටිකක් සමාන වැඩක් කරගන්න පුළුවන්. හැබැයි මේකෙදි database එක reset වෙන්නේ නැතිව වෙන්නේ ඔක්කොම Tables ටික ඉස්සරලාම drop කරගන්න එක. ඊට පස්සේ Migration files ටික run කරගන්නවා.</p>
 <p>ලිපිය තවත් දික් වෙලා Boring වෙන නිසා මම Database Queries ලියා ගන්න විදිය ගැන තවත් ලිපියකින් කතා කරන්නම්. මේ ලිපිය ගැන මොකක් හරි ප්‍රශ්ණයක් තියෙනවා නම් Comment එකක් දාන්න. අලුත් ලිපියකින් හමු වෙමු&#8230;..</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/09/17/laravel-database-migrations/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

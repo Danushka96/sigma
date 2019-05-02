@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Method Overloading	</title>
-	<atom:link href="/index.php/2018/03/19/object-oriented-programming-2/feed/" rel="self" type="application/rss+xml" />
-	<link>/index.php/2018/03/19/object-oriented-programming-2/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/2018/03/19/object-oriented-programming-2/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/index.php/2018/03/19/object-oriented-programming-2/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
@@ -21,10 +21,10 @@
 			<item>
 				<title>
 				By: Gayan Sampath				</title>
-				<link>/index.php/2018/03/19/object-oriented-programming-2/#comment-12</link>
+				<link>https://danushka96.github.io/sigma/index.php/2018/03/19/object-oriented-programming-2/#comment-12</link>
 		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
 		<pubDate>Wed, 21 Mar 2018 17:50:48 +0000</pubDate>
-		<guid isPermaLink="false">/?p=155#comment-12</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=155#comment-12</guid>
 					<description><![CDATA[method overloading means creating two or more methods using same method name whose  changing  parameter signature .compiler can understand which method is  called?,because each method has unique parameter signature.that is the method overloading means.i hope that you will understand.if you have any another doubt about oop concept contact me.
 i have used &quot;method overriding&quot; in few places.that is my mistake.I apologize you .i will correct those places right now. thank you!]]></description>
 		<content:encoded><![CDATA[<p>method overloading means creating two or more methods using same method name whose  changing  parameter signature .compiler can understand which method is  called?,because each method has unique parameter signature.that is the method overloading means.i hope that you will understand.if you have any another doubt about oop concept contact me.<br />
@@ -34,10 +34,10 @@ i have used &#8220;method overriding&#8221; in few places.that is my mistake.I a
 						<item>
 				<title>
 				By: Ireshan				</title>
-				<link>/index.php/2018/03/19/object-oriented-programming-2/#comment-11</link>
+				<link>https://danushka96.github.io/sigma/index.php/2018/03/19/object-oriented-programming-2/#comment-11</link>
 		<dc:creator><![CDATA[Ireshan]]></dc:creator>
 		<pubDate>Wed, 21 Mar 2018 16:27:01 +0000</pubDate>
-		<guid isPermaLink="false">/?p=155#comment-11</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=155#comment-11</guid>
 					<description><![CDATA[Lesson was very clear and useful to me. But I didn&#039;t understand what is the significance of the method overloading?  What is the difference between name all methods with &quot;area&quot; vs name such methods as circle_Area etc ? 
 
 P.S . Method overloading became as &quot;Method overriding&quot; in few places.]]></description>
@@ -48,10 +48,10 @@ P.S . Method overloading became as &quot;Method overriding&quot; in few places.]
 						<item>
 				<title>
 				By: Gayan Sampath				</title>
-				<link>/index.php/2018/03/19/object-oriented-programming-2/#comment-8</link>
+				<link>https://danushka96.github.io/sigma/index.php/2018/03/19/object-oriented-programming-2/#comment-8</link>
 		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
 		<pubDate>Tue, 20 Mar 2018 13:56:37 +0000</pubDate>
-		<guid isPermaLink="false">/?p=155#comment-8</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=155#comment-8</guid>
 					<description><![CDATA[chik]]></description>
 		<content:encoded><![CDATA[<p>chik</p>
 ]]></content:encoded>

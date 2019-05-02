@@ -9,8 +9,8 @@
 
 <channel>
 	<title>node.js &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/node-js/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/node-js/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 03)</title>
-		<link>/index.php/2019/02/20/mean-stack-sample-application-design-part-03/</link>
-				<comments>/index.php/2019/02/20/mean-stack-sample-application-design-part-03/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/02/20/mean-stack-sample-application-design-part-03/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/02/20/mean-stack-sample-application-design-part-03/#respond</comments>
 				<pubDate>Wed, 20 Feb 2019 16:28:44 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[angular.js]]></category>
@@ -33,16 +33,16 @@
 		<category><![CDATA[back-end]]></category>
 		<category><![CDATA[front-end]]></category>
 
-		<guid isPermaLink="false">/?p=1906</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> අපි කලින් ලිපි 2න් කතා කලා fontend එක සහ backend එක Design කරගන්න විදිය. මේ ලිපියෙන් කතා කරන්නේ මේ වෙන වෙනම හදා ගත්ත fontend එකයි Backend එකයි එකට Connect කරගන්නේ කොහොමද කියලා. කලින් ලිපි 2 බැලුවේ නැත්නම් මෙතනින් බලන්න Part 01part 02 මුලින්ම frontend කියන folder එක ඇතුලට ගිහින් එතනින්<a class="moretag" href="/index.php/2019/02/20/mean-stack-sample-application-design-part-03/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/20/mean-stack-sample-application-design-part-03/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 03)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1906</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> අපි කලින් ලිපි 2න් කතා කලා fontend එක සහ backend එක Design කරගන්න විදිය. මේ ලිපියෙන් කතා කරන්නේ මේ වෙන වෙනම හදා ගත්ත fontend එකයි Backend එකයි එකට Connect කරගන්නේ කොහොමද කියලා. කලින් ලිපි 2 බැලුවේ නැත්නම් මෙතනින් බලන්න Part 01part 02 මුලින්ම frontend කියන folder එක ඇතුලට ගිහින් එතනින්<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/02/20/mean-stack-sample-application-design-part-03/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/20/mean-stack-sample-application-design-part-03/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 03)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
 <p>අපි කලින් ලිපි 2න් කතා කලා fontend එක සහ backend එක Design කරගන්න විදිය. මේ ලිපියෙන් කතා කරන්නේ මේ වෙන වෙනම හදා ගත්ත fontend එකයි Backend එකයි එකට Connect කරගන්නේ කොහොමද කියලා. කලින් ලිපි 2 බැලුවේ නැත්නම් මෙතනින් බලන්න</p>
 
 
 
-<p><a href="/index.php/2019/02/19/mean-stack-sample-application-1/">Part 01</a><br><a href="/index.php/2019/02/19/mean-stack-sample-application-design-part-02/">part 02</a></p>
+<p><a href="https://danushka96.github.io/sigma/index.php/2019/02/19/mean-stack-sample-application-1/">Part 01</a><br><a href="https://danushka96.github.io/sigma/index.php/2019/02/19/mean-stack-sample-application-design-part-02/">part 02</a></p>
 
 
 
@@ -195,15 +195,15 @@
 
 
 <p>අපි මේ ලිපියෙදි ඉගෙන ගත්තේ angular service එකක් හරහා backend එකත් එක්ක fontend එක connect කරන්නේ කොහොමද කියලා. ඊළඟ ලිපියෙන් අපි කතා කරමු front-end එක complete කරගන්නේ කොහොමද කියලා. මේ දක්වා මොනවා හරි අවුලක් තිබුණොත් comment එකක් දාන්න.</p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/20/mean-stack-sample-application-design-part-03/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 03)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/20/mean-stack-sample-application-design-part-03/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 03)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/02/20/mean-stack-sample-application-design-part-03/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/02/20/mean-stack-sample-application-design-part-03/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 02)</title>
-		<link>/index.php/2019/02/19/mean-stack-sample-application-design-part-02/</link>
-				<comments>/index.php/2019/02/19/mean-stack-sample-application-design-part-02/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/02/19/mean-stack-sample-application-design-part-02/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/02/19/mean-stack-sample-application-design-part-02/#respond</comments>
 				<pubDate>Tue, 19 Feb 2019 16:06:27 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[angular.js]]></category>
@@ -215,16 +215,16 @@
 		<category><![CDATA[front-end]]></category>
 		<category><![CDATA[issueTracker]]></category>
 
-		<guid isPermaLink="false">/?p=1900</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span> අපි කලින් ලිපියෙන් කතා කලා කොහොමද FrontEnd එක angular වලින් Design කරගන්නේ කියලා. ඇත්තටම අපි නිකත් Structure එකක් විතරයිනෙ හැදුවේ. දැනට ඒ ඇති. මේ ලිපියෙන් කතා කරන්නේ Node වලින් Backend එක හදා ගන්න විදිය ගැන. බලමු හදා ගන්නේ කොහොමද කියලා. මුලින්ම අපි කලින් fontEnd කියලා අලුත් Project එකක් හැදුව තැනම<a class="moretag" href="/index.php/2019/02/19/mean-stack-sample-application-design-part-02/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/19/mean-stack-sample-application-design-part-02/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 02)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1900</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span> අපි කලින් ලිපියෙන් කතා කලා කොහොමද FrontEnd එක angular වලින් Design කරගන්නේ කියලා. ඇත්තටම අපි නිකත් Structure එකක් විතරයිනෙ හැදුවේ. දැනට ඒ ඇති. මේ ලිපියෙන් කතා කරන්නේ Node වලින් Backend එක හදා ගන්න විදිය ගැන. බලමු හදා ගන්නේ කොහොමද කියලා. මුලින්ම අපි කලින් fontEnd කියලා අලුත් Project එකක් හැදුව තැනම<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/02/19/mean-stack-sample-application-design-part-02/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/19/mean-stack-sample-application-design-part-02/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 02)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span>
 <p></p>
 
 
 
-<p>අපි <a href="/index.php/2019/02/19/mean-stack-sample-application-1/">කලින් ලිපියෙන්</a> කතා කලා කොහොමද FrontEnd එක angular වලින් Design කරගන්නේ කියලා. ඇත්තටම අපි නිකත් Structure එකක් විතරයිනෙ හැදුවේ. දැනට ඒ ඇති. මේ ලිපියෙන් කතා කරන්නේ Node වලින් Backend එක හදා ගන්න විදිය ගැන. බලමු හදා ගන්නේ කොහොමද කියලා.</p>
+<p>අපි <a href="https://danushka96.github.io/sigma/index.php/2019/02/19/mean-stack-sample-application-1/">කලින් ලිපියෙන්</a> කතා කලා කොහොමද FrontEnd එක angular වලින් Design කරගන්නේ කියලා. ඇත්තටම අපි නිකත් Structure එකක් විතරයිනෙ හැදුවේ. දැනට ඒ ඇති. මේ ලිපියෙන් කතා කරන්නේ Node වලින් Backend එක හදා ගන්න විදිය ගැන. බලමු හදා ගන්නේ කොහොමද කියලා.</p>
 
 
 
@@ -504,7 +504,7 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/0_LjsHj5lPDNO0Ehdl.png" alt="" class="wp-image-1903" srcset="/wp-content/uploads/2019/02/0_LjsHj5lPDNO0Ehdl.png 800w, /wp-content/uploads/2019/02/0_LjsHj5lPDNO0Ehdl-300x191.png 300w, /wp-content/uploads/2019/02/0_LjsHj5lPDNO0Ehdl-768x490.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/0_LjsHj5lPDNO0Ehdl.png" alt="" class="wp-image-1903" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/0_LjsHj5lPDNO0Ehdl.png 800w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/0_LjsHj5lPDNO0Ehdl-300x191.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/0_LjsHj5lPDNO0Ehdl-768x490.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></figure>
 
 
 
@@ -512,32 +512,32 @@
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/0_m3eRdTp5VIQ89PFg.png" alt="" class="wp-image-1904" srcset="/wp-content/uploads/2019/02/0_m3eRdTp5VIQ89PFg.png 800w, /wp-content/uploads/2019/02/0_m3eRdTp5VIQ89PFg-300x191.png 300w, /wp-content/uploads/2019/02/0_m3eRdTp5VIQ89PFg-768x490.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/0_m3eRdTp5VIQ89PFg.png" alt="" class="wp-image-1904" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/0_m3eRdTp5VIQ89PFg.png 800w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/0_m3eRdTp5VIQ89PFg-300x191.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/0_m3eRdTp5VIQ89PFg-768x490.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></figure>
 
 
 
 <p>හරි මේ ලිපියෙන් අපි කතා කලේ Backend එක Nodejs වලින් Design කරගන්නේ කොහොමද කියලා. තේරුණේ නැති තැනක් තියෙනවා නම් Message එකක් දාන්න. ඊළඟ ලිපියෙන් කතා කරන්නේ අපි හදා ගත්ත Front එකයි Back එකයි Connect කරගන්න විදිය ගැන&#8230; </p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/19/mean-stack-sample-application-design-part-02/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 02)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/19/mean-stack-sample-application-design-part-02/">MEAN Stack වලින් Sample Application එකක් Design කරගමු. (PART 02)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/02/19/mean-stack-sample-application-design-part-02/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/02/19/mean-stack-sample-application-design-part-02/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>express-03 basic Routing කරමු</title>
-		<link>/index.php/2019/02/08/express-03-basic-routing/</link>
-				<comments>/index.php/2019/02/08/express-03-basic-routing/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/#respond</comments>
 				<pubDate>Thu, 07 Feb 2019 19:02:28 +0000</pubDate>
 		<dc:creator><![CDATA[thusitha bandara]]></dc:creator>
 				<category><![CDATA[node.js]]></category>
 		<category><![CDATA[Uncategorized]]></category>
 		<category><![CDATA[web development]]></category>
 
-		<guid isPermaLink="false">/?p=1789</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ Routing කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ link එකට ගිහින් කලින් post එක බලන්න. අද මම get request handle කරන විදිය තමා කියල දෙන්න බලාපොරොත්තු වෙන්නේ. මම මේ routes ටික ලියන්නේ app.js එකේ මෙතන 1st line එකෙන් කරන්නේ express කියන framework එක<a class="moretag" href="/index.php/2019/02/08/express-03-basic-routing/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1789</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ Routing කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ link එකට ගිහින් කලින් post එක බලන්න. අද මම get request handle කරන විදිය තමා කියල දෙන්න බලාපොරොත්තු වෙන්නේ. මම මේ routes ටික ලියන්නේ app.js එකේ මෙතන 1st line එකෙන් කරන්නේ express කියන framework එක<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>
-<p>මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ <strong>Routing</strong> කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ <a href="/index.php/2019/01/23/express-02/">link</a> එකට ගිහින්  කලින් post එක බලන්න.</p>
+<p>මේ පාඩමේදී බලාපොරොත්තු වෙන්නේ <strong>Routing</strong> කරන්නේ කොහොමද කියල.ඔයා තාම express install කරගෙන නැත්නම් මෙන්න මේ <a href="https://danushka96.github.io/sigma/index.php/2019/01/23/express-02/">link</a> එකට ගිහින්  කලින් post එක බලන්න.</p>
 
 
 
@@ -545,7 +545,7 @@
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-2.jpg" alt="" class="wp-image-1792" width="321" height="67" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-2.jpg" alt="" class="wp-image-1792" width="321" height="67" /></figure>
 
 
 
@@ -561,7 +561,7 @@
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-3.jpg" alt="" class="wp-image-1793" width="382" height="78" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-3.jpg" alt="" class="wp-image-1793" width="382" height="78" /></figure>
 
 
 
@@ -577,7 +577,7 @@
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Capture-4.jpg" alt="" class="wp-image-1794" width="399" height="53" srcset="/wp-content/uploads/2019/02/Capture-4.jpg 331w, /wp-content/uploads/2019/02/Capture-4-300x40.jpg 300w" sizes="(max-width: 399px) 100vw, 399px" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-4.jpg" alt="" class="wp-image-1794" width="399" height="53" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-4.jpg 331w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Capture-4-300x40.jpg 300w" sizes="(max-width: 399px) 100vw, 399px" /></figure>
 
 
 
@@ -646,9 +646,9 @@
 
 
 <p> අදට මේ ටික ඇති වගේ post එකක් ටිකක් වෙනදට වඩා දිගයි.ඊලග post එකෙන්  හමුවෙමු.</p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/">express-03 basic Routing කරමු</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/02/08/express-03-basic-routing/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/02/08/express-03-basic-routing/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

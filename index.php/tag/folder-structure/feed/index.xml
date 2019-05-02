@@ -9,8 +9,8 @@
 
 <channel>
 	<title>folder structure &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/folder-structure/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/folder-structure/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Laravel Folder Structure</title>
-		<link>/index.php/2018/04/19/laravel-folder-structure/</link>
-				<comments>/index.php/2018/04/19/laravel-folder-structure/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/19/laravel-folder-structure/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/19/laravel-folder-structure/#respond</comments>
 				<pubDate>Thu, 19 Apr 2018 12:18:26 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Laravel]]></category>
@@ -31,51 +31,51 @@
 		<category><![CDATA[folder structure]]></category>
 		<category><![CDATA[laravel]]></category>
 
-		<guid isPermaLink="false">/?p=906</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> Laravel Folder Structure අපි කලින් ලිපි කිහිපයේදිම කතා කරා කොහොමද Laravel Framework එක තමන්ගේ PC එකේ Install කරගෙන Config කරගන්නේ කියලා. Introduction &#8211; Web Application with Laravel Install &#8211; Custom / Homestead අද කතා කරන්නේ Laravel Framework එකේ තියෙන Folder Structure එක ගැන. එක එක Folder එක ඇතුලෙ තියෙන්නේ මොනවද සහ ඒවායෙන්<a class="moretag" href="/index.php/2018/04/19/laravel-folder-structure/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/19/laravel-folder-structure/">Laravel Folder Structure</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=906</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> Laravel Folder Structure අපි කලින් ලිපි කිහිපයේදිම කතා කරා කොහොමද Laravel Framework එක තමන්ගේ PC එකේ Install කරගෙන Config කරගන්නේ කියලා. Introduction &#8211; Web Application with Laravel Install &#8211; Custom / Homestead අද කතා කරන්නේ Laravel Framework එකේ තියෙන Folder Structure එක ගැන. එක එක Folder එක ඇතුලෙ තියෙන්නේ මොනවද සහ ඒවායෙන්<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/19/laravel-folder-structure/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/19/laravel-folder-structure/">Laravel Folder Structure</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><h2 style="text-align: center;"><strong>Laravel Folder Structure</strong></h2>
 <p>අපි කලින් ලිපි කිහිපයේදිම කතා කරා කොහොමද Laravel Framework එක තමන්ගේ PC එකේ Install කරගෙන Config කරගන්නේ කියලා.</p>
 <p>Introduction &#8211; Web Application with Laravel</p>
-<p>Install &#8211; <a href="/index.php/2018/04/11/install-laravel-homestead-custom/" target="_blank" rel="noopener">Custom</a> / <a href="/index.php/2018/04/14/install-laravel-homestead/">Homestead</a></p>
+<p>Install &#8211; <a href="https://danushka96.github.io/sigma/index.php/2018/04/11/install-laravel-homestead-custom/" target="_blank" rel="noopener">Custom</a> / <a href="https://danushka96.github.io/sigma/index.php/2018/04/14/install-laravel-homestead/">Homestead</a></p>
 <p>අද කතා කරන්නේ Laravel Framework එකේ තියෙන Folder Structure එක ගැන. එක එක Folder එක ඇතුලෙ තියෙන්නේ මොනවද සහ ඒවායෙන් කෙරෙන්නේ මොනවගේ දේවල්ද කියන එක තමයි අද ලිපියේ මූලිකවම තියෙන්නේ. මේ ගැන අවබෝධයක් තිබුණේ නැත්නම් අපිට බැරි වෙනවා මොනවා හරි දෙයක් අලුතින් දාන්න හරි තියෙන File එකක් edit කරගන්න හරි කොහෙද තියෙන්නේ කියලා හොයා ගන්න.</p>
-<p><img class=" wp-image-907 aligncenter" src="/wp-content/uploads/2018/04/Capture-178x300.png" alt="" width="393" height="662" srcset="/wp-content/uploads/2018/04/Capture-178x300.png 178w, /wp-content/uploads/2018/04/Capture.png 323w" sizes="(max-width: 393px) 100vw, 393px" /></p>
+<p><img class=" wp-image-907 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-178x300.png" alt="" width="393" height="662" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-178x300.png 178w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture.png 323w" sizes="(max-width: 393px) 100vw, 393px" /></p>
 <p>මේ තියෙන්නේ ඕනම Application එකක තියෙන Laravel framework File ටික. මම මුලින් ලියපු ලිපි වල විදියට Laravel Install කරගත්තාම මේ විදියේ Structure එකක් දකින්න පුළුවන්. අපි දැන් බලමු මේ එකින් එක Folder එක ඇතුලේ තියෙන්නේ මොනවද ඇයි අපිට ඒවා ඕන වෙන්නේ කියලා.</p>
 <h5><strong>The App Directory</strong></h5>
-<p><img class=" wp-image-909 aligncenter" src="/wp-content/uploads/2018/04/Capture-1-247x300.png" alt="" width="322" height="391" srcset="/wp-content/uploads/2018/04/Capture-1-247x300.png 247w, /wp-content/uploads/2018/04/Capture-1.png 267w" sizes="(max-width: 322px) 100vw, 322px" /></p>
+<p><img class=" wp-image-909 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-1-247x300.png" alt="" width="322" height="391" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-1-247x300.png 247w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-1.png 267w" sizes="(max-width: 322px) 100vw, 322px" /></p>
 <p style="padding-left: 30px;">මේ Folder එක ඇතුලේ තමයි අපේ Application එකේ Core Files ටික තියෙන්නේ. ඒ කියන්නේ අපි හදන Application එකේ Control Unit එක විදියට වැඩ කරන්නේ මේ Folder එක ඇතුලෙ තියෙන සහ අපි හදන Files ටික. අපි මුලින් කතා කරපු <strong>VCM Architecture </strong>තිබුණ Controller සහ Model කියන කොටස් දෙකම තියෙනවා මේ Folder එක ඇතුලේ.</p>
 <h5><strong>The Bootstrap Directory</strong></h5>
-<p><img class=" wp-image-911 aligncenter" src="/wp-content/uploads/2018/04/Capture-2-300x59.png" alt="" width="397" height="78" srcset="/wp-content/uploads/2018/04/Capture-2-300x59.png 300w, /wp-content/uploads/2018/04/Capture-2.png 332w" sizes="(max-width: 397px) 100vw, 397px" /></p>
+<p><img class=" wp-image-911 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-2-300x59.png" alt="" width="397" height="78" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-2-300x59.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-2.png 332w" sizes="(max-width: 397px) 100vw, 397px" /></p>
 <p style="padding-left: 30px;">මේ Directory එකේ තියෙන්නේ <strong>app.php </strong>file එකයි cache  එකයි. මේකෙ <strong>app.php </strong>file එකේන් කරන්නේ Laravel Framework එක bootstrap කරන එක. ඒ කියන්නේ framework එක start කරලා දෙන එක. cache directory එක ඇතුලෙ තියෙන්නේ Framework එකේ cache කරලා තියෙන files. මේ files framework එකේ Performance Optimize කරගන්න වැදගත් වෙනවා.</p>
 <h5><strong>The Config Directory</strong></h5>
-<p><img class=" wp-image-912 aligncenter" src="/wp-content/uploads/2018/04/Capture-3.png" alt="" width="305" height="412" /></p>
+<p><img class=" wp-image-912 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-3.png" alt="" width="305" height="412" /></p>
 <p style="padding-left: 30px;">මේ directory එක ඇතුලෙ තියෙන්නේ වචනෙන්ම කියනවා වගේම අපිට Config කරගන්න තියෙන Settings. මේ ටික එකින් එක open කරලා තියෙන දේවල් බලාගෙන ගියා නම් Idea එකක් ගන්න පුළුවන් අපිට මේ Framework එකේ Customize කරගන්න පුළුවන් settings මොනවද කියලා..</p>
 <h5><strong>The Database Directory</strong></h5>
-<p><img class=" wp-image-913 aligncenter" src="/wp-content/uploads/2018/04/Capture-4-300x76.png" alt="" width="526" height="133" srcset="/wp-content/uploads/2018/04/Capture-4-300x76.png 300w, /wp-content/uploads/2018/04/Capture-4.png 306w" sizes="(max-width: 526px) 100vw, 526px" /></p>
+<p><img class=" wp-image-913 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-4-300x76.png" alt="" width="526" height="133" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-4-300x76.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-4.png 306w" sizes="(max-width: 526px) 100vw, 526px" /></p>
 <p style="padding-left: 30px;">Web Application එකක තියෙන අනිවාර්ය දෙයක් තමයි Database එකක් කියන්නේ. Laravel Framework එකේ Database සම්බන්ධ Operations Manage කරන කොටස තමයි මේ Database Directory එකේ තියෙන්නේ. Factories වලින් අපිට Database එකට ඕන Dummy Data Generate කරගන්න පුළුවන්. Migration folder එකේ Save වෙන්නේ Database Structure එක. ඒ වගේම Seed එකේ තියෙනවා Database එකට දාන්න ඕන කරන Data.</p>
 <h5><strong>The Public Directory</strong></h5>
-<p><img class=" wp-image-914 aligncenter" src="/wp-content/uploads/2018/04/Capture-5-300x224.png" alt="" width="398" height="297" srcset="/wp-content/uploads/2018/04/Capture-5-300x224.png 300w, /wp-content/uploads/2018/04/Capture-5.png 326w" sizes="(max-width: 398px) 100vw, 398px" /></p>
+<p><img class=" wp-image-914 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-5-300x224.png" alt="" width="398" height="297" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-5-300x224.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-5.png 326w" sizes="(max-width: 398px) 100vw, 398px" /></p>
 <p style="padding-left: 30px;">සරලවම කිවුවොත් මේ Directory එකේ තමයි Application එකට අවශ්‍ය වෙන හැම CSS, JS, Images, වගේ Files තියාගන්නේ.</p>
 <h5><strong>The Resources Directory</strong></h5>
-<p><img class=" wp-image-915 aligncenter" src="/wp-content/uploads/2018/04/Capture-6.png" alt="" width="417" height="188" /></p>
+<p><img class=" wp-image-915 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-6.png" alt="" width="417" height="188" /></p>
 <p style="padding-left: 30px;">මේ Directory එකේ තමයි අපේ HTML files තියාගන්නේ. ඒ වගේම Language Files (ඉදිරියේදි පැහැදිලි කරන්නම්) තියා ගන්නේ.</p>
 <h5><strong>The Routes Directory</strong></h5>
-<p style="padding-left: 30px;"><img class=" wp-image-916 aligncenter" src="/wp-content/uploads/2018/04/Capture-7-300x90.png" alt="" width="477" height="143" srcset="/wp-content/uploads/2018/04/Capture-7-300x90.png 300w, /wp-content/uploads/2018/04/Capture-7.png 340w" sizes="(max-width: 477px) 100vw, 477px" /></p>
+<p style="padding-left: 30px;"><img class=" wp-image-916 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-7-300x90.png" alt="" width="477" height="143" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-7-300x90.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-7.png 340w" sizes="(max-width: 477px) 100vw, 477px" /></p>
 <p style="padding-left: 30px;">මේ directory එකේ තියෙන Files හතරෙන් තමයි Application එකේ එහා මෙහා යන Link සහ Data point වෙන්න ඕන කොහොමද කියන එක කියන්නේ. ඒ කියන්නේ අපේ Application එකෙන් Request කරන Link එකකට ප්‍රතිචාර දක්වන්න ඕන කොහොමද කියන එක කියන්නේ අපි මේ File එකට.</p>
 <h5><strong>The Storage Directory</strong></h5>
-<p><img class=" wp-image-917 aligncenter" src="/wp-content/uploads/2018/04/Capture-8.png" alt="" width="398" height="348" /></p>
+<p><img class=" wp-image-917 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-8.png" alt="" width="398" height="348" /></p>
 <p style="padding-left: 30px;">මේ folder එකේ තියෙන්නේ Directory 3යි. App directory එකේ තියෙන්නේ අපි හදන Application එකේන් Save වෙන Files. Framework Directory එකේ Save වෙන්නේ Framework එකෙන් Generate වෙන Files, logs එකේ framework එකෙන් Generate වෙන Log files save වෙනවා.</p>
 <h5><strong>The Test Directory</strong></h5>
-<p><img class=" wp-image-918 aligncenter" src="/wp-content/uploads/2018/04/Capture-9-300x91.png" alt="" width="468" height="142" srcset="/wp-content/uploads/2018/04/Capture-9-300x91.png 300w, /wp-content/uploads/2018/04/Capture-9.png 337w" sizes="(max-width: 468px) 100vw, 468px" /></p>
+<p><img class=" wp-image-918 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-9-300x91.png" alt="" width="468" height="142" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-9-300x91.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-9.png 337w" sizes="(max-width: 468px) 100vw, 468px" /></p>
 <p style="padding-left: 30px;">අපේ Application එකේ විවිධ Testing වලට මේ Folder එක භාවිතා කරනවා. Unit Testing වලට මේක ගොඩක් ප්‍රයෝජනවත්</p>
 <h5><strong>The Vendor Directory</strong></h5>
-<p><img class="size-medium wp-image-919 aligncenter" src="/wp-content/uploads/2018/04/Capture-10-181x300.png" alt="" width="181" height="300" srcset="/wp-content/uploads/2018/04/Capture-10-181x300.png 181w, /wp-content/uploads/2018/04/Capture-10.png 335w" sizes="(max-width: 181px) 100vw, 181px" /></p>
+<p><img class="size-medium wp-image-919 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-10-181x300.png" alt="" width="181" height="300" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-10-181x300.png 181w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/Capture-10.png 335w" sizes="(max-width: 181px) 100vw, 181px" /></p>
 <p style="padding-left: 30px;">අපි මේ Directory එකේ තියන දේවල් වෙනස් කරන්නේ නෑ සාමාන්‍යයෙන්. මොකද මේ File ටික Generate වෙන්නේ Composer එකෙන්. Project එකේ වැඩිම Size එකක් යන්නේ මේ Directory එකට. project එක කාටහරි දෙද්දී නැත්නම් host කරද්දී මේ directory එක නැතුව ඉතිරි ටික තමයි දෙන්නේ. මේක Composer එකෙන් Generate කරගන්න පුළුවන්.</p>
 <p>මීට වැඩිය ගොඩක් විස්තර තියෙනවා <a href="https://laravel.com/docs/5.6/structure">Laravel Official Page</a> එකේ. තවත් විස්තර ඕන නම් බලන්න. ඊළඟ ලිපිය ලියන්නේ පොඩි CRUD Operations එක්ක තියෙන Application එකක් හදාගන්නේ කොහොමද කියලා. එතකොට තවත් මේ ගැන වැඩි විස්තර කතා කරමු.</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/19/laravel-folder-structure/">Laravel Folder Structure</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/19/laravel-folder-structure/">Laravel Folder Structure</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/19/laravel-folder-structure/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/19/laravel-folder-structure/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

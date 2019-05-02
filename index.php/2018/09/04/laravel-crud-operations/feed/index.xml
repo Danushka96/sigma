@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Laravel වලින් CRUD Operations කරමු.	</title>
-	<atom:link href="/index.php/2018/09/04/laravel-crud-operations/feed/" rel="self" type="application/rss+xml" />
-	<link>/index.php/2018/09/04/laravel-crud-operations/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Tue, 09 Apr 2019 02:05:35 +0000	</lastBuildDate>
@@ -21,10 +21,10 @@
 			<item>
 				<title>
 				By: Kushan Ravindu				</title>
-				<link>/index.php/2018/09/04/laravel-crud-operations/#comment-112</link>
+				<link>https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/#comment-112</link>
 		<dc:creator><![CDATA[Kushan Ravindu]]></dc:creator>
 		<pubDate>Thu, 20 Sep 2018 04:54:41 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1205#comment-112</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1205#comment-112</guid>
 					<description><![CDATA[Superb bro!!]]></description>
 		<content:encoded><![CDATA[<p>Superb bro!!</p>
 ]]></content:encoded>
@@ -32,10 +32,10 @@
 						<item>
 				<title>
 				By: Page not found - The SIGMA				</title>
-				<link>/index.php/2018/09/04/laravel-crud-operations/#comment-109</link>
+				<link>https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/#comment-109</link>
 		<dc:creator><![CDATA[Page not found - The SIGMA]]></dc:creator>
 		<pubDate>Mon, 10 Sep 2018 19:45:42 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1205#comment-109</guid>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1205#comment-109</guid>
 					<description><![CDATA[[&#8230;] By Danushka Herath, 1 min ago  September 11, 2018            [&#8230;]]]></description>
 		<content:encoded><![CDATA[<p>[&#8230;] By Danushka Herath, 1 min ago  September 11, 2018            [&#8230;]</p>
 ]]></content:encoded>

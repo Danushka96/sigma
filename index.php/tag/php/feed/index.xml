@@ -9,8 +9,8 @@
 
 <channel>
 	<title>php &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/php/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/php/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>මොකක්ද මේ CodeIgniter කියන්නේ ?</title>
-		<link>/index.php/2018/09/20/introduction-of-codeigniter/</link>
-				<comments>/index.php/2018/09/20/introduction-of-codeigniter/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/#respond</comments>
 				<pubDate>Thu, 20 Sep 2018 05:18:22 +0000</pubDate>
 		<dc:creator><![CDATA[Gayan Sampath]]></dc:creator>
 				<category><![CDATA[codeigniter]]></category>
@@ -33,9 +33,9 @@
 		<category><![CDATA[MVC]]></category>
 		<category><![CDATA[php]]></category>
 
-		<guid isPermaLink="false">/?p=1314</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන් යාලුවනේ!  මේ ලිපියත් එක්ක පටන් ගන්න යන්නේ CodeIgniter කියන Framework එකත් එක්ක කොහොමද වැඩ කරන්නේ කියලා උගන්වන්න යන ලිපි මාලාවක්. මේ පාඩම් මාලාව පදනම් වෙන්නේ PHP එක්ක. ඒක හින්දා PHP ගැන Basic ටිකක් වත් දැනගෙන තිබුණොත් මේක ගොඩක් වැදගත් වෙයි.  ඒ වගේම HTML, CSS, JS ගැනත් පොඩි දැනුමක් තියෙන්න ඕන.<a class="moretag" href="/index.php/2018/09/20/introduction-of-codeigniter/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/20/introduction-of-codeigniter/">මොකක්ද මේ CodeIgniter කියන්නේ ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1314</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> ආයුබෝවන් යාලුවනේ!  මේ ලිපියත් එක්ක පටන් ගන්න යන්නේ CodeIgniter කියන Framework එකත් එක්ක කොහොමද වැඩ කරන්නේ කියලා උගන්වන්න යන ලිපි මාලාවක්. මේ පාඩම් මාලාව පදනම් වෙන්නේ PHP එක්ක. ඒක හින්දා PHP ගැන Basic ටිකක් වත් දැනගෙන තිබුණොත් මේක ගොඩක් වැදගත් වෙයි.  ඒ වගේම HTML, CSS, JS ගැනත් පොඩි දැනුමක් තියෙන්න ඕන.<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/">මොකක්ද මේ CodeIgniter කියන්නේ ?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><p>ආයුබෝවන් යාලුවනේ!  මේ ලිපියත් එක්ක පටන් ගන්න යන්නේ <span>CodeIgniter</span> කියන Framework එකත් එක්ක කොහොමද වැඩ කරන්නේ කියලා උගන්වන්න යන ලිපි මාලාවක්. මේ පාඩම් මාලාව පදනම් වෙන්නේ PHP එක්ක. ඒක හින්දා PHP ගැන Basic ටිකක් වත් දැනගෙන තිබුණොත් මේක ගොඩක් වැදගත් වෙයි.  ඒ වගේම HTML, CSS, JS ගැනත් පොඩි දැනුමක් තියෙන්න ඕන. ඒ දේවල් වල ගැන දැනටමත් දන්න කෙනෙක් නම් මේ ලිපි Set එක මාර වැදගත් වෙයි. Web Application එකක් ලේසියෙන්ම හදා ගන්න.</p>
 <p>හරි මේ ටික කියවන්න ඕන උඩින් කියපු Requirements නැති කට්ටිය. තියන කට්ටිය මේ ටික Skip කරගෙන ඉස්සරහට යමු. මම මේ කියන්න හදන්නේ ඔයාලට උඩදි කියපු Skills ටික හදා ගන්න පුළුවන් ක්‍රමයක්. ඒ තමයි W3School එක. මම එක එක Topic එකට අදාල Link එක මෙතනට දාන්නම්. අවශ්‍ය නම් ඒ ටික බලලා දැනුමක් එකතු කර ගන්න. (පිළිවෙලට බලාගෙන යන්න)</p>
@@ -46,24 +46,24 @@
 <p>හරි එහෙනම්අ පි මුලින්ම බලමු මොකක්ද මේ MVC architecture එක කියන්නේ කියලා.</p>
 <h4><strong>ඇත්තටම මොකක්ද මේ </strong><strong>MVC architecture එක </strong><strong>කියන්නේ ?</strong></h4>
 <p>MVC කියලා කෙටියෙන් කියන්නේ <strong>Model, View සහ Controller </strong>කියන වචන තුනට. මේ MVC කියන එක ගොඩක් වෙලාවට භාවිතා කරන්නේ User Interfaces හදන්න. මේක ගොඩක් Programming Languages වලදි භාවිතා කරනවා.<span> </span><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Wiki</a><span> </span>එකත් පොඩ්ඩක් බලන්න.</p>
-<p><img class=" wp-image-796 aligncenter" src="/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png" alt="" width="355" height="240" srcset="/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png 300w, /wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce.png 431w" sizes="(max-width: 355px) 100vw, 355px" /></p>
+<p><img class=" wp-image-796 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png" alt="" width="355" height="240" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce-300x203.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/main-qimg-3736ee98eff0c8148e2372d2b693f0ce.png 431w" sizes="(max-width: 355px) 100vw, 355px" /></p>
 <p>මේ තුන එකතු වෙලා කරන්නේ මේ රූපයේ තියෙනවා වගේ වැඩක්. අපේ Browser එක Http Request එකක් හරහා Web Application එකේ Controller එකට කතා කරනවා. දැන් Controller එක කරන්නේ Model එකට කතා කරලා එතනින් Data ඉල්ලගෙන ඒ Data අවශ්‍ය විදියට හදලා HTML එකේ View එකක් හදනවා. මේ Model එකෙන් තමයි අපි Database එකත් එක්ක සම්බන්ධ වෙන්නේ.</p>
 <p>ඔන්න ඔකට තමයි MVC architecture එක කියල කියන්නේ.ඔන්න ඔය දේ තමයි <span>CodeIgniter</span> කියන Framework  එකෙත් පාවිච්චි වෙන්නෙ..MVC architecture එක ගැන හොඳ Idea එකක් අති කියලා හිතනවා. අපි දැන් බලමු කොහොමද <span>CodeIgniter Install </span> කරගන්නෙ කියලා.</p>
 <p>පොඩි දෙයයි කරන්න තියෙන්නේ ..පහල තියන Link  එකින් ගිහින් files  ටික download කරගෙන extract  කර ගන්න.</p>
 <p><a href="https://www.codeigniter.com/" rel="noopener" target="_blank">               Download Codeigniter</a></p>
-<p><img src="/wp-content/uploads/2018/09/tempsnip-300x135.png" alt="" width="711" height="320" class=" wp-image-1321 aligncenter" srcset="/wp-content/uploads/2018/09/tempsnip-300x135.png 300w, /wp-content/uploads/2018/09/tempsnip-768x345.png 768w, /wp-content/uploads/2018/09/tempsnip-1024x460.png 1024w, /wp-content/uploads/2018/09/tempsnip.png 1346w" sizes="(max-width: 711px) 100vw, 711px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip-300x135.png" alt="" width="711" height="320" class=" wp-image-1321 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip-300x135.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip-768x345.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip-1024x460.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/tempsnip.png 1346w" sizes="(max-width: 711px) 100vw, 711px" /></p>
 <p>&nbsp;</p>
 <p>හරි දැන් files  ටික text editer එකකින් Open කරලා බලුවොත් දැකගන්ට ගන්ට පුලුවන් Application  කියලා Folder එකකුයි, System කියලා Folder එකකුයි , user_guide කියලා Folder එකකුයි තව files ටිකකුයි තියනවා.ඔක තමයි වල codeigniter වල folder structure  එක.ඊලග පඩමෙන් අපි බලමු codeigniter වල folder structure  එක විස්තර සහිතව.අදට පාඩම නිමයි .ඊලග පාඩමත් සමගින් හමුවෙමු.හමෝටම සුබ දවසක්!</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/20/introduction-of-codeigniter/">මොකක්ද මේ CodeIgniter කියන්නේ ?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/">මොකක්ද මේ CodeIgniter කියන්නේ ?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/09/20/introduction-of-codeigniter/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/09/20/introduction-of-codeigniter/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>Laravel වලින් Database Migrations කරමු.</title>
-		<link>/index.php/2018/09/17/laravel-database-migrations/</link>
-				<comments>/index.php/2018/09/17/laravel-database-migrations/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/#respond</comments>
 				<pubDate>Mon, 17 Sep 2018 18:24:22 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Laravel]]></category>
@@ -75,13 +75,13 @@
 		<category><![CDATA[php]]></category>
 		<category><![CDATA[sinhala]]></category>
 
-		<guid isPermaLink="false">/?p=1271</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230; වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel<a class="moretag" href="/index.php/2018/09/17/laravel-database-migrations/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1271</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230; වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>Web Application එකක් හදද්දි අපිට අවශ්‍යම වෙන දෙයක් තමයි Migration එහෙම නැත්නම් Database එක්ක ගණුදෙනු කරන එක. Database එකක් නැතිව Web Application එකකින් ගොඩක් දුරට තේරුමක් වෙන්නේ නෑ. අද කතා කරන්න යන්නේ Laravel එක්ක Database Migrations වැඩ ටික කරගන්නේ කොහොමද කියලා&#8230;&#8230;</p>
-<p>වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel post එක නම් අපේ අනිත් ලිපි Set එකත් <a href="/index.php/2018/04/10/web-application-with-laravel/">මෙතනින්</a> බලන්න.</p>
-<p><img src="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg" alt="" width="523" height="298" class=" wp-image-1273 aligncenter" srcset="/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg 300w, /wp-content/uploads/2018/09/Why_Laravel.jpg 700w" sizes="(max-width: 523px) 100vw, 523px" /></p>
+<p>වෙනදා වගේම කියන්න ඕන මේක ඔයා බලන පළවෙනි laravel post එක නම් අපේ අනිත් ලිපි Set එකත් <a href="https://danushka96.github.io/sigma/index.php/2018/04/10/web-application-with-laravel/">මෙතනින්</a> බලන්න.</p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg" alt="" width="523" height="298" class=" wp-image-1273 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Why_Laravel-300x171.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Why_Laravel.jpg 700w" sizes="(max-width: 523px) 100vw, 523px" /></p>
 <h2><span style="text-decoration: underline; color: #0000ff;"><strong>මූලික හැඳින්වීම</strong></span></h2>
 <p>උඩ තියෙන Image එක කියන්නේ Why Laravel කියන ප්‍රශ්නෙට තියෙන උත්තර. ඒ කියන්නේ අනිත් PHP Frameworks එක්ක compare කරලා බලද්දි Laravel වල තියෙන විශේෂත්වය. ඒකෙ උඩින්ම තියෙන දෙයක් තමයි මේ Migrations කියන එක. ඒකට ගොඩක් specialty එකක් දීලා තියෙන්නේ ඒකෙන් ලොකු වැඩ ගොඩක් Simple විදියට කරගන්න අවස්ථාවක් තියෙන හින්දා.</p>
 <p>සාමාන්‍යයෙන් අපි මොකක්ම හරි Web Application එකක් Laravel නැතිව වෙනත් විදියකින් හදනවා නම් අපි කරන්නේ අපේ Source Code එක වෙනම හදලා Database එක වෙනම හදලා මේ දෙක php වලින් Connect කරගන්න එකනේ. දැන් හිතන්න ඔය System එක තවත් කාට හරි දෙන්න ඕන වුණා කියලා. එතකොට අපිට සිද්ධ වෙනවා අපේ source code එකත් එක්ක SQL Server එකෙන් export කරගත්තු database file එකත් දෙන්න. ඊට පස්සේ මේ system එක ගන්න කෙනා ආපහු ඒ database එක import කරගන්න. මොකක්ම හරි Error එකක් ඇවිත් අර database file එක import වෙන්නේ නැති වුණොත් අපිට ආපහු ඒ file එක edit කරන එක ඇත්තටම අමාරු වැඩක්. මොකද ඒකෙ තියෙන්නේ generate වෙලා තියෙන code set එකක් නිසා.</p>
@@ -153,15 +153,15 @@ class CreateFlightsTable extends Migration
 <p style="padding-left: 30px;">මෙකෙන් කලින් කරපු වැඩේට ටිකක් සමාන වැඩක් කරගන්න පුළුවන්. හැබැයි මේකෙදි database එක reset වෙන්නේ නැතිව වෙන්නේ ඔක්කොම Tables ටික ඉස්සරලාම drop කරගන්න එක. ඊට පස්සේ Migration files ටික run කරගන්නවා.</p>
 <p>ලිපිය තවත් දික් වෙලා Boring වෙන නිසා මම Database Queries ලියා ගන්න විදිය ගැන තවත් ලිපියකින් කතා කරන්නම්. මේ ලිපිය ගැන මොකක් හරි ප්‍රශ්ණයක් තියෙනවා නම් Comment එකක් දාන්න. අලුත් ලිපියකින් හමු වෙමු&#8230;..</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/">Laravel වලින් Database Migrations කරමු.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/09/17/laravel-database-migrations/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/09/17/laravel-database-migrations/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>Laravel වලින් CRUD Operations කරමු.</title>
-		<link>/index.php/2018/09/04/laravel-crud-operations/</link>
-				<comments>/index.php/2018/09/04/laravel-crud-operations/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/#comments</comments>
 				<pubDate>Mon, 03 Sep 2018 18:33:21 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Laravel]]></category>
@@ -173,21 +173,21 @@ class CreateFlightsTable extends Migration
 		<category><![CDATA[php]]></category>
 		<category><![CDATA[sinhala]]></category>
 
-		<guid isPermaLink="false">/?p=1205</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span> මේ ලිපියෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Laravel එක්ක පොඩි CRUD Application එකක් හදන විදිය ගැන. ඒ කියන්නේ Create, Read, Update, Delete කියන Basic Database Function 4 කරන විදිය ගැන. (https://github.com/Danushka96/laravelcrud) Laravel Install කරන විදිය Basic Application එකක් හදන විදිය ගැන බැලුවේ නැත්නම් මේ ලිපිය බලන්න Installing Laravel Basic Application in<a class="moretag" href="/index.php/2018/09/04/laravel-crud-operations/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1205</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span> මේ ලිපියෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Laravel එක්ක පොඩි CRUD Application එකක් හදන විදිය ගැන. ඒ කියන්නේ Create, Read, Update, Delete කියන Basic Database Function 4 කරන විදිය ගැන. (https://github.com/Danushka96/laravelcrud) Laravel Install කරන විදිය Basic Application එකක් හදන විදිය ගැන බැලුවේ නැත්නම් මේ ලිපිය බලන්න Installing Laravel Basic Application in<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span><p>මේ ලිපියෙන් කතා කරන්න බලාපොරොත්තු වෙන්නේ Laravel එක්ක පොඩි CRUD Application එකක් හදන විදිය ගැන. ඒ කියන්නේ Create, Read, Update, Delete කියන Basic Database Function 4 කරන විදිය ගැන. <a href="https://github.com/Danushka96/laravelcrud">(https://github.com/Danushka96/laravelcrud)</a></p>
 <p>Laravel Install කරන විදිය Basic Application එකක් හදන විදිය ගැන බැලුවේ නැත්නම් මේ ලිපිය බලන්න</p>
 <ol>
-<li><a href="/index.php/2018/04/11/install-laravel-homestead-custom/">Installing Laravel</a></li>
-<li><a href="/index.php/2018/04/25/laravel-basic-application/">Basic Application in Laravel</a></li>
+<li><a href="https://danushka96.github.io/sigma/index.php/2018/04/11/install-laravel-homestead-custom/">Installing Laravel</a></li>
+<li><a href="https://danushka96.github.io/sigma/index.php/2018/04/25/laravel-basic-application/">Basic Application in Laravel</a></li>
 </ol>
 <h2><span style="text-decoration: underline; color: #ff9900;"><strong>මූලික පියවර</strong></span></h2>
 <p>මුලින්ම කරන්න ඕන අලුත් Laravel Project එකක් පටන් ගන්න එක. ඒකට මේ command prompt එකෙන් Application එක හදන්න අවශ්‍ය තැනට ගිහින් මේ Command එක Paste කරලා Enter කරන්න.</p>
 <blockquote><p><span>composer </span><span class="hljs-keyword">create</span><span>&#8211;</span><span class="hljs-keyword">project</span><span> </span><span class="hljs-comment">&#8211;prefer-dist laravel/laravel crudApps</span></p></blockquote>
 <p>පොඩි වෙලාවකින් අලුත් Project එකක් හැදිලා තියෙයි crudApps නමෙන්. දැන් කරන්න තියෙන් අලුතින් Database එකක් හදා ගන්න එක. ඒකට mysql Server එක on කරලා අලුතින් Database එකක් හදලා ඒකට අදාල Login Details ටික .env file එකේ දාලා Save කරගන්න.</p>
-<p><img src="/wp-content/uploads/2018/09/Capture-300x130.png" alt="" width="360" height="156" class="alignnone wp-image-1210" srcset="/wp-content/uploads/2018/09/Capture-300x130.png 300w, /wp-content/uploads/2018/09/Capture.png 322w" sizes="(max-width: 360px) 100vw, 360px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-300x130.png" alt="" width="360" height="156" class="alignnone wp-image-1210" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-300x130.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture.png 322w" sizes="(max-width: 360px) 100vw, 360px" /></p>
 <p>හරි මූලිකම පියවර ඔය ටික හරියට කර ගත්තහම ඉවරයි.</p>
 <h2><span style="text-decoration: underline; color: #ff9900;"><strong>දෙවන පියවර</strong></span></h2>
 <p>මේ පියවරේදි අපි කරන්නේ Database එකත් එක්ක සම්බන්ධ වැඩ ටිකක්. ඒ කියන්නේ Model File එකකුයි Migration File එකකුයි හදා ගන්න එක. ඒකට මේ විදියට කරගෙන යන්න.</p>
@@ -304,7 +304,7 @@ class student extends Model
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p><img src="/wp-content/uploads/2018/09/Capture-1-300x140.png" alt="" width="519" height="242" class=" wp-image-1222 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-1-300x140.png 300w, /wp-content/uploads/2018/09/Capture-1-768x359.png 768w, /wp-content/uploads/2018/09/Capture-1.png 998w" sizes="(max-width: 519px) 100vw, 519px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-1-300x140.png" alt="" width="519" height="242" class=" wp-image-1222 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-1-300x140.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-1-768x359.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-1.png 998w" sizes="(max-width: 519px) 100vw, 519px" /></p>
 <p><strong>add.blade.php</strong></p>
 <pre>&lt;html&gt;
     &lt;head&gt;
@@ -354,7 +354,7 @@ class student extends Model
     &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"&gt;&lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;</pre>
-<p><img src="/wp-content/uploads/2018/09/Capture-2-300x151.png" alt="" width="485" height="244" class=" wp-image-1224 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-2-300x151.png 300w, /wp-content/uploads/2018/09/Capture-2-768x386.png 768w, /wp-content/uploads/2018/09/Capture-2-1024x514.png 1024w, /wp-content/uploads/2018/09/Capture-2.png 1049w" sizes="(max-width: 485px) 100vw, 485px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-2-300x151.png" alt="" width="485" height="244" class=" wp-image-1224 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-2-300x151.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-2-768x386.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-2-1024x514.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-2.png 1049w" sizes="(max-width: 485px) 100vw, 485px" /></p>
 <p><strong>edit.blade.php</strong></p>
 <pre>&lt;html&gt;
     &lt;head&gt;
@@ -405,7 +405,7 @@ class student extends Model
     &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"&gt;&lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;</pre>
-<p><img src="/wp-content/uploads/2018/09/Capture-3-300x157.png" alt="" width="449" height="235" class=" wp-image-1225 aligncenter" srcset="/wp-content/uploads/2018/09/Capture-3-300x157.png 300w, /wp-content/uploads/2018/09/Capture-3-768x401.png 768w, /wp-content/uploads/2018/09/Capture-3-1024x534.png 1024w, /wp-content/uploads/2018/09/Capture-3.png 1054w" sizes="(max-width: 449px) 100vw, 449px" /></p>
+<p><img src="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-3-300x157.png" alt="" width="449" height="235" class=" wp-image-1225 aligncenter" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-3-300x157.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-3-768x401.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-3-1024x534.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/09/Capture-3.png 1054w" sizes="(max-width: 449px) 100vw, 449px" /></p>
 <p>මේ Views ටික හරියට හදා ගත්ත නම් ඊළඟ පියවරට යන්න පුළුවන්&#8230;..</p>
 <h3><span style="text-decoration: underline; color: #ff9900;"><strong>සිව්වන පියවර</strong></span></h3>
 <p>මේ පියවරේදි අපි කරන්නේ Controller එකක් හදා ගන්න එක. ඒකට මේ Command එක command prompt එකේ run කර ගන්න.</p>
@@ -540,9 +540,9 @@ Route::resource('student','studentController');</pre>
 <blockquote><p>php artisan serve</p></blockquote>
 <p>Add/ Edit/ Delete කරලා බලන්න. අවුලක් තිබුණොත් Comment එකක් දාන්න&#8230;&#8230;</p>
 <p>Complete Project Download From here: <a href="https://github.com/Danushka96/laravelcrud">https://github.com/Danushka96/laravelcrud</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/">Laravel වලින් CRUD Operations කරමු.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/09/04/laravel-crud-operations/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/09/04/laravel-crud-operations/feed/</wfw:commentRss>
 		<slash:comments>2</slash:comments>
 							</item>
 	</channel>

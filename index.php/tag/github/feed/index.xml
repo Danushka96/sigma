@@ -9,8 +9,8 @@
 
 <channel>
 	<title>github &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/github/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/github/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,17 +22,17 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Install Github and Basic Commands</title>
-		<link>/index.php/2018/03/13/install-github-and-basic-commands/</link>
-				<comments>/index.php/2018/03/13/install-github-and-basic-commands/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/03/13/install-github-and-basic-commands/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/03/13/install-github-and-basic-commands/#respond</comments>
 				<pubDate>Tue, 13 Mar 2018 15:56:41 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Github]]></category>
 		<category><![CDATA[tech]]></category>
 		<category><![CDATA[github]]></category>
 
-		<guid isPermaLink="false">/?p=47</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> How to Install Git Desktop Software for your pc? The software you need to install for all of your git operations is git Desktop. You can select a version depend on your operating system as listed below Windows Linux Mac This tutorial is based on linux version. No problem if<a class="moretag" href="/index.php/2018/03/13/install-github-and-basic-commands/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/13/install-github-and-basic-commands/">Install Github and Basic Commands</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=47</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> How to Install Git Desktop Software for your pc? The software you need to install for all of your git operations is git Desktop. You can select a version depend on your operating system as listed below Windows Linux Mac This tutorial is based on linux version. No problem if<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/03/13/install-github-and-basic-commands/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/13/install-github-and-basic-commands/">Install Github and Basic Commands</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><h3><em><strong>How to Install Git Desktop Software for your pc?</strong></em></h3>
 <p>The software you need to install for all of your git operations is git Desktop. You can select a version depend on your operating system as listed below</p>
@@ -45,9 +45,9 @@
 <p><strong>First Step</strong> is Install the git bash software for your PC. If you&#8217;re a ubuntu user just paste this code in the terminal. Any other refer the link above.</p>
 <blockquote><p>sudo apt install git</p></blockquote>
 <p><strong>Then Create an empty project</strong> with your own name in the github.com</p>
-<p><img class="aligncenter wp-image-50" src="/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-07-00-300x203.png" alt="project" width="505" height="341" srcset="/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-07-00-300x203.png 300w, /wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-07-00-768x519.png 768w, /wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-07-00.png 793w" sizes="(max-width: 505px) 100vw, 505px" /></p>
+<p><img class="aligncenter wp-image-50" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-07-00-300x203.png" alt="project" width="505" height="341" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-07-00-300x203.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-07-00-768x519.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-07-00.png 793w" sizes="(max-width: 505px) 100vw, 505px" /></p>
 <p>Next Step is Copy the url of newly created git repository</p>
-<p><img class="aligncenter wp-image-51" src="/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18-300x75.png" alt="new" width="492" height="123" srcset="/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18-300x75.png 300w, /wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18-768x193.png 768w, /wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18-1024x257.png 1024w, /wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18.png 1032w" sizes="(max-width: 492px) 100vw, 492px" /></p>
+<p><img class="aligncenter wp-image-51" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18-300x75.png" alt="new" width="492" height="123" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18-300x75.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18-768x193.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18-1024x257.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Screenshot-from-2018-03-13-21-09-18.png 1032w" sizes="(max-width: 492px) 100vw, 492px" /></p>
 <p>Open the gitbash (for windows) or open the terminal for linux and type:</p>
 <blockquote><p>mkdir <strong><em>myproject</em></strong></p>
 <p>cd <strong>myproject</strong></p>
@@ -71,26 +71,26 @@
 <p>&nbsp;</p>
 <p>Try and feel free to ask questions here.</p>
 <p>&nbsp;</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/13/install-github-and-basic-commands/">Install Github and Basic Commands</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/13/install-github-and-basic-commands/">Install Github and Basic Commands</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/03/13/install-github-and-basic-commands/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/03/13/install-github-and-basic-commands/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>How to Use Github for your Project?</title>
-		<link>/index.php/2018/03/12/how-to-use-github-for-your-project/</link>
-				<comments>/index.php/2018/03/12/how-to-use-github-for-your-project/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/03/12/how-to-use-github-for-your-project/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/03/12/how-to-use-github-for-your-project/#comments</comments>
 				<pubDate>Mon, 12 Mar 2018 18:51:38 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Github]]></category>
 		<category><![CDATA[tech]]></category>
 		<category><![CDATA[github]]></category>
 
-		<guid isPermaLink="false">/?p=31</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> What is GIT? Git (different from github) is the most widely used modern version control system in the world today. Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel. A git can save all changes of<a class="moretag" href="/index.php/2018/03/12/how-to-use-github-for-your-project/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/12/how-to-use-github-for-your-project/">How to Use Github for your Project?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=31</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> What is GIT? Git (different from github) is the most widely used modern version control system in the world today. Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel. A git can save all changes of<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/03/12/how-to-use-github-for-your-project/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/12/how-to-use-github-for-your-project/">How to Use Github for your Project?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><p><img class="aligncenter wp-image-32 size-medium" src="/wp-content/uploads/2018/03/Github2-300x142.png" alt="git" width="300" height="142" srcset="/wp-content/uploads/2018/03/Github2-300x142.png 300w, /wp-content/uploads/2018/03/Github2.png 500w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><p><img class="aligncenter wp-image-32 size-medium" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Github2-300x142.png" alt="git" width="300" height="142" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Github2-300x142.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/03/Github2.png 500w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <h4><em><strong>What is GIT?</strong></em></h4>
 <p>Git (different from github) is the most widely used modern version control system in the world today. Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel. A git can save all changes of a project from a developer form starting point to the end in a single repository.</p>
 <h4><em><strong>So What is Github?</strong></em></h4>
@@ -106,9 +106,9 @@
 <p>As students there&#8217;s are group projects to do. If all of your group members are not in a one place you&#8217;ll be in trouble because you don&#8217;t have an idea about what others will edit in your project. So github is a great place to collaborate with your team members to discuss about the problems and make the project done.</p>
 <p>Another benefit is  github can save all of your file changes history since you start your very first step to the complete software. So github working as a version controlling system. You can release a new version of your software through the github easily.</p>
 <p style="text-align: center;"><strong>Stay Tuned of Next letter of how to use Github</strong></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/12/how-to-use-github-for-your-project/">How to Use Github for your Project?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/12/how-to-use-github-for-your-project/">How to Use Github for your Project?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/03/12/how-to-use-github-for-your-project/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/03/12/how-to-use-github-for-your-project/feed/</wfw:commentRss>
 		<slash:comments>1</slash:comments>
 							</item>
 	</channel>

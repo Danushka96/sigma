@@ -9,8 +9,8 @@
 
 <channel>
 	<title>algorithm &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/algorithm/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/algorithm/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Queue Abstract Data Type (With Implementation)</title>
-		<link>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/</link>
-				<comments>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/#respond</comments>
 				<pubDate>Mon, 09 Apr 2018 14:45:43 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Algo]]></category>
@@ -31,14 +31,14 @@
 		<category><![CDATA[implementation]]></category>
 		<category><![CDATA[queue]]></category>
 
-		<guid isPermaLink="false">/?p=552</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා. FIFO? FIFO කියන එකෙන් අදහස් වෙන්නේ First In First Out කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින<a class="moretag" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=552</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා. FIFO? FIFO කියන එකෙන් අදහස් වෙන්නේ First In First Out කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා.</p>
 <h3><strong>FIFO?</strong></h3>
-<p><img class=" wp-image-629 aligncenter" src="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg" alt="" width="387" height="241" srcset="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg 300w, /wp-content/uploads/2018/04/queue_1446267c_2854335k-768x480.jpg 768w, /wp-content/uploads/2018/04/queue_1446267c_2854335k.jpg 858w" sizes="(max-width: 387px) 100vw, 387px" /></p>
-<p>FIFO කියන එකෙන් අදහස් වෙන්නේ <strong>First In First Out </strong>කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින පේලි වලත් වෙන්නේ ඉස්සරලාම පේලියට එකතු වුණ කෙනා තමයි මුලින්ම පේලියෙන් එළියට යන්නේ. හැබැයි මතකද අපි කලින් ලිපියෙ Stacks ගැන කියන වෙලාවෙදි <strong>LIFO </strong>එකක් ගැන කිවුවා. ඒක බැලුවෙ නැත්නම් <a href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">මෙතනින්</a> බලන්න. ඒකෙදි අපි කලේ මේකෙ විරුද්ධ වැඩේ.</p>
+<p><img class=" wp-image-629 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg" alt="" width="387" height="241" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_1446267c_2854335k-768x480.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_1446267c_2854335k.jpg 858w" sizes="(max-width: 387px) 100vw, 387px" /></p>
+<p>FIFO කියන එකෙන් අදහස් වෙන්නේ <strong>First In First Out </strong>කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින පේලි වලත් වෙන්නේ ඉස්සරලාම පේලියට එකතු වුණ කෙනා තමයි මුලින්ම පේලියෙන් එළියට යන්නේ. හැබැයි මතකද අපි කලින් ලිපියෙ Stacks ගැන කියන වෙලාවෙදි <strong>LIFO </strong>එකක් ගැන කිවුවා. ඒක බැලුවෙ නැත්නම් <a href="https://danushka96.github.io/sigma/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">මෙතනින්</a> බලන්න. ඒකෙදි අපි කලේ මේකෙ විරුද්ධ වැඩේ.</p>
 <h3><strong>Basic Operations</strong></h3>
 <p>Queue එකක තියෙන මූලිකම මෙහෙයුම් කිහිපය තමයි මේ පහලින් තියෙන්නේ.</p>
 <ol>
@@ -105,7 +105,7 @@ end procedure
 <p>Queue එකට Data Insert කරන Method එක. මේකෙදි අපි පියවර කිහිපයක් අනුගමනය කරනවා Data එකක් Queue එක ඇතුලට දාන්න කලින් අපි එකින් එක පියවර විස්තර ඇතිව බලමු.</p>
 <p style="padding-left: 30px;"><strong>පළමු පියවර : </strong>Queue එක දැනට Full ද කියලා Check කරන එක. ඒ කියන්නේ Queue එක Full වෙලා තිබුණොත් අපිට තවත් Data Insert කරන්න බෑනෙ. ඒක මේ Check එකෙන් පස්සේ Full වෙලා තිබුණොත් නතර කරනවා</p>
 <p style="padding-left: 30px;"><strong>දෙවන පියවර : </strong>Queue එක Full වෙලා තිබුණේ නැත්නම් අපි Rear Point එක 1කින් වැඩි කරනවා. ඒ කියන්නේ Next Empty Space එකට.</p>
-<p><img class=" wp-image-736 aligncenter" src="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg" alt="" width="446" height="251" srcset="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg 300w, /wp-content/uploads/2018/04/queue_enqueue_diagram.jpg 550w" sizes="(max-width: 446px) 100vw, 446px" /></p>
+<p><img class=" wp-image-736 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg" alt="" width="446" height="251" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_enqueue_diagram.jpg 550w" sizes="(max-width: 446px) 100vw, 446px" /></p>
 <p style="padding-left: 30px;"><strong>තුන්වන පියවර : </strong>දැන් Rear Point එක තියෙන තැනට අපිට අවශ්‍ය Data එක Insert කරනවා.</p>
 <h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
 <pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="pln">procedure enqueue</span><span class="pun">(</span><span class="pln">data</span><span class="pun">)</span>      
@@ -134,7 +134,7 @@ end procedure
 <p>Queue එකෙන් Data එළියට ගන්න Method එක. මේක කරන්නත් අපි උඩදි කතා කරා වගේ පියවර කිහිපයක් යන්න ඕන.</p>
 <p style="padding-left: 30px;"><strong>පළමු පියවර : </strong>Queue එක Empty ද කියලා Check කරන්න ඕන. මොකද අපිට Empty Queue එකකින් Data එකක් එළියට ගන්න බෑ.</p>
 <p style="padding-left: 30px;"><strong>දෙවන පියවර : </strong>Queue එක Empty වෙලා තිබුණොත් Underflow Error එකක් Display කරනවා. නැත්නම් Front Pointer එක ඊළඟ Element එකට Point කරනවා.</p>
-<p style="padding-left: 30px;"><strong><img class=" wp-image-737 aligncenter" src="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg" alt="" width="449" height="283" srcset="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg 300w, /wp-content/uploads/2018/04/queue_dequeue_diagram.jpg 550w" sizes="(max-width: 449px) 100vw, 449px" /></strong></p>
+<p style="padding-left: 30px;"><strong><img class=" wp-image-737 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg" alt="" width="449" height="283" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_dequeue_diagram.jpg 550w" sizes="(max-width: 449px) 100vw, 449px" /></strong></p>
 <h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
 <pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="pln">procedure dequeue
    </span><span class="kwd">if</span><span class="pln"> queue </span><span class="kwd">is</span><span class="pln"> empty
@@ -212,15 +212,15 @@ void process_queue(struct queue_root* queue, void (*func)(queue_data_type)){
 }
 </pre>
 <p>හරි එහෙනම් මොනවා හරි ප්‍රශ්ණයක් තිබුණොත් Comment එකක් දාන්න.</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>Stack Abstract Data Type (With Implementation)</title>
-		<link>/index.php/2018/04/05/stack-abstract-data-type-with-implementation/</link>
-				<comments>/index.php/2018/04/05/stack-abstract-data-type-with-implementation/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/05/stack-abstract-data-type-with-implementation/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/05/stack-abstract-data-type-with-implementation/#respond</comments>
 				<pubDate>Thu, 05 Apr 2018 16:58:09 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Algo]]></category>
@@ -228,20 +228,20 @@ void process_queue(struct queue_root* queue, void (*func)(queue_data_type)){
 		<category><![CDATA[problem solving]]></category>
 		<category><![CDATA[stacks]]></category>
 
-		<guid isPermaLink="false">/?p=504</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> Stacks මුලින්ම මේ පාඩම් මාලාව හැඳින්වීමේදි අපි කතා කරා මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට මේ දේවලි ඕන වෙන්නේ කියලා. ඒ ලිපිය බැලුවේ නැත්නම් මෙතනින් බලන්න. හරි අපි අද කතා කරන්න යන්නේ අපේ පළවෙනි Data Type එක ගැන. stacks කියන්නේ එක්තරා විදියක Operations කිහිපයකට සීමා වෙලා තියෙන Data<a class="moretag" href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">Stack Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=504</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span> Stacks මුලින්ම මේ පාඩම් මාලාව හැඳින්වීමේදි අපි කතා කරා මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට මේ දේවලි ඕන වෙන්නේ කියලා. ඒ ලිපිය බැලුවේ නැත්නම් මෙතනින් බලන්න. හරි අපි අද කතා කරන්න යන්නේ අපේ පළවෙනි Data Type එක ගැන. stacks කියන්නේ එක්තරා විදියක Operations කිහිපයකට සීමා වෙලා තියෙන Data<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/05/stack-abstract-data-type-with-implementation/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">Stack Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">minutes</span></span><h2 style="text-align: center;"><span style="text-decoration: underline;"><em><strong>Stacks</strong></em></span></h2>
-<p>මුලින්ම මේ පාඩම් මාලාව හැඳින්වීමේදි අපි කතා කරා මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට මේ දේවලි ඕන වෙන්නේ කියලා. ඒ ලිපිය බැලුවේ නැත්නම් <a href="/index.php/2018/04/01/data-structures-i/">මෙතනින්</a> බලන්න.</p>
+<p>මුලින්ම මේ පාඩම් මාලාව හැඳින්වීමේදි අපි කතා කරා මොනවද මේ Data Structures කියන්නේ සහ ඇයි අපිට මේ දේවලි ඕන වෙන්නේ කියලා. ඒ ලිපිය බැලුවේ නැත්නම් <a href="https://danushka96.github.io/sigma/index.php/2018/04/01/data-structures-i/">මෙතනින්</a> බලන්න.</p>
 <p>හරි අපි අද කතා කරන්න යන්නේ අපේ පළවෙනි Data Type එක ගැන. stacks කියන්නේ එක්තරා විදියක Operations කිහිපයකට සීමා වෙලා තියෙන Data Type එකක්. ඒ කියන්නේ stack එක්ක අපිට කරන්න පුළුවන් වෙන්නේ <strong>Data ඇතුලට දාන එක, අන්තිමට දැම්ම Data එක ආපහු ගන්න එක හා අන්තිමට දැම්ම Data එක මොකද්ද කියලා බලන එක </strong>විතරයි. ඒකයි මේක ගොඩක්ම සරලම මට්ටමේ Data Type එකක් වෙන්නේ. මේ Data Type එකට Array එකකදි වගේ ඕන තැනකට Data දාන්නත් ඕන තැනකින් Data එළියට ගන්නත් බෑ. මේ Data Type එකට Data ගන්න සහ දාන්න පුළුවන් වෙන්නේ <strong>LIFO (Last In First out) </strong>කියන Method එකට අනුව. ඒ කියන්නේ ඔයාට මේ Data Type එකෙන් Data එකක් එළියට ගන්න ඕන නම් ගන්න පුළුවන් වෙන්නේ අන්තිමට ඇතුලට දැම්ම Data එක. තේරුනේ නැහැනේ? හරි අපි තව ටිකක් විස්තර ඇතිව බලමු.</p>
 <h4><strong>FIFO කියන්නේ මොකක්ද?</strong></h4>
 <p>සරලවම විස්තර කරන්න උදාහරණ කිහිපයක් කියන්නම්.</p>
-<p><img class="alignleft wp-image-529 size-medium" src="/wp-content/uploads/2018/04/08182c_28256e3b807445e0b6d98ef62b9da917-204x300.png" alt="stack books" width="204" height="300" srcset="/wp-content/uploads/2018/04/08182c_28256e3b807445e0b6d98ef62b9da917-204x300.png 204w, /wp-content/uploads/2018/04/08182c_28256e3b807445e0b6d98ef62b9da917.png 250w" sizes="(max-width: 204px) 100vw, 204px" />හිතන්න මේ වගේ පොත් ගොඩක් හදන්න වුනොත් ඔයාට පොත් ටික අරගෙන පිළිවෙලට පොත් එකින් එක අරගෙන ගොඩ ගහන්න වෙනවනේ. දැන් හිතන්න ඔයා ආපහු ඔය පිලිවෙලට හදපු පොත් ගොඩින් එකින් එක පොත් ආපහු ගන්නවා කියලා. ඒ කියන්නේ ඔයාට <strong>මුලින්ම ගන්න වෙන්නේ අන්තිමට තිබ්බ පොත. </strong>ඔයා මුලින්ම තිබ්බ පොත ආපහු ගන්න වෙන්නේ අන්තිමට. Stack එකත් මෙන්න මේ උදාහරණයට සමානයි. පොත් කියන්නේ හරියට ඔයාගෙ Stack එක ඇතුලේ තියෙන එක එක Data වගේ. පොත් ගොඩගහනවා වගේ ඔයා මේ Stack එකට Data දාන්න යන්නේ.</p>
+<p><img class="alignleft wp-image-529 size-medium" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/08182c_28256e3b807445e0b6d98ef62b9da917-204x300.png" alt="stack books" width="204" height="300" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/08182c_28256e3b807445e0b6d98ef62b9da917-204x300.png 204w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/08182c_28256e3b807445e0b6d98ef62b9da917.png 250w" sizes="(max-width: 204px) 100vw, 204px" />හිතන්න මේ වගේ පොත් ගොඩක් හදන්න වුනොත් ඔයාට පොත් ටික අරගෙන පිළිවෙලට පොත් එකින් එක අරගෙන ගොඩ ගහන්න වෙනවනේ. දැන් හිතන්න ඔයා ආපහු ඔය පිලිවෙලට හදපු පොත් ගොඩින් එකින් එක පොත් ආපහු ගන්නවා කියලා. ඒ කියන්නේ ඔයාට <strong>මුලින්ම ගන්න වෙන්නේ අන්තිමට තිබ්බ පොත. </strong>ඔයා මුලින්ම තිබ්බ පොත ආපහු ගන්න වෙන්නේ අන්තිමට. Stack එකත් මෙන්න මේ උදාහරණයට සමානයි. පොත් කියන්නේ හරියට ඔයාගෙ Stack එක ඇතුලේ තියෙන එක එක Data වගේ. පොත් ගොඩගහනවා වගේ ඔයා මේ Stack එකට Data දාන්න යන්නේ.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><img class="alignright wp-image-530" src="/wp-content/uploads/2018/04/main-qimg-f2d56a823063de7de538c37a9f2f8d7b-c-225x300.jpg" alt="stack chairs" width="176" height="235" srcset="/wp-content/uploads/2018/04/main-qimg-f2d56a823063de7de538c37a9f2f8d7b-c-225x300.jpg 225w, /wp-content/uploads/2018/04/main-qimg-f2d56a823063de7de538c37a9f2f8d7b-c.jpg 338w" sizes="(max-width: 176px) 100vw, 176px" />තවත් උදාහරණයක් තමයි හැමෝම වගේ දැකලා ඇති පුටු මේ විදියට එක උඩ එක අහුරලා තියෙන විදිය. හැමෝම මේක ප්‍රායෝගික ජීවිතේදි කරලත් ඇතිනේ. මේකෙදිත් වෙන්නේ උඩදි කිවුව පොත් උදාහරණෙ වුන කතාවම තමයි. අන්තිමට දැම්ම පුටුව තමයි ආපහු ගද්දී මුලින්ම ගන්න වෙන්නේ.</p>
+<p><img class="alignright wp-image-530" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/main-qimg-f2d56a823063de7de538c37a9f2f8d7b-c-225x300.jpg" alt="stack chairs" width="176" height="235" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/main-qimg-f2d56a823063de7de538c37a9f2f8d7b-c-225x300.jpg 225w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/main-qimg-f2d56a823063de7de538c37a9f2f8d7b-c.jpg 338w" sizes="(max-width: 176px) 100vw, 176px" />තවත් උදාහරණයක් තමයි හැමෝම වගේ දැකලා ඇති පුටු මේ විදියට එක උඩ එක අහුරලා තියෙන විදිය. හැමෝම මේක ප්‍රායෝගික ජීවිතේදි කරලත් ඇතිනේ. මේකෙදිත් වෙන්නේ උඩදි කිවුව පොත් උදාහරණෙ වුන කතාවම තමයි. අන්තිමට දැම්ම පුටුව තමයි ආපහු ගද්දී මුලින්ම ගන්න වෙන්නේ.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3><strong>Stack Operations</strong></h3>
@@ -371,7 +371,7 @@ int main() {
 <li style="padding-left: 30px;">Bracket හැර හම්බෙන අනිත් හැම Character එකක්ම අපි නොසලකා හරිනවා.</li>
 </ul>
 <p>වැඩේ තේරුණේ නෑ වගේ නම් ආපහු මේ Image එක දිහා බලන්න.</p>
-<p><img class=" wp-image-542 aligncenter" src="/wp-content/uploads/2018/04/stack-data-structure-12-728-300x277.jpg" alt="stack para" width="391" height="361" srcset="/wp-content/uploads/2018/04/stack-data-structure-12-728-300x277.jpg 300w, /wp-content/uploads/2018/04/stack-data-structure-12-728.jpg 590w" sizes="(max-width: 391px) 100vw, 391px" /></p>
+<p><img class=" wp-image-542 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/stack-data-structure-12-728-300x277.jpg" alt="stack para" width="391" height="361" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/stack-data-structure-12-728-300x277.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/stack-data-structure-12-728.jpg 590w" sizes="(max-width: 391px) 100vw, 391px" /></p>
 <h3><strong>Implementation:</strong></h3>
 <pre>class Stack():
     def __init__(self):
@@ -451,15 +451,15 @@ if u==d:
 </pre>
 <p><b>තවත් මේ Stack එක භාවිතා කරලා විසඳන්න පුළුවන් ප්‍රශ්ණ තියෙනවා Post Fix Expressions වගේ ගැටළු. ඒවාට පුළුවන්නම් උත්සාහ කරලා බලන්න. Code එකේ මොනවා හරි ප්‍රශ්ණයක් තිබුණොත් Comment කරන්න උදව් කරන්නම්&#8230;</b></p>
 <p><b>ඊළඟ පාඩම QUEUES.  </b></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">Stack Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">Stack Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/05/stack-abstract-data-type-with-implementation/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/05/stack-abstract-data-type-with-implementation/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
 		<title>String Matching Algorithms</title>
-		<link>/index.php/2018/03/16/string-search-part-01/</link>
-				<comments>/index.php/2018/03/16/string-search-part-01/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/#respond</comments>
 				<pubDate>Fri, 16 Mar 2018 16:21:57 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Algo]]></category>
@@ -470,9 +470,9 @@ if u==d:
 		<category><![CDATA[search]]></category>
 		<category><![CDATA[String Search]]></category>
 
-		<guid isPermaLink="false">/?p=62</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> What is String Match? String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find<a class="moretag" href="/index.php/2018/03/16/string-search-part-01/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=62</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> What is String Match? String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><h2><strong>What is String Match?</strong></h2>
 <p>String Match is a useful activity in our day today lives. If you want to search something that you don&#8217;t know you just google the word or set of words that describes what you want to know. And in the studies if you want to find a phrase in a book you search for it one page by page. The manual efficient String Search Algorithm is  the dictionary. Dictionary has ordered every word in ascending order of the alphabet. If you want to find a word from the dictionary you can move to the exact page very fast.</p>
@@ -643,9 +643,9 @@ return shift;
 
 </pre>
 <p>This will little weird if you don&#8217;t try it yourself. Just try and post your questions here. I will be there to help you. Thank You.</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/">String Matching Algorithms</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/03/16/string-search-part-01/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/03/16/string-search-part-01/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

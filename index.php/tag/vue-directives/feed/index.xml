@@ -9,8 +9,8 @@
 
 <channel>
 	<title>vue directives &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/vue-directives/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/vue-directives/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,19 +22,19 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>VueJs 2 &#8211; 03 Vue directives කියන්නෙ මොනවද?</title>
-		<link>/index.php/2018/04/12/vuejs-2-03/</link>
-				<comments>/index.php/2018/04/12/vuejs-2-03/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/12/vuejs-2-03/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/12/vuejs-2-03/#comments</comments>
 				<pubDate>Thu, 12 Apr 2018 14:47:27 +0000</pubDate>
 		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
 				<category><![CDATA[VueJs]]></category>
 		<category><![CDATA[web development]]></category>
 		<category><![CDATA[vue directives]]></category>
 
-		<guid isPermaLink="false">/?p=710</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 3 වෙනි post එක තමයි මේ. කලින් post 2 කියවන්න ඇති කියල හිතනව. කියෙව්වෙ නැත්තම් මෙතනින් ගිහින් අනිවාර්යෙන්ම ඒ දෙකත් කියවන්න. කලින් post කියෙව්වනම් ඔයාල දැන් දන්නව, කොහොමද Vue app එකක data store කරන්නෙ කියල සහ ඒ data අපේ web page එකේ display කරන්නෙ කියල.<a class="moretag" href="/index.php/2018/04/12/vuejs-2-03/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/12/vuejs-2-03/">VueJs 2 &#8211; 03 Vue directives කියන්නෙ මොනවද?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=710</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 3 වෙනි post එක තමයි මේ. කලින් post 2 කියවන්න ඇති කියල හිතනව. කියෙව්වෙ නැත්තම් මෙතනින් ගිහින් අනිවාර්යෙන්ම ඒ දෙකත් කියවන්න. කලින් post කියෙව්වනම් ඔයාල දැන් දන්නව, කොහොමද Vue app එකක data store කරන්නෙ කියල සහ ඒ data අපේ web page එකේ display කරන්නෙ කියල.<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/12/vuejs-2-03/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/12/vuejs-2-03/">VueJs 2 &#8211; 03 Vue directives කියන්නෙ මොනවද?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 3 වෙනි post එක තමයි මේ. කලින් post 2 කියවන්න ඇති කියල හිතනව. කියෙව්වෙ නැත්තම් <a href="/index.php/category/vuejs/" target="blank">මෙතනින්</a> ගිහින් අනිවාර්යෙන්ම ඒ දෙකත් කියවන්න.</p>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p>හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 3 වෙනි post එක තමයි මේ. කලින් post 2 කියවන්න ඇති කියල හිතනව. කියෙව්වෙ නැත්තම් <a href="https://danushka96.github.io/sigma/index.php/category/vuejs/" target="blank">මෙතනින්</a> ගිහින් අනිවාර්යෙන්ම ඒ දෙකත් කියවන්න.</p>
 <p>කලින් post කියෙව්වනම් ඔයාල දැන් දන්නව, කොහොමද Vue app එකක data store කරන්නෙ කියල සහ ඒ data අපේ web page එකේ display කරන්නෙ කියල. අද කියන්න යන්නෙ Vue directives ගැන.</p>
 <h4><strong>මොනවද මේ Vue Directives කියන්නෙ?</strong></h4>
 <p>ඔයා AngularJs ගැන දන්නවනම් directive ගැන දන්නව ඇති. Vue directive ත් ටිකක් ඒ වගේ. ඊට වැඩිය ගොඩක් ලේසියි. Vue directives කියන්නෙ, අපේ app එකේ භාවිතාවන HTML elements (DOM elements) control කරන්න භාවිතා කරන විශේෂ token වර්ගයකට. මේවයින් එක එක විදියෙ වැඩ කරගන්න පුළුවන්. condition වලට අනුව elements render කරන්න, loops, event handle කරන්න වගේ තව ගොඩක් වැඩ. v-model, v-if, v-bind, v-for, v-text, v-on මේ වගේ Vue directives තව ගොඩක් තියෙනව. මේවයින් මොනවද කෙරෙන්නෙ සහ කොහොමද මේව පාවිච්චි කරන්නෙ කියන එක මම ඔයාලට කියල දෙන්නම්.</p>
@@ -57,7 +57,7 @@
 <pre>&lt;a href="website"&gt; Google.com &lt;/a&gt;</pre>
 <p>කියල ලිව්වට හරියන්නෙ නැහැ. මේ බලන්න.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone wp-image-851" src="/wp-content/uploads/2018/04/href-error-1-300x172.png" alt="data binding error" width="736" height="422" srcset="/wp-content/uploads/2018/04/href-error-1-300x172.png 300w, /wp-content/uploads/2018/04/href-error-1-768x439.png 768w, /wp-content/uploads/2018/04/href-error-1-1024x586.png 1024w, /wp-content/uploads/2018/04/href-error-1.png 1383w" sizes="(max-width: 736px) 100vw, 736px" /></p>
+<p><img class="alignnone wp-image-851" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-error-1-300x172.png" alt="data binding error" width="736" height="422" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-error-1-300x172.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-error-1-768x439.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-error-1-1024x586.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-error-1.png 1383w" sizes="(max-width: 736px) 100vw, 736px" /></p>
 <p>එතකොට website කියන්නෙ නිකන්ම String එකක් විතරයි. ඒ නිසා අපි Vue වලට කියන්න ඕනෙ මේ href කියන attribute එකට, website කියන data එක bind කරන්න කියල. අපිට ඒක කරන්න පුළුවන් v-bind කියන directive එක භාවිතා කරල. v-bind එකේදි මේ වගේ syntax එකක් තමයි තියෙන්නෙ.</p>
 <blockquote><p>v-bind<strong>:attribute_name</strong>=&#8221;<strong>data</strong>&#8220;</p></blockquote>
 <p>v-bind: එකේ semicolon එකෙන් පස්සෙ තියෙන්නෙ (attribute_name කියන එක) අපි data bind කරන attribute එකේ නම. data කියන්නෙ ඒ attribute එකට bind කරන data එක. ඉතිං අපේ උදාහරණයෙ විදියට href එකට website කියන data එක bind කරන්නෙ මෙහෙමයි.</p>
@@ -67,7 +67,7 @@
 </pre>
 <p>මේකෙන් කියවෙන්නෙ href කියන attribute එකට, website කියන data  එක bind කරන්න කියල. දැන් ඔයාලට පෙනෙයි href එකට හරියට url එක set වෙලා තියෙනව.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone wp-image-852" src="/wp-content/uploads/2018/04/href-exe-1-300x172.png" alt="data binding to href attribute" width="786" height="451" srcset="/wp-content/uploads/2018/04/href-exe-1-300x172.png 300w, /wp-content/uploads/2018/04/href-exe-1-768x440.png 768w, /wp-content/uploads/2018/04/href-exe-1-1024x586.png 1024w, /wp-content/uploads/2018/04/href-exe-1.png 1387w" sizes="(max-width: 786px) 100vw, 786px" /></p>
+<p><img class="alignnone wp-image-852" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-exe-1-300x172.png" alt="data binding to href attribute" width="786" height="451" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-exe-1-300x172.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-exe-1-768x440.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-exe-1-1024x586.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/href-exe-1.png 1387w" sizes="(max-width: 786px) 100vw, 786px" /></p>
 <p>අපිට අවශ්‍ය ඕනම attribute එකකට අපිට අවශ්‍ය data එකක් bind කර ගන්න පුළුවන්. මේ විදියට data bind කරාට පස්සෙ, කොයි වෙලාවක හරි, අපි bind කරපු data එක වෙනස් උනොත්, ඒ මොහොතෙම, ඒක bind වෙලා තියෙන හැම තැනකම ඒක ඒ විදියටම වෙනස් වෙනව. 🙂</p>
 <p>අපි තව උදාහරණයක් බලමු. input field එකකට data bind කරන්නෙ කොහෙමද කියල. මේකෙදි අපිට value කියන attribute එකට data bind කරන්නනෙ තියෙන්නෙ. මේවගේ,</p>
 <pre>&lt;input type="text" v-bind:value="name"&gt;</pre>
@@ -116,10 +116,10 @@
 &lt;/div&gt;
 </pre>
 <p>මේකෙදිත් කලින් වගේම list එක දිගේ loop වෙනව. ඒත් v-if එකෙන් check කරල බලනව, ඒ එක එක color එකේ like කියන property එක true ද කියල. true නම් විතරක් render කරනව.</p>
-<p>directives වර්ග තව ගොඩක් තියෙනව. දැනට වැදගත්වෙන ඒව කීපයක් ගැන තමයි ඔය කිව්වෙ. අදට මේ ටික ඇතිවෙයි  කියල හිතනව. <a href="/index.php/2018/04/14/vuejs-2-04/">ඊළඟ post එකෙන්</a> බලමු events එක්ක වැඩකරන හැටි. මොනව හරි අව්ලක් තියෙනම් comment එකක් දාන්න.</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/12/vuejs-2-03/">VueJs 2 &#8211; 03 Vue directives කියන්නෙ මොනවද?</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>directives වර්ග තව ගොඩක් තියෙනව. දැනට වැදගත්වෙන ඒව කීපයක් ගැන තමයි ඔය කිව්වෙ. අදට මේ ටික ඇතිවෙයි  කියල හිතනව. <a href="https://danushka96.github.io/sigma/index.php/2018/04/14/vuejs-2-04/">ඊළඟ post එකෙන්</a> බලමු events එක්ක වැඩකරන හැටි. මොනව හරි අව්ලක් තියෙනම් comment එකක් දාන්න.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/12/vuejs-2-03/">VueJs 2 &#8211; 03 Vue directives කියන්නෙ මොනවද?</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/12/vuejs-2-03/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/12/vuejs-2-03/feed/</wfw:commentRss>
 		<slash:comments>2</slash:comments>
 							</item>
 	</channel>

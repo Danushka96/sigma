@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Vue components &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/vue-components/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/vue-components/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>VueJs 2 &#8211; 06 Vue components</title>
-		<link>/index.php/2018/04/22/vuejs-2-06/</link>
-				<comments>/index.php/2018/04/22/vuejs-2-06/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/22/vuejs-2-06/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/22/vuejs-2-06/#respond</comments>
 				<pubDate>Sun, 22 Apr 2018 18:25:56 +0000</pubDate>
 		<dc:creator><![CDATA[Prasad Kavinda]]></dc:creator>
 				<category><![CDATA[VueJs]]></category>
@@ -31,11 +31,11 @@
 		<category><![CDATA[Vue]]></category>
 		<category><![CDATA[Vue components]]></category>
 
-		<guid isPermaLink="false">/?p=902</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 6 වෙනි post එකෙන් මම මේ කියන්න යන්නෙ Vue වල තියෙන ඉතා වැදගත් feature එකක් වෙන Vue components ගැන. Vue ගැන ලියපු කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න. අපි vue app එකක් ලියද්දි, ඒ app එකට අදාල template එක(html markup එක), app එක mount<a class="moretag" href="/index.php/2018/04/22/vuejs-2-06/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/22/vuejs-2-06/">VueJs 2 &#8211; 06 Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=902</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span> හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 6 වෙනි post එකෙන් මම මේ කියන්න යන්නෙ Vue වල තියෙන ඉතා වැදගත් feature එකක් වෙන Vue components ගැන. Vue ගැන ලියපු කලින් posts බැලුවෙ නැත්තම් මෙතනින් ගිහින් බලන්න. අපි vue app එකක් ලියද්දි, ඒ app එකට අදාල template එක(html markup එක), app එක mount<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/22/vuejs-2-06/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/22/vuejs-2-06/">VueJs 2 &#8211; 06 Vue components</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
-								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p><span style="font-weight: 400;">හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 6 වෙනි post එකෙන් මම මේ කියන්න යන්නෙ Vue වල තියෙන ඉතා වැදගත් feature එකක් වෙන Vue components ගැන. Vue ගැන ලියපු කලින් posts බැලුවෙ නැත්තම් <a href="/index.php/category/vuejs/">මෙතනින්</a> ගිහින් බලන්න.</span></p>
+								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">minutes</span></span><p><span style="font-weight: 400;">හැමෝටම ආයුබෝවන්, VueJs ගැන ලියන 6 වෙනි post එකෙන් මම මේ කියන්න යන්නෙ Vue වල තියෙන ඉතා වැදගත් feature එකක් වෙන Vue components ගැන. Vue ගැන ලියපු කලින් posts බැලුවෙ නැත්තම් <a href="https://danushka96.github.io/sigma/index.php/category/vuejs/">මෙතනින්</a> ගිහින් බලන්න.</span></p>
 <p><span style="font-weight: 400;">අපි vue app එකක් ලියද්දි, ඒ app එකට අදාල template එක(html markup එක), app එක mount කරල තියෙන element එක ඇතුලෙ (index.html එක අැතුලෙ) කෙලින්ම ලියන්න පුළුවන්. මම කලින් උදාහරණවලදි කරා වගේ</span></p>
 <pre>const app = new Vue({
     el: '#my-app',
@@ -94,7 +94,7 @@ const app = new Vue({
     &lt;test&gt;&lt;/test&gt;
 &lt;/div&gt;</pre>
 <p><span style="font-weight: 400;"> දැන් මේක run කරාම, මේ වගේ output එකක් බලාගන්න පුලුවන් වෙයි. ඔයාලට බලාගන්න පුළුවන් test කියන tag එක වෙනුවට, test component එකේ තියෙන template එක render වෙලා තියෙනව.</span></p>
-<p><img class="wp-image-935 aligncenter" src="/wp-content/uploads/2018/04/first-component-300x159.png" alt="Vue component example" width="826" height="438" srcset="/wp-content/uploads/2018/04/first-component-300x159.png 300w, /wp-content/uploads/2018/04/first-component-768x406.png 768w, /wp-content/uploads/2018/04/first-component.png 1536w" sizes="(max-width: 826px) 100vw, 826px" /></p>
+<p><img class="wp-image-935 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/first-component-300x159.png" alt="Vue component example" width="826" height="438" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/first-component-300x159.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/first-component-768x406.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/first-component.png 1536w" sizes="(max-width: 826px) 100vw, 826px" /></p>
 <h4><strong>data is a function</strong></h4>
 <p>Vue component වලට අදාලව වෙනම data, methods වගේ properties define කරන්න පුලුවන් කියල මම කලින් කිව්වනෙ. හැබැයි component එකක් ඇතුලෙ define කරන data property එකේ පොඩි වෙනසක් තියෙනව. කලින් අපි, main Vue instance එකේදි, data property එක object එකක් විදියට තමයි define කරේ. හැබැයි component එකක් ඇතුලෙදි ඒක function එකක් විදියට තමයි define කරන්න ඕනෙ. ඒ function එකෙන් object එකක් return කරන්න ඕනෙ. ඒ object එකේ තමයි component එකට අදාල data define කරන්නෙ. data කියන property එක විතරයි මේ විදියට වෙනස් වෙන්න ඕනෙ. අනිත් ඒවයි වෙනසක් නැහැ. පහලින් තියෙන්නෙ component එකක් ඇතුලෙ data property එක define කරන්න විදිය.</p>
 <pre>Vue.component('test', {
@@ -137,10 +137,10 @@ const app = new Vue({
 </pre>
 <p>මෙතනදි test කියන component එක දෙපාරක් භාවිතා කරල තියෙනව. ඒනිසා count++ කියල button 2ක් තියෙනව. හැබැයි මේ button click කරද්දි ඒ ඒ button එකට අදාල instance එකේ count එක විතරයි increment වෙන්නෙ. එකම component එකේ instance 2 ක් උනාට, ඒ දෙක වෙන වෙනම තමයි වැඩ කරන්නෙ. හරියට වෙනස් component 2 ක් වගේ.</p>
 <p>දැන් ඔයාලට Vue components කියන්නෙ මොනවද කියල පොඩි හරි අදහසක් එන්න ඇති කියල හිතනව. අදට මෙතනින් නවතින්නම්. post එක ගැන අදහස්, යෝජනා, ඡෝදනා, ප්‍රශ්න මොනවම හරි තියෙනම් comment එකක් දාන්න. 😀</p>
-<p>ඊළඟ post එකට <a href="/index.php/2018/05/01/vuejs-2-07/">මෙතනින්</a> යන්න.</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/22/vuejs-2-06/">VueJs 2 &#8211; 06 Vue components</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>ඊළඟ post එකට <a href="https://danushka96.github.io/sigma/index.php/2018/05/01/vuejs-2-07/">මෙතනින්</a> යන්න.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/22/vuejs-2-06/">VueJs 2 &#8211; 06 Vue components</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/22/vuejs-2-06/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/22/vuejs-2-06/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

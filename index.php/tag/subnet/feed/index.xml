@@ -9,8 +9,8 @@
 
 <channel>
 	<title>subnet &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/subnet/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/subnet/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Network &#8211; 4 (Subnetting and calculations)</title>
-		<link>/index.php/2018/04/19/network-4-subnetting-and-calculations/</link>
-				<comments>/index.php/2018/04/19/network-4-subnetting-and-calculations/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/19/network-4-subnetting-and-calculations/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/19/network-4-subnetting-and-calculations/#respond</comments>
 				<pubDate>Thu, 19 Apr 2018 14:10:42 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[network]]></category>
@@ -31,19 +31,19 @@
 		<category><![CDATA[subnet]]></category>
 		<category><![CDATA[subnetting]]></category>
 
-		<guid isPermaLink="false">/?p=921</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> Subnetting අපි කලින් ලිපියකින් කතා කරා Subnet එකක් කියන්නේ මොකද්ද කියලා. ඒක කියෙව්වේ නැත්නම් මෙතනින් කියවන්න. මොකද නැත්නම් මේ ලිපියේ තියෙන දේවල් තේරෙන එකක් නෑ. අද ලිපියෙන් මූලිකව අවධානය යොමු කරන්න බලාපොරොත්තු වෙන්නේ Network එකක් හදන විදිය ප්‍රායෝගික උදාහරණ එක්ක ගණනය කිරීම් කරගන්නේ කොහොමද කියලා. මේ වැඩේ කරන්න නම් ඔයාට<a class="moretag" href="/index.php/2018/04/19/network-4-subnetting-and-calculations/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/19/network-4-subnetting-and-calculations/">Network &#8211; 4 (Subnetting and calculations)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=921</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span> Subnetting අපි කලින් ලිපියකින් කතා කරා Subnet එකක් කියන්නේ මොකද්ද කියලා. ඒක කියෙව්වේ නැත්නම් මෙතනින් කියවන්න. මොකද නැත්නම් මේ ලිපියේ තියෙන දේවල් තේරෙන එකක් නෑ. අද ලිපියෙන් මූලිකව අවධානය යොමු කරන්න බලාපොරොත්තු වෙන්නේ Network එකක් හදන විදිය ප්‍රායෝගික උදාහරණ එක්ක ගණනය කිරීම් කරගන්නේ කොහොමද කියලා. මේ වැඩේ කරන්න නම් ඔයාට<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/19/network-4-subnetting-and-calculations/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/19/network-4-subnetting-and-calculations/">Network &#8211; 4 (Subnetting and calculations)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span><h2 style="text-align: center;"><strong>Subnetting</strong></h2>
-<p>අපි කලින් ලිපියකින් කතා කරා Subnet එකක් කියන්නේ මොකද්ද කියලා. ඒක කියෙව්වේ නැත්නම් <a href="/index.php/2018/04/07/ip-addressing/">මෙතනින්</a> කියවන්න. මොකද නැත්නම් මේ ලිපියේ තියෙන දේවල් තේරෙන එකක් නෑ.</p>
+<p>අපි කලින් ලිපියකින් කතා කරා Subnet එකක් කියන්නේ මොකද්ද කියලා. ඒක කියෙව්වේ නැත්නම් <a href="https://danushka96.github.io/sigma/index.php/2018/04/07/ip-addressing/">මෙතනින්</a> කියවන්න. මොකද නැත්නම් මේ ලිපියේ තියෙන දේවල් තේරෙන එකක් නෑ.</p>
 <p>අද ලිපියෙන් මූලිකව අවධානය යොමු කරන්න බලාපොරොත්තු වෙන්නේ Network එකක් හදන විදිය ප්‍රායෝගික උදාහරණ එක්ක ගණනය කිරීම් කරගන්නේ කොහොමද කියලා. මේ වැඩේ කරන්න නම් ඔයාට දැනටමත් මේ මාතෘකා ගැන අදහසක් තියෙන්න ඕන.</p>
 <blockquote><p><strong>IP Address, IP Classes, Subnet, Host, Network id</strong></p></blockquote>
 <p>කලින් ලිපියේ ඒ ගැන සම්පූර්ණ විස්තරයක් තියෙනවා. Sure නෑ වගේ නම් ආපහු කියවන්න.</p>
 <p>කලින් කතා කරා වගේම Subnet එකකින් කරන්නේ Network එකක් ඇතුලෙ තවත් උපජාලයක් හදන එක. ඒ විදියට උපජාලයක් හදද්දී අපි මූලිකවම බලන කරුණු කිහිපයක් තියෙනවා.</p>
 <p style="padding-left: 30px;">මුලින්ම අපි බලන්න ඕන අපිට හම්බෙලා තියෙන IP එකට Host කීයක් දාන්න පුළුවන්ද කියලා. ඒක බලන්නේ IP Class එක මොකද්ද කියලා හොයාගෙන. ඒක බලන විදිය අපි කලින් කතා කරා.</p>
 <p style="padding-left: 30px;">ඊළඟට අපි බලන්නේ අපිට Connect කරගන්න Machine කීයක් තියෙනවද කියලා. ඒ Machine ටික represent කරන්න Bit කීයක් ඕන වෙයිද කියලා බලන්න ඕන. ඒ Bit ගාන අපි වෙන්කරලා ඉතිරි ටික Network ID වලට භාවිතා කරන එක තමයි සාමාන්‍යයෙන් වෙන්නේ.</p>
-<p><img class=" wp-image-925 aligncenter" src="/wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-300x113.png" alt="" width="518" height="195" srcset="/wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-300x113.png 300w, /wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-768x289.png 768w, /wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-1024x386.png 1024w, /wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL.png 1232w" sizes="(max-width: 518px) 100vw, 518px" /></p>
+<p><img class=" wp-image-925 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-300x113.png" alt="" width="518" height="195" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-300x113.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-768x289.png 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL-1024x386.png 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/xnetwork-subnetting-example-class-c.png.pagespeed.a.ic_.launqOhjQL.png 1232w" sizes="(max-width: 518px) 100vw, 518px" /></p>
 <p>මේ කියපු දේ තේරුම් ගන්න ටිකක් අමාරුයිනෙ. ඒක හින්දා අපි පොඩි උදාහරණයක් එක්ක ඒ දේවල් පැහැදිලි කරගනිමු.</p>
 <p style="padding-left: 30px;">අපිට හිතමු පාසලක් අලුතින්ම Network කරගන්න ඕන වෙනවා කියලා. අපිට හම්බෙනවා ISP කෙනෙකුගෙන් 172.68.0.0 කියන IP එක. මේ IP Address එක භාවිතා කරලා අපිට සිද්ධ වෙනවා පාසල උපජාල 3කට වෙන් කරන්න. මේ උපජාල 3 තමයි <strong>පරිගණක විද්‍යාගාරය(120), විද්‍යා අංශය(58) සහ ප්‍රාථමික(38) අංශය</strong> කියන උපජාල තුන. වරහන් ඇතුලේ සඳහන් වෙන්නේ මේ එක් එක් ජාලයට තියෙන පරිගණක ප්‍රමාණය.</p>
 <p style="padding-left: 60px;">මුලින්ම බලමු අපිට ලැබිලා තියෙන IP එක. ඒක බැලුවාම පේන දෙයක් තමයි ඒක අයිති වෙන්නේ Class B එකට. දැන් අදහසක් එන්න ඕන මේ IP Address එකේ Bit 16ක් යනවා Network Address එකට. ඉතිරි Bit 16න් තමයි අපිට Subnet වලටයි Hosts වලටයි යොදා ගන්න තියෙන්නේ.</p>
@@ -54,9 +54,9 @@
 <p style="padding-left: 90px;"><strong>Network 3 : 172.68.2.1 &#8211; 172.68.2.122</strong></p>
 <p>&nbsp;</p>
 <p><strong>මේ විදියට අපිට පුළුවන් ප්‍රායෝගිකයව Network එකක් හදා ගන්න විදිය ගැන අදහසක් ගන්න. Calculations තේරුණේ නැත්නම් මේ Post එකට Comment එකක් දාන්න.</strong></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/19/network-4-subnetting-and-calculations/">Network &#8211; 4 (Subnetting and calculations)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/19/network-4-subnetting-and-calculations/">Network &#8211; 4 (Subnetting and calculations)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/19/network-4-subnetting-and-calculations/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/19/network-4-subnetting-and-calculations/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>

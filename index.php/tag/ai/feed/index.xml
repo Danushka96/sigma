@@ -9,8 +9,8 @@
 
 <channel>
 	<title>AI &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/ai/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/ai/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Machine Learning දෙවැනි දිගහැරුම.</title>
-		<link>/index.php/2019/02/09/machinelearningarticle2/</link>
-				<comments>/index.php/2019/02/09/machinelearningarticle2/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/02/09/machinelearningarticle2/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/02/09/machinelearningarticle2/#comments</comments>
 				<pubDate>Sat, 09 Feb 2019 08:23:44 +0000</pubDate>
 		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
 				<category><![CDATA[Machine Learning]]></category>
@@ -37,12 +37,12 @@
 		<category><![CDATA[robotics]]></category>
 		<category><![CDATA[vector robot]]></category>
 
-		<guid isPermaLink="false">/?p=1801</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> හොදයි අද මම ඔන්න අරගෙන ආවා Machine Learning ගැන ලියපු දෙවැනි ලිපිය. පළවෙනි ලිපියෙ මම Machine Learning කියන්නෙ මොකක්ද ඒකේ මොන වගේ තාක්ෂණයක්ද තියෙන්නෙ වගේම තවත් ගොඩක් දේ &#160;පැහැදිලි කළා ඔයාලට මතක ඇති. ඒ ලිපිය කියවපු නැති කෙනෙක් ඉන්නවා නම් මෙතනින් ගිහින් කියවන්න. &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; අද මං කතා කරන්න යන්නෙ Machine<a class="moretag" href="/index.php/2019/02/09/machinelearningarticle2/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/09/machinelearningarticle2/">Machine Learning දෙවැනි දිගහැරුම.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1801</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> හොදයි අද මම ඔන්න අරගෙන ආවා Machine Learning ගැන ලියපු දෙවැනි ලිපිය. පළවෙනි ලිපියෙ මම Machine Learning කියන්නෙ මොකක්ද ඒකේ මොන වගේ තාක්ෂණයක්ද තියෙන්නෙ වගේම තවත් ගොඩක් දේ &#160;පැහැදිලි කළා ඔයාලට මතක ඇති. ඒ ලිපිය කියවපු නැති කෙනෙක් ඉන්නවා නම් මෙතනින් ගිහින් කියවන්න. &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; අද මං කතා කරන්න යන්නෙ Machine<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/02/09/machinelearningarticle2/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/09/machinelearningarticle2/">Machine Learning දෙවැනි දිගහැරුම.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
-<p>හොදයි අද මම ඔන්න අරගෙන ආවා <strong>Machine Learning</strong> ගැන ලියපු දෙවැනි ලිපිය. පළවෙනි ලිපියෙ මම <strong>Machine Learning </strong>කියන්නෙ මොකක්ද ඒකේ මොන වගේ තාක්ෂණයක්ද තියෙන්නෙ වගේම තවත් ගොඩක් දේ &nbsp;පැහැදිලි කළා ඔයාලට මතක ඇති. ඒ ලිපිය කියවපු නැති කෙනෙක් ඉන්නවා නම් <strong><a href="/index.php/2019/01/31/machine-learning/">මෙතනින්</a></strong><a href="/index.php/2019/01/31/machine-learning/"> </a>ගිහින් කියවන්න.</p>
+<p>හොදයි අද මම ඔන්න අරගෙන ආවා <strong>Machine Learning</strong> ගැන ලියපු දෙවැනි ලිපිය. පළවෙනි ලිපියෙ මම <strong>Machine Learning </strong>කියන්නෙ මොකක්ද ඒකේ මොන වගේ තාක්ෂණයක්ද තියෙන්නෙ වගේම තවත් ගොඩක් දේ &nbsp;පැහැදිලි කළා ඔයාලට මතක ඇති. ඒ ලිපිය කියවපු නැති කෙනෙක් ඉන්නවා නම් <strong><a href="https://danushka96.github.io/sigma/index.php/2019/01/31/machine-learning/">මෙතනින්</a></strong><a href="https://danushka96.github.io/sigma/index.php/2019/01/31/machine-learning/"> </a>ගිහින් කියවන්න.</p>
 
 
 
@@ -71,7 +71,7 @@ Recognition කියන්නෙ මොකක්
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/1-1.jpg" alt="" class="wp-image-1803" width="364" height="343" srcset="/wp-content/uploads/2019/02/1-1.jpg 689w, /wp-content/uploads/2019/02/1-1-300x283.jpg 300w" sizes="(max-width: 364px) 100vw, 364px" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/1-1.jpg" alt="" class="wp-image-1803" width="364" height="343" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/1-1.jpg 689w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/1-1-300x283.jpg 300w" sizes="(max-width: 364px) 100vw, 364px" /></figure>
 
 
 
@@ -86,7 +86,7 @@ Learning කරනවා නම් මම Train කරන්න ඕන Data ම�
 
 
 
-<figure class="wp-block-image is-resized"><img src="/wp-content/uploads/2019/02/Untitled-1.png" alt="" class="wp-image-1804" width="514" height="359" srcset="/wp-content/uploads/2019/02/Untitled-1.png 1000w, /wp-content/uploads/2019/02/Untitled-1-300x210.png 300w, /wp-content/uploads/2019/02/Untitled-1-768x538.png 768w" sizes="(max-width: 514px) 100vw, 514px" /></figure>
+<figure class="wp-block-image is-resized"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Untitled-1.png" alt="" class="wp-image-1804" width="514" height="359" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Untitled-1.png 1000w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Untitled-1-300x210.png 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/Untitled-1-768x538.png 768w" sizes="(max-width: 514px) 100vw, 514px" /></figure>
 
 
 
@@ -109,7 +109,7 @@ Learning කරනවා නම් මම Train කරන්න ඕන Data ම�
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/anki-1024x576.jpg" alt="" class="wp-image-1805" srcset="/wp-content/uploads/2019/02/anki-1024x576.jpg 1024w, /wp-content/uploads/2019/02/anki-300x169.jpg 300w, /wp-content/uploads/2019/02/anki-768x432.jpg 768w, /wp-content/uploads/2019/02/anki.jpg 1552w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki-1024x576.jpg" alt="" class="wp-image-1805" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki-1024x576.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki-300x169.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki-768x432.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki.jpg 1552w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -117,7 +117,7 @@ Learning කරනවා නම් මම Train කරන්න ඕන Data ම�
 
 
 
-<figure class="wp-block-image"><img src="/wp-content/uploads/2019/02/anki4-1024x454.jpg" alt="" class="wp-image-1806" srcset="/wp-content/uploads/2019/02/anki4-1024x454.jpg 1024w, /wp-content/uploads/2019/02/anki4-300x133.jpg 300w, /wp-content/uploads/2019/02/anki4-768x341.jpg 768w, /wp-content/uploads/2019/02/anki4.jpg 1283w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki4-1024x454.jpg" alt="" class="wp-image-1806" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki4-1024x454.jpg 1024w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki4-300x133.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki4-768x341.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2019/02/anki4.jpg 1283w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -128,15 +128,15 @@ Learning කරනවා නම් මම Train කරන්න ඕන Data ම�
 
 
 <p>Image Recognition කියන්නෙ කොච්චර කතා කළත් ඉවර කරන්න බැරි දෙයක්. ඉතින් මම හිතුවා අදට මෙතනින් නවත්තන්න. මම හිතනවා මේ ලිපිය Machine Learning කරන්න ආස කෙනෙකුට ප්‍රයෝජනවත් වෙන්න ඇති කියලා. ආයේ දවසක Machine Learning ගැන තවත් ගොඩක් දේවල් කතා කරන්න ලිපියක් අරගෙන එන්නම් example projects , programming code එක්කම. ස්තූතියි.</p>
-<p>The post <a rel="nofollow" href="/index.php/2019/02/09/machinelearningarticle2/">Machine Learning දෙවැනි දිගහැරුම.</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/02/09/machinelearningarticle2/">Machine Learning දෙවැනි දිගහැරුම.</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/02/09/machinelearningarticle2/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/02/09/machinelearningarticle2/feed/</wfw:commentRss>
 		<slash:comments>4</slash:comments>
 							</item>
 		<item>
 		<title>Machine Learning</title>
-		<link>/index.php/2019/01/31/machine-learning/</link>
-				<comments>/index.php/2019/01/31/machine-learning/#comments</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2019/01/31/machine-learning/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2019/01/31/machine-learning/#comments</comments>
 				<pubDate>Thu, 31 Jan 2019 10:15:30 +0000</pubDate>
 		<dc:creator><![CDATA[Hasee Amarathunga]]></dc:creator>
 				<category><![CDATA[Machine Learning]]></category>
@@ -146,9 +146,9 @@ Learning කරනවා නම් මම Train කරන්න ඕන Data ම�
 		<category><![CDATA[hasee amarathunga]]></category>
 		<category><![CDATA[machine learning]]></category>
 
-		<guid isPermaLink="false">/?p=1757</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning. කෘතීම බුද්ධි තාක්ෂණය එහෙම නැත්නම් Artificial Intelligence කෙලින්ම කීවොත් වර්තමානයත් අනාගතයත් යා කරන පරිගණක පරම්පරාව අද බොහෝ දෙනා කතා කරන තාක්ෂයක්. ඒ තාක්ෂණයෙ තියෙන<a class="moretag" href="/index.php/2019/01/31/machine-learning/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/31/machine-learning/">Machine Learning</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=1757</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning. කෘතීම බුද්ධි තාක්ෂණය එහෙම නැත්නම් Artificial Intelligence කෙලින්ම කීවොත් වර්තමානයත් අනාගතයත් යා කරන පරිගණක පරම්පරාව අද බොහෝ දෙනා කතා කරන තාක්ෂයක්. ඒ තාක්ෂණයෙ තියෙන<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2019/01/31/machine-learning/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/31/machine-learning/">Machine Learning</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;හොදයි යාලුවනේ ඔන්න අද මං කතා කරන්න යන්නෙ අද ලෝකෙ ගොඩක් දෙනා කතා කරන තවමත් පර්යේෂණ මට්ටමේ පවතින ගොඩක් දියුණු තාක්ෂණයක් ගැන. ඒ තමා Machine Learning.</p>
@@ -283,9 +283,9 @@ Learning යටතට අයත්
 
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ඉතින් අදට මම Machine Learning ගැන පොඩි හදුන්වාදීමක් පමණයි කලේ අලුතින් මේ ගැන ඉගෙන ගන්න කැමති අයට. මම ඊළග ලිපියෙන් කියන්නම් කොහොමද මේ Machine Learning කරන්න පටන් ගන්නෙ කියලා <strong>Programming Language</strong> එකක් පාවිච්චි කරලා. ඊළග ලිපියෙන් හමු වන බලාපොරොත්තුවෙන් මම ගිහින් එන්නම්. සතූතියි හැමෝටම!</p>
-<p>The post <a rel="nofollow" href="/index.php/2019/01/31/machine-learning/">Machine Learning</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2019/01/31/machine-learning/">Machine Learning</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2019/01/31/machine-learning/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2019/01/31/machine-learning/feed/</wfw:commentRss>
 		<slash:comments>1</slash:comments>
 							</item>
 	</channel>

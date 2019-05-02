@@ -9,8 +9,8 @@
 
 <channel>
 	<title>queue &#8211; The SIGMA</title>
-	<atom:link href="/index.php/tag/queue/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://danushka96.github.io/sigma/index.php/tag/queue/feed/" rel="self" type="application/rss+xml" />
+	<link>https://danushka96.github.io/sigma/</link>
 	<description>&#60;For Those Who Code/&#62;</description>
 	<lastBuildDate>
 	Sat, 02 Mar 2019 16:57:34 +0000	</lastBuildDate>
@@ -22,8 +22,8 @@
 	<generator>https://wordpress.org/?v=5.1.1</generator>
 	<item>
 		<title>Queue Abstract Data Type (With Implementation)</title>
-		<link>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/</link>
-				<comments>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/#respond</comments>
+		<link>https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/</link>
+				<comments>https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/#respond</comments>
 				<pubDate>Mon, 09 Apr 2018 14:45:43 +0000</pubDate>
 		<dc:creator><![CDATA[Danushka Herath]]></dc:creator>
 				<category><![CDATA[Algo]]></category>
@@ -31,14 +31,14 @@
 		<category><![CDATA[implementation]]></category>
 		<category><![CDATA[queue]]></category>
 
-		<guid isPermaLink="false">/?p=552</guid>
-				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා. FIFO? FIFO කියන එකෙන් අදහස් වෙන්නේ First In First Out කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින<a class="moretag" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/"> Read more&#8230;</a></p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+		<guid isPermaLink="false">https://danushka96.github.io/sigma/?p=552</guid>
+				<description><![CDATA[<p><span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span> අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා. FIFO? FIFO කියන එකෙන් අදහස් වෙන්නේ First In First Out කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින<a class="moretag" href="https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/"> Read more&#8230;</a></p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></description>
 								<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label">Reading Time: </span> <span class="rt-time">3</span> <span class="rt-label rt-postfix">minutes</span></span><p>අද Algo පාඩමෙන් කතා කරන්න යන්නේ Queue සම්බන්ධව. මේකෙදි Queue එකක් කියලා අර්ථ දක්වන්න තියෙන්නෙත් සාමාන්‍ය ජීවිතේදි අපි අත්දකින Queue එකම තමයි. ඒ කියන්නේ පේලියක් කියන එක. අපි මුලින්ම බලමු Queue එකක තියෙන ලක්ෂණ මොනවද කියලා.</p>
 <h3><strong>FIFO?</strong></h3>
-<p><img class=" wp-image-629 aligncenter" src="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg" alt="" width="387" height="241" srcset="/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg 300w, /wp-content/uploads/2018/04/queue_1446267c_2854335k-768x480.jpg 768w, /wp-content/uploads/2018/04/queue_1446267c_2854335k.jpg 858w" sizes="(max-width: 387px) 100vw, 387px" /></p>
-<p>FIFO කියන එකෙන් අදහස් වෙන්නේ <strong>First In First Out </strong>කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින පේලි වලත් වෙන්නේ ඉස්සරලාම පේලියට එකතු වුණ කෙනා තමයි මුලින්ම පේලියෙන් එළියට යන්නේ. හැබැයි මතකද අපි කලින් ලිපියෙ Stacks ගැන කියන වෙලාවෙදි <strong>LIFO </strong>එකක් ගැන කිවුවා. ඒක බැලුවෙ නැත්නම් <a href="/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">මෙතනින්</a> බලන්න. ඒකෙදි අපි කලේ මේකෙ විරුද්ධ වැඩේ.</p>
+<p><img class=" wp-image-629 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg" alt="" width="387" height="241" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_1446267c_2854335k-300x187.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_1446267c_2854335k-768x480.jpg 768w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_1446267c_2854335k.jpg 858w" sizes="(max-width: 387px) 100vw, 387px" /></p>
+<p>FIFO කියන එකෙන් අදහස් වෙන්නේ <strong>First In First Out </strong>කියන එක. ඒ කියන්නේ අපි සාමාන්‍ය ජීවිතේදි දකින පේලි වලත් වෙන්නේ ඉස්සරලාම පේලියට එකතු වුණ කෙනා තමයි මුලින්ම පේලියෙන් එළියට යන්නේ. හැබැයි මතකද අපි කලින් ලිපියෙ Stacks ගැන කියන වෙලාවෙදි <strong>LIFO </strong>එකක් ගැන කිවුවා. ඒක බැලුවෙ නැත්නම් <a href="https://danushka96.github.io/sigma/index.php/2018/04/05/stack-abstract-data-type-with-implementation/">මෙතනින්</a> බලන්න. ඒකෙදි අපි කලේ මේකෙ විරුද්ධ වැඩේ.</p>
 <h3><strong>Basic Operations</strong></h3>
 <p>Queue එකක තියෙන මූලිකම මෙහෙයුම් කිහිපය තමයි මේ පහලින් තියෙන්නේ.</p>
 <ol>
@@ -105,7 +105,7 @@ end procedure
 <p>Queue එකට Data Insert කරන Method එක. මේකෙදි අපි පියවර කිහිපයක් අනුගමනය කරනවා Data එකක් Queue එක ඇතුලට දාන්න කලින් අපි එකින් එක පියවර විස්තර ඇතිව බලමු.</p>
 <p style="padding-left: 30px;"><strong>පළමු පියවර : </strong>Queue එක දැනට Full ද කියලා Check කරන එක. ඒ කියන්නේ Queue එක Full වෙලා තිබුණොත් අපිට තවත් Data Insert කරන්න බෑනෙ. ඒක මේ Check එකෙන් පස්සේ Full වෙලා තිබුණොත් නතර කරනවා</p>
 <p style="padding-left: 30px;"><strong>දෙවන පියවර : </strong>Queue එක Full වෙලා තිබුණේ නැත්නම් අපි Rear Point එක 1කින් වැඩි කරනවා. ඒ කියන්නේ Next Empty Space එකට.</p>
-<p><img class=" wp-image-736 aligncenter" src="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg" alt="" width="446" height="251" srcset="/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg 300w, /wp-content/uploads/2018/04/queue_enqueue_diagram.jpg 550w" sizes="(max-width: 446px) 100vw, 446px" /></p>
+<p><img class=" wp-image-736 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg" alt="" width="446" height="251" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_enqueue_diagram-300x169.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_enqueue_diagram.jpg 550w" sizes="(max-width: 446px) 100vw, 446px" /></p>
 <p style="padding-left: 30px;"><strong>තුන්වන පියවර : </strong>දැන් Rear Point එක තියෙන තැනට අපිට අවශ්‍ය Data එක Insert කරනවා.</p>
 <h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
 <pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="pln">procedure enqueue</span><span class="pun">(</span><span class="pln">data</span><span class="pun">)</span>      
@@ -134,7 +134,7 @@ end procedure
 <p>Queue එකෙන් Data එළියට ගන්න Method එක. මේක කරන්නත් අපි උඩදි කතා කරා වගේ පියවර කිහිපයක් යන්න ඕන.</p>
 <p style="padding-left: 30px;"><strong>පළමු පියවර : </strong>Queue එක Empty ද කියලා Check කරන්න ඕන. මොකද අපිට Empty Queue එකකින් Data එකක් එළියට ගන්න බෑ.</p>
 <p style="padding-left: 30px;"><strong>දෙවන පියවර : </strong>Queue එක Empty වෙලා තිබුණොත් Underflow Error එකක් Display කරනවා. නැත්නම් Front Pointer එක ඊළඟ Element එකට Point කරනවා.</p>
-<p style="padding-left: 30px;"><strong><img class=" wp-image-737 aligncenter" src="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg" alt="" width="449" height="283" srcset="/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg 300w, /wp-content/uploads/2018/04/queue_dequeue_diagram.jpg 550w" sizes="(max-width: 449px) 100vw, 449px" /></strong></p>
+<p style="padding-left: 30px;"><strong><img class=" wp-image-737 aligncenter" src="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg" alt="" width="449" height="283" srcset="https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_dequeue_diagram-300x189.jpg 300w, https://danushka96.github.io/sigma/wp-content/uploads/2018/04/queue_dequeue_diagram.jpg 550w" sizes="(max-width: 449px) 100vw, 449px" /></strong></p>
 <h5 style="padding-left: 30px;"><strong>Algorithm:</strong></h5>
 <pre class="prettyprint notranslate prettyprinted" style="padding-left: 60px;"><span class="pln">procedure dequeue
    </span><span class="kwd">if</span><span class="pln"> queue </span><span class="kwd">is</span><span class="pln"> empty
@@ -212,9 +212,9 @@ void process_queue(struct queue_root* queue, void (*func)(queue_data_type)){
 }
 </pre>
 <p>හරි එහෙනම් මොනවා හරි ප්‍රශ්ණයක් තිබුණොත් Comment එකක් දාන්න.</p>
-<p>The post <a rel="nofollow" href="/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="/">The SIGMA</a>.</p>
+<p>The post <a rel="nofollow" href="https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/">Queue Abstract Data Type (With Implementation)</a> appeared first on <a rel="nofollow" href="https://danushka96.github.io/sigma/">The SIGMA</a>.</p>
 ]]></content:encoded>
-							<wfw:commentRss>/index.php/2018/04/09/queue-abstract-data-type-with-implementation/feed/</wfw:commentRss>
+							<wfw:commentRss>https://danushka96.github.io/sigma/index.php/2018/04/09/queue-abstract-data-type-with-implementation/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 	</channel>
